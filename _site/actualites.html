@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>railconcept | Actualités</title>
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    <div id="div-navbar" >
+        <div  id="container-navbar" class="container" >
+            <nav id="navbar" class="navbar navbar-light navbar-expand-md" >
+                <a class="navbar-brand navbar-logo" href="#"><img class="img-fluid d-lg-flex justify-content-lg-end align-items-lg-end" src="assets/img/logo/logo.png" id="logo"></a>
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><span class="sr-only">RailConcept</span><span class="navbar-toggler-icon"></span>
+				</button>
+                    <div  id="navbar-menu" class="collapse navbar-collapse" >
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item nav-li " role="presentation"><a id="index" class="nav-link link-navbar" href="http://localhost:4000">nous connaître</a></li>
+                            <li class="nav-item nav-li" role="presentation"><a id="competances" class="nav-link link-navbar" href="competances">nos compétances</a></li>
+                            <li class="nav-item nav-li" role="presentation"><a id="realisations" class="nav-link link-navbar" href="realisations">nos réalisations</a></li>
+                            <li class="nav-item nav-li" role="presentation"><a id="carrieres" class="nav-link link-navbar" href="rejoignez-nous">carrières</a></li>
+                            <li class="nav-item nav-li" role="presentation"><a id="actualites"class="nav-link link-navbar" href="actualites">actualités</a></li>
+                            <li class="nav-item nav-li" role="presentation"><a id="contact" class="nav-link link-navbar" href="contact">contact</a></li>
+                            <li class="nav-item nav-li no-underline" role="presentation" id="search">
+							<a class="nav-link link-navbar" href="#" id="search-link"><i class="fas fa-search"></i></a>
+							 <input id="input-search" type="text" class="search-txt shadow-none" placeholder="recherche..."  name="search-txt" />
+							</li>
+							
+                            <li id="lang" class="dropdown nav-item nav-li no-underline">
+				
+							 <a class="nav-link link-navbar dropdown-toggle lang-select " data-toggle="dropdown" href="#" role="button"   aria-haspopup="true" aria-expanded="false">
+								<img class="flags" src="assets/img/flags/fr.png">
+								</a>
+                                <div id="select_flag" class="dropdown-menu">
+                                    <a id="dropdown-flags" class="assets/dropdown-item" href="#">
+									<img class="flags" src="assets/img/flags/gb.png">English</a>
+                                </div>
+                            </li>
+                        </ul>
+                </div>
+       
+        </nav>
+    </div>
+    </div>
+	
+    <!--realisations-->
+    <div class="competence text-center">
+        <div class="container h-100">
+            <div class="row h-100 justify-content-center align-items-center">
+                <h1 class=" header-realisation">
+                    Actualités
+                </h1>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--actualités-->
+    <section class="actualités">
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-12 pl-0 pr-0">
+                    <div class=" title-news  title-section">Découvrez nos actualités</div>
+                    <div class="paragraphe-news mt-45">
+                        Lorem ipsum dolor sit armet, consecteteur
+                        adipisicing elit,
+                        sed do euismod tempor incididunt ut labore
+                        et dolore magna aliqua.ut enim ad minim veniam ,quis nostrud exercitation ullamco
+                        aboris ut aliquip ex ea commodo consequat. Duis autre irure dolore in reprehenderit
+                        in voluptate velit esse cillum dolore eu fugiat nulle pariatur. Excepteur sint
+                        occaaecat cupidata non
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!--Gallerie Actualites-->
+
+    <section class=" gal-real mt-5 mb-5">
+        <div class="container">
+
+            <div id="gallerie-actualite">
+
+                <div id="filtre-div" class="filtre-div  col-12 pl-0 pr-0 ">
+                    <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
+                        onclick="filtrer_act('all');">voir tout</button>
+                    <button id="tag1" class="btn btn-default filter-button text-uppercase"
+                        onclick="filtrer_act('tag1');">tag 1</button>
+                    <button id="tag2" class="btn btn-default filter-button text-uppercase"
+                        onclick="filtrer_act('tag2');">tag 2</button>
+                    <button id="tag3" class="btn btn-default filter-button text-uppercase"
+                        onclick="filtrer_act('tag3');">tag 3</button>
+                    <button id="tag4" class="btn btn-default filter-button text-uppercase"
+                        onclick="filtrer_act('tag4');">tag 4</button>
+
+                </div>
+
+                <div class="row col-12 pl-0 pr-0">
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 tag2 tag3 tag4">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+                               
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                    tag1 tag2 tag3 tag4</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 tag2 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                    tag1 tag2 </div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag1</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag3 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag3</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 tag4 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag1 tag4</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag4 tag2 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag2 tag4</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5   tag2 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag2</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 tag3 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag1 tag3
+                                </div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag4  ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag4
+                                </div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag3  ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag3</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5   tag2 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag2</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag1</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5   tag2 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag2</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag3 tag2 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag3 tag2</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1  ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag1</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 tag2 tag3">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5   tag3 ">
+                        <div class="card card-border-none">
+                            <div class="act-tag">
+
+
+                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                            </div>
+                            <div class="card-body pl-0 pr-0">
+                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing
+                                    elit,
+                                    sed do euismod tempor incididunt
+                                tag3</div>
+                                <span class="date-news ">13 JUIN 2019</span>
+                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div id="paging-real" class="container">
+        <ul id="paginate_real" class="pagination justify-content-end .borderless"></ul>
+    </div>
+
+    <section class="contacter-nous" data-aos="zoom-out-down">
+    <div class="container">
+        <div class="row row-contacter-nous ">
+            <div class="div-contact col-md-8 col-sm-12 text-left">
+               <span> vous avez un projet ou vous souhaitez plus d’information ?</span>
+            </div>
+        <div class="parent-contactez col-md-4 col-sm-12 ">
+                    
+                    <button  type="button" class="btn contactez float-right "> contactez-nous !</button>
+                   
+        </div>  
+            
+        </div>
+       
+    </div>
+</section>
+    
+<footer>
+    <section id="footer ">
+            <div class="container">
+                <div class="row text-center text-xs-center text-sm-center text-md-left ">
+
+
+                    <div class="col-md-3 col-xs-12 col-sm-12 pl-0 pr-0">
+                    <div class="col-12">
+                            <img class="logo-footer" src="assets/img/logo/logo.png" >
+                    </div> 
+                    <div class="col-12 adresse">
+                        <div class="row">
+                            <div class="col-1 pl-0">
+                                    <img src="assets/img/footer/loc.png" class="position">
+                            </div>
+                            <div class="col-11 pl-0">
+                                    2 Allée de la Tramontane<br>
+                                    30133 Les Angles<br>
+                                    france
+                            </div>
+                     </div>
+                    </div>  
+                    <div class="col-12 tel">
+                            <div class="row">
+                            <div class="col-1 pl-0">
+                                    <img src="assets/img/footer/tel.png" class="position">
+                            </div>
+                            <div class="col-11 pl-0">
+                                    04 90 90 54 85
+
+                            </div>
+                           
+                      </div>
+                    </div>
+                        
+                    </div>
+                    <div class="col-md-2 col-xs-12 col-sm-12 pl-0 pr-0 mt-3">
+                        <div class="footer-title "><a href="#"> nous connaître</a></div>
+                        <div class="groupe ">
+                            <a href="#" class="footer-body">Qui sommes-nous</a><br>
+                            <a href="#" class="footer-body">Notre équipe</a><br>
+                        </div>
+                        <div class="footer-title mt-3"><a href="#">nos compétences</a></div>
+                        <div class="groupe ">
+                        
+                            <a href="#" class="footer-body"> études</a><br>
+                            <a href="#" class="footer-body">Expertise / Conseil</a><br>
+                            <a href="#" class="footer-body">Logiciels spécialisés</a><br>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3 col-xs-12 col-sm-12 mt-3">
+                        <div class="footer-title "> <a href="#">nos réalisations</a></div>
+                        <div class="groupe">
+                            <a href="#" class="footer-body">Mission AMO Grands Projets</a><br>
+                            <a href="#" class="footer-body">études</a><br>
+                            <a href="#" class="footer-body">Expertise / Conseil</a><br>
+                            <a href="#" class="footer-body">Vente logiciel</a><br>
+                        </div>
+    
+                        <div class="footer-title mt-3 "><a href="#">carrières</a></div>
+                        <div class="footer-title mt-3 "><a href="#">actualités</a></div>
+                    </div>
+                    <div class="col-md-4 col-xs-12 col-sm-12 mt-3">
+                        <div class="footer-title">abonnez-vous à notre newsletter !</div>
+                        <div class="form-group input-group mt20">
+                            <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email">
+                            <div class="input-group-prepend">
+                                <span type="button" class="input-group-text btn enveloppe"><img src="assets/img/footer/Enveloppe.png"> </span>
+                            </div>
+                        </div>
+                        <div class="footer-title mt-3">suivez-nous sur les réseaux!</div>
+                        <br/>
+                        <a href="#" class="footer-title mr-2"><img id="facebook" src="assets/img/footer/facebook.png"
+                                                              height="27"></a>
+                        <a href="#" class="footer-title"><img src="assets/img/footer/linkedin.png" height="27"></a>
+    
+                        <div class="footer-title mt-3">vous souhaitez faire parti de l’équipe</div>
+                        <div class="form-group text-left  text-xs-center text-sm-center">
+                            <button type="button" class="contactez-red btn mt10"> contactez-nous !</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- COPYRIGHT-->
+
+        <section class="copyright">
+                <div class="container text-center">
+                    <div class="row  ">
+                        <div class="col-md-2 Copyrightcol">
+                            <a href="#" class="color">Plan du site</a>
+                        </div>
+                        <div class="col-md-2 Copyrightcol">
+                            <a href="#" class="color">Mentions Légales</a>
+                        </div>
+                        <div class="col-md-2 Copyrightcol">
+                            <a href="#" class="color">Nous contacter</a>
+                        </div>
+                        <div class="col-md-6  Copyrightcol text-center pl-0 pr-0">
+                            <div class="row pl-0 pr-0">
+                           <div class="col-md-10 col-sm-12 pl-0 pr-0"> Copyright © 2019 www.railconcept.fr - Design by Agence de communication Montpellier</div>
+                            <div class="col-md-2 col-sm-12 pl-0 pr-0"><img src="assets/img/footer/logo gazoline.png" height="17"></div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+</footer>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/pagination.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>    
