@@ -5,7 +5,7 @@ $margin_left_container = $("#container-navbar").css("margin-left");
 $padding_left_container = $("#container-navbar").css("padding-left");
 $left_container = parseInt($margin_left_container) + parseInt($padding_left_container);
 
-console.log("welcome");;
+console.log("welcome");
 
 
 
