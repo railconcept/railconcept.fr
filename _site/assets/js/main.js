@@ -88,7 +88,7 @@ $(window).scroll(function () {
 $(document).ready(function () {
 
     var pathname = window.location.pathname.split('/')[1];
-
+    console.log(pathname);
     if(pathname != ''){
         $("#"+pathname).addClass('selected');
     }else{
