@@ -294,9 +294,9 @@ permalink: rejoignez-nous
 
         <div class="col-md-12 col-xl-6 col-lg-6 bg-metiers  ml-0 mt-0 etude-container-right pt-5 pb-5">
           <div class="container    pl-5 pr-5">
-              <form  class="pr-5">
+              <form  name="poste_submission" class="pr-5" method="post" enctype="multipart/form-data" data-netlify="true">
             <div class=" title-poste">POSTULER</div>
-          
+       
             <div class="form-group ">
               <div class="row col-md-12 align-items-center">
                 <div class="col-md-3 col-sm-3">
@@ -306,8 +306,8 @@ permalink: rejoignez-nous
                 </div>
                 <div class="col-md-9 col-sm-9 ">
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="input_cv" name="input_cv">
-                    <label class="custom-file-label bg-select width-form" for="custoinput_cv">Parcourir</label>
+                    <input type="file" class="custom-file-input" id="input_cv" name="input_cv" accept="application/msword,application/pdf">
+                    <label class="custom-file-label bg-select width-form" for="input_cv">Parcourir</label>
                   </div>
                 </div>
               </div>
@@ -343,7 +343,7 @@ permalink: rejoignez-nous
                 </div>
                 <div class="col-md-9 col-sm-9 mt-10 ">
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input " id="input_ad">
+                    <input type="file" class="custom-file-input " id="input_ad" name="input_ad">
                     <label class="custom-file-label bg-select width-form " for="input_ad">Parcourir</label>
                   </div>
 
@@ -357,18 +357,18 @@ permalink: rejoignez-nous
           
               <div class="row mb-4">
                 <div class="col">
-                  <input type="text" class="form-control bg-select" placeholder="Nom*">
+                  <input type="text" class="form-control bg-select" name="nom" placeholder="Nom*" required>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control bg-select" placeholder="Prénom*">
+                  <input type="text" class="form-control bg-select" name="prenom" placeholder="Prénom*" required>
                 </div>
               </div>
               <div class="row mb-5">
                 <div class="col">
-                  <input type="text" class="form-control bg-select" placeholder="E-mail*">
+                  <input type="email" class="form-control bg-select" name="email" placeholder="E-mail*" required>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control bg-select" placeholder="Téléphone*">
+                  <input type="number" class="form-control bg-select" placeholder="Téléphone*" required>
                 </div>
               </div>
               <div class="col-auto text-right">
