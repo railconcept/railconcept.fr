@@ -340,7 +340,14 @@
           <div class="container    pl-5 pr-5">
               <form  name="poste_submission" class="pr-5" method="post" enctype="multipart/form-data" data-netlify-recaptcha="true" data-netlify="true">
             <div class=" title-poste">POSTULER</div>
-       
+          
+   
+          
+          
+          
+          
+          
+          
             <div class="form-group ">
               <div class="row col-md-12 align-items-center">
                 <div class="col-md-3 col-sm-3">
@@ -350,8 +357,11 @@
                 </div>
                 <div class="col-md-9 col-sm-9 ">
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input" id="input_cv" name="input_cv" accept="application/msword,application/pdf">
-                    <label class="custom-file-label bg-select width-form" for="input_cv">Parcourir</label>
+                    <input type="file" class="custom-file-input" id="input_cv" name="input_cv" accept="application/msword,application/pdf" required
+                    oninvalid="this.setCustomValidity('Veuiller choisir votre CV')"
+                    oninput="setCustomValidity('')"
+                    >
+                    <label id="label_input_cv" class="custom-file-label bg-select width-form" for="input_cv"><span id="fake_input_cv" class="parcourir">Parcourir</span></label>
                   </div>
                 </div>
               </div>
@@ -371,8 +381,12 @@
                 <div class="col-md-9 col-sm-9 mt-10">
 
                   <div class="custom-file align-items-center">
-                    <input type="file" class="custom-file-input" id="input_lm" name="input_lm">
-                    <label class="custom-file-label bg-select width-form" for="input_lm">Parcourir</label>
+                    <input type="file" class="custom-file-input" id="input_lm" name="input_lm" accept="application/msword,application/pdf" required 
+                    oninvalid="this.setCustomValidity('Veuiller choisir votre lettre de motivation')"
+                    oninput="setCustomValidity('')"
+                    >
+                    <label id="label_input_lm" class="custom-file-label bg-select width-form" for="input_lm"><span id="fake_input_lm" class="parcourir">Parcourir</span></label>
+                 
                   </div>
                 </div>
               </div>
@@ -387,8 +401,10 @@
                 </div>
                 <div class="col-md-9 col-sm-9 mt-10 ">
                   <div class="custom-file">
-                    <input type="file" class="custom-file-input " id="input_ad" name="input_ad">
-                    <label class="custom-file-label bg-select width-form " for="input_ad">Parcourir</label>
+                    <input type="file" class="custom-file-input " id="input_ad" name="input_ad" accept="application/msword,application/pdf">
+                
+                    <label id="label_input_ad" class="custom-file-label bg-select width-form" for="input_ad"><span id="fake_input_ad" class="parcourir">Parcourir</span></label>
+                 
                   </div>
 
                 </div>
@@ -401,25 +417,37 @@
           
               <div class="row mb-4">
                 <div class="col">
-                  <input type="text" class="form-control bg-select" name="nom" placeholder="Nom*" required>
+                  <input type="text" class="d_pers form-control bg-select" name="nom" placeholder="Nom*" required 
+                  oninvalid="this.setCustomValidity('Veuiller saisir votre nom')"
+                  oninput="setCustomValidity('')"
+                  >
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control bg-select" name="prenom" placeholder="Prénom*" required>
+                  <input type="text" class="d_pers form-control bg-select" name="prenom" placeholder="Prénom*" required
+                  oninvalid="this.setCustomValidity('Veuiller saisir votre prenom')"
+                  oninput="setCustomValidity('')"
+                  >
                 </div>
               </div>
               <div class="row mb-2">
                 <div class="col">
-                  <input type="email" class="form-control bg-select" name="email" placeholder="E-mail*" required>
+                  <input type="email" class="d_pers form-control bg-select" name="email" placeholder="E-mail*" required
+                  oninvalid="this.setCustomValidity('Veuiller saisir un email valid')"
+                  oninput="setCustomValidity('')"
+                  >
                 </div>
                 <div class="col">
-                  <input type="number" class="form-control bg-select" placeholder="Téléphone*" required>
+                  <input type="number" class="d_pers form-control bg-select" name="phone" placeholder="Téléphone*" required
+                  oninvalid="this.setCustomValidity('Veuiller saisir votre N° de Téléphone')"
+                  oninput="setCustomValidity('')"
+                  >
                 </div>
               </div>
               <div class="row ">
               <div class="col-12 ">
               <div data-netlify-recaptcha="true"></div>
             </div>
-              <div class="col-auto text-right">
+              <div class="col-12 text-right">
                 <button type="submit" class="btn  bg-select-2 mb-2">Envoyer</button>
               </div>
             </div>

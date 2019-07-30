@@ -332,3 +332,52 @@ function paginate_actualite($cls) {
     });
 
 }
+
+$(document).ready(function () {
+
+$('#input_cv').change(function () {
+    var a = $('#input_cv').val().toString().split('\\');
+
+    if(a.length == 1){
+        $('#fake_input_cv').text('Parcourir');  
+        $("#label_input_cv").css("opacity",0.65);
+
+    }else{
+        $('#fake_input_cv').text(a[a.length -1]);
+        $("#label_input_cv").css("opacity",1);
+    }
+    
+});
+$('#input_lm').change(function () {
+    var a = $('#input_lm').val().toString().split('\\');
+  
+    if(a.length == 1){
+        $('#fake_input_lm').text('Parcourir');
+        $("#label_input_lm").css("opacity",0.65);
+    }else{
+        $('#fake_input_lm').text(a[a.length -1]);
+        $("#label_input_lm").css("opacity",1);
+    }
+});
+$('#input_ad').change(function () {
+    var a = $('#input_ad').val().toString().split('\\');
+  
+    if(a.length == 1){
+        $('#fake_input_ad').text('Parcourir');
+        $("#label_input_ad").css("opacity",0.65);
+    }else{
+        $('#fake_input_ad').text(a[a.length -1]);
+        $("#label_input_ad").css("opacity",1);
+    }
+});
+
+$(document).on('input', '.d_pers', function(){
+    $a = $(this).val();
+    console.log($(this).css("opacity"));
+    if($a ==''){
+        $(this).css("opacity",0.65);
+    }else{
+        $(this).css("opacity",1);
+    }
+});
+});

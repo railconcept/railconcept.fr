@@ -12,7 +12,11 @@ body {
     width: 100%;
     height: 100%;
 }
-
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+{ 
+ -webkit-appearance: none; 
+ }
 .title-section {
     color: #a52c43;
     font-family: "Barlow Semi Condensed", sans-serif;
@@ -1386,6 +1390,10 @@ background-image:  url(../img/actualites/actualites-2.png);
         .white-bg{
             background-color:white;
         }
+        .parcourir{
+            white-space: nowrap;
+            font-size: 13px;
+        }
         .bg-select {
             margin-top: 10px;
             background-color: #942625 !important; 
@@ -1393,8 +1401,9 @@ background-image:  url(../img/actualites/actualites-2.png);
             background-clip: initial !important;
             border-radius: 0;
             border-color: rgb(148, 38, 38);
-            opacity: 0.5;
+            opacity: 0.65;
             cursor: pointer;
+            width:100%;
         }
         .bg-select:hover{
             opacity: 1;
@@ -1413,7 +1422,7 @@ background-image:  url(../img/actualites/actualites-2.png);
             background-color: #942625 !important; 
             border:0;
             font-weight: 900;
-           
+            height: initial;
         }
 
         .bg-select-2 {
@@ -1424,6 +1433,16 @@ background-image:  url(../img/actualites/actualites-2.png);
             border-radius: 0;
             border-color: rgb(148, 38, 38);
         }
+
+      .inputfile {
+        
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
+     
 /***************************************
 **************RESPONSIVE CSS ***********
 ***************************************/
