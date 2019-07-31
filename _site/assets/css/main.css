@@ -17,6 +17,9 @@ input[type=number]::-webkit-outer-spin-button
 { 
  -webkit-appearance: none; 
  }
+ .hidden{
+     display:none;
+ }
 .title-section {
     color: #a52c43;
     font-family: "Barlow Semi Condensed", sans-serif;
