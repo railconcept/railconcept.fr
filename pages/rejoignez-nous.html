@@ -294,12 +294,14 @@ permalink: rejoignez-nous
 
         <div class="col-md-12 col-xl-6 col-lg-6 bg-metiers  ml-0 mt-0 etude-container-right pt-5 pb-5">
           <div class="container    pl-5 pr-5">
-              <form  name="poste_submission" class="pr-5" method="post" enctype="multipart/form-data" data-netlify-recaptcha="true" data-netlify="true">
+              <form  name="poste_submission" class="pr-5" method="post" enctype="multipart/form-data" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
             <div class=" title-poste">POSTULER</div>
           
    
           
-          
+            <p class="hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </p>
           
           
           
