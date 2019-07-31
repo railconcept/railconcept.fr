@@ -15,9 +15,10 @@
                                     <img src="assets/img/footer/loc.png" class="position">
                             </div>
                             <div class="col-11 pl-0">
-                                    2 Allée de la Tramontane<br>
-                                    30133 Les Angles<br>
-                                    france
+                                    {{site.data.website.adresse_line1}}  <br>
+                                    {{site.data.website.adresse_line2}} <br>
+                                    {{site.data.website.adresse_line3}}
+                                    
                             </div>
                      </div>
                     </div>  
@@ -27,7 +28,7 @@
                                     <img src="assets/img/footer/tel.png" class="position">
                             </div>
                             <div class="col-11 pl-0">
-                                <a>{{site.data.site.tel}}</a>
+                                <a id="phone" href="tel:{{site.data.website.tel}}">{{site.data.website.tel}}</a>
                                   
 
                             </div>
