@@ -1,0 +1,35 @@
+---
+title: railconcept | success
+layout: head
+permalink: success
+---
+
+<div id="div-404" class="text-center">
+    <br><br>
+  <h1 class="title-section" >Votre demande a été bien reçu.</h1>
+  <img src="assets/img/landing/success.png" class="img-fluid" width="30%">
+
+</div>
+
+
+<style >
+  @media (min-width: 768px) {
+    footer{
+      bottom: 0;
+        position: absolute;
+    }
+  }
+    </style>
+
+
+
+{% include footer.html %}
+<script>
+var getUrl = window.location;
+var baseUrl = getUrl .protocol + "//" + getUrl.host ;
+console.log(baseUrl);
+window.setTimeout(function() {
+    window.location.href = baseUrl;
+}, 5000);
+      
+      </script>

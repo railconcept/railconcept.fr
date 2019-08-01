@@ -5,7 +5,7 @@ $margin_left_container = $("#container-navbar").css("margin-left");
 $padding_left_container = $("#container-navbar").css("padding-left");
 $left_container = parseInt($margin_left_container) + parseInt($padding_left_container);
 
-console.log("welcome");
+
 
 
 
@@ -89,13 +89,13 @@ $(window).scroll(function () {
 $(document).ready(function () {
 
     var pathname = window.location.pathname.split('/')[1];
-    console.log(pathname);
+  
     if(pathname != ''){
         $("#"+pathname).addClass('selected');
     }else{
         $("#index").addClass('selected'); 
     }
-    
+    console.log(pathname);
     
     $(".nav-li").click(function () {
         if (!$(this).hasClass("no-underline")) {
