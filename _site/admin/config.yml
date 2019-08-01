@@ -2,7 +2,7 @@ backend:
   name: github
   repo: railconcept/railconcept
 
-media_folder : /img/uploads
+media_folder : assets/img/uploads
 
 collections:
   - name: "website-settings"
