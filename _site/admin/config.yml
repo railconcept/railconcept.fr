@@ -1,6 +1,6 @@
 backend: 
   name: github
-  repo: a-issaoui/railconcept
+  repo: railconcept/railconcept
 
 media_folder : /img/uploads
 
