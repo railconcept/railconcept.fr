@@ -18,7 +18,7 @@ plugins: # previously gems
 collections:
   actualites:
     output: true
-    permalink: /:collection/:year/:month/:day/:slug
+    permalink: '{{year}}-{{month}}-{{day}}-{{slug}}'
 
 # Front Matter Defaults
 defaults:
