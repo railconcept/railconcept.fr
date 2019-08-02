@@ -18,7 +18,6 @@ collections:
           - label: "Tel display"
             name: "tel_display"
             widget: "string"
-<<<<<<< HEAD
           - label: "SEO"
             name: "seo"
             widget: "object"
