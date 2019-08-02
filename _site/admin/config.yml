@@ -18,7 +18,6 @@ collections:
           - label: "Tel display"
             name: "tel_display"
             widget: "string"
-<<<<<<< HEAD
           - label: "SEO"
             name: "seo"
             widget: "object"
@@ -40,6 +39,3 @@ collections:
                 name: "country"
                 widget: "string"
  
-=======
-          
->>>>>>> parent of 529b0592... config
