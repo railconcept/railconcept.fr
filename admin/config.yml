@@ -37,7 +37,4 @@ collections:
                  widget: "string"
                - label: "Country"
                  name: "country"
-                 widget: "string"
-
-
-    
+                 widget: "string"    

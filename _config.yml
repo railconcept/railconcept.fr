@@ -9,7 +9,6 @@ plugins:
 
 
 #Actualités
-
 collections:
   Actualite:
        output: true
