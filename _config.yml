@@ -25,7 +25,7 @@ defaults:
   # _actualites
   - scope:
       path: "_actualites"
-      type: posts
+      type: actualites
     values:
       layout: head
       read_time: true
