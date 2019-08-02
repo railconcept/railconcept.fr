@@ -1,10 +1,18 @@
 title: Railconcept
 
+
+# Liquid
+liquid:
+  error_mode: strict
+
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
+theme: jekyll-theme-basically-basic
+plugins: # previously gems
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
 
 
 
