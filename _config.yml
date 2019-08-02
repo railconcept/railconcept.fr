@@ -8,3 +8,27 @@ plugins:
 
 
 
+collections:
+  actualites:
+    output: true
+    permalink: /:collection/:year/:month/:day/:slug
+  recipes:
+    output: true
+    permalink: /:collection/:year/:month/:day/:slug
+
+# Front Matter Defaults
+defaults:
+  # _jobs
+  - scope:
+      path: "_actualites"
+      type: posts
+    values:
+      layout: post
+      read_time: true
+  # _jibs
+  - scope:
+      path: "_jobs"
+      type: jobs
+    values:
+      layout: post
+      read_time: true
