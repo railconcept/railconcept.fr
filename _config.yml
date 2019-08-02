@@ -8,8 +8,3 @@ plugins:
 
 
 
-#Actualités
-collections:
-  Actualite:
-       output: true
-       permalink: /:collection/:year/:month/:day/:slug/
