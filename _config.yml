@@ -1,12 +1,5 @@
 title: Railconcept
 
-
-collections:
-  railconcept:
-       output: true
-       permalink: /:collection/:year/:month/:slug/
-       
-
 # Build settings
 markdown: kramdown
 theme: minima
@@ -15,3 +8,9 @@ plugins:
 
 
 
+#Actualités
+
+collections:
+  Actualite:
+       output: true
+       permalink: /:collection/:year/:month/:slug/
