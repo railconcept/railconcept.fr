@@ -38,18 +38,16 @@ collections:
               - label: "Country"
                 name: "country"
                 widget: "string"    
+
  - name: "actualites"
    label:  "Actualités"
    folder: "_actualites"
    create: true
    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-   flieds: 
-    - label: "Title"
-      name: "title"
-      widget: "string"
-    - label: "Description"
-      name: "desc"
-      widget: "string"
-    - label: "Body"
-      name: "body"
-      widget: "markdown"
+   fields:      
+      - {label: "UID", name: "uid", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Profile picture", name: "image", widget: "image"}
+      - {label: "Website", name: "url", widget: "string"}
+      - {label: "Bio", name: "bio", widget: "string"}
+      - {label: "Social Urls", name: "social", widget: "list"}

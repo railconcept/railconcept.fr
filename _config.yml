@@ -12,4 +12,4 @@ plugins:
 collections:
   Actualite:
        output: true
-       permalink: /:collection/:year/:month/:slug/
+       permalink: /:collection/:year/:month/:day/:slug/
