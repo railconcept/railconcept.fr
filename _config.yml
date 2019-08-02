@@ -7,7 +7,7 @@ liquid:
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-basically-basic
+
 plugins: # previously gems
   - jekyll-feed
   - jekyll-seo-tag
@@ -20,9 +20,6 @@ collections:
   actualites:
     output: true
     permalink: /:collection/:year/:month/:day/:slug
-  jobs:
-    output: true
-    permalink: /:collection/:year/:month/:day/:slug
 
 # Front Matter Defaults
 defaults:
@@ -33,10 +30,4 @@ defaults:
     values:
       layout: head
       read_time: true
-  # _jobs
-  - scope:
-      path: "_jobs"
-      type: jobs
-    values:
-      layout: head
-      read_time: true
+
