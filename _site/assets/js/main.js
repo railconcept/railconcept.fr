@@ -155,7 +155,7 @@ $(document).ready(function () {
     filtrer_act('all');
     $('.gallery-act').each(function (i, obj) {
         $tag='';
-        for($i=1;$i<5;$i++){
+        for($i=1;$i<4;$i++){
             if ($(this).hasClass("tag"+$i)) {
                 $tag += "<div class='tag tag_"+($i)+" col-md-12'>tag "+($i)+"</div>" ;
               }
