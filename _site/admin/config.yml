@@ -38,3 +38,4 @@ collections:
               - label: "Country"
                 name: "country"
                 widget: "string"
+ 
