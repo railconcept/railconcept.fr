@@ -12,23 +12,23 @@ collections:
   actualites:
     output: true
     permalink: /:collection/:year/:month/:day/:slug
-  recipes:
+  jobs:
     output: true
     permalink: /:collection/:year/:month/:day/:slug
 
 # Front Matter Defaults
 defaults:
-  # _jobs
+  # _actualites
   - scope:
       path: "_actualites"
       type: posts
     values:
-      layout: post
+      layout: head
       read_time: true
-  # _jibs
+  # _jobs
   - scope:
       path: "_jobs"
       type: jobs
     values:
-      layout: post
+      layout: head
       read_time: true
