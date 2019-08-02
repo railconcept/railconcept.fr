@@ -15,18 +15,5 @@ plugins: # previously gems
 
 
 
-collections:
-  actualites:
-    output: true
-    permalink: '{{year}}-{{month}}-{{day}}-{{slug}}'
 
-# Front Matter Defaults
-defaults:
-  # _actualites
-  - scope:
-      path: "_actualites"
-      type: actualites
-    values:
-      layout: head
-      read_time: true
 
