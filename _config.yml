@@ -1,8 +1,11 @@
 title: Railconcept
-email: a.issaoui@m3soft.tn
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: a-issaoui
-github_username:  a-issaoui
+
+
+collections:
+  railconcept:
+       output: true
+       permalink: /:collection/:year/:month/:slug/
+       
 
 # Build settings
 markdown: kramdown
