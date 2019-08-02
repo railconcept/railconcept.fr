@@ -41,3 +41,15 @@ collections:
  - name: "actualites"
    label:  "Actualités"
    folder: "_actualites"
+   create: true
+   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+   flieds: 
+    - label: "Title"
+      name: "title"
+      widget: "string"
+    - label: "Description"
+      name: "desc"
+      widget: "string"
+    - label: "Body"
+      name: "body"
+      widget: "markdown"
