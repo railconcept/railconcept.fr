@@ -40,8 +40,8 @@ collections:
                 widget: "string"
  
   - name: "actualites"
-  label: "Actualités"
-  folder: "_actualites"
-  create: true
-  slug:"{{year}}-{{month}}-{{day}}-{{slug}}
+    label: "Actualités"
+    folder: "_actualites"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     
