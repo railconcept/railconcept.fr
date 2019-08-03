@@ -9,9 +9,9 @@ plugins: # previously gems
 
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
+  - name: 'actualites'
+    label: 'Actualités'
+    folder: '_actualites/'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
