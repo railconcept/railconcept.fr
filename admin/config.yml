@@ -46,12 +46,20 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields: # The fields each document in this collection have
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-      - {label: "Title", name: "title", widget: "string", tagname: "h1"}
-      - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Categories", name: "categories", widget: "string", required: false}
-    meta: # Meta data fields. Just like fields, but without any preview element
-      - {label: "Publish Date", name: "date", widget: "datetime", format: "YYYY-MM-DD hh:mm:ss"}
-
-     
-
+    - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
+    - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
+    - label: "Actualité"
+      name: "news"
+      widget: "object" 
+      fields:
+        - {label: "Titre actualité", name: "title-news", widget: "string"} 
+        - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
+        - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
+    - label: "Actualité photo"
+      name: "news"
+      widget: "object" 
+      fields:
+        - {label: "Photo 1", name: "photo_news1", widget: "image"}
+        - {label: "Photo 2", name: "photo_news2", widget: "image"}
+        - {label: "Photo 3", name: "photo_news3", widget: "image"}
+    - {label: "URL Video youtube", name: "video_news", widget: "string"}
