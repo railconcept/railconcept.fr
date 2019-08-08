@@ -45,6 +45,7 @@ collections:
     sort: "date:desc" # Default is title:asc
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: title
     fields: # The fields each document in this collection have
     - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
@@ -52,7 +53,7 @@ collections:
       name: "news"
       widget: "object" 
       fields:
-        - {label: "Titre actualité", name: "title-news", widget: "string"} 
+        - {label: "Titre actualité", name: "title", widget: "string"} 
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
