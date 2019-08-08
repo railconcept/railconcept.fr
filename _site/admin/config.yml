@@ -64,4 +64,4 @@ collections:
         - {label: "Photo 1", name: "photo_news1", widget: "image"}
         - {label: "Photo 2", name: "photo_news2", widget: "image"}
         - {label: "Photo 3", name: "photo_news3", widget: "image"}
-    - {label: "URL Video youtube", name: "video_news", widget: "string"}
+    - {label: "URL Video youtube", name: "video_news", widget: "string"} 
