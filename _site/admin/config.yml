@@ -58,7 +58,7 @@ collections:
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
-      name: "news"
+      name: "news_photo"
       widget: "object" 
       fields:
         - {label: "Photo 1", name: "photo_news1", widget: "image"}
