@@ -7,6 +7,11 @@
   * {
     border: 1px solid #f00 !important;
   }   */
+
+  * {
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+
 html,
 body {
     width: 100%;
@@ -254,6 +259,11 @@ input[type=number]::-webkit-outer-spin-button
 /*------------------------------Main Slider-----------------------*/
 /*-----------------------------------------------------------------*/
 
+.g_map{
+
+    height:100%;
+}
+
 #section-main-slider {
     width: 100%;
     max-width: 100%;
@@ -327,7 +337,7 @@ input[type=number]::-webkit-outer-spin-button
 }
 
 .div-slider {
-    margin: 3.3vw 3.3vw;
+    margin: 2.3vw 3.3vw;
     margin-bottom: 0;
     font-family: 'Barlow Semi Condensed', sans-serif;
     text-transform: uppercase;
@@ -339,17 +349,19 @@ input[type=number]::-webkit-outer-spin-button
 }
 
 .div-slider-numbers {
+    
     height: 5.5vw;
-    right: 5.5vw;
     bottom: 0;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 18px;
-    width: 100%;
-    padding-right: 6.5vw;
-    width: 15vw;
+    font-size: 1.8vw;
+  
     text-align: center;
     color: #d16b6b;
-    float: right;
+   
+    margin-right: 6.5vw;
+    right: 0;
+    left: auto;
+    position: absolute;
 }
 
 .div-slider-numbers-details {
@@ -444,11 +456,13 @@ input[type=number]::-webkit-outer-spin-button
 .slider-news-img {
     padding: 0;
     width: 100% !important;
+    height:600px;
 }
 
 .slider-news-img>img {
-    width: 100% !important;
-    height: 600px;
+    height:100%;
+    width:100%;
+ 
 }
 
 .title-news {
@@ -813,6 +827,7 @@ width:120px;
     }
     .Copyrightcol > a {
     white-space: nowrap;
+    font-family: "Open Sans";
     }
 
 /***************************************
@@ -1929,6 +1944,19 @@ left: 15%;
     }
 
 
+
+
+    #section-main-slider {
+       
+        height: 50vh;
+    }
+    .slider-item {
+        height: 50vh;
+    }
+    .slider-caption {
+     height: auto;
+    }
+   
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -2143,8 +2171,25 @@ top: 18%;
     }
 
 
-
-
+    #section-main-slider {
+       
+        height: 50vh;
+    }
+    .slider-item {
+        height: 50vh;
+    }
+    .slider-caption {
+     height: auto;
+    }
+    .div-slider {
+        font-size: 3.2vw;
+        
+    }
+    .div-slider-numbers {
+   
+        font-size: 2.8vw;
+    }
+ 
 }
 
 

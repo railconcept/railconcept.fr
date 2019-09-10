@@ -195,6 +195,175 @@ $(document).ready(function () {
 
         $("#all").click();
     }
+    $('.carousel').carousel().swipeCarousel({
+        // low, medium or high
+        sensitivity: 'high' 
+      });
+
+      AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 500, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+
+
+
+///////////////////////////////////////////Google Map ////////////////////////////
+
+
+(() => {
+    "use strict";
+ 
+    const appendChild = Element.prototype.appendChild;
+
+    const urlCatchers = [
+      "/AuthenticationService.Authenticate?",
+      "/QuotaService.RecordEvent?"
+    ];
+
+    Element.prototype.appendChild = function (element) {
+      const isGMapScript = element.tagName === 'SCRIPT' && /maps\.googleapis\.com/i.test(element.src);
+      const isGMapAccessScript = isGMapScript && urlCatchers.some(url => element.src.includes(url));
+  
+      if (!isGMapAccessScript) {
+        return appendChild.call(this, element);
+      }
+      return element;
+    };
+  })();
+
+
+
+  //////////////////////Map 1 ////////////////////////
+
+  /********************Google Map***********************/
+
+window.onload = function(){
+    if($("#map1").length){
+var mapOpts = {
+    center:new google.maps.LatLng(47.21537068,-1.55387878) ,
+    zoom: 12,
+    disableDefaultUI: true,
+    styles: [{
+        stylers: [{
+          saturation: -100
+        }]
+      }]
+ 
+ }; 
+
+var map = new google.maps.Map(document.getElementById("map1"), mapOpts);
+
+
+var infoWindow = new google.maps.InfoWindow({content: "message"}); 
+var markerBounds = new google.maps.LatLngBounds(); 
+var markerArray = []; 
+
+
+
+
+
+google.maps.event.addListener(map, "click", 
+  function () { infoWindow.close(); }); 
+
+
+  google.maps.event.addListener(map, "mouseout", 
+  function () { infoWindow.close(); }); 
+
+
+
+
+  function makeMarker(options) { 
+    var pushPin = new google.maps.Marker({ map: map }); 
+
+    pushPin.setOptions(options); 
+
+    google.maps.event.addListener(pushPin, "click", 
+    function () { infoWindow.setOptions(options);
+
+      
+   
+    infoWindow.open(map); });
+
+    google.maps.event.addListener(pushPin, "mouseover", 
+    function () { infoWindow.setOptions(options);
+
+      
+   
+    infoWindow.open(map); });
+
+    markerBounds.extend(options.position); 
+    markerArray.push(pushPin);
+  
+   
+}
+
+  
+
+    makeMarker({ 
+        position: new google.maps.LatLng(47.21537068,-1.55387878),
+       
+        content:    '<div class="text-left p-0">'
+                  +'<div class="col-12 centerx title_infowindow"> ACEH Montpelier </div>'
+                  + '<div class="col-12 centerx icone_infowindow"><img class="ico_infowindow" src="assets/img/small_pin.png" /></div>'
+                  + ' <div class="col-12 centerx adresse_infowindo"> adresse Montpellier line1 <br> adresse Montpellier line2 </div>'
+                  + '<div class="col-12 centerx tel_infowindo"> 12 34 56 78 90 </div></div>',
+        map: map ,
+        icon: 'assets/img/page-realisations/pin.png',
+        animation:google.maps.Animation.DROP
+
+    });
+    makeMarker({ 
+        position: new google.maps.LatLng(47.19694467,-1.58297539),
+        content:    '<div class="text-center p-1"><div class="col-12 centerx title_infowindow"> ACEH Bordeaux </div>'
+        + '<div class="col-12 centerx icone_infowindow"><img class="ico_infowindow" src="assets/img/small_pin.png" /></div>'
+        + ' <div class="col-12 centerx adresse_infowindo"> adresse Bordeaux line1 <br> adresse Bordeaux line2 </div>'
+        + '<div class="col-12 centerx tel_infowindo"> 12 34 56 78 90 </div></div>',
+        map: map ,
+        icon: 'assets/img/page-realisations/pin.png',
+        animation:google.maps.Animation.DROP
+
+    });
+    makeMarker({ 
+        position: new google.maps.LatLng(47.19962734,-1.53885841),
+        content:    '<div class="text-center p-1"><div class="col-12 centerx title_infowindow">ACEH Avignon</div>'
+        + '<div class="col-12 centerx icone_infowindow"><img class="ico_infowindow" src="assets/img/small_pin.png" /></div>'
+        + ' <div class="col-12 centerx adresse_infowindo"> 2A, Avenue Fontcouverte, <br> 84000 Avignon</div>'
+        + '<div class="col-12 centerx tel_infowindo"> 04 90 32 41 79 </div></div>',
+        map: map ,
+        icon: 'assets/img/page-realisations/pin.png',
+        animation:google.maps.Animation.DROP
+
+    });
+
+
+
+
+    }
+    
+
+    
+};
+
+
+
 
 
 });
