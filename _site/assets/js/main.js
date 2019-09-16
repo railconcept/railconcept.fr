@@ -251,11 +251,12 @@ $(document).ready(function () {
 
 
 
-  //////////////////////Map 1 ////////////////////////
+  //////////////////////Map MISSION AMO GRANDS PROJECTS ////////////////////////
 
   /********************Google Map***********************/
 
 window.onload = function(){
+
     if($("#map1").length){
 var mapOpts = {
     center:new google.maps.LatLng(47.21537068,-1.55387878) ,
@@ -282,12 +283,12 @@ var markerArray = [];
 
 
 
-google.maps.event.addListener(map, "click", 
+/* google.maps.event.addListener(map, "click", 
   function () { infoWindow.close(); }); 
 
 
- // google.maps.event.addListener(map, "mouseout", 
- // function () { infoWindow.close(); }); 
+ google.maps.event.addListener(map, "mouseout", 
+ function () { infoWindow.close(); }); */
 
 
 
@@ -325,10 +326,10 @@ google.maps.event.addListener(map, "click",
         content:    '<div class="gallery-real text-left p-0">'
                   + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
                   + ' <div class="col-12 centerx detail_infowindo">'
-                  +' <div clas="col-12 title_infowindow">etude d\'exploitation</div> '
-                  +' <div clas="col-12 projet_infowindow">travaux de création du pem</div> '
-                  +' <div clas="col-12 adresse_infowindow">gare de nantes</div> '
-                  +' <div clas="col-12 sav_plus_infowindow"><a href="#" class="card-link btn-color  ">En savoir plus</a></div> '
+                  +' <div class="col-12 title_infowindow">etude d\'exploitation</div> '
+                  +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+                  +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+                  +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
                   + '</div></div>',
         map: map ,
         icon: 'assets/img/page-realisations/pin.png',
@@ -337,10 +338,14 @@ google.maps.event.addListener(map, "click",
     });
     makeMarker({ 
         position: new google.maps.LatLng(47.19694467,-1.58297539),
-        content:    '<div class="text-center p-1"><div class="col-12 centerx title_infowindow"> ACEH Bordeaux </div>'
-        + '<div class="col-12 centerx icone_infowindow"><img class="ico_infowindow" src="assets/img/small_pin.png" /></div>'
-        + ' <div class="col-12 centerx adresse_infowindo"> adresse Bordeaux line1 <br> adresse Bordeaux line2 </div>'
-        + '<div class="col-12 centerx tel_infowindo"> 12 34 56 78 90 </div></div>',
+        content:    '<div class="gallery-real text-left p-0">'
+        + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+        + ' <div class="col-12 centerx detail_infowindo">'
+        +' <div class="col-12 title_infowindow">etude d\'exploitation</div> '
+        +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+        +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+        +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+        + '</div></div>',
         map: map ,
         icon: 'assets/img/page-realisations/pin.png',
         animation:google.maps.Animation.DROP
@@ -348,10 +353,14 @@ google.maps.event.addListener(map, "click",
     });
     makeMarker({ 
         position: new google.maps.LatLng(47.19962734,-1.53885841),
-        content:    '<div class="text-center p-1"><div class="col-12 centerx title_infowindow">ACEH Avignon</div>'
-        + '<div class="col-12 centerx icone_infowindow"><img class="ico_infowindow" src="assets/img/small_pin.png" /></div>'
-        + ' <div class="col-12 centerx adresse_infowindo"> 2A, Avenue Fontcouverte, <br> 84000 Avignon</div>'
-        + '<div class="col-12 centerx tel_infowindo"> 04 90 32 41 79 </div></div>',
+        content:    '<div class="gallery-real text-left p-0">'
+                  + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+                  + ' <div class="col-12 centerx detail_infowindo">'
+                  +' <div class="col-12 title_infowindow">etude d\'exploitation</div> '
+                  +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+                  +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+                  +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+                  + '</div></div>',
         map: map ,
         icon: 'assets/img/page-realisations/pin.png',
         animation:google.maps.Animation.DROP
@@ -364,15 +373,449 @@ google.maps.event.addListener(map, "click",
     }
     
 
+ //////////////////////Map ètudes ////////////////////////
+
+
+
+ if($("#map2x").length){
+    var mapOpts2x = {
+        center:new google.maps.LatLng(47.21537068,-1.55387878) ,
+        zoom: 12,
+        disableDefaultUI: true,
+        styles: [{
+            stylers: [{
+              saturation: -100
+            }]
+          }]
+     
+     }; 
     
-};
+    var map2x = new google.maps.Map(document.getElementById("map2x"), mapOpts2x);
+    
+    
+    var infoWindow2x = new google.maps.InfoWindow({
+        content: "message",
+        maxWidth: 220}); 
+    var markerBounds2x = new google.maps.LatLngBounds(); 
+    var markerArray2x = []; 
+    
+    
+    
+    
+    
+    /* google.maps.event.addListener(map2x, "click", 
+      function () { infoWindow2x.close(); }); 
+    
+    
+      google.maps.event.addListener(map2x, "mouseout", 
+      function () { infoWindow2x.close(); }); */
+    
+    
+    
+    
+      function makeMarker2x(options) { 
+        var pushPin2x = new google.maps.Marker({ map: map2x }); 
+    
+        pushPin2x.setOptions(options); 
+    
+        google.maps.event.addListener(pushPin2x, "click", 
+        function () { infoWindow2x.setOptions(options);
+    
+          
+       
+        infoWindow2x.open(map2x); });
+    
+        google.maps.event.addListener(pushPin2x, "mouseover", 
+        function () { infoWindow2x.setOptions(options);
+    
+          
+       
+        infoWindow2x.open(map2x); });
+    
+        markerBounds2x.extend(options.position); 
+        markerArray2x.push(pushPin2x);
+      
+       
+    }
+    
+      
+    
+        makeMarker2x({ 
+            position: new google.maps.LatLng(47.21537068,-1.55387878),
+    
+            content:    '<div class="gallery-real text-left p-0">'
+                      + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+                      + ' <div class="col-12 centerx detail_infowindo">'
+                      +' <div class="col-12 title_infowindow">etude d\'exploitation 2x</div> '
+                      +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+                      +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+                      +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+                      + '</div></div>',
+            map: map2x ,
+            icon: 'assets/img/page-realisations/pin.png',
+            animation:google.maps.Animation.DROP
+    
+        });
+        makeMarker2x({ 
+            position: new google.maps.LatLng(47.19694467,-1.58297539),
+            content:    '<div class="gallery-real text-left p-0">'
+            + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+            + ' <div class="col-12 centerx detail_infowindo">'
+            +' <div class="col-12 title_infowindow">etude d\'exploitation 2x</div> '
+            +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+            +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+            +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+            + '</div></div>',
+            map: map2x ,
+            icon: 'assets/img/page-realisations/pin.png',
+            animation:google.maps.Animation.DROP
+    
+        });
+        makeMarker2x({ 
+            position: new google.maps.LatLng(47.19962734,-1.53885841),
+            content:    '<div class="gallery-real text-left p-0">'
+                      + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+                      + ' <div class="col-12 centerx detail_infowindo">'
+                      +' <div class="col-12 title_infowindow">etude d\'exploitation 2x</div> '
+                      +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+                      +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+                      +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+                      + '</div></div>',
+            map: map2x ,
+            icon: 'assets/img/page-realisations/pin.png',
+            animation:google.maps.Animation.DROP
+    
+        });
+    
+    
+    
+    
+        }
+
+
+
+//////////////////////Map expertise/ conseil ////////////////////////
+
+
+
+if($("#map3x").length){
+    var mapOpts3x = {
+        center:new google.maps.LatLng(47.21537068,-1.55387878) ,
+        zoom: 12,
+        disableDefaultUI: true,
+        styles: [{
+            stylers: [{
+              saturation: -100
+            }]
+          }]
+     
+     }; 
+    
+    var map3x = new google.maps.Map(document.getElementById("map3x"), mapOpts3x);
+    
+    
+    var infoWindow3x = new google.maps.InfoWindow({
+        content: "message",
+        maxWidth: 220}); 
+    var markerBounds3x = new google.maps.LatLngBounds(); 
+    var markerArray3x = []; 
+    
+    
+    
+    
+    
+    /*google.maps.event.addListener(map3x, "click", 
+      function () { infoWindow3x.close(); }); 
+    
+    
+      google.maps.event.addListener(map3x, "mouseout", 
+      function () { infoWindow3x.close(); }); */
+    
+    
+    
+    
+      function makeMarker3x(options) { 
+        var pushPin3x = new google.maps.Marker({ map: map3x }); 
+    
+        pushPin3x.setOptions(options); 
+    
+        google.maps.event.addListener(pushPin3x, "click", 
+        function () { infoWindow3x.setOptions(options);
+    
+          
+       
+        infoWindow3x.open(map3x); });
+    
+        google.maps.event.addListener(pushPin3x, "mouseover", 
+        function () { infoWindow3x.setOptions(options);
+    
+          
+       
+        infoWindow3x.open(map3x); });
+    
+        markerBounds3x.extend(options.position); 
+        markerArray3x.push(pushPin3x);
+      
+       
+    }
+    
+      
+    
+        makeMarker3x({ 
+            position: new google.maps.LatLng(47.21537068,-1.55387878),
+    
+            content:    '<div class="gallery-real text-left p-0">'
+                      + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+                      + ' <div class="col-12 centerx detail_infowindo">'
+                      +' <div class="col-12 title_infowindow">etude d\'exploitation 3x</div> '
+                      +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+                      +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+                      +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+                      + '</div></div>',
+            map: map3x ,
+            icon: 'assets/img/page-realisations/pin.png',
+            animation:google.maps.Animation.DROP
+    
+        });
+        makeMarker3x({ 
+            position: new google.maps.LatLng(47.19694467,-1.58297539),
+            content:    '<div class="gallery-real text-left p-0">'
+            + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+            + ' <div class="col-12 centerx detail_infowindo">'
+            +' <div class="col-12 title_infowindow">etude d\'exploitation 3x</div> '
+            +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+            +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+            +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+            + '</div></div>',
+            map: map3x ,
+            icon: 'assets/img/page-realisations/pin.png',
+            animation:google.maps.Animation.DROP
+    
+        });
+        makeMarker3x({ 
+            position: new google.maps.LatLng(47.19962734,-1.53885841),
+            content:    '<div class="gallery-real text-left p-0">'
+                      + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+                      + ' <div class="col-12 centerx detail_infowindo">'
+                      +' <div class="col-12 title_infowindow">etude d\'exploitation 3x</div> '
+                      +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+                      +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+                      +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+                      + '</div></div>',
+            map: map3x ,
+            icon: 'assets/img/page-realisations/pin.png',
+            animation:google.maps.Animation.DROP
+    
+        });
+    
+    
+    
+    
+        }
+    
+    
+
+//////////////////////vente Logiciel ////////////////////////
+
+
+
+if($("#map4x").length){
+    var mapOpts4x = {
+        center:new google.maps.LatLng(47.21537068,-1.55387878) ,
+        zoom: 12,
+        disableDefaultUI: true,
+        styles: [{
+            stylers: [{
+              saturation: -100
+            }]
+          }]
+     
+     }; 
+    
+    var map4x = new google.maps.Map(document.getElementById("map4x"), mapOpts4x);
+    
+    
+    var infoWindow4x = new google.maps.InfoWindow({
+        content: "message",
+        maxWidth: 220}); 
+    var markerBounds4x = new google.maps.LatLngBounds(); 
+    var markerArray4x = []; 
+    
+    
+    
+    
+    
+    /*google.maps.event.addListener(map4x, "click", 
+      function () { infoWindow4x.close(); }); 
+    
+    
+      google.maps.event.addListener(map4x, "mouseout", 
+      function () { infoWindow4x.close(); }); */
+    
+    
+    
+    
+      function makeMarker4x(options) { 
+        var pushPin4x = new google.maps.Marker({ map: map4x }); 
+    
+        pushPin4x.setOptions(options); 
+    
+        google.maps.event.addListener(pushPin4x, "click", 
+        function () { infoWindow4x.setOptions(options);
+    
+          
+       
+        infoWindow4x.open(map4x); });
+    
+        google.maps.event.addListener(pushPin4x, "mouseover", 
+        function () { infoWindow4x.setOptions(options);
+    
+          
+       
+        infoWindow4x.open(map4x); });
+    
+        markerBounds4x.extend(options.position); 
+        markerArray4x.push(pushPin4x);
+      
+       
+    }
+    
+      
+    
+        makeMarker4x({ 
+            position: new google.maps.LatLng(47.21537068,-1.55387878),
+    
+            content:    '<div class="gallery-real text-left p-0">'
+                      + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+                      + ' <div class="col-12 centerx detail_infowindo">'
+                      +' <div class="col-12 title_infowindow">etude d\'exploitation 4x</div> '
+                      +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+                      +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+                      +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+                      + '</div></div>',
+            map: map4x ,
+            icon: 'assets/img/page-realisations/pin.png',
+            animation:google.maps.Animation.DROP
+    
+        });
+        makeMarker4x({ 
+            position: new google.maps.LatLng(47.19694467,-1.58297539),
+            content:    '<div class="gallery-real text-left p-0">'
+            + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+            + ' <div class="col-12 centerx detail_infowindo">'
+            +' <div class="col-12 title_infowindow">etude d\'exploitation 4x</div> '
+            +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+            +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+            +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+            + '</div></div>',
+            map: map4x ,
+            icon: 'assets/img/page-realisations/pin.png',
+            animation:google.maps.Animation.DROP
+    
+        });
+        makeMarker4x({ 
+            position: new google.maps.LatLng(47.19962734,-1.53885841),
+            content:    '<div class="gallery-real text-left p-0">'
+                      + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+                      + ' <div class="col-12 centerx detail_infowindo">'
+                      +' <div class="col-12 title_infowindow">etude d\'exploitation 4x</div> '
+                      +' <div class="col-12 projet_infowindow">travaux de création du pem</div> '
+                      +' <div class="col-12 adresse_infowindow">gare de nantes</div> '
+                      +' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> '
+                      + '</div></div>',
+            map: map4x ,
+            icon: 'assets/img/page-realisations/pin.png',
+            animation:google.maps.Animation.DROP
+    
+        });
+    
+    
+    }
+   
+    
 
 
 
 
+////////////////////////////////
 
+if($("#map5x").length){
+    var mapOpts5x = {
+        center:new google.maps.LatLng(43.957767,4.754659) ,
+        zoom: 17,
+        disableDefaultUI: true,
+       
+     
+     }; 
+    
+    var map5x = new google.maps.Map(document.getElementById("map5x"), mapOpts5x);
+    var markerBounds5x = new google.maps.LatLngBounds(); 
+    var markerArray5x = []; 
+
+      function makeMarker5x(options) { 
+        var pushPin5x = new google.maps.Marker({ map: map5x }); 
+    
+        pushPin5x.setOptions(options); 
+    
+      
+        markerBounds5x.extend(options.position); 
+        markerArray5x.push(pushPin5x);
+      
+       
+    }
+    
+      
+    
+        makeMarker5x({ 
+            position: new google.maps.LatLng(43.957767,4.754659),
+            map: map5x ,
+            animation:google.maps.Animation.DROP
+    
+        });
+   
+        }
+
+
+        if($("#map6x").length){
+            var mapOpts6x = {
+                center:new google.maps.LatLng(48.846379,2.373201) ,
+                zoom: 17,
+                disableDefaultUI: true,
+               
+             
+             }; 
+            
+            var map6x = new google.maps.Map(document.getElementById("map6x"), mapOpts6x);
+            var markerBounds6x = new google.maps.LatLngBounds(); 
+            var markerArray6x = []; 
+        
+              function makeMarker6x(options) { 
+                var pushPin6x = new google.maps.Marker({ map: map6x }); 
+            
+                pushPin6x.setOptions(options); 
+            
+              
+                markerBounds6x.extend(options.position); 
+                markerArray6x.push(pushPin6x);
+              
+               
+            }
+            
+              
+            
+                makeMarker6x({ 
+                    position: new google.maps.LatLng(48.846379,2.373201),
+                    map: map6x ,
+                    animation:google.maps.Animation.DROP
+            
+                });
+           
+                }
+
+
+
+        }
 });
-
 
 function rech_releaseEvents(el) {
 

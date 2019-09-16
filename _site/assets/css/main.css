@@ -374,7 +374,12 @@ input[type=number]::-webkit-outer-spin-button
 }
 
 
-
+#map5x{
+    height: 350px;
+}
+#map6x{
+    height: 350px;
+}
 
 /*-----------------------------------------------------------------*/
 /*------------------------------COMPETENCES-----------------------*/
@@ -609,7 +614,7 @@ input[type=number]::-webkit-outer-spin-button
     padding:0;
     
  /*   width:180px ; */
-    transform: translate(-50%,-130%);
+    transform: translate(-50%,-115%);
 
 }
 
@@ -635,22 +640,39 @@ height:60%;
 .detail_infowindo{
     text-align: left ;
     font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    padding:0;
 
 }
-
+ 
 .title_infowindow{
     text-transform: uppercase ;
+    padding-top:15px;
     color:#a52c43;
-    font-size: 14px;
+    font-size: 16px;
     }
 .projet_infowindow{
-padding-top:10px;
-}
-.adresse_infowindow{
+    padding-top:10px;
+text-transform: uppercase ;
 color: #bcbcbc;
 }
+.adresse_infowindow{
+
+text-transform: uppercase ;
+color:#a52c43;
+}
 .sav_plus_infowindow{
+    text-transform: uppercase ;
+    margin-top:25px;
     color:#a52c43;
+}
+.btn-color-infowindow {
+    border: 1px solid #942625;
+    padding: 7px 14px; 
+    color: white !important;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #942625;
 }
 /***************************************
 **************CLIENTS ***********
@@ -747,8 +769,8 @@ padding:0;
     -webkit-transform: matrix( 0.65327673530743,0,0,0.65565876916097,0,0);
     box-shadow: 7px 7px 7px 7px rgba(0,0,0,.075);
     position: absolute;
-    width: 120%;
-    height: 120%;
+    width: 110%;
+    height: 110%;
 }
 .contactez:hover{
 cursor: pointer;
@@ -760,6 +782,80 @@ text-shadow: 1px 1px 2px #000000;
 }
 
 
+.contactx{
+    margin-top:100px;
+    background-image:  url(../img/page-nos-metiers/contact.png);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;              
+    height:350px;
+    vertical-align: middle;
+    }
+
+
+    .titl1-gray {
+        list-style: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 18px;
+        font-weight: 500;
+     
+        color: #9d9e9f !important;
+        font-weight:600;
+    }
+
+    .title-section-1 {
+        font-size: 28px;
+   
+        color: rgb(148, 38, 38);
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.2;
+        text-align: left;
+        margin-bottom: 50px;
+        margin-top: 26px;
+    
+    }
+
+    .btn-voir-poste{
+        -webkit-border-radius: 0;
+-moz-border-radius: 0;
+-o-border-radius: 0;
+border-radius: 0;
+border: 0;
+        font-weight:600;
+padding: 10px 15px;
+    }
+    .contact-img{
+        top:auto;
+        bottom:0;
+        position:absolute ;
+    }
+ div.read-all-realisation> a > img{
+     width:36px;
+ }
+ .title-act-contact{
+    height: 120px;
+ }
+ .read-all-realisation{
+bottom:0;
+ }
+ .sous-title-red {
+    font-size: 19px;
+    
+    color: rgb(148, 38, 38);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 22px;
+}
+.titl2-gray {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #9d9e9f;
+    margin-bottom: 43px;
+    margin-top: 18px;
+}
 /***************************************
 **************FOOTER ***********
 ***************************************/
@@ -1478,6 +1574,10 @@ background-image:  url(../img/actualites/actualites-2.png);
             cursor: pointer;
             width:100%;
         }
+        .bg-select::placeholder { 
+            color: white !important;
+            opacity: 1 !important; 
+          }
         .bg-select:hover{
             opacity: 1;
             cursor: pointer;
@@ -1573,6 +1673,9 @@ background-image:  url(../img/actualites/actualites-2.png);
  
 }
 
+.contactx{
+    margin-top:90px;
+}
 .realisations-recherche .nav-tabs .nav-link {
     font-size: 16px;
     
@@ -1606,7 +1709,11 @@ background-image:  url(../img/actualites/actualites-2.png);
     #search-link{
         padding-right : 0 !important ;
     }
-
+    .contact-img{
+        top:auto;
+        bottom:auto;
+        position:relative ;
+    }
 
     .link-navbar {
         padding-right: 0.5rem !important;
@@ -1710,6 +1817,8 @@ left: 15%;
 .contactez{
     font-size:30px;
 }
+
+
 /***************************************
 **************PAGE COMPETENCES *********
 ***************************************/
@@ -1721,7 +1830,10 @@ left: 15%;
     margin-top:70px;
     height:300px;
     }
-    
+    .contactx{
+        margin-top:70px;
+        height:300px;
+    }   
    .header-realisation{
         font-size: 45px;
         top: 25%;
@@ -1818,7 +1930,11 @@ left: 15%;
     .link-navbar:hover {
         color: #942626 !important;
     }
-
+    .contact-img{
+        top:auto;
+        bottom:auto;
+        position:relative ;
+    }
     .selected:before {
         content: none;
     }
@@ -1927,6 +2043,7 @@ left: 15%;
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .div-contact{
     font-size:22px;
     text-align: left!important;
@@ -1949,6 +2066,10 @@ left: 15%;
     margin-top:80px;
     height:200px;
     }
+    .contactx{
+        margin-top:80px;
+        height:200px;
+    }  
     
     .header-realisation{
     font-size: 32px;
@@ -2049,7 +2170,11 @@ left: 15%;
     .selected:before {
         content: none;
     }
-
+    .contact-img{
+        top:auto;
+        bottom:auto;
+        position:relative ;
+    }
     .link-navbar {
         padding-top: 15px;
         border-bottom: 2px solid white;
@@ -2174,7 +2299,10 @@ left: 15%;
 margin-top:70px;
 height:200px;
 }
-
+.contactx{
+    margin-top:70px;
+    height:200px;
+}  
 .header-realisation{
 font-size: 32px;
 top: 18%;
