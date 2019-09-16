@@ -272,7 +272,9 @@ var mapOpts = {
 var map = new google.maps.Map(document.getElementById("map1"), mapOpts);
 
 
-var infoWindow = new google.maps.InfoWindow({content: "message"}); 
+var infoWindow = new google.maps.InfoWindow({
+    content: "message",
+    maxWidth: 220}); 
 var markerBounds = new google.maps.LatLngBounds(); 
 var markerArray = []; 
 
@@ -284,8 +286,8 @@ google.maps.event.addListener(map, "click",
   function () { infoWindow.close(); }); 
 
 
-  google.maps.event.addListener(map, "mouseout", 
-  function () { infoWindow.close(); }); 
+ // google.maps.event.addListener(map, "mouseout", 
+ // function () { infoWindow.close(); }); 
 
 
 
@@ -319,12 +321,15 @@ google.maps.event.addListener(map, "click",
 
     makeMarker({ 
         position: new google.maps.LatLng(47.21537068,-1.55387878),
-       
-        content:    '<div class="text-left p-0">'
-                  +'<div class="col-12 centerx title_infowindow"> ACEH Montpelier </div>'
-                  + '<div class="col-12 centerx icone_infowindow"><img class="ico_infowindow" src="assets/img/small_pin.png" /></div>'
-                  + ' <div class="col-12 centerx adresse_infowindo"> adresse Montpellier line1 <br> adresse Montpellier line2 </div>'
-                  + '<div class="col-12 centerx tel_infowindo"> 12 34 56 78 90 </div></div>',
+
+        content:    '<div class="gallery-real text-left p-0">'
+                  + '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />'
+                  + ' <div class="col-12 centerx detail_infowindo">'
+                  +' <div clas="col-12 title_infowindow">etude d\'exploitation</div> '
+                  +' <div clas="col-12 projet_infowindow">travaux de création du pem</div> '
+                  +' <div clas="col-12 adresse_infowindow">gare de nantes</div> '
+                  +' <div clas="col-12 sav_plus_infowindow"><a href="#" class="card-link btn-color  ">En savoir plus</a></div> '
+                  + '</div></div>',
         map: map ,
         icon: 'assets/img/page-realisations/pin.png',
         animation:google.maps.Animation.DROP
