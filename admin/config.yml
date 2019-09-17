@@ -42,7 +42,7 @@ collections:
   - name: "actualites" 
     label: "Actualités" 
     folder: "_actualites"
-    file: "_data/site.yml"
+    file: "_data/actualite.yml"
     sort: "date:asc" 
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
