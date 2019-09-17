@@ -12,16 +12,26 @@ permalink: test
         <h1>Test</h1>
 
       
+      
+    
+        <ul>
+                {% for collectionx in site.news%}
+            <li>{{ collectionx }}</li>
+            {% endfor %}
+        </ul>
+    
+     <hr> 
+      
 
-       
-        {% for news in site.actualites %}
 
 
-        {{ news.name }}
+     <h1>All site</h1>
+        <ul>
+                {% for collection in site.data%}
+            <li>{{ collection }}</li>
+            {% endfor %}
+        </ul>
 
-        <hr>
-
-        {%endfor%}
     
 </div>
 
