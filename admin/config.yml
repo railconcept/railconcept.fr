@@ -39,14 +39,14 @@ collections:
                  name: "country"
                  widget: "string"    
 
-  - name: "actualites" # Used in routes, ie.: /admin/collections/:slug/edit
-    label: "Actualités" # Used in the UI, ie.: "New Post"
-    folder: "_actualites" # The path to the folder where the documents are stored
-    sort: "date:desc" # Default is title:asc
-    create: true # Allow users to create new documents in this collection
+  - name: "actualites" 
+    label: "Actualités" 
+    folder: "_actualites"
+    sort: "date:desc" 
+    create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: name
-    fields: # The fields each document in this collection have
+    fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
     - {label: "Name", name: "name", widget: "string"} 
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
