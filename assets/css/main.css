@@ -833,6 +833,7 @@ padding: 10px 15px;
     }
  div.read-all-realisation> a > img{
      width:36px;
+     height:100%;
  }
  .title-act-contact{
     height: 120px;
