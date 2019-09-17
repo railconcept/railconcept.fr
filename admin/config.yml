@@ -5,40 +5,6 @@ backend:
 media_folder : assets/img/uploads
 
 collections:
-  - name: "website-settings"
-    label:  "Website settings"
-    files:
-     - label: "Website settings"
-       name: "site"
-       file: "_data/site.yml"
-       fields:
-        - label: "Tel"
-          name: "tel"
-          widget: "string"
-        - label: "Tel display"
-          name: "tel_display"
-          widget: "string"
-        - label: "SEO"
-          name: "seo"
-          widget: "object"
-          fields:
-           - label: "Website description"
-             name: "tagline"
-             widget: "string"
-           - label: "Location"
-             name: "location"
-             widget: "object"
-             fields:
-               - label: "Street adress"
-                 name: "street_adress"
-                 widget: "string"
-               - label: "Region"
-                 name: "region"
-                 widget: "string"
-               - label: "Country"
-                 name: "country"
-                 widget: "string"    
-
   - name: "actualites" 
     label: "Actualités" 
     folder: "_actualites"
