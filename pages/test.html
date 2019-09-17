@@ -1,0 +1,35 @@
+---
+title: Test
+layout: head
+permalink: test
+---
+
+
+
+
+
+<div style="margin-top:150px;">
+        <h1>Test</h1>
+
+      
+
+       
+        {% for news in site.data.actualites %}
+
+
+        {{ news.name }}
+
+        <hr>
+
+        {%endfor%}
+    
+</div>
+
+
+
+
+
+
+
+{% include contact.html %}
+{% include footer.html %}
