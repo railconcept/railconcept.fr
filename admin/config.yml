@@ -1,0 +1,61 @@
+backend: 
+  name: github
+  repo: railconcept/railconcept
+
+media_folder : assets/img/uploads
+
+collections:
+  - label: "website settings"
+    name: "website_settings"
+    files:
+     - label: "Géneral settings"
+       name: "general_settings"
+       file: "_data/website_settings.yml"
+       fields:
+        - label: SEO
+          name: seo
+          widget: object
+          fields:
+           - {label: Tel (+code pays), name: tel, widget: string}
+           - {label: Tel affiché, name: tel_display, widget: string}
+           - {label: Website description, name: website_desc, widget: string}
+           - label: "Location"
+             name: "location"
+             widget: "object"
+             fields:
+              - {label: Street adress, name: street_adress, widget: string}
+              - {label: Region, name: region, widget: string}
+              - {label: Country, name: country, widget: string}
+  - label: "Actualités settings"
+    name: "tags"
+    folder: "_tags"
+    slug: "{{slug}}"
+    identifier_field: name
+    fields:
+     - {label: "TAG"  , name: "name", widget: "string"}
+  - label: "Actualités" 
+    name: "post"
+    folder: "_posts"
+    sort: "date:desc" 
+    create: true 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: name
+    fields:
+    - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
+    - label: "Actualité"
+      name: "news"
+      widget: "object" 
+      fields:
+        - {label: "Titre actualité", name: "name", widget: "string"} 
+        - {label: "TAGS",  name: "tags",  widget: "relation",  collection: "tags",  searchFields: ["name"],  valueField: "name",  displayFields: ["name"] , multiple: true }
+        - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
+        - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
+    - label: "Actualité photo"
+      name: "news_photo"
+      widget: "object" 
+      fields:
+        - {label: "Photo 1", name: "photo_news1", widget: "image"}
+        - {label: "Photo 2", name: "photo_news2", widget: "image"}
+        - {label: "Photo 3", name: "photo_news3", widget: "image"}
+    - {label: "URL Video youtube", name: "video_news", widget: "string"}             
+  
