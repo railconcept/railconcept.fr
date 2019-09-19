@@ -5,24 +5,27 @@ backend:
 media_folder : assets/img/uploads
 
 collections:
-  - label: "Géneral settings"
-    name: "general_settings"
-    file: "_data/website_settings.yml"
-    fields:
-     - label: SEO
-       name: seo
-       widget: object
+  - label: "website settings"
+    name: "website_settings"
+    files:
+     - label: "Géneral settings"
+       name: "general_settings"
+       file: "_data/website_settings.yml"
        fields:
-        - {label: Tel (+code pays), name: tel, widget: string}
-        - {label: Tel affiché, name: tel_display, widget: string}
-        - {label: Website description, name: website_desc, widget: string}
-        - label: "Location"
-          name: "location"
-          widget: "object"
+        - label: SEO
+          name: seo
+          widget: object
           fields:
-           - {label: Street adress, name: street_adress, widget: string}
-           - {label: Region, name: region, widget: string}
-           - {label: Country, name: country, widget: string}
+           - {label: Tel (+code pays), name: tel, widget: string}
+           - {label: Tel affiché, name: tel_display, widget: string}
+           - {label: Website description, name: website_desc, widget: string}
+           - label: "Location"
+             name: "location"
+             widget: "object"
+             fields:
+              - {label: Street adress, name: street_adress, widget: string}
+              - {label: Region, name: region, widget: string}
+              - {label: Country, name: country, widget: string}
   - label: "Actualités settings"
     name: "tags"
     folder: "_tags"
