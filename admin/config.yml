@@ -49,13 +49,7 @@ collections:
       widget: "object" 
       fields:
         - {label: "Titre actualité", name: "name", widget: "string"} 
-        - {label: "TAG1" , name: "tag1" , widget: "select" , options: ["Oui","Non"]}
-        - label: "TAGS"
-          name: "tags"
-          widget: "relation"
-          collection: "website_settings"
-          searchFields: ["tags.tag1", "tags"]
-          displayFields: ["tags.tag1", "tags"]
+        - {label: "{{data.website_settings.tags.tag1}}" , name: "tag1" , widget: "select" , options: ["Oui","Non"]}
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
