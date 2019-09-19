@@ -39,7 +39,6 @@ collections:
          - label: "Country"
            name: "country"
            widget: "string"    
-
   - label: "Actualités" 
     name: "actualites"
     folder: "_actualites"
