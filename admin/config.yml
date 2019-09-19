@@ -18,7 +18,7 @@ collections:
             fields:
               - {label: Tel (+code pays), name: tel, widget: string}
               - {label: Tel affiché, name: tel_display, widget: string}
-              - {label: Website description, name: tagline, widget: string}
+              - {label: Website description, name: website_desc, widget: string}
               - label: "Location"
                 name: "location"
                 widget: "object"
