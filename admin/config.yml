@@ -5,10 +5,10 @@ backend:
 media_folder : assets/img/uploads
 
 collections:
- - label: "Website settings"
-   name: "site"
-   file: "_data/site.yml"
-   fields:
+  - label: "Website settings"
+    name: "site"
+    file: "_data/site.yml"
+    fields:
     - label: "Tel"
       name: "tel"
       widget: "string"
@@ -35,7 +35,6 @@ collections:
          - label: "Country"
            name: "country"
            widget: "string"    
-
   - label: "Actualités" 
     name: "actualites"
     folder: "_actualites"
