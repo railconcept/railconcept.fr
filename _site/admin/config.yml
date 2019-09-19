@@ -48,7 +48,7 @@ collections:
       name: "news"
       widget: "object" 
       fields:
-        - {label: "TAGS",  name: "tags",  widget: "relation",  collection: "tags",  searchFields: ["name"],  valueField: "name",  displayFields: ["name"] , multiple: true }
+        - {label: "TAGS",  name: "tags",  widget: "relation",  collection: "tags",  searchFields: ["name"],  valueField: "tag_val",  displayFields: ["name"] , multiple: true }
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
