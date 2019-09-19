@@ -5,21 +5,31 @@ permalink: test
 ---
 
 
+
+
+
 <div style="margin-top:150px;">  
 
      <h1>All site</h1>
         <ul>
                 {% for post in site.posts %}
-            <li>{{ post.title }}</li>
+            <li>{{ post }}</li>
             {% endfor %}
         </ul>
-<hr>
 
- 
-
+        <hr>
+        <ul>
+                {% for collection in site%}
+            <li>{{ collection }}</li>
+            {% endfor %}
+        </ul>
 </div>
 
 
 
 
 
+
+
+{% include contact.html %}
+{% include footer.html %}
