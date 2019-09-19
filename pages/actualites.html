@@ -51,7 +51,11 @@ permalink: actualites
 
 
     <!--Gallerie Actualites-->
-
+    <ul>
+    {% for tagx in site.tags%}
+    <li>{{tagx}} </li> 
+    {% endfor %}
+    </ul>
     <section class=" gal-real mt-5 mb-5">
         <div class="container">
 
@@ -60,356 +64,39 @@ permalink: actualites
                 <div id="filtre-div" class="filtre-div  col-12 pl-0 pr-0 ">
                     <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
                         onclick="filtrer_act('all');">voir tout</button>
-                    <button id="tag1" class="btn btn-default filter-button text-uppercase"
-                        onclick="filtrer_act('tag1');">tag 1</button>
-                    <button id="tag2" class="btn btn-default filter-button text-uppercase"
-                        onclick="filtrer_act('tag2');">tag 2</button>
-                    <button id="tag3" class="btn btn-default filter-button text-uppercase"
-                        onclick="filtrer_act('tag3');">tag 3</button>
+
+                        {% for tagx in site.data.tags %}
+                    <button id="{{tagx.tag_val}}" class="btn btn-default filter-button text-uppercase"
+                        onclick="filtrer_act('{{tagx.tag_val}}');">{{tagx.name}}</button>
+                        {% endfor %}
                   
 
                 </div>
 
                 <div class="row col-12 pl-0 pr-0">
 
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 tag2 tag3 ">
+                        {% for post in site.posts %}
+
+                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5
+                    {% for tags in post.news.tags%}
+                       {{tags}}
+                      {% endfor %}
+                      ">
                         <div class="card card-border-none">
                             <div class="act-tag">
                                
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                                <img src="{{post.news_photo.photo_news1}}" class="img-act img-fluid">
                             </div>
                             <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                    tag1 tag2 tag3 </div>
-                                <span class="date-news ">13 JUIN 2019</span>
+                                <div class="paragraphe-actualites mb-3">  {{ post.news.news_1 | strip_html | truncatewords: 50 }}    </div>
+                                <span class="date-news ">{{ post.date | date_to_long_string }}</span>
                                 <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
                             </div>
                         </div>
                     </div>
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 tag2 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
+                    
+                    {% endfor %}
 
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                    tag1 tag2 </div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag1</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag3 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag3</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1  ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag1 </div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5   tag2 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag2 </div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5   tag2 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag2</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 tag3 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag1 tag3
-                                </div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5    ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                
-                                </div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag3  ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag3</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5   tag2 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag2</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag1</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5   tag2 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag2</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag3 tag2 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag3 tag2</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1  ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag1</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5  tag1 tag2 tag3">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-6 mt-5   tag3 ">
-                        <div class="card card-border-none">
-                            <div class="act-tag">
-
-
-                                <img src="assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                            </div>
-                            <div class="card-body pl-0 pr-0">
-                                <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit,
-                                    sed do euismod tempor incididunt
-                                tag3</div>
-                                <span class="date-news ">13 JUIN 2019</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
