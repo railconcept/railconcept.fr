@@ -29,7 +29,6 @@ collections:
   - label: "Actualités settings"
     name: "tags"
     folder: "_tags"
-    create: true 
     slug: "{{slug}}"
     identifier_field: name
     fields:
