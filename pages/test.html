@@ -9,26 +9,17 @@ permalink: test
 
      <h1>All site</h1>
         <ul>
-                {% for collection in site.posts %}
-            <li>{{ collection }}</li>
+                {% for post in site.posts %}
+            <li>{{ post.title }}</li>
             {% endfor %}
         </ul>
 <hr>
 
-{{site.posts}}  
-        <hr>
-        <ul>
-         {% for collection in site%}
-         <li>{{ collection }}</li>
-         {% endfor %}
-        </ul>
+ 
+
 </div>
 
 
 
 
 
-
-
-{% include contact.html %}
-{% include footer.html %}
