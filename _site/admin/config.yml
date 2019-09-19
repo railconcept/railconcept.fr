@@ -33,6 +33,7 @@ collections:
     identifier_field: name
     fields:
      - {label: "TAG"  , name: "name", widget: "string"}
+     - {label: "tag val", name: "tag_val", widget: "hidden", default: "tag_i"}
   - label: "Actualités" 
     name: "post"
     folder: "_posts"
