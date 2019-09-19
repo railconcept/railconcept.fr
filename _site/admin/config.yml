@@ -5,27 +5,25 @@ backend:
 media_folder : assets/img/uploads
 
 collections:
-  - label: "Website settings"
-    name: "website_settings"
-    files:
-      - label: "Géneral settings"
-        name: "general_settings"
-        file: "_data/website_settings.yml"
+  - label: "Géneral settings"
+    name: "general_settings"
+    file: "_data/website_settings.yml"
+    fields:
+      - label: SEO
+        name: seo
+        widget: object
         fields:
-          - label: SEO
-            name: seo
-            widget: object
-            fields:
-              - {label: Tel (+code pays), name: tel, widget: string}
-              - {label: Tel affiché, name: tel_display, widget: string}
-              - {label: Website description, name: website_desc, widget: string}
-              - label: "Location"
-                name: "location"
-                widget: "object"
-                fields:
-                   - {label: Street adress, name: street_adress, widget: string}
-                   - {label: Region, name: region, widget: string}
-                   - {label: Country, name: country, widget: string}
+          - {label: Tel (+code pays), name: tel, widget: string}
+          - {label: Tel affiché, name: tel_display, widget: string}
+          - {label: Website description, name: website_desc, widget: string}
+          - label: "Location"
+              name: "location"
+              widget: "object"
+              fields:
+                - {label: Street adress, name: street_adress, widget: string}
+                - {label: Region, name: region, widget: string}
+                - {label: Country, name: country, widget: string}
+  
   - label: "Actualités settings"
     name: "tags"
     folder: "_tags"
@@ -48,13 +46,7 @@ collections:
       widget: "object" 
       fields:
         - {label: "Titre actualité", name: "name", widget: "string"} 
-        - label: "TAGS "
-          name: "tags"
-          widget: "object" 
-          fields: 
-             - {label: "TAG 1", name: "tag1", widget: "boolean", default: true} 
-             - {label: "TAG 2", name: "tag2", widget: "boolean", default: true} 
-             - {label: "TAG 3", name: "tag3", widget: "boolean", default: true} 
+        - {label: "TAGS",  name: "tags",  widget: "relation",  collection: "tags",  searchFields: ["tags.name"],  valueField: "tags.name",  displayFields: ["tags.name"] }
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
