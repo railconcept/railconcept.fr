@@ -43,13 +43,13 @@ collections:
     identifier_field: name
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
-    - {label: "Name", name: "name", widget: "string"} 
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
     - label: "Actualité"
       name: "news"
       widget: "object" 
       fields:
-        - {label: "Titre actualité", name: "title", widget: "string"} 
+        - {label: "Titre actualité", name: "name", widget: "string"} 
+        - {label: "TAG1" , name: "tag1" , widget: "select" , options: [{"Oui",value="1"},{"Non",value="0"}]}
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
