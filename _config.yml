@@ -9,10 +9,10 @@ plugins: # previously gems
  
 
 collections:
- - label: "Website settings"
-   name: "site"
-   file: "_data/site.yml"
-   fields:
+  - label: "Website settings"
+    name: "site"
+    file: "_data/site.yml"
+    fields:
     - label: "Tel"
       name: "tel"
       widget: "string"
