@@ -49,7 +49,7 @@ collections:
       widget: "object" 
       fields:
         - {label: "Titre actualité", name: "name", widget: "string"} 
-        - {label: "TAG1" , name: "tag1" , widget: "select" , options: [{"Oui",value="1"},{"Non",value="0"}]}
+        - {label: "TAG1" , name: "tag1" , widget: "select" , options: ["Oui","Non"] , default: ["Oui"]}
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
