@@ -26,6 +26,13 @@ collections:
                    - {label: Street adress, name: street_adress, widget: string}
                    - {label: Region, name: region, widget: string}
                    - {label: Country, name: country, widget: string}
+      - label: "Actualités settings"
+        name: "tags"
+        file: "_data/tags.yml"
+        fields:
+              - {label: TAG 1 , name: tag1, widget: string}
+              - {label: TAG 2 , name: tag2, widget: string}
+              - {label: TAG 3 , name: tag3, widget: string}
 
   - label: "Actualités" 
     name: "post"
