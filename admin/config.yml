@@ -54,8 +54,8 @@ collections:
           name: "tags"
           widget: "relation"
           collection: "website_settings"
-          searchFields: ["tags.tag1", "tags.tag2" , "tags.tag3"]
-          displayFields: ["tags.tag1", "tags.tag2" , "tags.tag3"]
+          searchFields: ["tags.tag1", "tags"]
+          displayFields: ["tags.tag1", "tags"]
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
