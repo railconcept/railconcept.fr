@@ -23,7 +23,6 @@ collections:
            - {label: Street adress, name: street_adress, widget: string}
            - {label: Region, name: region, widget: string}
            - {label: Country, name: country, widget: string}
-  
   - label: "Actualités settings"
     name: "tags"
     folder: "_tags"
@@ -31,7 +30,6 @@ collections:
     identifier_field: name
     fields:
      - {label: "TAG"  , name: "name", widget: "string"}
-
   - label: "Actualités" 
     name: "post"
     folder: "_posts"
