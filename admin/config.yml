@@ -6,39 +6,30 @@ media_folder : assets/img/uploads
 
 collections:
   - label: "Website settings"
-    name: "site"
-    file: "_data/site.yml"
-    fields:
-    - label: "Tel"
-      name: "tel"
-      widget: "string"
-    - label: "Tel display"
-      name: "tel_display"
-      widget: "string"
-    - label: "SEO"
-      name: "seo"
-      widget: "object"
-      fields:
-      - label: "Website description"
-        name: "tagline"
-        widget: "string"
-      - label: "Location"
-        name: "location"
-        widget: "object"
+    name: "website_settings"
+    files:
+      - label: "Géneral settings"
+        name: "general_settings"
+        file: "_data/website_settings.yml"
         fields:
-         - label: "Street adress"
-           name: "street_adress"
-           widget: "string"
-         - label: "Region"
-           name: "region"
-           widget: "string"
-         - label: "Country"
-           name: "country"
-           widget: "string"    
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - {label: Tel (+code pays), name: tel, widget: string}
+              - {label: Tel affiché, name: tel_display, widget: string}
+              - {label: Website description, name: tagline, widget: string}
+              - label: "Location"
+                name: "location"
+                widget: "object"
+                fields:
+                   - {label: Street adress, name: street_adress, widget: string}
+                   - {label: Region, name: region, widget: string}
+                   - {label: Country, name: country, widget: string}
+
   - label: "Actualités" 
     name: "actualites"
     folder: "_actualites"
-    file: "_data/site.yml"
     sort: "date:asc" 
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -61,4 +52,5 @@ collections:
         - {label: "Photo 1", name: "photo_news1", widget: "image"}
         - {label: "Photo 2", name: "photo_news2", widget: "image"}
         - {label: "Photo 3", name: "photo_news3", widget: "image"}
-    - {label: "URL Video youtube", name: "video_news", widget: "string"}
+    - {label: "URL Video youtube", name: "video_news", widget: "string"}             
+    
