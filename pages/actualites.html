@@ -49,10 +49,10 @@ permalink: actualites
 
 
 
-    {{site.config}}
+ 
     <!--Gallerie Actualites-->
     <ul>
-    {% for tag in site%}
+    {% for tag in site.tags%}
     <li>{{tag}} </li> 
     {% endfor %}
     </ul>

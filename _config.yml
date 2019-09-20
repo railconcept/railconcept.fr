@@ -7,8 +7,4 @@ plugins: # previously gems
   - jekyll-feed
   - jekyll-seo-tag
 
-collections:
-  tags:
-    output: true
- 
 

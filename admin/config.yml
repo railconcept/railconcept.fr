@@ -28,8 +28,9 @@ collections:
               - {label: Country, name: country, widget: string}
   - label: "Actualités settings"
     name: "tags"
-    folder: "tags"
+    folder: "_tags"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: ".md"
     fields:
      - {label: "TAG" , name: "title", widget: "string"}
      - {label: "Tag value", name: "tag_val", widget: "hidden"}
@@ -40,8 +41,6 @@ collections:
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: name
-    editor:
-      preview: true
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
     - {label: "Titre actualité", name: "name", widget: "string"} 
