@@ -374,7 +374,12 @@
     </footer>
 
 
-
+    <script type="text/javascript"> 
+        let tagsss =[[],[]];
+         "{% for tagz in site.tags %}"
+             tagsss["{{tagz.tag_val}}"] = ["{{tagz.title}}"]
+          "{% endfor %}"
+      </script>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
