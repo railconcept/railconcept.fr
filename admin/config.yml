@@ -27,6 +27,14 @@ collections:
               - {label: Region, name: region, widget: string}
               - {label: Country, name: country, widget: string}
 
+  - label: "Actualités settings"
+    name: "tags"
+    folder: "_tags"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+     - {label: "TAG" , name: "title", widget: "string"}
+     - {label: "Tag value", name: "tag_val", widget: "hidden"} 
+     
   - label: "Actualités" 
     name: "post"
     folder: "_posts"
@@ -53,11 +61,5 @@ collections:
         - {label: "Photo 3", name: "photo_news3", widget: "image"}
     - {label: "URL Video youtube", name: "video_news", widget: "string"}   
 
-  - label: "Actualités settings"
-    name: "tags"
-    folder: "_tags"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-     - {label: "TAG" , name: "title", widget: "string"}
-     - {label: "Tag value", name: "tag_val", widget: "hidden"}          
+         
   
