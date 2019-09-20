@@ -86,7 +86,7 @@ permalink: actualites
                             <div class="card-body pl-0 pr-0">
                                 <div class="paragraphe-actualites mb-3">  {{ post.news.news_1 | strip_html | truncatewords: 50 }}    </div>
                                 <span class="date-news ">{{ post.date | date_to_long_string }}</span>
-                                <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                                <a href="{{ post.url | prepend: site.baseurl }}" class="card-link float-right ">LIRE LA SUITE</a>
                             </div>
                         </div>
                     </div>
