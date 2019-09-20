@@ -158,7 +158,9 @@ $(document).ready(function () {
         for($i=1;$i<4;$i++){
      
             if ($(this).hasClass("tag"+$i)) {
-                $tag += "<div class='tag tag_"+($i)+" col-md-12'>tag "+($i)+"</div>" ;
+
+            
+                $tag += "<div class='tag tag_"+($i)+" col-md-12'>"+tagsss['tag'+$i][0]+"</div>" ;
               }
         }
         $(this).children(":first").children(":first").prepend("<div class='row tags-row'>"+$tag+"</div>");   

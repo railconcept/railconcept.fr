@@ -106,5 +106,16 @@ permalink: actualites
         <ul id="paginate_real" class="pagination justify-content-end .borderless"></ul>
     </div>
 
+
+
+
+
     {% include contact.html %}
+
+    <script type="text/javascript"> 
+        let tagsss =[[],[]];
+         "{% for tagz in site.tags %}"
+             tagsss["{{tagz.tag_val}}"] = ["{{tagz.title}}"]
+          "{% endfor %}"
+      </script>
     {% include footer.html %}
