@@ -40,6 +40,7 @@ collections:
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: name
+    show_preview_links: true ;
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "news"}
     - {label: "Titre actualité", name: "name", widget: "string"} 
