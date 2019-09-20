@@ -8,3 +8,7 @@ plugins: # previously gems
   - jekyll-seo-tag
 
 
+collections:
+  tags:
+    output: true
+    permalink: /:collection/:title/
