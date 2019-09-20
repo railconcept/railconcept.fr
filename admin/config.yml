@@ -28,7 +28,7 @@ collections:
               - {label: Country, name: country, widget: string}
   - label: "Actualités settings"
     name: "tags"
-    folder: "_tags"
+    folder: "_posts/tags"
     lug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: name
     fields:
@@ -36,7 +36,7 @@ collections:
      - {label: "Tag value", name: "tag_val", widget: "hidden", default: "tag_i"}
   - label: "Actualités" 
     name: "post"
-    folder: "_posts"
+    folder: "_posts/acts"
     sort: "date:desc" 
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
