@@ -40,10 +40,9 @@ collections:
     sort: "date:desc" 
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    identifier_field: name
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
-    - {label: "Titre actualité", name: "name", widget: "string"} 
+    - {label: "Titre actualité", name: "title", widget: "string"} 
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
     - label: "Actualité"
       name: "news"
