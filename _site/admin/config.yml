@@ -43,14 +43,14 @@ collections:
     editor:
       preview: true
     fields:
-    - {label: "Layout", name: "layout", widget: "hidden", default: "news"}
+    - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
     - {label: "Titre actualité", name: "name", widget: "string"} 
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
     - label: "Actualité"
       name: "news"
       widget: "object" 
       fields:
-        - {label: "TAGS",  name: "tags",  widget: "relation",  collection: "tags",  searchFields: ["title"],  valueField: "tag_val",  displayFields: ["title"] , multiple: true }
+        - {label: "TAGS",  name: "tagx",  widget: "relation",  collection: "tags",  searchFields: ["title"],  valueField: "tag_val",  displayFields: ["title"] , multiple: true }
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
