@@ -32,7 +32,7 @@ collections:
     lug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: name
     fields:
-     - {label: "TAG"  , name: "name", widget: "string"}
+     - {label: "TAG" , name: "name", widget: "string"}
      - {label: "Tag value", name: "tag_val", widget: "hidden", default: "tag_i"}
   - label: "Actualités" 
     name: "post"
@@ -42,6 +42,7 @@ collections:
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: name
     fields:
+    - {label: "Layout", name: "layout", widget: "hidden", default: "news"}
     - {label: "Titre actualité", name: "name", widget: "string"} 
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
     - label: "Actualité"

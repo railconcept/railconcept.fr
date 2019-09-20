@@ -52,7 +52,7 @@ permalink: actualites
 
     <!--Gallerie Actualites-->
     <ul>
-    {% for tagx in site.tags%}
+    {% for tagx in site%}
     <li>{{tagx}} </li> 
     {% endfor %}
     </ul>
@@ -65,7 +65,7 @@ permalink: actualites
                     <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
                         onclick="filtrer_act('all');">voir tout</button>
 
-                        {% for tagx in site.data.tags %}
+                        {% for tagx in site.tags %}
                     <button id="{{tagx.tag_val}}" class="btn btn-default filter-button text-uppercase"
                         onclick="filtrer_act('{{tagx.tag_val}}');">{{tagx.name}}</button>
                         {% endfor %}
