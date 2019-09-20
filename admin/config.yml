@@ -28,15 +28,14 @@ collections:
               - {label: Country, name: country, widget: string}
   - label: "Actualités settings"
     name: "tags"
-    folder: "_posts/tags"
+    folder: "_tags"
     lug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    identifier_field: name
     fields:
-     - {label: "TAG" , name: "name", widget: "string"}
+     - {label: "TAG" , name: "title", widget: "string"}
      - {label: "Tag value", name: "tag_val", widget: "hidden", default: "tag_i"}
   - label: "Actualités" 
     name: "post"
-    folder: "_posts/acts"
+    folder: "_posts"
     sort: "date:desc" 
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
