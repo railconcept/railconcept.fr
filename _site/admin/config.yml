@@ -31,7 +31,7 @@ collections:
     folder: "_tags"
     lug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-     - {label: "TAG" , name: "title", widget: "string"}
+     - {label: "TAG" , name: "Title", widget: "string"}
      - {label: "Tag value", name: "tag_val", widget: "hidden", default: "tag_i"}
   - label: "Actualités" 
     name: "post"
@@ -40,7 +40,8 @@ collections:
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     identifier_field: name
-    show_preview_links: true ;
+    editor:
+      preview: true
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "news"}
     - {label: "Titre actualité", name: "name", widget: "string"} 
