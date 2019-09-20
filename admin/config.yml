@@ -29,10 +29,10 @@ collections:
   - label: "Actualités settings"
     name: "tags"
     folder: "_tags/"
-    lug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-     - {label: "TAG" , name: "Title", widget: "string"}
-     - {label: "Tag value", name: "tag_val", widget: "hidden", default: "tag_i"}
+     - {label: "TAG" , name: "title", widget: "string"}
+     - {label: "Tag value", name: "tag_val", widget: "hidden"}
   - label: "Actualités" 
     name: "post"
     folder: "_posts/"
