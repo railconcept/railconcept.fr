@@ -44,12 +44,6 @@ permalink: actualites
 
 
 
-    <ul>
-            {% for tagz in site.catnews %}
-            <li>test {{tagz}}</li>
-            {% endfor %}
-        
-        </ul>
 
 
 
@@ -67,9 +61,9 @@ permalink: actualites
                     <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
                         onclick="filtrer_act('all');">voir tout</button>
 
-                        {% for tagx in site.taggs %}
+                        {% for tagx in site.catnews %}
                     <button id="{{tagx.tag_val}}" class="btn btn-default filter-button text-uppercase"
-                        onclick="filtrer_act('{{tagx.tag_val}}');">{{tagx.name}}</button>
+                        onclick="filtrer_act('{{tagx.name}}');">{{tagx.title}}</button>
                         {% endfor %}
                   
 
@@ -120,8 +114,8 @@ permalink: actualites
 
     <script type="text/javascript"> 
         let tagsss =[[],[]];
-         "{% for tagz in site.taggs %}"
-             tagsss["{{tagz.tag_val}}"] = ["{{tagz.name}}"]
+         "{% for tagz in site.catnews %}"
+             tagsss["{{tagz.name}}"] = ["{{tagz.title}}"]
           "{% endfor %}"
       </script>
     {% include footer.html %}

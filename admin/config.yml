@@ -28,14 +28,6 @@ collections:
               - {label: Country, name: country, widget: string}
 
   - label: "Actualités settings"
-    name: "taggs"
-    folder: "_tags"
-    slug: "{{slug}}"
-    fields:
-     - {label: "TAG" , name: "title", widget: "string"}
-     - {label: "Tag value", name: "tag_val", widget: "hidden"} 
-
-  - label: "Actualités catégories"
     name: "catnews"
     folder: "_catnews"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -43,7 +35,7 @@ collections:
     fields:
      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
      - {label: "TAG" , name: "title", widget: "string"}
-     - {label: "Tag value", name: "name", widget: "string"}
+     - {label: "Tag value", name: "name", widget: "hidden"}
      
   - label: "Actualités" 
     name: "post"
@@ -59,7 +51,7 @@ collections:
       name: "news"
       widget: "object" 
       fields:
-        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "taggs",  searchFields: ["title"],  valueField: "tag_val",  displayFields: ["title"] , multiple: true }
+        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "catnews",  searchFields: ["title"],  valueField: "name",  displayFields: ["title"] , multiple: true }
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
