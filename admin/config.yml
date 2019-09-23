@@ -41,7 +41,7 @@ collections:
     slug: "{{slug}}"
     create: true
     fields:
-     - {label: "Layout", name: "layout", widget: "hidden", default: "default"} 
+     - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
      - {label: "TAG" , name: "title", widget: "string"}
      - {label: "Tag value", name: "catnews", widget: "hidden"}
      
