@@ -33,7 +33,7 @@ collections:
     slug: "{{slug}}"
     identifier_field: name
     fields:
-     - {label: "TAG" , name: "title", widget: "string"}
+     - {label: "TAG" , name: "name", widget: "string"}
      - {label: "Tag value", name: "tag_val", widget: "hidden"} 
      
   - label: "Actualités" 
@@ -51,7 +51,7 @@ collections:
       name: "news"
       widget: "object" 
       fields:
-        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "taggs",  searchFields: ["title"],  valueField: "tag_val",  displayFields: ["title"] , multiple: true }
+        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "taggs",  searchFields: ["name"],  valueField: "tag_val",  displayFields: ["title"] , multiple: true }
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
