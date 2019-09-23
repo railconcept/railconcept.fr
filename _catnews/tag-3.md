@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 'TAG 3'
-name: 'tag3'
+title: TAG 3
+catnews: tag3
 ---
 
