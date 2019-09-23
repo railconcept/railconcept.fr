@@ -148,14 +148,11 @@ layout: page
 
 {% include contact.html %}
 
-<script type="text/javascript">
-    let tagsss = [
-        [],
-        []
-    ];
-    "{% for tagz in site.tags %}"
-    tagsss["{{tagz.tag_val}}"] = ["{{tagz.title}}"]
-    "{% endfor %}"
-</script>
+<script type="text/javascript"> 
+    let tagsss =[[],[]];
+     "{% for tagz in site.catnews %}"
+         tagsss["{{tagz.name}}"] = ["{{tagz.title}}"]
+      "{% endfor %}"
+  </script>
 
 {% include footer.html %}
