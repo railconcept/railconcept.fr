@@ -1,6 +1,6 @@
 ---
 layout: default
-title: TAG 2
-name: tag2
+title: 'TAG 2'
+name: 'tag2'
 ---
 
