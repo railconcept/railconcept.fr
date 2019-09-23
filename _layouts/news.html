@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html dir="ltr" lang="fr">
-<head>
-        {% include head.html %}  
-</head>
-
-<body id="body">
-     
-    
-        {% include navbar.html %}    
+---
+layout: page
+---
 
 
     <!--realisations-->
@@ -18,23 +11,21 @@
             </div>
         </div>
     </div>
-    {% for tag in page.tags %}
-  {{tag}}
-    {% endfor %}
+  {{content}}
 
     <!--actualités-->
     <section id="1" class="actualités mt-5">
         <div class="container mt-5">
             <div class="row pt-5 pb-5">
                 <div class="col-lg-7 pr-3 pl-0">
-                    <div class="date-news mt-0 pt-5 pb-3">{{page.date}}
-                            {% for tag in news.tagx %}
+                    <div class="date-news mt-0 pt-5 pb-3">{{content.date}}
+                            {% for tag in content.news.tagx %}
                         <span class="tagx">{{tag}}</span>
                         {% endfor %}
                     </div>
-                    <div class="title-actualites">{{page.title}}</div>
+                    <div class="title-actualites">{{content.title}}</div>
                     <div class="paragraphe-actualites pr-3 pl-3 justify ">
-                   {{page.news.news_1}}
+                   {{content.news.news_1}}
 
                     </div>
                 </div>
@@ -53,7 +44,7 @@
 
                     <div class="paragraphe-actualites espace pr-3 pl-3 justify">
 
-                            {{page.news.news_2}}
+                            {{content.news.news_2}}
                     </div>
 
                     <div class="share-links row" >
@@ -164,9 +155,7 @@
   
 {% include footer.html %}
 
-</body>
 
-</html>
 
 
 
