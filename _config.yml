@@ -10,3 +10,4 @@ plugins: # previously gems
 collections:
   catnews:
     output: true
+    permalink: /newstags/:path/
