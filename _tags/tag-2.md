@@ -1,5 +1,5 @@
 ---
-name: TAG 2x
+title: TAG 2x
 tag_val: tag2
 ---
 
