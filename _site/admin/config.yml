@@ -30,9 +30,10 @@ collections:
   - label: "Actualités settings"
     name: "taggs"
     folder: "_tags"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
+    identifier_field: name
     fields:
-     - {label: "TAG" , name: "title", widget: "string"}
+     - {label: "TAG" , name: "name", widget: "string"}
      - {label: "Tag value", name: "tag_val", widget: "hidden"} 
      
   - label: "Actualités" 
@@ -41,6 +42,7 @@ collections:
     sort: "date:desc" 
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: name
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
     - {label: "Titre actualité", name: "title", widget: "string"} 
@@ -49,7 +51,7 @@ collections:
       name: "news"
       widget: "object" 
       fields:
-        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "taggs",  searchFields: ["title"],  valueField: "tag_val",  displayFields: ["title"] , multiple: true }
+        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "taggs",  searchFields: ["name"],  valueField: "tag_val",  displayFields: ["title"] , multiple: true }
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
