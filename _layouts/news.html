@@ -18,7 +18,7 @@ layout: page
         <div class="row pt-5 pb-5">
             <div class="col-lg-7 pr-3 pl-0">
                 <div class="date-news mt-0 pt-5 pb-3">{{page.date}}
-                    {% for tag in page.news.tagx %}
+                    {% for tag in page.news.taggx %}
                     <span class="tagx">{{tag}}</span>
                     {% endfor %}
                 </div>
@@ -143,12 +143,6 @@ layout: page
 
 
 
-<ul>
-    {% for tagz in site.tagg %}
-    <li>{{tagz.title}}</li>
-    {% endfor %}
-
-</ul>
 
 
 

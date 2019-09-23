@@ -30,7 +30,8 @@ collections:
   - label: "Actualités settings"
     name: "taggs"
     folder: "_tags"
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
+    identifier_field: name
     fields:
      - {label: "TAG" , name: "title", widget: "string"}
      - {label: "Tag value", name: "tag_val", widget: "hidden"} 
@@ -41,6 +42,7 @@ collections:
     sort: "date:desc" 
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    identifier_field: name
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
     - {label: "Titre actualité", name: "title", widget: "string"} 
