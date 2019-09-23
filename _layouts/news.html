@@ -28,7 +28,7 @@
             <div class="row pt-5 pb-5">
                 <div class="col-lg-7 pr-3 pl-0">
                     <div class="date-news mt-0 pt-5 pb-3">{{page.date}}
-                            {% for tag in page.news.tags %}
+                            {% for tag in news.tagx %}
                         <span class="tagx">{{tag}}</span>
                         {% endfor %}
                     </div>
@@ -42,13 +42,13 @@
                     <iframe  src="https://www.youtube.com/embed/{{page.video_news}}" frameborder="0" allowfullscreen class="pt-5 pb-5 mt-5 mb-5" width="100%" height="100%"></iframe>
                 </div>
                 <div class="col-md-4 pt-5">
-                        <img  src="{{page.news_photo.photo_news1}}" width="100%">
+                        <img  src="{{page.news_photo.photo_news1}}" class="img-100">
                     </div>
                     <div class="col-md-4 pt-5">
-                        <img src="{{ page.news_photo.photo_news2}}"width="100%">
+                        <img src="{{ page.news_photo.photo_news2}}" class="img-100">
                     </div>
                     <div class="col-md-4 pt-5">
-                        <img src="{{ page.news_photo.photo_news3}}" width="100%">
+                        <img src="{{ page.news_photo.photo_news3}}" class="img-100">
                     </div>
 
                     <div class="paragraphe-actualites espace pr-3 pl-3 justify">
