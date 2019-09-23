@@ -28,7 +28,7 @@ collections:
               - {label: Country, name: country, widget: string}
 
   - label: "Actualités settings"
-    name: "tags"
+    name: "tagss"
     folder: "_tags"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
