@@ -268,7 +268,7 @@ input[type=number]::-webkit-outer-spin-button
 }
 
 .img-100{
-    height: 100%;
+    height: 200px;
     width: 100%;
 }
 
@@ -1457,7 +1457,7 @@ padding-left:10px;
 **************Actualité 2 *************
 **************************************/
 .actualite-2{
-background-image:  url("../img/actualites/actualites-2.png");
+background-image:  url("../img/page-actualites/actualites-2.png");
 
 }
 

@@ -2,7 +2,6 @@
 layout: page
 ---
 
-{{content}}
     <!--realisations-->
     <div class="competence actualite-2 text-center">
         <div class="container h-100">
@@ -11,21 +10,21 @@ layout: page
             </div>
         </div>
     </div>
-  {{content}}
+ 
 
     <!--actualités-->
     <section id="1" class="actualités mt-5">
         <div class="container mt-5">
             <div class="row pt-5 pb-5">
                 <div class="col-lg-7 pr-3 pl-0">
-                    <div class="date-news mt-0 pt-5 pb-3">{{content.date}}
-                            {% for tag in content.news.tagx %}
+                    <div class="date-news mt-0 pt-5 pb-3">{{page.date}}
+                            {% for tag in page.news.tagx %}
                         <span class="tagx">{{tag}}</span>
                         {% endfor %}
                     </div>
-                    <div class="title-actualites">{{content.title}}</div>
+                    <div class="title-actualites">{{page.title}}</div>
                     <div class="paragraphe-actualites pr-3 pl-3 justify ">
-                   {{content.news.news_1}}
+                   {{page.news.news_1}}
 
                     </div>
                 </div>
@@ -44,7 +43,7 @@ layout: page
 
                     <div class="paragraphe-actualites espace pr-3 pl-3 justify">
 
-                            {{content.news.news_2}}
+                            {{page.news.news_2}}
                     </div>
 
                     <div class="share-links row" >
