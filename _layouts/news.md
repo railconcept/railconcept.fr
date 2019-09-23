@@ -23,8 +23,7 @@ layout: page
                 </div>
                 <div class="title-actualites">{{page.title}}</div>
                 <div class="paragraphe-actualites pr-3 pl-3 justify p-0" markdown="1">
-                   
-                    {{page.news.news_1 | textilize }}
+                 <p>  {{page.news.news_1 | markdownify}}</p>
 
                 </div>
             </div>
@@ -44,7 +43,7 @@ layout: page
 
             <div class="paragraphe-actualites espace pr-3 pl-3 justify p-0" markdown="1">
 
-                {{page.news.news_2}}
+               <p> {{page.news.news_2 | markdownify}}</p>
             </div>
 
             <div class="share-links row">
@@ -78,63 +77,28 @@ layout: page
                 <a href="#" class="plus mb-5">VOIR PLUS D'ACTUALITéS</a>
             </div>
 
-            <div class="gallery-act  col-md-4  mt-5  tag1 tag2 ">
+  {% for post in site.posts %}
+            <div class="gallery-act  col-md-4  mt-5  
+             {% for tags in post.news.taggx%}
+                       {{tags}}
+                      {% endfor %}
+                      ">
                 <div class="card card-border-none">
                     <div class="act-tag">
 
 
-                        <img src="{{ site.baseurl }}\assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
+                         <img src="{{post.news_photo.photo_news1}}" class="img-100">
                     </div>
                     <div class="card-body pl-0 pr-0">
-                        <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing
-                            elit,
-                            sed do euismod tempor incididunt
-                            tag1 tag2 </div>
-                        <span class="date-news ">13 JUIN 2019</span>
-                        <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
+                        <div class="paragraphe-actualites mb-3">{{ post.news.news_1 | strip_html | truncatewords: 25 }} </div>
+                        <span class="date-news ">{{ post.date | date_to_long_string }}</span>
+                                <a href="{{ post.url | prepend: site.baseurl }}" class="card-link float-right ">LIRE LA SUITE</a>
                     </div>
                 </div>
             </div>
 
-            <div class="gallery-act  col-md-4  mt-5  tag3 ">
-                <div class="card card-border-none">
-                    <div class="act-tag">
+     {% endfor %}
 
-
-                        <img src="{{ site.baseurl }}\assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                    </div>
-                    <div class="card-body pl-0 pr-0">
-                        <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing
-                            elit,
-                            sed do euismod tempor incididunt
-                            tag3</div>
-                        <span class="date-news ">13 JUIN 2019</span>
-                        <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="gallery-act  col-md-4  mt-5  tag1  ">
-                <div class="card card-border-none">
-                    <div class="act-tag">
-
-
-                        <img src="{{ site.baseurl }}\assets\img\page-actualites\img-tag.png" class="img-act img-fluid">
-                    </div>
-                    <div class="card-body pl-0 pr-0">
-                        <div class="paragraphe-actualites mb-3">Lorem ipsum dolor sit amet, consectetur
-                            adipiscing
-                            elit,
-                            sed do euismod tempor incididunt
-                            tag1 </div>
-                        <span class="date-news ">13 JUIN 2019</span>
-                        <a href="#" class="card-link float-right ">LIRE LA SUITE</a>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </div>
