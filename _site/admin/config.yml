@@ -28,7 +28,7 @@ collections:
               - {label: Country, name: country, widget: string}
 
   - label: "Actualités settings"
-    name: "tagss"
+    name: "taggs"
     folder: "_tags"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -49,7 +49,7 @@ collections:
       name: "news"
       widget: "object" 
       fields:
-        - {label: "TAGS",  name: "tagx",  widget: "relation",  collection: "tags",  searchFields: ["title"],  valueField: "tag_val",  displayFields: ["title"] , multiple: true }
+        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "taggs",  searchFields: ["title"],  valueField: "tag_val",  displayFields: ["title"] , multiple: true }
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
