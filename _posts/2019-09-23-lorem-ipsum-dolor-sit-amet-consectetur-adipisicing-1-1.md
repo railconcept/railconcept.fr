@@ -49,7 +49,7 @@ news:
     caprangerentCum haec taliaque sollicitas eius aures everberarent expositas
     semperurgentium caprangerentCum haec taliaque sollicitas eius aures
     everberarent expositas semper
-  tagx:
+  taggx:
     - tag3
 news_photo:
   photo_news1: /assets/img/uploads/djrlqpmu8aa70wg.jpg
