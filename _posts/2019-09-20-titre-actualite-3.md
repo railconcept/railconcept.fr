@@ -30,6 +30,6 @@ news_photo:
   photo_news1: /assets/img/uploads/50261_1_news.jpg
   photo_news2: /assets/img/uploads/ouigo.jpg
   photo_news3: /assets/img/uploads/images.jpg
-video_news: 'https://www.youtube.com/watch?v=YSm37rlLWVc'
+video_news: YSm37rlLWVc
 ---
 
