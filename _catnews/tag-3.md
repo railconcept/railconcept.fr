@@ -1,6 +1,6 @@
 ---
 layout: default
 title: TAG 3
-catnews: tag3
+name: tag3
 ---
 

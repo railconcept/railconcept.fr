@@ -1,6 +1,6 @@
 ---
 layout: default
 title: TAG 2
-catnews: tag2
+name: tag2
 ---
 
