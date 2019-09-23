@@ -280,14 +280,14 @@ input[type=number]::-webkit-outer-spin-button
 }
 
 #next {
-    background-image: url("../img/arrows/next.svg");
+    background-image: url("assets/img/arrows/next.svg");
     width: 25%;
     height: 25%;
 
 }
 
 #previous {
-    background-image: url("../img/arrows/previous.svg");
+    background-image: url("assets/img/arrows/previous.svg");
     width: 25%;
     height: 25%;
 }
@@ -786,7 +786,7 @@ text-shadow: 1px 1px 2px #000000;
 
 .contactx{
     margin-top:100px;
-    background-image:  url(../img/page-nos-metiers/contact.png);
+    background-image:  url("assets/img/page-nos-metiers/contact.png");
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;              
@@ -987,7 +987,7 @@ width:120px;
 /****************** competence ************/
 .competence{
     margin-top:100px;
-    background-image:  url(../img/page-realisations/slider.png);
+    background-image:  url("assets/img/page-realisations/slider.png");
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;              
@@ -1301,7 +1301,7 @@ li.active > a > i{
 
 .metiers{
     margin-top:100px;
-    background-image: url(../img/page-nos-metiers/slid-realisation.png);
+    background-image: url("assets/img/page-nos-metiers/slid-realisation.png");
     background-size:     cover;                      /* <------ */
     background-repeat:   no-repeat;
     background-position: center center;              
@@ -1454,7 +1454,7 @@ padding-left:10px;
 **************Actualité 2 *************
 **************************************/
 .actualite-2{
-background-image:  url(../img/actualites/actualites-2.png);
+background-image:  url("assets/img/actualites/actualites-2.png");
 
 }
 
@@ -1464,7 +1464,7 @@ background-image:  url(../img/actualites/actualites-2.png);
 **************REJOIGNEZ-NOUS *************
 **************************************/
 .rejoignez-nous{
-    background-image:  url(../img/page-rejoignez-nous/rejoignez-nous.png);
+    background-image:  url("assets/img/page-rejoignez-nous/rejoignez-nous.png");
     }
 
 

@@ -7,12 +7,12 @@
 
                     <div class="col-md-3 col-xs-12 col-sm-12 pl-0 pr-0">
                     <div class="col-12">
-                            <img class="logo-footer" src="assets/img/logo/logo.png" >
+                            <img class="logo-footer" src="{{ site.baseurl }}/assets/img/logo/logo.png" >
                     </div> 
                     <div class="col-12 adresse">
                         <div class="row">
                             <div class="col-1 pl-0">
-                                    <img src="assets/img/footer/loc.png" class="position">
+                                    <img src="{{ site.baseurl }}/assets/img/footer/loc.png" class="position">
                             </div>
                             <div class="col-11 pl-0">
                                     
@@ -26,7 +26,7 @@
                     <div class="col-12 tel">
                             <div class="row">
                             <div class="col-1 pl-0">
-                                    <img src="assets/img/footer/tel.png" class="position">
+                                    <img src="{{ site.baseurl }}/assets/img/footer/tel.png" class="position">
                             </div>
                             <div class="col-11 pl-0">
                                 <a id="phone" href="tel:{{site.data.website_settings.seo.tel}}">{{site.data.website_settings.seo.tel_display}}</a>
@@ -70,14 +70,14 @@
                         <div class="form-group input-group mt20">
                             <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email">
                             <div class="input-group-prepend">
-                                <span type="button" class="input-group-text btn enveloppe"><img src="assets/img/footer/Enveloppe.png"> </span>
+                                <span type="button" class="input-group-text btn enveloppe"><img src="{{ site.baseurl }}/assets/img/footer/Enveloppe.png"> </span>
                             </div>
                         </div>
                         <div class="footer-title mt-3">suivez-nous sur les réseaux!</div>
                         <br/>
-                        <a href="#" class="footer-title mr-2"><img id="facebook" src="assets/img/footer/facebook.png"
+                        <a href="#" class="footer-title mr-2"><img id="facebook" src="{{ site.baseurl }}/assets/img/footer/facebook.png"
                                                               height="27"></a>
-                        <a href="#" class="footer-title"><img src="assets/img/footer/linkedin.png" height="27"></a>
+                        <a href="#" class="footer-title"><img src="{{ site.baseurl }}/assets/img/footer/linkedin.png" height="27"></a>
     
                         <div class="footer-title mt-3">vous souhaitez faire parti de l’équipe</div>
                         <div class="form-group text-left  text-xs-center text-sm-center" >
@@ -107,7 +107,7 @@
                         <div class="col-md-6  Copyrightcol text-center pl-0 pr-0">
                             <div class="row pl-0 pr-0">
                            <div class="col-md-10 col-sm-12 pl-0 pr-0"> Copyright © 2019 www.railconcept.fr - Design by Agence de communication Montpellier</div>
-                            <div class="col-md-2 col-sm-12 pl-0 pr-0"><img src="assets/img/footer/logo gazoline.png" height="17"></div>
+                            <div class="col-md-2 col-sm-12 pl-0 pr-0"><img src="{{ site.baseurl }}/assets/img/footer/logo gazoline.png" height="17"></div>
                         </div>
                         </div>
                     </div>
@@ -117,15 +117,20 @@
 </footer>
 
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/pagination.js"></script>
+<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/pagination.js"></script>
      <!-- Google maps -->
 <script async defer  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB65wydiX_2ds_jzgKwaO3ZyaOX85HF5ww"> </script>
-<script src="assets/js/bootstrap-swipe-carousel.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/bootstrap-swipe-carousel.min.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="{{ site.baseurl }}/assets/js/main.js"></script>
+<script >
 
+console.log("site base url ","{{ site.baseurl }}");
+console.log("site url ","{{ site.url }}");
+
+</script>
 </body>
 
 </html>    
