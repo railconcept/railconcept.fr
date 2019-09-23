@@ -1451,7 +1451,22 @@ padding-left:10px;
 }
 
 
-
+.tagx{
+    text-align:center;
+    font-family: "Barlow Semi Condensed" ,sans-serif;
+    font-size: 14px;
+    border: none;
+    font-weight: 600;
+     border-radius: 0;
+     background-color: #942626;
+     color: white;
+     padding : 5px 10px ;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+     margin-left:10px;
+     display: inline;
+     position:relative;
+}
 
 /***************************************
 **************Actualité 2 *************
