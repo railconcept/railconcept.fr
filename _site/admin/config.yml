@@ -43,7 +43,7 @@ collections:
     fields:
      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
      - {label: "TAG" , name: "title", widget: "string"}
-     - {label: "Tag value", name: "catnews", widget: "string"}
+     - {label: "Tag value", name: "name", widget: "string"}
      
   - label: "Actualités" 
     name: "post"
