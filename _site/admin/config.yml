@@ -31,7 +31,6 @@ collections:
     name: "catnews"
     folder: "_catnews"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    create: true
     fields:
      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
      - {label: "TAG" , name: "title", widget: "string"}
