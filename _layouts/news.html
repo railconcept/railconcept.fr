@@ -1,9 +1,6 @@
 ---
 layout: page
-excerpt: What text editor to use? 
 ---
-
-<!--realisations-->
 <div class="competence actualite-2 text-center">
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
@@ -12,7 +9,7 @@ excerpt: What text editor to use?
     </div>
 </div>
 
-{{page}}
+
 
 <!--actualités-->
 <section id="1" class="actualités mt-5">
@@ -26,7 +23,8 @@ excerpt: What text editor to use?
                 </div>
                 <div class="title-actualites">{{page.title}}</div>
                 <div class="paragraphe-actualites pr-3 pl-3 justify " markdown="1">
-                    {{page.news.news_1}}
+                   
+                    {{page.news.news_1 | textilize }}
 
                 </div>
             </div>
