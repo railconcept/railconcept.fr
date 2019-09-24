@@ -46,20 +46,34 @@ layout: page
                <p> {{page.news.news_2 | markdownify}}</p>
             </div>
 
-            <div class="share-links row">
-                <div class="title-actualites">PARTAGER</div>
-                <span class="partager"><img src="{{ site.baseurl }}\assets\img\page-actualites\icon-copier.png">Copier
-                    le lien vers l'article </span>
-                <span class="partager"><img
-                        src="{{ site.baseurl }}\assets\img\page-actualites\icon-facebook.png">Partager sur
-                    facebook</span>
-                <span class="partager"><img
-                        src="{{ site.baseurl }}\assets\img\page-actualites\icon-twitter.png">Partager sur Twitter</span>
-                <span class="partager"><img
-                        src="{{ site.baseurl }}\assets\img\page-actualites\icon-linkedin.png">Partager sur
-                    Linkedin</span>
+   
 
-            </div>
+
+            
+        <div class="container mt-5">
+       
+                  <div class="row d-flex">
+                <div class="col-lg-3 title-actualites mt-0 mb-0 justify-content-center align-self-center">PARTAGER</div>
+              
+                <div class="col-lg-9 d-flex text-right">
+                 <div class="row justify-content-center align-self-center w-100">
+                    <div class="col-md-3 pt-2 pb-2   text-left aos-init aos-animate ml-2 ml-md-0" data-aos="zoom-in-down" data-aos-delay="50">
+                        <a id="copy" class=" partager_link text-nowrap" href="#" > <img src="{{base_url}}/assets/img/page-actualites/copie.png" class="  partager img-fluid"> Copier le lien vers l'article</a>
+                    </div>
+                    <div class="col-md-3 pt-2 pb-2   text-left  aos-init aos-animate ml-3 ml-md-0" data-aos="zoom-in-down" data-aos-delay="50">
+                        <a id="facebook" class=" partager_link text-nowrap" href="#" > <img src="{{base_url}}/assets/img/page-actualites/facebook.png" class="  partager img-fluid">Partagez sur Facebook</a>
+                    </div>
+                    <div class="col-md-3  pt-2 pb-2  text-left  aos-init aos-animate ml-4 ml-md-0" data-aos="zoom-in-down" data-aos-delay="50">
+                        <a id="twitter" class=" partager_link text-nowrap" href="#" > <img src="{{base_url}}/assets/img/page-actualites/twitter.png" class="  partager img-fluid">Partagez sur Twitter</a>
+                    </div>
+                    <div class="col-md-3  pt-2 pb-2 text-left  aos-init aos-animate ml-5 ml-md-0" data-aos="zoom-in-down" data-aos-delay="50">
+                        <a id="linkedin" class=" partager_link text-nowrap" href="#" > <img src="{{base_url}}/assets/img/page-actualites/lin.png" class=" partager img-fluid mx-auto vertical-align-center">Partagez sur Linkedin</a>
+                    </div>
+
+                  </div>  
+                </div>
+               
+    </div></div>
         </div>
     </div>
     </div>
