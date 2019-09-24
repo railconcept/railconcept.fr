@@ -65,9 +65,26 @@ collections:
   - label: "Offre de travail"
     name: "odt"
     files:
-      - label: "Offre de travail settings"
-       name: "odt_settings"
-       file: "_data/odt.yml"
-       fields:
-    
+      - label: "CHEF DE PROJET"
+        name: "cdp"
+        folder: "_offre_travail/cdp"
+        sort: "date:desc" 
+        create: true 
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+        fields:
+         - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
+         - {label: "Poste proposée", name: "title", widget: "string"} 
+         - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
+         - {label: "Département", name: "dep", widget: "string"} 
+      - label: "CHARGE D'ETUDE"
+        name: "cde"
+        folder: "_offre_travail/cde"
+        sort: "date:desc" 
+        create: true 
+        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+        fields:
+         - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
+         - {label: "Poste proposée", name: "title", widget: "string"} 
+         - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
+         - {label: "Département", name: "dep", widget: "string"} 
   
