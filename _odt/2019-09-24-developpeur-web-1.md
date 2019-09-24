@@ -1,5 +1,5 @@
 ---
-layout: news
+layout: offre
 active: true
 date: '23-09-2019 00:00:00'
 title: Developpeur web

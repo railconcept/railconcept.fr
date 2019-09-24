@@ -1,4 +1,5 @@
 ---
+layout: offre
 active: true
 date: '01-09-2019 00:00:00'
 title: 'Chef de projet H/F '
