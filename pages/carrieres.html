@@ -241,19 +241,19 @@ permalink: carrieres
                 <hr>
 
                 {% for offre in site.odt %}
-
+                {% if offre.tdp == "cdp"  and offre.active == true %}
                 <div class="container  mt-2">
                   <div class="row d-flex">
-                    <div class="color-gray p-0 col-md-3 text-left my-auto"><b>{{ offre.title }}</b><br>Exploitation</div>
-                    <div class="color-gray p-0 col-md-2 text-left  my-auto">05/01/17</div>
-                    <div class="color-gray p-0 col-md-1 text-left  my-auto">CDI</div>
-                    <div class="color-gray p-0 col-md-2 text-left my-auto">Paris </div>
-                    <div class="color-gray p-0 col-md-4 text-center  my-auto "><a href="#" class="card-link btn-float active w-100"><img
+                    <div class="color-gray p-0 col-md-3 text-left my-auto"><b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
+                    <div class="color-gray p-0 col-md-2 text-left  my-auto">{{ offre.date | date: "%d/%m/%Y" }}</div>
+                    <div class="color-gray p-0 col-md-1 text-left  my-auto">{{ offre.tdc }}</div>
+                    <div class="color-gray p-0 col-md-2 text-left my-auto">{{ offre.ldt }}</div>
+                    <div class="color-gray p-0 col-md-4 text-center  my-auto "><a href="#" class="card-link btn-float  w-100"><img
                           src="assets\img\page-rejoignez-nous\icon-next.png" > Voir l'offre</a>
                     </div>
                   </div>
                 </div>
-
+              {% endif %}
               {% endfor %}
                
 
@@ -269,22 +269,27 @@ permalink: carrieres
 
 
                 <div class="container chef-projet mt-2 mb-3 pt-3 pb-5  ">
-                  <div class="title-para-news text-left">CHARGE ETUDE
+                  <div class="title-para-news text-left">CHRGÉ D'ÉTUDE
                   </div>
                   <hr>
   
   
+                  {% for offre in site.odt %}
+                  {% if offre.tdp == "cde" and offre.active == true %}
                   <div class="container  mt-2">
-                      <div class="row d-flex">
-                        <div class="color-gray p-0 col-md-3 text-left my-auto"><b>Chef de projet H/F</b><br>Exploitation</div>
-                        <div class="color-gray p-0 col-md-2 text-left  my-auto">05/01/17</div>
-                        <div class="color-gray p-0 col-md-1 text-left  my-auto">CDI</div>
-                        <div class="color-gray p-0 col-md-2 text-left my-auto">Paris </div>
-                        <div class="color-gray p-0 col-md-4 text-center  my-auto "><a href="#" class="card-link btn-float w-100"><img
-                              src="assets\img\page-rejoignez-nous\icon-next.png" > Voir l'offre</a>
-                        </div>
+                    <div class="row d-flex">
+                      <div class="color-gray p-0 col-md-3 text-left my-auto"><b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
+                      <div class="color-gray p-0 col-md-2 text-left  my-auto">{{ offre.date | date: "%d/%m/%Y" }}</div>
+                      <div class="color-gray p-0 col-md-1 text-left  my-auto">{{ offre.tdc }}</div>
+                      <div class="color-gray p-0 col-md-2 text-left my-auto">{{ offre.ldt }}</div>
+                      <div class="color-gray p-0 col-md-4 text-center  my-auto "><a href="#" class="card-link btn-float  w-100"><img
+                            src="assets\img\page-rejoignez-nous\icon-next.png" > Voir l'offre</a>
                       </div>
                     </div>
+                  </div>
+                {% endif %}
+                {% endfor %}
+
   
                 </div>
               </div>
@@ -302,17 +307,21 @@ permalink: carrieres
     
     
     
-                    <div class="container  mt-2">
-                        <div class="row d-flex">
-                          <div class="color-gray p-0 col-md-3 text-left my-auto"><b>Chef de projet H/F</b><br>Exploitation</div>
-                          <div class="color-gray p-0 col-md-2 text-left  my-auto">05/01/17</div>
-                          <div class="color-gray p-0 col-md-1 text-left  my-auto">CDI</div>
-                          <div class="color-gray p-0 col-md-2 text-left my-auto">Paris </div>
-                          <div class="color-gray p-0 col-md-4 text-center  my-auto "><a href="#" class="card-link btn-float w-100"><img
-                                src="assets\img\page-rejoignez-nous\icon-next.png" > Voir l'offre</a>
-                          </div>
-                        </div>
+                    {% for offre in site.odt %}
+                  {% if offre.tdp == "dl" and offre.active == true %}
+                  <div class="container  mt-2">
+                    <div class="row d-flex">
+                      <div class="color-gray p-0 col-md-3 text-left my-auto"><b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
+                      <div class="color-gray p-0 col-md-2 text-left  my-auto">{{ offre.date | date: "%d/%m/%Y" }}</div>
+                      <div class="color-gray p-0 col-md-1 text-left  my-auto">{{ offre.tdc }}</div>
+                      <div class="color-gray p-0 col-md-2 text-left my-auto">{{ offre.ldt }}</div>
+                      <div class="color-gray p-0 col-md-4 text-center  my-auto "><a href="#" class="card-link btn-float  w-100"><img
+                            src="assets\img\page-rejoignez-nous\icon-next.png" > Voir l'offre</a>
                       </div>
+                    </div>
+                  </div>
+                {% endif %}
+                {% endfor %}
     
                   </div>
                 </div>
