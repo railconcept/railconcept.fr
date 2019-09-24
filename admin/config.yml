@@ -63,8 +63,8 @@ collections:
     - {label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string"}   
 
   - label: "Offre de travail"
-    name: "cdp"
-    folder: "_offre_travail"
+    name: "odt"
+    folder: "_odt"
     sort: "date:desc" 
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
