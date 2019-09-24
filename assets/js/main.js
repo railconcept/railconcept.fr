@@ -1080,3 +1080,23 @@ $(document).ready(function () {
         }
     });
 });
+
+function get_offre($url){
+
+    $.ajax({
+        url: $url,
+        type: "GET",
+        dataType: "html",
+        success: function (data) {
+           console.log(data) ;
+        },
+        error: function (xhr, status) {
+            alert("Sorry, there was a problem!");
+        },
+        complete: function (xhr, status) {
+            //$('#showresults').slideDown('slow')
+        }
+    });
+
+
+}

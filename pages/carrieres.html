@@ -308,8 +308,7 @@ permalink: carrieres
     
     
                     {% for offre in site.odt %}
-                    {{offre.url}} <br>
-                    {{offre.tdc}}
+                    
                   {% if offre.tdp == "dl" and offre.active == true %}
                   <div class="container  mt-2">
                     <div class="row d-flex">
@@ -317,8 +316,8 @@ permalink: carrieres
                       <div class="color-gray p-0 col-md-2 text-left  my-auto">{{ offre.date | date: "%d/%m/%Y" }}</div>
                       <div class="color-gray p-0 col-md-1 text-left  my-auto">{{ offre.tdc }}</div>
                       <div class="color-gray p-0 col-md-2 text-left my-auto">{{ offre.ldt }}</div>
-                      <div class="color-gray p-0 col-md-4 text-center  my-auto "><a href="{{ offre.url | prepend: site.baseurl }}" class="card-link btn-float  w-100"><img
-                            src="assets\img\page-rejoignez-nous\icon-next.png" > Voir l'offre</a>
+                      <div class="color-gray p-0 col-md-4 text-center  my-auto "><span onclick="get_offre('{{ offre.url | prepend: site.baseurl }}');'" class="card-link btn-float  w-100"><img
+                            src="assets\img\page-rejoignez-nous\icon-next.png" > Voir l'offre</span>
                       </div>
                     </div>
                   </div>
