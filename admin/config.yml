@@ -63,28 +63,27 @@ collections:
     - {label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string"}   
 
   - label: "Offre de travail"
-    name: "odt"
-    files:
-      - label: "CHEF DE PROJET"
-        name: "cdp"
-        folder: "_offre_travail/cdp"
-        sort: "date:desc" 
-        create: true 
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-        fields:
-         - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
-         - {label: "Poste proposée", name: "title", widget: "string"} 
-         - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
-         - {label: "Département", name: "dep", widget: "string"} 
-      - label: "CHARGE D'ETUDE"
-        name: "cde"
-        folder: "_offre_travail/cde"
-        sort: "date:desc" 
-        create: true 
-        slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-        fields:
-         - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
-         - {label: "Poste proposée", name: "title", widget: "string"} 
-         - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
-         - {label: "Département", name: "dep", widget: "string"} 
+    name: "cdp"
+    folder: "_offre_travail"
+    sort: "date:desc" 
+    create: true 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+    - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
+    - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
+    - {label: "Poste proposée", name: "title", widget: "string"} 
+    - label: "Type de poste"
+      name: "tdp"
+      widget: "select"
+      options:
+       - { label: "CHEF DE PROJET", value: "cdp" }
+       - { label: "CHARGÉ D'ÉTUDE", value: "cde" }
+       - { label: "DÉVELOPPEUR LOGICIEL", value: "dl" }
+    - {label: "Département", name: "dep", widget: "string"} 
+    - {label: "Type de contrat", name: "tdc", widget: "string"} 
+    - {label: "Lieu de travail", name: "ldt", widget: "string"} 
+    - {label: "Entreprise", name: "entreprise", widget: "markdown"}
+    - {label: "Poste", name: "poste", widget: "markdown"}
+    - {label: "Profil", name: "profil", widget: "markdown"}
+
   
