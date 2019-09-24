@@ -79,6 +79,14 @@ input[type=number]::-webkit-outer-spin-button
 .partager_link:hover {
     color:#a52c43;
 }
+
+.plus{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: rgb(144, 144, 144);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
   @media (min-width: 576px) {
       .col-sm-2dot4 {
           -webkit-box-flex: 0;
@@ -297,9 +305,8 @@ input[type=number]::-webkit-outer-spin-button
 }
 
 .img-100{
-    height: 100%;
+    height: 200px;
     width: 100%;
-    min-height:200px;
 }
 
 

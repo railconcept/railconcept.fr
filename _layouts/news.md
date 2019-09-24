@@ -22,9 +22,8 @@ layout: page
                     {% endfor %}
                 </div>
                 <div class="title-actualites">{{page.title}}</div>
-                <div class="paragraphe-actualites pr-3 pl-3 justify p-0" markdown="1">
+                <div class="paragraphe-actualites  justify p-0" markdown="1">
                  <p>  {{page.news.news_1 | markdownify}}</p>
-
                 </div>
             </div>
             <div class="col-lg-5 videoWrapper padding-right-none ">
@@ -40,21 +39,12 @@ layout: page
             <div class="col-md-4 pt-5">
                 <img src="{{ page.news_photo.photo_news3}}" class="img-100">
             </div>
-
-            <div class="paragraphe-actualites espace pr-3 pl-3 justify p-0" markdown="1">
-
+            <div class="paragraphe-actualites espace  justify p-0" markdown="1">
                <p> {{page.news.news_2 | markdownify}}</p>
             </div>
-
-   
-
-
-            
-        <div class="container mt-5">
-       
+        <div class="container p-0 mt-5">   
                   <div class="row d-flex">
                 <div class="col-lg-3 title-actualites mt-0 mb-0 justify-content-center align-self-center">PARTAGER</div>
-              
                 <div class="col-lg-9 d-flex text-right">
                  <div class="row justify-content-center align-self-center w-100">
                     <div class="col-md-3 pt-2 pb-2   text-left aos-init aos-animate ml-2 ml-md-0" data-aos="zoom-in-down" data-aos-delay="50">
@@ -69,10 +59,8 @@ layout: page
                     <div class="col-md-3  pt-2 pb-2 text-left  aos-init aos-animate ml-5 ml-md-0" data-aos="zoom-in-down" data-aos-delay="50">
                         <a id="linkedin" class=" partager_link text-nowrap" href="#" > <img src="{{base_url}}/assets/img/page-actualites/lin.png" class=" partager img-fluid mx-auto vertical-align-center">Partagez sur Linkedin</a>
                     </div>
-
                   </div>  
                 </div>
-               
     </div></div>
         </div>
     </div>
@@ -84,24 +72,23 @@ layout: page
 <!-- More news-->
 
 <section class="more_news">
-    <div class="container">
+    <div class="container p-0">
         <hr class="mb-5 ">
-        <div class="row">
-            <div class="col-12">
-                <a href="#" class="plus mb-5">VOIR PLUS D'ACTUALITéS</a>
-            </div>
-
+        <div class="row">           
+                <span class="plus col-12 p-0">VOIR PLUS D'ACTUALITéS</span>       
+{% assign maxPost = 3 %}
+{% assign counter = 0 %}
   {% for post in site.posts %}
-            <div class="gallery-act  col-md-4  mt-5  
-             {% for tags in post.news.taggx%}
+  {% if post.title != page.title %}
+        {% assign counter = counter | plus: 1 %}
+            <div class="gallery-act  col-md-4  mt-3  
+        {% for tags in post.news.taggx%}
                        {{tags}}
                       {% endfor %}
                       ">
                 <div class="card card-border-none">
                     <div class="act-tag">
-
-
-                         <img src="{{post.news_photo.photo_news1}}" class="img-100">
+                <img src="{{post.news_photo.photo_news1}}" class="img-100">
                     </div>
                     <div class="card-body pl-0 pr-0">
                         <div class="paragraphe-actualites mb-3">{{ post.news.news_1 | strip_html | truncatewords: 25 }} </div>
@@ -110,19 +97,16 @@ layout: page
                     </div>
                 </div>
             </div>
-
+     {% endif %}
+       {% if counter == maxPost %}
+        {% break %} {% comment %}exit the for loop{% endcomment %}
+        {% endif %}
      {% endfor %}
 
         </div>
 
     </div>
 </section>
-
-
-
-
-
-
 
 {% include contact.html %}
 
