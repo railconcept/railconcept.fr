@@ -917,11 +917,16 @@ $(document).ready(function () {
         }
 
         if ($id == 'twitter') {
-            console.log('hello twitter')
+            var twitterWindow = window.open('https://twitter.com/share?url=' +  window.location.href, 'twitter-popup', 'height=350,width=600');
+            if(twitterWindow.focus) { twitterWindow.focus(); }
+            return false;
         }
 
         if ($id == 'linkedin') {
-            console.log('hello linkedin')
+            var linkedinwindow = window.open( 'http://www.linkedin.com/shareArticle?mini=true&url='+window.location.href, 'sharer', 'toolbar=0, status=0, width=600, height=350');
+            if(linkedinwindow.focus) { linkedinwindow.focus(); }
+            return false;
+
         }
     });
 });
