@@ -1,4 +1,4 @@
 ---
-layout: null
+layout: empty
 ---
-{{page.title}}
+{{ content }}
