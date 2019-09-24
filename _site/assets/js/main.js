@@ -911,7 +911,7 @@ $(document).ready(function () {
         }
 
         if ($id == 'facebook') {
-            var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup', 'height=350,width=600');
+            var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, 'facebook-popup', 'height=350,width=600');
             if(facebookWindow.focus) { facebookWindow.focus(); }
               return false;
         }
