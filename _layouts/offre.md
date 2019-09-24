@@ -1,4 +1,4 @@
 ---
-layout: none
+layout: null
 ---
 {{page.title}}
