@@ -308,6 +308,8 @@ permalink: carrieres
     
     
                     {% for offre in site.odt %}
+                    {{offre.url}} <br>
+                    {{offre.tdc}}
                   {% if offre.tdp == "dl" and offre.active == true %}
                   <div class="container  mt-2">
                     <div class="row d-flex">
