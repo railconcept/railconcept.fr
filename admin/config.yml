@@ -85,5 +85,3 @@ collections:
     - {label: "Entreprise", name: "entreprise", widget: "markdown"}
     - {label: "Poste", name: "poste", widget: "markdown"}
     - {label: "Profil", name: "profil", widget: "markdown"}
-
-  

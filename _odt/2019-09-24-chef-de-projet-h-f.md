@@ -1,3 +1,4 @@
+@@ -1,25 +0,0 @@
 ---
 layout: news
 date: '24-09-2019 16:23:14'
@@ -22,4 +23,3 @@ profil: >-
   expositas semper venire summo cum honore m_andavit ea_ specie ut pro rerum
   tunc
 ---
-
