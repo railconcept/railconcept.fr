@@ -12,9 +12,9 @@ layout: page
 
 
 <!--actualités-->
-<section id="1" class="actualités mt-5">
-    <div class="container mt-5">
-        <div class="row pt-5 pb-5">
+<section id="1" class="actualités mt-4">
+    <div class="container ">
+        <div class="row pb-5">
             <div class="col-lg-7 pr-3 pl-0">
                 <div class="date-news mt-0 pt-5 pb-3">{{ page.date | date_to_long_string }} À {{ page.date | date: "%HH%M" }}
                     {% for tag in page.news.taggx %}
@@ -28,7 +28,7 @@ layout: page
             </div>
             <div class="col-lg-5 videoWrapper padding-right-none ">
                 <iframe src="https://www.youtube.com/embed/{{page.video_news}}" frameborder="0" allowfullscreen
-                    class="pt-5 pb-5 mt-5 mb-5" width="100%" height="100%"></iframe>
+                    class=" pb-5 mt-5 mb-5" width="100%" height="100%"></iframe>
             </div>
             <div class="col-md-4 pt-5">
                 <img src="{{page.news_photo.photo_news1}}" class="img-100">
