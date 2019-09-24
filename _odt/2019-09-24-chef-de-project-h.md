@@ -1,6 +1,6 @@
 ---
 layout: news
-active: false
+active: true
 date: '10-09-2019 00:00:00'
 title: CHEF DE PROJECT H
 tdp: cdp
