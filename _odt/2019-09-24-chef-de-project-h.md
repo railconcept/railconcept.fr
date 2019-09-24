@@ -1,10 +1,11 @@
 ---
-date: '01-09-2019 00:00:00'
-title: 'Chef de projet H/F '
+layout: news
+date: '10-09-2019 00:00:00'
+title: CHEF DE PROJECT H
 tdp: cdp
 dep: Exploitation
-tdc: CDD
-ldt: Paris
+tdc: CDI
+ldt: MARSEILLE
 entreprise: >-
   Cum haec **talia miscente consi**lia, tandem id ut optimum factu elegit: et
   Vrsicinum primum ad seCum h**specie ut pro rerum tunc**aec litaaque sollicitas
