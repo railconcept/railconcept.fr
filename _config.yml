@@ -16,3 +16,6 @@ collections:
   catnews:
     output: true
     permalink: /newstags/:path/
+  cdp:
+    output: true
+    permalink: /cdp/:path/
