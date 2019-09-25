@@ -2,6 +2,6 @@
 <div id="departement" > {{page.dep}} </div>
 <div id="type_contract" > {{page.tdc }} </div>
 <div id="lieu_travail" > {{page.ldt}} </div>
-<div id="entreprise" > {{page.entreprise}} </div>
-<div id="poste" > {{page.poste}} </div>
-<div id="profil" > {{page.profil}} </div>
+<div id="entreprise"  markdown="1" > {{page.entreprise  | markdownify}} </div>
+<div id="poste"  markdown="1" > {{page.poste  | markdownify}} </div>
+<div id="profil"  markdown="1"> {{page.profil  | markdownify}} </div>
