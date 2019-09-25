@@ -1710,7 +1710,9 @@ background-image:  url("../img/page-actualites/actualites-2.png");
         margin-top: 100px;
     }
 
-
+.select_offre{
+    cursor: pointer;
+}
      
 /***************************************
 **************RESPONSIVE CSS ***********
