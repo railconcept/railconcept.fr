@@ -4,7 +4,7 @@ $small = $("#container-navbar").css("padding-top");
 $margin_left_container = $("#container-navbar").css("margin-left");
 $padding_left_container = $("#container-navbar").css("padding-left");
 $left_container = parseInt($margin_left_container) + parseInt($padding_left_container);
-
+$debut = 1 ;
 
 
 
@@ -1072,25 +1072,34 @@ $(document).ready(function () {
 
     $(document).on('input', '.d_pers', function () {
         $a = $(this).val();
-        console.log($(this).css("opacity"));
+       
         if ($a == '') {
             $(this).css("opacity", 0.65);
         } else {
             $(this).css("opacity", 1);
         }
     });
+ 
+ 
+
+
+    $(".select_offre").first().trigger("click");
 });
 
-function get_offre($url){
-
+function get_offre($url,$that,e){
+  
+    $(".select_offre").removeClass("active");
+    $($that).addClass("active");
+    $debut=0 ;
     $.ajax({
         url: $url,
         type: "GET",
         dataType: "html",
         success: function (data) {
            var x = document.createElement('div');
+          
+
            x.innerHTML = data;
-           console.log(x) ;
            $("#poste_selected").html("<b>"+ x.querySelector('#title').innerHTML + " - " + x.querySelector('#departement').innerHTML+ "</b>");
            $("#poste_contrat").html(x.querySelector('#type_contract').innerHTML + " - " + x.querySelector('#lieu_travail').innerHTML);
          
@@ -1098,16 +1107,35 @@ function get_offre($url){
            $("#poste").html(x.querySelector('#poste').innerHTML);
            $("#profil").html(x.querySelector('#profil').innerHTML);
            $("#selected_job").html(x.querySelector('#title').innerHTML + " - " + x.querySelector('#offre_date').innerHTML );
-           
+
 
         },
         error: function (xhr, status) {
             alert("Sorry, there was a problem!");
         },
         complete: function (xhr, status) {
-            //$('#showresults').slideDown('slow')
+          
+            if (e.isTrigger)
+            {
+              console.log('not a human');
+            }else{
+                goToByScroll('offre_selectionne');
+            }
+            
+         
         }
     });
 
 
+}
+
+
+
+function goToByScroll(id) {
+    // Remove "link" from the ID
+    id = id.replace("link", "");
+    // Scroll
+    $('html,body').animate({
+        scrollTop: $("#" + id).offset().top
+    }, 'slow');
 }
