@@ -8,19 +8,15 @@ dep: Exploitation
 tdc: CDI
 ldt: MARSEILLE
 entreprise: >-
-  Cum haec **talia miscente consi**lia, tandem id ut optimum factu elegit: et
-  Vrsicinum primum ad seCum h**specie ut pro rerum tunc**aec litaaque sollicitas
-  eius aures everberarent expositas semper venire summo cum honore mandavit ea
-  **specie ut pro rerum tunc**
-poste: >-
-  Cum haec **talia miscente consi**lia, tandem id ut optimum factu elegit: et
-  Vrsicinum primum ad seCum h**specie ut pro rerum tunc**aec litaaque sollicitas
-  eius aures everberarent expositas semper venire summo cum honore mandavit ea
-  **specie ut pro rerum tunc**
+  **CHEF DE PROJECT H** Cum haec **talia miscente consi**lia, tandem id ut
+  optimum factu elegit: et Vrsicinum primum ad seCum h**specie ut pro rerum
+  tunc**aec litaaque sollicitas eius aures everberarent expositas semper venire
+  summo cum honore mandavit ea **specie ut pro rerum tunc**
+poste: ' **CHEF DE PROJECT H** Cum haec **talia miscente consi**lia, tandem id ut optimum factu elegit: et Vrsicinum primum ad seCum h**specie ut pro rerum tunc**aec litaaque sollicitas eius aures everberarent expositas semper venire summo cum honore mandavit ea **specie ut pro rerum tunc**'
 profil: >-
-  Cum haec **talia miscente consi**lia, tandem id ut optimum factu elegit: et
-  Vrsicinum primum ad seCum h**specie ut pro rerum tunc**aec litaaque sollicitas
-  eius aures everberarent expositas semper venire summo cum honore mandavit ea
-  **specie ut pro rerum tunc**
+  **CHEF DE PROJECT H** Cum haec **talia miscente consi**lia, tandem id ut
+  optimum factu elegit: et Vrsicinum primum ad seCum h**specie ut pro rerum
+  tunc**aec litaaque sollicitas eius aures everberarent expositas semper venire
+  summo cum honore mandavit ea **specie ut pro rerum tunc**
 ---
 
