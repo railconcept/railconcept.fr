@@ -1,4 +1,5 @@
 <div id="title">{{ page.title }}</div>
+<div id="offre_date">{{ page.date }}</div>
 <div id="departement" > {{page.dep}} </div>
 <div id="type_contract" > {{page.tdc }} </div>
 <div id="lieu_travail" > {{page.ldt}} </div>
