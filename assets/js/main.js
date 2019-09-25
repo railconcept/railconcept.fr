@@ -1093,10 +1093,10 @@ function get_offre($url){
            console.log(x) ;
            $("#poste_selected").html("<b>"+ x.querySelector('#title').innerHTML + " - " + x.querySelector('#departement').innerHTML+ "</b>");
            $("#poste_contrat").html(x.querySelector('#type_contract').innerHTML + " - " + x.querySelector('#lieu_travail').innerHTML);
-           console.log(marked('**test**'));
-           $("#entreprise").html(marked(x.querySelector('#entreprise').innerHTML));
-           $("#poste").html(marked(x.querySelector('#poste').innerHTML));
-           $("#profil").html(marked(x.querySelector('#profil').innerHTML));
+         
+           $("#entreprise").html(x.querySelector('#entreprise').innerHTML);
+           $("#poste").html(x.querySelector('#poste').innerHTML);
+           $("#profil").html(x.querySelector('#profil').innerHTML);
         },
         error: function (xhr, status) {
             alert("Sorry, there was a problem!");
