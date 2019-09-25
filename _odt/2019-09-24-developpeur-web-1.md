@@ -8,37 +8,32 @@ dep: Info
 tdc: CDD
 ldt: Nancy
 entreprise: >-
-  **Developpeur web** Cum haec **talia miscente consi**lia, tandem id ut optimum
-  factu elegit: et Vrsicinum primum ad seCum h**specie ut pro rerum tunc**aec
-  litaaque sollicitas eius aures everberarent expositas semper venire summo cum
-  honore mandavit ea **specie ut pro rerum tunc**
+  # **Developpeur web** 
+
+
+  Cum haec **talia miscente consi**lia, tandem id ut optimum factu elegit: et
+  Vrsicinum primum ad seCum h**specie ut pro rerum tunc**aec litaaque sollicitas
+  eius aures everberarent expositas semper venire summo cum honore mandavit ea
+  **specie ut pro rerum tunc**
 poste: >-
-  > **Developpeur web** Cum haec 
+  > * **Developpeur web** Cum haec 
 
-  >
+  > * **talia miscente consi**
 
-  > **talia miscente consi**
+  > * lia, tandem id ut optimum factu elegit: et Vrsicinum primum ad seCum h
 
-  >
+  > * **specie ut pro rerum tunc**
 
-  > lia, tandem id ut optimum factu elegit: et Vrsicinum primum ad seCum h
-
-  >
-
-  > **specie ut pro rerum tunc**
-
-  >
-
-  > aec litaaque sollicitas eius aures everberarent expositas semper venire
+  > * aec litaaque sollicitas eius aures everberarent expositas semper venire
   summo cum honore mandavit ea 
 
-  >
-
-  > **specie ut pro rerum tunc**
+  > * **specie ut pro rerum tunc**
 profil: >-
-  **Developpeur web** Cum haec **talia miscente consi**lia, tandem id ut optimum
-  factu elegit: et Vrsicinum primum ad seCum h**specie ut pro rerum tunc**aec
-  litaaque sollicitas eius aures everberarent expositas semper venire summo cum
-  honore mandavit ea **specie ut pro rerum tunc**
+  1. **Developpeur web** Cum haec **talia miscente consi**lia, tandem id ut
+  optimum factu elegit: et Vrsicinum primum ad seCum h**specie ut pro rerum
+  tunc**aec litaaque 
+
+  2. sollicitas eius aures everberarent expositas semper venire summo cum honore
+  mandavit ea **specie ut pro rerum tunc**
 ---
 
