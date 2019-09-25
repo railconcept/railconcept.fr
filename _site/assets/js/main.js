@@ -1106,7 +1106,7 @@ function get_offre($url,$that,e){
            $("#entreprise").html(x.querySelector('#entreprise').innerHTML);
            $("#poste").html(x.querySelector('#poste').innerHTML);
            $("#profil").html(x.querySelector('#profil').innerHTML);
-           $("#selected_job").html(x.querySelector('#title').innerHTML + " - " + x.querySelector('#offre_date').innerHTML );
+           $("#selected_job").val(x.querySelector('#title').innerHTML + " - " + x.querySelector('#offre_date').innerHTML );
 
 
         },
