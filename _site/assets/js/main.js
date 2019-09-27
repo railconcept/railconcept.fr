@@ -1,3 +1,4 @@
+var base_url = window.location.origin;
 $initial_height = $small = $bottom = 0;
 $initial_height = $("#div-navbar").css("height");
 $small = $("#container-navbar").css("padding-top");
@@ -1084,6 +1085,24 @@ $(document).ready(function () {
 
 
     $(".select_offre").first().trigger("click");
+
+    $('#input-search').on('keypress', function (e) {
+        if(e.which === 13){
+
+        if( $(this).val().length > 0){
+         window.location.replace(base_url+"/search?query="+$(this).val());
+        }
+       
+
+        }
+  });
+
+  var current_url      = window.location.href; 
+  if (current_url.indexOf('#') > -1){
+    $id_tab = current_url.substr(current_url.indexOf("#") + 1)
+   $('a[href="#' + $id_tab + '"]').trigger('click') ;
+  
+  }
 });
 
 function get_offre($url,$that,e){
@@ -1129,7 +1148,10 @@ function get_offre($url,$that,e){
 
 }
 
+function redirect_to($link){
+    window.location.replace(base_url+$link);
 
+}
 
 function goToByScroll(id) {
     // Remove "link" from the ID

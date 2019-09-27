@@ -26,24 +26,24 @@
 				</button>
                     <div  id="navbar-menu" class="collapse navbar-collapse" >
                         <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item nav-li " role="presentation"><a id="index" class="nav-link link-navbar" href="">nous connaître</a></li>
-                            <li class="nav-item nav-li" role="presentation"><a id="competances" class="nav-link link-navbar" href="/competances">nos compétances</a></li>
+                            <li class="nav-item nav-li " role="presentation"><a id="qui-sommes-nous" class="nav-link link-navbar" href="/qui-sommes-nous">nous connaître</a></li>
+                            <li class="nav-item nav-li" role="presentation"><a id="competance" class="nav-link link-navbar" href="/competance">nos compétances</a></li>
                             <li class="nav-item nav-li" role="presentation"><a id="realisations" class="nav-link link-navbar" href="/realisations">nos réalisations</a></li>
-                            <li class="nav-item nav-li" role="presentation"><a id="carrieres" class="nav-link link-navbar" href="/carrieres">carrières</a></li>
+                            <li class="nav-item nav-li" role="presentation"><a id="rejoignez-nous" class="nav-link link-navbar" href="/rejoignez-nous">carrières</a></li>
                             <li class="nav-item nav-li" role="presentation"><a id="actualites"class="nav-link link-navbar" href="/actualites">actualités</a></li>
                             <li class="nav-item nav-li" role="presentation"><a id="contact" class="nav-link link-navbar" href="/contact">contact</a></li>
                             <li class="nav-item nav-li no-underline" role="presentation" id="search">
-							<a class="nav-link link-navbar" href="#" id="search-link"><i class="fas fa-search"></i></a>
-							 <input id="input-search" type="text" class="search-txt shadow-none" placeholder="recherche..."  name="search-txt" />
-							</li>
+                            <a class="nav-link link-navbar" href="#" id="search-link"><i class="fas fa-search"></i></a>
+                            <input id="input-search" type="text" class="search-txt shadow-none" placeholder="recherche..."  name="search-txt" />
+                            </li>
 							
                             <li id="lang" class="dropdown nav-item nav-li no-underline">
 				
-							 <a class="nav-link link-navbar dropdown-toggle lang-select " data-toggle="dropdown" href="#" role="button"   aria-haspopup="true" aria-expanded="false">
+							 <a class="nav-link link-navbar dropdown-toggle lang-select " data-toggle="dropdown" href="" role="button"   aria-haspopup="true" aria-expanded="false">
 								<img class="flags" src="/assets/img/flags/fr.png">
 								</a>
                                 <div id="select_flag" class="dropdown-menu">
-                                    <a id="dropdown-flags" class="/assets/dropdown-item" href="#">
+                                    <a id="dropdown-flags" class="dropdown-item" href="/en/home">
 									<img class="flags" src="/assets/img/flags/gb.png">English</a>
                                 </div>
                             </li>
@@ -234,7 +234,7 @@
             </div>
         <div class="parent-contactez col-md-4 col-sm-12 ">
                     
-                    <button  type="button" class="btn contactez float-right " data-aos="zoom-in"> contactez-nous !</button>
+                    <button  type="button" class="btn contactez float-right " data-aos="zoom-in" onclick="redirect_to('/en/contact');"> contactez-nous !</button>
                    
         </div>  
             
@@ -255,12 +255,11 @@
   </script>
 
 
+ <span class="d-none">foooooterxxx</span>
 <footer>
     <section id="footer">
             <div class="container">
                 <div class="row text-center text-xs-center text-sm-center text-md-left ">
-
-
                     <div class="col-md-3 col-xs-12 col-sm-12 pl-0 pr-0">
                     <div class="col-12">
                             <img class="logo-footer" src="/assets/img/logo/logo.png" >
@@ -295,31 +294,31 @@
                         
                     </div>
                     <div class="col-md-2 col-xs-12 col-sm-12 pl-0 pr-0 mt-3">
-                        <div class="footer-title "><a href="#"> nous connaître</a></div>
+                        <div class="footer-title "><a href="/qui-sommes-nous"> nous connaître</a></div>
                         <div class="groupe ">
-                            <a href="#" class="footer-body">Qui sommes-nous</a><br>
-                            <a href="#" class="footer-body">Notre équipe</a><br>
+                            <a href="/qui-sommes-nous/#nous" class="footer-body">Qui sommes-nous</a><br>
+                            <a href="/qui-sommes-nous/#notre-equipe" class="footer-body">Notre équipe</a><br>
                         </div>
-                        <div class="footer-title mt-3"><a href="#">nos compétences</a></div>
+                        <div class="footer-title mt-3"><a href="/competance">nos compétences</a></div>
                         <div class="groupe ">
-                        
-                            <a href="#" class="footer-body"> études</a><br>
-                            <a href="#" class="footer-body">Expertise / Conseil</a><br>
-                            <a href="#" class="footer-body">Logiciels spécialisés</a><br>
+                           <a href="/competance/#pills-mission" class="footer-body"> Mission AMO grands projets</a><br>
+                            <a href="/competance/#pills-etude" class="footer-body"> études</a><br>
+                            <a href="/competance/#pills-expert" class="footer-body">Expertise / Conseil</a><br>
+                            <a href="/competance/#pills-logiciel" class="footer-body">Logiciels spécialisés</a><br>
                         </div>
                     </div>
     
                     <div class="col-md-3 col-xs-12 col-sm-12 mt-3">
                         <div class="footer-title "> <a href="#">nos réalisations</a></div>
                         <div class="groupe">
-                            <a href="#" class="footer-body">Mission AMO Grands Projets</a><br>
-                            <a href="#" class="footer-body">études</a><br>
-                            <a href="#" class="footer-body">Expertise / Conseil</a><br>
-                            <a href="#" class="footer-body">Vente logiciel</a><br>
+                            <a href="/realisations/#mission" class="footer-body">Mission AMO Grands Projets</a><br>
+                            <a href="/realisations/#etude" class="footer-body">études</a><br>
+                            <a href="/realisations/#expert" class="footer-body">Expertise / Conseil</a><br>
+                            <a href="/realisations/#logiciel" class="footer-body">Vente logiciel</a><br>
                         </div>
     
-                        <div class="footer-title mt-3 "><a href="#">carrières</a></div>
-                        <div class="footer-title mt-3 "><a href="#">actualités</a></div>
+                        <div class="footer-title mt-3 "><a href="/rejoignez-nous">carrières</a></div>
+                        <div class="footer-title mt-3 "><a href="/actualites">actualités</a></div>
                     </div>
                     <div class="col-md-4 col-xs-12 col-sm-12 mt-3">
                         <div class="footer-title">abonnez-vous à notre newsletter !</div>
@@ -337,7 +336,7 @@
     
                         <div class="footer-title mt-3">vous souhaitez faire parti de l’équipe</div>
                         <div class="form-group text-left  text-xs-center text-sm-center" >
-                            <button type="button" class="contactez-red btn mt10" data-aos="zoom-in" data-aos-anchor=".contactez"> contactez-nous !</button>
+                            <a href="/contact" class="contactez-red btn  mt10" data-aos="zoom-in" data-aos-anchor=".contactez"> contactez-nous !</a>
                         </div>
                     </div>
                 </div>
@@ -381,14 +380,10 @@
 <script src="/assets/js/bootstrap-swipe-carousel.min.js"></script>
 <script src="/assets/js/aos.js"></script>
 <script src="/assets/js/sweetalert2.js"></script>
-
+<script src="/assets/js/lunr.js"></script>
+<script src="/assets/js/search.js"></script>
 <script src="/assets/js/main.js"></script>
-<script >
 
-console.log("site base url ","");
-console.log("site url ","http://localhost:4000");
-
-</script>
 </body>
 
 </html>    

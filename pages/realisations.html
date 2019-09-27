@@ -1,7 +1,7 @@
 ---
 title: Réalisations
 layout: default
-permalink: realisations
+permalink: /realisations
 ---
 
 
@@ -16,11 +16,8 @@ permalink: realisations
           </div>
           </div>
     
-        <!-- realisations details -->
-    
+        <!-- realisations details -->  
         <section class="realisations-recherche mt-5 pt-5 mb-5 pb-5">
-    
-    
             <div class="row">
                 <div class="col-lg-5 col-md-5 col-sm-12 col-12 pl-0 pr-0 ">
     
@@ -34,12 +31,12 @@ permalink: realisations
     
                             <div class="row">
                                 <div class="col-11 pl-0 pr-0">
-                                    <a id="1" class="nav-link link-rech-real " data-toggle="tab" href="#bloc1"
+                                    <a id="1" class="nav-link link-rech-real " data-toggle="tab" href="#mission"
                                         onclick="rech_releaseEvents(this);">
                                         <div class="row">
                                             <div class=" col-lg-3 col-md-4 col-sm-3 col-3 pl-0 pr-0"> 
                                             <div id="bg-circle-1" class="bg-circle image-active ">
-                                                <img class="image-rech-real" src="assets/img/page-realisations/icon1.png"
+                                                <img class="image-rech-real" src="{{ base-url }}/assets/img/page-realisations/icon1.png"
                                                     height="27">
                                             </div>
                                             </div>
@@ -58,12 +55,12 @@ permalink: realisations
                         <li class="nav-item">
                             <div class="row">
                                 <div class="col-11 pl-0 pr-0">
-                                    <a id="2" class="nav-link link-rech-real" data-toggle="tab" href="#bloc2"
+                                    <a id="2" class="nav-link link-rech-real" data-toggle="tab" href="#etude"
                                         onclick="rech_releaseEvents(this);">
                                         <div class="row">
                                                 <div class=" col-lg-3 col-md-4 col-sm-3 col-3 pl-0 pr-0"> 
                                                 <div id="bg-circle-2" class="bg-circle ">
-                                                    <img class="image-rech-real" src="assets/img/page-realisations/icon2.png"
+                                                    <img class="image-rech-real" src="{{ base-url }}/assets/img/page-realisations/icon2.png"
                                                         height="27">
                                                 </div>
                                                 </div>
@@ -82,12 +79,12 @@ permalink: realisations
                         <li class="nav-item">
                             <div class="row">
                                 <div class="col-11 pl-0 pr-0">
-                                    <a id="3" class="nav-link link-rech-real" data-toggle="tab" href="#bloc3"
+                                    <a id="3" class="nav-link link-rech-real" data-toggle="tab" href="#expert"
                                         onclick="rech_releaseEvents(this);">
                                         <div class="row">
                                                 <div class=" col-lg-3 col-md-4 col-sm-3 col-3 pl-0 pr-0"> 
                                                 <div id="bg-circle-3" class="bg-circle  ">
-                                                    <img class="image-rech-real" src="assets/img/page-realisations/icon3.png"
+                                                    <img class="image-rech-real" src="{{ base-url }}/assets/img/page-realisations/icon3.png"
                                                         height="27">
                                                 </div>
                                                 </div>
@@ -97,7 +94,6 @@ permalink: realisations
                                 </div>
                                 <div class="col-1 pl-0 pr-0 text-center">
                                     <input type="checkbox" class="form-check-input rech-check" name="check-it" id="check03">
-    
                                 </div>
                             </div>
                         </li>
@@ -105,12 +101,12 @@ permalink: realisations
                         <li class="nav-item">
                             <div class="row">
                                 <div class="col-11 pl-0 pr-0">
-                                    <a id="4" class="nav-link link-rech-real" data-toggle="tab" href="#bloc4"
+                                    <a id="4" class="nav-link link-rech-real" data-toggle="tab" href="#logiciel"
                                         onclick="rech_releaseEvents(this);">
                                         <div class="row">
                                                 <div class=" col-lg-3 col-md-4 col-sm-3 col-3 pl-0 pr-0"> 
                                                 <div id="bg-circle-4" class="bg-circle">
-                                                    <img class="image-rech-real" src="assets/img/page-realisations/icon4.png"
+                                                    <img class="image-rech-real" src="{{ base-url }}/assets/img/page-realisations/icon4.png"
                                                         height="27">
                                                 </div>
                                                 </div>
@@ -131,22 +127,22 @@ permalink: realisations
                 </div>
                 <div class="col-lg-7 col-md-7  col-sm-12 col-12 pl-0 pr-0">
                     <div class="tab-content">
-                        <div class="tab-pane active" id="bloc1" role="tabpanel">
+                        <div class="tab-pane active" id="mission" role="tabpanel">
                             <div class="sv-tab-panel">
                                 <div id="map1" class="g_map"></div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="bloc2" role="tabpanel">
+                        <div class="tab-pane" id="etude" role="tabpanel">
                             <div class="sv-tab-panel">
                                 <div id="map2x" class="g_map" ></div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="bloc3" role="tabpanel">
+                        <div class="tab-pane" id="expert" role="tabpanel">
                             <div class="sv-tab-panel">
                                 <div id="map3x" class="g_map" ></div>
                             </div>
                         </div>
-                        <div class="tab-pane" id="bloc4" role="tabpanel">
+                        <div class="tab-pane" id="logiciel" role="tabpanel">
                             <div class="sv-tab-panel">
                                 <div id="map4x" class="g_map"></div>
                             </div>
@@ -183,7 +179,7 @@ permalink: realisations
                                  <div class="row col-12">
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  magp">
-                                            <img src="assets/img/page-realisations/real1.png" class="img-fluid ">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real1.png" class="img-fluid ">
                                             <div class="title-realisation mt-2 contenu-competence">STIF - Mission de maîtrise d'oeuvre Générale: OPERATION TANGENT
                                                 (<span
                                                         class="colored">TGO</span> )
@@ -193,7 +189,7 @@ permalink: realisations
                                     </div>
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  etude">
-                                            <img src="assets/img/page-realisations/real2.png" class="img-fluid">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real2.png" class="img-fluid">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude d'exploitation, de robustesse et de capacité en
                                                 phase
                                                 EP et AVP :
@@ -205,7 +201,7 @@ permalink: realisations
                                     </div>
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  e-e">
-                                            <img src="assets/img/page-realisations/real3.png" class="img-fluid ">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real3.png" class="img-fluid ">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude de trafic et capacité
                                                 <span class="colored">contributive du Projet GPSO</span>
                         
@@ -215,7 +211,7 @@ permalink: realisations
                                     </div>
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  magp">
-                                            <img src="assets/img/page-realisations/real1.png" class="img-fluid ">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real1.png" class="img-fluid ">
                                             <div class="title-realisation mt-2 contenu-competence">STIF - Mission de maîtrise d'oeuvre Générale: OPERATION TANGENT
                                                 (<span
                                                         class="colored">TGO</span> )
@@ -225,7 +221,7 @@ permalink: realisations
                                     </div>
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  etude">
-                                            <img src="assets/img/page-realisations/real2.png" class="img-fluid">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real2.png" class="img-fluid">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude d'exploitation, de robustesse et de capacité en
                                                 phase
                                                 EP et AVP :
@@ -237,7 +233,7 @@ permalink: realisations
                                     </div>
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  e-e">
-                                            <img src="assets/img/page-realisations/real3.png" class="img-fluid ">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real3.png" class="img-fluid ">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude de trafic et capacité
                                                 <span class="colored">contributive du Projet GPSO</span>
                         
@@ -246,7 +242,7 @@ permalink: realisations
                                              <div class="sous-title">aquitaine (France) 6</div>
                                     </div>
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  e-e">
-                                            <img src="assets/img/page-realisations/real1.png" class="img-fluid ">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real1.png" class="img-fluid ">
                                             <div class="title-realisation mt-2 contenu-competence">STIF - Mission de maîtrise d'oeuvre Générale: OPERATION TANGENT
                                                 (<span
                                                         class="colored">TGO</span> )
@@ -256,7 +252,7 @@ permalink: realisations
                                     </div>
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  e-e">
-                                            <img src="assets/img/page-realisations/real2.png" class="img-fluid">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real2.png" class="img-fluid">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude d'exploitation, de robustesse et de capacité en
                                                 phase
                                                 EP et AVP :
@@ -268,7 +264,7 @@ permalink: realisations
                                     </div>
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  magp">
-                                            <img src="assets/img/page-realisations/real3.png" class="img-fluid ">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real3.png" class="img-fluid ">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude de trafic et capacité
                                                 <span class="colored">contributive du Projet GPSO</span>
                         
@@ -278,7 +274,7 @@ permalink: realisations
                                     </div>
     
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  e-e">
-                                            <img src="assets/img/page-realisations/real2.png" class="img-fluid">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real2.png" class="img-fluid">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude d'exploitation, de robustesse et de capacité en
                                                 phase
                                                 EP et AVP :
@@ -290,7 +286,7 @@ permalink: realisations
                                     </div>
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  magp">
-                                            <img src="assets/img/page-realisations/real3.png" class="img-fluid ">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real3.png" class="img-fluid ">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude de trafic et capacité
                                                 <span class="colored">contributive du Projet GPSO</span>
                         
@@ -299,7 +295,7 @@ permalink: realisations
                                              <div class="sous-title">aquitaine (France) 11</div>
                                     </div>
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  e-e">
-                                            <img src="assets/img/page-realisations/real2.png" class="img-fluid">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real2.png" class="img-fluid">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude d'exploitation, de robustesse et de capacité en
                                                 phase
                                                 EP et AVP :
@@ -311,7 +307,7 @@ permalink: realisations
                                     </div>
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  magp">
-                                            <img src="assets/img/page-realisations/real3.png" class="img-fluid ">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real3.png" class="img-fluid ">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude de trafic et capacité
                                                 <span class="colored">contributive du Projet GPSO</span>
                         
@@ -320,7 +316,7 @@ permalink: realisations
                                              <div class="sous-title">aquitaine (France) 13</div>
                                     </div>
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  e-e">
-                                            <img src="assets/img/page-realisations/real2.png" class="img-fluid">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real2.png" class="img-fluid">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude d'exploitation, de robustesse et de capacité en
                                                 phase
                                                 EP et AVP :
@@ -332,7 +328,7 @@ permalink: realisations
                                     </div>
                         
                                     <div class="gallery-real col-lg-4 col-md-4 col-sm-4 col-6 mt-5  magp">
-                                            <img src="assets/img/page-realisations/real3.png" class="img-fluid ">
+                                            <img src="{{ base-url }}/assets/img/page-realisations/real3.png" class="img-fluid ">
                                             <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude de trafic et capacité
                                                 <span class="colored">contributive du Projet GPSO</span>
                         

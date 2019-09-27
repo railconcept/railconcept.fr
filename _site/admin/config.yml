@@ -19,6 +19,7 @@ collections:
            - {label: Tel (+code pays), name: tel, widget: string}
            - {label: Tel affiché, name: tel_display, widget: string}
            - {label: Website description, name: website_desc, widget: string}
+          - {label: Website description Eng, name: website_desc_eng, widget: string}
            - label: "Location"
              name: "location"
              widget: "object"
@@ -34,6 +35,7 @@ collections:
     fields:
      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
      - {label: "TAG" , name: "title", widget: "string"}
+     - {label: "TAG Eng" , name: "title_eng", widget: "string"}
      - {label: "Tag value", name: "name", widget: "hidden"}
      
   - label: "Actualités" 
@@ -45,6 +47,7 @@ collections:
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
     - {label: "Titre actualité", name: "title", widget: "string"} 
+    - {label: "Titre actualité Eng", name: "title_eng", widget: "string"} 
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
     - label: "Actualité"
       name: "news"
@@ -52,7 +55,9 @@ collections:
       fields:
         - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "catnews",  searchFields: ["title"],  valueField: "name",  displayFields: ["title"] , multiple: true }
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
+        - {label: "Paragraphe 1 Eng", name: "news_1_eng", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
+        - {label: "Paragraphe 2 Eng", name: "news_2_eng", widget: "markdown", required: false}
     - label: "Actualité photo"
       name: "news_photo"
       widget: "object" 

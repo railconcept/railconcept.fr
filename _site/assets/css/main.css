@@ -1007,18 +1007,20 @@ width:120px;
 .contactez-red {
     font-family: "Barlow Semi Condensed" ,sans-serif;
     font-size: 20px;
-    color: white;
+    color: white !important;
     width: 250px;
     height: 50px;
     background-color: #942626;
     font-weight: bold;
-    border: #942626;
+   
     text-transform: uppercase;
-    box-shadow: 3px 3px 37px 3px rgba(0,0,0,.075);
+  
   
     border-radius: 0;
 }
-
+.contactez-red:hover{
+    cursor: pointer;
+}
 /***************************************
 **************COPYRIGHT***********
 ***************************************/
@@ -1714,6 +1716,16 @@ background-image:  url("../img/page-actualites/actualites-2.png");
 .select_offre{
     cursor: pointer;
 }
+#search:before{
+    border:none !important ; 
+}
+#results_search{
+    background-image: url("../img/page-competances/icon1-etudes.png");
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    background-position: right 100px top 100px;
+
+}
      
 /***************************************
 **************RESPONSIVE CSS ***********
@@ -1807,6 +1819,7 @@ background-image:  url("../img/page-actualites/actualites-2.png");
     #search-link{
         padding-right : 0 !important ;
     }
+
     .contact-img{
         top:auto;
         bottom:auto;

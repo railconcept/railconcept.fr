@@ -1,10 +1,9 @@
 
+ <span class="d-none">foooooterxxx</span>
 <footer>
     <section id="footer">
             <div class="container">
                 <div class="row text-center text-xs-center text-sm-center text-md-left ">
-
-
                     <div class="col-md-3 col-xs-12 col-sm-12 pl-0 pr-0">
                     <div class="col-12">
                             <img class="logo-footer" src="{{ site.baseurl }}/assets/img/logo/logo.png" >
@@ -39,31 +38,31 @@
                         
                     </div>
                     <div class="col-md-2 col-xs-12 col-sm-12 pl-0 pr-0 mt-3">
-                        <div class="footer-title "><a href="#"> nous connaître</a></div>
+                        <div class="footer-title "><a href="/qui-sommes-nous"> nous connaître</a></div>
                         <div class="groupe ">
-                            <a href="#" class="footer-body">Qui sommes-nous</a><br>
-                            <a href="#" class="footer-body">Notre équipe</a><br>
+                            <a href="/qui-sommes-nous/#nous" class="footer-body">Qui sommes-nous</a><br>
+                            <a href="/qui-sommes-nous/#notre-equipe" class="footer-body">Notre équipe</a><br>
                         </div>
-                        <div class="footer-title mt-3"><a href="#">nos compétences</a></div>
+                        <div class="footer-title mt-3"><a href="/competance">nos compétences</a></div>
                         <div class="groupe ">
-                        
-                            <a href="#" class="footer-body"> études</a><br>
-                            <a href="#" class="footer-body">Expertise / Conseil</a><br>
-                            <a href="#" class="footer-body">Logiciels spécialisés</a><br>
+                           <a href="/competance/#pills-mission" class="footer-body"> Mission AMO grands projets</a><br>
+                            <a href="/competance/#pills-etude" class="footer-body"> études</a><br>
+                            <a href="/competance/#pills-expert" class="footer-body">Expertise / Conseil</a><br>
+                            <a href="/competance/#pills-logiciel" class="footer-body">Logiciels spécialisés</a><br>
                         </div>
                     </div>
     
                     <div class="col-md-3 col-xs-12 col-sm-12 mt-3">
                         <div class="footer-title "> <a href="#">nos réalisations</a></div>
                         <div class="groupe">
-                            <a href="#" class="footer-body">Mission AMO Grands Projets</a><br>
-                            <a href="#" class="footer-body">études</a><br>
-                            <a href="#" class="footer-body">Expertise / Conseil</a><br>
-                            <a href="#" class="footer-body">Vente logiciel</a><br>
+                            <a href="/realisations/#mission" class="footer-body">Mission AMO Grands Projets</a><br>
+                            <a href="/realisations/#etude" class="footer-body">études</a><br>
+                            <a href="/realisations/#expert" class="footer-body">Expertise / Conseil</a><br>
+                            <a href="/realisations/#logiciel" class="footer-body">Vente logiciel</a><br>
                         </div>
     
-                        <div class="footer-title mt-3 "><a href="#">carrières</a></div>
-                        <div class="footer-title mt-3 "><a href="#">actualités</a></div>
+                        <div class="footer-title mt-3 "><a href="/rejoignez-nous">carrières</a></div>
+                        <div class="footer-title mt-3 "><a href="/actualites">actualités</a></div>
                     </div>
                     <div class="col-md-4 col-xs-12 col-sm-12 mt-3">
                         <div class="footer-title">abonnez-vous à notre newsletter !</div>
@@ -81,7 +80,7 @@
     
                         <div class="footer-title mt-3">vous souhaitez faire parti de l’équipe</div>
                         <div class="form-group text-left  text-xs-center text-sm-center" >
-                            <button type="button" class="contactez-red btn mt10" data-aos="zoom-in" data-aos-anchor=".contactez"> contactez-nous !</button>
+                            <a href="/contact" class="contactez-red btn  mt10" data-aos="zoom-in" data-aos-anchor=".contactez"> contactez-nous !</a>
                         </div>
                     </div>
                 </div>
@@ -125,14 +124,10 @@
 <script src="{{ site.baseurl }}/assets/js/bootstrap-swipe-carousel.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/aos.js"></script>
 <script src="{{ site.baseurl }}/assets/js/sweetalert2.js"></script>
-
+<script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
+<script src="{{ site.baseurl }}/assets/js/search.js"></script>
 <script src="{{ site.baseurl }}/assets/js/main.js"></script>
-<script >
 
-console.log("site base url ","{{ site.baseurl }}");
-console.log("site url ","{{ site.url }}");
-
-</script>
 </body>
 
 </html>    
