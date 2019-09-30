@@ -19,7 +19,7 @@ collections:
            - {label: Tel (+code pays), name: tel, widget: string}
            - {label: Tel affiché, name: tel_display, widget: string}
            - {label: Website description, name: website_desc, widget: string}
-          - {label: Website description Eng, name: website_desc_eng, widget: string}
+           - {label: Website description Eng, name: website_desc_eng, widget: string}
            - label: "Location"
              name: "location"
              widget: "object"
@@ -27,6 +27,8 @@ collections:
               - {label: Street adress, name: street_adress, widget: string}
               - {label: Region, name: region, widget: string}
               - {label: Country, name: country, widget: string}
+           - {label: Facebook, name: facebook, widget: string}
+           - {label: Twitter, name: twitter, widget: string}
 
   - label: "Actualités settings"
     name: "catnews"

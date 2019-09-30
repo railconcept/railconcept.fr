@@ -27,6 +27,8 @@ collections:
               - {label: Street adress, name: street_adress, widget: string}
               - {label: Region, name: region, widget: string}
               - {label: Country, name: country, widget: string}
+           - {label: Facebook, name: facebook, widget: string}
+           - {label: Twitter, name: twitter, widget: string}
 
   - label: "Actualités settings"
     name: "catnews"
