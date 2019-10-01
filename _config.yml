@@ -19,6 +19,6 @@ collections:
   odt:
     output: true
     permalink: /odt/:path/
-  enposts:
+  newspost:
     output: true
     permalink: /newspost/:path/

@@ -63,12 +63,14 @@ permalink: en/news
 
                         {% for tagx in site.catnews %}
                     <button id="{{tagx.tag_val}}" class="btn btn-default filter-button text-uppercase"
-                        onclick="filtrer_act('{{tagx.name}}');">{{tagx.title}}</button>
+                        onclick="filtrer_act('{{tagx.name}}');">{{tagx.title_eng}}</button>
                         {% endfor %}
                   
 
                 </div>
 
+
+            </ul>
                 <div class="row col-12 pl-0 pr-0">
 
                         {% for post in site.newspost %}
