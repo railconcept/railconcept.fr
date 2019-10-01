@@ -40,6 +40,9 @@ permalink: /search
 
           {% for pages in site.pages %}     
           {% if pages.title != "railconcept | 404"  and pages.title != "railconcept | success" and pages.title != "..." and pages.title != '' and pages.title != "Search" and pages.url != "/assets/main.css" and pages.url != "/feed.xml" %}
+         
+          {% if pages.url contains "/en/" %}{% else %}
+         
           {% assign pagecontent = pages.content | strip_html %}
           {% assign pcontent = pagecontent | split: "foooooterxxx" | first %}
             "{{ pages.url | slugify }}": {
@@ -54,6 +57,7 @@ permalink: /search
               "url": "{{ pages.url | xml_escape }}"
             }
             ,
+            {% endif %}
             {% endif %}
           {% endfor %} 
 
@@ -102,7 +106,7 @@ permalink: /search
 
 
 
-            console.log(window.store)
+            
       </script>
 
 
@@ -116,5 +120,11 @@ permalink: /search
 
 {% include contact.html %}
 
+<script type="text/javascript"> 
+  let tagsss =[[],[]];
+   "{% for tagz in site.catnews %}"
+       tagsss["{{tagz.name}}"] = ["{{tagz.title}}"]
+    "{% endfor %}"
+</script>
 
 {% include footer.html %}

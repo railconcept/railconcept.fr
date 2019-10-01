@@ -108,7 +108,7 @@ layout: eng-page
     </div>
 </section>
 
-{% include contact.html %}
+{% include eng-contact.html %}
 
 <script type="text/javascript"> 
     let tagsss =[[],[]];
@@ -117,4 +117,4 @@ layout: eng-page
       "{% endfor %}"
   </script>
 
-{% include footer.html %}
+{% include eng-footer.html %}

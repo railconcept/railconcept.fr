@@ -343,7 +343,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -358,7 +358,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -373,7 +373,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -470,7 +470,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -485,7 +485,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -500,7 +500,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -598,7 +598,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -613,7 +613,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -628,7 +628,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -726,7 +726,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map4x,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -741,7 +741,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map4x,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -756,7 +756,7 @@ $(document).ready(function () {
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map4x,
-                icon: 'assets/img/page-realisations/pin.png',
+                icon: base_url+'/assets/img/page-realisations/pin.png',
                 animation: google.maps.Animation.DROP
 
             });
@@ -1090,7 +1090,7 @@ $(document).ready(function () {
         if(e.which === 13){
 
         if( $(this).val().length > 0){
-         window.location.replace(base_url+"/search?query="+$(this).val());
+         window.location.replace(base_url+"/en/search?query="+$(this).val());
         }
        
 
@@ -1103,6 +1103,17 @@ $(document).ready(function () {
    $('a[href="#' + $id_tab + '"]').trigger('click') ;
   
   }
+
+
+
+
+  $(".tagx").each(function(i, obj) {
+      $tag ="";
+      $tag = $(this).html() ;
+      $(this).html(tagsss[$tag][0]);
+});
+
+
 });
 
 function get_offre($url,$that,e){

@@ -62,7 +62,7 @@ permalink: en/news
                         onclick="filtrer_act('all');">voir tout</button>
 
                         {% for tagx in site.catnews %}
-                    <button id="{{tagx.tag_val}}" class="btn btn-default filter-button text-uppercase"
+                    <button id="{{tagx.name}}" class="btn btn-default filter-button text-uppercase"
                         onclick="filtrer_act('{{tagx.name}}');">{{tagx.title_eng}}</button>
                         {% endfor %}
                   

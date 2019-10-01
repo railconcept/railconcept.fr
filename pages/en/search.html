@@ -39,7 +39,7 @@ permalink: en/search
         window.store = {
 
           {% for pages in site.pages %}     
-          {% if pages.title != "railconcept | 404"  and pages.title != "railconcept | success" and pages.title != "..." and pages.title != '' and pages.title != "Search" and pages.url != "/assets/main.css" and pages.url != "/feed.xml" %}
+          {% if pages.title != "railconcept | 404"  and pages.title != "railconcept | success" and pages.title != "..." and pages.title != '' and pages.title != "Search" and pages.url != "/assets/main.css" and pages.url != "/feed.xml" and pages.url contains "/en/"%}
           {% assign pagecontent = pages.content | strip_html %}
           {% assign pcontent = pagecontent | split: "foooooterxxx" | first %}
             "{{ pages.url | slugify }}": {
@@ -57,7 +57,7 @@ permalink: en/search
             {% endif %}
           {% endfor %} 
 
-          {% for post in site.posts %}
+          {% for post in site.newspost %}
           {% assign tags = '' | split: '' %}
           {% for tag in post.news.taggx %} 
           {% assign tagval = tag |append: ',' | split: '_' | first | split: '' %}
@@ -85,13 +85,13 @@ permalink: en/search
         
                 "{{ offre.url | slugify }}":{
               "type" : "jobs",
-              "title": "{{ offre.title | xml_escape }}",
+              "title": "{{ offre.title_eng | xml_escape }}",
               "date": "{{ offre.date | xml_escape }}",
               "tag": "{{ 'null' | xml_escape}}",
-              "dep": "{{ offre.dep | xml_escape}}",
-              "tdc": "{{ offre.tdc | xml_escape}}",
-              "ldt": "{{ offre.ldt | xml_escape}}",
-              "content": {{ offre.poste | apppend: offre.entreprise | append: offre.profile | strip_html | strip_newlines | jsonify }},
+              "dep": "{{ offre.dep_eng | xml_escape}}",
+              "tdc": "{{ offre.tdc_eng | xml_escape}}",
+              "ldt": "{{ offre.ldt_eng | xml_escape}}",
+              "content": {{ offre.poste_eng | apppend: offre.entreprise_eng | append: offre.profile_eng | strip_html | strip_newlines | jsonify }},
               "url": "{{ post.url | xml_escape }}"
             }
             {% unless forloop.last %},{% endunless %}
@@ -114,7 +114,16 @@ permalink: en/search
 
 
 
-{% include contact.html %}
+{% include eng-contact.html %}
 
 
-{% include footer.html %}
+<script type="text/javascript"> 
+  let tagsss =[[],[]];
+   "{% for tagz in site.catnews %}"
+       tagsss["{{tagz.name}}"] = ["{{tagz.title_eng}}"]
+    "{% endfor %}"
+</script>
+
+
+
+{% include eng-footer.html %}

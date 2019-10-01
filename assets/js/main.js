@@ -1103,6 +1103,14 @@ $(document).ready(function () {
    $('a[href="#' + $id_tab + '"]').trigger('click') ;
   
   }
+
+
+  $(".tagx").each(function(i, obj) {
+    $tag ="";
+    $tag = $(this).html() ;
+    $(this).html(tagsss[$tag][0]);
+});
+
 });
 
 function get_offre($url,$that,e){
