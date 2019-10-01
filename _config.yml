@@ -15,7 +15,7 @@ kramdown:
 collections:
   catnews:
     output: true
-    permalink: /newstags/:path/
+    permalink: /catnews/:path/
   odt:
     output: true
     permalink: /odt/:path/

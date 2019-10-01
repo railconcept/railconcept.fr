@@ -73,7 +73,7 @@ collections:
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-    - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
+    - {label: "Layout", name: "layout", widget: "hidden", default: "eng-news"} 
     - {label: "Titre actualité", name: "title", widget: "string"} 
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
     - label: "Actualité"
