@@ -1,5 +1,5 @@
 <div id="title">{{ page.title }}</div>
-<div id="title-eng">{{ page.title-eng }}</div>
+<div id="title_eng">{{ page.title-eng }}</div>
 <div id="offre_date">{{ page.date }}</div>
 <div id="departement" > {{page.dep}} </div>
 <div id="departement_eng" > {{page.dep_eng}} </div>

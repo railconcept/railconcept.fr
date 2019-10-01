@@ -49,7 +49,6 @@ collections:
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
     - {label: "Titre actualité", name: "title", widget: "string"} 
-    - {label: "Titre actualité Eng", name: "title_eng", widget: "string"} 
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
     - label: "Actualité"
       name: "news"
@@ -57,9 +56,33 @@ collections:
       fields:
         - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "catnews",  searchFields: ["title"],  valueField: "name",  displayFields: ["title"] , multiple: true }
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
-        - {label: "Paragraphe 1 Eng", name: "news_1_eng", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
-        - {label: "Paragraphe 2 Eng", name: "news_2_eng", widget: "markdown", required: false}
+    - label: "Actualité photo"
+      name: "news_photo"
+      widget: "object" 
+      fields:
+        - {label: "Photo 1", name: "photo_news1", widget: "image"}
+        - {label: "Photo 2", name: "photo_news2", widget: "image"}
+        - {label: "Photo 3", name: "photo_news3", widget: "image"}
+    - {label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string"}   
+
+  - label: "News"
+    name: "newspost"
+    folder: "_news"
+    sort: "date:desc" 
+    create: true 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+    - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
+    - {label: "Titre actualité", name: "title", widget: "string"} 
+    - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
+    - label: "Actualité"
+      name: "news"
+      widget: "object" 
+      fields:
+        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "catnews",  searchFields: ["title_eng"],  valueField: "name",  displayFields: ["title_eng"] , multiple: true }
+        - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
+        - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
       name: "news_photo"
       widget: "object" 
