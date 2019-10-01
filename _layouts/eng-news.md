@@ -78,7 +78,7 @@ layout: eng-page
                 <span class="plus col-12 p-0">VOIR PLUS D'ACTUALITéS</span>       
 {% assign maxPost = 3 %}
 {% assign counter = 0 %}
-  {% for post in site.posts %}
+  {% for post in site.newspost %}
   {% if post.title != page.title %}
         {% assign counter = counter | plus: 1 %}
             <div class="gallery-act  col-md-4  mt-3  
