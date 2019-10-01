@@ -23,7 +23,7 @@ layout: eng-page
                 </div>
                 <div class="title-actualites">{{page.title_eng}}</div>
                 <div class="paragraphe-actualites  justify p-0" markdown="1">
-                 <p>  {{page.news.news_1_eng | markdownify}}</p>
+                 <p>  {{page.news.news_1 | markdownify}}</p>
                 </div>
             </div>
             <div class="col-lg-5 videoWrapper padding-right-none ">
@@ -40,7 +40,7 @@ layout: eng-page
                 <img src="{{ page.news_photo.photo_news3}}" class="img-100">
             </div>
             <div class="paragraphe-actualites espace  justify p-0" markdown="1">
-               <p> {{page.news.news_2_eng | markdownify}}</p>
+               <p> {{page.news.news_2 | markdownify}}</p>
             </div>
         <div class="container p-0 mt-5">   
                   <div class="row d-flex">
@@ -91,7 +91,7 @@ layout: eng-page
                 <img src="{{post.news_photo.photo_news1}}" class="img-100">
                     </div>
                     <div class="card-body pl-0 pr-0">
-                        <div class="paragraphe-actualites mb-3">{{ post.news.news_1_eng | strip_html | truncatewords: 25 }} </div>
+                        <div class="paragraphe-actualites mb-3">{{ post.news.news_1 | strip_html | truncatewords: 25 }} </div>
                         <span class="date-news ">{{ post.date | date_to_long_string }}</span>
                                 <a href="{{ post.url | prepend: site.baseurl }}" class="card-link float-right ">LIRE LA SUITE</a>
                     </div>
