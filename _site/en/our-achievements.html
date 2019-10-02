@@ -499,37 +499,33 @@
                          <div class="footer-title mt-3 "><a href="/en/join-us">carrières</a></div>
                          <div class="footer-title mt-3 "><a href="/en/news">actualités</a></div>
                      </div>
+                     
                      <div class="col-md-4 col-xs-12 col-sm-12 mt-3">
-                         <div class="footer-title">abonnez-vous à notre newsletter !</div>
-                         
-                         <form name="newsletter" method="POST" data-netlify="true">
-                                <p class="hidden">
-                                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                                      </p>
-                        <div class="form-group input-group mt20">
-                            <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email" required>
-                            <div class="input-group-prepend">
-                                <button type="submit" class="boutton input-group-text btn enveloppe"><img src="/assets/img/footer/Enveloppe.png"> </button>
+                            <div class="footer-title">abonnez-vous à notre newsletter !</div>
+                            <form action="/success/en"  name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                                    <p class="hidden">
+                                            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                          </p>
+                            <div class="form-group input-group mt20">
+                                <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email" required>
+                                <div class="input-group-prepend">
+                                    <button type="submit" class="boutton input-group-text btn enveloppe"><img src="/assets/img/footer/Enveloppe.png"> </button>
+                                </div>
+                            </div>
+                           </form>
+                            <div class="footer-title mt-3">suivez-nous sur les réseaux!</div>
+                            <br/>
+                            <a href="https://facebook.com" class="footer-title mr-2" target="_blank"><img id="facebook" src="/assets/img/footer/facebook.png"
+                                                                  height="27"></a>
+                            <a href="https://linked.com" class="footer-title" target="_blank" ><img src="/assets/img/footer/linkedin.png" height="27"></a>
+        
+                            <div class="footer-title mt-3">vous souhaitez faire parti de l’équipe</div>
+                            <div class="form-group text-left  text-xs-center text-sm-center" >
+                                <a href="/contact" class="contactez-red btn  mt10" data-aos="zoom-in" data-aos-anchor=".contactez"> contactez-nous !</a>
                             </div>
                         </div>
-                       </form>
 
 
-
-
-
-
-                         <div class="footer-title mt-3">suivez-nous sur les réseaux!</div>
-                         <br/>
-                         <a href="https://facebook.com" class="footer-title mr-2" target="_blank"><img id="facebook" src="/assets/img/footer/facebook.png"
-                                                               height="27" /></a>
-                         <a href="https://linked.com" class="footer-title" target="_blank"><img src="/assets/img/footer/linkedin.png" height="27" /></a>
-     
-                         <div class="footer-title mt-3">vous souhaitez faire parti de l’équipe</div>
-                         <div class="form-group text-left  text-xs-center text-sm-center" >
-                             <a href="/en/contact" class="contactez-red btn  mt10" data-aos="zoom-in" data-aos-anchor=".contactez"> contactez-nous !</a>
-                         </div>
-                     </div>
                  </div>
              </div>
          </section>
