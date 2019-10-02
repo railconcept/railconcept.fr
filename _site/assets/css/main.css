@@ -36,6 +36,9 @@ input[type=number]::-webkit-outer-spin-button
     text-transform: uppercase;
 
 }
+.h-600{
+    height:600px;
+}
 .row{
     margin-right:0;
     margin-left:0;
@@ -533,7 +536,7 @@ padding-right: 5px !important ;
 .slider-news-img {
     padding: 0;
     width: 100% !important;
-    height:600px;
+  
 }
 
 .slider-news-img>img {
@@ -845,7 +848,7 @@ padding:0;
     -webkit-transform: matrix( 0.65327673530743,0,0,0.65565876916097,0,0);
     box-shadow: 7px 7px 7px 7px rgba(0,0,0,.075);
     position: absolute;
-    width: 90%;
+    width: 110%;
     height: 90%;
 }
 .contactez:hover{
@@ -1831,6 +1834,41 @@ background-image:  url("../img/page-actualites/actualites-2.png");
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991px) {
 
+    #navbar-menu {
+        background-color: #f3f3f3f0;
+        margin-top:10px;
+    }
+    .link-navbar {
+        padding-top: 15px;
+        border-bottom: 2px solid white;
+    }
+    .link-navbar {
+        padding-left: 15px !important;
+    }
+
+    #input-search {
+        margin-top: -40px !important;
+        margin-left: 40px;
+        width: 300px;
+    }
+    #lang {
+        text-align: center;
+    }
+    #select_flag {
+        width: 100px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .link-navbar:hover {
+        color: #942626 !important;
+    }
+    .h-600{
+        height:auto ;
+    }
+
+
     .text-alignit{
         text-align:center !important;
        }
@@ -1868,7 +1906,7 @@ background-image:  url("../img/page-actualites/actualites-2.png");
 
     .link-navbar {
         padding-right: 0.5rem !important;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .lang-select::after {
@@ -2047,6 +2085,10 @@ left: 15%;
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
 
+
+    .h-600{
+        height:auto ;
+    }
     .text-alignit{
         text-align:center !important;
        }
@@ -2291,6 +2333,11 @@ left: 15%;
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
+
+    .h-600{
+        height:auto ;
+    }
+
     .text-alignit{
         text-align:center !important;
        }
