@@ -5,6 +5,7 @@ theme: minima
 plugins: # previously gems
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 
 highlighter: rouge
