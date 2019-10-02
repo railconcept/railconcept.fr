@@ -12,6 +12,12 @@ layout: page
         <div class="row h-100 justify-content-center align-items-center">
 
         </div>
+         <ol class="breadcrumb size-bread">
+                <li class="breadcrumb-item "><a href="{{site.baseurl}}/" class="item-1">Accueil</a></li>
+                <li class="breadcrumb-item "><i class="fa fa-angle-double-right "></i></li>
+                <li class="breadcrumb-item active"><a href="{{site.baseurl}}/actualites" class="item-1">actualités</a>
+                </li>
+            </ol>
     </div>
 </div>
 

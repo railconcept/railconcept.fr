@@ -6,6 +6,13 @@ layout: eng-page
         <div class="row h-100 justify-content-center align-items-center">
 
         </div>
+
+        <ol class="breadcrumb size-bread">
+                <li class="breadcrumb-item "><a href="{{site.baseurl}}/en/" class="item-1">Home</a></li>
+                <li class="breadcrumb-item "><i class="fa fa-angle-double-right "></i></li>
+                <li class="breadcrumb-item active"><a href="{{site.baseurl}}/en/news" class="item-1">news</a>
+                </li>
+            </ol>
     </div>
 </div>
 
