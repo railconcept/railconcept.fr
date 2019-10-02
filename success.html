@@ -1,35 +1,78 @@
 ---
-title: railconcept | success
-layout: default
-permalink: success
+title: success
+layout: none
+permalink: /success
 ---
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" >
+<link href="{{ site.baseurl }}/assets/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="{{ site.baseurl }}/assets/fonts/fontawesome-all.min.css"  rel="stylesheet" type="text/css">
+<link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet" type="text/css">
+<link href="{{ site.baseurl }}/assets/css/aos.css" rel="stylesheet" ype="text/css">
 
 <div id="div-404" class="text-center">
-    <br><br>
-  <h1 class="title-section" >Votre demande a été bien reçu.</h1>
-  <img src="assets/img/landing/success.png" class="img-fluid" width="30%">
 
-</div>
-
-
-<style >
-  @media (min-width: 768px) {
-    footer{
-      bottom: 0;
-        position: absolute;
-    }
-  }
-    </style>
-
-
-
-{% include footer.html %}
-<script>
-var getUrl = window.location;
-var baseUrl = getUrl .protocol + "//" + getUrl.host ;
-console.log(baseUrl);
-window.setTimeout(function() {
-    window.location.href = baseUrl;
-}, 5000);
+    
+    	<div class="main-content">
+                <i class="fa fa-check main-content-heckmark" id="checkmark" data-aos="zoom-in"></i>
+                <div class="main-content-body mt-4" data-aos="flip-up">Thanks for contacting us ! You will be redirected to the main website in :  <p id="time"></p> </div>
+            </div>
+      </div>
       
-      </script>
+      
+      
+      
+      
+    
+      <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/pagination.js"></script>
+           <!-- Google maps -->
+      <script async defer  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB65wydiX_2ds_jzgKwaO3ZyaOX85HF5ww"> </script>
+      <script src="{{ site.baseurl }}/assets/js/bootstrap-swipe-carousel.min.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/aos.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/sweetalert2.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
+      <script src="{{ site.baseurl }}/assets/js/search.js"></script>
+      
+      <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+<script>
+    var base_url = window.location.origin;
+var url      = window.location.href;
+
+if (url.indexOf("/en") >= 0){
+    $home = base_url+"/en" ;
+}else{
+    $home = base_url ;   
+}
+
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.text( seconds +" s");
+
+        if (--timer < 0) {
+            window.location.replace($home);
+           
+        }
+    }, 1000);
+}
+
+
+
+
+
+
+    jQuery(function ($) {
+    var fiveMinutes =  3,
+        display = $('#time');
+    startTimer(fiveMinutes, display);
+});
+
+</script>

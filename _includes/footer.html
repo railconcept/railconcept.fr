@@ -66,12 +66,17 @@
                     </div>
                     <div class="col-md-4 col-xs-12 col-sm-12 mt-3">
                         <div class="footer-title">abonnez-vous à notre newsletter !</div>
+                        <form name="newsletter" method="POST" data-netlify="true" action="{{ site.baseurl }}/success">
+                                <p class="hidden">
+                                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                      </p>
                         <div class="form-group input-group mt20">
-                            <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email">
+                            <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email" required>
                             <div class="input-group-prepend">
-                                <span type="button" class="input-group-text btn enveloppe"><img src="{{ site.baseurl }}/assets/img/footer/Enveloppe.png"> </span>
+                                <button type="submit" class="boutton input-group-text btn enveloppe"><img src="{{ site.baseurl }}/assets/img/footer/Enveloppe.png"> </button>
                             </div>
                         </div>
+                       </form>
                         <div class="footer-title mt-3">suivez-nous sur les réseaux!</div>
                         <br/>
                         <a href="{{site.data.website_settings.seo.facebook}}" class="footer-title mr-2" target="_blank"><img id="facebook" src="{{ site.baseurl }}/assets/img/footer/facebook.png"
@@ -126,6 +131,7 @@
 <script src="{{ site.baseurl }}/assets/js/sweetalert2.js"></script>
 <script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
 <script src="{{ site.baseurl }}/assets/js/search.js"></script>
+
 <script src="{{ site.baseurl }}/assets/js/main.js"></script>
 
 </body>

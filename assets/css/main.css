@@ -1081,10 +1081,22 @@ width:120px;
     
 }
 
+.item-1:hover{
+    color:#942626;
+}
+#time{
+    color:#942626;  
+}
+#checkmark{
 
-
-
-
+font-size:20vh;
+color:green;
+margin-top: 100px;
+}
+ .main-content-body{
+     font-size: 20px;
+     color:#9D9E9F;
+ }
 .realisations-recherche ul li
 {
     font-family: "Barlow Semi Condensed" ,sans-serif;
@@ -1558,7 +1570,7 @@ background-image:  url("../img/page-actualites/actualites-2.png");
 
 
     .poste {
-        margin-top: 100px;
+        margin-top: 50px;
     }
     .color-gray {
         color: #8c8c8c;
@@ -1726,6 +1738,32 @@ background-image:  url("../img/page-actualites/actualites-2.png");
     background-position: right 100px top 100px;
 
 }
+
+.size-bread {
+    font-size: 16px;
+    color: white !important;
+    margin-top: -50px;
+}
+
+.breadcrumb {
+    color: white !important;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+
+.item-1 {
+    color: white;
+    text-transform: capitalize;
+}
+
+
+.breadcrumb-item+.breadcrumb-item::before {
+
+    content: none;
+}
+
+
      
 /***************************************
 **************RESPONSIVE CSS ***********

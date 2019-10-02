@@ -16,7 +16,7 @@ layout: page
 </div>
 
 
-<div>base url : {{page.url}} </div>
+
 <!--actualités-->
 <section id="1" class="actualités mt-4">
     <div class="container ">

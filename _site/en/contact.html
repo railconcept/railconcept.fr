@@ -64,6 +64,14 @@
                 Contactez-nous
             </h1>
         </div>
+
+
+        <ol class="breadcrumb size-bread">
+            <li class="breadcrumb-item "><a href="/en/" class="item-1">Home</a></li>
+            <li class="breadcrumb-item "><i class="fa fa-angle-double-right "></i></li>
+            <li class="breadcrumb-item active"><a href="/en/contact" class="item-1">contact</a>
+            </li>
+        </ol>
     </div>
 </div>
 
@@ -99,7 +107,7 @@
             </div>
             <div class="col-lg-4  text-center text-lg-left">
 
-                <img src="assets\img\page-nos-metiers\rejoignez-nous.png" class="img-fluid contact-img">
+                <img src="/assets/img/page-nos-metiers/rejoignez-nous.png" class="img-fluid contact-img">
 
             </div>
 
@@ -133,8 +141,8 @@
 
                     </div>
                     <div class="read-all-realisation read-all-news ml-auto mr-3 align-items-center">
-                        <a href="#" class="voirplus"> voir toutes nos réalisations
-                            <img class="read-more-arrow-1 ml-2" src="assets/img/arrows/arrow.png">
+                        <a href="/en/our-achievements" class="voirplus"> voir toutes nos réalisations
+                            <img class="read-more-arrow-1 ml-2" src="/assets/img/arrows/arrow.png">
                         </a>
                     </div>
                 </div>
@@ -158,8 +166,8 @@
 
                     </div>
                     <div class=" read-all-realisation read-all-news ml-auto mr-3 align-items-center">
-                        <a href="#" class="voirplus"> voir toutes nos réalisations
-                            <img class="read-more-arrow-1 ml-2" src="assets/img/arrows/arrow.png">
+                        <a href="/en/our-achievements" class="voirplus"> voir toutes nos réalisations
+                            <img class="read-more-arrow-1 ml-2" src="/assets/img/arrows/arrow.png">
                         </a>
                     </div>
                 </div>
@@ -355,17 +363,29 @@
                      </div>
                      <div class="col-md-4 col-xs-12 col-sm-12 mt-3">
                          <div class="footer-title">abonnez-vous à notre newsletter !</div>
-                         <div class="form-group input-group mt20">
-                             <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email">
-                             <div class="input-group-prepend">
-                                 <span type="button" class="input-group-text btn enveloppe"><img src="/assets/img/footer/Enveloppe.png"> </span>
-                             </div>
-                         </div>
+                         
+                         <form name="newsletter" method="POST" data-netlify="true">
+                                <p class="hidden">
+                                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                      </p>
+                        <div class="form-group input-group mt20">
+                            <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email" required>
+                            <div class="input-group-prepend">
+                                <button type="submit" class="boutton input-group-text btn enveloppe"><img src="/assets/img/footer/Enveloppe.png"> </button>
+                            </div>
+                        </div>
+                       </form>
+
+
+
+
+
+
                          <div class="footer-title mt-3">suivez-nous sur les réseaux!</div>
                          <br/>
-                         <a href="https://www.facebook.com" class="footer-title mr-2" target="_blank"><img id="facebook" src="/assets/img/footer/facebook.png"
+                         <a href="https://facebook.com" class="footer-title mr-2" target="_blank"><img id="facebook" src="/assets/img/footer/facebook.png"
                                                                height="27" /></a>
-                         <a href="https://www.linked.com" class="footer-title" target="_blank"><img src="/assets/img/footer/linkedin.png" height="27" /></a>
+                         <a href="https://linked.com" class="footer-title" target="_blank"><img src="/assets/img/footer/linkedin.png" height="27" /></a>
      
                          <div class="footer-title mt-3">vous souhaitez faire parti de l’équipe</div>
                          <div class="form-group text-left  text-xs-center text-sm-center" >

@@ -38,10 +38,9 @@
                             <a class="nav-link link-navbar" href="#" id="search-link"><i class="fas fa-search"></i></a>
                             <input id="input-search" type="text" class="search-txt shadow-none" placeholder="recherche..."  name="search-txt" />
                             </li>
-							
                             <li id="lang" class="dropdown nav-item nav-li no-underline">
 				
-							 <a class="nav-link link-navbar dropdown-toggle lang-select " data-toggle="dropdown" href="" role="button"   aria-haspopup="true" aria-expanded="false">
+							 <a class="nav-link link-navbar dropdown-toggle lang-select " data-toggle="dropdown" href="/" role="button"   aria-haspopup="true" aria-expanded="false">
 								<img class="flags" src="/assets/img/flags/fr.png">
 								</a>
                                 <div id="select_flag" class="dropdown-menu">
@@ -51,10 +50,9 @@
                             </li>
                         </ul>
                 </div>
-       
         </nav>
     </div>
-    </div>    
+</div>    
 	
     <!--realisations-->
     <div class="competence text-center">
@@ -64,6 +62,14 @@
                     Actualités
                 </h1>
             </div>
+
+
+            <ol class="breadcrumb size-bread">
+                <li class="breadcrumb-item "><a href="/" class="item-1">Accueil</a></li>
+                <li class="breadcrumb-item "><i class="fa fa-angle-double-right "></i></li>
+                <li class="breadcrumb-item active"><a href="/actualites" class="item-1">actualités</a>
+                </li>
+            </ol>
         </div>
     </div>
 
@@ -74,7 +80,7 @@
         <div class="container mt-5 mb-5">
             <div class="row">
                 <div class="col-md-12 pl-0 pr-0">
-                    <div class=" title-news  title-section">Découvrez nos actualités</div>
+                    <div class=" title-news  title-section mt-0">Découvrez nos actualités</div>
                     <div class="paragraphe-news mt-45">
                         Lorem ipsum dolor sit armet, consecteteur
                         adipisicing elit,
@@ -247,7 +253,7 @@
             </div>
         <div class="parent-contactez col-md-4 col-sm-12 ">
                     
-                    <button  type="button" class="btn contactez float-right " data-aos="zoom-in" onclick="redirect_to('/en/contact');"> contactez-nous !</button>
+                    <button  type="button" class="btn contactez float-right " data-aos="zoom-in" onclick="redirect_to('/contact');"> contactez-nous !</button>
                    
         </div>  
             
@@ -334,17 +340,22 @@
                     </div>
                     <div class="col-md-4 col-xs-12 col-sm-12 mt-3">
                         <div class="footer-title">abonnez-vous à notre newsletter !</div>
+                        <form name="newsletter" method="POST" data-netlify="true" action="/success">
+                                <p class="hidden">
+                                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                                      </p>
                         <div class="form-group input-group mt20">
-                            <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email">
+                            <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email" required>
                             <div class="input-group-prepend">
-                                <span type="button" class="input-group-text btn enveloppe"><img src="/assets/img/footer/Enveloppe.png"> </span>
+                                <button type="submit" class="boutton input-group-text btn enveloppe"><img src="/assets/img/footer/Enveloppe.png"> </button>
                             </div>
                         </div>
+                       </form>
                         <div class="footer-title mt-3">suivez-nous sur les réseaux!</div>
                         <br/>
-                        <a href="https://www.facebook.com" class="footer-title mr-2" target="_blank"><img id="facebook" src="/assets/img/footer/facebook.png"
+                        <a href="https://facebook.com" class="footer-title mr-2" target="_blank"><img id="facebook" src="/assets/img/footer/facebook.png"
                                                               height="27"></a>
-                        <a href="https://www.linked.com" class="footer-title" target="_blank" ><img src="/assets/img/footer/linkedin.png" height="27"></a>
+                        <a href="https://linked.com" class="footer-title" target="_blank" ><img src="/assets/img/footer/linkedin.png" height="27"></a>
     
                         <div class="footer-title mt-3">vous souhaitez faire parti de l’équipe</div>
                         <div class="form-group text-left  text-xs-center text-sm-center" >
@@ -394,6 +405,7 @@
 <script src="/assets/js/sweetalert2.js"></script>
 <script src="/assets/js/lunr.js"></script>
 <script src="/assets/js/search.js"></script>
+
 <script src="/assets/js/main.js"></script>
 
 </body>

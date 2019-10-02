@@ -335,7 +335,7 @@ $(document).ready(function () {
                 position: new google.maps.LatLng(47.21537068, -1.55387878),
 
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -350,7 +350,7 @@ $(document).ready(function () {
             makeMarker({
                 position: new google.maps.LatLng(47.19694467, -1.58297539),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -365,7 +365,7 @@ $(document).ready(function () {
             makeMarker({
                 position: new google.maps.LatLng(47.19962734, -1.53885841),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -462,7 +462,7 @@ $(document).ready(function () {
                 position: new google.maps.LatLng(47.21537068, -1.55387878),
 
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation 2x</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -477,7 +477,7 @@ $(document).ready(function () {
             makeMarker2x({
                 position: new google.maps.LatLng(47.19694467, -1.58297539),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation 2x</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -492,7 +492,7 @@ $(document).ready(function () {
             makeMarker2x({
                 position: new google.maps.LatLng(47.19962734, -1.53885841),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation 2x</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -590,7 +590,7 @@ $(document).ready(function () {
                 position: new google.maps.LatLng(47.21537068, -1.55387878),
 
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation 3x</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -605,7 +605,7 @@ $(document).ready(function () {
             makeMarker3x({
                 position: new google.maps.LatLng(47.19694467, -1.58297539),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation 3x</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -620,7 +620,7 @@ $(document).ready(function () {
             makeMarker3x({
                 position: new google.maps.LatLng(47.19962734, -1.53885841),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation 3x</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -718,7 +718,7 @@ $(document).ready(function () {
                 position: new google.maps.LatLng(47.21537068, -1.55387878),
 
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation 4x</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -733,7 +733,7 @@ $(document).ready(function () {
             makeMarker4x({
                 position: new google.maps.LatLng(47.19694467, -1.58297539),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation 4x</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
@@ -748,7 +748,7 @@ $(document).ready(function () {
             makeMarker4x({
                 position: new google.maps.LatLng(47.19962734, -1.53885841),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="'+base_url+'/assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
                     ' <div class="col-12 title_infowindow">etude d\'exploitation 4x</div> ' +
                     ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
