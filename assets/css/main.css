@@ -1693,7 +1693,7 @@ background-image:  url("../img/page-actualites/actualites-2.png");
            
            
             font-family: "Font Awesome 5 Free";
-            content: "\f107";
+            content: "\f107" !important;
             font-size: 18px;
             color: #ffffff;
             background-color: #942625 !important; 
