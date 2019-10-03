@@ -128,7 +128,10 @@ input[type=number]::-webkit-outer-spin-button
 /***************************************
 **************Navbar********************
 ***************************************/
-
+.label-select{
+    font-weight:600 !important;
+    line-height: 1 !important;
+}
 #div-navbar {
     height: 100px;
     width: 100%;
@@ -155,14 +158,18 @@ input[type=number]::-webkit-outer-spin-button
 }
 
 .offre-tabs-link{
-    color: #fff; 
+    color: #b3b3b3;
     background-color: #fff; 
     border:none;
     padding:0 ;
 }
 
+.offre-tabs-link:hover{
+    color:#a52c43;
+}
+
 .offre-tabs-link.active{
-    color: #fff; 
+    color: #fff !important; 
     background-color: #fff; 
     border:none;
     padding:0 ;
@@ -1465,6 +1472,12 @@ li.active > a > i{
 **************Actualites***************
 **************************************/
 
+
+.actualite-1{
+    background-image:  url("../img/page-actualites/actualites.png");
+    
+    }
+
 .card-border-none{
     border:none;
 }
@@ -1680,6 +1693,9 @@ background-image:  url("../img/page-actualites/actualites-2.png");
             opacity: 0.65;
             cursor: pointer;
             width:100%;
+        }
+        .custom-file-label{
+            margin-top:0 !important ;
         }
         .bg-select::placeholder { 
             color: white !important;
@@ -2025,7 +2041,7 @@ left: 15%;
     }   
    .header-realisation{
         font-size: 45px;
-        top: 25%;
+     
         }
     .realisations-recherche .sv-tab-panel {
         height: 500px;
@@ -2085,6 +2101,12 @@ left: 15%;
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767px) {
 
+
+    .realisations-recherche .nav.nav-tabs {
+        
+        margin-top: 0;
+       
+    }
 
     .h-600{
         height:auto ;
@@ -2274,7 +2296,7 @@ left: 15%;
     
     .header-realisation{
     font-size: 32px;
-    top: 20%;
+    
     }
 
     .filter-button {
@@ -2333,7 +2355,13 @@ left: 15%;
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
+     
 
+    .realisations-recherche .nav.nav-tabs {
+        
+        margin-top: 0;
+       
+    }
     .h-600{
         height:auto ;
     }
@@ -2519,7 +2547,7 @@ height:200px;
 }  
 .header-realisation{
 font-size: 32px;
-top: 18%;
+
 }
 .filter-button {
     font-size:15px;

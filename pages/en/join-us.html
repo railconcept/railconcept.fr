@@ -9,7 +9,7 @@ permalink: en/join-us
 <div class="competence rejoignez-nous  text-center">
   <div class="container  h-100">
     <div class="row h-100 justify-content-center align-items-center">
-      <h1 class="header-realisation">
+      <h1 class="header-realisation" data-aos="flip-up">
         rejoignez-nous
       </h1>
     </div>
@@ -197,7 +197,7 @@ permalink: en/join-us
                     CHEF DE <br>PROJET
                   </div>
                   <div class="position-icon-plus">
-                    <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-plus.png">
+                      <i class="fas fa-minus-circle"></i>
                   </div>
                   <img class="img-fluid poste_offer_img" src="{{ base-url }}/assets/img/page-rejoignez-nous/img1.png">
                 </div>
@@ -210,7 +210,7 @@ permalink: en/join-us
                     CHargé<br> d'études
                   </div>
                   <div class="position-icon-plus">
-                    <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-plus.png">
+                      <i class="fas fa-plus-circle"></i>
                   </div>
                   <img class="img-fluid poste_offer_img" src="{{ base-url }}/assets/img/page-rejoignez-nous/img2.png">
                 </div>
@@ -229,7 +229,7 @@ permalink: en/join-us
                     Développeur <br> logiciel
                   </div>
                   <div class="position-icon-plus">
-                    <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-plus.png">
+                      <i class="fas fa-plus-circle"></i>
                   </div>
                   <img class="img-fluid poste_offer_img" src="{{ base-url }}/assets/img/page-rejoignez-nous/img3.png">
                 </div>
@@ -388,9 +388,9 @@ permalink: en/join-us
 
             <div class="form-group ">
               <div class="row col-md-12 align-items-center">
-                <div class="col-md-3 col-sm-3">
+                <div class="col-md-3 col-sm-3 p-0">
 
-                  <label for="input_cv" class="paragraphe-news text-right">Curiculum vitae <span
+                  <label for="input_cv" class="paragraphe-news text-right label-select">Curiculum vitae <span
                       class="colored">*</span></label>
                 </div>
                 <div class="col-md-9 col-sm-9 ">
@@ -410,10 +410,10 @@ permalink: en/join-us
             <div class="form-group ">
 
               <div class="row col-md-12 align-items-center">
-                <div class="col-md-3 col-sm-3">
+                <div class="col-md-3 col-sm-3 p-0">
 
 
-                  <label for="input_lm" class="paragraphe-news text-right">Lettre de motivation<span
+                  <label for="input_lm" class="paragraphe-news text-right label-select">Lettre de motivation <span
                       class="colored">*</span></label>
                 </div>
                 <div class="col-md-9 col-sm-9 mt-10">
@@ -434,8 +434,8 @@ permalink: en/join-us
             <div class="form-group ">
 
               <div class="row col-md-12 align-items-center handy">
-                <div class="col-md-3 col-sm-3">
-                  <label for="input_ad" class="paragraphe-news text-right">Autre document<span
+                <div class="col-md-3 col-sm-3 p-0">
+                  <label for="input_ad" class="paragraphe-news text-right label-select">Autre document <span
                       class="colored">*</span></label>
                 </div>
                 <div class="col-md-9 col-sm-9 mt-10 ">
@@ -457,21 +457,21 @@ permalink: en/join-us
             <div class=" title-poste">COORDONNéES</div>
 
             <div class="row mb-4">
-              <div class="col">
+                <div class="col-lg-6 col-12 pl-0">
                 <input type="text" class="d_pers form-control bg-select" name="nom" placeholder="Nom*" required
                   oninvalid="this.setCustomValidity('Veuiller saisir votre nom')" oninput="setCustomValidity('')">
               </div>
-              <div class="col">
+              <div class="col-lg-6 col-12 pl-0">
                 <input type="text" class="d_pers form-control bg-select" name="prenom" placeholder="Prénom*" required
                   oninvalid="this.setCustomValidity('Veuiller saisir votre prenom')" oninput="setCustomValidity('')">
               </div>
             </div>
             <div class="row mb-2">
-              <div class="col">
+                <div class="col-lg-6 col-12 pl-0">
                 <input type="email" class="d_pers form-control bg-select" name="email" placeholder="E-mail*" required
                   oninvalid="this.setCustomValidity('Veuiller saisir un email valid')" oninput="setCustomValidity('')">
               </div>
-              <div class="col">
+              <div class="col-lg-6 col-12 pl-0">
                 <input type="number" class="d_pers form-control bg-select" name="phone" placeholder="Téléphone*"
                   required oninvalid="this.setCustomValidity('Veuiller saisir votre N° de Téléphone')"
                   oninput="setCustomValidity('')">

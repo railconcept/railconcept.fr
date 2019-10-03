@@ -930,6 +930,16 @@ $(document).ready(function () {
 
         }
     });
+
+    $(".offre-tabs-link").click(function () {
+
+        $(".position-icon-plus").html(" <i class='fas fa-plus-circle'></i>");
+ 
+        $(this).find(".position-icon-plus").html("<i class='fas fa-minus-circle'></i>");
+
+       
+        
+    });
 });
 
 
