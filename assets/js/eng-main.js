@@ -232,7 +232,7 @@ $(document).ready(function () {
     ///////////////////////////////////////////Google Map ////////////////////////////
 
 
-    (() => {
+    /* (() => {
         "use strict";
 
         const appendChild = Element.prototype.appendChild;
@@ -251,7 +251,7 @@ $(document).ready(function () {
             }
             return element;
         };
-    })();
+    })();  */
 
 
 
