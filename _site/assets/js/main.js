@@ -231,27 +231,27 @@ $(document).ready(function () {
 
     ///////////////////////////////////////////Google Map ////////////////////////////
 
-
     (() => {
         "use strict";
-
+     
         const appendChild = Element.prototype.appendChild;
-
+    
         const urlCatchers = [
-            "/AuthenticationService.Authenticate?",
-            "/QuotaService.RecordEvent?"
+          "/AuthenticationService.Authenticate?",
+          "/QuotaService.RecordEvent?"
         ];
-
+    
         Element.prototype.appendChild = function (element) {
-            const isGMapScript = element.tagName === 'SCRIPT' && /maps\.googleapis\.com/i.test(element.src);
-            const isGMapAccessScript = isGMapScript && urlCatchers.some(url => element.src.includes(url));
-
-            if (!isGMapAccessScript) {
-                return appendChild.call(this, element);
-            }
-            return element;
+          const isGMapScript = element.tagName === 'SCRIPT' && /maps\.googleapis\.com/i.test(element.src);
+          const isGMapAccessScript = isGMapScript && urlCatchers.some(url => element.src.includes(url));
+      
+          if (!isGMapAccessScript) {
+            return appendChild.call(this, element);
+          }
+          return element;
         };
-    })();
+      })();
+ 
 
 
 
@@ -263,8 +263,8 @@ $(document).ready(function () {
 
         if ($("#map1").length) {
             var mapOpts = {
-                center: new google.maps.LatLng(47.21537068, -1.55387878),
-                zoom: 12,
+                center: new google.maps.LatLng(45.4242091,4.2964249),
+                zoom: 7,
                 disableDefaultUI: true,
                 styles: [{
                     stylers: [{
@@ -332,7 +332,7 @@ $(document).ready(function () {
 
 
             makeMarker({
-                position: new google.maps.LatLng(47.21537068, -1.55387878),
+                position: new google.maps.LatLng(46.906120, 4.749562),
 
                 content: '<div class="gallery-real text-left p-0">' +
                     '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
@@ -348,7 +348,7 @@ $(document).ready(function () {
 
             });
             makeMarker({
-                position: new google.maps.LatLng(47.19694467, -1.58297539),
+                position: new google.maps.LatLng(43.129083, 5.927973),
                 content: '<div class="gallery-real text-left p-0">' +
                     '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
@@ -363,7 +363,7 @@ $(document).ready(function () {
 
             });
             makeMarker({
-                position: new google.maps.LatLng(47.19962734, -1.53885841),
+                position: new google.maps.LatLng(43.698010, 4.149878),
                 content: '<div class="gallery-real text-left p-0">' +
                     '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
