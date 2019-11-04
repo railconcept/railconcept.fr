@@ -31,22 +31,26 @@ function findBootstrapEnvironment() {
     document.body.removeChild(el);
     return curEnv;
 }
-
+ 
 $(window).on('resize', function () {
     $("#div-navbar").css("height", '');
-    $("#container-navbar").css("padding-top", '');
+  //  $("#container-navbar").css("padding-top", '');
     $initial_height = $small = $bottom = 0;
     $initial_height = $("#div-navbar").css("height");
-    $small = $("#container-navbar").css("padding-top");
+//    $small = $("#container-navbar").css("padding-top");
     $margin_left_container = $("#container-navbar").css("margin-left");
     $padding_left_container = $("#container-navbar").css("padding-left");
     $left_container = parseInt($margin_left_container) + parseInt($padding_left_container);
     $('.slider-news-caption').css('padding-left', $left_container);
-    $('.slider-caption').css('left', $left_container);
+    
     $('#ul-rech-real').css('padding-left', $left_container);
 
-
-
+    if (findBootstrapEnvironment() != "xs") {
+    $('.slider-caption').css('left', $left_container);
+    }else{
+        $('.slider-caption').css('left', '0'); 
+    }
+    
     if (findBootstrapEnvironment() == "sm" || findBootstrapEnvironment() == "xs") {
         $("#loope-etude-img").css("width", '50%');
         $('.loope-etude').css('text-align', 'right');
@@ -70,18 +74,18 @@ $(window).on('resize', function () {
 
     }
 
-
+  
 });
 
 $(window).scroll(function () {
 
     if ($(document).scrollTop() > 0) {
-        $("#div-navbar").css("height", parseInt($initial_height) - parseInt($small) + parseInt($bottom));
-        $("#container-navbar").css("padding-top", "0px");
+     //   $("#div-navbar").css("height", parseInt($initial_height) - parseInt($small) + parseInt($bottom));
+    //    $("#container-navbar").css("padding-top", "0px");
         $("#div-navbar").addClass("navshadow");
     } else {
-        $("#div-navbar").css("height", parseInt($initial_height));
-        $("#container-navbar").css("padding-top", $small);
+   //     $("#div-navbar").css("height", parseInt($initial_height));
+   //     $("#container-navbar").css("padding-top", $small);
         $("#div-navbar").removeClass("navshadow");
     }
 });
@@ -121,7 +125,13 @@ $(document).ready(function () {
 
 
     $('.slider-news-caption').css('padding-left', $left_container);
-    $('.slider-caption').css('left', $left_container);
+    if (findBootstrapEnvironment() != "xs") {
+        $('.slider-caption').css('left', $left_container);
+        }else{
+            $('.slider-caption').css('left', '0'); 
+        }
+
+
     $('#ul-rech-real').css('padding-left', $left_container);
     $('.etude-container-right').css('padding-right', $left_container - 50);
     $('.etude-container-left').css('padding-left', $left_container - 50);

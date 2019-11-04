@@ -34,10 +34,10 @@ function findBootstrapEnvironment() {
 
 $(window).on('resize', function () {
     $("#div-navbar").css("height", '');
-    $("#container-navbar").css("padding-top", '');
+  //  $("#container-navbar").css("padding-top", '');
     $initial_height = $small = $bottom = 0;
     $initial_height = $("#div-navbar").css("height");
-    $small = $("#container-navbar").css("padding-top");
+  //  $small = $("#container-navbar").css("padding-top");
     $margin_left_container = $("#container-navbar").css("margin-left");
     $padding_left_container = $("#container-navbar").css("padding-left");
     $left_container = parseInt($margin_left_container) + parseInt($padding_left_container);
@@ -76,12 +76,12 @@ $(window).on('resize', function () {
 $(window).scroll(function () {
 
     if ($(document).scrollTop() > 0) {
-        $("#div-navbar").css("height", parseInt($initial_height) - parseInt($small) + parseInt($bottom));
-        $("#container-navbar").css("padding-top", "0px");
+  //      $("#div-navbar").css("height", parseInt($initial_height) - parseInt($small) + parseInt($bottom));
+   //     $("#container-navbar").css("padding-top", "0px");
         $("#div-navbar").addClass("navshadow");
     } else {
-        $("#div-navbar").css("height", parseInt($initial_height));
-        $("#container-navbar").css("padding-top", $small);
+   //     $("#div-navbar").css("height", parseInt($initial_height));
+   //     $("#container-navbar").css("padding-top", $small);
         $("#div-navbar").removeClass("navshadow");
     }
 });
