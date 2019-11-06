@@ -5,7 +5,7 @@ $small = $("#container-navbar").css("padding-top");
 $margin_left_container = $("#container-navbar").css("margin-left");
 $padding_left_container = $("#container-navbar").css("padding-left");
 $left_container = parseInt($margin_left_container) + parseInt($padding_left_container);
-$debut = 1 ;
+$debut = 1;
 
 
 
@@ -31,26 +31,51 @@ function findBootstrapEnvironment() {
     document.body.removeChild(el);
     return curEnv;
 }
- 
+
+
+function show_hide(){
+    if (findBootstrapEnvironment() == "xl" || findBootstrapEnvironment() == "lg") {
+
+        $('.team-person').show();
+        $('.team-person:gt(-12)').hide();
+
+    }
+
+    if (findBootstrapEnvironment() == "md") {
+        $('.team-person').show();
+        $('.team-person:gt(-15)').hide();
+
+
+    }
+    if (findBootstrapEnvironment() == "sm" || findBootstrapEnvironment() == "xs") {
+
+        $('.team-person').show();
+        $('.team-person:gt(-18)').hide();
+
+    }
+
+}
+
+
 $(window).on('resize', function () {
     $("#div-navbar").css("height", '');
-  //  $("#container-navbar").css("padding-top", '');
+    //  $("#container-navbar").css("padding-top", '');
     $initial_height = $small = $bottom = 0;
     $initial_height = $("#div-navbar").css("height");
-//    $small = $("#container-navbar").css("padding-top");
+    //    $small = $("#container-navbar").css("padding-top");
     $margin_left_container = $("#container-navbar").css("margin-left");
     $padding_left_container = $("#container-navbar").css("padding-left");
     $left_container = parseInt($margin_left_container) + parseInt($padding_left_container);
     $('.slider-news-caption').css('padding-left', $left_container);
-    
+
     $('#ul-rech-real').css('padding-left', $left_container);
 
     if (findBootstrapEnvironment() != "xs") {
-    $('.slider-caption').css('left', $left_container);
-    }else{
-        $('.slider-caption').css('left', '0'); 
+        $('.slider-caption').css('left', $left_container);
+    } else {
+        $('.slider-caption').css('left', '0');
     }
-    
+
     if (findBootstrapEnvironment() == "sm" || findBootstrapEnvironment() == "xs") {
         $("#loope-etude-img").css("width", '50%');
         $('.loope-etude').css('text-align', 'right');
@@ -73,25 +98,96 @@ $(window).on('resize', function () {
         $('.etude-container-left').css('padding-left', $left_container - 50);
 
     }
+    show_hide();
 
-  
+   
+
+
+
+
+
+
+
+
 });
 
 $(window).scroll(function () {
 
     if ($(document).scrollTop() > 0) {
-     //   $("#div-navbar").css("height", parseInt($initial_height) - parseInt($small) + parseInt($bottom));
-    //    $("#container-navbar").css("padding-top", "0px");
+        //   $("#div-navbar").css("height", parseInt($initial_height) - parseInt($small) + parseInt($bottom));
+        //    $("#container-navbar").css("padding-top", "0px");
         $("#div-navbar").addClass("navshadow");
     } else {
-   //     $("#div-navbar").css("height", parseInt($initial_height));
-   //     $("#container-navbar").css("padding-top", $small);
+        //     $("#div-navbar").css("height", parseInt($initial_height));
+        //     $("#container-navbar").css("padding-top", $small);
         $("#div-navbar").removeClass("navshadow");
     }
 });
 
 
+
 $(document).ready(function () {
+
+    show_hide();
+
+
+
+
+
+    $(".show_hide").click(function (event) {
+        event.preventDefault();
+        console.log($(this));
+        if ($(this).data("show") == "no") {
+            $(this).data("show","yes");
+            $(this).text("VOIR MOINS");
+            $('.team-person').show();
+        } else {
+            $(this).text("VOIR PLUS");
+            $(this).data("show","no");
+            
+            show_hide();
+        }
+
+    });
+    
+
+
+
+
+
+
+    $("#search-link").click(function (event) {
+        event.preventDefault();
+        if ($('#input-search').css("display") == "block") {
+            $('#input-search').css("display", "none");
+        } else {
+            $('#input-search').css("display", "block");
+        }
+
+    });
+
+
+    $(document).on('click', function (event) {
+        if (typeof event != "undefined") {
+            if (!$(event.target).hasClass("loope")) {
+                if (event.target.id != 'search-link') {
+                    if (event.target.id != 'input-search') {
+                        $('#input-search').css("display", "none");
+                    }
+                }
+            }
+            var menu_opened = $('#navbar-menu').hasClass('show');
+
+            if (!$(event.target).closest('#navbar-menu').length &&
+                !$(event.target).is('#navbar-menu') &&
+                menu_opened === true) {
+                $('#navbar-menu').collapse('toggle');
+            }
+
+
+
+        }
+    });
 
     var pathname = window.location.pathname.split('/')[1];
 
@@ -127,9 +223,9 @@ $(document).ready(function () {
     $('.slider-news-caption').css('padding-left', $left_container);
     if (findBootstrapEnvironment() != "xs") {
         $('.slider-caption').css('left', $left_container);
-        }else{
-            $('.slider-caption').css('left', '0'); 
-        }
+    } else {
+        $('.slider-caption').css('left', '0');
+    }
 
 
     $('#ul-rech-real').css('padding-left', $left_container);
@@ -243,25 +339,25 @@ $(document).ready(function () {
 
     (() => {
         "use strict";
-     
+
         const appendChild = Element.prototype.appendChild;
-    
+
         const urlCatchers = [
-          "/AuthenticationService.Authenticate?",
-          "/QuotaService.RecordEvent?"
+            "/AuthenticationService.Authenticate?",
+            "/QuotaService.RecordEvent?"
         ];
-    
+
         Element.prototype.appendChild = function (element) {
-          const isGMapScript = element.tagName === 'SCRIPT' && /maps\.googleapis\.com/i.test(element.src);
-          const isGMapAccessScript = isGMapScript && urlCatchers.some(url => element.src.includes(url));
-      
-          if (!isGMapAccessScript) {
-            return appendChild.call(this, element);
-          }
-          return element;
+            const isGMapScript = element.tagName === 'SCRIPT' && /maps\.googleapis\.com/i.test(element.src);
+            const isGMapAccessScript = isGMapScript && urlCatchers.some(url => element.src.includes(url));
+
+            if (!isGMapAccessScript) {
+                return appendChild.call(this, element);
+            }
+            return element;
         };
-      })();
- 
+    })();
+
 
 
 
@@ -273,7 +369,7 @@ $(document).ready(function () {
 
         if ($("#map1").length) {
             var mapOpts = {
-                center: new google.maps.LatLng(45.4242091,4.2964249),
+                center: new google.maps.LatLng(45.4242091, 4.2964249),
                 zoom: 7,
                 disableDefaultUI: true,
                 styles: [{
@@ -902,40 +998,46 @@ $(document).ready(function () {
         event.preventDefault();
         $id = $(this).attr('id')
         if ($id == 'copy') {
-        var dummy = document.createElement('input'),
-        text = window.location.href;
-        document.body.appendChild(dummy);
-        dummy.value = text;
-        dummy.select();
-        document.execCommand('copy');
-        document.body.removeChild(dummy);
+            var dummy = document.createElement('input'),
+                text = window.location.href;
+            document.body.appendChild(dummy);
+            dummy.value = text;
+            dummy.select();
+            document.execCommand('copy');
+            document.body.removeChild(dummy);
 
-       
-        Swal.fire({
-            title: 'Copied',
-            type: 'success',
-            showConfirmButton: false,
-            width:350,
-            timer: 1500 
-          })
+
+            Swal.fire({
+                title: 'Copied',
+                type: 'success',
+                showConfirmButton: false,
+                width: 350,
+                timer: 1500
+            })
 
         }
 
         if ($id == 'facebook') {
             var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + window.location.href, 'facebook-popup', 'height=350,width=600');
-            if(facebookWindow.focus) { facebookWindow.focus(); }
-              return false;
+            if (facebookWindow.focus) {
+                facebookWindow.focus();
+            }
+            return false;
         }
 
         if ($id == 'twitter') {
-            var twitterWindow = window.open('https://twitter.com/share?url=' +  window.location.href, 'twitter-popup', 'height=350,width=600');
-            if(twitterWindow.focus) { twitterWindow.focus(); }
+            var twitterWindow = window.open('https://twitter.com/share?url=' + window.location.href, 'twitter-popup', 'height=350,width=600');
+            if (twitterWindow.focus) {
+                twitterWindow.focus();
+            }
             return false;
         }
 
         if ($id == 'linkedin') {
-            var linkedinwindow = window.open( 'http://www.linkedin.com/shareArticle?mini=true&url='+window.location.href, 'sharer', 'toolbar=0, status=0, width=600, height=350');
-            if(linkedinwindow.focus) { linkedinwindow.focus(); }
+            var linkedinwindow = window.open('http://www.linkedin.com/shareArticle?mini=true&url=' + window.location.href, 'sharer', 'toolbar=0, status=0, width=600, height=350');
+            if (linkedinwindow.focus) {
+                linkedinwindow.focus();
+            }
             return false;
 
         }
@@ -945,11 +1047,11 @@ $(document).ready(function () {
     $(".offre-tabs-link").click(function () {
 
         $(".position-icon-plus").html(" <i class='fas fa-plus-circle'></i>");
- 
+
         $(this).find(".position-icon-plus").html("<i class='fas fa-minus-circle'></i>");
 
-       
-        
+
+
     });
 
 
@@ -1099,67 +1201,67 @@ $(document).ready(function () {
 
     $(document).on('input', '.d_pers', function () {
         $a = $(this).val();
-       
+
         if ($a == '') {
             $(this).css("opacity", 0.65);
         } else {
             $(this).css("opacity", 1);
         }
     });
- 
- 
+
+
 
 
     $(".select_offre").first().trigger("click");
 
     $('#input-search').on('keypress', function (e) {
-        if(e.which === 13){
+        if (e.which === 13) {
 
-        if( $(this).val().length > 0){
-         window.location.replace(base_url+"/search?query="+$(this).val());
+            if ($(this).val().length > 0) {
+                window.location.replace(base_url + "/search?query=" + $(this).val());
+            }
+
+
         }
-       
+    });
 
-        }
-  });
+    var current_url = window.location.href;
+    if (current_url.indexOf('#') > -1) {
+        $id_tab = current_url.substr(current_url.indexOf("#") + 1)
+        $('a[href="#' + $id_tab + '"]').trigger('click');
 
-  var current_url      = window.location.href; 
-  if (current_url.indexOf('#') > -1){
-    $id_tab = current_url.substr(current_url.indexOf("#") + 1)
-   $('a[href="#' + $id_tab + '"]').trigger('click') ;
-  
-  }
+    }
 
 
-  $(".tagx").each(function(i, obj) {
-    $tag ="";
-    $tag = $(this).html() ;
-    $(this).html(tagsss[$tag][0]);
+    $(".tagx").each(function (i, obj) {
+        $tag = "";
+        $tag = $(this).html();
+        $(this).html(tagsss[$tag][0]);
+    });
+
 });
 
-});
+function get_offre($url, $that, e) {
 
-function get_offre($url,$that,e){
-  
     $(".select_offre").removeClass("active");
     $($that).addClass("active");
-    $debut=0 ;
+    $debut = 0;
     $.ajax({
         url: $url,
         type: "GET",
         dataType: "html",
         success: function (data) {
-           var x = document.createElement('div');
-          
+            var x = document.createElement('div');
 
-           x.innerHTML = data;
-           $("#poste_selected").html("<b>"+ x.querySelector('#title').innerHTML + " - " + x.querySelector('#departement').innerHTML+ "</b>");
-           $("#poste_contrat").html(x.querySelector('#type_contract').innerHTML + " - " + x.querySelector('#lieu_travail').innerHTML);
-         
-           $("#entreprise").html(x.querySelector('#entreprise').innerHTML);
-           $("#poste").html(x.querySelector('#poste').innerHTML);
-           $("#profil").html(x.querySelector('#profil').innerHTML);
-           $("#selected_job").val(x.querySelector('#title').innerHTML + " - " + x.querySelector('#offre_date').innerHTML );
+
+            x.innerHTML = data;
+            $("#poste_selected").html("<b>" + x.querySelector('#title').innerHTML + " - " + x.querySelector('#departement').innerHTML + "</b>");
+            $("#poste_contrat").html(x.querySelector('#type_contract').innerHTML + " - " + x.querySelector('#lieu_travail').innerHTML);
+
+            $("#entreprise").html(x.querySelector('#entreprise').innerHTML);
+            $("#poste").html(x.querySelector('#poste').innerHTML);
+            $("#profil").html(x.querySelector('#profil').innerHTML);
+            $("#selected_job").val(x.querySelector('#title').innerHTML + " - " + x.querySelector('#offre_date').innerHTML);
 
 
         },
@@ -1167,23 +1269,22 @@ function get_offre($url,$that,e){
             alert("Sorry, there was a problem!");
         },
         complete: function (xhr, status) {
-          
-            if (e.isTrigger)
-            {
-              console.log('not a human');
-            }else{
+
+            if (e.isTrigger) {
+                console.log('not a human');
+            } else {
                 goToByScroll('offre_selectionne');
             }
-            
-         
+
+
         }
     });
 
 
 }
 
-function redirect_to($link){
-    window.location.replace(base_url+$link);
+function redirect_to($link) {
+    window.location.replace(base_url + $link);
 
 }
 

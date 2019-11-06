@@ -13,7 +13,8 @@
   
     <link href="/assets/fonts/fontawesome-all.min.css"  rel="stylesheet" type="text/css">
     <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
-    <link href="/assets/css/aos.css" rel="stylesheet" ype="text/css">
+    <link href="/assets/css/aos.css" rel="stylesheet" type="text/css">
+    <link href="/assets/css/hover.css" rel="stylesheet" type="text/css">
 
    
 
@@ -35,17 +36,17 @@
                             <li class="nav-item nav-li" role="presentation"><a id="rejoignez-nous" class="nav-link link-navbar" href="/rejoignez-nous">carrières</a></li>
                             <li class="nav-item nav-li" role="presentation"><a id="actualites"class="nav-link link-navbar" href="/actualites">actualités</a></li>
                             <li class="nav-item nav-li mr-5" role="presentation"><a id="contact" class="nav-link link-navbar" href="/contact">contact</a></li>
-                            <li class="nav-item nav-li no-underline" role="presentation" id="search">
-                            <a class="nav-link link-navbar" href="#" id="search-link"><img class="loope" src="/assets/img/flags/loupe.png" /></a>
+                            <li class="nav-item nav-li text-center no-underline" role="presentation" id="search">
+                            <a class="nav-link link-navbar hvr-grow" href="#" id="search-link"><img class="loope" src="/assets/img/flags/loupe.png" /></a>
                             <input id="input-search" type="text" class="search-txt shadow-none" placeholder="recherche..."  name="search-txt" />
                             </li>
                             <li id="lang" class="dropdown nav-item nav-li no-underline">
 				
-							 <a class="nav-link link-navbar dropdown-toggle lang-select " data-toggle="dropdown" href="/" role="button"   aria-haspopup="true" aria-expanded="false">
+							 <a class="nav-link link-navbar dropdown-toggle lang-select hvr-wobble-vertical " data-toggle="dropdown" href="/" role="button"   aria-haspopup="true" aria-expanded="false">
 								<img class="flags" src="/assets/img/flags/fr.png">
 								</a>
                                 <div id="select_flag" class="dropdown-menu">
-                                    <a id="dropdown-flags" class="dropdown-item" href="/en/">
+                                    <a id="dropdown-flags" class="dropdown-item hvr-buzz" href="/en/">
 									<img class="flags" src="/assets/img/flags/gb.png">English</a>
                                 </div>
                             </li>
@@ -287,12 +288,14 @@
 <section class="contacter-nous" >
     <div class="container">
         <div class="row row-contacter-nous ">
-            <div class="div-contact col-md-8 col-sm-12 text-left">
+            <div class="div-contact col-md-7 col-sm-12 text-left">
                <span> vous avez un projet ou vous souhaitez plus d’information ?</span>
             </div>
-        <div class="parent-contactez col-md-4 col-sm-12 mt-4">
+        <div class="parent-contactez col-md-5 col-sm-12 text-right">
                     
-                    <button  type="button" class="btn contactez float-right " data-aos="zoom-in" onclick="redirect_to('/contact');"> contactez-nous !</button>
+                    <button  type="button" class="btn contactez  " data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" onclick="redirect_to('/contact');"> contactez-nous !</button>
                    
         </div>  
             
@@ -345,10 +348,10 @@
                             <a href="/qui-sommes-nous/#nous" class="footer-body">Qui sommes-nous</a><br>
                             <a href="/qui-sommes-nous/#notre-equipe" class="footer-body">Notre équipe</a><br>
                         </div>
-                        <div class="footer-title mt-3"><a href="/competance">nos compétences</a></div>
+                        <div class="footer-title mt-3"><a href="/competance">Nos compétences</a></div>
                         <div class="groupe ">
                            <a href="/competance/#pills-mission" class="footer-body"> Mission AMO grands projets</a><br>
-                            <a href="/competance/#pills-etude" class="footer-body"> études</a><br>
+                            <a href="/competance/#pills-etude" class="footer-body"> Études</a><br>
                             <a href="/competance/#pills-expert" class="footer-body">Expertise / Conseil</a><br>
                             <a href="/competance/#pills-logiciel" class="footer-body">Logiciels spécialisés</a><br>
                         </div>
@@ -358,13 +361,13 @@
                         <div class="footer-title "> <a href="#">nos réalisations</a></div>
                         <div class="groupe">
                             <a href="/realisations/#mission" class="footer-body">Mission AMO Grands Projets</a><br>
-                            <a href="/realisations/#etude" class="footer-body">études</a><br>
+                            <a href="/realisations/#etude" class="footer-body">Études</a><br>
                             <a href="/realisations/#expert" class="footer-body">Expertise / Conseil</a><br>
                             <a href="/realisations/#logiciel" class="footer-body">Vente logiciel</a><br>
                         </div>
     
-                        <div class="footer-title mt-3 "><a href="/rejoignez-nous">carrières</a></div>
-                        <div class="footer-title mt-3 "><a href="/actualites">actualités</a></div>
+                        <div class="footer-title mt-3 "><a href="/rejoignez-nous">Carrières</a></div>
+                        <div class="footer-title mt-3 "><a href="/actualites">Actualités</a></div>
                     </div>
                     <div class="col-lg-4 col-md-6  col-xs-12 col-sm-12 mt-3">
                         <div class="footer-title">abonnez-vous à notre newsletter !</div>
@@ -372,7 +375,7 @@
                                 <p class="hidden">
                                         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                                       </p>
-                        <div class="form-group input-group mt20">
+                        <div class="form-group input-group mt20 ">
                             <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email" required>
                             <div class="input-group-prepend">
                                 <button type="submit" class="boutton input-group-text btn enveloppe"><img src="/assets/img/footer/Enveloppe.png"> </button>

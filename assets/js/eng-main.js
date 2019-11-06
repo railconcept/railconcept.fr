@@ -89,6 +89,24 @@ $(window).scroll(function () {
 
 $(document).ready(function () {
 
+    $("#search-link").click(function(event) {
+        event.preventDefault(); 
+        if($('#input-search').css("display")=="block"){
+            $('#input-search').css("display","none");
+        }else{
+            $('#input-search').css("display","block") ;
+        }
+        
+    });
+
+  
+    $(document).on('click', function(e) {
+        if(!$(event.target).hasClass ("loope")){
+        if ( event.target.id != 'search-link' ) {
+            $('#input-search').css("display","none");
+        }}
+    });
+
     var pathname = window.location.pathname.split('/')[2];
 
     if (pathname != '') {

@@ -245,27 +245,22 @@ section.competences> div > div > div > a > img{
 
 }
 
-#search:hover>#input-search {
-    display: inline-block;
-    position: absolute;
 
-    width: 200px;
-    padding: 2px 5px !important;
-    border-radius: 5px;
-    z-index: 1;
-}
 
 #input-search {
-    display: none;
+    
+    display:none;
     position: absolute;
     border-style: solid;
     border-color: #942626;
     -webkit-appearance: none;
     color: #000;
-
     margin-left: -100px;
-    width: 150px;
-    display: none;
+    width: 200px;
+    padding: 2px 5px !important;
+    border-radius: 5px;
+    z-index: 1;
+
 }
 
 #input-search :focus {
@@ -280,6 +275,7 @@ section.competences> div > div > div > a > img{
 
     padding-right: 5px;
     width: 30px;
+ 
 }
 .loope{
     width: 20px; 
@@ -461,7 +457,7 @@ section.competences> div > div > div > a > img{
     height: 5.5vw;
     bottom: 0;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    font-size: 1.2vw;
+    font-size: 14px;
 
     text-align: center;
     color: #d16b6b;
@@ -580,7 +576,7 @@ section.competences> div > div > div > a > img{
 .slider-news-img>img {
     height: 100%;
     width: 100%;
-
+    object-fit: cover;
 }
 
 .title-news {
@@ -614,15 +610,16 @@ section.competences> div > div > div > a > img{
 
 .paragraphe-news {
     font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     margin-top: 0%;
-    line-height: 1.8;
+   
     text-align: justify;
     color: #8c8c8c;
     text-transform: none;
     left: 0;
     margin-bottom: 3%;
     margin-top: 10px;
+    padding-right: 20px;
 }
 
 .read-more-btn {
@@ -677,6 +674,7 @@ section.competences> div > div > div > a > img{
     margin-left: 3px;
     text-indent: -999px;
     background-color: #ffffff;
+    opacity:1;
 }
 
 #nav-slider-news .active {
@@ -869,7 +867,7 @@ section.competences> div > div > div > a > img{
 *****************CONTACT***************
 **************************************/
 .div-contact {
-    font-size: 30px;
+    font-size: 32px;
     font-family: "Barlow Semi Condensed", sans-serif;
     color: rgb(255, 255, 255);
     font-weight: 900;
@@ -895,8 +893,8 @@ section.competences> div > div > div > a > img{
 }
 
 .contactez {
-    font-size: 25px;
-    padding: 15px 35px;
+    font-size: 27px;
+    padding: 20px 40px;
     font-family: "Barlow Semi Condensed", sans-serif;
     color: #942626;
     border-radius: 0;
@@ -907,16 +905,13 @@ section.competences> div > div > div > a > img{
     white-space: nowrap;
     -webkit-transform: matrix(0.65327673530743, 0, 0, 0.65565876916097, 0, 0);
     box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, .075);
-    position: absolute;
+  
 
 }
 
 .contactez:hover {
     cursor: pointer;
-    box-shadow: inset 0 0 20px rgba(162, 162, 162, .5), 0 0 20px rgba(162, 162, 162, .2);
-    outline-color: rgba(162, 162, 162, 0);
-    outline-offset: 15px;
-    text-shadow: 1px 1px 2px #000000;
+    color: #000000;
 
 }
 
@@ -1065,7 +1060,6 @@ footer {
 .footer-body {
     font-size: 14px;
     color: #8e8f8e;
-    text-transform: uppercase;
     font-family: "Barlow Semi Condensed", sans-serif;
 }
 
@@ -1083,7 +1077,9 @@ footer {
 }
 
 .newsletter {
-    background-color: #dddddd;
+    background-color: #f0f0f0;
+    border-radius: 0;
+    border:none;
 }
 
 .contactez-red {
@@ -1093,14 +1089,17 @@ footer {
     width: 200px;
     height: 40px;
     background-color: #942626;
-    font-weight: bold;
+ 
     text-transform: uppercase;
     border-radius: 0;
 }
 
-.contactez-red:hover {
+.contactez-red:hover{
+    color:#000000 !important;
     cursor: pointer;
 }
+
+
 
 /***************************************
 **************COPYRIGHT***********
@@ -1602,10 +1601,11 @@ li.active>a>i {
     font-weight: bold;
     left: 0;
     margin-bottom: 1%;
-    margin-top: 50px;
+
     font-family: "Barlow Semi Condensed", sans-serif;
     color: rgb(144, 144, 144);
     text-transform: uppercase;
+    margin-top: 70px;
 }
 
 .card-link {
@@ -1727,6 +1727,7 @@ li.active>a>i {
     left: 0;
     margin-bottom: 3%;
     margin-top: 3%;
+    display: inline-block;
 }
 
 .title-card-1 {
@@ -1954,13 +1955,13 @@ li.active>a>i {
 
     /****************** competence ************/
     .competence {
-        margin-top: 90px;
+        margin-top: 79px;
 
 
     }
 
     .contactx {
-        margin-top: 90px;
+        margin-top: 79px;
     }
 
     .realisations-recherche .nav-tabs .nav-link {
@@ -1987,11 +1988,13 @@ li.active>a>i {
         margin:0 !important ;
     }
 
-   
+    .selected:before {
+        content: none;
+    }
 
     #input-search {
         margin-top: -40px !important;
-        margin-left: 35%;
+        margin-left: 175px;
         width: 300px;
     }
 
@@ -2055,7 +2058,9 @@ li.active>a>i {
         bottom: auto;
         position: relative;
     }
-
+    .link-navbar:hover:before {
+        content: none;
+    }
     .link-navbar {
         padding-right: 0.5rem !important;
         font-size: 18px;
@@ -2307,6 +2312,7 @@ li.active>a>i {
 
     #navbar-menu {
         background-color: #f3f3f3f0;
+        margin-top: 5px;
     }
 
     .link-navbar {
@@ -2354,7 +2360,8 @@ li.active>a>i {
 
     #input-search {
         margin-top: -40px !important;
-        margin-left: 30%;
+        margin-left: 105px;
+
         width: 300px;
     }
 
@@ -2367,9 +2374,7 @@ li.active>a>i {
 
 
     /************* NEWS ************/
-    .slider-news-img {
-        display: none
-    }
+
 
     .date-news {
         font-size: 13px;
@@ -2469,7 +2474,7 @@ li.active>a>i {
     }
 
     .contactx {
-        margin-top: 80px;
+        margin-top: 69px;
         height: 200px;
     }
 
@@ -2587,6 +2592,7 @@ li.active>a>i {
 
     #navbar-menu {
         background-color: #f3f3f3f0;
+        margin-top: 5px;
     }
 
     .link-navbar {
@@ -2633,7 +2639,7 @@ li.active>a>i {
     #input-search {
         margin-top: -40px !important;
         margin-left: 25%;
-        width: 300px;
+        width: 50%;
     }
 
 
@@ -2742,7 +2748,7 @@ li.active>a>i {
     }
 
     .contactx {
-        margin-top: 70px;
+        margin-top: 64px;
         height: 200px;
     }
 
