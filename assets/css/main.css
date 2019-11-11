@@ -917,7 +917,7 @@ section.competences> div > div > div > a > img{
 
 
 .contactx {
-    margin-top: 100px;
+    
     background-image: url("../img/page-nos-metiers/contact.png");
     background-size: cover;
     /* <------ */
@@ -1144,7 +1144,7 @@ a:-webkit-any-link {
 
 /****************** competence ************/
 .competence {
-    margin-top: 100px;
+
     background-image: url("../img/slider/slider.png");
     background-size: cover;
     background-repeat: no-repeat;
