@@ -250,7 +250,9 @@ section.competences> div > div > div > a > img{
 
 }
 
-
+#filtre-div{
+    text-align:left ;
+}
 
 #search-link:hover:before {
     content: none;
@@ -2280,8 +2282,8 @@ li.active>a>i {
         left: -25% !important;
     }
     
-    .rail_menu{
-    
+    #filtre-div{
+        text-align:center ;
     }
 
 }
@@ -2591,8 +2593,8 @@ li.active>a>i {
         left: -25% !important;
     }
     
-    .rail_menu{
-    
+    #filtre-div{
+        text-align:center ;
     }
 }
 
@@ -2928,8 +2930,8 @@ li.active>a>i {
     left: -25% !important;
 }
 
-.rail_menu{
-
+#filtre-div{
+    text-align:center ;
 }
 }
 
