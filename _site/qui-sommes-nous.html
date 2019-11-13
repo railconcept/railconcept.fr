@@ -22,36 +22,62 @@
 
 <body id="body">
      
-        <div id="div-navbar" >
-        <div  id="container-navbar" class="container" >
-            <nav id="navbar" class="navbar navbar-light navbar-expand-lg" >
-                <a class="navbar-brand navbar-logo" href="/" data-aos="fade-right"><img class="img-fluid d-lg-flex justify-content-lg-end align-items-lg-end" src="/assets/img/logo/logo.png" id="logo"></a>
-				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-menu"><span class="sr-only">RailConcept</span><span class="navbar-toggler-icon"></span>
-				</button>
-                    <div  id="navbar-menu" class="collapse navbar-collapse" >
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item nav-li " role="presentation"><a id="qui-sommes-nous" class="nav-link link-navbar" href="/qui-sommes-nous">nous connaître</a></li>
-                            <li class="nav-item nav-li" role="presentation"><a id="competance" class="nav-link link-navbar" href="/competance">nos compétances</a></li>
-                            <li class="nav-item nav-li" role="presentation"><a id="realisations" class="nav-link link-navbar" href="/realisations">nos réalisations</a></li>
-                            <li class="nav-item nav-li" role="presentation"><a id="rejoignez-nous" class="nav-link link-navbar" href="/rejoignez-nous">carrières</a></li>
-                            <li class="nav-item nav-li" role="presentation"><a id="actualites"class="nav-link link-navbar" href="/actualites">actualités</a></li>
-                            <li class="nav-item nav-li mr-5" role="presentation"><a id="contact" class="nav-link link-navbar" href="/contact">contact</a></li>
-                            <li class="nav-item nav-li text-center no-underline" role="presentation" id="search">
-                            <a class="nav-link link-navbar hvr-grow" href="#" id="search-link"><img class="loope" src="/assets/img/flags/loupe.png" /></a>
-                            <input id="input-search" type="text" class="search-txt shadow-none" placeholder="recherche..."  name="search-txt" />
-                            </li>
-                            <li id="lang" class="dropdown nav-item nav-li no-underline">
-				
-							 <a class="nav-link link-navbar dropdown-toggle lang-select hvr-wobble-vertical " data-toggle="dropdown" href="/" role="button"   aria-haspopup="true" aria-expanded="false">
-								<img class="flags" src="/assets/img/flags/fr.png">
-								</a>
-                                <div id="select_flag" class="dropdown-menu">
-                                    <a id="dropdown-flags" class="dropdown-item hvr-buzz" href="/en/">
-									<img class="flags" src="/assets/img/flags/gb.png">English</a>
-                                </div>
-                            </li>
-                        </ul>
+        <div id="div-navbar">
+    <div id="container-navbar" class="container">
+        <nav id="navbar" class="navbar navbar-light navbar-expand-lg">
+            <a class="navbar-brand navbar-logo" href="/" data-aos="fade-right"><img
+                    class="img-fluid d-lg-flex justify-content-lg-end align-items-lg-end"
+                    src="/assets/img/logo/logo.png" id="logo"></a>
+
+
+            <button class="navbar-toggler first-button" type="button" data-toggle="collapse" data-target="#navbar-menu"
+                aria-controls="navbarSupportedContent20" aria-expanded="false" aria-label="Toggle navigation"
+                data-aos="fade-left">
+                <div class="animated-icon2 ">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+            </button>
+
+
+            <div id="navbar-menu" class="collapse navbar-collapse main-menu">
+                <ul class="nav navbar-nav ml-auto"> 
+                    <li class="nav-item nav-li  " role="presentation"><a id="qui-sommes-nous"
+                            class="nav-link link-navbar" href="/qui-sommes-nous">nous connaître</a></li>
+                    <li class="nav-item nav-li" role="presentation"><a id="competance" class="nav-link link-navbar"
+                            href="/competance">nos compétances</a></li>
+                    <li class="nav-item nav-li" role="presentation"><a id="realisations" class="nav-link link-navbar"
+                            href="/realisations">nos réalisations</a></li>
+                    <li class="nav-item nav-li" role="presentation"><a id="rejoignez-nous" class="nav-link link-navbar"
+                            href="/rejoignez-nous">carrières</a></li>
+                    <li class="nav-item nav-li" role="presentation"><a id="actualites" class="nav-link link-navbar"
+                            href="/actualites">actualités</a></li>
+                    <li class="nav-item nav-li mr-5" role="presentation"><a id="contact" class="nav-link link-navbar"
+                            href="/contact">contact</a></li>
+                    <li class="nav-item nav-li text-center no-underline" role="presentation" id="search">
+                        <a class="nav-link link-navbar hvr-grow" href="#" id="search-link"><img class="loope"
+                                src="/assets/img/flags/loupe.png" /></a>
+                        <input id="input-search" type="text" class="search-txt shadow-none" placeholder="recherche..."
+                            name="search-txt" />
+                    </li>
+                    <li id="lang" class="dropdown nav-item nav-li no-underline">
+
+                        <a class="nav-link link-navbar dropdown-toggle lang-select hvr-wobble-vertical "
+                            data-toggle="dropdown" href="/" role="button" aria-haspopup="true"
+                            aria-expanded="false">
+                            <img class="flags" src="/assets/img/flags/fr.png">
+                        </a>
+                        <div id="select_flag" class="dropdown-menu">
+                            <a id="dropdown-flags" class="dropdown-item hvr-grow" href="/en/">
+                                <img class="flags" src="/assets/img/flags/gb.png">English</a>
+                        </div>
+                    </li>
+                </ul>
+
+                
+            </div>
         </nav>
     </div>
 </div>    
@@ -81,8 +107,8 @@
     <section id="nous" class="propos-de-nous poste mb-5">
         <div class="container ">
             <div class="row">
-                <div class="col-md-8">
-                    <div class=" title-news  title-section mt-0">à propos de nous</div>
+                <div class="col-md-8" data-aos="fade-right" data-aos-easing="linear" data-aos-anchor="#team_"      >
+                    <div class=" title-news  title-section mt-0" data-aos="zoom-in-up">à propos de nous</div>
                     <div class="paragraphe-news  ml-0 mb-5">
 
                         Fondé en 2006 sous l'impulsion d'Alain RICHARD et
@@ -105,7 +131,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mt-5 ml-0 pl-0 mb-5 d-flex align-items-center justify-content-center">
+                <div class="col-md-4 mt-5 ml-0 pl-0 mb-5 d-flex align-items-center justify-content-center" data-aos="fade-left" data-aos-easing="linear" data-aos-anchor="#team_" >
                     <img src="/assets/img/page-nos-metiers/nous.png" width="100%">
                 </div>
 
@@ -119,10 +145,10 @@
 
     <section id="notre-equipe" class="equipe mp-55 ">
         <div class="container">
-            <div class=" title-news  title-section">Découvrez l'équipe</div>
-            <div class="row">
+            <div id="title_team" class=" title-news  title-section" data-aos="zoom-in-up">Découvrez l'équipe</div>
+            <div class="row team-grid">
 
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_1" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear"   >
                     <img src="/assets/img/page-nos-metiers/team/Alain_Richard.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Alain_Richard.jpg</b>
@@ -133,7 +159,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_2" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_1"  >
                     <img src="/assets/img/page-nos-metiers/team/Alix_Penichot.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Alix_Penichot.jpg</b>
@@ -144,7 +170,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_3" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_2"  >
                     <img src="/assets/img/page-nos-metiers/team/Charles_Boisseau.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Charles_Boisseau.jpg</b>
@@ -155,7 +181,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_4" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_3"  >
                     <img src="/assets/img/page-nos-metiers/team/Christophe_Arnaud.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Christophe_Arnaud.jpg</b>
@@ -166,7 +192,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_5" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_4"  >
                     <img src="/assets/img/page-nos-metiers/team/Coralie_Simon.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Coralie_Simon.jpg</b>
@@ -177,7 +203,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_6" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_5"  >
                     <img src="/assets/img/page-nos-metiers/team/Cyrille_Boisseau.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Cyrille_Boisseau.jpg</b>
@@ -188,7 +214,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_7" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_6" >
                     <img src="/assets/img/page-nos-metiers/team/Damien_Barbier.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Damien_Barbier.jpg</b>
@@ -199,7 +225,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_8" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_7"  >
                     <img src="/assets/img/page-nos-metiers/team/David_Fox.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>David_Fox.jpg</b>
@@ -210,7 +236,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_9" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_8"  >
                     <img src="/assets/img/page-nos-metiers/team/Floriane_Biale.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Floriane_Biale.jpg</b>
@@ -221,7 +247,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_10" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_9" >
                     <img src="/assets/img/page-nos-metiers/team/Frederic_Richard.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Frederic_Richard.jpg</b>
@@ -232,7 +258,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_11" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_10"  >
                     <img src="/assets/img/page-nos-metiers/team/Isabelle_Ruiz.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Isabelle_Ruiz.jpg</b>
@@ -243,7 +269,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_12" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_11" >
                     <img src="/assets/img/page-nos-metiers/team/Julien Presse.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Julien Presse.jpg</b>
@@ -254,7 +280,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_13" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_12"  >
                     <img src="/assets/img/page-nos-metiers/team/Julien_Chassagne.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Julien_Chassagne.jpg</b>
@@ -265,7 +291,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_14" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_13"  >
                     <img src="/assets/img/page-nos-metiers/team/Julien_Gaudremeau.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Julien_Gaudremeau.jpg</b>
@@ -276,7 +302,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_15" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_14"  >
                     <img src="/assets/img/page-nos-metiers/team/Laure_Gazaix_Fontaine.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Laure_Gazaix_Fontaine.jpg</b>
@@ -287,7 +313,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_16" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_15"  >
                     <img src="/assets/img/page-nos-metiers/team/Louis_Guegen.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Louis_Guegen.jpg</b>
@@ -298,7 +324,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_17" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_16" >
                     <img src="/assets/img/page-nos-metiers/team/Nadim_Fardoun.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Nadim_Fardoun.jpg</b>
@@ -309,7 +335,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_18" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_17"  >
                     <img src="/assets/img/page-nos-metiers/team/Neeraj_Chaudhary.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Neeraj_Chaudhary.jpg</b>
@@ -320,7 +346,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_19" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_18"  >
                     <img src="/assets/img/page-nos-metiers/team/Nicolas_Carboneill.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Nicolas_Carboneill.jpg</b>
@@ -331,7 +357,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_20" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_19" >
                     <img src="/assets/img/page-nos-metiers/team/Nicolas_Richard.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Nicolas_Richard.jpg</b>
@@ -342,7 +368,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_21" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_20"  >
                     <img src="/assets/img/page-nos-metiers/team/Quentin_Pelegry.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Quentin_Pelegry.jpg</b>
@@ -353,7 +379,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_22" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_21"  >
                     <img src="/assets/img/page-nos-metiers/team/Raphael_Blin.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Raphael_Blin.jpg</b>
@@ -364,7 +390,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_23" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_22"  >
                     <img src="/assets/img/page-nos-metiers/team/Sonia_Florio.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Sonia_Florio.jpg</b>
@@ -375,7 +401,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_24" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_23"  >
                     <img src="/assets/img/page-nos-metiers/team/Thomas_Cremades.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Thomas_Cremades.jpg</b>
@@ -386,7 +412,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_25" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_24"  >
                     <img src="/assets/img/page-nos-metiers/team/Thomas_Pradeau.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Thomas_Pradeau.jpg</b>
@@ -397,7 +423,7 @@
                         </span>
                     </div>
                 </div>
-<div class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 ">
+<div id="team_26" class="team-person col-lg-2dot4 col-md-3 col-sm-4 col-4 " data-aos="zoom-in" data-aos-easing="linear" data-aos-anchor="#team_25"  >
                     <img src="/assets/img/page-nos-metiers/team/Victor_Bidault.jpg" class="img-fluid img-team">
                     <div class="team-text text-center">
                        <span><b>Victor_Bidault.jpg</b>
@@ -419,7 +445,7 @@
 
             </div>
             </div>
-            <div class="text-center mt-5 mb-5">
+            <div id="show_more" class="text-center mt-5 mb-5">
                 <a  class="savoir-plus show_hide" href="#" data-show="no">Voir plus</a>
             </div>
         </div>
@@ -429,14 +455,13 @@
     <section class="contacter-nous" >
     <div class="container">
         <div class="row row-contacter-nous ">
-            <div class="div-contact col-md-7 col-sm-12 text-left">
+            <div class="div-contact col-md-7 col-sm-12 text-left" data-aos="fade-right" data-aos-easing="linear"  >
                <span> vous avez un projet ou vous souhaitez plus d’information ?</span>
             </div>
         <div class="parent-contactez col-md-5 col-sm-12 text-right">
                     
-                    <button  type="button" class="btn contactez  " data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine" onclick="redirect_to('/contact');"> contactez-nous !</button>
+                    <button  type="button" class="btn contactez  " data-aos="zoom-out" data-aos-easing="linear"  data-aos-anchor=".div-contact"  data-aos-delay="300"      
+                     onclick="redirect_to('/contact');"> contactez-nous !</button>
                    
         </div>  
             
@@ -450,7 +475,7 @@
     <section id="footer">
             <div class="container">
                 <div class="row text-alignit ">
-                    <div class="col-lg-3 col-md-6 col-xs-12 col-sm-12 pl-0 pr-0">
+                    <div class="foot1 col-lg-3 col-md-6 col-xs-12 col-sm-12 pl-0 pr-0"  data-aos="fade-up" data-aos-easing="linear"  >
                     <div class="col-12">
                             <img class="logo-footer" src="/assets/img/logo/logo.png" >
                     </div> 
@@ -483,7 +508,7 @@
                     </div>
                         
                     </div>
-                    <div class="col-lg-2 col-md-6  col-xs-12 col-sm-12 pl-0 pr-0 mt-3">
+                    <div class="foot2 col-lg-2 col-md-6  col-xs-12 col-sm-12 pl-0 pr-0 mt-3" data-aos="fade-up" data-aos-easing="linear"  data-aos-anchor=".foot1"  data-aos-delay="150">
                         <div class="footer-title "><a href="/qui-sommes-nous"> nous connaître</a></div>
                         <div class="groupe ">
                             <a href="/qui-sommes-nous/#nous" class="footer-body">Qui sommes-nous</a><br>
@@ -498,7 +523,7 @@
                         </div>
                     </div>
     
-                    <div class="col-lg-3 col-md-6  col-xs-12 col-sm-12 mt-3">
+                    <div class="foot3 col-lg-3 col-md-6  col-xs-12 col-sm-12 mt-3" data-aos="fade-up" data-aos-easing="linear"  data-aos-anchor=".foot2"  data-aos-delay="250">
                         <div class="footer-title "> <a href="#">nos réalisations</a></div>
                         <div class="groupe">
                             <a href="/realisations/#mission" class="footer-body">Mission AMO Grands Projets</a><br>
@@ -510,7 +535,7 @@
                         <div class="footer-title mt-3 "><a href="/rejoignez-nous">Carrières</a></div>
                         <div class="footer-title mt-3 "><a href="/actualites">Actualités</a></div>
                     </div>
-                    <div class="col-lg-4 col-md-6  col-xs-12 col-sm-12 mt-3">
+                    <div class="foot4 col-lg-4 col-md-6  col-xs-12 col-sm-12 mt-3" data-aos="fade-up" data-aos-easing="linear"  data-aos-anchor=".foot3"  data-aos-delay="350">
                         <div class="footer-title">abonnez-vous à notre newsletter !</div>
                         <form action="/success"  name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                                 <p class="hidden">
@@ -577,6 +602,8 @@
 <script src="/assets/js/sweetalert2.js"></script>
 <script src="/assets/js/lunr.js"></script>
 <script src="/assets/js/search.js"></script>
+<script src="/assets/js/jquery.easing.1.3.js"></script>
+<script src="/assets/js/isotope.pkgd.min.js"></script>
 
 <script src="/assets/js/main.js"></script>
 

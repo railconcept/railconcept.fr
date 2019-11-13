@@ -3,39 +3,45 @@ title: Accueil
 layout: default
 permalink: /
 ---
-  
- 
-    <!--Main slider-->
 
-    <section id="section-main-slider">
-        <div id="main-slider" class="carousel slide  carousel-fade" data-ride="carousel">
 
-            <div class="carousel-inner slider-inn" role="listbox">
-                <!-- Slide One  -->
-                <div class="carousel-item slider-item slider-item active" style="background-image: url('assets/img/slider/slider1.jpg') ">
+<!--Main slider-->
+
+<section id="section-main-slider">
+    <div id="main-slider" class="carousel slide  carousel-fade" data-ride="carousel">
+
+        <div class="carousel-inner slider-inn" role="listbox">
+            <!-- Slide One  -->
+            <div class="carousel-item slider-item slider-item active"
+                style="background-image: url('assets/img/slider/slider1.jpg') ">
                 <div id="container-caption" class="container">
-                   <div>
-                    <div class="carousel-caption slider-caption  " data-aos="flip-left"  data-aos-anchor=".navbar-logo">
+                    <div>
+                        <div class="carousel-caption slider-caption  " data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="1500">
 
-                        <p class="div-slider">Études, expertise et assistance à maîtrise d'ouvrage spécialiste du monde
-                            ferroviaire 1
+                            <p class="div-slider">Études, expertise et assistance à maîtrise d'ouvrage spécialiste du
+                                monde
+                                ferroviaire 1
 
-                            <div class="div-slider-numbers row text-right">
-                                <span class="div-slider-numbers-details align-middle div-slider-numbers-active">1</span>
-                                <span class="div-slider-numbers-details align-middle">2</span>
-                                <span class="div-slider-numbers-details align-middle">3</span>
-                            </div>
-                        </p>
-                    </div>
+                                <div class="div-slider-numbers row text-right">
+                                    <span
+                                        class="div-slider-numbers-details align-middle div-slider-numbers-active">1</span>
+                                    <span class="div-slider-numbers-details align-middle">2</span>
+                                    <span class="div-slider-numbers-details align-middle">3</span>
+                                </div>
+                            </p>
+                        </div>
                     </div>
                 </div>
-               </div>
-               
-               <!-- Slide two -->
-                <div class="carousel-item slider-item slider-item" style="background-image: url('assets/img/slider/slider2.jpg') ">
+            </div>
+
+            <!-- Slide two -->
+            <div class="carousel-item slider-item slider-item"
+                style="background-image: url('assets/img/slider/slider2.jpg') ">
                 <div id="container-caption" class="container">
-            
-                    <div class="carousel-caption slider-caption  " data-aos="flip-left"  data-aos-anchor=".navbar-logo" >
+
+                    <div class="carousel-caption slider-caption  " data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="1500">
 
                         <p class="div-slider">Études, expertise et assistance à maîtrise d'ouvrage spécialiste du monde
                             ferroviaire 2
@@ -48,13 +54,15 @@ permalink: /
                         </p>
                     </div>
                 </div>
-               </div>
-               
-               <!-- Slide three -->
-                <div class="carousel-item slider-item slider-item " style="background-image: url('assets/img/slider/slider3.jpg') ">
+            </div>
+
+            <!-- Slide three -->
+            <div class="carousel-item slider-item slider-item "
+                style="background-image: url('assets/img/slider/slider3.jpg') ">
                 <div id="container-caption" class="container">
-            
-                    <div class="carousel-caption slider-caption  " data-aos="flip-left"  data-aos-anchor=".navbar-logo"  >
+
+                    <div class="carousel-caption slider-caption  " data-aos="fade-down" data-aos-easing="linear"
+                        data-aos-duration="1500">
 
                         <p class="div-slider">Études, expertise et assistance à maîtrise d'ouvrage spécialiste du monde
                             ferroviaire 3
@@ -67,158 +75,160 @@ permalink: /
                         </p>
                     </div>
                 </div>
-               </div>
-       
-                </div>
-          
-
-            <a id="carousel-control-prev" class="carousel-control-prev" href="#main-slider" role="button" data-slide="prev" data-aos="fade-right" data-aos-anchor=".navbar-logo">
-                <span id="previous" class="carousel-control-prev-icon align-middle" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-
-            <a id="carousel-control-next" class="carousel-control-next" href="#main-slider" role="button" data-slide="next" data-aos="fade-left" data-aos-anchor=".navbar-logo">
-                <span id="next" class="carousel-control-next-icon align-middle" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+            </div>
 
         </div>
-    </section>
-    
-    
-    
-    
-        <!-- competences -->
 
-        {% include competances.html %}
+
+        <a id="carousel-control-prev" class="carousel-control-prev" href="#main-slider" role="button" data-slide="prev"
+            data-aos="fade-right" data-aos-easing="linear" data-aos-anchor=".slider-caption" data-aos-delay="50">
+            <span id="previous" class="carousel-control-prev-icon align-middle" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+
+        <a id="carousel-control-next" class="carousel-control-next" href="#main-slider" role="button" data-slide="next"
+            data-aos="fade-left" data-aos-easing="linear" data-aos-anchor=".slider-caption" data-aos-delay="50">
+            <span id="next" class="carousel-control-next-icon align-middle" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+
+    </div>
+</section>
+
+
+
+
+<!-- competences -->
+
+{% include competances.html %}
 
 
 
 
 <!--News-->
 
-    <div id="slider-news" class="carousel slide pt-5"  data-ride="carousel">
+<div id="slider-news" class="carousel slide pt-5" data-ride="carousel">
     <ol id="nav-slider-news" class="carousel-indicators slider-news-indicators">
-        <li data-target="#slider-news" data-slide-to="0"  class="active"></li>
+        <li data-target="#slider-news" data-slide-to="0" class="active"></li>
         <li data-target="#slider-news" data-slide-to="1"></li>
         <li data-target="#slider-news" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner slider-news-inner ">
-    
-    <!-- Newss 1 -->
-      
+
+        <!-- Newss 1 -->
+
 
 
 
         {% assign maxPost = 3 %}
         {% assign counter = 0 %}
-          {% for post in site.posts %}
-        
-               
-                
+        {% for post in site.posts %}
 
-                <div class="carousel-item slider-news-item 
+
+
+
+        <div class="carousel-item slider-news-item 
 
                 {% if counter == 0 %}
                 {{ 'active' }}
                 {% endif %}
                 ">
-                {% assign counter = counter | plus: 1 %}
-                        <div class="row">
-                            <div class="col-md-6 col-sm-12 col-12 slider-news-caption">
-                                <div class="title-news title-section"  data-aos="zoom-in-up">
-                                    à LA UNE
-                                </div>
-                                <div class="date-news">{{ post.date | date_to_long_string }}</div>
-                                <div class="title-para-news">{{ post.title}}</div>
-                                <div class="paragraphe-news">  {{ post.news.news_1 | strip_html | truncatewords: 25 }} </div>
-                                <a href="{{ post.url | prepend: site.baseurl }}" class="read-more-btn">Lire
-                                    la suite</a>
-                                <div class="text-right read-all-news">
-                                    <a href="/actualites" class="voirplus">Voir
-                                        toute notre actualité
-                                        <img class="read-more-arrow" src="assets/img/arrows/arrow.png" >
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-sm-12 col-12  slider-news-img h-600">
-                                <img src="{{post.news_photo.photo_news1}}"
-                                      alt="...">
-                            </div>
-                           </div>
+            {% assign counter = counter | plus: 1 %}
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-12 slider-news-caption" data-aos="fade-right" data-aos-easing="linear" >
+                    <div class="title-news title-section" data-aos="zoom-in-up" data-aos-easing="linear"  data-aos-anchor=".slider-news-caption"  data-aos-delay="300">
+                        à LA UNE
                     </div>
-
-                
-               {% if counter == maxPost %}
-                {% break %} {% comment %}exit the for loop{% endcomment %}
-                {% endif %}
-             {% endfor %}
-
-
-
-
-
-
-
+                    <div class="date-news">{{ post.date | date_to_long_string }}</div>
+                    <div class="title-para-news">{{ post.title}}</div>
+                    <div class="paragraphe-news"> {{ post.news.news_1 | strip_html | truncatewords: 25 }} </div>
+                    <a href="{{ post.url | prepend: site.baseurl }}" class="read-more-btn">Lire
+                        la suite</a>
+                    <div class="text-right read-all-news">
+                        <a href="/actualites" class="voirplus">Voir
+                            toute notre actualité
+                            <img class="read-more-arrow" src="assets/img/arrows/arrow.png">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-12  slider-news-img h-600" data-aos="fade-left" data-aos-easing="linear" >
+                    <img src="{{post.news_photo.photo_news1}}" alt="...">
+                </div>
             </div>
         </div>
-    
-      
+
+
+        {% if counter == maxPost %}
+        {% break %} {% comment %}exit the for loop{% endcomment %}
+        {% endif %}
+        {% endfor %}
+
+
+
+
+
+
+
+    </div>
+</div>
+
+
 
 <!-- Réalisations-->
 
-   <section class="realisation mt-5 pb-3">
+<section class="realisation mt-5 pb-3">
     <div class="container ">
         <div class="row ">
-          
-                <div class=" title-news  title-section"  data-aos="zoom-in-up">nos réalisations</div>
-         
-      
-        <div class="row text-center " >
 
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center mt-5">
-                <img src="assets/img/page-realisations/real1.png" class="img-fluid ">
-                <div class="title-realisation mt-2 contenu-competence">STIF - Mission de maîtrise d'oeuvre Générale: OPERATION TANGENT
-                    (<span
-                            class="colored">TGO</span> )
-                </div>
+            <div class=" title-news  title-section" data-aos="zoom-in-up">nos réalisations</div>
 
-                <div class="sous-title">Yvelines (France)</div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4  col-sm-12 col-12 text-center mt-5">
-                <img src="assets/img/page-realisations/real2.png" class="img-fluid">
-                <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude d'exploitation, de robustesse et de capacité en
-                    phase
-                    EP et AVP :
-                    <span class="colored">Gare de Lyon Part-Dieu</span>
 
-                
-                </div>
-                    <div class="sous-title"> lyon (France)</div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-4  col-sm-12 col-12 text-center mt-5">
-                <img src="assets/img/page-realisations/real3.png" class="img-fluid ">
-                <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude de trafic et capacité
-                    <span class="colored">contributive du Projet GPSO</span>
+            <div class="row text-center ">
 
-                   
-                </div>
-                 <div class="sous-title">aquitaine (France)</div>
-            </div>
-        </div>
-        
-        <div class="text-right read-all-realisation read-all-news ml-auto mr-3">
-                        <a href="/realisation" class="voirplus"> voir toutes nos réalisations
-                            <img class="read-more-arrow" src="assets/img/arrows/arrow.png" >
-                        </a>
+                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center mt-5"   data-aos="flip-up" data-aos-easing="linear"        data-aos-offset="0" >
+                    <img src="assets/img/page-realisations/real1.png" class="img-fluid ">
+                    <div class="title-realisation mt-2 contenu-competence">STIF - Mission de maîtrise d'oeuvre Générale:
+                        OPERATION TANGENT
+                        (<span class="colored">TGO</span> )
                     </div>
-        
-        
-        
-        
-        
-        
-          </div>
+
+                    <div class="sous-title">Yvelines (France)</div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4  col-sm-12 col-12 text-center mt-5" data-aos="flip-up" data-aos-easing="linear"   data-aos-delay="300"     data-aos-offset="0">
+                    <img src="assets/img/page-realisations/real2.png" class="img-fluid">
+                    <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude d'exploitation, de
+                        robustesse et de capacité en
+                        phase
+                        EP et AVP :
+                        <span class="colored">Gare de Lyon Part-Dieu</span>
+
+
+                    </div>
+                    <div class="sous-title"> lyon (France)</div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-4  col-sm-12 col-12 text-center mt-5" data-aos="flip-up" data-aos-easing="linear"    data-aos-delay="300"    data-aos-offset="0">
+                    <img src="assets/img/page-realisations/real3.png" class="img-fluid ">
+                    <div class="title-realisation mt-2 contenu-competence">SNCF RESEAU - Etude de trafic et capacité
+                        <span class="colored">contributive du Projet GPSO</span>
+
+
+                    </div>
+                    <div class="sous-title">aquitaine (France)</div>
+                </div>
+            </div>
+
+            <div class="text-right read-all-realisation read-all-news ml-auto mr-3">
+                <a href="/realisation" class="voirplus"> voir toutes nos réalisations
+                    <img class="read-more-arrow" src="assets/img/arrows/arrow.png">
+                </a>
+            </div>
+
+
+
+
+
+
+        </div>
     </div>
 
 </section>
@@ -231,77 +241,84 @@ permalink: /
 <section class="section-slider-clients ">
 
     <div class="container ">
-    
-            <div class="title-news title-section " data-aos="zoom-in-up" >nos clients</div>
-            <div id="slider-clients" class="carousel slide clients_carousel mt-5 mb-5" data-ride="carousel">
-                <div class="carousel-inner clients-inner slid"  role="listbox">
 
-                 <div class="carousel-item slid-responsive client_item active ">
-                       
-                        <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client" src="assets/img/clients/client1.png" alt="...">
-                        
+        <div class="title-news title-section " data-aos="zoom-in-up">nos clients</div>
+        <div id="slider-clients" class="carousel slide clients_carousel mt-5 mb-5" data-ride="carousel">
+            <div class="carousel-inner clients-inner slid" role="listbox">
+
+                <div class="carousel-item slid-responsive client_item active ">
+
+                    <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client"
+                            src="assets/img/clients/client1.png" alt="...">
+
+                    </div>
                 </div>
-                </div>
-              
+
                 <div class="carousel-item slid-responsive  client_item ">
-                   
-                        <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client" src="assets/img/clients/client2.png" alt="...">
-                        </div>
-                        
+
+                    <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client"
+                            src="assets/img/clients/client2.png" alt="...">
+                    </div>
+
                 </div>
-              
+
 
                 <div class="carousel-item slid-responsive client_item ">
-                   
-                        <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client" src="assets/img/clients/client3.png"  alt="...">
-                        </div>
-                    
-                </div>
-                  
-                <div class="carousel-item slid-responsive  client_item ">
-                       
-                    <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client" src="assets/img/clients/client1.png" alt="...">
-                    
-              </div>
-                </div>
-          
-               <div class="carousel-item slid-responsive client_item ">
-               
-                    <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client" src="assets/img/clients/client2.png" alt="...">
+
+                    <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client"
+                            src="assets/img/clients/client3.png" alt="...">
                     </div>
-                    
-               </div>
-               <div class="carousel-item slid-responsive client_item ">
-               
-                    <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client" src="assets/img/clients/client3.png" alt="...">
-                    </div>
-                    
-               </div>
-            
 
                 </div>
-        
-             <a class="carousel-control-prev carousel-control-clients" href="#slider-clients" role="button" data-slide="prev">
+
+                <div class="carousel-item slid-responsive  client_item ">
+
+                    <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client"
+                            src="assets/img/clients/client1.png" alt="...">
+
+                    </div>
+                </div>
+
+                <div class="carousel-item slid-responsive client_item ">
+
+                    <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client"
+                            src="assets/img/clients/client2.png" alt="...">
+                    </div>
+
+                </div>
+                <div class="carousel-item slid-responsive client_item ">
+
+                    <div class="text-center col-lg-4 col-md-4 col-sm-6 col-6"><img class="img-fluid img-client"
+                            src="assets/img/clients/client3.png" alt="...">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <a class="carousel-control-prev carousel-control-clients" href="#slider-clients" role="button"
+                data-slide="prev">
                 <img src="assets/img/arrows/slid-left.png" class="position-slid ">
-             </a>
-             <a class="carousel-control-next carousel-control-clients" href="#slider-clients" role="button" data-slide="next">
+            </a>
+            <a class="carousel-control-next carousel-control-clients" href="#slider-clients" role="button"
+                data-slide="next">
                 <img src="assets/img/arrows/slid-right.png" class="position-slid">
-              </a>
-             </div>
-        
-             <div class="text-right read-all-realisation read-all-news ml-auto">
-                        <a href="#" class="voirplus"> dècouvrir tous nos clients
-                            <img class="read-more-arrow" src="assets/img/arrows/arrow.png" >
-                        </a>
+            </a>
         </div>
-        
-        
-        
-        
+
+        <div class="text-right read-all-realisation read-all-news ml-auto">
+            <a href="#" class="voirplus"> dècouvrir tous nos clients
+                <img class="read-more-arrow" src="assets/img/arrows/arrow.png">
+            </a>
+        </div>
+
+
+
+
     </div>
 </section>
 
 
 {% include contact.html %}
 {% include footer.html %}
-

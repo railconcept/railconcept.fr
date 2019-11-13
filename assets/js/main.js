@@ -36,6 +36,8 @@ function findBootstrapEnvironment() {
 function show_hide(){
     if (findBootstrapEnvironment() == "xl" || findBootstrapEnvironment() == "lg") {
 
+        
+
         $('.team-person').show();
         $('.team-person:gt(-12)').hide();
 
@@ -122,6 +124,7 @@ $(window).scroll(function () {
         //     $("#container-navbar").css("padding-top", $small);
         $("#div-navbar").removeClass("navshadow");
     }
+    AOS.refresh(); 
 });
 
 
@@ -130,7 +133,12 @@ $(document).ready(function () {
 
     show_hide();
 
+    $('.first-button').on('click', function () {
 
+        $('.animated-icon2').toggleClass('open');
+        
+      });
+    
 
 
 
@@ -141,14 +149,21 @@ $(document).ready(function () {
             $(this).data("show","yes");
             $(this).text("VOIR MOINS");
             $('.team-person').show();
+
+
+
+
         } else {
             $(this).text("VOIR PLUS");
             $(this).data("show","no");
-            
+               $('html, body').animate({
+        scrollTop: $("#title_team").offset().top - 100
+    }, 1000);
             show_hide();
         }
-
-    });
+  
+  
+    });  
     
 
 
@@ -182,6 +197,7 @@ $(document).ready(function () {
                 !$(event.target).is('#navbar-menu') &&
                 menu_opened === true) {
                 $('#navbar-menu').collapse('toggle');
+                $('.animated-icon2').toggleClass('open');
             }
 
 
@@ -323,13 +339,13 @@ $(document).ready(function () {
 
 
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-        offset: 120, // offset (in px) from the original trigger point
+        offset: 0, // offset (in px) from the original trigger point
         delay: 200, // values from 0 to 3000, with step 50ms
         duration: 800, // values from 0 to 3000, with step 50ms
         easing: 'ease', // default easing for AOS animations
-        once: false, // whether animation should happen only once - while scrolling down
+        once: true, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
-        anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+        anchorPlacement: 'top', // defines which position of the element regarding to window should trigger the animation
 
     });
 
@@ -337,7 +353,7 @@ $(document).ready(function () {
 
     ///////////////////////////////////////////Google Map ////////////////////////////
 
-    (() => {
+  /*  (() => {
         "use strict";
 
         const appendChild = Element.prototype.appendChild;
@@ -356,7 +372,7 @@ $(document).ready(function () {
             }
             return element;
         };
-    })();
+    })(); */
 
 
 
@@ -369,8 +385,8 @@ $(document).ready(function () {
 
         if ($("#map1").length) {
             var mapOpts = {
-                center: new google.maps.LatLng(45.4242091, 4.2964249),
-                zoom: 7,
+                center: new google.maps.LatLng(27.7928424,1.527656),
+                zoom: 4,
                 disableDefaultUI: true,
                 styles: [{
                     stylers: [{
@@ -438,29 +454,14 @@ $(document).ready(function () {
 
 
             makeMarker({
-                position: new google.maps.LatLng(46.906120, 4.749562),
-
-                content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
-                    ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
-                    '</div></div>',
-                map: map,
-                icon: 'assets/img/page-realisations/pin.png',
-                animation: google.maps.Animation.DROP
-
-            });
-            makeMarker({
                 position: new google.maps.LatLng(43.129083, 5.927973),
+
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/amo/LNPCA.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
+                    ' <div class="col-12 title_infowindow">AMO</div> ' +
+                    ' <div class="col-12 projet_infowindow">Projet de ligne nouvelle Provence Côte d\’Azur</div> ' +
+                    ' <div class="col-12 adresse_infowindow">PROVENCE CÔTE D’AZUR</div> ' +
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map,
@@ -471,11 +472,58 @@ $(document).ready(function () {
             makeMarker({
                 position: new google.maps.LatLng(43.698010, 4.149878),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/amo/Nimes-Montpellier.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
+                    ' <div class="col-12 title_infowindow">AMO</div> ' +
+                    ' <div class="col-12 projet_infowindow">Mission de maîtrise d\'oeuvre Générale: Maintenance du Contournement Nîmes Montpellier</div> ' +
+                    ' <div class="col-12 adresse_infowindow">NÎMES MONTPELLIER</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+            makeMarker({
+                position: new google.maps.LatLng(46.906120, 4.749562),
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/amo/TER.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">AMO</div> ' +
+                    ' <div class="col-12 projet_infowindow">Mission de maîtrise d\'oeuvre Générale: Temps de parcours TER</div> ' +
+                    ' <div class="col-12 adresse_infowindow">BOURGOGNE</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker({
+                position: new google.maps.LatLng(5.353573, -4.028075),
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/amo/metro_abd.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">AMO</div> ' +
+                    ' <div class="col-12 projet_infowindow">Métro Urbain d’Abidjan Ligne 1 Axe Nord-Sud</div> ' +
+                    ' <div class="col-12 adresse_infowindow">ABIDJAN</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker({
+                position: new google.maps.LatLng(5.371688, -3.990993),
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/amo/metro_abd_2.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">AMO</div> ' +
+                    ' <div class="col-12 projet_infowindow">Métro Urbain d’Abidjan Ligne 1 Axe Nord-Sud</div> ' +
+                    ' <div class="col-12 adresse_infowindow">ABIDJAN</div> ' +
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map,
@@ -496,8 +544,8 @@ $(document).ready(function () {
 
         if ($("#map2x").length) {
             var mapOpts2x = {
-                center: new google.maps.LatLng(47.21537068, -1.55387878),
-                zoom: 12,
+                center: new google.maps.LatLng(45.787119,3.0777066),
+                zoom: 6,
                 disableDefaultUI: true,
                 styles: [{
                     stylers: [{
@@ -565,14 +613,14 @@ $(document).ready(function () {
 
 
             makeMarker2x({
-                position: new google.maps.LatLng(47.21537068, -1.55387878),
+                position: new google.maps.LatLng( 43.204810, 3.009691),
 
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Montpellier-Perpignan.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation 2x</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Ligne Nouvelle Montpellier-Perpignan Avant-Projet Sommaire</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Montpellier</div> ' +
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
@@ -580,14 +628,16 @@ $(document).ready(function () {
                 animation: google.maps.Animation.DROP
 
             });
+            
             makeMarker2x({
-                position: new google.maps.LatLng(47.19694467, -1.58297539),
+                position: new google.maps.LatLng( 47.448659, -0.551660),
+
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Axe_Nantes_Angers_Sable.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation 2x</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Fiabilisation de l’axe Nantes-Angers-Sablé</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Nantes-Angers</div> ' +
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
@@ -595,14 +645,67 @@ $(document).ready(function () {
                 animation: google.maps.Animation.DROP
 
             });
+
             makeMarker2x({
-                position: new google.maps.LatLng(47.19962734, -1.53885841),
+                position: new google.maps.LatLng(45.460703, -0.486922),
+
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Gare_de_Bordeaux.jpg" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation 2x</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Axe Nantes-Bordeaux Diagnostic et études socio-économiques</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Nantes-Bordeaux</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(45.266327, 5.648278),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Tunnel_de_Voreppe.jpg" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Tunnel de Voreppe : Dégagement du Gabarit Haut d’autoroute Ferroviaire</div> ' +
+                    ' <div class="col-12 adresse_infowindow">CHAMBERY</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(42.809058, -0.439495),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Nouvel_axe_ferroviaire_transpyreneen.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Etude des corridors de tracés possibles pour le nouvel axe ferroviaire à grande capacité transpyrénéen</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Espagne - France</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(46.064035, 6.306631),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Haute-Savoie.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Etude de robustesse et de valorisation des aménagements</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Lyon</div> ' +
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
@@ -612,7 +715,261 @@ $(document).ready(function () {
             });
 
 
+            makeMarker2x({
+                position: new google.maps.LatLng(47.461576, -0.565522),
 
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Gare-Angers.jpg" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Etude d’Exploitation de la gare d’Angers</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Angers</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(43.669548, 4.033310),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Raccordement-Saint-Bres.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Etude préliminaire du raccordement de Saint Brès inversé Contournement de Nîmes-Montpellier</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Nîmes-Montpellier</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+
+            makeMarker2x({
+                position: new google.maps.LatLng(43.559284, 7.013866),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Marseille-Vintimille.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Déploiement ERTMS sur le réseau structurant Analyse de Marseille - Vintimille</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Marseille - Vintimille</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(48.580981, 7.606553),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Longuyou-Bale.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Déploiement ERTMS sur le réseau structurant Analyse socio-économique de l\'équipement en ETCS1 de l\'axe Longuyon-Bâle</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Longuyon-Bâle</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(48.888606, 2.313073),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Gare_de_Cardinet.jpg" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Travaux PRO Cardinet</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Gare de Pont Cardinet</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(45.822182, 5.995255),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Sillon_Alpin.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Sillon Alpin Nord Aix-les-Bains – Annecy : Etudes d’exploitation et de stabilité</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Aix-Annecy</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(43.392523, -1.649692),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Bayonne-Saint-Sabastien.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Étude des conditions de mise en œuvre d\'un service ferroviaire transfrontalier de voyageurs entre Bayonne  et Saint Sébastien</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Bayonne - Saint Sébastien</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(43.704081, 7.260318),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/LNPCA.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Analyse des trafics et calcul de la capacité contributive du projet de Ligne Nouvelle Provence Cote d’Azur (LN PCA)</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Cote d’Azur</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(44.186355, 0.678983),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/IPCS-Bordeaux.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Etudes d’opportunité des IPCS – Evaluation socio-économique</div> ' +
+                    ' <div class="col-12 adresse_infowindow"> Bordeaux</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(48.827023, 2.399894),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Axe_LTV_Paris-Est.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Etude d’axe LTV Paris Est – SA 2018</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Paris</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(46.866937, 5.691565),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    ' <img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Ligne-Revermont.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Etude horaire de la ligne du Revermont</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Bourgogne</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(45.714122, 4.851933),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    ' <img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Noeud_ferroviaire_lyonnais.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Analyse globale des aménagements de robustesse dans l’étoile de Lyon</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Lyon</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(43.660341, 7.187158),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    ' <img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Mandelieu-Ventimille.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Amélioration de la performance entre Mandelieu et Vintimille</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Mandelieu – Vintimille</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(44.186060, 0.543761),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    ' <img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Ligne-Bordeaux-Toulouse.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">GPSO : Impact régularité</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Bordeaux-Toulouse</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker2x({
+                position: new google.maps.LatLng(45.665935, 4.853161),
+
+                content: '<div class="gallery-real text-left p-0">' +
+                    ' <img class="ico_infowindow img-fluid" src="assets/img/page-realisations/etude/Ligne_St-Fons-Tain_Hermitage.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Etude </div> ' +
+                    ' <div class="col-12 projet_infowindow">Analyse du block entre St-Fons et Tain-l’Hermitage</div> ' +
+                    ' <div class="col-12 adresse_infowindow">St-Fons - Tain-l’Hermitage</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map2x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
 
         }
 
@@ -624,8 +981,8 @@ $(document).ready(function () {
 
         if ($("#map3x").length) {
             var mapOpts3x = {
-                center: new google.maps.LatLng(47.21537068, -1.55387878),
-                zoom: 12,
+                center: new google.maps.LatLng(29.3331967,1.9959572),
+                zoom: 4,
                 disableDefaultUI: true,
                 styles: [{
                     stylers: [{
@@ -693,14 +1050,14 @@ $(document).ready(function () {
 
 
             makeMarker3x({
-                position: new google.maps.LatLng(47.21537068, -1.55387878),
+                position: new google.maps.LatLng(48.844974, 2.376834),
 
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/expert/Reseau-ERTMS.jpg" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation 3x</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
+                    ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
+                    ' <div class="col-12 projet_infowindow">Déploiement d’ERTMS sur le réseau structurant</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Europe</div> ' +
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
@@ -709,13 +1066,13 @@ $(document).ready(function () {
 
             });
             makeMarker3x({
-                position: new google.maps.LatLng(47.19694467, -1.58297539),
+                position: new google.maps.LatLng(6.479821, -3.931384),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/expert/BoucleNiger.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation 3x</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
+                    ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
+                    ' <div class="col-12 projet_infowindow">Assistance technique et économique à la mise en concession de la section Cotonou-Niamey</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Cotonou (Bénin)-Niamey (Niger)</div> ' +
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
@@ -724,13 +1081,13 @@ $(document).ready(function () {
 
             });
             makeMarker3x({
-                position: new google.maps.LatLng(47.19962734, -1.53885841),
+                position: new google.maps.LatLng(47.573972, 1.316354),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/expert/Vendome-Montoire.jpg" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation 3x</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
+                    ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
+                    ' <div class="col-12 projet_infowindow">MISSION D’EXPERTISE SUR LES POSSIBILITES DE MAINTIEN D’UN SERVICE FERROVIAIRE SUR LES LIGNES VENDÔME – BIFURCATION PONT DE BRAYE-MONTOIRE-TRÔO ET BLOIS-VILLEFRANCOEUR</div> ' +
+                    ' <div class="col-12 adresse_infowindow">VENDÔME – BIFURCATION</div> ' +
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
@@ -739,7 +1096,69 @@ $(document).ready(function () {
 
             });
 
+            makeMarker3x({
+                position: new google.maps.LatLng(48.076711, -0.758023),
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/expert/LGV_Bretagne_Pay_de_Loire.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
+                    ' <div class="col-12 projet_infowindow">I&P GP BPL - LGV Bretagne Pays de Loire Inspections préalables des installations et ouvrages d’équipements ferroviaires</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Bretagne – pays de la Loire</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map3x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
 
+            });
+
+            makeMarker3x({
+                position: new google.maps.LatLng(46.603062, 1.589501),
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/expert/LISEA.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
+                    ' <div class="col-12 projet_infowindow">Mission d’Assistance à la rédaction de consignes d’exploitation et de maintenance</div> ' +
+                    ' <div class="col-12 adresse_infowindow">France</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map3x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker3x({
+                position: new google.maps.LatLng(48.978987, 7.023069),
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/expert/Grand_Est.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
+                    ' <div class="col-12 projet_infowindow">Audit des lignes de la région Grand Est</div> ' +
+                    ' <div class="col-12 adresse_infowindow">la région Grand Est</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map3x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
+
+            makeMarker3x({
+                position: new google.maps.LatLng(48.898399, 2.297213),
+                content: '<div class="gallery-real text-left p-0">' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/expert/Paris_Saint-Lazarre.png" />' +
+                    ' <div class="col-12 centerx detail_infowindo">' +
+                    ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
+                    ' <div class="col-12 projet_infowindow">Scénarisation des plans de transport lors des phases travaux sur le réseau francilien de Paris St-Lazare</div> ' +
+                    ' <div class="col-12 adresse_infowindow">Ile de France</div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    '</div></div>',
+                map: map3x,
+                icon: 'assets/img/page-realisations/pin.png',
+                animation: google.maps.Animation.DROP
+
+            });
 
 
         }
@@ -752,8 +1171,8 @@ $(document).ready(function () {
 
         if ($("#map4x").length) {
             var mapOpts4x = {
-                center: new google.maps.LatLng(47.21537068, -1.55387878),
-                zoom: 12,
+                center: new google.maps.LatLng(48.6861037,2.3998418),
+                zoom: 6,
                 disableDefaultUI: true,
                 styles: [{
                     stylers: [{
@@ -821,14 +1240,14 @@ $(document).ready(function () {
 
 
             makeMarker4x({
-                position: new google.maps.LatLng(47.21537068, -1.55387878),
+                position: new google.maps.LatLng(45.773332, 4.859707),
 
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/vente/PRI_LYON.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation 4x</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
+                    ' <div class="col-12 title_infowindow">Vente Logiciel</div> ' +
+                    ' <div class="col-12 projet_infowindow">PRI de Lyon / Cellule Exploitation - Vente d’IngeTime au PRI de Lyon</div> ' +
+                    ' <div class="col-12 adresse_infowindow">LYON</div> ' +
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map4x,
@@ -837,13 +1256,13 @@ $(document).ready(function () {
 
             });
             makeMarker4x({
-                position: new google.maps.LatLng(47.19694467, -1.58297539),
+                position: new google.maps.LatLng(50.956680, 1.853523),
                 content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
+                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/vente/Eurotunnel.png" />' +
                     ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation 4x</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
+                    ' <div class="col-12 title_infowindow">Vente Logiciel</div> ' +
+                    ' <div class="col-12 projet_infowindow">Eurotunnel – Vente d’IngeTime à EUROTUNNEL</div> ' +
+                    ' <div class="col-12 adresse_infowindow">CALAIS</div> ' +
                     ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map4x,
@@ -851,21 +1270,7 @@ $(document).ready(function () {
                 animation: google.maps.Animation.DROP
 
             });
-            makeMarker4x({
-                position: new google.maps.LatLng(47.19962734, -1.53885841),
-                content: '<div class="gallery-real text-left p-0">' +
-                    '<img class="ico_infowindow img-fluid" src="assets/img/page-realisations/info1.png" />' +
-                    ' <div class="col-12 centerx detail_infowindo">' +
-                    ' <div class="col-12 title_infowindow">etude d\'exploitation 4x</div> ' +
-                    ' <div class="col-12 projet_infowindow">travaux de création du pem</div> ' +
-                    ' <div class="col-12 adresse_infowindow">gare de nantes</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
-                    '</div></div>',
-                map: map4x,
-                icon: 'assets/img/page-realisations/pin.png',
-                animation: google.maps.Animation.DROP
-
-            });
+           
 
 
         }
@@ -960,12 +1365,17 @@ $(document).ready(function () {
 });
 
 function rech_releaseEvents(el) {
-
+    
     $id = $(el).attr('id');
+    console.log($id);
     $('.bg-circle').removeClass('image-active');
     $('#bg-circle-' + $id).addClass("image-active");
     $(".rech-check").prop("checked", false);
     $("#check0" + $id).prop("checked", true);
+
+    $(".tab-pane").removeClass("active show");
+    $($(el).attr('href')).addClass("active show");
+
 }
 
 

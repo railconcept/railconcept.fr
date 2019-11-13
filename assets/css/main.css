@@ -16,6 +16,7 @@ html,
 body {
     width: 100%;
     scroll-behavior: smooth;
+    
 
 }
 
@@ -55,7 +56,22 @@ input[type=number]::-webkit-outer-spin-button {
 .espace {
     margin-top: 35px;
 }
+.real_img{
 
+    width: 100%;
+    height: 300px;
+}
+.software_title{
+    font-size: 22px;
+    font-weight: 600;
+    color: darkgray;
+    margin-bottom: 10px;
+
+}
+.software_img{
+    margin-top: 50px;
+    width: 300px;
+}
 .col-2dot4,
 .col-sm-2dot4,
 .col-md-2dot4,
@@ -743,7 +759,7 @@ section.competences> div > div > div > a > img{
 }
 
 .ico_infowindow {
-    height: auto;
+    height: 150px;
     width: 100%;
     position: relative;
 }
@@ -803,7 +819,7 @@ section.competences> div > div > div > a > img{
 **************CLIENTS ***********
 ***************************************/
 .section-slider-clients {
-
+    padding-top: 20px !important;
     background-color: #f0f0f0;
     padding: 50px 0;
 }
@@ -1154,7 +1170,7 @@ a:-webkit-any-link {
 }
 
 .header-realisation {
-
+     margin-top:40px;
     font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 900;
     font-size: 60px;
@@ -1521,6 +1537,7 @@ li.active>a>i {
     background: rgba(6, 6, 0, 0.75);
     opacity: 0;
     transition: opacity 500ms ease-in-out;
+    cursor: pointer;
 }
 
 .team-person:hover .team-text {
@@ -1915,11 +1932,13 @@ li.active>a>i {
 
     /*** Navbar ****/
     #div-navbar {
-        background-color: yellow;
+      /*  background-color: yellow; */
         width: 100%;
         height: 80px;
     }
-
+    .header-realisation {
+        margin-top: 0;
+    }
     #container-navbar {
         padding-top: 10px;
     } 
@@ -1976,7 +1995,7 @@ li.active>a>i {
 @media (min-width: 768px) and (max-width: 991px) {
 
     #navbar-menu {
-        background-color: #f3f3f3f0;
+        background-color: #fffffffa;
         margin-top: 10px;
     }
 
@@ -2027,7 +2046,12 @@ li.active>a>i {
 
     #div-navbar {
         height: 70px;
-        background-color: green;
+    /*    background-color: green; */
+    }
+
+    .real_img {
+        width: 100%;
+        height: 200px;
     }
 
     #container-navbar {
@@ -2184,6 +2208,7 @@ li.active>a>i {
 
     .header-realisation {
         font-size: 45px;
+        margin-top:0 !important;
 
     }
 
@@ -2245,6 +2270,20 @@ li.active>a>i {
 
     }
 
+    #navbar-menu {
+        position: absolute;
+        top: 40px;
+        min-height: 100vh;
+        min-width: 110vw;
+        padding-top: 20px;
+        right: -25% !important;
+        left: -25% !important;
+    }
+    
+    .rail_menu{
+    
+    }
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -2256,7 +2295,10 @@ li.active>a>i {
         margin-top: 0;
 
     }
-
+    .real_img {
+        width: 100%;
+        height: 200px;
+    }
     .h-600 {
         height: auto;
     }
@@ -2273,7 +2315,7 @@ li.active>a>i {
 
     #div-navbar {
         height: 70px;
-        background-color: pink;
+     /*   background-color: pink; */
     }
 
     #container-navbar {
@@ -2311,7 +2353,7 @@ li.active>a>i {
     }
 
     #navbar-menu {
-        background-color: #f3f3f3f0;
+        background-color: #fffffffa;
         margin-top: 5px;
     }
 
@@ -2480,6 +2522,7 @@ li.active>a>i {
 
     .header-realisation {
         font-size: 32px;
+        margin-top:0;
 
     }
 
@@ -2538,7 +2581,19 @@ li.active>a>i {
     .slider-caption {
         height: auto;
     }
-
+    #navbar-menu {
+        position: absolute;
+        top: 40px;
+        min-height: 100vh;
+        min-width: 110vw;
+        padding-top: 20px;
+        right: -25px !important;
+        left: -25% !important;
+    }
+    
+    .rail_menu{
+    
+    }
 }
 
 /* Extra small devices (portrait phones, less than 576px)*/
@@ -2550,7 +2605,10 @@ li.active>a>i {
         margin-top: 0;
 
     }
-
+    .real_img {
+        width: 100%;
+        height: 200px;
+    }
     .h-600 {
         height: auto;
     }
@@ -2567,7 +2625,7 @@ li.active>a>i {
 
     #div-navbar {
         height: 65px;
-        background-color: purple;
+    /**    background-color: purple; */
     }
 
     #container-navbar {
@@ -2591,7 +2649,7 @@ li.active>a>i {
     }
 
     #navbar-menu {
-        background-color: #f3f3f3f0;
+        background-color: #fffffffa;
         margin-top: 5px;
     }
 
@@ -2754,6 +2812,7 @@ li.active>a>i {
 
     .header-realisation {
         font-size: 32px;
+        margin-top:0;
 
     }
 
@@ -2859,6 +2918,19 @@ li.active>a>i {
     .sav {
         font-size: 15px;
     }
+    #navbar-menu {
+    position: absolute;
+    top: 40px;
+    min-height: 100vh;
+    min-width: 110vw;
+    padding-top: 20px;
+    right: -25% !important;
+    left: -25% !important;
+}
+
+.rail_menu{
+
+}
 }
 
 
@@ -2883,3 +2955,88 @@ li.active>a>i {
 
 
 /************************************************/
+
+.animated-icon1, .animated-icon2, .animated-icon3 {
+width: 30px;
+height: 20px;
+position: relative;
+margin: 0px;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+cursor: pointer;
+}
+
+.animated-icon1 span, .animated-icon2 span, .animated-icon3 span {
+display: block;
+position: absolute;
+height: 3px;
+width: 100%;
+border-radius: 9px;
+opacity: 1;
+left: 0;
+-webkit-transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+-o-transform: rotate(0deg);
+transform: rotate(0deg);
+-webkit-transition: .25s ease-in-out;
+-moz-transition: .25s ease-in-out;
+-o-transition: .25s ease-in-out;
+transition: .25s ease-in-out;
+}
+
+
+
+.animated-icon2 span {
+background: #9d9e9f !important;
+}
+
+.first-button{
+    border:none ;
+}
+
+.animated-icon2 span:nth-child(1) {
+top: 0px;
+}
+
+.animated-icon2 span:nth-child(2), .animated-icon2 span:nth-child(3) {
+top: 10px;
+}
+
+.animated-icon2 span:nth-child(4) {
+top: 20px;
+}
+
+.animated-icon2.open span:nth-child(1) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+.animated-icon2.open span:nth-child(2) {
+-webkit-transform: rotate(45deg);
+-moz-transform: rotate(45deg);
+-o-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+.animated-icon2.open span:nth-child(3) {
+-webkit-transform: rotate(-45deg);
+-moz-transform: rotate(-45deg);
+-o-transform: rotate(-45deg);
+transform: rotate(-45deg);
+}
+
+.animated-icon2.open span:nth-child(4) {
+top: 11px;
+width: 0%;
+left: 50%;
+}
+
+
+
