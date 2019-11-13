@@ -2585,7 +2585,7 @@ li.active>a>i {
     }
     #navbar-menu {
         position: absolute;
-        top: 40px;
+        top: 45px;
         min-height: 100vh;
         min-width: 110vw;
         padding-top: 20px;
