@@ -1699,7 +1699,8 @@ li.active>a>i {
 **************REJOIGNEZ-NOUS *************
 **************************************/
 .rejoignez-nous {
-    background-image: url("../img/page-rejoignez-nous/rejoignez-nous.png");
+  
+	background-image: url(../img/page-nos-metiers/contact.png);
 }
 
 
