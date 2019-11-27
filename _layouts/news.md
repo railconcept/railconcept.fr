@@ -10,7 +10,6 @@ layout: page
 <div class="competence actualite-2 text-center">
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
-
         </div>
          <ol class="breadcrumb size-bread">
                 <li class="breadcrumb-item "><a href="{{site.baseurl}}/" class="item-1">Accueil</a></li>
@@ -34,48 +33,47 @@ layout: page
                     {% endfor %}
                 </div>
                 <div class="title-actualites">{{page.title}}</div>
-                <div class="paragraphe-actualites  justify p-0" markdown="1">
+                <div class="justify p-0 paragraphe-etudes" markdown="1">
                  <p>  {{page.news.news_1 | markdownify}}</p>
                 </div>
             </div>
-            <div class="col-lg-5 videoWrapper padding-right-none ">
-                <iframe src="https://www.youtube.com/embed/{{page.video_news}}" frameborder="0" allowfullscreen
-                    class=" pb-5 mt-5 mb-5" width="100%" height="100%"></iframe>
+            <div class="col-lg-5 videoWrapper padding-right-none pl-0 pr-0 ">
+                <iframe src="https://www.youtube.com/embed/{{page.video_news}}" frameborder="0" allowfullscreen class=" pb-5 mt-5 mb-5" width="100%" height="100%"></iframe>
             </div>
-            <div class="col-md-4 pt-5">
+            <div class="col-md-4 pt-5 pl-0 pr-0">
                 <img src="{{page.news_photo.photo_news1}}" class="img-100">
             </div>
-            <div class="col-md-4 pt-5">
+            <div class="col-md-4 pt-5 pl-0 pr-0">
                 <img src="{{ page.news_photo.photo_news2}}" class="img-100">
             </div>
-            <div class="col-md-4 pt-5">
+            <div class="col-md-4 pt-5 pl-0 pr-0">
                 <img src="{{ page.news_photo.photo_news3}}" class="img-100">
             </div>
-            <div class="paragraphe-actualites espace  justify p-0" markdown="1">
+            <div class="paragraphe-etudes espace  justify p-0" markdown="1">
                <p> {{page.news.news_2 | markdownify}}</p>
             </div>
-        <div class="container p-0 mt-5">   
+              <div class="container p-0 mt-5">   
                   <div class="row d-flex">
-                <div class="col-lg-3 title-actualites mt-0 mb-0 justify-content-center align-self-center">PARTAGER</div>
-                <div class="col-lg-9 d-flex text-right">
+                <div class="col-lg-3 title-actualites mt-0 mb-0 justify-content-center align-self-center mb-1" data-aos="fade-right" data-aos-delay="50">PARTAGER</div>
+                <div class="col-lg-9 d-flex text-right mt-1 pl-0 pr-0">
                  <div class="row justify-content-center align-self-center w-100">
-                    <div class="col-md-3 pt-2 pb-2   text-left aos-init aos-animate ml-2 ml-md-0" data-aos="zoom-in-down" data-aos-delay="50">
+                    <div class="txt-left col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-2" data-aos="fade-up" data-aos-delay="50">
                         <a id="copy" class=" partager_link text-nowrap" href="#" > <img src="{{base_url}}/assets/img/page-actualites/copie.png" class="  partager img-fluid"> Copier le lien vers l'article</a>
                     </div>
-                    <div class="col-md-3 pt-2 pb-2   text-left  aos-init aos-animate ml-3 ml-md-0" data-aos="zoom-in-down" data-aos-delay="50">
+                    <div class="txt-left col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-2" data-aos="fade-up" data-aos-delay="150">
                         <a id="facebook" class=" partager_link text-nowrap" href="#" > <img src="{{base_url}}/assets/img/page-actualites/facebook.png" class="  partager img-fluid">Partagez sur Facebook</a>
                     </div>
-                    <div class="col-md-3  pt-2 pb-2  text-left  aos-init aos-animate ml-4 ml-md-0" data-aos="zoom-in-down" data-aos-delay="50">
+                    <div class="txt-left col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-2" data-aos="fade-up" data-aos-delay="300">
                         <a id="twitter" class=" partager_link text-nowrap" href="#" > <img src="{{base_url}}/assets/img/page-actualites/twitter.png" class="  partager img-fluid">Partagez sur Twitter</a>
                     </div>
-                    <div class="col-md-3  pt-2 pb-2 text-left  aos-init aos-animate ml-5 ml-md-0" data-aos="zoom-in-down" data-aos-delay="50">
+                    <div class="txt-left col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-2" data-aos="fade-up" data-aos-delay="450">
                         <a id="linkedin" class=" partager_link text-nowrap" href="#" > <img src="{{base_url}}/assets/img/page-actualites/lin.png" class=" partager img-fluid mx-auto vertical-align-center">Partagez sur Linkedin</a>
                     </div>
                   </div>  
                 </div>
-    </div></div>
+            </div>  
         </div>
-    </div>
+     </div>
     </div>
 </section>
 
@@ -83,27 +81,27 @@ layout: page
 
 <!-- More news-->
 
-<section class="more_news">
+<section class="more_news mb-5">
     <div class="container p-0">
         <hr class="mb-5 ">
         <div class="row">           
-                <span class="plus col-12 p-0">VOIR PLUS D'ACTUALITéS</span>       
+                <span class="plus col-12 p-0" data-aos="fade-up" data-aos-delay="50">VOIR PLUS D'ACTUALITéS</span>    
 {% assign maxPost = 3 %}
 {% assign counter = 0 %}
   {% for post in site.posts %}
   {% if post.title != page.title %}
         {% assign counter = counter | plus: 1 %}
-            <div class="gallery-act  col-md-4  mt-3  
+        <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-xs-12 mt-5
         {% for tags in post.news.taggx%}
                        {{tags}}
                       {% endfor %}
-                      ">
+                      " data-aos="fade-up" data-aos-delay="300">
                 <div class="card card-border-none">
                     <div class="act-tag">
-                <img src="{{post.news_photo.photo_news1}}" class="img-100">
-                    </div>
-                    <div class="card-body pl-0 pr-0">
-                        <div class="paragraphe-actualites mb-3">{{ post.news.news_1 | strip_html | truncatewords: 25 }} </div>
+                <img src="{{post.news_photo.photo_news1}}" class="img-100 objectfit">
+                      </div>
+                     <div class="card-body pl-0 pr-0">
+                         <div class="title-realisation mt-3 mb-3 lowercase"> {{ post.news.news_1 | strip_html | truncatewords: 25 }} </div>
                         <span class="date-news ">{{ post.date | date_to_long_string }}</span>
                                 <a href="{{ post.url | prepend: site.baseurl }}" class="card-link float-right ">LIRE LA SUITE</a>
                     </div>

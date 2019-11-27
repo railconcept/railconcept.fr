@@ -328,7 +328,6 @@ $(document).ready(function () {
 
     AOS.init({
         // Global settings:
-        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
         startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
         initClassName: 'aos-init', // class applied after initialization
         animatedClassName: 'aos-animate', // class applied on animation
@@ -346,14 +345,14 @@ $(document).ready(function () {
         once: true, // whether animation should happen only once - while scrolling down
         mirror: false, // whether elements should animate out while scrolling past them
         anchorPlacement: 'top', // defines which position of the element regarding to window should trigger the animation
-
+        disable: 'mobile'
     });
 
 
 
     ///////////////////////////////////////////Google Map ////////////////////////////
 
-  /*  (() => {
+   (() => {
         "use strict";
 
         const appendChild = Element.prototype.appendChild;
@@ -372,7 +371,7 @@ $(document).ready(function () {
             }
             return element;
         };
-    })(); */
+    })(); 
 
 
 
@@ -462,7 +461,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">AMO</div> ' +
                     ' <div class="col-12 projet_infowindow">Projet de ligne nouvelle Provence Côte d\’Azur</div> ' +
                     ' <div class="col-12 adresse_infowindow">PROVENCE CÔTE D’AZUR</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/mission-1.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -477,7 +476,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">AMO</div> ' +
                     ' <div class="col-12 projet_infowindow">Mission de maîtrise d\'oeuvre Générale: Maintenance du Contournement Nîmes Montpellier</div> ' +
                     ' <div class="col-12 adresse_infowindow">NÎMES MONTPELLIER</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/mission-2.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -492,7 +491,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">AMO</div> ' +
                     ' <div class="col-12 projet_infowindow">Mission de maîtrise d\'oeuvre Générale: Temps de parcours TER</div> ' +
                     ' <div class="col-12 adresse_infowindow">BOURGOGNE</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/mission-3.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -508,7 +507,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">AMO</div> ' +
                     ' <div class="col-12 projet_infowindow">Métro Urbain d’Abidjan Ligne 1 Axe Nord-Sud</div> ' +
                     ' <div class="col-12 adresse_infowindow">ABIDJAN</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/mission-4.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -524,7 +523,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">AMO</div> ' +
                     ' <div class="col-12 projet_infowindow">Métro Urbain d’Abidjan Ligne 1 Axe Nord-Sud</div> ' +
                     ' <div class="col-12 adresse_infowindow">ABIDJAN</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/mission-5.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -621,7 +620,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Ligne Nouvelle Montpellier-Perpignan Avant-Projet Sommaire</div> ' +
                     ' <div class="col-12 adresse_infowindow">Montpellier</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-1.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -638,7 +637,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Fiabilisation de l’axe Nantes-Angers-Sablé</div> ' +
                     ' <div class="col-12 adresse_infowindow">Nantes-Angers</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-2.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -655,7 +654,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Axe Nantes-Bordeaux Diagnostic et études socio-économiques</div> ' +
                     ' <div class="col-12 adresse_infowindow">Nantes-Bordeaux</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-3.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -672,7 +671,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Tunnel de Voreppe : Dégagement du Gabarit Haut d’autoroute Ferroviaire</div> ' +
                     ' <div class="col-12 adresse_infowindow">CHAMBERY</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-4.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -689,7 +688,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Etude des corridors de tracés possibles pour le nouvel axe ferroviaire à grande capacité transpyrénéen</div> ' +
                     ' <div class="col-12 adresse_infowindow">Espagne - France</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-5.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -706,7 +705,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Etude de robustesse et de valorisation des aménagements</div> ' +
                     ' <div class="col-12 adresse_infowindow">Lyon</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-6.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -724,7 +723,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Etude d’Exploitation de la gare d’Angers</div> ' +
                     ' <div class="col-12 adresse_infowindow">Angers</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-7.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -741,7 +740,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Etude préliminaire du raccordement de Saint Brès inversé Contournement de Nîmes-Montpellier</div> ' +
                     ' <div class="col-12 adresse_infowindow">Nîmes-Montpellier</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-8.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -759,7 +758,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Déploiement ERTMS sur le réseau structurant Analyse de Marseille - Vintimille</div> ' +
                     ' <div class="col-12 adresse_infowindow">Marseille - Vintimille</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-9.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -776,7 +775,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Déploiement ERTMS sur le réseau structurant Analyse socio-économique de l\'équipement en ETCS1 de l\'axe Longuyon-Bâle</div> ' +
                     ' <div class="col-12 adresse_infowindow">Longuyon-Bâle</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-10.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -793,7 +792,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Travaux PRO Cardinet</div> ' +
                     ' <div class="col-12 adresse_infowindow">Gare de Pont Cardinet</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-11.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -810,7 +809,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Sillon Alpin Nord Aix-les-Bains – Annecy : Etudes d’exploitation et de stabilité</div> ' +
                     ' <div class="col-12 adresse_infowindow">Aix-Annecy</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-12.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -827,7 +826,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Étude des conditions de mise en œuvre d\'un service ferroviaire transfrontalier de voyageurs entre Bayonne  et Saint Sébastien</div> ' +
                     ' <div class="col-12 adresse_infowindow">Bayonne - Saint Sébastien</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-13.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -844,7 +843,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Analyse des trafics et calcul de la capacité contributive du projet de Ligne Nouvelle Provence Cote d’Azur (LN PCA)</div> ' +
                     ' <div class="col-12 adresse_infowindow">Cote d’Azur</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-14.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -861,7 +860,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Etudes d’opportunité des IPCS – Evaluation socio-économique</div> ' +
                     ' <div class="col-12 adresse_infowindow"> Bordeaux</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-15.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -878,7 +877,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Etude d’axe LTV Paris Est – SA 2018</div> ' +
                     ' <div class="col-12 adresse_infowindow">Paris</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-16.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -895,7 +894,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Etude horaire de la ligne du Revermont</div> ' +
                     ' <div class="col-12 adresse_infowindow">Bourgogne</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-17.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -912,7 +911,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Analyse globale des aménagements de robustesse dans l’étoile de Lyon</div> ' +
                     ' <div class="col-12 adresse_infowindow">Lyon</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-18.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -929,7 +928,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Amélioration de la performance entre Mandelieu et Vintimille</div> ' +
                     ' <div class="col-12 adresse_infowindow">Mandelieu – Vintimille</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-19.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -946,7 +945,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">GPSO : Impact régularité</div> ' +
                     ' <div class="col-12 adresse_infowindow">Bordeaux-Toulouse</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-20.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -963,7 +962,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Etude </div> ' +
                     ' <div class="col-12 projet_infowindow">Analyse du block entre St-Fons et Tain-l’Hermitage</div> ' +
                     ' <div class="col-12 adresse_infowindow">St-Fons - Tain-l’Hermitage</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/etude-21.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map2x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -1058,7 +1057,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
                     ' <div class="col-12 projet_infowindow">Déploiement d’ERTMS sur le réseau structurant</div> ' +
                     ' <div class="col-12 adresse_infowindow">Europe</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/expert-1.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -1073,7 +1072,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
                     ' <div class="col-12 projet_infowindow">Assistance technique et économique à la mise en concession de la section Cotonou-Niamey</div> ' +
                     ' <div class="col-12 adresse_infowindow">Cotonou (Bénin)-Niamey (Niger)</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/expert-2.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -1088,7 +1087,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
                     ' <div class="col-12 projet_infowindow">MISSION D’EXPERTISE SUR LES POSSIBILITES DE MAINTIEN D’UN SERVICE FERROVIAIRE SUR LES LIGNES VENDÔME – BIFURCATION PONT DE BRAYE-MONTOIRE-TRÔO ET BLOIS-VILLEFRANCOEUR</div> ' +
                     ' <div class="col-12 adresse_infowindow">VENDÔME – BIFURCATION</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/expert-3.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -1104,7 +1103,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
                     ' <div class="col-12 projet_infowindow">I&P GP BPL - LGV Bretagne Pays de Loire Inspections préalables des installations et ouvrages d’équipements ferroviaires</div> ' +
                     ' <div class="col-12 adresse_infowindow">Bretagne – pays de la Loire</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/expert-4.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -1120,7 +1119,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
                     ' <div class="col-12 projet_infowindow">Mission d’Assistance à la rédaction de consignes d’exploitation et de maintenance</div> ' +
                     ' <div class="col-12 adresse_infowindow">France</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/expert-5.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -1136,7 +1135,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
                     ' <div class="col-12 projet_infowindow">Audit des lignes de la région Grand Est</div> ' +
                     ' <div class="col-12 adresse_infowindow">la région Grand Est</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/expert-6.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -1152,7 +1151,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Expertise/Conseil</div> ' +
                     ' <div class="col-12 projet_infowindow">Scénarisation des plans de transport lors des phases travaux sur le réseau francilien de Paris St-Lazare</div> ' +
                     ' <div class="col-12 adresse_infowindow">Ile de France</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/expert-7.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map3x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -1248,7 +1247,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Vente Logiciel</div> ' +
                     ' <div class="col-12 projet_infowindow">PRI de Lyon / Cellule Exploitation - Vente d’IngeTime au PRI de Lyon</div> ' +
                     ' <div class="col-12 adresse_infowindow">LYON</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/vente-1.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map4x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -1263,7 +1262,7 @@ $(document).ready(function () {
                     ' <div class="col-12 title_infowindow">Vente Logiciel</div> ' +
                     ' <div class="col-12 projet_infowindow">Eurotunnel – Vente d’IngeTime à EUROTUNNEL</div> ' +
                     ' <div class="col-12 adresse_infowindow">CALAIS</div> ' +
-                    ' <div class="col-12 sav_plus_infowindow"><a href="#" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
+                    ' <div class="col-12 sav_plus_infowindow"><a href="nos-realisations/vente-2.html" class="  btn-color-infowindow  ">En savoir plus</a></div> ' +
                     '</div></div>',
                 map: map4x,
                 icon: 'assets/img/page-realisations/pin.png',
@@ -1380,6 +1379,29 @@ function rech_releaseEvents(el) {
 
 
 $(document).ready(function () {
+	
+	 if ($(".zoomx").length) {
+
+            $('.zoomx').magnificPopup({ 
+             type: 'image'
+             // other options here
+             // end each line (except the last) with a comma
+          });
+        
+	 }	
+	if ($("#all").length) {
+		$("#all").click();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
     $(".filter-button").click(function () {
         var value = $(this).attr('data-filter');
@@ -1652,7 +1674,7 @@ $(document).ready(function () {
 });
 
 function get_offre($url, $that, e) {
-
+console.log($url);
     $(".select_offre").removeClass("active");
     $($that).addClass("active");
     $debut = 0;

@@ -25,7 +25,7 @@
         <div id="div-navbar">
     <div id="container-navbar" class="container">
         <nav id="navbar" class="navbar navbar-light navbar-expand-lg">
-            <a class="navbar-brand navbar-logo" href="/" data-aos="fade-right"><img
+            <a class="navbar-brand navbar-logo" href="/"><img
                     class="img-fluid d-lg-flex justify-content-lg-end align-items-lg-end"
                     src="/assets/img/logo/logo.png" id="logo"></a>
 
@@ -57,7 +57,7 @@
                     <li class="nav-item nav-li mr-5" role="presentation"><a id="contact" class="nav-link link-navbar"
                             href="/contact">contact</a></li>
                     <li class="nav-item nav-li text-center no-underline" role="presentation" id="search">
-                        <a class="nav-link link-navbar hvr-grow" href="#" id="search-link"><img class="loope"
+                        <a class="nav-link link-navbar hvr-grow" href="/#" id="search-link"><img class="loope"
                                 src="/assets/img/flags/loupe.png" /></a>
                         <input id="input-search" type="text" class="search-txt shadow-none" placeholder="recherche..."
                             name="search-txt" />
@@ -80,13 +80,13 @@
             </div>
         </nav>
     </div>
-</div>    
+</div>      
 	
-<!--realisations-->
-<div class="competence text-center">
+ <!--realisations-->
+ <div class="competence text-center">
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
-            <h1 class=" header-realisation" data-aos="flip-up">
+            <h1 class=" header-realisation" data-aos="fade-up">
                 nos réalisations
             </h1>
         </div>
@@ -95,7 +95,7 @@
             <li class="breadcrumb-item "><a href="/" class="item-1">Accueil</a></li>
             <li class="breadcrumb-item "><i class="fa fa-angle-double-right "></i></li>
             <li class="breadcrumb-item active"><a href="/realisations" class="item-1">nos
-                    réalisations</a>
+                réalisations</a>
             </li>
         </ol>
 
@@ -110,107 +110,104 @@
             <ul id="ul-rech-real" class="nav nav-tabs">
                 <li class="nav-item">
                     <div class="row">
-                        <div class=" title-news  title-section mt-0 mb-5 " data-aos="zoom-in-up">rechercher </div>
+                        <div class=" title-news  title-section mt-0 mb-5 " data-aos="fade-up" data-aos-delay="300">rechercher </div>
                     </div>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="400">
 
                     <div class="row">
                         <div class="col-11 pl-0 pr-0">
-                            <a id="1" class="nav-link link-rech-real " data-toggle="tab" href="#missionxx"
-                                onclick="rech_releaseEvents(this);">
+                            <a id="1" class="nav-link link-rech-real " data-toggle="tab" href="/#missionxx" onclick="rech_releaseEvents(this);">
                                 <div class="row">
                                     <div class=" col-lg-3 col-md-4 col-sm-3 col-3 pl-0 pr-0">
                                         <div id="bg-circle-1" class="bg-circle image-active ">
-                                            <img class="image-rech-real"
-                                                src="/assets/img/page-realisations/icon1.png" height="27">
+                                            <img class="image-rech-real" src="/assets/img/page-realisations/icon1.png" height="27">
                                         </div>
                                     </div>
-                                    <div
-                                        class="col-lg-9 col-md-8 col-sm-9 col-9 pl-0 pr-0 text-uppercase justify-content-center align-self-center">
+                                    <div class="col-lg-9 col-md-8 col-sm-9 col-9 pl-0 pr-0 text-uppercase justify-content-center align-self-center">
                                         MISSION AMO GRANDS PROJECTS</div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-1 pl-0 pr-0 text-center">
-                            <input type="checkbox" class="form-check-input rech-check" name="check-it" checked
-                                id="check01">
-
+                            <!-- <input type="checkbox" class="form-check-input rech-check" name="check-it" checked id="check01"> -->
+                            <label class="containerLabel"> 
+                                <input type="checkbox" checked="checked" class="form-check-input rech-check" name="check-it" checked id="check01">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                     </div>
                 </li>
- 
-                <li class="nav-item">
+
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="400">
                     <div class="row">
                         <div class="col-11 pl-0 pr-0">
-                            <a id="2" class="nav-link link-rech-real" data-toggle="tab" href="#etudexx"
-                                onclick="rech_releaseEvents(this);">
+                            <a id="2" class="nav-link link-rech-real" data-toggle="tab" href="/#etudexx" onclick="rech_releaseEvents(this);">
                                 <div class="row">
                                     <div class=" col-lg-3 col-md-4 col-sm-3 col-3 pl-0 pr-0">
                                         <div id="bg-circle-2" class="bg-circle ">
-                                            <img class="image-rech-real"
-                                                src="/assets/img/page-realisations/icon2.png" height="27">
+                                            <img class="image-rech-real" src="/assets/img/page-realisations/icon2.png" height="27">
                                         </div>
                                     </div>
-                                    <div
-                                        class="col-lg-9 col-md-8 col-sm-9 col-9 pl-0 pr-0 text-uppercase justify-content-center align-self-center">
+                                    <div class="col-lg-9 col-md-8 col-sm-9 col-9 pl-0 pr-0 text-uppercase justify-content-center align-self-center">
                                         ètudes</div>
                                 </div>
                             </a>
                         </div>
 
                         <div class="col-1 pl-0 pr-0 text-center">
-                            <input type="checkbox" class="form-check-input rech-check" name="check-it" id="check02">
-
+                            <label class="containerLabel"> 
+                                <input type="checkbox" class="form-check-input rech-check" name="check-it" id="check02">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                     </div>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="400">
                     <div class="row">
                         <div class="col-11 pl-0 pr-0">
-                            <a id="3" class="nav-link link-rech-real" data-toggle="tab" href="#expertxx"
-                                onclick="rech_releaseEvents(this);">
+                            <a id="3" class="nav-link link-rech-real" data-toggle="tab" href="/#expertxx" onclick="rech_releaseEvents(this);">
                                 <div class="row">
                                     <div class=" col-lg-3 col-md-4 col-sm-3 col-3 pl-0 pr-0">
                                         <div id="bg-circle-3" class="bg-circle  ">
-                                            <img class="image-rech-real"
-                                                src="/assets/img/page-realisations/icon3.png" height="27">
+                                            <img class="image-rech-real" src="/assets/img/page-realisations/icon3.png" height="27">
                                         </div>
                                     </div>
-                                    <div
-                                        class="col-lg-9 col-md-8 col-sm-9 col-9 pl-0 pr-0 text-uppercase justify-content-center align-self-center">
+                                    <div class="col-lg-9 col-md-8 col-sm-9 col-9 pl-0 pr-0 text-uppercase justify-content-center align-self-center">
                                         EXPERTISE / CONSEIL</div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-1 pl-0 pr-0 text-center">
-                            <input type="checkbox" class="form-check-input rech-check" name="check-it" id="check03">
+                            <label class="containerLabel"> 
+                                <input type="checkbox" class="form-check-input rech-check" name="check-it" id="check03">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                     </div>
                 </li>
 
-                <li class="nav-item">
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="400">
                     <div class="row">
                         <div class="col-11 pl-0 pr-0">
-                            <a id="4" class="nav-link link-rech-real" data-toggle="tab" href="#logicielxx"
-                                onclick="rech_releaseEvents(this);">
+                            <a id="4" class="nav-link link-rech-real" data-toggle="tab" href="/#logicielxx" onclick="rech_releaseEvents(this);">
                                 <div class="row">
                                     <div class=" col-lg-3 col-md-4 col-sm-3 col-3 pl-0 pr-0">
                                         <div id="bg-circle-4" class="bg-circle">
-                                            <img class="image-rech-real"
-                                                src="/assets/img/page-realisations/icon4.png" height="27">
+                                            <img class="image-rech-real" src="/assets/img/page-realisations/icon4.png" height="27">
                                         </div>
                                     </div>
-                                    <div
-                                        class="col-lg-9 col-md-8 col-sm-9 col-9 pl-0 pr-0 text-uppercase justify-content-center align-self-center">
+                                    <div class="col-lg-9 col-md-8 col-sm-9 col-9 pl-0 pr-0 text-uppercase justify-content-center align-self-center">
                                         Vente Logiciel</div>
                                 </div>
                             </a>
                         </div>
                         <div class="col-1 pl-0 pr-0 text-center">
-                            <input type="checkbox" class="form-check-input rech-check" name="check-it" id="check04">
-
+                            <label class="containerLabel"> 
+                                <input type="checkbox" class="form-check-input rech-check" name="check-it" id="check04">
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                     </div>
                 </li>
@@ -254,365 +251,83 @@
 <section class=" gal-real mt-5 mb-5">
     <div class="container">
 
-        <div class=" title-news  title-section" data-aos="zoom-in-up">découvrez nos réalisations</div>
-        <div class="small-paragraphe">
-            Rail Concept intervient sur des projets sur tout le territoire française mais aussi à
-            l'internationale.
+        <div class=" title-news  title-section" data-aos="fade-up" data-aos-delay="">découvrez nos réalisations</div>
+        <div class="small-paragraphe" data-aos="fade-up" data-aos-delay="">
+            Rail Concept intervient sur des projets sur tout le territoire française mais aussi à l'internationale.
             <br>Nous sommes particulièrement implantés sur le continent africain et asiatique...
         </div>
         <div id="gallerie-real">
 
-            <div id="filtre-div" class="filtre-div  col-12  ">
-                <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
-                    onclick="filtrer_gal('all');">voir tout</button>
-                <button id="magp" class="btn btn-default filter-button text-uppercase"
-                    onclick="filtrer_gal('magp');">mission amo grands projets</button>
-                <button id="etudex" class="btn btn-default filter-button text-uppercase"
-                    onclick="filtrer_gal('etudex');">études</button>
-                <button id="e-e" class="btn btn-default filter-button text-uppercase"
-                    onclick="filtrer_gal('e-e');">expertise / conseil</button>
-                <button id="vlogiciel" class="btn btn-default filter-button text-uppercase"
-                    onclick="filtrer_gal('vlogiciel');">vente logiciel </button>
+            <div id="filtre-div" class="filtre-div  col-12  pl-0 pr-0 " data-aos="fade-left" data-aos-delay="600">
+                <button id="all" class="btn btn-default filter-button text-uppercase  btn-active" onclick="filtrer_gal('all');" >voir tout</button>
+                <button id="magp" class="btn btn-default filter-button text-uppercase" onclick="filtrer_gal('magp');" >mission amo grands projets</button>
+                <button id="etudex" class="btn btn-default filter-button text-uppercase" onclick="filtrer_gal('etudex');" >études</button>
+                <button id="e-e" class="btn btn-default filter-button text-uppercase" onclick="filtrer_gal('e-e');" >expertise / conseil</button>
+                <button id="vlogiciel" class="btn btn-default filter-button text-uppercase" onclick="filtrer_gal('vlogiciel');" >vente logiciel </button>
 
 
             </div>
 
-            <div class="row col-12 grid_gal">
+            <div class="row col-12 grid_gal  pl-0 pr-0">
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5 text-center magp" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/amo/LNPCA.png" class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF - Mission de maîtrise
-                        d'oeuvre Générale: Projet de ligne nouvelle Provence Côte d’Azur
-                    </div>
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5 text-center magp" data-aos="fade-up">
+                    <a href="/nos-realisations/mission-1">
+                        <img src="/assets/img/page-realisations/amo/LNPCA.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">
+                            SNCF - Mission de maîtrise d'oeuvre Générale: Projet de ligne nouvelle Provence Côte d’Azur
+                        </div>
 
-                    <div class="sous-title">Provence Côte d’Azur (France)</div>
-                </div>
-
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5 text-center magp" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/amo/Nimes-Montpellier.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">OC’VIA MAINTENANCE - Mission de
-                        maîtrise d'oeuvre Générale: Maintenance du Contournement Nîmes Montpellier
-                        (<span class="colored">CNM</span>)
-                    </div>
-
-                    <div class="sous-title">Nîmes Montpellier (France)</div>
-                </div>
-
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center magp" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/amo/TER.png" class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">Conseil Régional Bourgogne -
-                        Mission de maîtrise d'oeuvre Générale: Temps de parcours TER
-
-                    </div>
-
-                    <div class="sous-title">Bourgogne (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center magp" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/amo/metro_abd.png" class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">DONGSAN ENGINEERING - Mission
-                        d'assistance technique et générale sur les études APS et APD : Métro Urbain d’Abidjan Ligne 1
-                        Axe Nord-Sud
-
-                    </div>
-
-                    <div class="sous-title">Abidjan (Côte d'Ivoire)</div>
-                </div>
-
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center magp" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/amo/metro_abd_2.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">HYUNDAI ROTEM - Mission
-                        d'assistance technique et générale sur les études APS et APD
-                        Métro Urbain d’Abidjan Ligne 1 Axe Nord-Sud
-
-
-                    </div>
-
-                    <div class="sous-title">Abidjan (Côte d'Ivoire)</div>
+                        <div class="sous-title">Provence Côte d’Azur (France)</div>
+                    </a>
                 </div>
 
 
 
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5 text-center magp" data-aos="fade-up">
+                    <a href="/nos-realisations/mission-2">
+                        <img src="/assets/img/page-realisations/amo/Nimes-Montpellier.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">OC’VIA MAINTENANCE - Mission de maîtrise d'oeuvre Générale: Maintenance du Contournement Nîmes Montpellier (
+                            <span class="colored">CNM</span>)
+                        </div>
 
-
-
-
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Montpellier-Perpignan.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Ligne Nouvelle
-                        Montpellier-Perpignan Avant-Projet Sommaire
-
-
-                    </div>
-
-                    <div class="sous-title">Montpellier (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Axe_Nantes_Angers_Sable.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Fiabilisation de
-                        l’axe Nantes-Angers-Sablé
-
-
-                    </div>
-
-                    <div class="sous-title">Nantes-Angers (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Gare_de_Bordeaux.jpg"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">RFF - Axe Nantes-Bordeaux
-                        Diagnostic et études socio-économiques
-
-
-
-                    </div>
-
-                    <div class="sous-title">Nantes-Bordeaux (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Tunnel_de_Voreppe.jpg"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF PRI DE CHAMBERY - Tunnel de
-                        Voreppe : Dégagement du Gabarit Haut d’autoroute Ferroviaire
-
-
-
-                    </div>
-
-                    <div class="sous-title">CHAMBERY (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Nouvel_axe_ferroviaire_transpyreneen.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">GEIE NAFGCT - Etude des
-                        corridors de tracés possibles
-                        pour le nouvel axe ferroviaire à grande capacité transpyrénéen
-
-
-
-
-                    </div>
-
-                    <div class="sous-title"> (Espagne - France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Haute-Savoie.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Haute Savoie :
-                        Etude de robustesse et de valorisation des aménagements
-
-
-
-
-                    </div>
-
-                    <div class="sous-title">Lyon (France)</div>
+                        <div class="sous-title">Nîmes Montpellier (France)</div>
+                    </a>
                 </div>
 
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Gare-Angers.jpg"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Etude
-                        d’Exploitation de la gare d’Angers
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center magp" data-aos="fade-up">
+                    <a href="/nos-realisations/mission-3">
+                        <img src="/assets/img/page-realisations/amo/TER.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">Conseil Régional Bourgogne - Mission de maîtrise d'oeuvre Générale: Temps de parcours TER
 
+                        </div>
 
-
-
-                    </div>
-
-                    <div class="sous-title">Angers (France)</div>
+                        <div class="sous-title">Bourgogne (France)</div>
+                    </a>
                 </div>
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Raccordement-Saint-Bres.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Etude préliminaire
-                        du raccordement de Saint Brès inversé
-                        Contournement de Nîmes-Montpellier
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center magp" data-aos="fade-up">
+                    <a href="/nos-realisations/mission-4">
+                        <img src="/assets/img/page-realisations/amo/metro_abd.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">DONGSAN ENGINEERING - Mission d'assistance technique et générale sur les études APS et APD : Métro Urbain d’Abidjan Ligne 1 Axe Nord-Sud
 
-                    </div>
+                        </div>
 
-                    <div class="sous-title">Nîmes-Montpellier (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Marseille-Vintimille.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Déploiement ERTMS
-                        sur le réseau structurant
-                        Analyse de Marseille - Vintimille
-
-
-                    </div>
-
-                    <div class="sous-title">Marseille - Vintimille (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Longuyou-Bale.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Déploiement ERTMS
-                        sur le réseau structurant
-                        Analyse socio-économique de l'équipement en ETCS1 de l'axe
-                        Longuyon-Bâle
-
-
-
-                    </div>
-
-                    <div class="sous-title">Longuyon-Bâle (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Gare_de_Cardinet.jpg"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Travaux PRO
-                        Cardinet
-
-
-
-                    </div>
-
-                    <div class="sous-title">gare de Pont Cardinet (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Sillon_Alpin.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Sillon Alpin Nord
-                        Aix-les-Bains – Annecy : Etudes d’exploitation et de stabilité
-
-
-
-                    </div>
-
-                    <div class="sous-title">Aix-Annecy (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Bayonne-Saint-Sabastien.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Étude des
-                        conditions de mise en œuvre d'un service ferroviaire transfrontalier de voyageurs entre Bayonne
-                        et Saint Sébastien
-
-
-
-                    </div>
-
-                    <div class="sous-title"> Bayonne - Saint Sébastien (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/LNPCA.png" class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Analyse des
-                        trafics et calcul de la capacité contributive
-                        du projet de Ligne Nouvelle Provence Cote d’Azur (LN PCA)
-
-
-                    </div>
-
-                    <div class="sous-title"> Cote d’Azur (France)</div>
+                        <div class="sous-title">Abidjan (Côte d'Ivoire)</div>
+                    </a>
                 </div>
 
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/IPCS-Bordeaux.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">RFF - Etudes d’opportunité des
-                        IPCS – Evaluation socio-économique
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center magp" data-aos="fade-up">
+                    <a href="/nos-realisations/mission-5">
+                        <img src="/assets/img/page-realisations/amo/metro_abd_2.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">HYUNDAI ROTEM - Mission d'assistance technique et générale sur les études APS et APD Métro Urbain d’Abidjan Ligne 1 Axe Nord-Sud
 
 
-                    </div>
+                        </div>
 
-                    <div class="sous-title"> Bordeaux (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Axe_LTV_Paris-Est.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Etude d’axe LTV
-                        Paris Est – SA 2018
-
-
-                    </div>
-
-                    <div class="sous-title"> Paris (France)</div>
-                </div>
-
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Ligne-Revermont.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Etude horaire de
-                        la ligne du Revermont
-
-
-                    </div>
-
-                    <div class="sous-title"> Bourgogne (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Noeud_ferroviaire_lyonnais.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Analyse globale
-                        des aménagements de robustesse dans l’étoile de Lyon
-
-
-                    </div>
-
-                    <div class="sous-title"> Lyon (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Mandelieu-Ventimille.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Amélioration de la
-                        performance entre Mandelieu et Vintimille
-
-
-                    </div>
-
-                    <div class="sous-title"> Mandelieu – Vintimille (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Ligne-Bordeaux-Toulouse.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - GPSO : Impact
-                        régularité
-
-
-                    </div>
-
-                    <div class="sous-title"> Bordeaux-Toulouse (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/etude/Ligne_St-Fons-Tain_Hermitage.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Analyse du block
-                        entre St-Fons et Tain-l’Hermitage
-
-
-                    </div>
-
-                    <div class="sous-title"> St-Fons - Tain-l’Hermitage (France)</div>
+                        <div class="sous-title">Abidjan (Côte d'Ivoire)</div>
+                    </a>
                 </div>
 
 
@@ -621,144 +336,414 @@
 
 
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/expert/Reseau-ERTMS.jpg"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">RFF - Déploiement d’ERTMS sur le
-                        réseau structurant
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-1.html">
+                        <img src="/assets/img/page-realisations/etude/Montpellier-Perpignan.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Ligne Nouvelle Montpellier-Perpignan Avant-Projet Sommaire
 
 
-                    </div>
+                        </div>
 
-                    <div class="sous-title"> Europe</div>
+                        <div class="sous-title">Montpellier (France)</div>
+                    </a>
                 </div>
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/expert/BoucleNiger.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">HOGAN LOVELLS - Assistance
-                        technique et économique
-                        à la mise en concession de la section Cotonou-Niamey
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-2.html">
+                        <img src="/assets/img/page-realisations/etude/Axe_Nantes_Angers_Sable.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Fiabilisation de l’axe Nantes-Angers-Sablé
 
-
-
-                    </div>
-
-                    <div class="sous-title"> Cotonou (Bénin)-Niamey (Niger)</div>
+                        </div>
+                        <div class="sous-title">Nantes-Angers (France)</div>
+                    </a>
                 </div>
 
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/expert/Vendome-Montoire.jpg"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - MISSION
-                        D’EXPERTISE SUR LES POSSIBILITES DE MAINTIEN D’UN
-                        SERVICE FERROVIAIRE SUR LES LIGNES VENDÔME – BIFURCATION
-                        PONT DE BRAYE-MONTOIRE-TRÔO ET BLOIS-VILLEFRANCOEUR
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-3.html">
+                        <img src="/assets/img/page-realisations/etude/Gare_de_Bordeaux.jpg" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">RFF - Axe Nantes-Bordeaux Diagnostic et études socio-économiques
 
 
 
+                        </div>
 
-                    </div>
-
-                    <div class="sous-title"> VENDÔME – BIFURCATION (France)</div>
+                        <div class="sous-title">Nantes-Bordeaux (France)</div>
+                    </a>
                 </div>
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/expert/LGV_Bretagne_Pay_de_Loire.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - I&P GP BPL - LGV
-                        Bretagne Pays de Loire
-                        Inspections préalables des installations et ouvrages d’équipements ferroviaires
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-4.html">
+                        <img src="/assets/img/page-realisations/etude/Tunnel_de_Voreppe.jpg" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF PRI DE CHAMBERY - Tunnel de Voreppe : Dégagement du Gabarit Haut d’autoroute Ferroviaire
 
 
 
+                        </div>
 
-
-                    </div>
-
-                    <div class="sous-title"> Bretagne – pays de la Loire (France)</div>
+                        <div class="sous-title">CHAMBERY (France)</div>
+                    </a>
                 </div>
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/expert/LISEA.png" class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">LISEA - Mission d’Assistance à
-                        la rédaction de consignes d’exploitation et de maintenance
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-5.html">
+                        <img src="/assets/img/page-realisations/etude/Nouvel_axe_ferroviaire_transpyreneen.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">GEIE NAFGCT - Etude des corridors de tracés possibles pour le nouvel axe ferroviaire à grande capacité transpyrénéen
 
 
 
 
+                        </div>
 
-                    </div>
-
-                    <div class="sous-title"> (France)</div>
+                        <div class="sous-title"> (Espagne - France)</div>
+                    </a>
                 </div>
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/expert/Grand_Est.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau - Audit des lignes
-                        de la région Grand Est
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-6.html">
+                        <img src="/assets/img/page-realisations/etude/Haute-Savoie.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Haute Savoie : Etude de robustesse et de valorisation des aménagements
 
 
 
 
+                        </div>
 
-                    </div>
-
-                    <div class="sous-title"> la région Grand Est (France)</div>
-                </div>
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/expert/Paris_Saint-Lazarre.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">STIF - Scénarisation des plans
-                        de transport lors des phases travaux sur le
-                        réseau francilien de Paris St-Lazare
-
-
-
-
-
-
-                    </div>
-
-                    <div class="sous-title">Ile de France (France)</div>
+                        <div class="sous-title">Lyon (France)</div>
+                    </a>
                 </div>
 
 
-
-
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center vlogiciel"
-                    data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/vente/PRI_LYON.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">SNCF Réseau – PRI de Lyon /
-                        Cellule Exploitation - Vente d’IngeTime au PRI de Lyon
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-7.html">
+                        <img src="/assets/img/page-realisations/etude/Gare-Angers.jpg" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Etude d’Exploitation de la gare d’Angers
 
 
 
 
+                        </div>
 
-                    </div>
-
-                    <div class="sous-title">LYON (France)</div>
+                        <div class="sous-title">Angers (France)</div>
+                    </a>
                 </div>
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center vlogiciel"
-                    data-aos="flip-up">
-                    <img src="/assets/img/page-realisations/vente/Eurotunnel.png"
-                        class="img-fluid real_img">
-                    <div class="title-realisation mt-2 contenu-competence text-justify">Eurotunnel – Vente d’IngeTime à
-                        EUROTUNNEL
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-8.html">
+                        <img src="/assets/img/page-realisations/etude/Raccordement-Saint-Bres.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Etude préliminaire du raccordement de Saint Brès inversé Contournement de Nîmes-Montpellier
+
+                        </div>
+
+                        <div class="sous-title">Nîmes-Montpellier (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-9.html">
+                        <img src="/assets/img/page-realisations/etude/Marseille-Vintimille.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Déploiement ERTMS sur le réseau structurant Analyse de Marseille - Vintimille
+
+
+                        </div>
+
+                        <div class="sous-title">Marseille - Vintimille (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-10.html">
+                        <img src="/assets/img/page-realisations/etude/Longuyou-Bale.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Déploiement ERTMS sur le réseau structurant Analyse socio-économique de l'équipement en ETCS1 de l'axe Longuyon-Bâle
+
+
+
+                        </div>
+
+                        <div class="sous-title">Longuyon-Bâle (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-11.html">
+                        <img src="/assets/img/page-realisations/etude/Gare_de_Cardinet.jpg" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Travaux PRO Cardinet
+
+
+
+                        </div>
+
+                        <div class="sous-title">gare de Pont Cardinet (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-12.html">
+                        <img src="/assets/img/page-realisations/etude/Sillon_Alpin.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Sillon Alpin Nord Aix-les-Bains – Annecy : Etudes d’exploitation et de stabilité
+
+
+
+                        </div>
+
+                        <div class="sous-title">Aix-Annecy (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-13.html">
+                        <img src="/assets/img/page-realisations/etude/Bayonne-Saint-Sabastien.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Étude des conditions de mise en œuvre d'un service ferroviaire transfrontalier de voyageurs entre Bayonne et Saint Sébastien
+
+
+
+                        </div>
+
+                        <div class="sous-title"> Bayonne - Saint Sébastien (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-14.html">
+                        <img src="/assets/img/page-realisations/etude/LNPCA.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Analyse des trafics et calcul de la capacité contributive du projet de Ligne Nouvelle Provence Cote d’Azur (LN PCA)
+
+
+                        </div>
+
+                        <div class="sous-title"> Cote d’Azur (France)</div>
+                    </a>
+                </div>
+
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-15.html">
+                        <img src="/assets/img/page-realisations/etude/IPCS-Bordeaux.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">RFF - Etudes d’opportunité des IPCS – Evaluation socio-économique
+
+
+                        </div>
+
+                        <div class="sous-title"> Bordeaux (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-16.html">
+                        <img src="/assets/img/page-realisations/etude/Axe_LTV_Paris-Est.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Etude d’axe LTV Paris Est – SA 2018
+
+
+                        </div>
+
+                        <div class="sous-title"> Paris (France)</div>
+                    </a>
+                </div>
+
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-17.html">
+                        <img src="/assets/img/page-realisations/etude/Ligne-Revermont.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Etude horaire de la ligne du Revermont
+
+
+                        </div>
+
+                        <div class="sous-title"> Bourgogne (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-18.html">
+                        <img src="/assets/img/page-realisations/etude/Noeud_ferroviaire_lyonnais.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Analyse globale des aménagements de robustesse dans l’étoile de Lyon
+
+
+                        </div>
+
+                        <div class="sous-title"> Lyon (France)</div>
+                    </a>
+
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-19.html">
+                        <img src="/assets/img/page-realisations/etude/Mandelieu-Ventimille.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Amélioration de la performance entre Mandelieu et Vintimille
+
+
+                        </div>
+
+                        <div class="sous-title"> Mandelieu – Vintimille (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-20.html">
+                        <img src="/assets/img/page-realisations/etude/Ligne-Bordeaux-Toulouse.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - GPSO : Impact régularité
+
+
+                        </div>
+
+                        <div class="sous-title"> Bordeaux-Toulouse (France)</div>
+                    </a>
+                </div>
 
 
 
 
 
-                    </div>
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center etudex" data-aos="fade-up">
+                    <a href="/nos-realisations/etude-21.html">
+                        <img src="/assets/img/page-realisations/etude/Ligne_St-Fons-Tain_Hermitage.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Analyse du block entre St-Fons et Tain-l’Hermitage
 
-                    <div class="sous-title">CALAIS (France)</div>
+
+                        </div>
+
+                        <div class="sous-title"> St-Fons - Tain-l’Hermitage (France)</div>
+                    </a>
+                </div>
+
+
+
+
+
+
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="fade-up">
+                    <a href="/nos-realisations/expert-1.html">
+                        <img src="/assets/img/page-realisations/expert/Reseau-ERTMS.jpg" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">RFF - Déploiement d’ERTMS sur le réseau structurant
+
+
+                        </div>
+
+                        <div class="sous-title"> Europe</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="fade-up">
+                    <a href="/nos-realisations/expert-2.html">
+                        <img src="/assets/img/page-realisations/expert/BoucleNiger.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">HOGAN LOVELLS - Assistance technique et économique à la mise en concession de la section Cotonou-Niamey
+
+
+
+                        </div>
+
+                        <div class="sous-title"> Cotonou (Bénin)-Niamey (Niger)</div>
+                    </a>
+                </div>
+
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="fade-up">
+                    <a href="/nos-realisations/expert-3.html">
+                        <img src="/assets/img/page-realisations/expert/Vendome-Montoire.jpg" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - MISSION D’EXPERTISE SUR LES POSSIBILITES DE MAINTIEN D’UN SERVICE FERROVIAIRE SUR LES LIGNES VENDÔME – BIFURCATION PONT DE BRAYE-MONTOIRE-TRÔO ET BLOIS-VILLEFRANCOEUR
+
+
+
+
+                        </div>
+
+                        <div class="sous-title"> VENDÔME – BIFURCATION (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="fade-up">
+                    <a href="/nos-realisations/expert-4.html">
+                        <img src="/assets/img/page-realisations/expert/LGV_Bretagne_Pay_de_Loire.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - I&P GP BPL - LGV Bretagne Pays de Loire Inspections préalables des installations et ouvrages d’équipements ferroviaires
+
+
+
+
+
+                        </div>
+
+                        <div class="sous-title"> Bretagne – pays de la Loire (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="fade-up">
+                    <a href="/nos-realisations/expert-5.html">
+                        <img src="/assets/img/page-realisations/expert/LISEA.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">LISEA - Mission d’Assistance à la rédaction de consignes d’exploitation et de maintenance
+
+
+
+
+
+                        </div>
+
+                        <div class="sous-title"> (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="fade-up">
+                    <a href="/nos-realisations/expert-6.html">
+                        <img src="/assets/img/page-realisations/expert/Grand_Est.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau - Audit des lignes de la région Grand Est
+
+
+
+
+
+                        </div>
+
+                        <div class="sous-title"> la région Grand Est (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center e-e" data-aos="fade-up">
+                    <a href="/nos-realisations/expert-7.html">
+                        <img src="/assets/img/page-realisations/expert/Paris_Saint-Lazarre.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">STIF - Scénarisation des plans de transport lors des phases travaux sur le réseau francilien de Paris St-Lazare
+
+
+
+
+
+
+                        </div>
+
+                        <div class="sous-title">Ile de France (France)</div>
+                    </a>
+                </div>
+
+
+
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center vlogiciel" data-aos="fade-up">
+                    <a href="/nos-realisations/vente-1.html">
+                        <img src="/assets/img/page-realisations/vente/PRI_LYON.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">SNCF Réseau – PRI de Lyon / Cellule Exploitation - Vente d’IngeTime au PRI de Lyon
+
+
+
+
+
+                        </div>
+
+                        <div class="sous-title">LYON (France)</div>
+                    </a>
+                </div>
+
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5  text-center vlogiciel" data-aos="fade-up">
+                    <a href="/nos-realisations/vente-2.html">
+                        <img src="/assets/img/page-realisations/vente/Eurotunnel.png" class="img-fluid real_img">
+                        <div class="title-realisation mt-4 contenu-competence text-justify">Eurotunnel – Vente d’IngeTime à EUROTUNNEL
+
+
+
+
+
+                        </div>
+
+                        <div class="sous-title">CALAIS (France)</div>
+                    </a>
                 </div>
 
 
@@ -791,15 +776,16 @@
 
 
 
+
 <section class="contacter-nous" >
     <div class="container">
         <div class="row row-contacter-nous ">
-            <div class="div-contact col-md-7 col-sm-12 text-left" data-aos="fade-right" data-aos-easing="linear"  >
+            <div class="div-contact col-md-7 col-sm-12 text-left" data-aos="fade-right"  >
                <span> vous avez un projet ou vous souhaitez plus d’information ?</span>
             </div>
         <div class="parent-contactez col-md-5 col-sm-12 text-right">
                     
-                    <button  type="button" class="btn contactez  " data-aos="zoom-out" data-aos-easing="linear"  data-aos-anchor=".div-contact"  data-aos-delay="300"      
+                    <button  type="button" class="btn contactez  " data-aos="zoom-out"  data-aos-anchor=".div-contact"  data-aos-delay="300"      
                      onclick="redirect_to('/contact');"> contactez-nous !</button>
                    
         </div>  
@@ -810,11 +796,11 @@
 </section>
 
  <span class="d-none">foooooterxxx</span>
-<footer>
+ <footer>
     <section id="footer">
             <div class="container">
                 <div class="row text-alignit ">
-                    <div class="foot1 col-lg-3 col-md-6 col-xs-12 col-sm-12 pl-0 pr-0"  data-aos="fade-up" data-aos-easing="linear"  >
+                    <div class="foot1 col-lg-3 col-md-6 col-xs-12 col-sm-12 pl-0 pr-0"  data-aos="fade-up"  >
                     <div class="col-12">
                             <img class="logo-footer" src="/assets/img/logo/logo.png" >
                     </div> 
@@ -838,7 +824,7 @@
                                     <img src="/assets/img/footer/tel.png" class="position">
                             </div>
                             <div class="col-11 pl-0">
-                                <a id="phone" href="tel:+33490905485">04 90 90 54 85</a>
+                                <a id="phone" href="/tel:+33490905485">04 90 90 54 85</a>
                                   
 
                             </div>
@@ -847,7 +833,7 @@
                     </div>
                         
                     </div>
-                    <div class="foot2 col-lg-2 col-md-6  col-xs-12 col-sm-12 pl-0 pr-0 mt-3" data-aos="fade-up" data-aos-easing="linear"  data-aos-anchor=".foot1"  data-aos-delay="150">
+                    <div class="foot2 col-lg-2 col-md-6  col-xs-12 col-sm-12 pl-0 pr-0 mt-3" data-aos="fade-up"  data-aos-anchor=".foot1"  data-aos-delay="150">
                         <div class="footer-title "><a href="/qui-sommes-nous"> nous connaître</a></div>
                         <div class="groupe ">
                             <a href="/qui-sommes-nous/#nous" class="footer-body">Qui sommes-nous</a><br>
@@ -862,8 +848,8 @@
                         </div>
                     </div>
     
-                    <div class="foot3 col-lg-3 col-md-6  col-xs-12 col-sm-12 mt-3" data-aos="fade-up" data-aos-easing="linear"  data-aos-anchor=".foot2"  data-aos-delay="250">
-                        <div class="footer-title "> <a href="#">nos réalisations</a></div>
+                    <div class="foot3 col-lg-3 col-md-6  col-xs-12 col-sm-12 mt-3" data-aos="fade-up"  data-aos-anchor=".foot2"  data-aos-delay="250">
+                        <div class="footer-title "> <a href="/#">nos réalisations</a></div>
                         <div class="groupe">
                             <a href="/realisations/#mission" class="footer-body">Mission AMO Grands Projets</a><br>
                             <a href="/realisations/#etude" class="footer-body">Études</a><br>
@@ -874,7 +860,7 @@
                         <div class="footer-title mt-3 "><a href="/rejoignez-nous">Carrières</a></div>
                         <div class="footer-title mt-3 "><a href="/actualites">Actualités</a></div>
                     </div>
-                    <div class="foot4 col-lg-4 col-md-6  col-xs-12 col-sm-12 mt-3" data-aos="fade-up" data-aos-easing="linear"  data-aos-anchor=".foot3"  data-aos-delay="350">
+                    <div class="foot4 col-lg-4 col-md-6  col-xs-12 col-sm-12 mt-3" data-aos="fade-up"  data-aos-anchor=".foot3"  data-aos-delay="350">
                         <div class="footer-title">abonnez-vous à notre newsletter !</div>
                         <form action="/success"  name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
                                 <p class="hidden">
@@ -910,13 +896,13 @@
                 <div class="container text-center">
                     <div class="row  ">
                         <div class="col-md-2 Copyrightcol">
-                            <a href="#" class="color">Plan du site</a>
+                            <a href="/#" class="color">Plan du site</a>
                         </div>
                         <div class="col-md-2 Copyrightcol">
-                            <a href="#" class="color">Mentions Légales</a>
+                            <a href="/#" class="color">Mentions Légales</a>
                         </div>
                         <div class="col-md-2 Copyrightcol">
-                            <a href="#" class="color">Nous contacter</a>
+                            <a href="/#" class="color">Nous contacter</a>
                         </div>
                         <div class="col-md-6  Copyrightcol text-center pl-0 pr-0">
                             <div class="row pl-0 pr-0">
@@ -931,6 +917,7 @@
 </footer>
 
 
+
 <script src="/assets/js/jquery.min.js"></script>
 <script src="/assets/js/bootstrap.min.js"></script>
 <script src="/assets/js/pagination.js"></script>
@@ -943,7 +930,7 @@
 <script src="/assets/js/search.js"></script>
 <script src="/assets/js/jquery.easing.1.3.js"></script>
 <script src="/assets/js/isotope.pkgd.min.js"></script>
-
+<script src="/assets/js/pace.1.0.0.js"></script>
 <script src="/assets/js/main.js"></script>
 
 </body>

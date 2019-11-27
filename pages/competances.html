@@ -10,14 +10,14 @@ permalink: /competance
 <div class="competence text-center">
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
-            <h1 class=" header-realisation" data-aos="flip-up">
+            <h1 class=" header-realisation" data-aos="fade-up">
                 nos compétances
             </h1>
         </div>
         <ol class="breadcrumb size-bread">
-            <li class="breadcrumb-item "><a href="{{site.baseurl}}/" class="item-1">Accueil</a></li>
+            <li class="breadcrumb-item "><a href="{{ site.baseurl }}/" class="item-1">Accueil</a></li>
             <li class="breadcrumb-item "><i class="fa fa-angle-double-right "></i></li>
-            <li class="breadcrumb-item active"><a href="{{site.baseurl}}/competance" class="item-1">nos compétances</a>
+            <li class="breadcrumb-item active"><a href="{{ site.baseurl }}/competance" class="item-1">nos compétances</a>
             </li>
         </ol>
     </div>
@@ -54,14 +54,6 @@ permalink: /competance
                 </ul>
             </div>
 
-
-
-
-
-
-
-
-
         </div>
     </div>
 
@@ -70,15 +62,13 @@ permalink: /competance
     <div class="tab-content" id="pills-Content">
 
 
-           <div class="tab-pane fade" id="pills-mission"       role="tabpanel" aria-labelledby="pills-mission-tab">
-
-
+           <div class="tab-pane fade" id="pills-mission" role="tabpanel" aria-labelledby="pills-mission-tab">
               <div class="container"> 
-                <div class="title-news  title-section mt-0" data-aos="zoom-in-up">mission amo grands projets</div> 
+                <div class="title-news  title-section mt-0" data-aos="fade-up">mission amo grands projets</div> 
                 <div class="row">
 
-                    <div class="col-md-7 pl-0 ml-w-0 ">
-                        <div class="paragraphe-etudes">
+                    <div class="col-lg-7 pl-0 ml-w-0 ">
+                        <div class="paragraphe-etudes text-justify">
                             Les équipes de Rail Concept possède une expérience particulièrement appréciée dans le
                             domaine des missions d'assistance à maitrise d'ouvrage. <br>
                             Nos équipes intégrent à la fois des experts techniques ayant une très bonne vision système
@@ -112,10 +102,15 @@ permalink: /competance
 
                         </div>
                     </div>
-                    <div class="col-md-5 loope-etude">
-                        <img id="loope-etude-img" src="{{ site.baseurl }}\assets\img\page-competances\icon1-etudes.png"
+
+                    <div class="col-lg-5 loope-etude  d-none d-lg-block " data-aos="fade-in" data-aos-delay="600">
+                        <img id="loope-etude-img" src="{{ site.baseurl }}/assets/img/page-realisations/etude.svg"
                             class="img-fluid ">
                     </div>
+
+
+
+
                 </div>
                   </div>
 
@@ -135,10 +130,10 @@ permalink: /competance
             aria-labelledby="pills-etude-tab">
 
               <div class="container"> 
-                <div class="title-news  title-section mt-0" data-aos="zoom-in-up">études</div> 
+                <div class="title-news  title-section mt-0" data-aos="fade-up">études</div> 
                 <div class="row">
 
-                    <div class="col-md-7 pl-0 ml-w-0 ">
+                    <div class="col-md-12 col-lg-7  pl-0 ml-w-0 " data-aos="fade-up" data-aos-delay="300">
                         <div class="paragraphe-etudes">
                             Rail Concept réalise des études principalement en phase Amont : EP (Étude
                             Préliminaire) et AVP
@@ -152,25 +147,34 @@ permalink: /competance
                             répondre aux
                             problématiques complexes de nos clients.
                         </div>
+                 
                     </div>
-                    <div class="col-md-5 loope-etude">
-                        <img id="loope-etude-img" src="{{ site.baseurl }}\assets\img\page-competances\icon1-etudes.png"
-                            class="img-fluid ">
                     </div>
-                </div>
-                  </div>
+              </div>
+                  
+                        
+                    
+                   
+
+               
+               
 
 
-
-
-            <div class="container-fluid-etude  pb-5 mb-5">
+            <div class="container-fluid-etude mt-5 pb-5 mb-5">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12  col-sm-12 pl-0 pr-0 etude-container-img" data-aos="flip-left">
-                        <img src="{{ site.baseurl }}\assets\img\page-competances\image1-etudes.png"
-                            class="img-fluid w-100">
+                    <div class="col-lg-6 col-md-12  col-sm-12 pl-0 pr-0 etude-container-img" data-aos="fade-right">
+                        <img src="{{ site.baseurl }}/assets/img/page-competances/image1-etudes.png" class="img-fluid w-100">
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12  pl-0 etude-container-right" data-aos="flip-right">
+                    <div class="col-lg-6 col-md-12 col-sm-12  pl-0 etude-container-right" data-aos="fade-left">
+
                         <div class="card-etude width">
+                            <div data-aos="fade-in" data-aos-delay="600">
+                                <div class="col-md-8 loope-etude  d-none d-lg-block">
+                                    <img id="loope-etude-img" src="{{ site.baseurl }}/assets/img/page-realisations/etude.svg"
+                                        class="img-fluid ">
+                                </div>
+
+                            </div>
                             <div class="title-card-etude ">
                                 étude amont
                             </div>
@@ -203,7 +207,7 @@ permalink: /competance
                 <div class="row">
 
                     <div class="col-lg-6 col-md-12  col-sm-12 order-lg-1 order-md-2 order-sm-2 pr-0 etude-container-left"
-                        data-aos="flip-left">
+                        data-aos="fade-right">
                         <div class="card-etude  ">
                             <div class="title-card-etude ">
                                 étude exploitation
@@ -229,9 +233,8 @@ permalink: /competance
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 order-lg-2 order-md-1 order-sm-1 pr-0 pl-0 etude-container-img"
-                        data-aos="flip-right">
-                        <img src="{{ site.baseurl }}\assets\img\page-competances\icons2-etudes.png"
-                            class="img-fluid w-100">
+                        data-aos="fade-left">
+                        <img src="{{ site.baseurl }}/assets/img/page-competances/icons2-etudes.png" class="img-fluid w-100">
                     </div>
                 </div>
             </div>
@@ -240,11 +243,10 @@ permalink: /competance
 
             <div class="container-fluid-etude pt-5 pb-5  mt-5 mb-5 ">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12  col-sm-12 pl-0 pr-0 etude-container-img" data-aos="flip-left">
-                        <img src="{{ site.baseurl }}\assets\img\page-competances\image2-etudes.png"
-                            class="img-fluid w-100">
+                    <div class="col-lg-6 col-md-12  col-sm-12 pl-0 pr-0 etude-container-img" data-aos="fade-right">
+                        <img src="{{ site.baseurl }}/assets/img/page-competances/image2-etudes.png" class="img-fluid w-100">
                     </div>
-                    <div class="col-lg-6 col-md-12 col-sm-12 pl-0 etude-container-right" data-aos="flip-right">
+                    <div class="col-lg-6 col-md-12 col-sm-12 pl-0 etude-container-right" data-aos="fade-left">
                         <div class="card-etude width">
                             <div class="title-card-etude ">
                                 étude socio/économique
@@ -282,8 +284,8 @@ permalink: /competance
                     / conseil</div> 
                 <div class="row">
 
-                    <div class="col-md-7 pl-0 ml-w-0 ">
-                        <div class="paragraphe-etudes">
+                    <div class="col-lg-7 pl-0 ml-w-0 ">
+                        <div class="paragraphe-etudes text-justify">
                             Notre connaissance des nombreuses activités et problématiques du système ferroviaire, a
                             permis à nos experts et, par transmission, à nos ingénieurs, de développer des compétences
                             nous permettant ainsi de répondre à l’ensemble des domaines techniques concernés par
@@ -301,9 +303,8 @@ permalink: /competance
 
                         </div>
                     </div>
-                    <div class="col-md-5 loope-etude">
-                        <img id="loope-etude-img" src="{{ site.baseurl }}\assets\img\page-competances\icon1-etudes.png"
-                            class="img-fluid ">
+                    <div class="col-lg-5 d-none d-lg-block ">
+                        <img id="loope-etude-img" src="{{ site.baseurl }}/assets/img/page-competances/icon1-etudes.png" class="img-fluid ">
                     </div>
                 </div>
                   </div>
@@ -321,7 +322,7 @@ permalink: /competance
                             </div>
                             <div class="text-justify">
 
-                                Rail concept développe un logiciel modulaire d’exploitation permettant de modéliser <br>
+                                Rail concept développe un logiciel modulaire d’exploitation permettant de modéliser 
                                 l’infrastructure et intégrant plusieurs niveaux de signalisation. <br>
                                 Ce progiciel calcule les marches types  afin de réaliser :
                                 <ul class="mt-3">
@@ -335,8 +336,8 @@ permalink: /competance
 
                         </div>
                     </div>
-                    <div class="col-md-5 loope-etude text-center" data-aos="flip-right">
-                        <img id="loope-etude-img" src="{{ site.baseurl }}\assets\img\page-competances\ingetime.png"
+                    <div class="col-md-5 text-center" data-aos="flip-right">
+                        <img src="{{ site.baseurl }}/assets/img/page-competances/ingetime.png"
                             class="img-fluid software_img">
                     </div>
                 </div>
@@ -346,8 +347,8 @@ permalink: /competance
 
                 <div class="row mt-5 ">
 
-                    <div class="col-md-5 loope-etude text-center order-md-1  order-2 " data-aos="flip-left">
-                        <img id="loope-etude-img" src="{{ site.baseurl }}\assets\img\page-competances\adeb.png"
+                    <div class="col-md-5  text-center order-md-1  order-2 " data-aos="flip-left">
+                        <img  src="{{ site.baseurl }}/assets/img/page-competances/adeb.png"
                             class="img-fluid software_img">
                     </div>
 
@@ -369,7 +370,8 @@ permalink: /competance
                                 une section de ligne. Les informations extraites de e-BREHAT sont traitées pour
                                 permettre à nos experts d’analyser les charges de circulations, la régularité des
                                 circulations, les incidents qu’a subi une section de ligne. <br>
-                                Les résultats sont disponibles sous formes de listes de trains, d'histogrammes 3D/2D, de camemberts, de
+                                Les résultats sont disponibles sous formes de listes de trains, d'histogrammes 3D/2D, de
+                                camemberts, de
                                 courbes, d'arbre d'incidents, prêts pour une analyse approfondie.
 
 
@@ -391,8 +393,6 @@ permalink: /competance
 
 
 </section>
-
-
 
 
 
