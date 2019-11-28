@@ -156,4 +156,4 @@ collections:
     - {label: "Réalisation", name: "real", widget: "markdown"} 
     - {label: "Réalisation Eng", name: "real_eng", widget: "markdown"} 
     - {label: "Photo 1", name: "photo1", widget: "image"}
-    - {label: "Photo 2", name: "photo2", widget: "image"  required: false}
+    - {label: "Photo 2", name: "photo2", widget: "image" , required: false}
