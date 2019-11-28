@@ -140,7 +140,7 @@ collections:
        - { label: "ÉTUDES", value: "etude" }
        - { label: "EXPERTISE/CONSEIL", value: "expert" }
        - { label: "VENTE LOGICIEL", value: "vente" }
-    - {label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false}
+    - {label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false ,required: false }
     - {label: "Titre 1", name: "title", widget: "string"} 
     - {label: "Titre 1 Eng", name: "title_eng", widget: "string"} 
     - {label: "Titre 2", name: "title2", widget: "string"} 
