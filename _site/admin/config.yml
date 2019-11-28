@@ -125,13 +125,21 @@ collections:
     - {label: "Profil Eng", name: "profil_eng", widget: "markdown"}
   
   - label: "Réalisations"
-    name: "realisation"
+    name: "nos-realisations"
     folder: "_nos-realisations"
     sort: "date:desc" 
     create: true 
     slug: "{{categories}}-{{slug}}"
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "offre"} 
+    - label: "Type de Réalisation"
+      name: "categories"
+      widget: "select"
+      options:
+       - { label: "MISSION AMO GRAND PROJET", value: "mission" }
+       - { label: "ÉTUDES", value: "etude" }
+       - { label: "EXPERTISE/CONSEIL", value: "expert" }
+       - { label: "VENTE LOGICIEL", value: "vente" }
     - {label: "Titre 1", name: "title", widget: "string"} 
     - {label: "Titre 1 Eng", name: "title_eng", widget: "string"} 
     - {label: "Titre 2", name: "title2", widget: "string"} 
@@ -141,14 +149,10 @@ collections:
     - {label: "Durée", name: "duree", widget: "string"}
     - {label: "Durée Eng", name: "duree_eng", widget: "string"}  
     - {label: "Année Réalisation", name: "annee_real", widget: "string"}  
-    - label: "Type de Réalisation"
-      name: "categories"
-      widget: "select"
-      options:
-       - { label: "MISSION AMO GRAND PROJET", value: "mission" }
-       - { label: "ÉTUDES", value: "etude" }
-       - { label: "EXPERTISE/CONSEIL", value: "expert" }
-       - { label: "VENTE LOGICIEL", value: "vente" }
+    - {label: "Région", name: "region", widget: "string"}  
+    - {label: "Région ENG", name: "region_eng", widget: "string"} 
+    - {label: "Pays", name: "pays", widget: "string"} 
+    - {label: "Pays ENG", name: "pays_eng", widget: "string"} 
     - {label: "Latitude ", name: "lat", widget: "string"}   
     - {label: "Longitude", name: "long", widget: "string"} 
     - {label: "Contexte et Objectifs", name: "context", widget: "markdown"} 
