@@ -129,7 +129,7 @@ collections:
     folder: "_nos-realisations"
     sort: "date:desc" 
     create: true 
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{categories}}-{{slug}}"
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "offre"} 
     - {label: "Titre 1", name: "title", widget: "string"} 
@@ -142,7 +142,7 @@ collections:
     - {label: "Durée Eng", name: "duree_eng", widget: "string"}  
     - {label: "Année Réalisation", name: "annee_real", widget: "string"}  
     - label: "Type de Réalisation"
-      name: "tdp"
+      name: "categories"
       widget: "select"
       options:
        - { label: "MISSION AMO GRAND PROJET", value: "mission" }
