@@ -8,7 +8,8 @@ donneur_ordre: SNCF Réseau
 donneur_ordre_eng: SNCF Réseau ENG
 duree: 4 ans
 duree_eng: 4 ans
-tdp: mission
+annee_real: 2011-2015
+categories: mission
 lat: '43.129083'
 long: '5.927973'
 context: >-
@@ -25,7 +26,24 @@ context_eng: >-
   assistance technique à la mission d’AMO Cohérence Système et Programme
   Ferroviaire.
 real: "1.\tDéterminer les besoins en services (volumétrie et besoins TGV, TET, TER et Fret) ainsi que les principales fonctionnalités nécessaires à la réalisation de ces services (gare souterraine de Marseille, configuration de la gare de Nice Aéroport, fuseaux de passages, niveaux de desserte…).\r\n\n2.\tAssurer le contrôle et le suivi des études capacité – exploitation (grilles de circulation, graphiques d’occupation des voies des principales gares, conditions d’exploitation des gares et en ligne, conditions du remisage des rames, cohérence des systèmes d’exploitation, cohérence des principes d’alimentation électrique).\r\n\n3.\tParticiper à la rédaction du Programme d’Exploitation de la future Ligne Nouvelle en fonction des priorités retenues par Commission Mobilité 21 à différents horizons."
-real_eng: "ENG\n\n1.\tDéterminer les besoins en services (volumétrie et besoins TGV, TET, TER et Fret) ainsi que les principales fonctionnalités nécessaires à la réalisation de ces services (gare souterraine de Marseille, configuration de la gare de Nice Aéroport, fuseaux de passages, niveaux de desserte…).\r\n\n2.\tAssurer le contrôle et le suivi des études capacité – exploitation (grilles de circulation, graphiques d’occupation des voies des principales gares, conditions d’exploitation des gares et en ligne, conditions du remisage des rames, cohérence des systèmes d’exploitation, cohérence des principes d’alimentation électrique).\r\n\n3.\tParticiper à la rédaction du Programme d’Exploitation de la future Ligne Nouvelle en fonction des priorités retenues par Commission Mobilité 21 à différents horizons."
+real_eng: >-
+  ENG
+
+
+  1. Déterminer les besoins en services (volumétrie et besoins TGV, TET, TER et
+  Fret) ainsi que les principales fonctionnalités nécessaires à la réalisation
+  de ces services (gare souterraine de Marseille, configuration de la gare de
+  Nice Aéroport, fuseaux de passages, niveaux de desserte…).
+
+  2. Assurer le contrôle et le suivi des études capacité – exploitation (grilles
+  de circulation, graphiques d’occupation des voies des principales gares,
+  conditions d’exploitation des gares et en ligne, conditions du remisage des
+  rames, cohérence des systèmes d’exploitation, cohérence des principes
+  d’alimentation électrique).
+
+  3. Participer à la rédaction du Programme d’Exploitation de la future Ligne
+  Nouvelle en fonction des priorités retenues par Commission Mobilité 21 à
+  différents horizons. g
 photo1: /assets/img/uploads/axe-ltv-paris-est.png
 photo2: /assets/img/uploads/axe-ltv-paris-est.png
 ---
