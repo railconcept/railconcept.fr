@@ -1,5 +1,6 @@
 ---
 layout: offre
+categories: mission
 title: ASSISTANCE À MAÎTRISE D’OUVRAGE
 title_eng: ASSISTANCE À MAÎTRISE D’OUVRAGE ENG
 title2: PROJET DE LIGNE NOUVELLE PROVENCE CÔTE D’AZUR NORD-SUD
@@ -9,7 +10,10 @@ donneur_ordre_eng: SNCF Réseau ENG
 duree: 4 ans
 duree_eng: 4 ans
 annee_real: '11111'
-categories: etude
+region: Côte d’Azur
+region_eng: Côte d’Azur eng
+pays: FRANCE
+pays_eng: FRANCE
 lat: '43.129083'
 long: '5.927973'
 context: >-
@@ -27,7 +31,7 @@ context_eng: >-
   Ferroviaire.
 real: "1.\tDéterminer les besoins en services (volumétrie et besoins TGV, TET, TER et Fret) ainsi que les principales fonctionnalités nécessaires à la réalisation de ces services (gare souterraine de Marseille, configuration de la gare de Nice Aéroport, fuseaux de passages, niveaux de desserte…).\r\n\n2.\tAssurer le contrôle et le suivi des études capacité – exploitation (grilles de circulation, graphiques d’occupation des voies des principales gares, conditions d’exploitation des gares et en ligne, conditions du remisage des rames, cohérence des systèmes d’exploitation, cohérence des principes d’alimentation électrique).\r\n\n3.\tParticiper à la rédaction du Programme d’Exploitation de la future Ligne Nouvelle en fonction des priorités retenues par Commission Mobilité 21 à différents horizons."
 real_eng: "ENG\n\n1.\tDéterminer les besoins en services (volumétrie et besoins TGV, TET, TER et Fret) ainsi que les principales fonctionnalités nécessaires à la réalisation de ces services (gare souterraine de Marseille, configuration de la gare de Nice Aéroport, fuseaux de passages, niveaux de desserte…).\r\n\n2.\tAssurer le contrôle et le suivi des études capacité – exploitation (grilles de circulation, graphiques d’occupation des voies des principales gares, conditions d’exploitation des gares et en ligne, conditions du remisage des rames, cohérence des systèmes d’exploitation, cohérence des principes d’alimentation électrique).\r\n\n3.\tParticiper à la rédaction du Programme d’Exploitation de la future Ligne Nouvelle en fonction des priorités retenues par Commission Mobilité 21 à différents horizons."
-photo1: /assets/img/uploads/axe-ltv-paris-est.png
+photo1: /assets/img/uploads/LNPCA (2).png
 photo2: ''
 ---
 
