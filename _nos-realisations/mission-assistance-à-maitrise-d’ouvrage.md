@@ -4,8 +4,8 @@ categories: mission
 favoris: false
 title: Assistance à Maitrise d’Ouvrage – Temps de parcours TER
 title_eng: 'ENG:Assistance à Maitrise d’Ouvrage '
-title2: Temps de parcours TER
-title2_eng: 'ENG:Temps de parcours TER'
+title2: ' '
+title2_eng: ' '
 donneur_ordre: 'Conseil Régional Bourgogne '
 donneur_ordre_eng: 'ENG: Conseil Régional Bourgogne '
 duree: 12 mois
