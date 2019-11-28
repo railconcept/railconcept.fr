@@ -2,7 +2,7 @@
 layout: offre
 categories: mission
 favoris: false
-title: DDD
+title: 'Assistance à Maîtrise d’Ouvrage '
 title_eng: >-
   ENG:Assistance à Maîtrise d’Ouvrage – Projet de ligne nouvelle Provence Côte
   d’Azur
@@ -17,8 +17,8 @@ region: PROVENCE CÔTE D’AZUR (FRANCE)
 region_eng: 'ENG: PROVENCE CÔTE D’AZUR (FRANCE)'
 pays: FRANCE
 pays_eng: 'ENG: FRANCE'
-lat: '43.618774'
-long: '6.764278'
+lat: '43.129083'
+long: '5.927973'
 context: >-
   Rail Concept a appuyé le MOA sur les sujets techniques et exploitation dans le
   cadre du Comité Thématique Services et Fonctionnalités en préalable aux études
