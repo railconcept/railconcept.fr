@@ -2,38 +2,45 @@
 layout: offre
 categories: mission
 favoris: false
-title: 'Assistance à Maîtrise d’Ouvrage '
-title_eng: >-
-  ENG:Assistance à Maîtrise d’Ouvrage – Projet de ligne nouvelle Provence Côte
-  d’Azur
-title2: Projet de ligne nouvelle Provence Côte d’Azur
-title2_eng: 'ENG: Projet de ligne nouvelle Provence Côte d’Azur'
-donneur_ordre: SNCF Réseau
+title: Assistance à Maîtrise d’Ouvrage
+title_eng: 'ENG:Assistance à Maîtrise d’Ouvrage'
+title2: Maintenance du Contournement Nîmes Montpellier (CNM)
+title2_eng: 'ENG: Maintenance du Contournement Nîmes Montpellier (CNM)'
+donneur_ordre: OC’VIA MAINTENANCE
 donneur_ordre_eng: 'ENG:SNCF Réseau'
-duree: 4 ans
-duree_eng: 'ENG:4 ans'
-annee_real: 2011-2015
-region: PROVENCE CÔTE D’AZUR (FRANCE)
-region_eng: 'ENG: PROVENCE CÔTE D’AZUR (FRANCE)'
+duree: 12 mois
+duree_eng: 'ENG:12 mois'
+annee_real: '2014'
+region: NÎMES MONTPELLIER (FRANCE)
+region_eng: 'ENG: NÎMES MONTPELLIER (FRANCE)'
 pays: FRANCE
 pays_eng: 'ENG: FRANCE'
-lat: '43.129083'
-long: '5.927973'
+lat: '43.698010'
+long: '4.149878'
 context: >-
-  Rail Concept a appuyé le MOA sur les sujets techniques et exploitation dans le
-  cadre du Comité Thématique Services et Fonctionnalités en préalable aux études
-  de la Phase 1, a réalisé une AMOG sur les sujets exploitation et technique et,
-  en préalable au lancement des études de la Phase 2, une assistance technique à
-  la mission d’AMO Cohérence Système et Programme Ferroviaire.
+  Cette prestation d’assistance technique et d’AMO, consiste à accompagner et
+  conseiller le mainteneur dans le déploiement de l’organisation de la
+  maintenance relative au Contournement Nîmes Montpellier. (Partenariat
+  public-privé, 2,28 milliards d’euros d’investissement, 80 km de ligne nouvelle
+  mixte, 220 km/h).
 context_eng: >-
-  ENG: Rail Concept a appuyé le MOA sur les sujets techniques et exploitation
-  dans le cadre du Comité Thématique Services et Fonctionnalités en préalable
-  aux études de la Phase 1, a réalisé une AMOG sur les sujets exploitation et
-  technique et, en préalable au lancement des études de la Phase 2, une
-  assistance technique à la mission d’AMO Cohérence Système et Programme
-  Ferroviaire.
-real: "1.\tDéterminer les besoins en services (volumétrie et besoins TGV, TET, TER et Fret) ainsi que les principales fonctionnalités nécessaires à la réalisation de ces services (gare souterraine de Marseille, configuration de la gare de Nice Aéroport, fuseaux de passages, niveaux de desserte…).\r\n\n2.\tAssurer le contrôle et le suivi des études capacité – exploitation (grilles de circulation, graphiques d’occupation des voies des principales gares, conditions d’exploitation des gares et en ligne, conditions du remisage des rames, cohérence des systèmes d’exploitation, cohérence des principes d’alimentation électrique).\r\n\n3.\tParticiper à la rédaction du Programme d’Exploitation de la future Ligne Nouvelle en fonction des priorités retenues par Commission Mobilité 21 à différents horizons."
-real_eng: "ENG: 1.\tDéterminer les besoins en services (volumétrie et besoins TGV, TET, TER et Fret) ainsi que les principales fonctionnalités nécessaires à la réalisation de ces services (gare souterraine de Marseille, configuration de la gare de Nice Aéroport, fuseaux de passages, niveaux de desserte…).\r\n\n2.\tAssurer le contrôle et le suivi des études capacité – exploitation (grilles de circulation, graphiques d’occupation des voies des principales gares, conditions d’exploitation des gares et en ligne, conditions du remisage des rames, cohérence des systèmes d’exploitation, cohérence des principes d’alimentation électrique).\r\n\n3.\tParticiper à la rédaction du Programme d’Exploitation de la future Ligne Nouvelle en fonction des priorités retenues par Commission Mobilité 21 à différents horizons."
-photo1: /assets/img/uploads/LNPCA (2).png
+  ENG: Cette prestation d’assistance technique et d’AMO, consiste à accompagner
+  et conseiller le mainteneur dans le déploiement de l’organisation de la
+  maintenance relative au Contournement Nîmes Montpellier. (Partenariat
+  public-privé, 2,28 milliards d’euros d’investissement, 80 km de ligne nouvelle
+  mixte, 220 km/h).
+real: >-
+  Ordonnancement des tâches et des opérations relevant du mainteneur, Assistance
+  à l’élaboration du planning directeur du déploiement de l’organisation du
+  mainteneur, Rédaction du SGS, Conception de la ligne – revue de cohérence
+  (Interface MOE/Mainteneur), Avis sur la maintenabilité des optimisations
+  techniques et technologiques de l’Entrepreneur (Dossiers de dérogation), Avis
+  sur les contrats de fournitures passés par l’Entrepreneur et impactant la
+  future maintenance ou les critères FDMS (fiabilité, disponibilité,
+  maintenabilité, sécurité), Assistance et expertise générale, Rédaction
+  complète du plan de maintenance, Rédaction des référentiels de maintenance
+  niveau 2.
+real_eng: "ENG: 1.\tOrdonnancement des tâches et des opérations relevant du mainteneur, Assistance à l’élaboration du planning directeur du déploiement de l’organisation du mainteneur, Rédaction du SGS, Conception de la ligne – revue de cohérence (Interface MOE/Mainteneur), Avis sur la maintenabilité des optimisations techniques et technologiques de l’Entrepreneur (Dossiers de dérogation), Avis sur les contrats de fournitures passés par l’Entrepreneur et impactant la future maintenance ou les critères FDMS (fiabilité, disponibilité, maintenabilité, sécurité), Assistance et expertise générale, Rédaction complète du plan de maintenance, Rédaction des référentiels de maintenance niveau 2."
+photo1: /assets/img/uploads/Nimes-Montpellier.png
 ---
 
