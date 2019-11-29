@@ -190,20 +190,40 @@ permalink: /realisations
 
             </div>
 
-          
+            {% for post in site.nos-realisations %}
 
+
+
+            {{ post.title }} -  {{ post.title2 }}
             <div class="row col-12 grid_gal  pl-0 pr-0">
 
-                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5 text-center magp" data-aos="fade-up">
-                    <a href="{{ site.baseurl }}/nos-realisations/mission-1">
-                        <img src="{{site.baseurl }}/assets/img/page-realisations/amo/LNPCA.png" class="img-fluid real_img">
+                <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5 text-center  {{ post.categories }}" data-aos="fade-up">
+                    <a href="{{ post.url | prepend: site.baseurl }}">
+                    
                         <div class="title-realisation mt-4 contenu-competence text-justify">
-                            SNCF - Mission de maîtrise d'oeuvre Générale: Projet de ligne nouvelle Provence Côte d’Azur
+                            {{ post.title }} -  {{ post.title2 }}
                         </div>
 
-                        <div class="sous-title">Provence Côte d’Azur (France)</div>
+                        <div class="sous-title"> {{ post.region }} ( {{ post.pays }})</div>
                     </a>
                 </div>
+
+                {% endfor %} 
+
+          
+
+
+
+          
+            
+        
+
+
+
+
+
+
+
 
 
             
