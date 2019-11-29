@@ -129,7 +129,7 @@ collections:
     folder: "_nos-realisations"
     sort: "date:desc" 
     create: true 
-    slug: "{{title2 | slugify}}"
+    slug: "{{title | slugify}}"
     fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "offre"} 
     - label: "Type de Réalisation"
