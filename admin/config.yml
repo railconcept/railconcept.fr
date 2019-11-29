@@ -143,8 +143,6 @@ collections:
     - {label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false ,required: false }
     - {label: "Titre 1", name: "title", widget: "string"} 
     - {label: "Titre 1 Eng", name: "title_eng", widget: "string"} 
-    - {label: "Titre 2", name: "title2", widget: "string"} 
-    - {label: "Titre 2 Eng ", name: "title2_eng", widget: "string"} 
     - {label: "Donneur d’ordre", name: "donneur_ordre", widget: "string"}
     - {label: "Donneur d’ordre Eng", name: "donneur_ordre_eng", widget: "string"}
     - {label: "Durée", name: "duree", widget: "string"}
