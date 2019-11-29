@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: Déploiement ERTMS sur le réseau structurant
 title_eng: 'ENG: Déploiement ERTMS sur le réseau structurant'
@@ -51,6 +51,6 @@ real_eng: >-
   demande fret international, les bilans économiques du déploiement d’une
   nouvelle infrastructure de signalisation et la valorisation socio-économique
   d’un système de signalisation.
-photo1: /assets/img/uploads/Longuyou-Bâle.png
+photo1: /assets/img/uploads/Longuyou-Bale.png
 ---
 

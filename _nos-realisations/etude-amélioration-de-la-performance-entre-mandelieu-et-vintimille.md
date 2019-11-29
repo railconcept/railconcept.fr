@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: Amélioration de la performance entre Mandelieu et Vintimille
 title_eng: 'ENG: Amélioration de la performance entre Mandelieu et Vintimille'

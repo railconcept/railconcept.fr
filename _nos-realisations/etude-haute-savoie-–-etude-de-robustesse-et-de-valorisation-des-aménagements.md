@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: Haute Savoie – Etude de robustesse et de valorisation des aménagements
 title_eng: 'ENG: Haute Savoie – Etude de robustesse et de valorisation des aménagements'

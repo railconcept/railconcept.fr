@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: 'Etude préliminaire du raccordement de Saint Brès inversé '
 title_eng: 'ENG: Etude préliminaire du raccordement de Saint Brès inversé '
@@ -35,7 +35,7 @@ context_eng: >-
   possibilité d’adapter ce raccordement pour les trains de Fret.
 real: "Dans le cadre de l’étude d’exploitation, ont été étudiés les fonctionnalités et caractéristiques générales du raccordement, les temps de parcours, les contraintes et conditions d’exploitation dans la version de base, les contraintes et conditions d’exploitation dans la version avec Fret, la robustesse des différentes situations, les évolutions de trafic et les contraintes et conditions d’exploitation pour services TER différenciés.\r\n\nPour les études infrastructures, ont été étudiés la faisabilité technique du Raccordement de St Brès inversé, le tracé du raccordement, la définition des mesures conservatoires correspondantes, l’impact sur le bâti et impacts environnementaux, l’estimation des coûts, la planification."
 real_eng: "ENG: Dans le cadre de l’étude d’exploitation, ont été étudiés les fonctionnalités et caractéristiques générales du raccordement, les temps de parcours, les contraintes et conditions d’exploitation dans la version de base, les contraintes et conditions d’exploitation dans la version avec Fret, la robustesse des différentes situations, les évolutions de trafic et les contraintes et conditions d’exploitation pour services TER différenciés.\r\n\nPour les études infrastructures, ont été étudiés la faisabilité technique du Raccordement de St Brès inversé, le tracé du raccordement, la définition des mesures conservatoires correspondantes, l’impact sur le bâti et impacts environnementaux, l’estimation des coûts, la planification."
-photo1: /assets/img/uploads/Raccordement Saint-Brès.png
-photo2: /assets/img/uploads/Raccordement Saint-Brès 2.png
+photo1: /assets/img/uploads/Raccordement Saint-Bres.png
+photo2: /assets/img/uploads/Raccordement Saint-Bres 2.png
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: Fiabilisation de l’axe Nantes-Angers-Sablé
 title_eng: 'ENG: Fiabilisation de l’axe Nantes-Angers-Sablé'
@@ -57,6 +57,6 @@ real_eng: >-
   technique télécom associée, les coûts de l’opération, les conditions de mise
   en œuvre, un bilan socio-économique de l’opération en gains de mn de
   maintenance et de régularité gagnées.
-photo1: /assets/img/uploads/Axe Nantes-Angers-Sablé.png
+photo1: /assets/img/uploads/Axe Nantes-Angers-Sable.png
 ---
 

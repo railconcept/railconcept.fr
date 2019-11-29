@@ -51,6 +51,6 @@ real_eng: >-
   matériel roulant et le développement d’un modèle économique de déploiement.
   Novatrice dans son approche, cette étude a permis à RFF de mieux apprécier les
   enjeux économiques du projet.
-photo1: /assets/img/uploads/Réseau ERTMS.jpg
+photo1: /assets/img/uploads/Reseau ERTMS.jpg
 ---
 

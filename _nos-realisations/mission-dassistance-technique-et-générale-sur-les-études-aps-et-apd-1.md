@@ -55,6 +55,6 @@ real_eng: >-
   des projets connexes et les autres réseaux impactés par le projet (eau,
   électricité etc.). Rail Concept appuie Hyundai Rotem dans le cadre des
   négociations avec l’Autorité Concédante.
-photo1: /assets/img/uploads/Métro urbain d'Abidjan 2.png
+photo1: /assets/img/uploads/Metro urbain Abidjan 2.png
 ---
 

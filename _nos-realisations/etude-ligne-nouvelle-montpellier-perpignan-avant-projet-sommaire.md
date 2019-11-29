@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: Ligne Nouvelle Montpellier-Perpignan Avant-Projet Sommaire
 title_eng: 'ENG: Ligne Nouvelle Montpellier-Perpignan Avant-Projet Sommaire'

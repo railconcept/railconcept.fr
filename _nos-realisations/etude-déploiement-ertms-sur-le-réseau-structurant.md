@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: Déploiement ERTMS sur le réseau structurant
 title_eng: 'ENG: Déploiement ERTMS sur le réseau structurant'

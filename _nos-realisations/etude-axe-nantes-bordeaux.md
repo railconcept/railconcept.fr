@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: Axe Nantes-Bordeaux
 title_eng: 'ENG: Axe Nantes-Bordeaux'

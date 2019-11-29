@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: 'Etude des corridors de tracés possibles '
 title_eng: 'ENG: Etude des corridors de tracés possibles '
@@ -35,6 +35,6 @@ context_eng: >-
   fuseaux envisageables.
 real: "Les infrastructures projetées ont été étudiées selon les normes espagnoles, françaises et européennes. L’enjeu est de pouvoir proposer des solutions pertinentes selon les besoins des trafics Fret et Voyageurs et compétitives vis-à-vis des autres corridors existants (Atlantique et Méditerranéen). \r\n\nDe fait, une optimisation des circulations ferroviaires a été recherchée, notamment par l’utilisation d’ERTMS2, prévu à la mise en service de la NAFGCT. Les temps de parcours ont été calculés par modélisation sur IngeTime® pour évaluer les différentes solutions. Les analyses économiques et socio-économiques comprennent les bilans des corridors selon la norme européenne et également avec la norme française qui a été actualisée."
 real_eng: "ENG: Les infrastructures projetées ont été étudiées selon les normes espagnoles, françaises et européennes. L’enjeu est de pouvoir proposer des solutions pertinentes selon les besoins des trafics Fret et Voyageurs et compétitives vis-à-vis des autres corridors existants (Atlantique et Méditerranéen). \r\n\nDe fait, une optimisation des circulations ferroviaires a été recherchée, notamment par l’utilisation d’ERTMS2, prévu à la mise en service de la NAFGCT. Les temps de parcours ont été calculés par modélisation sur IngeTime® pour évaluer les différentes solutions. Les analyses économiques et socio-économiques comprennent les bilans des corridors selon la norme européenne et également avec la norme française qui a été actualisée."
-photo1: /assets/img/uploads/Nouvel axe ferroviaire transpyrénéen.png
+photo1: /assets/img/uploads/Nouvel axe ferroviaire transpyreneen.png
 ---
 

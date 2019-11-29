@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: Etudes d’opportunité des IPCS – Evaluation socio-économique
 title_eng: 'ENG: Etudes d’opportunité des IPCS – Evaluation socio-économique'

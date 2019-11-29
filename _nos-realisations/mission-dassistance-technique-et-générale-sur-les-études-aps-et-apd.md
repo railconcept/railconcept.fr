@@ -69,6 +69,6 @@ real_eng: >-
   coordination des interfaces internes entre Génie Civil et Système et des
   interfaces externes avec le projet (ex : traitement des interfaces avec la
   SOTRA), et des contributions techniques ponctuelles
-photo1: /assets/img/uploads/Métro urbain d'Abidjan.png
+photo1: /assets/img/uploads/Metro urbain Abidjan.png
 ---
 

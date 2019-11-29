@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: Travaux PRO Cardinet
 title_eng: 'ENG: Travaux PRO Cardinet'

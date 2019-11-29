@@ -1,6 +1,6 @@
 ---
 layout: offre
-categories: etude
+categories: etudex
 favoris: false
 title: Etude d’axe LTV Paris Est – SA 2018
 title_eng: 'ENG: Etude d’axe LTV Paris Est – SA 2018'
