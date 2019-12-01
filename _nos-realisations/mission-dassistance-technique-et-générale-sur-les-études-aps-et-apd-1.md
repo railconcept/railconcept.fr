@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: mission
+layout: real
+type-real: mission
 favoris: false
 title: 'Mission d''assistance technique et générale sur les études APS et APD '
 title_eng: 'ENG: Mission d''assistance technique et générale sur les études APS et APD '

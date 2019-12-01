@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: etudex
+layout: real
+type-real: etudex
 favoris: false
 title: Analyse du block entre St-Fons et Tain-l’Hermitage
 title_eng: 'ENG: Analyse du block entre St-Fons et Tain-l’Hermitage'

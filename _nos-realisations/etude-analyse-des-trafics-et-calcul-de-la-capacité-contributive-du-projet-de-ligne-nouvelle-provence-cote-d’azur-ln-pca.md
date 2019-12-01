@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: etudex
+layout: real
+type-real: etudex
 favoris: false
 title: >-
   Analyse des trafics et calcul de la capacité contributive  du projet de Ligne

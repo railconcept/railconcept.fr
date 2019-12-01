@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: vente
+layout: real
+type-real: vente
 favoris: false
 title: Vente d’IngeTime au PRI de Lyon
 title_eng: 'ENG: Vente d’IngeTime au PRI de Lyon'

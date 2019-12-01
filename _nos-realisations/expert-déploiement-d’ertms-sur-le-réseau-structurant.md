@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: expert
+layout: real
+type-real: expert
 favoris: false
 title: Déploiement d’ERTMS sur le réseau structurant
 title_eng: 'ENG: Déploiement d’ERTMS sur le réseau structurant'

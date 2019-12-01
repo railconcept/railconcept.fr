@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: etudex
+layout: real
+type-real: etudex
 favoris: false
 title: Analyse globale des aménagements de robustesse dans l’étoile de Lyon
 title_eng: 'ENG: Analyse globale des aménagements de robustesse dans l’étoile de Lyon'

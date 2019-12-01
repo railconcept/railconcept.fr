@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: mission
+layout: real
+type-real: mission
 favoris: false
 title: Assistance à Maitrise d’Ouvrage – Temps de parcours TER
 title_eng: 'ENG:Assistance à Maitrise d’Ouvrage '

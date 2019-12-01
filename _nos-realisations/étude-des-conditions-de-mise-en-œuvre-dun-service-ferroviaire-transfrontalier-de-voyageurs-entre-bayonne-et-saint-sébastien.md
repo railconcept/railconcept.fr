@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: etudex
+layout: real
+type-real: etudex
 favoris: false
 title: >-
   Étude des conditions de mise en œuvre d'un service ferroviaire transfrontalier

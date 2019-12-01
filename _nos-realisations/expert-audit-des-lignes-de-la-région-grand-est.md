@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: expert
+layout: real
+type-real: expert
 favoris: false
 title: Audit des lignes de la région Grand Est
 title_eng: 'ENG: Audit des lignes de la région Grand Est'

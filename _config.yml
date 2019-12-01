@@ -25,4 +25,4 @@ collections:
     permalink: /newspost/:path/
   nos-realisations:
     output: true
-    permalink: /nos-realisations/:categories/:title
+    permalink: /nos-realisations/:path

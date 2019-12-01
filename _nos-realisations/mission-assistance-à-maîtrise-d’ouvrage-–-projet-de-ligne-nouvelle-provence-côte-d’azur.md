@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: mission
+layout: real
+type-real: mission
 favoris: false
 title: >-
   Assistance à Maîtrise d’Ouvrage – Projet de ligne nouvelle Provence Côte

@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: etudex
+layout: real
+type-real: etudex
 favoris: false
 title: Etude horaire de la ligne du Revermont
 title_eng: 'ENG: Etude horaire de la ligne du Revermont'

@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: etudex
+layout: real
+type-real: etudex
 favoris: false
 title: 'Etude préliminaire du raccordement de Saint Brès inversé '
 title_eng: 'ENG: Etude préliminaire du raccordement de Saint Brès inversé '

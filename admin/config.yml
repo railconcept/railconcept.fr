@@ -129,15 +129,15 @@ collections:
     folder: "_nos-realisations"
     sort: "date:desc" 
     create: true 
-    slug: "{{title | slugify}}"
+    slug: "{{slug}}"
     fields:
-    - {label: "Layout", name: "layout", widget: "hidden", default: "offre"} 
+    - {label: "Layout", name: "layout", widget: "hidden", default: "real"} 
     - label: "Type de Réalisation"
-      name: "categories"
+      name: "type-real"
       widget: "select"
       options:
        - { label: "MISSION AMO GRAND PROJET", value: "mission" }
-       - { label: "ÉTUDES", value: "etude" }
+       - { label: "ÉTUDES", value: "etudex" }
        - { label: "EXPERTISE/CONSEIL", value: "expert" }
        - { label: "VENTE LOGICIEL", value: "vente" }
     - {label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false ,required: false }

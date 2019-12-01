@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: vente
+layout: real
+type-real: vente
 favoris: false
 title: Vente d’IngeTime à EUROTUNNEL
 title_eng: 'ENG: Vente d’IngeTime à EUROTUNNEL'

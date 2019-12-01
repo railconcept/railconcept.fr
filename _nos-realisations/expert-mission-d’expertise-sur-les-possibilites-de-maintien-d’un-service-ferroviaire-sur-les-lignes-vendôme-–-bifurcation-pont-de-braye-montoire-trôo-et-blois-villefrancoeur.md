@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: expert
+layout: real
+type-real: expert
 favoris: false
 title: >-
   MISSION D’EXPERTISE SUR LES POSSIBILITES DE MAINTIEN D’UN SERVICE FERROVIAIRE

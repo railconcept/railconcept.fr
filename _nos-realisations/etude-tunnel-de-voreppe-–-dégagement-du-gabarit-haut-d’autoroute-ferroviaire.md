@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: etudex
+layout: real
+type-real: etudex
 favoris: false
 title: Tunnel de Voreppe – Dégagement du Gabarit Haut d’autoroute Ferroviaire
 title_eng: 'ENG: Tunnel de Voreppe – Dégagement du Gabarit Haut d’autoroute Ferroviaire'

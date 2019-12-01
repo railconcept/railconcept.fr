@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: etudex
+layout: real
+type-real: etudex
 favoris: false
 title: Fiabilisation de l’axe Nantes-Angers-Sablé
 title_eng: 'ENG: Fiabilisation de l’axe Nantes-Angers-Sablé'

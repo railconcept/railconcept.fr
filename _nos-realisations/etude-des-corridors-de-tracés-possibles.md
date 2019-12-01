@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: etudex
+layout: real
+type-real: etudex
 favoris: false
 title: 'Etude des corridors de tracés possibles '
 title_eng: 'ENG: Etude des corridors de tracés possibles '

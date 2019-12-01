@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: expert
+layout: real
+type-real: expert
 favoris: false
 title: LGV Bretagne Pays de Loire
 title_eng: 'ENG: LGV Bretagne Pays de Loire'

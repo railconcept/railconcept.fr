@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: etudex
+layout: real
+type-real: etudex
 favoris: false
 title: GPSO – Impact régularité
 title_eng: 'ENG: GPSO – Impact régularité'

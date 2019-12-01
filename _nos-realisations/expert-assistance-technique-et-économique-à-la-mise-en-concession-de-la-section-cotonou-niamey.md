@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: expert
+layout: real
+type-real: expert
 favoris: false
 title: >-
   Assistance technique et économique  à la mise en concession de la section

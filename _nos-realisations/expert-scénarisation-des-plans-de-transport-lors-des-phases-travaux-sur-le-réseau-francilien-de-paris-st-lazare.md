@@ -1,6 +1,6 @@
 ---
-layout: offre
-categories: expert
+layout: real
+type-real: expert
 favoris: false
 title: >-
   Scénarisation des plans de transport lors des phases travaux sur le réseau
