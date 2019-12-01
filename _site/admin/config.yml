@@ -39,7 +39,8 @@ collections:
      - {label: "TAG" , name: "title", widget: "string"}
      - {label: "TAG Eng" , name: "title_eng", widget: "string"}
      - {label: "Tag value", name: "name", widget: "hidden"}
-     
+
+   
   - label: "Actualités" 
     name: "post"
     folder: "_posts"
@@ -66,32 +67,6 @@ collections:
         - {label: "Photo 3", name: "photo_news3", widget: "image"}
     - {label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string"}   
 
-  - label: "News"
-    name: "newspost"
-    folder: "_newspost"
-    sort: "date:desc" 
-    create: true 
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-    - {label: "Layout", name: "layout", widget: "hidden", default: "eng-news"} 
-    - {label: "Titre actualité", name: "title", widget: "string"} 
-    - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
-    - label: "Actualité"
-      name: "news"
-      widget: "object" 
-      fields:
-        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "catnews",  searchFields: ["title_eng"],  valueField: "name",  displayFields: ["title_eng"] , multiple: true }
-        - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
-        - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
-    - label: "Actualité photo"
-      name: "news_photo"
-      widget: "object" 
-      fields:
-        - {label: "Photo 1", name: "photo_news1", widget: "image"}
-        - {label: "Photo 2", name: "photo_news2", widget: "image"}
-        - {label: "Photo 3", name: "photo_news3", widget: "image"}
-    - {label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string"}   
-
   - label: "Offre de travail"
     name: "odt"
     folder: "_odt"
@@ -103,7 +78,6 @@ collections:
     - {label: "Offre de travail Active", name: "active", widget: "boolean", default: true}
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
     - {label: "Poste proposée", name: "title", widget: "string"} 
-    - {label: "Poste proposée Eng", name: "title_eng", widget: "string"}
     - label: "Type de poste"
       name: "tdp"
       widget: "select"
@@ -112,17 +86,12 @@ collections:
        - { label: "CHARGÉ D'ÉTUDE", value: "cde" }
        - { label: "DÉVELOPPEUR LOGICIEL", value: "dl" }
     - {label: "Département", name: "dep", widget: "string"} 
-    - {label: "Département Eng", name: "dep_eng", widget: "string"} 
     - {label: "Type de contrat", name: "tdc", widget: "string"} 
-    - {label: "Type de contrat Eng", name: "tdc_eng", widget: "string"} 
     - {label: "Lieu de travail", name: "ldt", widget: "string"} 
-    - {label: "Lieu de travail Eng", name: "ldt_eng", widget: "string"} 
     - {label: "Entreprise", name: "entreprise", widget: "markdown"}
-    - {label: "Entreprise Eng", name: "entreprise_eng", widget: "markdown"}
     - {label: "Poste", name: "poste", widget: "markdown"}
-    - {label: "Poste Eng", name: "poste_eng", widget: "markdown"}
     - {label: "Profil", name: "profil", widget: "markdown"}
-    - {label: "Profil Eng", name: "profil_eng", widget: "markdown"}
+
   
   - label: "Réalisations"
     name: "nos-realisations"
@@ -142,26 +111,16 @@ collections:
        - { label: "VENTE LOGICIEL", value: "vente" }
     - {label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false ,required: false }
     - {label: "Titre", name: "title", widget: "string"} 
-    - {label: "Titre Eng", name: "title_eng", widget: "string"} 
     - {label: "Donneur d’ordre", name: "donneur_ordre", widget: "string"}
-    - {label: "Donneur d’ordre Eng", name: "donneur_ordre_eng", widget: "string"}
     - {label: "Durée", name: "duree", widget: "string"}
-    - {label: "Durée Eng", name: "duree_eng", widget: "string"}  
     - {label: "Année Réalisation", name: "annee_real", widget: "string"} 
-    - {label: "Année Réalisation ENG", name: "annee_real_eng", widget: "string"}   
     - {label: "Région", name: "region", widget: "string"}  
-    - {label: "Région ENG", name: "region_eng", widget: "string"} 
     - {label: "Pays", name: "pays", widget: "string"} 
-    - {label: "Pays ENG", name: "pays_eng", widget: "string"} 
     - {label: "Latitude ", name: "lat", widget: "string"}   
     - {label: "Longitude", name: "long", widget: "string"} 
     - {label: "Text 1", name: "text1", widget: "markdown"} 
-    - {label: "Text 1 Eng", name: "text1_eng", widget: "markdown"} 
     - {label: "Contexte", name: "context", widget: "markdown"} 
-    - {label: "Contexte Eng", name: "context_eng", widget: "markdown"} 
     - {label: "Réalisation", name: "real", widget: "markdown"} 
-    - {label: "Réalisation Eng", name: "real_eng", widget: "markdown"} 
     - {label: "Résultats", name: "resultats", widget: "markdown"} 
-    - {label: "Résultats Eng", name: "resultats_eng", widget: "markdown"} 
     - {label: "Photo 1", name: "photo1", widget: "image"}
     - {label: "Photo 2", name: "photo2", widget: "image" , required: false}
