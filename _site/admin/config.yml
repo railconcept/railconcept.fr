@@ -141,22 +141,27 @@ collections:
        - { label: "EXPERTISE/CONSEIL", value: "expert" }
        - { label: "VENTE LOGICIEL", value: "vente" }
     - {label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false ,required: false }
-    - {label: "Titre 1", name: "title", widget: "string"} 
-    - {label: "Titre 1 Eng", name: "title_eng", widget: "string"} 
+    - {label: "Titre", name: "title", widget: "string"} 
+    - {label: "Titre Eng", name: "title_eng", widget: "string"} 
     - {label: "Donneur d’ordre", name: "donneur_ordre", widget: "string"}
     - {label: "Donneur d’ordre Eng", name: "donneur_ordre_eng", widget: "string"}
     - {label: "Durée", name: "duree", widget: "string"}
     - {label: "Durée Eng", name: "duree_eng", widget: "string"}  
-    - {label: "Année Réalisation", name: "annee_real", widget: "string"}  
+    - {label: "Année Réalisation", name: "annee_real", widget: "string"} 
+    - {label: "Année Réalisation ENG", name: "annee_real_eng", widget: "string"}   
     - {label: "Région", name: "region", widget: "string"}  
     - {label: "Région ENG", name: "region_eng", widget: "string"} 
     - {label: "Pays", name: "pays", widget: "string"} 
     - {label: "Pays ENG", name: "pays_eng", widget: "string"} 
     - {label: "Latitude ", name: "lat", widget: "string"}   
     - {label: "Longitude", name: "long", widget: "string"} 
-    - {label: "Contexte et Objectifs", name: "context", widget: "markdown"} 
-    - {label: "Contexte et Objectifs Eng", name: "context_eng", widget: "markdown"} 
+    - {label: "Text 1", name: "text1", widget: "markdown"} 
+    - {label: "Text 1 Eng", name: "text1_eng", widget: "markdown"} 
+    - {label: "Contexte", name: "context", widget: "markdown"} 
+    - {label: "Contexte Eng", name: "context_eng", widget: "markdown"} 
     - {label: "Réalisation", name: "real", widget: "markdown"} 
     - {label: "Réalisation Eng", name: "real_eng", widget: "markdown"} 
+    - {label: "Résultats", name: "resultats", widget: "markdown"} 
+    - {label: "Résultats Eng", name: "resultats_eng", widget: "markdown"} 
     - {label: "Photo 1", name: "photo1", widget: "image"}
     - {label: "Photo 2", name: "photo2", widget: "image" , required: false}
