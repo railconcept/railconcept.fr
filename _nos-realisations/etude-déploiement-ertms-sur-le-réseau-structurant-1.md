@@ -4,19 +4,32 @@ type-real: etudex
 favoris: false
 title: Déploiement ERTMS sur le réseau structurant
 title_eng: 'ENG: Déploiement ERTMS sur le réseau structurant'
-title2: Analyse socio-économique de l'équipement en ETCS1 de l'axe Longuyon-Bâle
-title2_eng: 'ENG: Analyse socio-économique de l''équipement en ETCS1 de l''axe Longuyon-Bâle'
 donneur_ordre: SNCF RESEAU
 donneur_ordre_eng: 'ENG: SNCF RESEAU'
 duree: 1 mois
 duree_eng: 'ENG: 1 mois'
 annee_real: '2015'
+annee_real_eng: '2015'
 region: ' LONGUYON-BÂLE  '
 region_eng: 'ENG: LONGUYON-BÂLE  '
 pays: ' FRANCE'
 pays_eng: 'ENG:  FRANCE'
 lat: '48.580981'
 long: '7.606553'
+text1: >-
+  Efficiently network cross-media applications without an expanded array of
+  innovation. Conveniently drive cutting-edge solutions without front-end
+  scenarios. Synergistically disintermediate sticky catalysts for change whereas
+  customized architectures. Appropriately leverage other's multidisciplinary
+  action items rather than error-free channels. Continually build plug-and-play
+  benefits with user-centric web services.
+text1_eng: >-
+  Efficiently network cross-media applications without an expanded array of
+  innovation. Conveniently drive cutting-edge solutions without front-end
+  scenarios. Synergistically disintermediate sticky catalysts for change whereas
+  customized architectures. Appropriately leverage other's multidisciplinary
+  action items rather than error-free channels. Continually build plug-and-play
+  benefits with user-centric web services.
 context: >-
   La section Longuyon - Bâle constitue la section clef, en France, du corridor
   multimodal européen n°2. Ce dernier permet de relier les ports de Rotterdam et
@@ -51,6 +64,20 @@ real_eng: >-
   demande fret international, les bilans économiques du déploiement d’une
   nouvelle infrastructure de signalisation et la valorisation socio-économique
   d’un système de signalisation.
+resultats: >-
+  Efficiently network cross-media applications without an expanded array of
+  innovation. Conveniently drive cutting-edge solutions without front-end
+  scenarios. Synergistically disintermediate sticky catalysts for change whereas
+  customized architectures. Appropriately leverage other's multidisciplinary
+  action items rather than error-free channels. Continually build plug-and-play
+  benefits with user-centric web services.
+resultats_eng: >-
+  Efficiently network cross-media applications without an expanded array of
+  innovation. Conveniently drive cutting-edge solutions without front-end
+  scenarios. Synergistically disintermediate sticky catalysts for change whereas
+  customized architectures. Appropriately leverage other's multidisciplinary
+  action items rather than error-free channels. Continually build plug-and-play
+  benefits with user-centric web services.
 photo1: /assets/img/uploads/Longuyou-Bale.png
 ---
 
