@@ -4,19 +4,32 @@ type-real: etudex
 favoris: false
 title: Déploiement ERTMS sur le réseau structurant
 title_eng: 'ENG: Déploiement ERTMS sur le réseau structurant'
-title2: Analyse de Marseille - Vintimille
-title2_eng: 'ENG: Analyse de Marseille - Vintimille'
 donneur_ordre: SNCF RESEAU
 donneur_ordre_eng: 'ENG: SNCF RESEAU'
 duree: 3 mois
 duree_eng: 'ENG: 3 mois'
 annee_real: '2014'
+annee_real_eng: '2014'
 region: 'MARSEILLE - VINTIMILLE '
 region_eng: 'ENG: MARSEILLE - VINTIMILLE '
 pays: ' FRANCE '
 pays_eng: 'ENG: FRANCE '
 lat: ' 43.559284'
 long: '7.013866'
+text1: >-
+  Globally impact emerging methodologies with just in time technology.
+  Progressively formulate global e-services rather than distributed services.
+  Dynamically build process-centric opportunities via best-of-breed products.
+  Quickly architect virtual human capital without market positioning "outside
+  the box" thinking. Phosfluorescently maximize fully tested e-markets after
+  sticky markets.
+text1_eng: >-
+  Globally impact emerging methodologies with just in time technology.
+  Progressively formulate global e-services rather than distributed services.
+  Dynamically build process-centric opportunities via best-of-breed products.
+  Quickly architect virtual human capital without market positioning "outside
+  the box" thinking. Phosfluorescently maximize fully tested e-markets after
+  sticky markets.
 context: >-
   L’objectif du déploiement d’ERTMS niveau 2 sur l’axe Marseille – Vintimille
   est d’augmenter la capacité de l’axe et d’améliorer la robustesse de
@@ -47,6 +60,20 @@ real_eng: >-
   afin de mesurer l’impact sur le système, l’évaluation du coût d’équipement
   pour le gestionnaire d’infrastructure et les entreprises ferroviaires et les
   bilans économiques et socio-économiques pour le système.
+resultats: >-
+  Globally impact emerging methodologies with just in time technology.
+  Progressively formulate global e-services rather than distributed services.
+  Dynamically build process-centric opportunities via best-of-breed products.
+  Quickly architect virtual human capital without market positioning "outside
+  the box" thinking. Phosfluorescently maximize fully tested e-markets after
+  sticky markets.
+resultats_eng: >-
+  Globally impact emerging methodologies with just in time technology.
+  Progressively formulate global e-services rather than distributed services.
+  Dynamically build process-centric opportunities via best-of-breed products.
+  Quickly architect virtual human capital without market positioning "outside
+  the box" thinking. Phosfluorescently maximize fully tested e-markets after
+  sticky markets.
 photo1: /assets/img/uploads/Marseille-Vintimille.png
 ---
 
