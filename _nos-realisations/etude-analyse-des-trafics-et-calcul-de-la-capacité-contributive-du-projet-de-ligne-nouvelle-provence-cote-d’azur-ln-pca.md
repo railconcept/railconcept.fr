@@ -8,19 +8,32 @@ title: >-
 title_eng: >-
   ENG: Analyse des trafics et calcul de la capacité contributive  du projet de
   Ligne Nouvelle Provence Cote d’Azur (LN PCA)
-title2: ' '
-title2_eng: ' '
 donneur_ordre: SNCF RESEAU
 donneur_ordre_eng: 'ENG: SNCF RESEAU'
 duree: 12 mois
 duree_eng: 'ENG: 12 mois'
 annee_real: '2015'
+annee_real_eng: '2015'
 region: 'COTE D’AZUR  '
 region_eng: 'ENG: COTE D’AZUR  '
 pays: FRANCE
 pays_eng: 'ENG: FRANCE'
 lat: '43.704081'
 long: '7.260318'
+text1: >-
+  Authoritatively recaptiualize 24/365 ideas without accurate supply chains.
+  Efficiently redefine global "outside the box" thinking via cutting-edge
+  products. Professionally syndicate innovative opportunities rather than cost
+  effective outsourcing. Completely recaptiualize 24/365 e-services whereas
+  timely infomediaries. Distinctively revolutionize client-centric innovation
+  with top-line vortals.
+text1_eng: >-
+  Authoritatively recaptiualize 24/365 ideas without accurate supply chains.
+  Efficiently redefine global "outside the box" thinking via cutting-edge
+  products. Professionally syndicate innovative opportunities rather than cost
+  effective outsourcing. Completely recaptiualize 24/365 e-services whereas
+  timely infomediaries. Distinctively revolutionize client-centric innovation
+  with top-line vortals.
 context: >-
   Suite à la première phase d’étude du projet anciennement appelé « LGV PACA »,
   il a été retenu le principe d’un phasage du projet de ligne nouvelle PCA en
@@ -54,6 +67,20 @@ real_eng: >-
   schémas d’offres TER et TaGV, le calcul de la capacité contributive, la
   détermination du niveau de redevance sur le projet et la détermination de la
   capacité de financement du gestionnaire d’infrastructure.
+resultats: >-
+  Authoritatively recaptiualize 24/365 ideas without accurate supply chains.
+  Efficiently redefine global "outside the box" thinking via cutting-edge
+  products. Professionally syndicate innovative opportunities rather than cost
+  effective outsourcing. Completely recaptiualize 24/365 e-services whereas
+  timely infomediaries. Distinctively revolutionize client-centric innovation
+  with top-line vortals.
+resultats_eng: >-
+  Authoritatively recaptiualize 24/365 ideas without accurate supply chains.
+  Efficiently redefine global "outside the box" thinking via cutting-edge
+  products. Professionally syndicate innovative opportunities rather than cost
+  effective outsourcing. Completely recaptiualize 24/365 e-services whereas
+  timely infomediaries. Distinctively revolutionize client-centric innovation
+  with top-line vortals.
 photo1: /assets/img/uploads/LNPCA.png
 ---
 
