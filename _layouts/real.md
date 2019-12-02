@@ -178,7 +178,7 @@ layout: realisation
                             </div>
 
                      {% if page.photo2  != "" %}
-                             <div class="carousel-item slider-item slider-item active carousel-item-left" style="background-image: url(' {{page.photo2  | prepend: site.baseurl }}');    height:400px; ">
+                             <div class="carousel-item slider-item slider-item carousel-item-left" style="background-image: url(' {{page.photo2  | prepend: site.baseurl }}');    height:400px; ">
                                 <!-- image ici --->
 
                                 <a href=" {{page.photo2 | prepend: site.baseurl }}" class="zoomx">
