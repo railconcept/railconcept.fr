@@ -177,17 +177,6 @@ layout: realisation
                                 </a>
                             </div>
 
-                     {% if page.photo2  != "" %}
-                             <div class="carousel-item slider-item slider-item carousel-item-left" style="background-image: url(' {{page.photo2  | prepend: site.baseurl }}');    height:400px; ">
-                                <!-- image ici --->
-
-                                <a href=" {{page.photo2 | prepend: site.baseurl }}" class="zoomx">
-                                    <!--meme image ici --->
-                                    <img src="../assets/img/page-nos-metiers/zoom.png" class="zoom">
-                                </a>
-                            </div>
-
-                    {% endif %}
 
                             <!-- Slide two -->
                             <div class="carousel-item slider-item slider-item carousel-item-next carousel-item-left" style="background-image: url('../assets/img/logo/large_logo.png');  height:400px;">
