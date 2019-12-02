@@ -177,7 +177,7 @@ layout: realisation
                                 </a>
                             </div>
 
-                     {% if page.photo2  != '' %}
+                     {% if page.photo2  != "" %}
                              <div class="carousel-item slider-item slider-item active carousel-item-left" style="background-image: url(' {{page.photo2  | prepend: site.baseurl }}');    height:400px; ">
                                 <!-- image ici --->
 
