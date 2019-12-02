@@ -109,8 +109,8 @@ collections:
        - { label: "ÉTUDES", value: "etudex" }
        - { label: "EXPERTISE/CONSEIL", value: "expert" }
        - { label: "VENTE LOGICIEL", value: "vente" }
-    - {label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false ,required: false }
-    - {label: "Titre", name: "title", widget: "string" required: false} 
+    - {label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false  }
+    - {label: "Titre", name: "title", widget: "string" , required: false} 
     - {label: "Donneur d’ordre", name: "donneur_ordre", widget: "string" ,required: false}
     - {label: "Durée", name: "duree", widget: "string" required: false}
     - {label: "Année Réalisation", name: "annee_real", widget: "string" ,required: false} 
