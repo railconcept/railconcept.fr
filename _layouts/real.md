@@ -25,7 +25,20 @@ layout: realisation
         <div class="container">
             <div class="col-md-12">
                 <div class="title-section"  data-aos="fade-up" data-aos-delay="400">
-                    Assistance à Maîtrise d’Ouvrage
+                {% if page.type-real == "mission" %}
+                 MISSION AMO GRAND PROJET
+                 {% endif %}
+                 {% if page.type-real == "etudex" %}
+                  ÉTUDES
+                 {% endif %}
+                 {% if page.type-real == "expert" %}
+                  EXPERTISE/CONSEIL
+                  {% endif %}
+                  {% if page.type-real == "vente" %}
+                   VENTE LOGICIEL
+                 {% endif %}
+
+              
                     
                 </div>
                 <div class="title-section-sub mb-2"  data-aos="fade-up" data-aos-delay="400">{{page.title}}</div>
