@@ -13,7 +13,7 @@ layout: realisation
             <ol class="breadcrumb size-bread">
                 <li class="breadcrumb-item "><a href="" class="item-1">Accueil</a></li>
                 <li class="breadcrumb-item "><i class="fa fa-angle-double-right "></i></li>
-                <li class="breadcrumb-item active"><a href="{{ site.baseurl }}/nos-realisations" class="item-1">Nos réalisations</a>
+                <li class="breadcrumb-item active"><a href="{{ site.baseurl }}/realisations" class="item-1">Nos réalisations</a>
                 </li>
             </ol>
 
