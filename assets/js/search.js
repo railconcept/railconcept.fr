@@ -27,7 +27,7 @@
 
 
       if(item.type == "page"){
-        appendString += '<li class="mt-5"><a href="' + item.url + '"> <div class="title-actualites m-0">' + item.title + '</div></a>'
+        appendString += '<li class="mt-5 pt-3"><a href="' + item.url + '"> <div class="title-actualites m-0">' + item.title + '</div></a>'
            +'<div class="paragraphe-actualites  justify p-0" markdown="1">'
              +'<p>'  + item.content.replace(/\s+/g, ' ').substring(0,150)+ '...</p></div></li>' ; 
       }
@@ -36,8 +36,21 @@
       if(item.type == "jobs"){
 
       
-          appendString += '<li class="mt-5"><a href="/carrieres"> <div class="title-actualites m-0">LES POSTES À POUVOIR</div></a>'
-          +' <div id="poste_selected">'+item.title+ " - " +item.departement+'</div>'
+          appendString += '<li class="mt-5 pt-3"><a href="/carrieres"> <div class="title-actualites m-0">LES POSTES À POUVOIR</div></a>'
+          +' <div id="poste_selected" class="mt-3 ">'+item.title+ " - " +item.dep+'</div>'
+          +'<div id="poste_contrat" class="paragraphe-news m-0">'+item.tdc+ " - " +item.ldt+'</div>'
+          +'<div id="entreprise" class="paragraphe-news ">' + item.content.replace(/\s+/g, ' ').substring(0,350)+ '...</div>' ;
+
+        
+        }
+        if(item.type == "réalisations"){
+         if(item.dep == 'mission'){item.dep = "MISSION AMO GRAND PROJET"}
+         if(item.dep == 'etudex'){item.dep = "ÉTUDES"}
+         if(item.dep == 'expert'){item.dep = "EXPERTISE/CONSEIL"}
+         if(item.dep == 'vente'){item.dep = "VENTE LOGICIEL"}
+      
+          appendString += '<li class="mt-5"><a href="' + item.url + '"> <div class="title-actualites m-0">NOS RÉALISATIONS</div></a>'
+          +' <div id="poste_selected" class="mt-3 ">'+item.dep+ " - " +item.title+'</div>'
           +'<div id="poste_contrat" class="paragraphe-news m-0">'+item.tdc+ " - " +item.ldt+'</div>'
           +'<div id="entreprise" class="paragraphe-news ">' + item.content.replace(/\s+/g, ' ').substring(0,350)+ '...</div>' ;
 

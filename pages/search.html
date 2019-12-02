@@ -9,6 +9,7 @@ permalink: /search
 
     <div class="container"> 
     <div class="title-news  title-section" data-aos="zoom-in-up">Résultats :</div> 
+
     <div class="row">
 
       <div class="col-12 pl-0 ml-w-0 ">
@@ -96,10 +97,29 @@ permalink: /search
               "tdc": "{{ offre.tdc | xml_escape}}",
               "ldt": "{{ offre.ldt | xml_escape}}",
               "content": {{ offre.poste | apppend: offre.entreprise | append: offre.profile | strip_html | strip_newlines | jsonify }},
-              "url": "{{ post.url | xml_escape }}"
+              "url": "{{ offre.url | xml_escape }}"
             }
             {% unless forloop.last %},{% endunless %}
             {% endif %}
+          {% endfor %}
+
+
+          {% for offre in site.nos-realisations %}
+              
+        
+                "{{ offre.url | slugify }}":{
+              "type" : "réalisations",
+              "title": "{{ offre.title | xml_escape }}",
+              "date": "{{ offre.annee_real | xml_escape }}",
+              "tag": "{{ 'null' | xml_escape}}",
+              "dep": "{{ offre.type-real | xml_escape}}",
+              "tdc": "{{ offre.donneur_ordre | xml_escape}}",
+              "ldt": "{{ offre.pays | xml_escape}}",
+              "content": {{ offre.text1 | apppend: offre.context | append: offre.real | append: offre.resultats | strip_html | strip_newlines | jsonify }},
+              "url": "{{ offre.url | xml_escape }}"
+            }
+            {% unless forloop.last %},{% endunless %}
+           
           {% endfor %}
 
             };
