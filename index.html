@@ -194,34 +194,56 @@ permalink: /
         <div class="row ">
             <div class=" title-news  title-section" data-aos="fade-up">nos réalisations</div>
             <div class="row text-center ">
-                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center mt-5"   data-aos="fade-up"        data-aos-offset="0" >
-                    <a href="#"><img src="assets/img/page-realisations/real1.png" class="img-fluid "></a>
-                    <div class="title-realisation mt-5 contenu-competence">STIF - Mission de maîtrise d'oeuvre Générale:
-                        OPERATION TANGENT
-                        (<span class="colored">TGO</span> )
+
+                    {% assign maxPost = 3 %}
+                    {% assign counterx = 0 %}
+                    {% for post in site.nos-realisations %}
+
+
+                    {% if post.type-real == "mission" %}
+                    {% assign type = "MISSION AMO GRAND PROJET" %} 
+                    {% endif %}
+                    {% if post.type-real == "etudex" %}
+                    {% assign type = "ÉTUDES" %} 
+                     
+                    {% endif %}
+                    {% if post.type-real == "expert" %}
+                    {% assign type = "EXPERTISE/CONSEIL" %} 
+                     
+                    {% endif %}
+                    {% if post.type-real == "vente" %}
+                    {% assign type = "VENTE LOGICIEL" %} 
+                      
+                    {% endif %}
+
+
+                    {% if post.favoris == true %}
+
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 text-center mt-5"   data-aos="fade-up"        data-aos-offset="0" >
+                    <a href="{{ post.url | prepend: site.baseurl }}"><img src="{{post.photo1 | prepend: site.baseurl }}" class="img-fluid real_img "></a>
+                    <div class="title-realisation mt-5 contenu-competence">{{post.donneur_ordre}} - {{type}} : {{ post.title}}
+                       
+                      
                     </div>
-                    <div class="sous-title">Yvelines (France)</div>
+                    <div class="sous-title">{{ post.region}} ({{ post.country}})</div>
                 </div>
-                <div class="col-xl-4 col-lg-4 col-md-4  col-sm-12 col-12 text-center mt-5" data-aos="fade-up"   data-aos-delay="300"     data-aos-offset="0">
-                    <a href="#"><img src="assets/img/page-realisations/real2.png" class="img-fluid"></a>
-                    <div class="title-realisation mt-5 contenu-competence">SNCF RESEAU - Etude d'exploitation, de
-                        robustesse et de capacité en
-                        phase
-                        EP et AVP :
-                        <span class="colored">Gare de Lyon Part-Dieu</span>
-                    </div>
-                    <div class="sous-title"> lyon (France)</div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4  col-sm-12 col-12 text-center mt-5" data-aos="fade-up"    data-aos-delay="600"    data-aos-offset="0">
-                    <a href="#"><img src="assets/img/page-realisations/real3.png" class="img-fluid "></a>
-                    <div class="title-realisation mt-5 contenu-competence">SNCF RESEAU - Etude de trafic et capacité
-                        <span class="colored">contributive du Projet GPSO</span>
-                    </div>
-                    <div class="sous-title">aquitaine (France)</div>
-                </div>
+
+                {% assign counterx = counterx | plus: 1 %}
+
+
+                {% endif %}
+
+
+                {% if counterx == maxPost %}
+                {% break %} {% comment %}exit the for loop{% endcomment %}
+                {% endif %}
+                {% endfor %}
+                
+
+
             </div>
             <div class="text-right read-all-realisation read-all-news ml-auto mr-3" data-aos="fade-right"    data-aos-delay="600">
-                <a href="realisation" class="voirplus"> voir toutes nos réalisations
+                <a href="{{ post.url | prepend: site.baseurl }}" class="voirplus"> voir toutes nos réalisations
                     <img class="read-more-arrow" src="assets/img/arrows/arrow.png">
                 </a>
             </div>
