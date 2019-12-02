@@ -121,7 +121,8 @@ collections:
     - {label: "Longitude", name: "long", widget: "string"} 
     - {label: "Text 1", name: "text1", widget: "markdown"} 
     - {label: "Contexte", name: "context", widget: "markdown"} 
-    - {label: "Réalisation", name: "real", widget: "markdown"} 
+    - {label: "Adresse préstation", name: "add_prest", widget: "markdown"} 
+    - {label: "Prestation realisée", name: "real", widget: "markdown"} 
     - {label: "Résultats", name: "resultats", widget: "markdown"} 
     - {label: "Photo 1", name: "photo1", widget: "image"}
     - {label: "Photo 2", name: "photo2", widget: "image" , required: false}

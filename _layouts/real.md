@@ -138,9 +138,7 @@ layout: realisation
 
                         <br>
                         <div class="mt-3">
-                            <img class="mr-3" src="../assets/img/page-nos-metiers/loc-white.png">2 Allée de la Tramontane 30133 Les Angles
-                            <!--laisser comme ca contenu manquant -->
-                        </div>
+                            <img class="mr-3" src="../assets/img/page-nos-metiers/loc-white.png">{{page.add_prest}} </div>
                     </div>
 
                 </div>
