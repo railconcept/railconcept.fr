@@ -74,7 +74,7 @@ layout: realisation
 
 
 
-                        <div class=" mt-3 pt-3  pb-5 ">
+                        <div class=" mt-3 pt-3  pb-5 " markdown="1">
                             {{page.text1}}
 
                         </div>
@@ -102,7 +102,7 @@ layout: realisation
                         <div class="title-section">
                             Contexte
                         </div>
-                        <div class="paragraphe-etudes mt-5">
+                        <div class="paragraphe-etudes mt-5" markdown="1">
                             {{page.context}}
                         </div>
                     </div>
@@ -129,7 +129,7 @@ layout: realisation
                     <div class="title-card-etude pl-0">
                         prestation réalisée
                     </div>
-                    <div class="liste-card-etude para-white  p-0">
+                    <div class="liste-card-etude para-white  p-0" markdown="1">
                         <!-- Réalisation -->
 
 
@@ -146,7 +146,7 @@ layout: realisation
         </div>
     </div>
 
-    <div class="container-fluid-etude  pt-5 pb-5 mt-5 mb-5">
+    <div class="container-fluid-etude  pt-5 pb-5 mt-5 mb-5" >
         <div class="row">
 
             <div class="col-lg-6 col-md-12 col-sm-12  pb-3 pr-0 etude-container-left"  data-aos="fade-right" data-aos-delay="">
@@ -154,7 +154,7 @@ layout: realisation
                     <div class="title-card-etude pl-0">
                         Résultats
                     </div>
-                    <div class="liste-card-etude para-white  p-0">
+                    <div class="liste-card-etude para-white  p-0" markdown="1">
                        {{page.resultats}}
                     </div>
 
