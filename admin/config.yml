@@ -100,7 +100,7 @@ collections:
     create: true 
     slug: "{{slug}}"
     fields:
-    - {label: "Layout", name: "layout", widget: "hidden", default: "real"} 
+    - {label: "Layout", name: "layout", widget: "hidden", default: "real" } 
     - label: "Type de Réalisation"
       name: "type-real"
       widget: "select"
@@ -110,19 +110,19 @@ collections:
        - { label: "EXPERTISE/CONSEIL", value: "expert" }
        - { label: "VENTE LOGICIEL", value: "vente" }
     - {label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false ,required: false }
-    - {label: "Titre", name: "title", widget: "string"} 
-    - {label: "Donneur d’ordre", name: "donneur_ordre", widget: "string"}
-    - {label: "Durée", name: "duree", widget: "string"}
-    - {label: "Année Réalisation", name: "annee_real", widget: "string"} 
-    - {label: "contact", name: "contact", widget: "string"} 
-    - {label: "Région", name: "region", widget: "string"}  
-    - {label: "Pays", name: "pays", widget: "string"} 
-    - {label: "Latitude ", name: "lat", widget: "string"}   
-    - {label: "Longitude", name: "long", widget: "string"} 
-    - {label: "Text 1", name: "text1", widget: "markdown"} 
-    - {label: "Contexte", name: "context", widget: "markdown"} 
-    - {label: "Adresse préstation", name: "add_prest", widget: "markdown"} 
-    - {label: "Prestation realisée", name: "real", widget: "markdown"} 
-    - {label: "Résultats", name: "resultats", widget: "markdown"} 
-    - {label: "Photo 1", name: "photo1", widget: "image"}
+    - {label: "Titre", name: "title", widget: "string" required: false} 
+    - {label: "Donneur d’ordre", name: "donneur_ordre", widget: "string" ,required: false}
+    - {label: "Durée", name: "duree", widget: "string" required: false}
+    - {label: "Année Réalisation", name: "annee_real", widget: "string" ,required: false} 
+    - {label: "contact", name: "contact", widget: "string" ,required: false} 
+    - {label: "Région", name: "region", widget: "string" ,required: false}  
+    - {label: "Pays", name: "pays", widget: "string" ,required: false} 
+    - {label: "Latitude ", name: "lat", widget: "string" ,required: false}   
+    - {label: "Longitude", name: "long", widget: "string", required: false} 
+    - {label: "Text 1", name: "text1", widget: "markdown" ,required: false} 
+    - {label: "Contexte", name: "context", widget: "markdown" ,required: false} 
+    - {label: "Adresse préstation", name: "add_prest", widget: "markdown" ,required: false} 
+    - {label: "Prestation realisée", name: "real", widget: "markdown", required: false} 
+    - {label: "Résultats", name: "resultats", widget: "markdown" ,required: false} 
+    - {label: "Photo 1", name: "photo1", widget: "image" , required: false}
     - {label: "Photo 2", name: "photo2", widget: "image" , required: false}
