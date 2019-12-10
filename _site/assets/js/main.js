@@ -91,7 +91,7 @@ $(window).on('resize', function () {
         $('.etude-container-right').css('padding-right', 0);
         $('.etude-container-left').css('padding-left', 0);
         $('.etude-container-right').css('margin-left', 0);
-        $('.etude-container-right').css('margin-top', -60);
+        $('.etude-container-right').css('margin-top', 0);
         $('.etude-container-left').css('right', 0);
         $('.loope-etude').css('margin-left', 0);
     } else {

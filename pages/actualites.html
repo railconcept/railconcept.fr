@@ -85,7 +85,7 @@ permalink: /actualites
                       <div class="card card-border-none">
                         <div class="act-tag">
                            
-                            <img src="{{post.news_photo.photo_news1 | prepend: site.baseurl }}" class="img-100 objectfit">
+                            <img src="{{post.news_photo.photo_news1 | prepend: site.baseurl }}" class="img-100 objectfit" alt="{{ post.title }} ">
                         </div>
                         <div class="card-body pl-0 pr-0">
                             <div class="title-realisation mt-3 mb-3 lowercase">  {{ post.news.news_1 | strip_html | truncatewords: 25 }}    </div>

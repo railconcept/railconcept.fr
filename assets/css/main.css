@@ -77,7 +77,8 @@
     .real_img {
 
         width: 100%;
-        height: 300px;
+        height: 250px;
+        object-fit: cover;
     }
 
     .software_title {
@@ -906,10 +907,18 @@
         line-height: 18px;
         text-align: left;
         text-transform: uppercase;
-        font-family: "Barlow Semi Condensed", sans-serif;
-        color: rgb(140, 140, 140);
+        font-family: "Barlow Semi Condensed", sans-serif !important;
+        color: rgb(140, 140, 140) !important;
     }
-
+    .title-realisation > a {
+        font-size: 18px;
+        font-weight: 900;
+        line-height: 18px;
+        text-align: left;
+        text-transform: uppercase;
+        font-family: "Barlow Semi Condensed", sans-serif !important;
+        color: rgb(140, 140, 140) !important;
+    }
     .colored {
         color: #a52c43;
     }
@@ -1232,10 +1241,7 @@
         position: absolute;
     }
 
-    div.read-all-realisation>a>img {
-        width: 60px;
-        height: 100%;
-    }
+
 
     .title-act-contact {
         height: 120px;
@@ -1776,19 +1782,24 @@
         font-family: "Open Sans", sans-serif;
     }
 
-    .etude-container-right {
-        padding-right: 70px;
-        margin-left: auto;
-        margin-top: auto;
-        align-self: end;
-        margin-bottom: -4%;
-    }
+
 
     .loope-etude {
         z-index: 10;
         position: absolute;
         transform: translateY(-100%);
         right: 0;
+    }
+
+
+    .etude-container-right {
+        margin-left: -50px !important;
+        padding-right: 70px;
+        margin-right: auto;
+        margin-top: auto;
+        align-self: end;
+        margin-bottom: -4%;
+        z-index: 10;
     }
 
 
@@ -2415,7 +2426,9 @@
 
             left: 0 !important;
         }
-
+        .etude-container-right {
+            margin-left: 0 !important;
+        }
         .mission-slider .carousel-control-next {
             left: 60px !important;
         }
@@ -2728,7 +2741,7 @@
             margin-right: 30px;
             position: relative;
         }
-
+     
         .container-nav-etude #pills-tab .nav-item:not(:last-child)::after {
             content: '';
             position: absolute;
@@ -2795,7 +2808,9 @@
 
             left: 0 !important;
         }
-
+        .etude-container-right {
+            margin-left: 0 !important;
+        }
         .mission-slider .carousel-control-next {
             left: 60px !important;
         }
@@ -3180,7 +3195,9 @@
     /* Extra small devices (portrait phones, less than 576px)*/
     @media (max-width: 575px) {
         
-        
+        .etude-container-right {
+            margin-left: 0 !important;
+        } 
         .mission-slider .carousel-control-prev {
 
             left: 0 !important;
