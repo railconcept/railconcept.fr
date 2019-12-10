@@ -89,6 +89,13 @@
 
     }
 
+    .disp_in {
+        display: inline;
+    }
+    .pl-17{
+
+        padding-left: 17px;
+    }
     .software_img {
         margin-top: 50px;
         width: 300px;
@@ -112,17 +119,21 @@
         flex: 0 0 20%;
         max-width: 20%;
     }
-    .brain{
-        width:50px ;
+
+    .brain {
+        width: 50px;
     }
-    .nos_metiers{
+
+    .nos_metiers {
 
         background-image: url(../img/page-nos-metiers/metiers.png) !important;
     }
-    .valeur_ent{
+
+    .valeur_ent {
         font-weight: 900;
-    
+
     }
+
     .partager {
         height: 20px;
         margin-right: 5px;
@@ -319,6 +330,19 @@
     #logo {
         height: 100%;
     }
+    .link-navbarx {
+        text-transform: uppercase;
+        font-family: 'Barlow Semi Condensed';
+        font-size: 18px;
+        font-weight: 800;
+        color: #9d9e9f !important;
+        
+    }
+
+    .link-navbarx:hover {
+        color: #942626 !important;
+    }
+
 
     .link-navbar {
         text-transform: uppercase;
@@ -910,7 +934,8 @@
         font-family: "Barlow Semi Condensed", sans-serif !important;
         color: rgb(140, 140, 140) !important;
     }
-    .title-realisation > a {
+
+    .title-realisation>a {
         font-size: 18px;
         font-weight: 900;
         line-height: 18px;
@@ -919,6 +944,7 @@
         font-family: "Barlow Semi Condensed", sans-serif !important;
         color: rgb(140, 140, 140) !important;
     }
+
     .colored {
         color: #a52c43;
     }
@@ -1155,8 +1181,8 @@
 
     }
 
-  .savoir{
-    
+    .savoir {
+
         font-size: 17px;
         font-family: 'Barlow Semi Condensed', sans-serif;
         color: #942626;
@@ -1165,19 +1191,20 @@
         line-height: 1.704;
         text-align: left;
         text-decoration: none !important;
-        
+
         -webkit-transition: .3s ease-in-out;
         -moz-transition: .3s ease-in-out;
         -o-transition: .3s ease-in-out;
         transition: .3s ease-in-out;
-         
-        white-space: nowrap;
-  
-  }
 
-  .savoir:hover{
-    color: #8c8c8c;
-  }
+        white-space: nowrap;
+
+    }
+
+    .savoir:hover {
+        color: #8c8c8c;
+    }
+
     .contactx {
 
         background-image: url("../img/page-nos-metiers/contact.png");
@@ -2426,9 +2453,11 @@
 
             left: 0 !important;
         }
+
         .etude-container-right {
             margin-left: 0 !important;
         }
+
         .mission-slider .carousel-control-next {
             left: 60px !important;
         }
@@ -2741,7 +2770,7 @@
             margin-right: 30px;
             position: relative;
         }
-     
+
         .container-nav-etude #pills-tab .nav-item:not(:last-child)::after {
             content: '';
             position: absolute;
@@ -2808,9 +2837,11 @@
 
             left: 0 !important;
         }
+
         .etude-container-right {
             margin-left: 0 !important;
         }
+
         .mission-slider .carousel-control-next {
             left: 60px !important;
         }
@@ -3194,10 +3225,11 @@
 
     /* Extra small devices (portrait phones, less than 576px)*/
     @media (max-width: 575px) {
-        
+
         .etude-container-right {
             margin-left: 0 !important;
-        } 
+        }
+
         .mission-slider .carousel-control-prev {
 
             left: 0 !important;
@@ -3738,17 +3770,17 @@
     .pace {
         -webkit-pointer-events: none;
         pointer-events: none;
-      
+
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
-      }
-      
-      .pace-inactive {
+    }
+
+    .pace-inactive {
         display: none;
-      }
-      
-      .pace .pace-progress {
+    }
+
+    .pace .pace-progress {
         background: #942626;
         position: fixed;
         z-index: 2000;
@@ -3756,7 +3788,8 @@
         right: 100%;
         width: 100%;
         height: 2px;
-      }
-.bg-gris{
-    background-color: #f4f4f4;
-}      
+    }
+
+    .bg-gris {
+        background-color: #f4f4f4;
+    }
