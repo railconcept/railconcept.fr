@@ -540,7 +540,7 @@ $(document).ready(function () {
 
 
             Swal.fire({
-                title: 'Copied',
+                title: 'lien copi&#233;',
                 type: 'success',
                 showConfirmButton: false,
                 width: 350,
