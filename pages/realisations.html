@@ -296,24 +296,38 @@ $(document).ready(function () {
 
     var url = window.location.href;
 
-
+    
     if (url.indexOf("mission") >= 0) {
         filtrer_gal('mission') 
     }
-    if (url.indexOf("etude") >= 0) {
+    if (url.indexOf("etudex") >= 0) {
         filtrer_gal('etudex') 
     }
     if (url.indexOf("expert") >= 0) {
         filtrer_gal('expert')
     }
-    if (url.indexOf("logiciel") >= 0) {
+    if (url.indexOf("vente") >= 0) {
         filtrer_gal('vente')
     }
 
 
 
-
-
+    
+    $('.footer-real').click(function(){
+        var urlx = $(this).attr('href');
+        if (urlx.indexOf("mission") >= 0) {
+        filtrer_gal('mission') 
+    }
+    if (urlx.indexOf("etudex") >= 0) {
+        filtrer_gal('etudex') 
+    }
+    if (urlx.indexOf("expert") >= 0) {
+        filtrer_gal('expert')
+    }
+    if (urlx.indexOf("vente") >= 0) {
+        filtrer_gal('vente')
+    }
+ });
 
 
 
