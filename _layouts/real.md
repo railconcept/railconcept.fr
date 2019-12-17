@@ -72,15 +72,7 @@ layout: realisation
                                     </div>
                                 </div>
                             </li>
-                            <!-- Durée -->
-                            <li class="li-mission pt-2">
-                                <div class="col-12 m-0 p-0 ">
-                                    <div class="row m-0 p-0">
-                                        <div class="col-4 m-0 p-0"><b>Contacts:</b></div>
-                                        <div class="col-8 m-0 p-0"> {{page.contact}}</div>
-                                    </div>
-                                </div>
-                            </li>
+                           
                             <!--laisser comme ca contenu manquant -->
 
                         </ul>
@@ -149,78 +141,14 @@ layout: realisation
                       {{page.real}}
 
 
-                        <br>
-                        <div class="mt-3">
-                            <img class="mr-3" src="../assets/img/page-nos-metiers/loc-white.png">{{page.add_prest}} </div>
-                    </div>
+                       
+                      
 
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="container-fluid-etude  pt-5 pb-5 mt-5 mb-5" >
-        <div class="row">
-
-            <div class="col-lg-6 col-md-12 col-sm-12  pb-3 pr-0 etude-container-left"  data-aos="fade-right" data-aos-delay="">
-                <div class="card-etude  width">
-                    <div class="title-card-etude pl-0">
-                        Résultats
-                    </div>
-                    <div class="liste-card-etude para-white  p-0" markdown="1">
-                       {{page.resultats}}
-                    </div>
-
-                </div>
-            </div>
-
-            <div class=" col-lg-6 col-md-12  col-sm-12 pl-0 pr-0 etude-container-img pb-5 pt-3 " data-aos="fade-left" data-aos-delay="300">
-                
-                    <div id="main-sliderx" class="carousel slide mission-slider carousel-fade " data-ride="carousel">
-                   
-                    
-                        <div class="carousel-inner slider-inn" role="listbox">
-                            <!-- Slide One  -->
-                            <div class="carousel-item slider-item slider-item active carousel-item-left" style="background-image: url(' {{page.photo1  | prepend: site.baseurl }}');    height:400px; ">
-                                <!-- image ici --->
-
-                                <a href=" {{page.photo1  | prepend: site.baseurl  }}" class="zoomx">
-                                    <!--meme image ici --->
-                                    <img src="../assets/img/page-nos-metiers/zoom.png" class="zoom">
-                                </a>
-                            </div>
-
-
-                            <!-- Slide two -->
-                            <div class="carousel-item slider-item slider-item carousel-item-next carousel-item-left" style="background-image: url('../assets/img/logo/large_logo.png');  height:400px;">
-                                <!-- image ici si il existe une deuxieme image sinon laisser le logo --->
-
-                                <a href="../assets/img/logo/large_logo.png" class="zoomx ">
-                                    <!--meme image ic --->
-                                    <img src="../assets/img/page-nos-metiers/zoom.png" class="zoom">
-                                </a>
-                            </div>
-
-
-                        </div>
-
-
-                        <a id="carousel-control-prev-1" class="carousel-control-prev" href="" role="button" >
-                            <span id="previous" class="carousel-control-prev-icon align-middle" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-
-                        <a id="carousel-control-next-1" class="carousel-control-next" href="" role="button">
-                            <span id="next" class="carousel-control-next-icon align-middle" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-
-                 
-
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 
     {% include contact.html %}
     {% include footer.html %}

@@ -488,15 +488,7 @@ function rech_releaseEvents(el) {
 
 $(document).ready(function () {
 	
-	 if ($(".zoomx").length) {
 
-            $('.zoomx').magnificPopup({ 
-             type: 'image'
-             // other options here
-             // end each line (except the last) with a comma
-          });
-        
-	 }	
 	if ($("#all").length) {
 		$("#all").click();
 	}

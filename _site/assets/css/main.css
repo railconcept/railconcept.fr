@@ -742,8 +742,18 @@
 
     .competences .comp {
         margin-bottom: 40px;
+    cursor: pointer;
     }
 
+    .comp_link{
+        min-width:100%;
+        width: 100%;
+        height:100%;
+        display: block;
+    }
+    button.gm-ui-hover-effect > img {
+       background-color: white;
+    }
     .sav {
         font-size: 17px;
         font-family: 'Barlow Semi Condensed', sans-serif;
@@ -771,7 +781,11 @@
         color: white !important;
     }
 
-
+    .comp:hover >  .sav {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        background-color: rgb(148, 38, 38);
+        color: white !important;
+    }
 
     /*-----------------------------------------------------------------*/
     /*------------------------------NEWS-------------------------------*/

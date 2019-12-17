@@ -32,13 +32,13 @@
       
       <script src="/assets/js/main.js"></script>
 <script>
-    var base_url = window.location.origin;
+var base_url = window.location.origin;
 var url      = window.location.href;
 
 if (url.indexOf("/en") >= 0){
     $home = base_url+"/en" ;
 }else{
-    $home = base_url ;   
+    $home = base_url ;
 }
 
 function startTimer(duration, display) {
@@ -63,11 +63,18 @@ function startTimer(duration, display) {
 
 
 
-
+/*
     jQuery(function ($) {
     var fiveMinutes =  3,
         display = $('#time');
     startTimer(fiveMinutes, display);
-});
+}); */
 
+
+$(document).ready(function() {
+   var referrer =  document.referrer;
+
+
+   console.log(referrer) ;
+});
 </script>
