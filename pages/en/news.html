@@ -67,7 +67,7 @@ permalink: /en/news
                         onclick="filtrer_act('all');">voir tout</button>
                        {% for tagx in site.catnews %}
                     <button id="{{tagx.name}}" class="btn btn-default filter-button text-uppercase"
-                        onclick="filtrer_act('{{tagx.name}}');">{{tagx.title}}</button>
+                        onclick="filtrer_act('{{tagx.name}}');">{{tagx.title_eng}}</button>
                         {% endfor %}
                     </div>
 
@@ -119,7 +119,7 @@ permalink: /en/news
     <script type="text/javascript"> 
         let tagsss =[[],[]];
          "{% for tagz in site.catnews %}"
-             tagsss["{{tagz.name}}"] = ["{{tagz.title}}"]
+             tagsss["{{tagz.name}}"] = ["{{tagz.title_eng}}"]
           "{% endfor %}"
       </script>
     {% include eng-footer.html %}
