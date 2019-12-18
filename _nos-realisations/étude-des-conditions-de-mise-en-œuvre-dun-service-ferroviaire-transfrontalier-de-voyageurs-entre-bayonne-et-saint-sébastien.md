@@ -12,13 +12,7 @@ region: 'BAYONNE - SAINT SÉBASTIEN  '
 pays: FRANCE
 lat: '43.392523'
 long: '43.392523'
-text1: >-
-  Objectively leverage other's distributed e-services through market positioning
-  web services. Efficiently formulate long-term high-impact technology before
-  goal-oriented leadership. Uniquely target enterprise-wide infomediaries for
-  open-source supply chains. Progressively disseminate an expanded array of
-  opportunities after an expanded array of total linkage. Dramatically
-  transition ethical models before tactical niche markets.
+text1: ''
 context: >-
   Il n’existe aujourd’hui aucun service reliant le Pays Basque espagnol et les
   villes françaises au nord de la frontière. Cette quasi-absence de liaison
@@ -36,13 +30,6 @@ real: >-
   transporteur transfrontalier, calcul de l’impact d’un service transfrontalier
   sur la demande, optimisation du schéma d’offre en fonction de la demande et
   des perspectives économiques).
-resultats: >-
-  Objectively leverage other's distributed e-services through market positioning
-  web services. Efficiently formulate long-term high-impact technology before
-  goal-oriented leadership. Uniquely target enterprise-wide infomediaries for
-  open-source supply chains. Progressively disseminate an expanded array of
-  opportunities after an expanded array of total linkage. Dramatically
-  transition ethical models before tactical niche markets.
 photo1: /assets/img/uploads/Bayonne-Saint Sabastien.png
 ---
 

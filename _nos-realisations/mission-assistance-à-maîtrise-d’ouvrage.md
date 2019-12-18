@@ -10,13 +10,7 @@ region: NÎMES MONTPELLIER (FRANCE)
 pays: FRANCE
 lat: '43.698010'
 long: '4.149878'
-text1: >-
-  Objectively leverage other's distributed e-services through market positioning
-  web services. Efficiently formulate long-term high-impact technology before
-  goal-oriented leadership. Uniquely target enterprise-wide infomediaries for
-  open-source supply chains. Progressively disseminate an expanded array of
-  opportunities after an expanded array of total linkage. Dramatically
-  transition ethical models before tactical niche markets.
+text1: ''
 context: >-
   Cette prestation d’assistance technique et d’AMO, consiste à accompagner et
   conseiller le mainteneur dans le déploiement de l’organisation de la
@@ -34,13 +28,6 @@ real: >-
   maintenabilité, sécurité), Assistance et expertise générale, Rédaction
   complète du plan de maintenance, Rédaction des référentiels de maintenance
   niveau 2.
-resultats: >-
-  Objectively leverage other's distributed e-services through market positioning
-  web services. Efficiently formulate long-term high-impact technology before
-  goal-oriented leadership. Uniquely target enterprise-wide infomediaries for
-  open-source supply chains. Progressively disseminate an expanded array of
-  opportunities after an expanded array of total linkage. Dramatically
-  transition ethical models before tactical niche markets.
 photo1: /assets/img/uploads/Nimes-Montpellier.png
 ---
 

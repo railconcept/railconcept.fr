@@ -10,13 +10,7 @@ region: NANTES-ANGERS
 pays: ' FRANCE'
 lat: '47.448659'
 long: '-0.551660'
-text1: >-
-  Objectively leverage other's distributed e-services through market positioning
-  web services. Efficiently formulate long-term high-impact technology before
-  goal-oriented leadership. Uniquely target enterprise-wide infomediaries for
-  open-source supply chains. Progressively disseminate an expanded array of
-  opportunities after an expanded array of total linkage. Dramatically
-  transition ethical models before tactical niche markets.
+text1: ''
 context: >-
   La ligne Nantes-Angers-Sablé est très sollicitée par la conjonction du trafic
   TAGV et du trafic TER, en constant développement. La coexistence de ces
@@ -37,13 +31,6 @@ real: >-
   technique télécom associée, les coûts de l’opération, les conditions de mise
   en œuvre, un bilan socio-économique de l’opération en gains de mn de
   maintenance et de régularité gagnées.
-resultats: >-
-  Objectively leverage other's distributed e-services through market positioning
-  web services. Efficiently formulate long-term high-impact technology before
-  goal-oriented leadership. Uniquely target enterprise-wide infomediaries for
-  open-source supply chains. Progressively disseminate an expanded array of
-  opportunities after an expanded array of total linkage. Dramatically
-  transition ethical models before tactical niche markets.
 photo1: /assets/img/uploads/Axe Nantes-Angers-Sable.png
 ---
 
