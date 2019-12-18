@@ -2,7 +2,7 @@
 <html dir="ltr" lang="en">
 <head>
 
-    {% include eng-head.html %}  
+    {% include head.html %}  
 
 </head>
 

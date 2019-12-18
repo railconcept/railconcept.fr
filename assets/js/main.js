@@ -750,7 +750,7 @@ $(document).ready(function () {
         if (e.which === 13) {
 
             if ($(this).val().length > 0) {
-                window.location.replace(base_url + "/search?query=" + $(this).val());
+                window.location.replace(base_url + "/recherche?query=" + $(this).val());
             }
 
 

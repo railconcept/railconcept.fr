@@ -1,14 +1,15 @@
 ---
 title: Search
 layout: eng-default
-permalink: en/search
+permalink: /en/search
 ---
 
 
 <div id="results_search" class="mt-5 pt-5 mb-5 pb-5">
 
     <div class="container"> 
-    <div class="title-news  title-section" data-aos="zoom-in-up">Résultats :</div> 
+    <div class="title-news  title-section" data-aos="zoom-in-up">Résults :</div> 
+
     <div class="row">
 
       <div class="col-12 pl-0 ml-w-0 ">
@@ -39,7 +40,10 @@ permalink: en/search
         window.store = {
 
           {% for pages in site.pages %}     
-          {% if pages.title != "railconcept | 404"  and pages.title != "railconcept | success" and pages.title != "..." and pages.title != '' and pages.title != "Search" and pages.url != "/assets/main.css" and pages.url != "/feed.xml" and pages.url contains "/en/"%}
+          {% if pages.title != "railconcept | 404"  and pages.title != "railconcept | success" and pages.title != "..." and pages.title != '' and pages.title != "Search" and pages.url != "/assets/main.css" and pages.url != "/feed.xml" %}
+         
+          {% if pages.url contains "/en/" %}
+         
           {% assign pagecontent = pages.content | strip_html %}
           {% assign pcontent = pagecontent | split: "foooooterxxx" | first %}
             "{{ pages.url | slugify }}": {
@@ -55,9 +59,10 @@ permalink: en/search
             }
             ,
             {% endif %}
+            {% endif %}
           {% endfor %} 
 
-          {% for post in site.newspost %}
+          {% for post in site.posts %}
           {% assign tags = '' | split: '' %}
           {% for tag in post.news.taggx %} 
           {% assign tagval = tag |append: ',' | split: '_' | first | split: '' %}
@@ -85,24 +90,43 @@ permalink: en/search
         
                 "{{ offre.url | slugify }}":{
               "type" : "jobs",
-              "title": "{{ offre.title_eng | xml_escape }}",
+              "title": "{{ offre.title | xml_escape }}",
               "date": "{{ offre.date | xml_escape }}",
               "tag": "{{ 'null' | xml_escape}}",
-              "dep": "{{ offre.dep_eng | xml_escape}}",
-              "tdc": "{{ offre.tdc_eng | xml_escape}}",
-              "ldt": "{{ offre.ldt_eng | xml_escape}}",
-              "content": {{ offre.poste_eng | apppend: offre.entreprise_eng | append: offre.profile_eng | strip_html | strip_newlines | jsonify }},
-              "url": "{{ post.url | xml_escape }}"
+              "dep": "{{ offre.dep | xml_escape}}",
+              "tdc": "{{ offre.tdc | xml_escape}}",
+              "ldt": "{{ offre.ldt | xml_escape}}",
+              "content": {{ offre.poste | apppend: offre.entreprise | append: offre.profile | strip_html | strip_newlines | jsonify }},
+              "url": "{{ offre.url | xml_escape }}"
             }
             {% unless forloop.last %},{% endunless %}
             {% endif %}
+          {% endfor %}
+
+
+          {% for offre in site.nos-realisations %}
+              
+        
+                "{{ offre.url | slugify }}":{
+              "type" : "réalisations",
+              "title": "{{ offre.title | xml_escape }}",
+              "date": "{{ offre.annee_real | xml_escape }}",
+              "tag": "{{ 'null' | xml_escape}}",
+              "dep": "{{ offre.type-real | xml_escape}}",
+              "tdc": "{{ offre.donneur_ordre | xml_escape}}",
+              "ldt": "{{ offre.pays | xml_escape}}",
+              "content": {{ offre.text1 | apppend: offre.context | append: offre.real | append: offre.resultats | strip_html | strip_newlines | jsonify }},
+              "url": "{{ offre.url | xml_escape }}"
+            }
+            {% unless forloop.last %},{% endunless %}
+           
           {% endfor %}
 
             };
 
 
 
-            console.log(window.store)
+            
       </script>
 
 
@@ -116,14 +140,11 @@ permalink: en/search
 
 {% include eng-contact.html %}
 
-
 <script type="text/javascript"> 
   let tagsss =[[],[]];
    "{% for tagz in site.catnews %}"
-       tagsss["{{tagz.name}}"] = ["{{tagz.title_eng}}"]
+       tagsss["{{tagz.name}}"] = ["{{tagz.title}}"]
     "{% endfor %}"
 </script>
-
-
 
 {% include eng-footer.html %}

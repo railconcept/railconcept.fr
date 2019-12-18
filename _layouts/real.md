@@ -2,24 +2,21 @@
 layout: realisation
 ---
 <!--realisations-->
-    <div class="competence rejoignez-nous train text-center">
+<div class="competence rejoignez-nous train text-center">
         <div class="container  h-100">
             <div class="row h-100 justify-content-center align-items-center">
                 <h1 class="header-realisation" data-aos="fade-up" data-aos-delay="">
                     Nos réalisations
                 </h1>
             </div>
-
-            <ol class="breadcrumb size-bread">
+ <ol class="breadcrumb size-bread">
                 <li class="breadcrumb-item "><a href="" class="item-1">Accueil</a></li>
                 <li class="breadcrumb-item "><i class="fa fa-angle-double-right "></i></li>
                 <li class="breadcrumb-item active"><a href="{{ site.baseurl }}/realisations" class="item-1">Nos réalisations</a>
                 </li>
             </ol>
-
         </div>
     </div>
-
     <!---mission-->
     <section class="mission mt-5">
         <div class="container">
@@ -36,16 +33,12 @@ layout: realisation
                   {% endif %}
                   {% if page.type-real == "vente" %}
                    VENTE LOGICIEL
-                 {% endif %}
-
-              
-                    
+                 {% endif %}          
                 </div>
                 <div class="title-section-sub mb-2"  data-aos="fade-up" data-aos-delay="400">{{page.title}}</div>
                 <div class="row ">
                     <div class="col-md-8 paragraphe-etudes" data-aos="fade-right" data-aos="fade-up" data-aos-delay="800">
-
-                        <ul class="ul-mission p-0 mt-4 mb-4 color-gray">
+    <ul class="ul-mission p-0 mt-4 mb-4 color-gray">
                             <li class="li-mission pt-2">
                                 <div class="col-12 m-0 p-0 ">
                                     <div class="row m-0 p-0">
@@ -72,33 +65,21 @@ layout: realisation
                                     </div>
                                 </div>
                             </li>
-                           
-                            <!--laisser comme ca contenu manquant -->
-
-                        </ul>
-
-
-
-                        <div class=" mt-3 pt-3  pb-5 " markdown="1">
+                <!--laisser comme ca contenu manquant -->
+                  </ul>
+                   <div class=" mt-3 pt-3  pb-5 " markdown="1">
                             {{page.text1}}
-
-                        </div>
+                  </div>
                     </div>
                     <div class="col-md-4 text-center d-none d-md-block " data-aos="fade-left" data-aos-delay="1200">
                         <img class="interrogation img-fluid" src="../assets/img/page-nos-metiers/icon-quest.png">
                     </div>
-
-                </div>
+                 </div>
             </div>
             <hr>
         </div>
-
     </section>
-
-
-
-
-    <!---contexte-->
+  <!---contexte-->
     <section class="contexte mt-100 pt-5 pb-5">
         <div class="container">
             <div class="col-md-12">
@@ -114,20 +95,15 @@ layout: realisation
                     <div class="col-md-4 text-center d-none d-md-block" data-aos="fade-left" data-aos="fade-up" data-aos-delay="400">
                         <img class="img-fluid" src="../assets/img/page-competances/icon1-etudes.png">
                     </div>
-
-                </div>
+               </div>
             </div>
         </div>
     </section>
-
-
     <div class="container-fluid-etude  pt-5 pb-5 mt-5 mb-5">
         <div class="row">
             <div class=" col-lg-6 col-md-12  col-sm-12 pl-0 pr-0 etude-container-img pb-5" data-aos="fade-right" data-aos-delay="">
                 <div id="mission-map" width="100%" class="g_map_2">
-
-
-                </div>
+  </div>
             </div>
             <div id="mission-map-desc" class="col-lg-6 col-md-12 col-sm-12  pl-0 etude-container-right"  data-aos="fade-left" data-aos-delay="300">
                 <div class="card-etude  width">
@@ -136,15 +112,8 @@ layout: realisation
                     </div>
                     <div class="liste-card-etude para-white  p-0" markdown="1">
                         <!-- Réalisation -->
-
-
-                      {{page.real}}
-
-
-                       
-                      
-
-                </div>
+                     {{page.real}}                  
+                    </div>
             </div>
         </div>
     </div>
