@@ -12,10 +12,9 @@ collections:
        name: "general_settings"
        file: "_data/website_settings.yml"
        fields:
-        - label: "City"
-          name: "airport-code"
+        - label: "Tags"
+          name: "tags"
           widget: "select"
-          options:
-            - { label: "Chicago", value: "ORD" }
-            - { label: "Paris", value: "CDG" }
-            - { label: "Tokyo", value: "HND" }
+          multiple: true
+          options: ["Design", "UX", "Dev"]
+          default: ["Design"]
