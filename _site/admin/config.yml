@@ -123,8 +123,8 @@ collections:
     - {label: 'Photo 1', name: 'photo1', widget: 'image' , required: false}
 
   - label: 'News' 
-    name: 'posteng'
-    folder: '_postseng'
+    name: 'news'
+    folder: '_news'
     sort: 'date:desc' 
     create: true 
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -148,9 +148,9 @@ collections:
         - {label: 'Photo 3', name: 'photo_news3', widget: 'image'}
     - {label: 'code Video youtube ("https://www.youtube.com/watch?v=********")', name: 'video_news', widget: 'string'}   
 
-  - label: 'Work opportunities'
-    name: 'odteng'
-    folder: '_odteng'
+  - label: 'Jobs'
+    name: 'jobs'
+    folder: '_jobs'
     sort: 'date:desc' 
     create: true 
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
@@ -163,20 +163,19 @@ collections:
       name: 'tdp'
       widget: 'select'
       options:
-       - { label: 'CHEF DE PROJET', value: 'cdp' }
-       - { label: "CHARGÉ D'ÉTUDE", value: 'cde' }
-       - { label: 'DÉVELOPPEUR LOGICIEL', value: 'dl' }
+       - { label: 'CHEF DE PROJET eng', value: 'cdp' }
+       - { label: "CHARGÉ D'ÉTUDE eng", value: 'cde' }
+       - { label: 'DÉVELOPPEUR LOGICIEL eng', value: 'dl' }
     - {label: 'Département', name: 'dep', widget: 'string'} 
     - {label: 'Type de contrat', name: 'tdc', widget: 'string'} 
     - {label: 'Lieu de travail', name: 'ldt', widget: 'string'} 
     - {label: 'Entreprise', name: 'entreprise', widget: 'markdown'}
     - {label: 'Poste', name: 'poste', widget: 'markdown'}
     - {label: 'Profil', name: 'profil', widget: 'markdown'}
-
   
   - label: 'Achievements'
-    name: 'nos-realisationseng'
-    folder: '_nos-realisationseng'
+    name: 'achievements'
+    folder: '_achievements'
     sort: 'date:desc' 
     create: true 
     slug: '{{slug}}'

@@ -25,13 +25,13 @@ collections:
     permalink: /newspost/:path/
   nos-realisations:
     output: true
-    permalink: /nos-realisations/:path
-  odteng:
+    permalink: /nos-realisations/:path/
+  jobs:
     output: true
-    permalink: /odteng/:path/
-  newspost:
+    permalink: /jobs/:path/
+  news:
     output: true
-    permalink: /newspost/:path/
-  nos-realisations:
+    permalink: /news/:path/
+  achievements:
     output: true
-    permalink: /nos-realisations/:path
+    permalink: /achievements/:path/
