@@ -1,5 +1,5 @@
 title: Railconcept
-
+siteurl: https://railconcept.netlify.com
 # Build settings
 theme: minima
 plugins: # previously gems
@@ -23,3 +23,15 @@ collections:
   newspost:
     output: true
     permalink: /newspost/:path/
+  nos-realisations:
+    output: true
+    permalink: /nos-realisations/:path/
+  jobs:
+    output: true
+    permalink: /jobs/:path/
+  news:
+    output: true
+    permalink: /news/:path/
+  achievements:
+    output: true
+    permalink: /achievements/:path/
