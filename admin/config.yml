@@ -16,6 +16,7 @@ collections:
           name: seo
           widget: object
           fields:
+           - {label: "Align Content", name: "align", widget: "select", options: ["left", "center", "right"]}
            - {label: Tel , name: tel_display, widget: string}
            - {label: Website description, name: website_desc, widget: string}
            - {label: Website description Eng, name: website_desc_eng, widget: string}
