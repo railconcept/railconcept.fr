@@ -1,5 +1,5 @@
 title: Railconcept
-siteurl: https://railconcept.netlify.com
+
 # Build settings
 theme: minima
 plugins: # previously gems
@@ -10,7 +10,8 @@ plugins: # previously gems
 
 highlighter: rouge
 markdown: kramdown
-
+kramdown:
+  input: GFM
 
 collections:
   catnews:
@@ -19,6 +20,6 @@ collections:
   odt:
     output: true
     permalink: /odt/:path/
-  nos-realisations:
+  newspost:
     output: true
-    permalink: /nos-realisations/:path/
+    permalink: /newspost/:path/
