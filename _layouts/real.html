@@ -110,9 +110,9 @@ layout: realisation
                     <div class="title-card-etude pl-0">
                         prestation réalisée
                     </div>
-                    <div class="liste-card-etude para-white  p-0" >
+                    <div class="liste-card-etude para-white  p-0" markdown="1">
                         <!-- Réalisation -->
-                     {{page.real}}                  
+                    <p>   {{page.real | markdownify}}      </p>            
                     </div>
             </div>
         </div>
