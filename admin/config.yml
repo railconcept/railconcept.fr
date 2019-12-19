@@ -31,7 +31,7 @@ collections:
 
   - label: "Actualités settings"
     name: "catnews"
-    folder: "_catnews"
+    folder: "_catnews/"
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
      - {label: "Layout", name: "layout", widget: "hidden", default: "default"}
@@ -41,7 +41,7 @@ collections:
    
   - label: "Actualités" 
     name: "post"
-    folder: "_posts"
+    folder: "_posts/"
     sort: "date:desc" 
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -67,7 +67,7 @@ collections:
 
   - label: "Offre de travail"
     name: "odt"
-    folder: "_odt"
+    folder: "_odt/"
     sort: "date:desc" 
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
@@ -93,7 +93,7 @@ collections:
   
   - label: "Réalisations"
     name: "nos-realisations"
-    folder: "_nos-realisations"
+    folder: "_nos-realisations/"
     sort: "date:desc" 
     create: true 
     slug: "{{slug}}"
