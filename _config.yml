@@ -23,12 +23,3 @@ collections:
   nos-realisations:
     output: true
     permalink: /nos-realisations/:path/
-  jobs:
-    output: true
-    permalink: /jobs/:path/
-  news:
-    output: true
-    permalink: /news/:path/
-  achievements:
-    output: true
-    permalink: /achievements/:path/
