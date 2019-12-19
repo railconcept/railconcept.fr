@@ -214,7 +214,7 @@ permalink: /en/achievements
 
 
             <div class="row col-12 grid_gal  pl-0 pr-0">
-                {% for post in site.nos-realisations %}
+                {% for post in site.achievements %}
                 <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5 text-center  {{ post.type-real }}"
                     data-aos="fade-up">
                     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -420,7 +420,7 @@ $(document).ready(function () {
 
             }
 
-            "{% for real  in site.nos-realisations %}"
+            "{% for real  in site.achievements %}"
             "{% if real.type-real == 'mission' %}"
           
             makeMarker({
@@ -525,7 +525,7 @@ $(document).ready(function () {
 
 
 
-            "{% for real  in site.nos-realisations %}"
+            "{% for real  in site.achievements %}"
             "{% if real.type-real == 'etudex' %}"
           
             makeMarker2x({
@@ -626,7 +626,7 @@ $(document).ready(function () {
 
 
 
-            "{% for real  in site.nos-realisations %}"
+            "{% for real  in site.achievements %}"
             "{% if real.type-real == 'expert' %}"
           
             makeMarker3x({
@@ -726,7 +726,7 @@ $(document).ready(function () {
 
 
 
-            "{% for real  in site.nos-realisations %}"
+            "{% for real  in site.achievements%}"
             "{% if real.type-real == 'vente' %}"
           
             makeMarker4x({

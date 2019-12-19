@@ -20,9 +20,6 @@ collections:
   odt:
     output: true
     permalink: /odt/:path/
-  newspost:
-    output: true
-    permalink: /newspost/:path/
   nos-realisations:
     output: true
     permalink: /nos-realisations/:path/
