@@ -121,13 +121,13 @@ collections:
     - {label: "Prestation realisée", name: "real", widget: "markdown", required: false} 
     - {label: "Photo 1", name: "photo1", widget: "image" , required: false}
 
- - label: "News" 
-   name: "news"
-   folder: "_news"
-   sort: "date:desc" 
-   create: true 
-   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-   fields:
+  - label: "News" 
+    name: "news"
+    folder: "_news"
+    sort: "date:desc" 
+    create: true 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "news"} 
     - {label: "Titre actualité", name: "title", widget: "string"} 
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
@@ -147,13 +147,13 @@ collections:
         - {label: "Photo 3", name: "photo_news3", widget: "image"}
     - {label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string"}   
 
- - label: "Jobs"
-   name: "jobs"
-   folder: "_jobs"
-   sort: "date:desc" 
-   create: true 
-   slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-   fields:
+  - label: "Jobs"
+    name: "jobs"
+    folder: "_jobs"
+    sort: "date:desc" 
+    create: true 
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "offre"} 
     - {label: "Offre de travail Active", name: "active", widget: "boolean", default: true}
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
@@ -172,13 +172,13 @@ collections:
     - {label: "Poste", name: "poste", widget: "markdown"}
     - {label: "Profil", name: "profil", widget: "markdown"}
   
- - label: "Achievements"
-   name: "achievements"
-   folder: "_achievements"
-   sort: "date:desc" 
-   create: true 
-   slug: "{{slug}}"
-   fields:
+  - label: "Achievements"
+    name: "achievements"
+    folder: "_achievements"
+    sort: "date:desc" 
+    create: true 
+    slug: "{{slug}}"
+    fields:
     - {label: "Layout", name: "layout", widget: "hidden", default: "real" } 
     - label: "Type de Réalisation"
       name: "type-real"
