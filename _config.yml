@@ -12,3 +12,13 @@ highlighter: rouge
 markdown: kramdown
 
 
+collections:
+  catnews:
+    output: true
+    permalink: /catnews/:path/
+  odt:
+    output: true
+    permalink: /odt/:path/
+  nos-realisations:
+    output: true
+    permalink: /nos-realisations/:path/
