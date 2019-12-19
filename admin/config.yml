@@ -123,7 +123,7 @@ collections:
     - {label: "Photo 1", name: "photo1", widget: "image" , required: false}
 
   - label: "News" 
-    name: "post_eng"
+    name: "posteng"
     folder: "_postseng"
     sort: "date:desc" 
     create: true 
@@ -136,7 +136,7 @@ collections:
       name: "news"
       widget: "object" 
       fields:
-        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "catnews",  searchFields: ["title"],  valueField: "name",  displayFields: ["title"] , multiple: true }
+        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "catnews",  searchFields: ["title_eng"],  valueField: "name",  displayFields: ["title_eng"] , multiple: true }
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"

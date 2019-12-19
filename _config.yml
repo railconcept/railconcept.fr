@@ -26,3 +26,12 @@ collections:
   nos-realisations:
     output: true
     permalink: /nos-realisations/:path
+  odteng:
+    output: true
+    permalink: /odteng/:path/
+  newspost:
+    output: true
+    permalink: /newspost/:path/
+  nos-realisations:
+    output: true
+    permalink: /nos-realisations/:path
