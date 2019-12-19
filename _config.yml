@@ -25,10 +25,10 @@ collections:
     permalink: /nos-realisations/:path/
   jobs:
     output: true
-    permalink: /jobs/:path/
+    permalink: /en/jobs/:path/
   news:
     output: true
-    permalink: /news/:path/
+    permalink: /en/news/:path/
   achievements:
     output: true
-    permalink: /achievements/:path/
+    permalink: /en/achievements/:path/

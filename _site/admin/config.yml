@@ -154,7 +154,7 @@ collections:
     create: true 
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-    - {label: "Layout", name: "layout", widget: "hidden", default: "offreng"} 
+    - {label: "Layout", name: "layout", widget: "hidden", default: "offre"} 
     - {label: "Offre de travail Active", name: "active", widget: "boolean", default: true}
     - {label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss"}
     - {label: "Poste proposée", name: "title", widget: "string"} 

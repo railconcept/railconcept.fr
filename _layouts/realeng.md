@@ -6,13 +6,13 @@ layout: realisationeng
         <div class="container  h-100">
             <div class="row h-100 justify-content-center align-items-center">
                 <h1 class="header-realisation" data-aos="fade-up" data-aos-delay="">
-                    Nos réalisations
+                    Our achievements
                 </h1>
             </div>
  <ol class="breadcrumb size-bread">
-                <li class="breadcrumb-item "><a href="" class="item-1">Accueil</a></li>
+                <li class="breadcrumb-item "><a href="{{ site.baseurl }}/en/" class="item-1">Home</a></li>
                 <li class="breadcrumb-item "><i class="fa fa-angle-double-right "></i></li>
-                <li class="breadcrumb-item active"><a href="{{ site.baseurl }}/realisations" class="item-1">Nos réalisations</a>
+                <li class="breadcrumb-item active"><a href="{{ site.baseurl }}/en/achievements" class="item-1">Our achievements</a>
                 </li>
             </ol>
         </div>
@@ -72,7 +72,7 @@ layout: realisationeng
                   </div>
                     </div>
                     <div class="col-md-4 text-center d-none d-md-block " data-aos="fade-left" data-aos-delay="1200">
-                        <img class="interrogation img-fluid" src="../assets/img/page-nos-metiers/icon-quest.png">
+                        <img class="interrogation img-fluid" src="../../../assets/img/page-nos-metiers/icon-quest.png">
                     </div>
                  </div>
             </div>
@@ -93,7 +93,7 @@ layout: realisationeng
                         </div>
                     </div>
                     <div class="col-md-4 text-center d-none d-md-block" data-aos="fade-left" data-aos="fade-up" data-aos-delay="400">
-                        <img class="img-fluid" src="../assets/img/page-competances/icon1-etudes.png">
+                        <img class="img-fluid" src="../../../assets/img/page-competances/icon1-etudes.png">
                     </div>
                </div>
             </div>

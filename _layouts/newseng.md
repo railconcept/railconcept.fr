@@ -12,9 +12,9 @@ layout: pageeng
         <div class="row h-100 justify-content-center align-items-center">
         </div>
          <ol class="breadcrumb size-bread">
-                <li class="breadcrumb-item "><a href="{{site.baseurl}}/" class="item-1">Accueil</a></li>
+                <li class="breadcrumb-item "><a href="{{site.baseurl}}/en/" class="item-1">Home</a></li>
                 <li class="breadcrumb-item "><i class="fa fa-angle-double-right "></i></li>
-                <li class="breadcrumb-item active"><a href="{{site.baseurl}}/actualites" class="item-1">actualités</a>
+                <li class="breadcrumb-item active"><a href="{{site.baseurl}}/en/news" class="item-1">News</a>
                 </li>
             </ol>
     </div>
@@ -29,7 +29,7 @@ layout: pageeng
             <div class="col-lg-7 pr-3 pl-0">
                 <div class="date-news mt-0 pt-5 pb-3">{{ page.date | date_to_long_string }} À {{ page.date | date: "%HH%M" }}
                     {% for tag in page.news.taggx %}
-                    <span class="tagx">{{tag_eng}}</span>
+                    <span class="tagx">{{tag}}</span>
                     {% endfor %}
                 </div>
                 <div class="title-actualites">{{page.title}}</div>
@@ -88,7 +88,7 @@ layout: pageeng
                 <span class="plus col-12 p-0" data-aos="fade-up" data-aos-delay="50">VOIR PLUS D'ACTUALITéS</span>    
 {% assign maxPost = 3 %}
 {% assign counter = 0 %}
-  {% for post in site.posts %}
+  {% for post in site.news %}
   {% if post.title != page.title %}
         {% assign counter = counter | plus: 1 %}
         <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-xs-12 mt-5
@@ -123,7 +123,7 @@ layout: pageeng
 <script type="text/javascript"> 
     let tagsss =[[],[]];
      "{% for tagz in site.catnews %}"
-         tagsss["{{tagz.name}}"] = ["{{tagz.title}}"]
+         tagsss["{{tagz.name}}"] = ["{{tagz.title_eng}}"]
       "{% endfor %}"
   </script>
 
