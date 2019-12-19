@@ -8,6 +8,15 @@ collections:
   - label: "website settings"
     name: "website_settings"
     files:
+     - label: "Select"
+       name: "select"
+       widget: "select"
+       default: "default"
+       options:
+         - label: "Default"
+           value: "default"
+         - label: "Not Default"
+           value: "not default"
      - label: "Géneral settings"
        name: "general_settings"
        file: "_data/website_settings.yml"
