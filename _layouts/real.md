@@ -72,7 +72,7 @@ layout: realisation
                   </div>
                     </div>
                     <div class="col-md-4 text-center d-none d-md-block " data-aos="fade-left" data-aos-delay="1200">
-                        <img class="interrogation img-fluid" src="../assets/img/page-nos-metiers/icon-quest.png">
+                        <img class="interrogation img-fluid" src="../../assets/img/page-nos-metiers/icon-quest.png">
                     </div>
                  </div>
             </div>
@@ -93,7 +93,7 @@ layout: realisation
                         </div>
                     </div>
                     <div class="col-md-4 text-center d-none d-md-block" data-aos="fade-left" data-aos="fade-up" data-aos-delay="400">
-                        <img class="img-fluid" src="../assets/img/page-competances/icon1-etudes.png">
+                        <img class="img-fluid" src="../../assets/img/page-competances/icon1-etudes.png">
                     </div>
                </div>
             </div>
