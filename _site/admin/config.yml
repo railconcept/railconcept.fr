@@ -81,7 +81,7 @@ collections:
       widget: "select"
       options:
        - { label: "CHEF DE PROJET", value: "cdp" }
-       - { label: "CHARGÉ D"ÉTUDE", value: "cde" }
+       - { label: "CHARGÉ D'ÉTUDE", value: "cde" }
        - { label: "DÉVELOPPEUR LOGICIEL", value: "dl" }
     - {label: "Département", name: "dep", widget: "string"} 
     - {label: "Type de contrat", name: "tdc", widget: "string"} 
