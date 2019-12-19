@@ -101,7 +101,8 @@ collections:
     - {label: "Layout", name: "layout", widget: "hidden", default: "real" } 
     - label: "Type de Réalisation"
       name: "type-real"
-      widget: "select"
+      widget: "liste"
+      default: "mission"
       options:
        - { label: "MISSION AMO GRAND PROJET", value: "mission" }
        - { label: "ÉTUDES", value: "etudex" }
