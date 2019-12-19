@@ -10,8 +10,7 @@ plugins: # previously gems
 
 highlighter: rouge
 markdown: kramdown
-kramdown:
-  input: GFM
+
 
 collections:
   catnews:
