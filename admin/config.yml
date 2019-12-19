@@ -8,15 +8,6 @@ collections:
   - label: "website settings"
     name: "website_settings"
     files:
-     - label: "Select"
-       name: "select"
-       widget: "select"
-       default: "default"
-       options:
-         - label: "Default"
-           value: "default"
-         - label: "Not Default"
-           value: "not default"
      - label: "Géneral settings"
        name: "general_settings"
        file: "_data/website_settings.yml"
@@ -62,7 +53,14 @@ collections:
       name: "news"
       widget: "object" 
       fields:
-        - {label: "TAGS",  name: "taggx",  widget: "relation",  collection: "catnews",  searchFields: ["title"],  valueField: "name",  displayFields: ["title"] , multiple: true }
+        - label: "TAGS"
+          name: "taggx"
+          widget: "relation"
+          collection: "catnews"
+          searchFields: ["title"]
+          valueField: "name"
+          displayFields: ["title"]
+          multiple: true 
         - {label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false}
         - {label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false}
     - label: "Actualité photo"
@@ -89,9 +87,12 @@ collections:
       name: "tdp"
       widget: "select"
       options:
-       - { label: "CHEF DE PROJET", value: "cdp" }
-       - { label: "CHARGÉ D'ÉTUDE", value: "cde" }
-       - { label: "DÉVELOPPEUR LOGICIEL", value: "dl" }
+       - label: "CHEF DE PROJET"
+         value: "cdp"
+       - label: "CHARGÉ D'ÉTUDE"
+         value: "cde"
+       - label: "DÉVELOPPEUR LOGICIEL"
+         value: "dl"
     - {label: "Département", name: "dep", widget: "string"} 
     - {label: "Type de contrat", name: "tdc", widget: "string"} 
     - {label: "Lieu de travail", name: "ldt", widget: "string"} 
