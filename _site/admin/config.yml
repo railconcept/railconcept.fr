@@ -79,6 +79,7 @@ collections:
     - label: "Type de poste"
       name: "tdp"
       widget: "select"
+      default: "cdp"
       options:
        - { label: "CHEF DE PROJET", value: "cdp" }
        - { label: "CHARGÉ D'ÉTUDE", value: "cde" }
