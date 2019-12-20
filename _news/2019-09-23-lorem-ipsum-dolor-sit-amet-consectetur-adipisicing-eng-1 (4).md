@@ -1,7 +1,6 @@
 ---
 layout: newseng
 title: 'LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING 4. eng'
-
 date: '25-08-2019 00:00:00'
 news:
   news_1: >-
@@ -27,9 +26,9 @@ news:
     caprangerentCum haec taliaque sollicitas eius aures everberarent expositas
     semperurgentium caprangerentCum haec taliaque sollicitas eius aures
     everberarent expositas semper
-
   taggx:
     - tag2
+    - tag3
 news_photo:
   photo_news1: /assets/img/uploads/50261_1_news.jpg
   photo_news2: /assets/img/uploads/download.jpg
