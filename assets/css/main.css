@@ -1943,6 +1943,7 @@
         padding-top: 5%;
         line-height: 15px;
         position: relative;
+        font-size:13px;
     }
 
     .team-text .description::before {
