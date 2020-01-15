@@ -11,7 +11,7 @@ annee_real: '2016'
 region: 'BAYONNE - SAINT SÉBASTIEN  '
 pays: FRANCE
 lat: '43.392523'
-long: '43.392523'
+long: '-1.649692'
 text1: ''
 context: >-
   Il n’existe aujourd’hui aucun service reliant le Pays Basque espagnol et les
