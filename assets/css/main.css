@@ -2850,6 +2850,8 @@
             color: #fff !important;
             padding: 10px !important;
         }
+        .title-realisation > a{color:#fff!important}
+        .gallery-act .card-body{padding:0!important}
     }
 
     @media (max-width: 980px) {
@@ -3604,7 +3606,7 @@
 
         .pills-etude-link {
 
-            font-size: 13px;
+            font-size: 15px;
             padding-left: .5rem;
             padding-right: .5rem;
         }
