@@ -400,18 +400,12 @@ $(document).ready(function () {
                 google.maps.event.addListener(pushPin, "click",
                     function () {
                         infoWindow.setOptions(options);
-
-
-
                         infoWindow.open(map);
                     });
 
                 google.maps.event.addListener(pushPin, "mouseover",
                     function () {
                         infoWindow.setOptions(options);
-
-
-
                         infoWindow.open(map);
                     });
 
@@ -478,17 +472,14 @@ $(document).ready(function () {
             });
             var markerBounds2x = new google.maps.LatLngBounds();
             var markerArray2x = [];
-
-
-
-
+ 
 
             /* google.maps.event.addListener(map2x, "click", 
-              function () { infoWindow2x.close(); }); 
-            
-            
-              google.maps.event.addListener(map2x, "mouseout", 
-              function () { infoWindow2x.close(); }); */
+            function () { infoWindow2x.close(); }); 
+        
+        
+            google.maps.event.addListener(map2x, "mouseout", 
+            function () { infoWindow2x.close(); }); */
 
 
 
@@ -517,6 +508,15 @@ $(document).ready(function () {
 
                         infoWindow2x.open(map2x);
                     });
+
+
+                google.maps.event.addListener(pushPin2x, "mouseout",
+                    function () {
+                        infoWindow2x.close(map2x);
+                    });
+
+
+                    
 
                 markerBounds2x.extend(options.position);
                 markerArray2x.push(pushPin2x);
