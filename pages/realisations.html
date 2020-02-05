@@ -512,11 +512,11 @@ $(document).ready(function () {
 
                 google.maps.event.addListener(pushPin2x, "mouseout",
                     function () {
-                        infoWindow2x.close(map2x);
+                        infoWindow2x.close();
                     });
 
 
-                    
+
 
                 markerBounds2x.extend(options.position);
                 markerArray2x.push(pushPin2x);
