@@ -535,7 +535,9 @@
         -o-background-size: cover;
         background-size: cover;
     }
-    .carousel-fade .carousel-item{opacity: 0.5;}
+    #main-slider .carousel-fade .carousel-item{opacity: 0.5;}
+    #main-slider .carousel-inner{background-color:#000;}
+     
     ul.links{list-style: none;}
     .zoomx {
         background: rgba(148, 38, 38, 0.9);
