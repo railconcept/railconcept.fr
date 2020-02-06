@@ -535,7 +535,7 @@
         -o-background-size: cover;
         background-size: cover;
     }
-    #main-slider .carousel-fade .carousel-item{opacity: 0.5;}
+    #main-slider .carousel-fade .carousel-item{opacity: 0.7;}
     #main-slider .carousel-inner{background-color:#000;}
      
     ul.links{list-style: none;}
