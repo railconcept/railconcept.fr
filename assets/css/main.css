@@ -522,6 +522,7 @@
     }
     #main-slider{
         width:100%;
+        position:relative;
     } 
     #main-slider .caption{
         background-image: linear-gradient(to right, rgba(255,255,255,0)1%, rgb(255, 255, 255)40%);
@@ -533,6 +534,8 @@
         font-weight: 400;
         text-transform: uppercase;
         max-width: 1020px;
+        left: 0;
+        width: 80%;
     }
     #main-slider .slider-home .item{
         background-size: cover;
@@ -2857,6 +2860,9 @@
     }
 
     @media (max-width: 991px) {
+        #main-slider .caption{
+            font-size:23px
+        }
         .card-etude {
             margin-top: -20px !important;
         }
@@ -3212,16 +3218,7 @@
 
 
 
-        #section-main-slider, #main-slider .slider-home .item {
-
-            height: 60vh;
-        }
-        #main-slider .caption{
-            font-size:20px
-        }
-        .slider-item {
-            height: 60vh;
-        }
+       
 
         .slider-caption {
             height: auto;
@@ -3244,6 +3241,16 @@
 
 
     @media (max-width: 767px) {
+        #section-main-slider, #main-slider .slider-home .item {
+
+            height: 60vh;
+        }
+        #main-slider .caption{
+            font-size:20px
+        }
+        .slider-item {
+            height: 60vh;
+        }
         .slider-caption {
             width: 50%;
             left: 0 !important;
