@@ -3736,6 +3736,9 @@
 
 
     @media (max-width: 350px) {
+        #main-slider .caption {font-size: 18px; bottom:10%;}
+    }
+    @media (max-width: 350px) {
         .col-xs-6.team-person {
             -ms-flex: 0 0 100%;
             flex: 0 0 100%;
