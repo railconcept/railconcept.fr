@@ -521,14 +521,24 @@
 
     }
     #main-slider{
-        height:100vh;
         width:100%;
     } 
     #main-slider .caption{
-        background:rgba(255,255,255,0.8);
+        background-image: linear-gradient(to right, rgba(255,255,255,0)1%, rgb(255, 255, 255)40%);
+        position: absolute;
+        bottom: 20%;
+        z-index: 10;
+        padding: 20px 20px 20px 17%;
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        max-width: 1020px;
     }
-    #main-slider .slider-home .item, #main-slider .slider-home {
-        height: 100%;
+    #main-slider .slider-home .item{
+        background-size: cover;
+    }
+    #main-slider .slider-home .item  {
+        height: 100vh;
         width: 100%;
     }
     .img-100 {
@@ -3202,11 +3212,13 @@
 
 
 
-        #section-main-slider {
+        #section-main-slider, #main-slider .slider-home .item {
 
             height: 60vh;
         }
-
+        #main-slider .caption{
+            font-size:20px
+        }
         .slider-item {
             height: 60vh;
         }
