@@ -3735,8 +3735,8 @@
 
 
 
-    @media (max-width: 350px) {
-        #main-slider .caption {font-size: 18px; bottom:10%;}
+    @media (max-width: 440px) {
+        #main-slider .caption {font-size: 18px; bottom:10%; width: 90%;}
     }
     @media (max-width: 350px) {
         .col-xs-6.team-person {
