@@ -166,7 +166,8 @@ $(document).ready(function () {
         infinite: true,
         dots: false, 
 		fade: true,
-		arrows: false
+        arrows: false,
+        autoplay:true
 	});
 
 
