@@ -36,8 +36,6 @@ function findBootstrapEnvironment() {
 function show_hide(){
     if (findBootstrapEnvironment() == "xl" || findBootstrapEnvironment() == "lg") {
 
-        
-
         $('.team-person').show();
         $('.team-person:gt(-12)').hide();
 
@@ -46,7 +44,6 @@ function show_hide(){
     if (findBootstrapEnvironment() == "md") {
         $('.team-person').show();
         $('.team-person:gt(-15)').hide();
-
 
     }
     if (findBootstrapEnvironment() == "sm" || findBootstrapEnvironment() == "xs") {
@@ -134,13 +131,9 @@ $(document).ready(function () {
     show_hide();
 
     $('.first-button').on('click', function () {
-
         $('.animated-icon2').toggleClass('open');
-        
       });
     
-
-
 
     $(".show_hide").click(function (event) {
         event.preventDefault();
@@ -166,7 +159,15 @@ $(document).ready(function () {
     });  
     
 
-
+    // Slider
+    $('.slider-home').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		dots: false,
+		fade: false,
+		arrows: false
+	});
 
 
 
