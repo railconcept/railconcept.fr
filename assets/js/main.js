@@ -122,6 +122,10 @@ $(window).scroll(function () {
         $("#div-navbar").removeClass("navshadow");
     }
     AOS.refresh(); 
+
+    if ($('#scroller') > 0) {
+        scrollPage();
+    }
 });
 
 
@@ -142,10 +146,6 @@ $(document).ready(function () {
             $(this).data("show","yes");
             $(this).text("VOIR MOINS");
             $('.team-person').show();
-
-
-
-
         } else {
             $(this).text("VOIR PLUS");
             $(this).data("show","no");
@@ -154,8 +154,6 @@ $(document).ready(function () {
     }, 1000);
             show_hide();
         }
-  
-  
     });  
     
 
@@ -177,7 +175,18 @@ $(document).ready(function () {
         $('html').animate({ scrollTop: heightTop }, 1400);
     });
 
+    function scrollPage() {
+        var sy = $(this).scrollTop(),
+            $scroller = $('#scroller');
 
+        if (sy < 100) {
+            $scroller.fadeIn();
+        } else {
+            $scroller.fadeOut();
+        }
+    }
+
+   
 
 
     $("#search-link").click(function (event) {
