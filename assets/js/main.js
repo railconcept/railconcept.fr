@@ -158,13 +158,13 @@ $(document).ready(function () {
     $('.slider-home').slick({
 		slidesToShow: 1,
         slidesToScroll: 1,
-        speed: 700,
+        speed: 1400,
         infinite: true,
         dots: false, 
 		fade: true,
         arrows: false,
         autoplay: true,
-        // autoplaySpeed: 4000
+        autoplaySpeed: 5000
     });
     
     $('#scroller').click(function () {
