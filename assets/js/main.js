@@ -169,7 +169,7 @@ $(document).ready(function () {
 		fade: true,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 4000
+        // autoplaySpeed: 4000
 	});
 
 
