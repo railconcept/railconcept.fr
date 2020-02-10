@@ -170,7 +170,12 @@ $(document).ready(function () {
         arrows: false,
         autoplay: true,
         // autoplaySpeed: 4000
-	});
+    });
+    
+    $('#scroller').click(function () {
+        var heightTop = $('#top .full-screen').height() - 80;
+        $('html').animate({ scrollTop: heightTop }, 1400);
+    });
 
 
 
