@@ -538,6 +538,9 @@
         top: 50%;
         bottom:auto;
     }
+    #main-slider .caption h1{
+        font-size: 21px;
+    }
     #main-slider .slider-home .item{
         background-size: cover;
     }
@@ -2864,6 +2867,7 @@
         #main-slider .caption{
             font-size:23px
         }
+        #main-slider .caption h1{font-size:19px}
         .card-etude {
             margin-top: -20px !important;
         }
@@ -3249,6 +3253,7 @@
         #main-slider .caption{
             font-size:20px
         }
+        #main-slider .caption h1{font-size:17px}
         .slider-item {
             height: 60vh;
         }
@@ -3738,6 +3743,7 @@
 
     @media (max-width: 440px) {
         #main-slider .caption {font-size: 18px; bottom:10%; width: 90%;}
+        #main-slider .caption h1{font-size:16px}
     }
     @media (max-width: 350px) {
         .col-xs-6.team-person {
