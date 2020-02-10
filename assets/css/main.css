@@ -3740,23 +3740,20 @@
     }
 
     #scroller span {
+       
         display: block;
-        height: 20px;
+        height: 70px;
         left: 0;
         position: absolute;
         top: 22px;
-        width: 30px;
-        background-image:url(../img/up-chevron.svg);
-        background-repeat:no-repeat;
-        background-position:center;
-        background-size:30px;
+        width: 70px;
+        background-image: url(../img/up-chevron.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 33px;
         z-index: 2;
-        -webkit-animation: scrollerAnim 6s infinite;
-        animation: scrollerAnim 6s infinite;
-        -webkit-transition-timing-function: cubic-bezier(0,0,0.58,1);
-        -moz-transition-timing-function: cubic-bezier(0,0,0.58,1);
-        -o-transition-timing-function: cubic-bezier(0,0,0.58,1);
-        transition-timing-function: cubic-bezier(0,0,0.58,1);
+        background-color:rgba(255,255,255,0.3);
+        border-radius: 80px;
     }
     #scroller {
       
@@ -3765,7 +3762,7 @@
         height: 51px;
         left: 50%;
         margin-left: -16px;
-        bottom: 45px;
+        bottom: 65px;
         cursor: pointer;
         z-index: 8;
         -webkit-animation: flipVert 4s;
@@ -3830,6 +3827,9 @@
         }
     }
 
+    @media (min-width: 768px) {
+        #scroller{display: none;}
+    }
     @media (min-width: 1590px) {
         .container {
             max-width: 1420px !important;
