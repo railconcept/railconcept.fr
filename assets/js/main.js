@@ -173,7 +173,7 @@ $(document).ready(function () {
     });
     
     $('#scroller').click(function () {
-        var heightTop = $('#top .full-screen').height() - 80;
+        var heightTop = $('.slider-home').height() - 80;
         $('html').animate({ scrollTop: heightTop }, 1400);
     });
 
