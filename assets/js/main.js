@@ -122,10 +122,7 @@ $(window).scroll(function () {
         $("#div-navbar").removeClass("navshadow");
     }
     AOS.refresh(); 
-
-    if ($('#scroller') > 0) {
-        scrollPage();
-    }
+ 
 });
 
 
@@ -175,14 +172,17 @@ $(document).ready(function () {
         $('html').animate({ scrollTop: heightTop }, 1400);
     });
 
-    function scrollPage() {
-        var sy = $(this).scrollTop(),
-            $scroller = $('#scroller');
+    $(window).scroll(function () {
 
-        if (sy < 100) {
-            $scroller.fadeIn();
-        } else {
-            $scroller.fadeOut();
+        if ($("#mydiv").length > 0){
+            var sy = $(this).scrollTop(),
+                $scroller = $('#scroller');
+
+            if (sy < 100) {
+                $scroller.fadeIn();
+            } else {
+                $scroller.fadeOut();
+            }
         }
     }
 
