@@ -174,7 +174,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
 
-        if ($("#mydiv").length > 0){
+        if ($("#scroller").length > 0){
             var sy = $(this).scrollTop(),
                 $scroller = $('#scroller');
 
