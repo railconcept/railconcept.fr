@@ -3758,8 +3758,7 @@
     }
     #scroller {
         border-radius: 17px;
-        border: 3px solid 
-        #fff;
+        border: 3px solid #fff;
         position: fixed;
         width: 33px;
         height: 51px;
