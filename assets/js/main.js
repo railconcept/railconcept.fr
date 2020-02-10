@@ -184,7 +184,7 @@ $(document).ready(function () {
                 $scroller.fadeOut();
             }
         }
-    }
+    });
 
    
 
