@@ -3740,8 +3740,7 @@
     }
 
     #scroller span {
-        background: 
-        #fff;
+        background: #fff;
         border-radius: 8px;
         display: block;
         height: 10px;
@@ -3775,20 +3774,24 @@
         -o-animation: flipVert 4s;
         animation: flipVert 4s;
     }
-
-    @keyframes loadHome {
+ 
+    @keyframes scrollerAnim {
         0% {
-          opacity: 0;
-          -webkit-transform: translateX(5%);
-          transform: translateX(5%); }
-        75% {
-          opacity: 0;
-          -webkit-transform: translateX(5%);
-          transform: translateX(5%); }
+          top: 13px; }
+        10% {
+          top: 22px; }
+        20% {
+          top: 13px; }
+        30% {
+          top: 22px; }
+        40% {
+          top: 13px; }
+        50% {
+          top: 22px; }
+        60% {
+          top: 13px; }
         100% {
-          opacity: 1;
-          -webkit-transform: translateX(0);
-          transform: translateX(0); } }
+          top: 13px; } }
       
       @keyframes flipVert {
         0% {
