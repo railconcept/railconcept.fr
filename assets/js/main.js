@@ -163,8 +163,7 @@ $(document).ready(function () {
         dots: false, 
 		fade: true,
         arrows: false,
-        autoplay: true,
-        autoplaySpeed: 5000
+        autoplay: true 
     });
     
     $('#scroller').click(function () {
