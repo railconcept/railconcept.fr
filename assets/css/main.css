@@ -3741,13 +3741,17 @@
 
     #scroller span {
         background: #fff;
-        border-radius: 8px;
+         
         display: block;
-        height: 10px;
+        height: 20px;
         left: 11px;
         position: absolute;
         top: 22px;
-        width: 6px;
+        width: 20px;
+        background-image:url(../img/up-chevron.svg);
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:20px;
         z-index: 2;
         -webkit-animation: scrollerAnim 6s infinite;
         animation: scrollerAnim 6s infinite;
