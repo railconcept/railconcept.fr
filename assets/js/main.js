@@ -162,12 +162,14 @@ $(document).ready(function () {
     // Slider
     $('.slider-home').slick({
 		slidesToShow: 1,
-		slidesToScroll: 1,
+        slidesToScroll: 1,
+        speed: 700,
         infinite: true,
         dots: false, 
 		fade: true,
         arrows: false,
-        autoplay:true
+        autoplay:true,
+        autoplaySpeed: 5000,
 	});
 
 

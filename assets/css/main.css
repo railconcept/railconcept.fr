@@ -527,7 +527,6 @@
     #main-slider .caption{
         background-image: linear-gradient(to left, rgba(255,255,255,0)1%, rgb(255, 255, 255)40%);
         position: absolute;
-        bottom:20%;
         z-index: 10;
         padding: 20px 17% 20px 20px;
         font-size: 30px;
@@ -536,6 +535,8 @@
         max-width: 1020px;
         right: 0;
         width: 80%;
+        top: 50%;
+        bottom:auto;
     }
     #main-slider .slider-home .item{
         background-size: cover;
