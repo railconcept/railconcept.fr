@@ -158,7 +158,7 @@ $(document).ready(function () {
     $('.slider-home').slick({
 		slidesToShow: 1,
         slidesToScroll: 1,
-        speed: 1400,
+        speed: 2200,
         infinite: true,
         dots: false, 
 		fade: true,

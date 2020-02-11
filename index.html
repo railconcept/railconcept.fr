@@ -9,7 +9,7 @@ permalink: /
 
 <section id="section-main-slider">
     <div id="main-slider">
-        <div class="caption" data-aos="fade-right" ><span>Rail concept</span><h1>Études, expertise et assistance à maîtrise d'ouvrage spécialiste du monde ferroviaire</h1></div>
+        <div class="caption" data-aos="fade-right" ><span><span class="rail">Rail</span> <span class="concept">concept</span></span><h1>Études, expertise et assistance à maîtrise d'ouvrage spécialiste du monde ferroviaire</h1></div>
         <div class="slider-home">
             <div class="item" style="background-image: url('assets/img/slider/train-grande-vitesse-rail-concept.jpg')"></div>
             <div class="item" style="background-image: url('assets/img/slider/slider2.jpg')"></div>
@@ -20,21 +20,13 @@ permalink: /
         <span id="molette"></span> 
     </div>
 </section>
-
-
-
-
-
+ 
 
 <!-- competences -->
-
 {% include competences.html %}
-
-
-
+ 
 
 <!--News-->
-
 <div id="slider-news" class="carousel slide pt-5" data-ride="carousel">
     <ol id="nav-slider-news" class="carousel-indicators slider-news-indicators">
         <li data-target="#slider-news" data-slide-to="0" class="active"></li>
@@ -43,11 +35,8 @@ permalink: /
     </ol>
     <div class="carousel-inner slider-news-inner ">
 
-        <!-- Newss 1 -->
-
-
-
-
+        <!-- News 1 -->
+        
         {% assign maxPost = 3 %}
         {% assign counter = 0 %}
         {% for post in site.posts %}

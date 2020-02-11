@@ -524,6 +524,7 @@
         width:100%;
         position:relative;
     } 
+   
     #main-slider .caption{
         background-image: linear-gradient(to left, rgba(255,255,255,0)1%, rgb(255, 255, 255)40%);
         position: absolute;
@@ -540,6 +541,14 @@
     }
     #main-slider .caption h1{
         font-size: 21px;
+    }
+    #main-slider .caption .rail{
+        color:#a44343;
+        font-weight: 600;
+    }
+    #main-slider .caption .concept{
+        color:#9d9e9f;
+        font-weight: 600;
     }
     #main-slider .slider-home .item{
         background-size: cover;
@@ -2865,7 +2874,7 @@
 
     @media (max-width: 991px) {
         #main-slider .caption{
-            font-size:23px
+            font-size:27px
         }
         #main-slider .caption h1{font-size:19px}
         .card-etude {
@@ -3251,7 +3260,7 @@
             height: 60vh;
         }
         #main-slider .caption{
-            font-size:20px
+            font-size:25px
         }
         #main-slider .caption h1{font-size:17px}
         .slider-item {
@@ -3816,7 +3825,7 @@
 
 
     @media (max-width: 440px) {
-        #main-slider .caption {font-size: 18px; bottom:10%; width: 90%;}
+        #main-slider .caption {font-size: 23px; bottom:10%; width: 90%;}
         #main-slider .caption h1{font-size:16px}
     }
     @media (max-width: 350px) {
