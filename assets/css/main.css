@@ -529,7 +529,7 @@
         background-image: linear-gradient(to left, rgba(255,255,255,0)1%, rgb(255, 255, 255)40%);
         position: absolute;
         z-index: 10;
-        padding: 20px 17% 20px 20px;
+        padding: 30px 17% 35px 20px;
         font-size: 30px;
         font-weight: 400;
         text-transform: uppercase;
@@ -544,11 +544,11 @@
     }
     #main-slider .caption .rail{
         color:#a44343;
-        font-weight: 600;
+        font-weight: 800;
     }
     #main-slider .caption .concept{
         color:#9d9e9f;
-        font-weight: 600;
+        font-weight: 800;
     }
     #main-slider .slider-home .item{
         background-size: cover;
