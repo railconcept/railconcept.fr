@@ -530,17 +530,17 @@
         position: absolute;
         z-index: 10;
         padding: 30px 17% 35px 20px;
-        font-size: 30px;
+        font-size: 38px;
         font-weight: 700;
         text-transform: uppercase;
         max-width: 1020px;
         right: 0;
         width: 80%;
         top: 50%;
-        bottom:auto;
+        bottom:auto!important;
     }
     #main-slider .caption h1{
-        font-size: 21px;
+        font-size: 25px;
     }
     #main-slider .caption .rail{
         color:#a44343;
@@ -3827,6 +3827,7 @@
     @media (max-width: 440px) {
         #main-slider .caption {font-size: 23px; bottom:10%; width: 90%;}
         #main-slider .caption h1{font-size:16px}
+        #main-slider .caption {padding: 15px 17% 15px 20px;}
     }
     @media (max-width: 350px) {
         .col-xs-6.team-person {
