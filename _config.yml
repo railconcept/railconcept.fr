@@ -1,5 +1,5 @@
 title: Railconcept
-siteurl: https://railconcept.netlify.com
+siteurl: https://railconcept.fr
 
 plugins: # previously gems
   - jekyll-feed
