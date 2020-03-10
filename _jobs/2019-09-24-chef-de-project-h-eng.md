@@ -9,21 +9,16 @@ dep: Exploitation
 
 tdc: CDI
 
-ldt: MARSEILLE
+ldt: LES ANGLES/PARIS
 
 entreprise: >-
-  **CHEF DE PROJECT H** Cum haec **talia miscente consi**lia, tandem id ut
-  optimum factu elegit: et Vrsicinum primum ad seCum h**specie ut pro rerum
-  tunc**aec litaaque sollicitas eius aures everberarent expositas semper venire
-  summo cum honore mandavit ea **specie ut pro rerum tunc**
+  **CHEF DE PROJET H/F** Plus d'infos prochainement**
 
-poste: ' **CHEF DE PROJECT H** Cum haec **talia miscente consi**lia, tandem id ut optimum factu elegit: et Vrsicinum primum ad seCum h**specie ut pro rerum tunc**aec litaaque sollicitas eius aures everberarent expositas semper venire summo cum honore mandavit ea **specie ut pro rerum tunc**'
+poste: >-
+ **CHEF DE PROJET H/F** Plus d'infos prochainement
 
 profil: >-
-  **CHEF DE PROJECT H** Cum haec **talia miscente consi**lia, tandem id ut
-  optimum factu elegit: et Vrsicinum primum ad seCum h**specie ut pro rerum
-  tunc**aec litaaque sollicitas eius aures everberarent expositas semper venire
-  summo cum honore mandavit ea **specie ut pro rerum tunc**
+  **CHEF DE PROJET H/F** Plus d'infos prochainement
 
 ---
 
