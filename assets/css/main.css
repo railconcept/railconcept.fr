@@ -544,10 +544,12 @@
     }
     #main-slider .caption .rail{
         color:#a44343;
+        font-family: 'Euphoria', "Open Sans", sans-serif;
         font-weight: 800;
     }
     #main-slider .caption .concept{
         color:#9d9e9f;
+        font-family: 'Euphoria', "Open Sans", sans-serif;
         font-weight: 800;
     }
     #main-slider .slider-home .item{
