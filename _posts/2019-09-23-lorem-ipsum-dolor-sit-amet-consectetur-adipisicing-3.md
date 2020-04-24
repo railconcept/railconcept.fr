@@ -97,7 +97,7 @@ news:
     semperurgentium caprangerentCum haec taliaque sollicitas eius aures
     everberarent expositas semper
   taggx:
-    - tag3
+    - Le train de la Mure
 news_photo:
   photo_news1: /assets/img/uploads/djrlqpmu8aa70wg.jpg
   photo_news2: /assets/img/uploads/image.jpg

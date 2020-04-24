@@ -97,7 +97,7 @@ news:
     semperurgentium caprangerentCum haec taliaque sollicitas eius aures
     everberarent expositas semper
   taggx:
-    - tag2
+    - Eurotunnel
 news_photo:
   photo_news1: /assets/img/uploads/50261_1_news.jpg
   photo_news2: /assets/img/uploads/download.jpg
