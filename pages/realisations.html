@@ -82,7 +82,7 @@ permalink: /realisations
                                     </div>
                                     <div
                                         class="col-lg-9 col-md-8 col-sm-9 col-9 pl-0 pr-0 text-uppercase justify-content-center align-self-center">
-                                        ètudes</div>
+                                        études</div>
                                 </div>
                             </a>
                         </div>
@@ -193,8 +193,8 @@ permalink: /realisations
 
         <div class=" title-news  title-section" data-aos="fade-up" data-aos-delay="">découvrez nos réalisations</div>
         <div class="small-paragraphe" data-aos="fade-up" data-aos-delay="">
-            Rail Concept intervient sur des projets sur tout le territoire française mais aussi à l'internationale.
-            <br>Nous sommes particulièrement implantés sur le continent africain et asiatique...
+            Rail Concept intervient sur des projets d'envergure nationale et internationale.
+            <br>Nous sommes particulièrement implantés sur le continent africain.
         </div>
         <div id="gallerie-real">
 
@@ -215,7 +215,7 @@ permalink: /realisations
 
 
             <div class="row col-12 grid_gal  pl-0 pr-0">
-                {% for post in site.nos-realisations %}
+                {% for post in site.nos_realisations %}
                 <div class="gallery-real col-lg-4 col-md-4 col-sm-6 col-12 mt-5 text-center  {{ post.type-real }}"
                     data-aos="fade-up">
                     <a href="{{ post.url | prepend: site.baseurl }}">
@@ -415,7 +415,7 @@ $(document).ready(function () {
 
             }
 
-            "{% for real  in site.nos-realisations %}"
+            "{% for real  in site.nos_realisations %}"
             "{% if real.type-real == 'mission' %}"
           
             makeMarker({
@@ -526,7 +526,7 @@ $(document).ready(function () {
 
 
 
-            "{% for real  in site.nos-realisations %}"
+            "{% for real  in site.nos_realisations %}"
             "{% if real.type-real == 'etudex' %}"
           
             makeMarker2x({
@@ -627,7 +627,7 @@ $(document).ready(function () {
 
 
 
-            "{% for real  in site.nos-realisations %}"
+            "{% for real  in site.nos_realisations %}"
             "{% if real.type-real == 'expert' %}"
           
             makeMarker3x({
@@ -727,7 +727,7 @@ $(document).ready(function () {
 
 
 
-            "{% for real  in site.nos-realisations %}"
+            "{% for real  in site.nos_realisations %}"
             "{% if real.type-real == 'vente' %}"
           
             makeMarker4x({
