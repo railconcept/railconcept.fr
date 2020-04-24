@@ -97,7 +97,7 @@ news:
     semperurgentium caprangerentCum haec taliaque sollicitas eius aures
     everberarent expositas semper
   taggx:
-    - tag1
+    - Nouvelle organisation
 news_photo:
   photo_news1: /assets/img/uploads/image.jpg
   photo_news2: /assets/img/uploads/images-1-.jpg
