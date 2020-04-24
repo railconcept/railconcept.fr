@@ -60,9 +60,9 @@ collections:
       name: "news_photo"
       widget: "object" 
       fields:
-        - {label: "Photo 1", name: "photo_news1", widget: "image"}
-        - {label: "Photo 2", name: "photo_news2", widget: "image"}
-        - {label: "Photo 3", name: "photo_news3", widget: "image"}
+        - {label: "Photo 1", name: "photo_news1", widget: "image", required: false}
+        - {label: "Photo 2", name: "photo_news2", widget: "image", required: false}
+        - {label: "Photo 3", name: "photo_news3", widget: "image", required: false}
     - {label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string"}   
 
   - label: "Offre de travail"
@@ -92,8 +92,8 @@ collections:
     - {label: "Profil", name: "profil", widget: "markdown"}
   
   - label: "Réalisations"
-    name: "nos-realisations"
-    folder: "_nos-realisations"
+    name: "nos_realisations"
+    folder: "_nos_realisations"
     sort: "date:desc" 
     create: true 
     slug: "{{slug}}"
@@ -142,9 +142,9 @@ collections:
       name: "news_photo"
       widget: "object" 
       fields:
-        - {label: "Photo 1", name: "photo_news1", widget: "image"}
-        - {label: "Photo 2", name: "photo_news2", widget: "image"}
-        - {label: "Photo 3", name: "photo_news3", widget: "image"}
+        - {label: "Photo 1", name: "photo_news1", widget: "image", required: false}
+        - {label: "Photo 2", name: "photo_news2", widget: "image", required: false}
+        - {label: "Photo 3", name: "photo_news3", widget: "image", required: false}
     - {label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string"}   
 
   - label: "Jobs"

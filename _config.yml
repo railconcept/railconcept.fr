@@ -19,9 +19,9 @@ collections:
   odt:
     output: true
     permalink: /odt/:path/
-  nos-realisations:
+  nos_realisations:
     output: true
-    permalink: /nos-realisations/:path/
+    permalink: /nos_realisations/:path/
   jobs:
     output: true
     permalink: /en/jobs/:path/
