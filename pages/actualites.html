@@ -4,7 +4,8 @@ layout: default
 permalink: /actualites
 ---
 <!--realisations-->
-<div class="competence actualite-1 text-center" style="background-image:url('{{ site.baseurl }}/assets/img/slider/gare-train-nice-ville.jpg');"> 
+<div class="competence actualite-1 text-center"
+    style="background-image:url('{{ site.baseurl }}/assets/img/slider/gare-train-nice-ville.jpg');">
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
             <h1 class="header-realisation" data-aos="fade-up">Actualités </h1>
@@ -20,8 +21,6 @@ permalink: /actualites
     </div>
 </div>
 
-
-
 <!--actualités-->
 <section class="actualités">
     <div class="container mt-5 mb-5">
@@ -29,21 +28,12 @@ permalink: /actualites
             <div class="col-md-12 pl-0 pr-0" data-aos="fade-up" data-aos-delay="500">
                 <div class=" title-news  title-section mt-0">Découvrez nos actualités</div>
                 <div class="paragraphe-news mt-45">
-                    Tenez-vous informés des dernières actualités de Rail Concept. Découvrez nos dernières réalisations ! 
+                    Tenez-vous informés des dernières actualités de Rail Concept. Découvrez nos dernières réalisations !
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-
-
-
-
-
-
-
 
 <!--Gallerie Actualites-->
 
@@ -53,25 +43,29 @@ permalink: /actualites
             <div id="filtre-div" class="filtre-div  col-12 pl-0 pr-0 " data-aos="fade-left" data-aos-delay="600">
                 <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
                     onclick="filtrer_act('all');">voir tout</button>
-                    {% for tagx in site.catnews %}
+                {% for tagx in site.catnews %}
                 <button id="{{tagx.name}}" class="btn btn-default filter-button text-uppercase"
                     onclick="filtrer_act('{{tagx.name}}');">{{tagx.title}}</button>
-                    {% endfor %}
-                </div>
+                {% endfor %}
+            </div>
             <div class="row col-12 pl-0 pr-0">
                 {% for post in site.posts %}
-                    <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-12 mt-5
+                <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-12 mt-5
                         {% for tags in post.news.taggx%}
                             {{tags}}
                         {% endfor %}" data-aos="fade-up" data-aos-delay="300">
                     <div class="card card-border-none">
-                    <div class="act-tag">
-                        <img src="{{ post.news_photo.photo_news1 | prepend: site.baseurl }}" class="img-100 objectfit" alt="{{ post.title }} ">
-                    </div>
-                    <div class="card-body pl-0 pr-0">
-                        <div class="title-realisation mt-3 mb-3 lowercase"><a href="{{ post.url | prepend: site.baseurl }}" class="card-link">  {{ post.news.news_1 | strip_html | truncatewords: 25 }} </a>   </div>
+                        <div class="act-tag">
+                            <img src="{{ post.news_photo.photo_news1 | prepend: site.baseurl }}"
+                                class="img-100 objectfit" alt="{{ post.title }} ">
+                        </div>
+                        <div class="card-body pl-0 pr-0">
+                            <div class="title-realisation mt-3 mb-3 lowercase"><a
+                                    href="{{ post.url | prepend: site.baseurl }}" class="card-link">
+                                    {{ post.news.news_1 | strip_html | truncatewords: 25 }} </a> </div>
                             <span class="date-news ">{{ post.date | date_to_long_string }}</span>
-                            <a href="{{ post.url | prepend: site.baseurl }}" class="card-link float-right ">LIRE LA SUITE</a>
+                            <a href="{{ post.url | prepend: site.baseurl }}" class="card-link float-right ">LIRE LA
+                                SUITE</a>
                         </div>
                     </div>
                 </div>
@@ -85,10 +79,10 @@ permalink: /actualites
 </div>
 {% include contact.html %}
 
-<script type="text/javascript"> 
-    let tagsss =[[],[]];
-        "{% for tagz in site.catnews %}"
-            tagsss["{{tagz.name}}"] = ["{{tagz.title}}"]
-        "{% endfor %}"
-    </script>
+<script type="text/javascript">
+    let tagsss = [[], []];
+    "{% for tagz in site.catnews %}"
+    tagsss["{{tagz.name}}"] = ["{{tagz.title}}"]
+    "{% endfor %}"
+</script>
 {% include footer.html %}

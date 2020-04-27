@@ -33,7 +33,7 @@ function findBootstrapEnvironment() {
 }
 
 
-function show_hide(){
+function show_hide() {
     if (findBootstrapEnvironment() == "xl" || findBootstrapEnvironment() == "lg") {
 
         $('.team-person').show();
@@ -99,7 +99,7 @@ $(window).on('resize', function () {
     }
     show_hide();
 
-   
+
 
 
 
@@ -121,8 +121,8 @@ $(window).scroll(function () {
         //     $("#container-navbar").css("padding-top", $small);
         $("#div-navbar").removeClass("navshadow");
     }
-    AOS.refresh(); 
- 
+    AOS.refresh();
+
 });
 
 
@@ -133,41 +133,41 @@ $(document).ready(function () {
 
     $('.first-button').on('click', function () {
         $('.animated-icon2').toggleClass('open');
-      });
-    
+    });
+
 
     $(".show_hide").click(function (event) {
         event.preventDefault();
         console.log($(this));
         if ($(this).data("show") == "no") {
-            $(this).data("show","yes");
+            $(this).data("show", "yes");
             $(this).text("VOIR MOINS");
             $('.team-person').show();
         } else {
             $(this).text("VOIR PLUS");
-            $(this).data("show","no");
-               $('html, body').animate({
-        scrollTop: $("#title_team").offset().top - 100
-    }, 1000);
+            $(this).data("show", "no");
+            $('html, body').animate({
+                scrollTop: $("#title_team").offset().top - 100
+            }, 1000);
             show_hide();
         }
-    });  
-    
+    });
+
 
     // Slider
     $('.slider-home').slick({
-		slidesToShow: 1,
+        slidesToShow: 1,
         slidesToScroll: 1,
         speed: 2200,
         infinite: true,
-        dots: false, 
-		fade: true,
+        dots: false,
+        fade: true,
         arrows: false,
         autoplay: true,
         autoplaySpeed: 5000,
         pauseOnHover: false
     });
-    
+
     $('#scroller').click(function () {
         var heightTop = $('.slider-home').height() - 80;
         $('html').animate({ scrollTop: heightTop }, 1400);
@@ -175,7 +175,7 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
 
-        if ($("#scroller").length > 0){
+        if ($("#scroller").length > 0) {
             var sy = $(this).scrollTop(),
                 $scroller = $('#scroller');
 
@@ -187,7 +187,7 @@ $(document).ready(function () {
         }
     });
 
-   
+
 
 
     $("#search-link").click(function (event) {
@@ -371,7 +371,7 @@ $(document).ready(function () {
 
     ///////////////////////////////////////////Google Map ////////////////////////////
 
-   (() => {
+    (() => {
         "use strict";
 
         const appendChild = Element.prototype.appendChild;
@@ -390,7 +390,7 @@ $(document).ready(function () {
             }
             return element;
         };
-    })(); 
+    })();
 
 
 
@@ -491,7 +491,7 @@ $(document).ready(function () {
 });
 
 function rech_releaseEvents(el) {
-    
+
     $id = $(el).attr('id');
     console.log($id);
     $('.bg-circle').removeClass('image-active');
@@ -506,21 +506,21 @@ function rech_releaseEvents(el) {
 
 
 $(document).ready(function () {
-	
 
-	if ($("#all").length) {
-		$("#all").click();
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+    if ($("#all").length) {
+        $("#all").click();
+    }
+
+
+
+
+
+
+
+
+
+
 
     $(".filter-button").click(function () {
         var value = $(this).attr('data-filter');
@@ -793,7 +793,7 @@ $(document).ready(function () {
 });
 
 function get_offre($url, $that, e) {
-console.log($url);
+    console.log($url);
     $(".select_offre").removeClass("active");
     $($that).addClass("active");
     $debut = 0;
