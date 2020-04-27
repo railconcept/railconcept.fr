@@ -1881,6 +1881,18 @@
 
     }
 
+    .subtitle-card-etude {
+        font-size: 17px;
+        font-family: "Open Sans", sans-serif;
+        color: rgb(255, 255, 255);
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .subtitle-card-etude p {
+        margin-top: 1rem;
+    }
+
     .liste-card-etude {
         font-size: 17px;
         font-family: "Open Sans", sans-serif;
