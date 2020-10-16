@@ -20,7 +20,8 @@ news:
   news_2_eng:
   taggx:
     - etude
-    - exploitation
+    - infrastructure
+    - économie
 news_photo:
   photo_news1: /assets/img/uploads/vitoria-bordeaux.jpg
   photo_news2:
