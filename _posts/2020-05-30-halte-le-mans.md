@@ -1,7 +1,12 @@
 ---
 layout: news
+<<<<<<< HEAD
 title: 'Etude d''exploitation - Halte Le Mans Hôpital-Université'
 title_eng: 'Etude d’exploitation - Halte Le Mans Hôpital-Université'
+=======
+title: 'Etude d exploitation - Halte Le Mans Hôpital-Université'
+title_eng: 'Etude d exploitation - Halte Le Mans Hôpital-Université'
+>>>>>>> 48d56ace4bbf6552f177f5c17b0a55a4537fd260
 date: '30-05-2020 12:00:00'
 news:
   news_1: >-
