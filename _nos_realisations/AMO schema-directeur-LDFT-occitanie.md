@@ -5,7 +5,7 @@ favoris: true
 title: AMO Schéma Directeur Lignes de Desserte Fines du Territoire Occitanie
 donneur_ordre: SNCF Réseau
 duree: 12 mois
-annee_real: '2020'
+annee_real: '2019'
 region: OCCITANIE
 pays: '  FRANCE'
 lat: '43.610933'
