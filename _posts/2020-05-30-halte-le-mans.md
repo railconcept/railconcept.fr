@@ -1,7 +1,7 @@
 ---
 layout: news
-title: 'Etude d'exploitation - Halte Le Mans Hôpital-Université'
-title_eng: 'Etude d'exploitation - Halte Le Mans Hôpital-Université'
+title: 'Etude d''exploitation - Halte Le Mans Hôpital-Université'
+title_eng: 'Etude d’exploitation - Halte Le Mans Hôpital-Université'
 date: '30-05-2020 12:00:00'
 news:
   news_1: >-
