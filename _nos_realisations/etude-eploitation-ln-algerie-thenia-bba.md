@@ -3,7 +3,7 @@ layout: real
 type-real: etudex
 favoris: true
 title: Étude d’exploitation pour le projet de ligne nouvelle entre Thenia et Bordj Bou Arreridj (Algérie)
-donneur_ordre: CCECC \(MOA ANESRIF\)
+donneur_ordre: CCECC (MOA ANESRIF)
 duree: 2 ans
 annee_real: '2017'
 region: THENIA - BORDJ BOU ARRERIDJ
