@@ -3,7 +3,7 @@ layout: real
 type-real: expert
 favoris: true
 title: Direction du projet du métro d'Abidjan Ligne 1
-donneur_ordre: Ministère des Transports de la République de Côte d'Ivoire
+donneur_ordre: Ministère des Transports de la République de Côte d''Ivoire
 duree: 14 mois
 annee_real: '2017'
 region: ABIDJAN
