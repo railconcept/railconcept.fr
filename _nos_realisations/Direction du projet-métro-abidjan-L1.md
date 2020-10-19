@@ -1,6 +1,6 @@
 ---
 layout: real
-type-real: expert
+type-real: mission
 favoris: true
 title: Direction du projet du métro d'Abidjan Ligne 1
 donneur_ordre: Ministère des Transports de la République de Côte d'Ivoire
