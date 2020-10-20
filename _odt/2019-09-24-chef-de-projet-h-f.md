@@ -3,7 +3,7 @@ layout: offre
 active: true
 date: '01-09-2019 00:00:00'
 title: 'Stagiaire chargé(e) détudes exploitation H/F'
-title_eng: Stagiaire chargé(e) d'études exploitation H/F
+title_eng: Stagiaire chargé(e) détudes exploitation H/F
 tdp: cde
 dep: Exploitation
 dep_eng: Exploitation ENG
