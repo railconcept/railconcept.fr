@@ -38,8 +38,7 @@ poste_eng: >-
   -	Réaliser les analyses nécessaires aux études sur lesquelles le stagiaire sera impliquée en coordination avec chacun des chefs de projet. En début de stage, le stagiaire sera encadré et formé par les chefs de projet, l’objectif étant qu’il puisse gagner en autonomie au fur et mesure des études réalisées,
   -	Préparer et participer aux réunions d’avancement des études avec le maitre d’ouvrage.
   Sous la direction du directeur de division, des chefs de projets et des ingénieurs :
-  -	Assurer la présentation des rendus clients (rapports, notes, tableaux, schémas, comptes-
-rendus…) ;
+  -	Assurer la présentation des rendus clients (rapports, notes, tableaux, schémas, comptes-rendus…) ;
   -	Assurer la communication des informations techniques aux différents intervenants du projet en accord avec le Directeur de Division ou le Chef de Projet.
   Le stagiaire pourra être amené à travailler sur des projets ayant une composante socio- économique (prévision de trafic, étude de la demande, étude territoriale) ou infrastructure.
 profil: >-
