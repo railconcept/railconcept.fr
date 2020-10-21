@@ -63,7 +63,7 @@ permalink: /actualites
                             <div class="title-realisation mt-3 mb-3 lowercase"><a
                                     href="{{ post.url | prepend: site.baseurl }}" class="card-link">
                                     {{ post.news.news_1 | strip_html | truncatewords: 25 }} </a> </div>
-                            <span class="date-news ">{{ post.date | date_to_long_string }}</span>
+                            <span class="date-news ">{{ post.date | date: "%Y-%m-%d" }}</span>
                             <a href="{{ post.url | prepend: site.baseurl }}" class="card-link float-right ">LIRE LA
                                 SUITE</a>
                         </div>
