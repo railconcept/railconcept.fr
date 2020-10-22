@@ -112,13 +112,19 @@ permalink: /contact
             <div class="titl1-gray mb-0" data-aos="fade-up">NOUS SOMMES A VOTRE ECOUTE!</div>
             <div class="title-news title-section mt-0 pt-0  mb-5" data-aos="fade-up">CONTACTEZ-NOUS</div>
 
-            <form class="contact-form" action="/success" name="contactez-nous" method="post"
+            <!-- Todo: support forms fowarding to email
+                <form class="contact-form" action="/success" name="contactez-nous" method="post"
+                    enctype="multipart/form-data" netlify-honeypot="bot-field" data-netlify-recaptcha="true"
+                    data-netlify="true">
+            -->
+            <form class="contact-form" action="mailto:commercial@railconcept.fr" name="contactez-nous" method="get"
                 enctype="multipart/form-data" netlify-honeypot="bot-field" data-netlify-recaptcha="true"
                 data-netlify="true">
-
                 <p class="hidden">
                     <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                 </p>
+
+                <!-- Todo: support forms fowarding to email
 
                 <div class="row" data-aos="fade-up" data-aos-delay="300">
                     <div class="col-md-6 ">
@@ -179,6 +185,18 @@ permalink: /contact
                     </div>
                 </div>
 
+                -->
+                
+                <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="row ">
+                        <div class="col-md-4  d-flex p-2" data-netlify-recaptcha="true"></div>
+                        <div class="col-md-3  d-flex p-2">
+                            <button type="submit"
+                                class="btn btn-default btn-voir-poste text-uppercase btn-active  justify-content-center align-self-center mt-0 mx-auto"
+                                data-aos="zoom-in">Contactez-nous par email !</button>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
     </div>

@@ -266,7 +266,14 @@ permalink: /rejoignez-nous
             <div class="col-md-12 col-xl-6 col-lg-6 bg-metiers  ml-0 mt-0 etude-container-right pt-5 pb-5"
                 data-aos="fade-left" data-aos-delay="600">
                 <div class="container form-postul   pl-5 pr-5">
+
+                    <!-- Todo: support forms fowarding to email
+
                     <form action="/success" name="poste_submission" class="" method="post" enctype="multipart/form-data"
+                        netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
+                    -->
+
+                    <form action="mailto:commercial@railconcept.fr" name="poste_submission" class="" method="get" enctype="multipart/form-data"
                         netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
                         <div class=" title-news text-left title-section mb-5">POSTULER</div>
 
@@ -276,6 +283,7 @@ permalink: /rejoignez-nous
                             <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                         </p>
 
+                        <!--
                         <div class="form-group ">
                             <div class="row col-md-12 align-items-center pl-0 pr-0">
                                 <div class="col-md-3 col-sm-3 p-0">
@@ -376,6 +384,18 @@ permalink: /rejoignez-nous
                                 <button type="submit"
                                     class="btn btn-default btn-voir-poste mt-0  mb-5 text-uppercase btn-active bg-select-2 mb-2"
                                     data-aos="zoom-in">Envoyer</button>
+                            </div>
+                        </div>
+
+                        -->
+                        <div class="row mt-3">
+                            <div class="col-xl-8 col-lg-12 col-md-8 col-sm-8 col-12 pl-0">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-right pt-4">
+                                <button type="submit"
+                                    class="btn btn-default btn-voir-poste mt-0  mb-5 text-uppercase btn-active bg-select-2 mb-2"
+                                    data-aos="zoom-in">Contactez nous par email !</button>
                             </div>
                         </div>
                     </form>
