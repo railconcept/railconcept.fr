@@ -2,7 +2,7 @@ backend:
   name: github
   repo: railconcept/railconcept.fr
   branch: master
-  base_url: https://railconcept.fr/callback
+  base_url: https://railconcept.fr/oauth
 
 media_folder : assets/img/uploads
 
