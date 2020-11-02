@@ -3,6 +3,7 @@ backend:
   repo: railconcept/railconcept.fr
   branch: master
   base_url: https://railconcept.fr/admin
+  auth_endpoint: /auth
 
 media_folder : assets/img/uploads
 
