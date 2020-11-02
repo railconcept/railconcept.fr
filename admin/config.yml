@@ -2,7 +2,7 @@ backend:
   name: github
   repo: railconcept/railconcept.fr
   branch: master
-  base_url: https://railconcept.fr/
+  base_url: https://railconcept.fr/admin
 
 media_folder : assets/img/uploads
 
