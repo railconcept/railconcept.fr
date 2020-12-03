@@ -21,8 +21,6 @@ news:
   taggx:
     - etude
     - exploitation
-    - organisation
-    - ingetime
 news_photo:
   photo_news1: /assets/img/uploads/capture.png
 video_news: "-"
