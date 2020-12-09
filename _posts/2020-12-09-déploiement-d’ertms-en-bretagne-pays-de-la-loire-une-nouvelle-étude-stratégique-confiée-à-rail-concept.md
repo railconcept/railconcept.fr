@@ -20,10 +20,7 @@ news:
     Nous remercions Marc Antoine Bertran de Balanda pour avoir fait appel à notre expertise sur ces sujets. 
 
 
-
-
-
-    Planning de déploiement d’Argos (source : SNCF Réseau).
+    *Planning de déploiement d’Argos (source : SNCF Réseau).*
   taggx:
     - etude
 news_photo:
