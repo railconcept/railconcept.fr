@@ -1,12 +1,12 @@
 Gemfile.lock
 .ruby-version
 
-
 # Created by https://www.gitignore.io/api/jekyll
 # Edit at https://www.gitignore.io/?templates=jekyll
 
 ### Jekyll ###
 _site/
+!_site/.gitkeep
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
