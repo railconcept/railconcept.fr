@@ -25,6 +25,8 @@ jobs:
         # uses: ruby/setup-ruby@v1
         uses: ruby/setup-ruby@v1
         with:
+          # bundle install really does take a long time with jekyll 4.X
+          bundler-cache: true
           ruby-version: 2.7
 
       - name: Install dependencies
