@@ -2,21 +2,21 @@
 layout: real
 type-real: mission
 favoris: false
-title: 'Mission d''assistance technique et générale sur les études APS et APD '
-title_eng: 'ENG: Mission d''assistance technique et générale sur les études APS et APD '
+title: "Mission d'assistance technique et générale sur les études APS et APD "
+title_eng: "ENG: Mission d'assistance technique et générale sur les études APS et APD "
 title2: Métro Urbain d’Abidjan Ligne 1 Axe Nord-Sud
-title2_eng: 'ENG: Métro Urbain d’Abidjan Ligne 1 Axe Nord-Sud'
+title2_eng: "ENG: Métro Urbain d’Abidjan Ligne 1 Axe Nord-Sud"
 donneur_ordre: HYUNDAI ROTEM (membre groupement STAR)
-donneur_ordre_eng: 'ENG : HYUNDAI ROTEM (membre groupement STAR)'
+donneur_ordre_eng: "ENG : HYUNDAI ROTEM (membre groupement STAR)"
 duree: 18 mois
-duree_eng: 'ENG: 18 mois'
+duree_eng: "ENG: 18 mois"
 annee_real: 2015-2017
-region: 'AXE NORD-SUD ABIDJAN '
-region_eng: 'ENG: AXE NORD-SUD ABIDJAN '
+region: "AXE NORD-SUD ABIDJAN "
+region_eng: "ENG: AXE NORD-SUD ABIDJAN "
 pays: CÔTE D'IVOIRE
-pays_eng: 'ENG: CÔTE D''IVOIRE'
-lat: '5.371688'
-long: '-3.990993'
+pays_eng: "ENG: CÔTE D'IVOIRE"
+lat: "5.371688"
+long: "-3.990993"
 context: >-
   La Convention de Concession pour le Métro Urbain d’Abidjan axe Nord-Sud « MUA1
   » est en négociation entre le gouvernement de Côte d’Ivoire et le Groupement
@@ -57,4 +57,3 @@ real_eng: >-
   négociations avec l’Autorité Concédante.
 photo1: /assets/img/uploads/Metro urbain Abidjan 2.png
 ---
-
