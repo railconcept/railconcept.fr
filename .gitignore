@@ -6,7 +6,6 @@ Gemfile.lock
 
 ### Jekyll ###
 _site/
-!_site/.gitkeep
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
