@@ -2,15 +2,15 @@
 layout: real
 type-real: mission
 favoris: false
-title: 'Mission d''assistance technique et générale sur les études APS et APD '
+title: "Mission d'assistance technique et générale sur les études APS et APD "
 donneur_ordre: DONGSAN ENGINEERING (groupement STAR)
 duree: 18 mois
 annee_real: 2015-2017
-region: ' ABIDJAN '
+region: " ABIDJAN "
 pays: CÔTE D'IVOIRE
-lat: '5.353573'
-long: '-4.028075'
-text1: ''
+lat: "5.353573"
+long: "-4.028075"
+text1: ""
 context: >-
   Dongsan Engineering est membre du groupement STAR pour le projet de concession
   du Métro Urbain d’Abidjan. L’ensemble des missions d’assistance technique
@@ -36,4 +36,3 @@ real: >-
   SOTRA), et des contributions techniques ponctuelles
 photo1: /assets/img/uploads/Metro urbain Abidjan.png
 ---
-

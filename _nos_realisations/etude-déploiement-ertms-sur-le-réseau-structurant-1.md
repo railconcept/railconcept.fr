@@ -5,12 +5,12 @@ favoris: false
 title: Déploiement ERTMS sur le réseau structurant
 donneur_ordre: SNCF RESEAU
 duree: 1 mois
-annee_real: '2015'
-region: ' LONGUYON-BÂLE  '
-pays: ' FRANCE'
-lat: '48.580981'
-long: '7.606553'
-text1: ''
+annee_real: "2015"
+region: " LONGUYON-BÂLE  "
+pays: " FRANCE"
+lat: "48.580981"
+long: "7.606553"
+text1: ""
 context: >-
   La section Longuyon - Bâle constitue la section clef, en France, du corridor
   multimodal européen n°2. Ce dernier permet de relier les ports de Rotterdam et
@@ -30,4 +30,3 @@ real: >-
   d’un système de signalisation.
 photo1: /assets/img/uploads/Longuyou-Bale.png
 ---
-

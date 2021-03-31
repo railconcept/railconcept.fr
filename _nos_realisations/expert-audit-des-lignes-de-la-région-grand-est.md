@@ -3,20 +3,20 @@ layout: real
 type-real: expert
 favoris: false
 title: Audit des lignes de la région Grand Est
-title_eng: 'ENG: Audit des lignes de la région Grand Est'
-title2: ' '
-title2_eng: ' '
+title_eng: "ENG: Audit des lignes de la région Grand Est"
+title2: " "
+title2_eng: " "
 donneur_ordre: SNCF RESEAU
-donneur_ordre_eng: 'ENG: SNCF RESEAU'
-duree: '6 mois '
-duree_eng: 'ENG: 6 mois '
+donneur_ordre_eng: "ENG: SNCF RESEAU"
+duree: "6 mois "
+duree_eng: "ENG: 6 mois "
 annee_real: 2016/2017
-region: 'LA RÉGION GRAND EST '
-region_eng: 'ENG: LA RÉGION GRAND EST '
+region: "LA RÉGION GRAND EST "
+region_eng: "ENG: LA RÉGION GRAND EST "
 pays: FRANCE
-pays_eng: 'ENG: FRANCE'
-lat: '48.978987'
-long: '7.023069'
+pays_eng: "ENG: FRANCE"
+lat: "48.978987"
+long: "7.023069"
 context: >-
   Le réseau ferroviaire en région Grand Est est notamment composé d’un certain
   nombre de lignes UIC 7 à 9. Il convient de faire un audit du fonctionnement et
@@ -56,4 +56,3 @@ real_eng: >-
 photo1: /assets/img/uploads/Grand Est 1.png
 photo2: /assets/img/uploads/Grand Est 2.png
 ---
-

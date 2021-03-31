@@ -7,7 +7,6 @@ plugins: # previously gems
   - jekyll-seo-tag
   - jekyll-sitemap
 
-
 highlighter: rouge
 markdown: kramdown
 kramdown:

@@ -1,8 +1,8 @@
 ---
 layout: news
-title: 'Présentation du contrat IngeTime - Eurotunnel'
-title_eng: 
-date: '24-04-2020 12:00:00'
+title: "Présentation du contrat IngeTime - Eurotunnel"
+title_eng:
+date: "24-04-2020 12:00:00"
 news:
   news_1: >-
     Les dernières fonctionnalités d’IngeTime ont été livré à Eurotunnel ! Ces dernières permettent notamment de modéliser finement l’impact des plages travaux programmées sur le graphique de circulation.  
@@ -21,4 +21,3 @@ news_photo:
   photo_news2:
   photo_news3:
 ---
-
