@@ -30,7 +30,7 @@ jobs:
           ruby-version: 2.7
 
       - name: Jekyll build
-        run: jekyll build
+        run: bundle exec jekyll build
 
       - name: Build And Deploy
         id: builddeploy
