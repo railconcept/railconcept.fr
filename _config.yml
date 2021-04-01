@@ -1,12 +1,10 @@
 title: Rail Concept
 url: https://railconcept.fr
-siteurl: https://railconcept.fr
 
 plugins: # previously gems
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-
 
 highlighter: rouge
 markdown: kramdown

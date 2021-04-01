@@ -8,9 +8,9 @@ duree: 4 mois et 12 mois
 annee_real: 2013 ET 2015
 region: NANTES-BORDEAUX
 pays: FRANCE
-lat: '45.460703'
-long: '-0.486922'
-text1: ''
+lat: "45.460703"
+long: "-0.486922"
+text1: ""
 context: >-
   L’axe Nantes – Bordeaux est une ligne transversale essentielle du réseau
   français afin d’assurer une liaison ferrée entre d’une part la Bretagne et les
@@ -29,4 +29,3 @@ real: >-
   la mise à jour de l’étude en 2015.
 photo1: /assets/img/uploads/Gare de Bordeaux.jpg
 ---
-

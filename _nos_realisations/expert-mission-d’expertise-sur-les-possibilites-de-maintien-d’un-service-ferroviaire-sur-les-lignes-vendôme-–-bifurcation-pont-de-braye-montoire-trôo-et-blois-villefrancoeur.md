@@ -10,19 +10,19 @@ title_eng: >-
   ENG: MISSION D’EXPERTISE SUR LES POSSIBILITES DE MAINTIEN D’UN SERVICE
   FERROVIAIRE SUR LES LIGNES VENDÔME – BIFURCATION PONT DE BRAYE-MONTOIRE-TRÔO
   ET BLOIS-VILLEFRANCOEUR
-title2: ' '
-title2_eng: ' '
+title2: " "
+title2_eng: " "
 donneur_ordre: SNCF RESEAU
-donneur_ordre_eng: 'ENG: SNCF RESEAU'
+donneur_ordre_eng: "ENG: SNCF RESEAU"
 duree: 1 mois
-duree_eng: 'ENG: 1 mois'
-annee_real: '2014'
-region: 'VENDÔME – BIFURCATION  '
-region_eng: 'ENG: VENDÔME – BIFURCATION  '
+duree_eng: "ENG: 1 mois"
+annee_real: "2014"
+region: "VENDÔME – BIFURCATION  "
+region_eng: "ENG: VENDÔME – BIFURCATION  "
 pays: FRANCE
-pays_eng: 'ENG: FRANCE'
-lat: '47.573972'
-long: '1.316354'
+pays_eng: "ENG: FRANCE"
+lat: "47.573972"
+long: "1.316354"
 context: >-
   Les deux sections de ligne sont actuellement en fin de vie. Toutefois ces
   lignes intéressent des acteurs (chargeurs fret), et la pérennisation de ces
@@ -63,4 +63,3 @@ real_eng: >-
   l’établissement des bilans socio-économique et carbone du projet.
 photo1: /assets/img/uploads/Vendome-Montoire et Blois-Villefrancoeur.jpg
 ---
-

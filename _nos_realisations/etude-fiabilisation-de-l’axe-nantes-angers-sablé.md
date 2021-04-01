@@ -7,10 +7,10 @@ donneur_ordre: SNCF RESEAU
 duree: 8 mois puis 3 mois
 annee_real: 2013 et 2016
 region: NANTES-ANGERS
-pays: ' FRANCE'
-lat: '47.448659'
-long: '-0.551660'
-text1: ''
+pays: " FRANCE"
+lat: "47.448659"
+long: "-0.551660"
+text1: ""
 context: >-
   La ligne Nantes-Angers-Sablé est très sollicitée par la conjonction du trafic
   TAGV et du trafic TER, en constant développement. La coexistence de ces
@@ -33,4 +33,3 @@ real: >-
   maintenance et de régularité gagnées.
 photo1: /assets/img/uploads/Axe Nantes-Angers-Sable.png
 ---
-

@@ -7,12 +7,12 @@ title: >-
   Ligne Nouvelle Provence Cote d’Azur (LN PCA)
 donneur_ordre: SNCF RESEAU
 duree: 12 mois
-annee_real: '2015'
-region: 'COTE D’AZUR  '
+annee_real: "2015"
+region: "COTE D’AZUR  "
 pays: FRANCE
-lat: '43.704081'
-long: '7.260318'
-text1: ''
+lat: "43.704081"
+long: "7.260318"
+text1: ""
 context: >-
   Suite à la première phase d’étude du projet anciennement appelé « LGV PACA »,
   il a été retenu le principe d’un phasage du projet de ligne nouvelle PCA en
@@ -31,4 +31,3 @@ real: >-
   capacité de financement du gestionnaire d’infrastructure.
 photo1: /assets/img/uploads/LNPCA.png
 ---
-

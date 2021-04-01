@@ -5,12 +5,12 @@ favoris: true
 title: LGV Bretagne Pays de Loire
 donneur_ordre: SNCF Réseau - I&P GP BPL
 duree: 12 mois
-annee_real: '2016'
-region: 'BRETAGNE – PAYS DE LA LOIRE  '
+annee_real: "2016"
+region: "BRETAGNE – PAYS DE LA LOIRE  "
 pays: FRANCE
-lat: '48.076711'
-long: '-0.758023'
-text1: ''
+lat: "48.076711"
+long: "-0.758023"
+text1: ""
 context: >-
   Menée en parallèle de la mission de la Maîtrise d’œuvre et de celle de
   l’Organisme Technique, la mission d’inspection a consisté à effectuer, pour
@@ -29,4 +29,3 @@ real: >-
   échantillonnage de différents chantiers élémentaires.
 photo1: /assets/img/uploads/LGV Bretagne Pays de Loire.png
 ---
-

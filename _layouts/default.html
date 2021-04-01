@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="fr">
-<head>
+  <head>
+    {% include head.html %}
+  </head>
 
-    {% include head.html %}  
-
-</head>
-
-<body id="body">
-     
-        {% include navbar.html %}    
-	
-{{content}}
+  <body id="body">
+    {% include navbar.html %} {{content}}
+  </body>
+</html>

@@ -5,12 +5,12 @@ favoris: false
 title: Assistance à Maîtrise d’Ouvrage
 donneur_ordre: OC’VIA MAINTENANCE
 duree: 12 mois
-annee_real: '2014'
+annee_real: "2014"
 region: NÎMES MONTPELLIER (FRANCE)
 pays: FRANCE
-lat: '43.698010'
-long: '4.149878'
-text1: ''
+lat: "43.698010"
+long: "4.149878"
+text1: ""
 context: >-
   Cette prestation d’assistance technique et d’AMO, consiste à accompagner et
   conseiller le mainteneur dans le déploiement de l’organisation de la
@@ -30,4 +30,3 @@ real: >-
   niveau 2.
 photo1: /assets/img/uploads/Nimes-Montpellier.png
 ---
-
