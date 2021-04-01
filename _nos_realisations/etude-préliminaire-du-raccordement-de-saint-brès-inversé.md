@@ -2,21 +2,21 @@
 layout: real
 type-real: etudex
 favoris: false
-title: 'Etude préliminaire du raccordement de Saint Brès inversé '
-title_eng: 'ENG: Etude préliminaire du raccordement de Saint Brès inversé '
+title: "Etude préliminaire du raccordement de Saint Brès inversé "
+title_eng: "ENG: Etude préliminaire du raccordement de Saint Brès inversé "
 title2: Contournement de Nîmes-Montpellier
-title2_eng: 'ENG: Contournement de Nîmes-Montpellier'
+title2_eng: "ENG: Contournement de Nîmes-Montpellier"
 donneur_ordre: SNCF RESEAU
-donneur_ordre_eng: 'ENG: SNCF RESEAU'
+donneur_ordre_eng: "ENG: SNCF RESEAU"
 duree: 1 mois
-duree_eng: 'ENG: 1 mois'
-annee_real: '2015'
-region: ' NÎMES-MONTPELLIER '
-region_eng: 'ENG:  NÎMES-MONTPELLIER '
+duree_eng: "ENG: 1 mois"
+annee_real: "2015"
+region: " NÎMES-MONTPELLIER "
+region_eng: "ENG:  NÎMES-MONTPELLIER "
 pays: FRANCE
-pays_eng: 'ENG: FRANCE'
-lat: '43.669548'
-long: '4.033310'
+pays_eng: "ENG: FRANCE"
+lat: "43.669548"
+long: "4.033310"
 context: >-
   L’objet de l’étude est de vérifier la faisabilité d’un raccordement dénivelé à
   double voie situé dans le secteur de Saint-Brès entre la ligne Tarascon Sète
@@ -38,4 +38,3 @@ real_eng: "ENG: Dans le cadre de l’étude d’exploitation, ont été étudié
 photo1: /assets/img/uploads/Raccordement Saint-Bres.png
 photo2: /assets/img/uploads/Raccordement Saint-Bres 2.png
 ---
-

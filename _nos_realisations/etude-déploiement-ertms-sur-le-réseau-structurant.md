@@ -5,12 +5,12 @@ favoris: false
 title: Déploiement ERTMS sur le réseau structurant
 donneur_ordre: SNCF RESEAU
 duree: 3 mois
-annee_real: '2014'
-region: 'MARSEILLE - VINTIMILLE '
-pays: ' FRANCE '
-lat: ' 43.559284'
-long: '7.013866'
-text1: ''
+annee_real: "2014"
+region: "MARSEILLE - VINTIMILLE "
+pays: " FRANCE "
+lat: " 43.559284"
+long: "7.013866"
+text1: ""
 context: >-
   L’objectif du déploiement d’ERTMS niveau 2 sur l’axe Marseille – Vintimille
   est d’augmenter la capacité de l’axe et d’améliorer la robustesse de
@@ -28,4 +28,3 @@ real: >-
   économiques et socio-économiques pour le système.
 photo1: /assets/img/uploads/Marseille-Vintimille.png
 ---
-

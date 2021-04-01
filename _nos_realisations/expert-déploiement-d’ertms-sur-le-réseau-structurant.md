@@ -3,20 +3,20 @@ layout: real
 type-real: expert
 favoris: false
 title: Déploiement d’ERTMS sur le réseau structurant
-title_eng: 'ENG: Déploiement d’ERTMS sur le réseau structurant'
-title2: ' '
-title2_eng: ' '
+title_eng: "ENG: Déploiement d’ERTMS sur le réseau structurant"
+title2: " "
+title2_eng: " "
 donneur_ordre: RFF
-donneur_ordre_eng: 'ENG: RFF'
+donneur_ordre_eng: "ENG: RFF"
 duree: 6 mois
-duree_eng: 'ENG: 6 mois'
-annee_real: '2014'
-region: ' '
-region_eng: ' '
-pays: ' EUROPE'
-pays_eng: 'ENG:  EUROPE'
-lat: '48.844974'
-long: '2.376834'
+duree_eng: "ENG: 6 mois"
+annee_real: "2014"
+region: " "
+region_eng: " "
+pays: " EUROPE"
+pays_eng: "ENG:  EUROPE"
+lat: "48.844974"
+long: "2.376834"
 context: >-
   La commission européenne a transmis à RFF des obligations d’équiper les
   corridors FRET en signalisation ERTMS. Suite à ces obligations, RFF souhaite
@@ -53,4 +53,3 @@ real_eng: >-
   enjeux économiques du projet.
 photo1: /assets/img/uploads/Reseau ERTMS.jpg
 ---
-

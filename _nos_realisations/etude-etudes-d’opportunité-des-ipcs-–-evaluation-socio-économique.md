@@ -3,20 +3,20 @@ layout: real
 type-real: etudex
 favoris: false
 title: Etudes d’opportunité des IPCS – Evaluation socio-économique
-title_eng: 'ENG: Etudes d’opportunité des IPCS – Evaluation socio-économique'
-title2: ' '
-title2_eng: ' '
+title_eng: "ENG: Etudes d’opportunité des IPCS – Evaluation socio-économique"
+title2: " "
+title2_eng: " "
 donneur_ordre: RFF
-donneur_ordre_eng: 'ENG: RFF'
+donneur_ordre_eng: "ENG: RFF"
 duree: 4 mois
-duree_eng: 'ENG: 4 mois'
-annee_real: '2014'
-region: ' BORDEAUX   '
-region_eng: 'ENG:  BORDEAUX   '
+duree_eng: "ENG: 4 mois"
+annee_real: "2014"
+region: " BORDEAUX   "
+region_eng: "ENG:  BORDEAUX   "
 pays: FRANCE
-pays_eng: 'ENG: FRANCE'
-lat: '44.186355'
-long: '0.678983'
+pays_eng: "ENG: FRANCE"
+lat: "44.186355"
+long: "0.678983"
 context: >-
   L’objectif principal de ces études est de valider l’opportunité en termes
   d’intérêt économique et socio-économique de réaliser les opérations
@@ -55,4 +55,3 @@ real_eng: >-
   maintenance.
 photo1: /assets/img/uploads/IPCS Bordeaux.png
 ---
-

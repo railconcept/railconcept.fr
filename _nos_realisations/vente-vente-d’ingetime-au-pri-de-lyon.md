@@ -5,12 +5,12 @@ favoris: false
 title: Vente d’IngeTime au PRI de Lyon
 donneur_ordre: SNCF Réseau – PRI de Lyon / Cellule Exploitation
 duree: 1 Mois (Formation comprise)
-annee_real: '2016'
-region: 'LYON '
-pays: 'FRANCE '
-lat: '45.773332'
-long: '4.859707'
-text1: ''
+annee_real: "2016"
+region: "LYON "
+pays: "FRANCE "
+lat: "45.773332"
+long: "4.859707"
+text1: ""
 context: >-
   Rail Concept a réalisé de nombreuses études sur le périmètre de la Direction
   Territoriale Rhône-Alpes Auvergne. Notamment, une étude de redécoupage du
@@ -23,4 +23,3 @@ real: >-
   relative à l’utilisation d’IngeTime.
 photo1: /assets/img/uploads/PRI LYON.png
 ---
-
