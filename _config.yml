@@ -6,6 +6,10 @@ plugins: # previously gems
   - jekyll-seo-tag
   - jekyll-sitemap
 
+exclude:
+  - api/bin/
+  - api/obj/
+
 highlighter: rouge
 markdown: kramdown
 kramdown:
