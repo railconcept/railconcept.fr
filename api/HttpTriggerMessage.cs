@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 
 namespace RailConcept.Api
 {
-    public static class GetMessage
+    public static class HttpTriggerMessage
     {
         [FunctionName("message")]
         public static async Task<IActionResult> Run(
@@ -20,7 +20,7 @@ namespace RailConcept.Api
             log.LogInformation("C# HTTP trigger function processed a request.");
 
             string name = req.Query["name"];
-
+                
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
             name = name ?? data?.name;
