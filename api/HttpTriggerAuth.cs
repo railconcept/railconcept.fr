@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Flurl;
 using System.Security.Cryptography;
-
+using Microsoft.Extensions.Configuration;
 
 namespace RailConcept.Api
 {
@@ -46,15 +46,26 @@ namespace RailConcept.Api
             // Todo: every static string excepted fallback to default MUST be retrieved via config instead
 
             // Mandatories parameters
-            var clientId = "todo";
-            var redirectUrl = "https://todo.fr/api/callback";
+            var clientId = Environment.GetEnvironmentVariable("OAuthProviderOptions_ClientId");
+            var redirectUrl = Environment.GetEnvironmentVariable("OAuthProviderOptions_RedirectUri");
 
             // Fallback on convention or defaults parameters
             // Here we defaults to github's defaults since it's the main use case scenario
-            var authorizePath = string.IsNullOrWhiteSpace("") ? "/login/oauth/authorize" : "todo";
-            var authorizeHost = string.IsNullOrWhiteSpace("") ? "https://github.com" : "todo";
-            var clientIdKey = string.IsNullOrWhiteSpace("") ? "client_id" : "todo";
-            var scope = string.IsNullOrWhiteSpace("") ? "repo,user" : "todo";
+            var authorizePath = string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("OAuthProviderOptions_AuthorizePath")) 
+                ? "/login/oauth/authorize" 
+                : Environment.GetEnvironmentVariable("OAuthProviderOptions_AuthorizePath");
+
+            var authorizeHost = string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("OAuthProviderOptions_AuthorizeHost")) 
+                ? "https://github.com" 
+                : Environment.GetEnvironmentVariable("OAuthProviderOptions_AuthorizeHost");
+
+            var clientIdKey = string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("OAuthProviderOptions_ClientIdKey")) 
+                ? "client_id" 
+                : Environment.GetEnvironmentVariable("OAuthProviderOptions_ClientIdKey");
+
+            var scope = string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("OAuthProviderOptions_Scope")) 
+                ? "repo,user" 
+                : Environment.GetEnvironmentVariable("OAuthProviderOptions_Scope");
 
             // Has to be securely randomly generated for good CSRF protection
             var state = getRandomString(32);
