@@ -12,6 +12,7 @@ using Flurl;
 using Flurl.Http;
 using Microsoft.Extensions.Configuration;
 using System.Linq;
+using Microsoft.Net.Http.Headers;
 
 namespace RailConcept.Api
 {
@@ -140,7 +141,14 @@ namespace RailConcept.Api
                         window.opener.postMessage(""authorizing:{provider}"", ""*"");
                     }})();
                 </script>";
-            return new OkObjectResult(script);
+            var retVal = new ContentResult()
+            {
+                StatusCode = 200,
+                Content = script,
+                // Force content type so the popup window load the js so netlifly digest the token and logs in
+                ContentType = "text/html"
+            };
+            return retVal;
         }
     }
 }
