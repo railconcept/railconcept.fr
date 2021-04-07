@@ -12,6 +12,7 @@ exclude:
 
 highlighter: rouge
 markdown: kramdown
+timezone: Europe/Paris
 kramdown:
   input: GFM
 
