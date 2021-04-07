@@ -38,14 +38,17 @@ namespace RailConcept.Api
             public string TokenType { get; set; }
         }
 
-        [FunctionName("callback")]
+        // This is proxied from api/callback to api/actual_callback because of https://github.com/Azure/static-web-apps/issues/165
+        [FunctionName("actual_callback")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
             // Github state and code
             var state = req.Query["state"];
-            var code = req.Query["code"].FirstOrDefault();
+            // The underscore is here because azure bugs out really bad when code is given in query params
+            // see https://github.com/Azure/static-web-apps/issues/165
+            var code = req.Query["_code"].FirstOrDefault();
             // Our previous state
             var originalState = req.Cookies["state"];
             // Todo : check if both state match, if not it means either a bug or an attack so cancel this
