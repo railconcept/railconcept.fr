@@ -15,19 +15,44 @@ using System.Linq;
 
 namespace RailConcept.Api
 {
-
     public static class HttpTriggerCallback
     {
+        private class GithubAccessTokenResponse
+        {
+            [JsonProperty("error")]
+            public string Error { get; set; }
+
+            [JsonProperty("error_description")]
+            public string ErrorDescription { get; set; }
+
+            [JsonProperty("error_uri")]
+            public string ErrorUri { get; set; }
+
+            [JsonProperty("access_token")]
+            public string AccessToken { get; set; }
+
+            [JsonProperty("scope")]
+            public string Scope { get; set; }
+
+            [JsonProperty("token_type")]
+            public string TokenType { get; set; }
+        }
+
         [FunctionName("callback")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
             ILogger log)
         {
-            // Github state
+            // Github state and code
             var state = req.Query["state"];
+            var code = req.Query["code"].FirstOrDefault();
             // Our previous state
             var originalState = req.Cookies["state"];
             // Todo : check if both state match, if not it means either a bug or an attack so cancel this
+            if (string.IsNullOrWhiteSpace(state) || string.IsNullOrWhiteSpace(code))
+            {
+                return new BadRequestObjectResult("Missing state or code query parameter");
+            }
 
             // See https://docs.github.com/en/developers/apps/authorizing-oauth-apps#web-application-flow
             // And https://github.com/auth0/docs/blob/master/articles/api-auth/tutorials/authorization-code-grant.md
@@ -35,26 +60,25 @@ namespace RailConcept.Api
             // Mandatory parameters
             var clientId = Environment.GetEnvironmentVariable("OAuthProviderOptions_ClientId");
             var clientSecret = Environment.GetEnvironmentVariable("OAuthProviderOptions_ClientSecret");
-            var code = req.Query["code"].FirstOrDefault();
             // Probably only used in front end renewal scenarios which isn't the case here
             var redirectUrl = Environment.GetEnvironmentVariable("OAuthProviderOptions_RedirectUri");
-            var originPattern =  Environment.GetEnvironmentVariable("OAuthProviderOptions_OriginPattern");
+            var originPattern = Environment.GetEnvironmentVariable("OAuthProviderOptions_OriginPattern");
 
             // Fallback on convention or defaults parameters
             // Here we defaults to github's defaults since it's the main use case scenario
-            var tokenHost = string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("OAuthProviderOptions_TokenHost")) 
+            var tokenHost = string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("OAuthProviderOptions_TokenHost"))
                 ? "https://github.com/"
                 : Environment.GetEnvironmentVariable("OAuthProviderOptions_TokenHost");
 
-            var tokenPath = string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("OAuthProviderOptions_TokenPath")) 
+            var tokenPath = string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("OAuthProviderOptions_TokenPath"))
                 ? "/login/oauth/access_token"
                 : Environment.GetEnvironmentVariable("OAuthProviderOptions_TokenPath");
 
-            var provider = string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("OAuthProviderOptions_Provider")) 
+            var provider = string.IsNullOrWhiteSpace(Environment.GetEnvironmentVariable("OAuthProviderOptions_Provider"))
                 ? "https://github.com/"
                 : Environment.GetEnvironmentVariable("OAuthProviderOptions_Provider");
 
-            
+
             var tokenRequestBody = new
             {
                 client_id = clientId,
@@ -66,11 +90,24 @@ namespace RailConcept.Api
             var result = await tokenHost.AppendPathSegment(tokenPath)
                 .WithHeader("Accept", "application/json")
                 .PostJsonAsync(tokenRequestBody);
-            // This is what is used by netlify to display a login failure or not
+
+            if (!result.ResponseMessage.IsSuccessStatusCode)
+            {
+                return new BadRequestObjectResult($"Request for access token failed : {result.ResponseMessage.StatusCode} {result.ResponseMessage.ReasonPhrase}");
+            }
+
+            // This is what is used by netlify to display a login failure or not, here it's always a success because we check beforehand, which may break netlifly error checking 
             var messageResult = result.ResponseMessage.IsSuccessStatusCode ? "success" : "failure";
-            // Todo: check post result code
-            dynamic resultContent = await result.GetJsonAsync();
-            var token = resultContent.access_token;
+            var resultContent = await result.GetJsonAsync<GithubAccessTokenResponse>();
+            if (!string.IsNullOrWhiteSpace(resultContent.Error))
+            {
+                return new BadRequestObjectResult($"Error when retrieving access token: {resultContent.AccessToken}\n{resultContent.ErrorDescription}\n{resultContent.ErrorUri}");
+            }
+            if (string.IsNullOrWhiteSpace(resultContent?.AccessToken))
+            {
+                return new BadRequestObjectResult("No access token received");
+            }
+            var token = resultContent.AccessToken;
             // This is what netlify will get to consume the github API 
             var tokenWithProvider = new
             {
