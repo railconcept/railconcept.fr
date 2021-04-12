@@ -2,7 +2,7 @@ backend:
   name: github
   repo: railconcept/railconcept.fr
   branch: master
-  base_url: https://kind-desert-0f56c9f03.azurestaticapps.net
+  base_url: https://www.railconcept.fr
   auth_endpoint: /api/auth
 
 media_folder: assets/img/uploads
