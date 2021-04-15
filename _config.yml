@@ -6,6 +6,9 @@ plugins: # previously gems
   - jekyll-seo-tag
   - jekyll-sitemap
 
+include:
+  - .well-known/
+
 exclude:
   - api/bin/
   - api/obj/
