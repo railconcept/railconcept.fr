@@ -7,6 +7,7 @@ title: Maitrise d’ouvrage de l’étude pré-opérationnelle pour la réouvert
 duree: 6 mois
 annee_real: 2020-2021
 region: Hautes-Pyrénées
+pays: France
 text1: "Le chemin de fer reliant Tarbes à Bagnères de Bigorre a été mis en
   service en 1862 et fait partie de la ligne 652 000 Morcenx – Bagnères de
   Bigorre du réseau ferré national de France. Cette ligne est ouverte aux
