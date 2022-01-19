@@ -1,7 +1,7 @@
 ---
 layout: real
 type-real: mission
-favoris: false
+favoris: true
 title: Assistance à maitrise d’ouvrage pour la constitution de livrables
   horaires stratégiques
 duree: 18 mois
