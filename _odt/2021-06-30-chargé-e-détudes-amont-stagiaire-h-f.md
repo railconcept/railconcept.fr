@@ -75,3 +75,10 @@ profil: >-
 
   * Vous avez une grande capacité d’adaptation et savez devenir autonome rapidement.
 ---
+poste_eng: >-
+dep_eng: Exploitation ENG
+tdc_eng: Stage (5 mois min) Eng
+title_eng: Stagiaire chargé(e) d'études exploitation H/F
+entreprise_eng: >-
+ldt_eng: Les Angles/Paris ENG
+profil_eng: >-
