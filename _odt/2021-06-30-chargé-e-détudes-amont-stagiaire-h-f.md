@@ -1,27 +1,22 @@
 ---
 layout: offre
 active: true
-date: 30-06-2021 15:41:30
+date: 16-05-2022 15:41:30
 title: Chargé.e d'études amont stagiaire H/F
 tdp: cde
 dep: Etudes amont
 tdc: Stage
 ldt: Paris ou Les Angles
-entreprise: >-2
-   **RAIL CONCEPT est …** 
+entreprise: >-
+   **RAIL CONCEPT …** 
 
-   •	l’un des acteurs de référence dans le domaine des études d’exploitation, des études économiques, des études ferroviaires amont,
+   * Est une société spécialisée dans les activités d’étude et de conseil liées à la création et l’aménagement d’infrastructures ferroviaires
 
-  •	 leader des études économiques et techniques de déploiement ERTMS sur le réseau national : Paris-Le Havre, Vitoria-Bordeaux…
-
-
-  •	partenaire des grands projets amont :  Lyon-Turin, Ligne Nouvelle Montpellier Perpignan, Ligne Nouvelle Provence Côte d’Azur…
+  * Est le partenaire des grands maîtres d’ouvrage ferroviaires français et étranger pour imaginer et concevoir l’avenir du ferroviaire
 
 
-  •	acteur des projets structurants pour les territoires auprès des collectivités, et notamment dans le processus d’ouverture à la concurrence : Région Pays de La Loire, Auvergne Rhône Alpes ….
+  * Intervient sur trois principaux domaines : les études d’infrastructures, les études d’exploitation et les études économiques
 
-
-  •	acteur des projets dimensionnants à l’international : direction du projet de Train Urbain à Abidjan, l’élaboration du schéma directeur de Nairobi, supervision d’un projet de ligne nouvelle de tramway au Moyen-Orient..
 poste: >-
   
 
@@ -29,6 +24,7 @@ poste: >-
 
 
   Participer à des études amont ferroviaires transversales et multi-métiers. Vous devrez maîtriser les outils et méthodologies d’évaluation nécessaires pour mener à bien ces études, notamment sur des problématiques relatives à l’économie du système, aux infrastructures et à l’exploitation ferroviaire. Vous serez intégré au sein d’une équipe de production pilotée par un chef de projet. Le stage peut se dérouler au sein du siège de l’entreprise aux Angles (proche Avignon) ou au sein de nos locaux à Paris.
+  Durée : 5/6 mois. 
 
 
   **MISSIONS** 
@@ -45,22 +41,20 @@ poste: >-
 
   **ACTIVITÉS/TACHES**
 
-  Sous la direction des chefs de projet et des chargés d’études de la division économique, les activités auxquelles prendra part le stagiaire sont principalement : 
+  Sous la direction des chefs de projet et des chargés d’études, les activités auxquelles prendra part le stagiaire sont principalement : 
 
 
   * Analyse territoriale
 
-  * Bilan économique 
+  * Bilan économique / socio-économique
 
-  * Evaluation fonctionnelle
-
-  * Analyse multicritère
+  * Evaluation fonctionnelle, analyse multicritère
 
   * Cartographie
 
-  * Rédaction de note de synthèse
+  * Construction de grilles horaires, études de robustesse
 
-  * Réalisation de support de présentation
+  * Rédaction de note de synthèse et réalisation de support de présentation
 profil: >-
   
 
