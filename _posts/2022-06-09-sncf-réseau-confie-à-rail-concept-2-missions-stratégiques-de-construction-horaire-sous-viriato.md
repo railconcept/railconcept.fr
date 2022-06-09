@@ -688,5 +688,5 @@ news:
 
     <!--EndFragment-->
 news_photo:
-  photo_news1: /assets/img/uploads/carte-des-grands-projets-qpe2.png
+  photo_news1: /assets/img/uploads/carte-des-grands-projets-qpe3.png
 ---
