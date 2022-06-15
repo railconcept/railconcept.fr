@@ -96,9 +96,14 @@ profil: >-
 
   * Dans votre travail, vous faites preuve de rigueur et méthode
 
+
   * Vous avez une bonne capacité à comprendre et maitriser des problématiques complexes
 
-  * Le travail en équipe vous plait et vous avez le sens de la communication, tant écrite qu’orale
+
+  * Le travail en équipe vous plait et vous avez le sens de la communication, tant écrite 
+
+  qu’orale
+
 
   * Vous faites preuve d’une excellente capacité de synthèse
 
@@ -110,6 +115,7 @@ profil: >-
 
 
   * Durée : 5/6 mois à partir de septembre 2022 à mars-avril 2023
+
 
   * Contact : q.pelegry@railconcept.fr / 06 36 11 62 47
 
