@@ -98,7 +98,7 @@ profil: >-
   **EN PRATIQUE**
 
 
-  * Profil recherché : Bac +4 minimum issu d’une filière commerciale, incluant en particulier les dimensions marketing et communication
+  * Profil recherché : BAC+4 minimum issu d’une filière commerciale, incluant en particulier les dimensions marketing et communication
 
 
   * Durée : 5/6 mois à partir de septembre 2022
