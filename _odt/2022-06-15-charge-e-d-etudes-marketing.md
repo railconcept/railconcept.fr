@@ -46,6 +46,7 @@ poste: >-
 
       * Analyser et caractériser l’offre concurrentielle
 
+
   * Identifier la demande client
 
      * Identification des cibles
@@ -78,13 +79,18 @@ profil: >-
 
   * Vous avez le goût du développement commercial
 
+
   * Dans votre travail, vous faites preuve de rigueur et méthode
+
 
   * Le travail en équipe vous plait et vous avez le sens de la communication, tant écrite qu’orale
 
+
   * Vous savez être critique et force de proposition
 
+
   * Vous avez une grande capacité d’adaptation et savez devenir autonome rapidement
+
 
   * Une sensibilité pour le monde des logiciels informatiques serait un plus
 
@@ -96,6 +102,7 @@ profil: >-
 
 
   * Durée : 5/6 mois à partir de septembre 2022
+
 
   * [](<>)[](<>)Contact : q.pelegry@railconcept.fr / 06 36 11 62 47
 
