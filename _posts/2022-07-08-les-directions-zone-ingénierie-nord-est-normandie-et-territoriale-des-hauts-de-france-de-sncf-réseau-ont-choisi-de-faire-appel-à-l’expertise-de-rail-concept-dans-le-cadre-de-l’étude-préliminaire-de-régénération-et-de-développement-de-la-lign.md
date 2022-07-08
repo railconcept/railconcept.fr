@@ -1,9 +1,6 @@
 ---
 layout: news
-title: Les Directions Zone ingénierie Nord Est Normandie et Territoriale des
-  Hauts de France de SNCF Réseau, ont choisi de faire appel à l’expertise de
-  Rail Concept dans le cadre de l’étude préliminaire de régénération et de
-  développement de la ligne Abbeville-le Tréport !
+title: Régénération et de développement de la ligne Abbeville-le Tréport
 date: 08-07-2022 16:36:44
 news:
   taggx:
