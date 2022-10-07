@@ -7,14 +7,14 @@ news:
   taggx:
     - etude
   news_1: >-
-    <!--\[if gte mso 9]><xml>
+    <!--\\[if gte mso 9]><xml>
      <o:OfficeDocumentSettings>
       <o:AllowPNG/>
      </o:OfficeDocumentSettings>
-    </xml><!\[endif]-->
+    </xml><!\\[endif]-->
 
 
-    <!--\[if gte mso 9]><xml>
+    <!--\\[if gte mso 9]><xml>
      <w:WordDocument>
       <w:View>Normal</w:View>
       <w:Zoom>0</w:Zoom>
@@ -54,10 +54,10 @@ news:
        <m:intLim m:val="subSup"/>
        <m:naryLim m:val="undOvr"/>
       </m:mathPr></w:WordDocument>
-    </xml><!\[endif]-->
+    </xml><!\\[endif]-->
 
 
-    <!--\[if gte mso 9]><xml>
+    <!--\\[if gte mso 9]><xml>
      <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
       DefSemiHidden="false" DefQFormat="false" DefPriority="99"
       LatentStyleCount="376">
@@ -636,10 +636,10 @@ news:
       <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
        Name="Smart Link"/>
      </w:LatentStyles>
-    </xml><!\[endif]-->
+    </xml><!\\[endif]-->
 
 
-    <!--\[if gte mso 10]>
+    <!--\\[if gte mso 10]>
 
     <style>
      /* Style Definitions */
@@ -668,28 +668,16 @@ news:
     	mso-fareast-language:EN-US;}
     </style>
 
-    <!\[endif]-->
+    <!\\[endif]-->
 
 
     <!--StartFragment-->
 
 
-    Rail Concept a développé un nouvel outil « émoji outil » d’analyse de la saturation pour la Direction de l’attribution des Capacités (DAC – SNCF Réseau).
-
-
-     
-
-
     La DAC a sollicité Rail Concept au début de l’année, pour une mission d’appui de ses services dans l’évaluation de la saturation. Pour cela, nous avons développé un outil permettant de calculer des taux de saturation et d’identifier la capacité disponible à partir d’un plan de transport conçu avec le logiciel SIPH (outil de planification horaire utilisé par SNCF Réseau et qui remplace THOR depuis le SA 2021).
 
 
-     
-
-
     Grâce à cet outil, nous avons procédé à l’évaluation de la saturation sur plusieurs sections du réseau. Les résultats ont ensuite pu être utilisés par la DAC afin d’objectiver la saturation prévisible de ces linéaires du réseau ferré national.
-
-
-     
 
 
     Nous remercions Stéphane Leroux pour la confiance qu’il nous a apporté tout au long de l’étude.
