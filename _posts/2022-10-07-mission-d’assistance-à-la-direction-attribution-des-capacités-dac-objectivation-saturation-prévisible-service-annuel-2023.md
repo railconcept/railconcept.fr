@@ -1,7 +1,7 @@
 ---
 layout: news
-title: "Mission d’assistance à la direction Attribution des Capacités (DAC) :
-  Objectivation saturation prévisible Service Annuel 2023"
+title: Rail Concept a développé un nouvel outil d’analyse de la saturation pour
+  la Direction de l’attribution des Capacités (DAC – SNCF Réseau).
 date: 07-10-2022 09:40:40
 news:
   taggx:
