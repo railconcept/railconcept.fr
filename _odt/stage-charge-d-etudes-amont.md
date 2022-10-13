@@ -17,7 +17,7 @@ poste: >-
   Durée : 5/6 mois. 
 
   **MISSIONS** 
- * Maitriser le contexte, les méthodes de travail 
+  * Maitriser le contexte, les méthodes de travail 
 
   * Intégrer une équipe projet
 
@@ -86,7 +86,7 @@ entreprise: >-
 
   **PROFIL :**
 
- * Vous êtes en 2e ou 3e année d’école d’ingénieurs ou équivalent dans le domaine des transports ;
+  * Vous êtes en 2e ou 3e année d’école d’ingénieurs ou équivalent dans le domaine des transports ;
 
   * Dans votre travail, vous faites preuve de rigueur et méthode ;
 
