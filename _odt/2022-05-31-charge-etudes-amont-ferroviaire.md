@@ -109,7 +109,7 @@ profil: >-
 
   * Durée : 5/6 mois à partir de février 2023
 
-  * Contact : q.pelegry@railconcept.fr / 06 28 93 43 41
+  * Contact : n.fardoun@railconcept.fr / 06 28 93 43 41
 
 
   **Merci d'envoyer votre candidature (CV+LM) à n.fardoun@railconcept.fr**
