@@ -5,7 +5,7 @@ date: 15-06-2022 11:11:24
 title: Chargé.e d'études marketing
 tdp: cde
 dep: Commerciale
-tdc: Stage de 6 mois à partir de septembre 2022
+tdc: Stage de 6 mois à partir de février 2023
 ldt: Paris (75) ou les Angles (30)
 entreprise: >-
   <!--StartFragment-->
@@ -76,21 +76,15 @@ profil: >-
 
   * Vous êtes diplômé(e) [](<>)[](<>)BAC+4 minimum d’une filière commerciale ou technique, incluant en particulier les dimensions marketing et communication
 
-
   * Vous avez le goût du développement commercial
-
 
   * Dans votre travail, vous faites preuve de rigueur et méthode
 
-
   * Le travail en équipe vous plait et vous avez le sens de la communication, tant écrite qu’orale
-
 
   * Vous savez être critique et force de proposition
 
-
   * Vous avez une grande capacité d’adaptation et savez devenir autonome rapidement
-
 
   * Une sensibilité pour le monde des logiciels informatiques serait un plus
 
@@ -100,15 +94,13 @@ profil: >-
 
   * Profil recherché : BAC+4 minimum issu d’une filière commerciale, incluant en particulier les dimensions marketing et communication
 
+  * Durée : 5/6 mois à partir de férvier 2023
 
-  * Durée : 5/6 mois à partir de septembre 2022
-
-
-  * [](<>)[](<>)Contact : q.pelegry@railconcept.fr / 06 36 11 62 47
+  * [](<>)[](<>)Contact : c.boisseau@railconcept.fr / 07 87 80 00 43
 
 
-  **Merci d’envoyer votre candidature (CV + lettre de motivation) à q.pelegry@railconcept.fr** 
+  **Merci d’envoyer votre candidature (CV + lettre de motivation) à c.boisseau@railconcept.fr** 
 
 
-  <!--\\[if !supportAnnotations]-->
+  <!--\\\[if !supportAnnotations]-->
 ---
