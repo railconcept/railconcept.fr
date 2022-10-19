@@ -5,7 +5,7 @@ date: 31-05-2022 14:46:58
 title: Chargé.e d'études amont ferroviaire
 tdp: cde
 dep: Exploitation / Infrastructure / Socio-économie
-tdc: Stage de 6 mois à partir de septembre 2022
+tdc: Stage de 6 mois à partir de février 2023
 ldt: Paris (75) ou les Angles (30)
 entreprise: >-
   <!--StartFragment-->
@@ -93,34 +93,26 @@ profil: >-
 
   * Vous êtes en 2e ou 3e année d’école d’ingénieurs ou équivalent dans le domaine des transports
 
-
   * Dans votre travail, vous faites preuve de rigueur et méthode
-
 
   * Vous avez une bonne capacité à comprendre et maitriser des problématiques complexes
 
-
   * Le travail en équipe vous plait et vous avez le sens de la communication, tant écrite 
-
-  qu’orale
-
-
+    qu’orale
   * Vous faites preuve d’une excellente capacité de synthèse
 
 
   **EN PRATIQUE**
 
 
-  * Profil recherché : École d'ingénieur (2ème ou 3ème année)
+  * Profil recherché : École d'ingénieur (2ème ou 3ème année) / Master 2 universitaire
+
+  * Durée : 5/6 mois à partir de février 2023
+
+  * Contact : q.pelegry@railconcept.fr / 06 28 93 43 41
 
 
-  * Durée : 5/6 mois à partir de septembre 2022 à mars-avril 2023
-
-
-  * Contact : q.pelegry@railconcept.fr / 06 36 11 62 47
-
-
-  **Merci d'envoyer votre candidature (CV+LM) à q.pelegry@railconcept.fr**
+  **Merci d'envoyer votre candidature (CV+LM) à n.fardoun@railconcept.fr**
 
 
   <!--EndFragment-->
