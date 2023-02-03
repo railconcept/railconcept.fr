@@ -1852,10 +1852,6 @@
         color: #000;
     }
 
-    .loope-etude {
-        margin-left: -7%;
-    }
-
     .container-fluid-etude {
         width: 100%;
     }
@@ -1911,10 +1907,12 @@
 
 
     .loope-etude {
+        /*
         z-index: 10;
         position: absolute;
         transform: translateY(-100%);
         right: 0;
+        */
     }
 
 
