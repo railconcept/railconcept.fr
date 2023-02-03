@@ -2,14 +2,12 @@
 layout: real
 type-real: etudex
 favoris: false
-title: Audit de fonctionnement EUROBAHN
+title:  AUDIT DE FONCTIONNEMENT EUROBAHN
 donneur_ordre: Keolis
 duree: 3 mois
 annee_real: "2013"
 region: Europe
-text1: L’objectif de la mission est d’analyser toutes les composantes du domaine
-  de l’exploitation et de proposer les pistes d’amélioration potentielles. Le
-  périmètre de la mission englobe toutes les lignes exploitées par Eurobahn.
+text1: L’objectif de la mission est d’analyser toutes les composantes du domaine de l’exploitation et de proposer les pistes d’amélioration potentielles. Le périmètre de la mission englobe toutes les lignes exploitées par Eurobahn.
 context: >-
   La prestation commandée vise à auditer l’exploitation du réseau EUROBAHN
   exploité par Keolis. Elle a comporté deux volets :
