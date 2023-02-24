@@ -39,7 +39,7 @@ namespace RailConcept.Api
             public string TokenType { get; set; }
         }
 
-        // This is proxied from api/callback to api/actual_callback because of https://github.com/Azure/static-web-apps/issues/165
+        // See https://github.com/Azure/static-web-apps/issues/165 in case azure blocks code query param again
         [FunctionName("callback")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
