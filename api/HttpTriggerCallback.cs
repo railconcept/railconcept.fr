@@ -46,10 +46,10 @@ namespace RailConcept.Api
             ILogger log)
         {
             // Github state and code
-            var state = req.Query["state"];
+            var state = req.Query["_state"];
             // The underscore is here because azure bugs out really bad when code is given in query params
             // see https://github.com/Azure/static-web-apps/issues/165
-            var code = req.Query["code"].FirstOrDefault();
+            var code = req.Query["_code"].FirstOrDefault();
             // Our previous state
             var originalState = req.Cookies["state"];
             // Todo : check if both state match, if not it means either a bug or an attack so cancel this
