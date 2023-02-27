@@ -100,7 +100,7 @@
 
     .software_img {
         margin-top: 50px;
-        width: 300px;
+        /*width: 300px;*/
     }
 
     .col-2dot4,
@@ -1845,15 +1845,11 @@
         font-size: 17px;
         font-family: "Open Sans", sans-serif;
         color: #9e9e9e;
-        text-align: left;
+        text-align: justify;
     }
 
     .paragraphe-etudes a {
         color: #000;
-    }
-
-    .loope-etude {
-        margin-left: -7%;
     }
 
     .container-fluid-etude {
@@ -1911,10 +1907,12 @@
 
 
     .loope-etude {
+        /*
         z-index: 10;
         position: absolute;
         transform: translateY(-100%);
         right: 0;
+        */
     }
 
 
