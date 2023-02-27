@@ -5,12 +5,6 @@
                 "registration": {
                     "clientIdSettingName": "OAuthProviderOptions_ClientId",
                     "clientSecretSettingName": "OAuthProviderOptions_ClientSecret"
-                },
-                "login": {
-                    "scopes": [
-                        "repo",
-                        "user"
-                    ]
                 }
             }
         }
