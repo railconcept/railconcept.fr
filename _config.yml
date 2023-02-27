@@ -1,10 +1,13 @@
 title: Rail Concept
-url: https://kind-desert-0f56c9f03.azurestaticapps.net
+url: https://www.railconcept.fr
 
 plugins: # previously gems
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+
+include:
+  - .well-known/
 
 exclude:
   - api/bin/
@@ -12,6 +15,7 @@ exclude:
 
 highlighter: rouge
 markdown: kramdown
+timezone: Europe/Paris
 kramdown:
   input: GFM
 

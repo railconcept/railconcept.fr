@@ -75,14 +75,6 @@ $(window).on('resize', function () {
         $('.slider-caption').css('left', '0');
     }
 
-    if (findBootstrapEnvironment() == "sm" || findBootstrapEnvironment() == "xs") {
-        $("#loope-etude-img").css("width", '50%');
-        $('.loope-etude').css('text-align', 'right');
-    } else {
-        $("#loope-etude-img").css("width", '100%')
-    }
-
-
     if (findBootstrapEnvironment() == "md" || findBootstrapEnvironment() == "sm" || findBootstrapEnvironment() == "xs") {
         $(".container-fluid-etude").addClass("container");
         $('.etude-container-right').css('padding-right', 0);
@@ -308,12 +300,7 @@ $(document).ready(function () {
         $(this).children(":first").children(":first").prepend("<div class='row tags-row'>" + $tag + "</div>");
 
     });
-    if (findBootstrapEnvironment() == "sm" || findBootstrapEnvironment() == "xs") {
-        $("#loope-etude-img").css("width", '50%');
-        $('.loope-etude').css('text-align', 'right');
-    } else {
-        $("#loope-etude-img").css("width", '100%')
-    }
+
     if (findBootstrapEnvironment() == "md" || findBootstrapEnvironment() == "sm" || findBootstrapEnvironment() == "xs") {
         $(".container-fluid-etude").addClass("container");
         $('.etude-container-right').css('padding-right', 0);
