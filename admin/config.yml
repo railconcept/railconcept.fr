@@ -2,7 +2,7 @@ backend:
   name: github
   repo: railconcept/railconcept.fr
   branch: master
-  base_url: https://kind-desert-0f56c9f03.azurestaticapps.net
+  base_url: https://www.railconcept.fr
   auth_endpoint: /api/auth
 
 media_folder: assets/img/uploads
@@ -56,7 +56,7 @@ collections:
         name: "news"
         widget: "object"
         fields:
-          - { label: "TAGS", name: "taggx", widget: "relation", collection: "catnews", searchFields: ["title"], valueField: "name", displayFields: ["title"], multiple: true }
+          - { label: "TAGS", name: "taggx", widget: "relation", collection: "catnews", searchFields: ["title"], valueField: "name", displayFields: ["title"], multiple: true, required: false }
           - { label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false }
           - { label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false }
       - label: "Actualité photo"
@@ -66,7 +66,7 @@ collections:
           - { label: "Photo 1", name: "photo_news1", widget: "image", required: false }
           - { label: "Photo 2", name: "photo_news2", widget: "image", required: false }
           - { label: "Photo 3", name: "photo_news3", widget: "image", required: false }
-      - { label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string" }
+      - { label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string", required: false }
 
   - label: "Offre de travail"
     name: "odt"
@@ -138,7 +138,7 @@ collections:
         name: "news"
         widget: "object"
         fields:
-          - { label: "TAGS", name: "taggx", widget: "relation", collection: "catnews", searchFields: ["title_eng"], valueField: "name", displayFields: ["title_eng"], multiple: true }
+          - { label: "TAGS", name: "taggx", widget: "relation", collection: "catnews", searchFields: ["title_eng"], valueField: "name", displayFields: ["title_eng"], multiple: true, required: false }
           - { label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false }
           - { label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false }
       - label: "Actualité photo"
@@ -148,7 +148,7 @@ collections:
           - { label: "Photo 1", name: "photo_news1", widget: "image", required: false }
           - { label: "Photo 2", name: "photo_news2", widget: "image", required: false }
           - { label: "Photo 3", name: "photo_news3", widget: "image", required: false }
-      - { label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string" }
+      - { label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string", required: false }
 
   - label: "Jobs"
     name: "jobs"

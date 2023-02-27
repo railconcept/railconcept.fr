@@ -30,7 +30,7 @@ namespace RailConcept.Api
             {
                 var bytes = new byte[length * 8];
                 var result = new char[length];
-                using (var cryptoProvider = new RNGCryptoServiceProvider())
+                using (var cryptoProvider = RandomNumberGenerator.Create())
                 {
                     cryptoProvider.GetBytes(bytes);
                 }

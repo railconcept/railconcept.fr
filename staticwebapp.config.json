@@ -1,4 +1,18 @@
 {
+    "auth": {
+        "identityProviders": {
+            "github": {
+                "registration": {
+                    "clientIdSettingName": "OAuthProviderOptions_ClientId",
+                    "clientSecretSettingName": "OAuthProviderOptions_ClientSecret"
+                },
+                "login": {
+                    "scopes": ["repo", "user"]
+                }
+            }
+        }
+    },
+    "trailingSlash": "always",
     "responseOverrides": {
         "404": {
             "rewrite": "/404.html"

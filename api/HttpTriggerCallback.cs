@@ -12,6 +12,7 @@ using Flurl;
 using Flurl.Http;
 using Microsoft.Extensions.Configuration;
 using System.Linq;
+using Microsoft.Net.Http.Headers;
 
 namespace RailConcept.Api
 {
@@ -38,6 +39,7 @@ namespace RailConcept.Api
             public string TokenType { get; set; }
         }
 
+        // See https://github.com/Azure/static-web-apps/issues/165 in case azure blocks code query param again
         [FunctionName("callback")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = null)] HttpRequest req,
@@ -45,6 +47,8 @@ namespace RailConcept.Api
         {
             // Github state and code
             var state = req.Query["state"];
+            // The underscore is here because azure bugs out really bad when code is given in query params
+            // see https://github.com/Azure/static-web-apps/issues/165
             var code = req.Query["code"].FirstOrDefault();
             // Our previous state
             var originalState = req.Cookies["state"];
@@ -137,7 +141,14 @@ namespace RailConcept.Api
                         window.opener.postMessage(""authorizing:{provider}"", ""*"");
                     }})();
                 </script>";
-            return new OkObjectResult(script);
+            var retVal = new ContentResult()
+            {
+                StatusCode = 200,
+                Content = script,
+                // Force content type so the popup window load the js so netlifly digest the token and logs in
+                ContentType = "text/html"
+            };
+            return retVal;
         }
     }
 }
