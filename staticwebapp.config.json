@@ -7,7 +7,10 @@
                     "clientSecretSettingName": "OAuthProviderOptions_ClientSecret"
                 },
                 "login": {
-                    "scopes": ["repo", "user"]
+                    "scopes": [
+                        "repo",
+                        "user"
+                    ]
                 }
             }
         }
@@ -17,5 +20,35 @@
         "404": {
             "rewrite": "/404.html"
         }
-    }
+    },
+    "routes": [
+        {
+            "route": "/login",
+            "redirect": "/.auth/login/github"
+        },
+        {
+            "route": "/logout",
+            "redirect": "/.auth/logout"
+        },
+        {
+            "route": "/.auth/login/twitter",
+            "statusCode": 404
+        },
+        {
+            "route": "/.auth/login/aad",
+            "statusCode": 404
+        },
+        {
+            "route": "/.auth/login/apple",
+            "statusCode": 404
+        },
+        {
+            "route": "/.auth/login/facebook",
+            "statusCode": 404
+        },
+        {
+            "route": "/.auth/login/google",
+            "statusCode": 404
+        }
+    ]
 }
