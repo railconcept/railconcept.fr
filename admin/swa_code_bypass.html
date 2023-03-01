@@ -1,6 +1,16 @@
+---
+title: SWA code bypass
+permalink: /admin/swa_code_bypass
+---
 <!DOCTYPE html>
 <html>
     <head>
+        {% if jekyll.environment == "development" %}
+        <script type="text/javascript">
+            window.env = "development";
+        </script>
+        {% endif %}
+
         <script type="text/javascript">
             try 
             {
@@ -10,8 +20,18 @@
                 {
                     newParams.append("_" + param[0], param[1]);
                 }
-                const redirectUrl = `/api/callback?${newParams.toString()}`;
-                document.location.href = redirectUrl;
+                
+                if (window.env == "development")
+                {
+                    const redirectUrl = `http://localhost:7071/api/callback?${newParams.toString()}`;
+                    document.location.href = redirectUrl;
+                }
+                else
+                {
+                    const redirectUrl = `/api/callback?${newParams.toString()}`;
+                    document.location.href = redirectUrl;
+                }
+
             }
             catch (error) 
             {
