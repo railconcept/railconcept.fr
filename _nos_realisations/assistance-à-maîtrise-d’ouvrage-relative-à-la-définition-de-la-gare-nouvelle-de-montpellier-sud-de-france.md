@@ -17,7 +17,7 @@ text1: >-
 
   Mission 2 - pendant la réalisation 2013-2017 : Le groupement ICADE intégrant ICADE Promotion (Mandataire), a été désigné par SNCF RESEAU comme titulaire pressenti pour le contrat de partenariat relatif au projet de gare nouvelle Montpellier-Sud de France. ICADE a sollicité Rail Concept dans le cadre d’un **besoin en accompagnement technique et d’expertise pour les sujets sécurité**. ICADE a souhaité compléter cette mission par l’élaboration des dossiers de remontées de preuves du RD-I gare
 real: >-
-  Mission 1 : Rail Concept a d’abord mené toutes le**s prévisions de trafic de
+  Mission 1 : Rail Concept a d’abord mené toutes **les prévisions de trafic de
   la gare** (trafic GV et trafic régional). Ensuite les études exploitation
   détaillées ont permis de déterminer le graphique d’occupation des voies de la
   future gare sur une période de 24h. Rail Concept a ensuite redéfini toutes les
