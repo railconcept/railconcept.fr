@@ -1,0 +1,206 @@
+backend:
+  name: github
+  repo: railconcept/railconcept.fr
+  branch: Oumniadev
+  base_url: http://localhost:7071
+  auth_endpoint: /api/auth
+
+media_folder: assets/img/uploads
+
+collections:
+  - label: "website settings"
+    name: "website_settings"
+    files:
+      - label: "Géneral settings"
+        name: "general_settings"
+        file: "_data/website_settings.yml"
+        fields:
+          - label: SEO
+            name: seo
+            widget: object
+            fields:
+              - { label: Tel, name: tel_display, widget: string }
+              - { label: Website description, name: website_desc, widget: string }
+              - { label: Website description Eng, name: website_desc_eng, widget: string }
+              - label: "Location"
+                name: "location"
+                widget: "object"
+                fields:
+                  - { label: Street adress, name: street_adress, widget: string }
+                  - { label: Region, name: region, widget: string }
+                  - { label: Country, name: country, widget: string }
+              - { label: Facebook, name: facebook, widget: string }
+              - { label: Linkedin, name: linkedin, widget: string }
+
+  - label: "Actualités settings"
+    name: "catnews"
+    folder: "_catnews"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "TAG", name: "title", widget: "string" }
+      - { label: "TAG Eng", name: "title_eng", widget: "string" }
+      - { label: "Tag value", name: "name", widget: "hidden" }
+
+  - label: "Actualités"
+    name: "post"
+    folder: "_posts"
+    sort: "date:desc"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "news" }
+      - { label: "Titre actualité", name: "title", widget: "string" }
+      - { label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss" }
+      - label: "Actualité"
+        name: "news"
+        widget: "object"
+        fields:
+          - { label: "TAGS", name: "taggx", widget: "relation", collection: "catnews", searchFields: ["title"], valueField: "name", displayFields: ["title"], multiple: true, required: false }
+          - { label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false }
+          - { label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false }
+      - label: "Actualité photo"
+        name: "news_photo"
+        widget: "object"
+        fields:
+          - { label: "Photo 1", name: "photo_news1", widget: "image", required: false }
+          - { label: "Photo 2", name: "photo_news2", widget: "image", required: false }
+          - { label: "Photo 3", name: "photo_news3", widget: "image", required: false }
+      - { label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string", required: false }
+
+  - label: "Offre de travail"
+    name: "odt"
+    folder: "_odt"
+    sort: "date:desc"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "offre" }
+      - { label: "Offre de travail Active", name: "active", widget: "boolean", default: true }
+      - { label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss" }
+      - { label: "Poste proposée", name: "title", widget: "string" }
+      - label: "Type de poste"
+        name: "tdp"
+        widget: "select"
+        default: "cdp"
+        options:
+          - { label: "CHEF DE PROJET", value: "cdp" }
+          - { label: "CHARGÉ D'ÉTUDE", value: "cde" }
+          - { label: "DÉVELOPPEUR LOGICIEL", value: "dl" }
+      - { label: "Département", name: "dep", widget: "string" }
+      - { label: "Type de contrat", name: "tdc", widget: "string" }
+      - { label: "Lieu de travail", name: "ldt", widget: "string" }
+      - { label: "Entreprise", name: "entreprise", widget: "markdown" }
+      - { label: "Poste", name: "poste", widget: "markdown" }
+      - { label: "Profil", name: "profil", widget: "markdown" }
+
+  - label: "Réalisations"
+    name: "nos_realisations"
+    folder: "_nos_realisations"
+    sort: "date:desc"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "real" }
+      - label: "Type de Réalisation"
+        name: "type-real"
+        widget: "select"
+        options:
+          - { label: "MISSION AMO GRAND PROJET", value: "mission" }
+          - { label: "ÉTUDES", value: "etudex" }
+          - { label: "EXPERTISE/CONSEIL", value: "expert" }
+          - { label: "VENTE LOGICIEL", value: "vente" }
+      - { label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false }
+      - { label: "Titre", name: "title", widget: "string", required: false }
+      - { label: "Donneur d’ordre", name: "donneur_ordre", widget: "string", required: false }
+      - { label: "Durée", name: "duree", widget: "string", required: false }
+      - { label: "Année Réalisation", name: "annee_real", widget: "string", required: false }
+      - { label: "Région", name: "region", widget: "string", required: false }
+      - { label: "Pays", name: "pays", widget: "string", required: false }
+      - { label: "Latitude ", name: "lat", widget: "string", required: false }
+      - { label: "Longitude", name: "long", widget: "string", required: false }
+      - { label: "Text 1", name: "text1", widget: "markdown", required: false }
+      - { label: "Contexte", name: "context", widget: "markdown", required: false }
+      - { label: "Prestation realisée", name: "real", widget: "markdown", required: false }
+      - { label: "Photo 1", name: "photo1", widget: "image", required: false }
+
+  - label: "News"
+    name: "news"
+    folder: "_news"
+    sort: "date:desc"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "newseng" }
+      - { label: "Titre actualité", name: "title", widget: "string" }
+      - { label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss" }
+      - label: "Actualité"
+        name: "news"
+        widget: "object"
+        fields:
+          - { label: "TAGS", name: "taggx", widget: "relation", collection: "catnews", searchFields: ["title_eng"], valueField: "name", displayFields: ["title_eng"], multiple: true, required: false }
+          - { label: "Paragraphe 1", name: "news_1", widget: "markdown", required: false }
+          - { label: "Paragraphe 2", name: "news_2", widget: "markdown", required: false }
+      - label: "Actualité photo"
+        name: "news_photo"
+        widget: "object"
+        fields:
+          - { label: "Photo 1", name: "photo_news1", widget: "image", required: false }
+          - { label: "Photo 2", name: "photo_news2", widget: "image", required: false }
+          - { label: "Photo 3", name: "photo_news3", widget: "image", required: false }
+      - { label: "code Video youtube ('https://www.youtube.com/watch?v=********')", name: "video_news", widget: "string", required: false }
+
+  - label: "Jobs"
+    name: "jobs"
+    folder: "_jobs"
+    sort: "date:desc"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "offre" }
+      - { label: "Offre de travail Active", name: "active", widget: "boolean", default: true }
+      - { label: "Date de publication", name: "date", widget: "datetime", format: "DD-MM-YYYY HH:mm:ss" }
+      - { label: "Poste proposée", name: "title", widget: "string" }
+      - label: "Type de poste"
+        name: "tdp"
+        widget: "select"
+        options:
+          - { label: "CHEF DE PROJET eng", value: "cdp" }
+          - { label: "CHARGÉ D'ÉTUDE eng", value: "cde" }
+          - { label: "DÉVELOPPEUR LOGICIEL eng", value: "dl" }
+      - { label: "Département", name: "dep", widget: "string" }
+      - { label: "Type de contrat", name: "tdc", widget: "string" }
+      - { label: "Lieu de travail", name: "ldt", widget: "string" }
+      - { label: "Entreprise", name: "entreprise", widget: "markdown" }
+      - { label: "Poste", name: "poste", widget: "markdown" }
+      - { label: "Profil", name: "profil", widget: "markdown" }
+
+  - label: "Achievements"
+    name: "achievements"
+    folder: "_achievements"
+    sort: "date:desc"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "realeng" }
+      - label: "Type de Réalisation"
+        name: "type-real"
+        widget: "select"
+        options:
+          - { label: "MISSION AMO GRAND PROJET", value: "mission" }
+          - { label: "ÉTUDES", value: "etudex" }
+          - { label: "EXPERTISE/CONSEIL", value: "expert" }
+          - { label: "VENTE LOGICIEL", value: "vente" }
+      - { label: "Afficher à l'accueil ?", name: "favoris", widget: "boolean", default: false }
+      - { label: "Titre", name: "title", widget: "string", required: false }
+      - { label: "Donneur d’ordre", name: "donneur_ordre", widget: "string", required: false }
+      - { label: "Durée", name: "duree", widget: "string", required: false }
+      - { label: "Année Réalisation", name: "annee_real", widget: "string", required: false }
+      - { label: "Région", name: "region", widget: "string", required: false }
+      - { label: "Pays", name: "pays", widget: "string", required: false }
+      - { label: "Latitude ", name: "lat", widget: "string", required: false }
+      - { label: "Longitude", name: "long", widget: "string", required: false }
+      - { label: "Text 1", name: "text1", widget: "markdown", required: false }
+      - { label: "Contexte", name: "context", widget: "markdown", required: false }
+      - { label: "Prestation realisée", name: "real", widget: "markdown", required: false }
+      - { label: "Photo 1", name: "photo1", widget: "image", required: false }

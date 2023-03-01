@@ -22,9 +22,9 @@ context: "Par suite de la mise en service des lignes à grande vitesse Bretagne
 real: >-
   
 
-  1. R**éalisation des études exploratoires en phase initiale :**
+  1. **Réalisation des études exploratoires en phase initiale :**
      Étude de contexte (entretiens), synthèse des besoins de mobilité des territoires, identification des objectifs du projet, analyse des études antérieures (doublement Nantes-Angers, études LGV BPL), benchmark de démarches analogues, étude fonctionnelle, technique et économique de scénarios d’infrastructures contrastés (LGV et Hyperloop).
-  2. R**édaction du cahier des charges des études exploratoires** détaillées pour les scénarios retenus à l’issue de la phase initiale par le comité de pilotage.
+  2. **Rédaction du cahier des charges des études exploratoires** détaillées pour les scénarios retenus à l’issue de la phase initiale par le comité de pilotage.
 
   3. **Assistance à maitrise d’ouvrage pour les études exploratoires détaillées** (14 mois, montant des études 550k€) : étude fonctionnelle, étude de trafic, étude d’exploitation, étude technico-environnementale, étude socio-économique.
 photo1: /assets/img/uploads/paris-nantes.png
