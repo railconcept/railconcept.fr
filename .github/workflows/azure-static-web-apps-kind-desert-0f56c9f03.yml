@@ -30,7 +30,7 @@ jobs:
           ruby-version: '3.1'
 
       - name: Jekyll build
-        run: bundle exec jekyll build
+        run: JEKYLL_ENV=production bundle exec jekyll build
 
       - name: Build And Deploy
         id: builddeploy
