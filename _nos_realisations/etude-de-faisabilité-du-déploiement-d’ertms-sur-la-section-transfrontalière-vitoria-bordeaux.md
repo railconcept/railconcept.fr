@@ -13,7 +13,7 @@ text1: L’Union Européenne a fixé des objectifs de déploiement ERTMS sur les
   coté Méditerranée. Les Etats espagnol et français n’ont pas fixé de calendrier
   pour le déploiement côté Atlantique. Le GEIE « Atlantic Corridor » souhaite
   disposer d’un **éclairage sur la faisabilité et l’opportunité d’un tel
-  déploiemen**t. L’étude a ainsi pour objectif de déterminer les conditions
+  déploiemet**. L’étude a ainsi pour objectif de déterminer les conditions
   techniques, l’impact au niveau économique et en termes de capacité et
   d’exploitation du déploiement d’ERTMS entre Vitoria (Y Basque) et Bordeaux
   (ligne SEA déjà équipée).

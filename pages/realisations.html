@@ -195,17 +195,22 @@ permalink: /realisations
             <br>Nous sommes particulièrement implantés sur le continent africain.
         </div>
         <div id="gallerie-real">
-            <div id="filtre-div" class="filtre-div  col-12  pl-0 pr-0 " data-aos="fade-left" data-aos-delay="600">
-                <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
-                    onclick="filtrer_gal('all');">voir tout</button>
-                <button id="mission" class="btn btn-default filter-button text-uppercase"
-                    onclick="filtrer_gal('mission');">mission amo grands projets</button>
-                <button id="etudex" class="btn btn-default filter-button text-uppercase"
-                    onclick="filtrer_gal('etudex');">études</button>
-                <button id="expert" class="btn btn-default filter-button text-uppercase"
-                    onclick="filtrer_gal('expert');">expertise / conseil</button>
-                <button id="vente" class="btn btn-default filter-button text-uppercase"
-                    onclick="filtrer_gal('vente');">vente logiciel </button>
+            <div class="row">
+                <div id="filtre-div" class="filtre-div  col pl-0 pr-0 " data-aos="fade-left" data-aos-delay="600">
+                    <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
+                        onclick="filtrer_gal('all');">voir tout</button>
+                    <button id="mission" class="btn btn-default filter-button text-uppercase"
+                        onclick="filtrer_gal('mission');">mission amo grands projets</button>
+                    <button id="etudex" class="btn btn-default filter-button text-uppercase"
+                        onclick="filtrer_gal('etudex');">études</button>
+                    <button id="expert" class="btn btn-default filter-button text-uppercase"
+                        onclick="filtrer_gal('expert');">expertise / conseil</button>
+                    <button id="vente" class="btn btn-default filter-button text-uppercase"
+                        onclick="filtrer_gal('vente');">vente logiciel </button>
+                </div>
+                <div id="paging-real" class="container col-auto">
+                    <ul id="paginate_real" class="pagination justify-content-end .borderless"></ul>
+                </div>
             </div>
 
             <div class="row col-12 grid_gal  pl-0 pr-0">
@@ -229,9 +234,7 @@ permalink: /realisations
     </div>
 </section>
 
-<div id="paging-real" class="mr">
-    <ul id="paginate_real" class="pagination justify-content-end .borderless"></ul>
-</div>
+
 
 {% include contact.html %}
 {% include footer.html %}
