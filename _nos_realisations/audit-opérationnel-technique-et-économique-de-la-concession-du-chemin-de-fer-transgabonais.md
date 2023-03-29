@@ -9,7 +9,7 @@ pays: Gabon
 text1: >-
   Suite à un appel d’offres organisé par le Comité de Privatisation, le groupement Nodalis Conseil / Rail Concept a été chargé de mener l’audit opérationnel, technique et économique de la concession du chemin de fer Transgabonais depuis son entrée en vigueur en novembre 2005 et jusqu'au 31 décembre 2009. Cet audit est prévu **dans le cadre de l’article 9.5 de la convention de concession de la gestion et de l’exploitation du chemin de fer Transgabonais signée en juillet 2005 avec SETRAG.**
 
-  L’audit vise à assurer l’Etat concédant de la pérennité de l’exploitation ferroviaire. L’objectif de cette mission est de faire le point sur le fonctionnement de la concession et déterminer si les obligations des parties sont respectées et de faire, le cas échéant, des propositions concrètes pour y parvenir. C**et audit est suivi de propositions concrètes d’amélioration et de préconisations concernant :**
+  L’audit vise à assurer l’Etat concédant de la pérennité de l’exploitation ferroviaire. L’objectif de cette mission est de faire le point sur le fonctionnement de la concession et déterminer si les obligations des parties sont respectées et de faire, le cas échéant, des propositions concrètes pour y parvenir. **Cet audit est suivi de propositions concrètes d’amélioration et de préconisations concernant :**
 
 
   * La gestion de l’infrastructure
@@ -28,7 +28,7 @@ context: >-
 
   Une visite de terrain a été menée en février 2010 avec une semaine de RV dans les bureaux de SETRAG puis 7 jours de tournée sur l’ensemble du linéaire en draisine. Le diagnostic a fait l’objet d’un rapport provisoire remis le 18 mars 2010, d’un atelier de restitution tenu à Paris le 26 avril 2010, d’échanges et d’un rapport définitif, tenant compte des commentaires reçus des différentes parties prenantes.
 
-  La seconde phase de la prestation avait pour objet d**’établir des recommandations, selon les thématiques suivantes :**
+  La seconde phase de la prestation avait pour objet **d’établir des recommandations, selon les thématiques suivantes :**
 
 
   * Analyse de la relation établie entre l’Etat et le concessionnaire.

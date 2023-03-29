@@ -10,7 +10,7 @@ pays: France
 text1: >-
   À la suite du report par la commission Mobilité 21 au-delà de 2050 de
   l’achèvement de l’A51 entre le col du Fau et la Saulce, l’État a souhaité
-  lancer une étude d’opportunité d’itinéraire portant sur l**’aménagement de la
+  lancer une étude d’opportunité d’itinéraire portant sur **l'aménagement de la
   RN85 et de la RD1075 entre Grenoble et Sisteron.** 
 
   A l’issue de cette étude, un programme d’actions de 200 M€ a été défini sur les deux axes se déclinant en période quinquennale. Ce programme d’actions intègre : 

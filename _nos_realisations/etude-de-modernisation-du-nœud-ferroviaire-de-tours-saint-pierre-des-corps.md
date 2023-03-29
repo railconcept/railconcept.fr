@@ -14,10 +14,10 @@ text1: >-
   destination de Paris et du Sud-Ouest. La gare et l’avant-gare de Saint-Pierre
   des Corps sont aujourd’hui les zones les plus sensibles en termes de gestion
   des circulations : les services y perdent actuellement plus de 4000 heures par
-  an. Ainsi, l’en**semble du nœud a un impact fort sur la qualité de service
+  an. Ainsi, **l’ensemble du nœud a un impact fort sur la qualité de service
   offerte par les services ferroviaires.**
 
-  L’objectif de l’étude es**t d’identifier les aménagements à réaliser à moyen terme afin d’améliorer l’exploitation de l’ensemble du nœud.**
+  L’objectif de l’étude est **d’identifier les aménagements à réaliser à moyen terme afin d’améliorer l’exploitation de l’ensemble du nœud.**
 context: >-
   
 
