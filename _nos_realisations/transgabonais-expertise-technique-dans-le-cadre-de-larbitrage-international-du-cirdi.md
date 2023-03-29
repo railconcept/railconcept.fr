@@ -11,7 +11,7 @@ text1: Dans le cadre du litige opposant le Gouvernement Gabonais à son ancien
   Concessionnaire sur la ligne du Transgabonais, le Cabinet FENEON ET
   DELABRIERE, qui défend le Gouvernement, a souhaité s’adjoindre **une expertise
   technique sur les aspects relatifs à la maintenance de la ligne effectuée par
-  l’ancien Concessionnair**e. Il a été demandé à la Société Rail Concept
+  l’ancien Concessionnaire.** Il a été demandé à la Société Rail Concept
   spécialisée en la matière de lui apporter cette expertise.
 context: >-
   **Une phase 1 : Appropriation du dossier** 

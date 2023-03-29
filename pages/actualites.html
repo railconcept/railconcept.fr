@@ -35,19 +35,25 @@ permalink: /actualites
     </div>
 </section>
 
-<!--Gallerie Actualites-->
-
 <section class="gal-real mt-5 mb-5">
     <div class="container">
         <div id="gallerie-actualite">
-            <div id="filtre-div" class="filtre-div  col-12 pl-0 pr-0 " data-aos="fade-left" data-aos-delay="600">
-                <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
-                    onclick="filtrer_act('all');">voir tout</button>
-                {% for tagx in site.catnews %}
-                <button id="{{tagx.name}}" class="btn btn-default filter-button text-uppercase"
-                    onclick="filtrer_act('{{tagx.name}}');">{{tagx.title}}</button>
-                {% endfor %}
+            <div class="row">
+                <div id="filtre-div" class="filtre-div col pl-0 pr-0 " data-aos="fade-left" data-aos-delay="600">
+                    <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
+                        onclick="filtrer_act('all');">voir tout</button>
+                    {% for tagx in site.catnews %}
+                    <button id="{{tagx.name}}" class="btn btn-default filter-button text-uppercase"
+                        onclick="filtrer_act('{{tagx.name}}');">{{tagx.title}}</button>
+                    {% endfor %}
+                    <!--Gallerie Actualites-->
+
+                </div>
+                <div id="paging-real" class="container col-auto">
+                    <ul id="paginate_real" class="pagination justify-content-end borderless"></ul>
+                </div>
             </div>
+
             <div class="row col-12 pl-0 pr-0">
                 {% for post in site.posts %}
                 <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-12 mt-5
@@ -62,7 +68,7 @@ permalink: /actualites
                         <div class="card-body pl-0 pr-0">
                             <div class="title-realisation mt-3 mb-3 lowercase"><a
                                     href="{{ post.url | prepend: site.baseurl }}" class="card-link">
-                                    {{ post.news.news_1 | strip_html | truncatewords: 25 }} </a> </div>
+                                    {{ post.news.news_1 | markdownify | strip_html | truncatewords: 10 }} </a> </div>
                             <span class="date-news ">{{ post.date | date: "%Y-%m-%d" }}</span>
                             <a href="{{ post.url | prepend: site.baseurl }}" class="card-link float-right ">LIRE LA
                                 SUITE</a>
@@ -74,10 +80,14 @@ permalink: /actualites
         </div>
     </div>
 </section>
+<!--
 <div id="paging-real" class="container">
     <ul id="paginate_real" class="pagination justify-content-end borderless"></ul>
 </div>
+-->
 {% include contact.html %}
+
+
 
 <script type="text/javascript">
     let tagsss = [[], []];
@@ -86,3 +96,4 @@ permalink: /actualites
     "{% endfor %}"
 </script>
 {% include footer.html %}
+
