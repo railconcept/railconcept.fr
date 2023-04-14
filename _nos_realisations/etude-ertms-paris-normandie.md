@@ -13,7 +13,7 @@ long: "1.100389"
 text1: >-
   De manière à rendre interopérables les systèmes de signalisation européens, la
   **Commission Européenne a défini des axes ferroviaires sur lesquels l’ERTMS N2
-  devra être déployé progressiveme**nt. Ainsi, les axes Paris – Le Havre (par
+  devra être déployé progressivement**. Ainsi, les axes Paris – Le Havre (par
   Rouen ou par Serqueux) font partie des lignes dont l’équipement en ERTMS N2
   est considéré comme prioritaire par la Commission Européenne. Sur l’axe Paris
   – Le Havre, les trains de fret ont de plus une importance particulière du fait
@@ -22,7 +22,7 @@ text1: >-
   les trains de fret contribue fortement à la volonté d’équiper le corridor
   Paris – Le Havre en ERTMS N2. 
 
-  Au-delà, le déploiement de l’ERTMS N2 sur le réseau national français doit également être pensé du point de vue économique. En effet, le coût de déploiement de ce système (sol + bord) étant très élevé, son horizon de mise en place doit notamment **être mis en perspective avec l’échéance à laquelle la signalisation actuelle doit être régénéré**e, dans l’objectif de minimiser les coûts de déploiement du système sol.
+  Au-delà, le déploiement de l’ERTMS N2 sur le réseau national français doit également être pensé du point de vue économique. En effet, le coût de déploiement de ce système (sol + bord) étant très élevé, son horizon de mise en place doit notamment **être mis en perspective avec l’échéance à laquelle la signalisation actuelle doit être régénérée**, dans l’objectif de minimiser les coûts de déploiement du système sol.
 
   Les objectifs de cette étude sont :
 
@@ -41,7 +41,7 @@ real: >-
 
   * **Construction, calibrage et validation des modèles dynamiques** et d’ERTMS N2, et entretiens avec les opérationnels des zones concernées,
 
-  * **Modélisation du plan de transport à** l’horizon EOLE, analyse par des indicateurs de performance et des tests de robustesse,
+  * **Modélisation du plan de transport à l’horizon EOLE**, analyse par des indicateurs de performance et des tests de robustesse,
 
   * **Construction de l’infrastructure ERTMS N2 sur l’axe Paris – Le Havre,** avec programmes sommaires de signalisation associés. Etude des apports du déploiement d’ERTMS N2 et d’autres aménagements d’infrastructure (optimisation du BAL, relèvements de vitesse) sur l’axe Paris – Le Havre à l’horizon EOLE + interfaces avec étude technico-économique de phasage de déploiement d’ERTMS N2 sur Paris – Le Havre (menée également par Rail Concept), 
 
