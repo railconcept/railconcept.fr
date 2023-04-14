@@ -10,7 +10,7 @@ text1: >-
   En Europe du sud (Italie, Espagne Portugal …), la longueur des trains fret est
   limitée par les caractéristiques des infrastructures et en particulier par la
   longueur des évitements et la capacité des terminaux.  Tous les pays d’Europe
-  du Nord qui ont une histoire industrielle plus importante r**espectent la
+  du Nord qui ont une histoire industrielle plus importante **respectent la
   longueur de 750m (longueur imposée dans les référentiels européens) avec même
   des corridors permettant des longueurs de 850m.** 
 

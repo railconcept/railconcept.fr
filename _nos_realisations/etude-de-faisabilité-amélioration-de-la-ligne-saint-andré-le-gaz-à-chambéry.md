@@ -13,7 +13,7 @@ text1: >-
 
   Sur la ligne St-André-le- Gaz - Chambéry, est notamment envisagé la création d’une halte à Cognin. Celle-ci doit être accompagné de nouvelles dessertes ferroviaires périurbaines, qui vont charger cette voie unique. De même, de forts enjeux de développement du trafic voyageurs sont portés par le projet de l’étoile
 
-  ferroviaire lyonnaise. L’objectif de cette étude est donc d’explorer le**s possibilités d’améliorer les performances de la ligne St- André-le-Gaz - Chambéry,** à travers l’étude du doublement total ou partiel de la ligne, et d’autres
+  ferroviaire lyonnaise. L’objectif de cette étude est donc d’explorer les **possibilités d’améliorer les performances de la ligne St- André-le-Gaz - Chambéry,** à travers l’étude du doublement total ou partiel de la ligne, et d’autres
 
   aménagement similaires (évitements supplémentaires, allongement des points de croisement, voie longue en gare, réaménagements de plans de voie, etc.).
 context: >-
