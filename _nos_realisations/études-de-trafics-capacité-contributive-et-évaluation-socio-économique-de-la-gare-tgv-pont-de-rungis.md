@@ -14,7 +14,7 @@ text1: >-
   l’accès à l’aéroport de Paris-Orly pour les voyageurs intersecteurs. Pour tout
   le bassin de population autour de cette gare nouvelle, cette nouvelle offre de
   mobilité grandes lignes modifiera les usages actuels des gares parisiennes.
-  Cette gare nouvelle crée un p**ôle de connexion fort entre le réseau de
+  Cette gare nouvelle crée un **pôle de connexion fort entre le réseau de
   transport d’Ile de France, le réseau à Grande Vitesse national et les
   connexions internationales de l’aéroport Paris-Orly.**
 

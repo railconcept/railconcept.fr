@@ -10,7 +10,7 @@ region: Pays de la Loire
 pays: France
 context: "Par suite de la mise en service des lignes à grande vitesse Bretagne
   Pays de la Loire (BPL) et Sud Europe Atlantique (SEA) à l’été 2017, la Région
-  des Pays de la Loire s’in**quiète d’une potentielle perte de compétitivité à
+  des Pays de la Loire **s’inquiète d’une potentielle perte de compétitivité à
   moyen terme de Nantes vis-à-vis des métropoles concurrentes**. La Région,
   ainsi que ses partenaires institutionnels, a donc entrepris d’identifier les
   conditions du maintien de l’attractivité de sa capitale régionale vis-à-vis
