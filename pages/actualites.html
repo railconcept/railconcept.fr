@@ -4,8 +4,7 @@ layout: default
 permalink: /actualites
 ---
 <!--realisations-->
-<div class="competence actualite-1 text-center"
-    style="background-image:url('{{ site.baseurl }}/assets/img/slider/gare-train-nice-ville.jpg');">
+<div class="competence actualite-1 text-center" style="background-image:url('{{ site.baseurl }}/assets/img/slider/gare-train-nice-ville.jpg');">
     <div class="container h-100">
         <div class="row h-100 justify-content-center align-items-center">
             <h1 class="header-realisation" data-aos="fade-up">Actualités </h1>
@@ -40,11 +39,9 @@ permalink: /actualites
         <div id="gallerie-actualite">
             <div class="row">
                 <div id="filtre-div" class="filtre-div col pl-0 pr-0 " data-aos="fade-left" data-aos-delay="600">
-                    <button id="all" class="btn btn-default filter-button text-uppercase  btn-active"
-                        onclick="filtrer_act('all');">voir tout</button>
+                    <button id="all" class="btn btn-default filter-button text-uppercase  btn-active" onclick="filtrer_act('all');">voir tout</button>
                     {% for tagx in site.catnews %}
-                    <button id="{{tagx.name}}" class="btn btn-default filter-button text-uppercase"
-                        onclick="filtrer_act('{{tagx.name}}');">{{tagx.title}}</button>
+                    <button id="{{tagx.name}}" class="btn btn-default filter-button text-uppercase" onclick="filtrer_act('{{tagx.name}}');">{{tagx.title}}</button>
                     {% endfor %}
                     <!--Gallerie Actualites-->
 
@@ -62,13 +59,13 @@ permalink: /actualites
                         {% endfor %}" data-aos="fade-up" data-aos-delay="300">
                     <div class="card card-border-none">
                         <div class="act-tag">
-                            <img src="{{ post.news_photo.photo_news1 | prepend: site.baseurl }}"
-                                class="img-100 objectfit" alt="{{ post.title }} ">
+                            <img src="{{ post.news_photo.photo_news1 | prepend: site.baseurl }}" class="img-100 objectfit" alt="{{ post.title }} ">
                         </div>
                         <div class="card-body pl-0 pr-0">
-                            <div class="title-realisation mt-3 mb-3 lowercase"><a
-                                    href="{{ post.url | prepend: site.baseurl }}" class="card-link">
-                                    {{ post.news.news_1 | markdownify | strip_html | truncatewords: 10 }} </a> </div>
+                            <div class="title-realisation mt-3 mb-3 lowercase">
+                                <a href="{{ post.url | prepend: site.baseurl }}" class="card-link">
+                                    {{ post.title | markdownify | strip_html | truncatewords: 10 }} </a>
+                            </div>
                             <span class="date-news ">{{ post.date | date: "%Y-%m-%d" }}</span>
                             <a href="{{ post.url | prepend: site.baseurl }}" class="card-link float-right ">LIRE LA
                                 SUITE</a>
@@ -96,4 +93,3 @@ permalink: /actualites
     "{% endfor %}"
 </script>
 {% include footer.html %}
-
