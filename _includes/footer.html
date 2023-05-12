@@ -2,142 +2,135 @@
 <footer>
     <section id="footer">
         <div class="container">
-            <div class="row text-alignit ">
-                <div class="foot1 col-lg-3 col-md-6 col-xs-12 col-sm-12 pl-0 pr-0" data-aos="fade-up">
-                    <div class="col-12">
-                        <img class="logo-footer" src="{{ site.baseurl }}/assets/img/logo/logo.png">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="adresse">
+                        <div class="footer-title"><img src="{{ site.baseurl }}/assets/img/footer/loc.png" />Siége social</div>
+                        <div>{{site.data.website_settings.seo.location.street_adress}} </div>
+                        <div class="pl-17">{{site.data.website_settings.seo.location.region}} </div>
+                        <div class="pl-17">{{site.data.website_settings.seo.location.country}} </div>
                     </div>
-                    <div class="col-12 adresse  pl-0">
-                        <div class="sous-title-red" style="font-size:18px;"><img src="{{ site.baseurl }}/assets/img/footer/loc.png" class="position"> Siége social</div>
-                        <div class="disp_in"> {{site.data.website_settings.seo.location.street_adress}} </div>
-                        <div class="pl-17">{{site.data.website_settings.seo.location.region}}</div>
-                        <div class="pl-17">{{site.data.website_settings.seo.location.country}}</div>
-                    </div>
-                    <div class="col-12 adresse  pl-0">
-                        <div class="sous-title-red" style="font-size:18px;"><img src="{{ site.baseurl }}/assets/img/footer/loc.png" class="position"> Bureaux parisiens</div>
-                        <div class="disp_in"> 1 Rue Emile gilbert</div>
+                    <div class="adresse">
+                        <div class="footer-title"> <img src="{{ site.baseurl }}/assets/img/footer/loc.png" />Bureaux parisiens </div>
+                        <div>1 Rue Emile gilbert</div>
                         <div class="pl-17">75012 Paris</div>
                         <div class="pl-17">France</div>
-                    </div> 
-                    <div class="col-12 tel pl-0">
-                        <img src="{{ site.baseurl }}/assets/img/footer/tel.png" class="position">
-                        <a id="phone" href="tel:+33490905485" class="disp_in">{{site.data.website_settings.seo.tel_display}}</a>
                     </div>
-
-                </div>
-                <div class="foot2 col-lg-2 col-md-6  col-xs-12 col-sm-12 pl-0 pr-0 mt-3" data-aos="fade-up"
-                    data-aos-anchor=".foot1" data-aos-delay="150">
-                    <div class="footer-title "><a href="{{ site.baseurl }}/qui-sommes-nous"> nous connaître</a></div>
-                    <div class="groupe ">
-                        <a href="{{ site.baseurl }}/qui-sommes-nous#nous" class="footer-body">Qui sommes-nous</a><br>
-                        <a href="{{ site.baseurl }}/qui-sommes-nous#notre-equipe" class="footer-body">Notre
-                            équipe</a><br>
+                    <div class="tel">
+                        <img src="{{ site.baseurl }}/assets/img/footer/tel.png" class="position" />
+                        <a id="phone" href="tel:+33490905485" class="disp_in">{{site.data.website_settings.seo.tel_display}} </a>
                     </div>
-                    <div class="footer-title mt-3"><a href="{{ site.baseurl }}/competences">Nos compétences</a></div>
-                    <div class="groupe ">
-                        <a href="{{ site.baseurl }}/competences#pills-mission" class="footer-body"> Mission AMO grands
-                            projets</a><br>
-                        <a href="{{ site.baseurl }}/competences#pills-etude" class="footer-body"> Études</a><br>
-                        <a href="{{ site.baseurl }}/competences#pills-expert" class="footer-body">Expertise /
-                            Conseil</a><br>
-                        <a href="{{ site.baseurl }}/competences#pills-logiciel" class="footer-body">Logiciels
-                            spécialisés</a><br>
-                    </div>
-                </div>
-
-                <div class="foot3 col-lg-3 col-md-6  col-xs-12 col-sm-12 mt-3" data-aos="fade-up"
-                    data-aos-anchor=".foot2" data-aos-delay="250">
-                    <div class="footer-title "> <a href="{{ site.baseurl }}/realisations">nos réalisations</a></div>
-                    <div class="groupe">
-                        <a href="{{ site.baseurl }}/realisations#mission" class="footer-body footer-real">Mission AMO Grands
-                            Projets</a><br>
-                        <a href="{{ site.baseurl }}/realisations#etudex" class="footer-body footer-real" >Études</a><br>
-                        <a href="{{ site.baseurl }}/realisations#expert" class="footer-body footer-real">Expertise /
-                            Conseil</a><br>
-                        <a href="{{ site.baseurl }}/realisations#vente" class="footer-body footer-real">Vente logiciel</a><br>
-                    </div>
-
-                    <div class="footer-title mt-3 "><a href="{{ site.baseurl }}/rejoignez-nous">Carrières</a></div>
-                    <div class="groupe">
-                        <a href="{{ site.baseurl }}/nos-metiers" class="footer-body">Nos métiers</a><br>
-                        <a href="{{ site.baseurl }}/rejoignez-nous" class="footer-body">Rejoignez-nous</a>
-                    </div>
-                    <div class="footer-title mt-3 "><a href="{{ site.baseurl }}/actualites">Actualités</a></div>
-                </div>
-                <div class="foot4 col-lg-4 col-md-6  col-xs-12 col-sm-12 mt-3" data-aos="fade-up"
-                    data-aos-anchor=".foot3" data-aos-delay="350">
-                    <!-- <div class="footer-title">abonnez-vous à notre newsletter !</div>
-                    <form action="/success" name="newsletter" method="POST" data-netlify="true"
-                        netlify-honeypot="bot-field">
-                        <p class="hidden">
-                            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                        </p>
-                        <div class="form-group input-group mt20 ">
-                            <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email"
-                                required>
-                            <div class="input-group-prepend">
-                                <button type="submit" class="boutton input-group-text btn enveloppe"><img
-                                        src="{{ site.baseurl }}/assets/img/footer/Enveloppe.png"> </button>
-                            </div>
-                        </div>
-                    </form> -->
-                    <div class="footer-title mt-3 mb-1">suivez-nous sur les réseaux !</div>
-                  
-                    <!--
-                    <a href="{{site.data.website_settings.seo.facebook}}" class="footer-title mr-2" target="_blank"><img
-                            id="facebook" src="{{ site.baseurl }}/assets/img/footer/facebook.png" height="27"></a>
-                    -->
-
-                    <a href="{{site.data.website_settings.seo.linkedin}}" class="footer-title" target="_blank">
-                        <img src="{{ site.baseurl }}/assets/img/footer/linkedin.png" height="27"></a>
-
-                    <div class="footer-title mt-3">vous souhaitez faire parti de l’équipe</div>
-                    <div class="form-group text-alignit mt-3">
-                        <a href="mailto:commercial@railconcept.fr" class="contactez-red btn  mt10" data-aos="zoom-in"
-                            data-aos-anchor=".contactez"> contactez-nous !</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- COPYRIGHT-->
-
-    <section class="copyright container text-center">
-        <div class="row">
-            <div class="container" data-aos-offset="0">
-                <div class="row">
-                    <div class="col-md-4 Copyrightcol">
+                    <div>
                         <ul class="links">
-                            <li><a class="color" href="{{ site.baseurl }}/mentions-legales" title="">Mentions légales</a></li>
-                            <li><a class="color" href="{{ site.baseurl }}/plan-site" title="">Plan du site</a></li>
+                            <li>
+                                <a class="color" href="{{ site.baseurl }}/mentions-legales" title="">Mentions légales</a>
+                            </li>
+                            <li>
+                                <a class="color" href="{{ site.baseurl }}/plan-site" title="">Plan du site</a>
+                            </li>
                         </ul>
                     </div>
-                    <div class="col-md-8 text-right">
-                        Copyright © {{ site.time | date: "%Y" }} railconcept.fr - Design by Agence de communication Montpellier 
-                        <a href="https://www.studiogazoline.com/" target="_blank">
-                            <img class="align-middle" src="{{ site.baseurl }}/assets/img/footer/logo gazoline.png" alt="logo studio gazoline"></a>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="footer-title">
+                                <a href="{{ site.baseurl }}/rejoignez-nous">Carrières</a>
+                            </div>
+                            <div class="groupe">
+                                <a href="{{ site.baseurl }}/nos-metiers" class="footer-body">Nos métiers</a><br />
+                                <a href="{{ site.baseurl }}/rejoignez-nous" class="footer-body">Rejoignez-nous</a>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="footer-title">
+                                <a href="{{ site.baseurl }}/qui-sommes-nous">Nous connaître</a>
+                            </div>
+                            <div class="groupe">
+                                <a href="{{ site.baseurl }}/qui-sommes-nous#nous" class="footer-body">Qui sommes-nous</a>
+                                <br />
+                                <a href="{{ site.baseurl }}/qui-sommes-nous#notre-equipe" class="footer-body">Notre équipe</a>
+                                <br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="footer-title">
+                                <a href="{{ site.baseurl }}/competences">Nos compétences</a>
+                            </div>
+                            <div class="groupe">
+                                <a href="{{ site.baseurl }}/competences#pills-mission" class="footer-body">Mission AMO grands projets</a><br />
+                                <a href="{{ site.baseurl }}/competences#pills-etude" class="footer-body"> Études</a><br />
+                                <a href="{{ site.baseurl }}/competences#pills-expert" class="footer-body">Expertise / Conseil</a><br />
+                                <a href="{{ site.baseurl }}/competences#pills-logiciel" class="footer-body">Logiciels spécialisés</a><br />
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="footer-title">
+                                <a href="{{ site.baseurl }}/realisations">nos réalisations</a>
+                            </div>
+                            <div class="groupe">
+                                <a href="{{ site.baseurl }}/realisations#mission" class="footer-body footer-real">Mission AMO Grands Projets</a><br />
+                                <a href="{{ site.baseurl }}/realisations#etudex" class="footer-body footer-real">Études</a>
+                                <br />
+                                <a href="{{ site.baseurl }}/realisations#expert" class="footer-body footer-real">Expertise / Conseil</a>
+                                <br />
+                                <a href="{{ site.baseurl }}/realisations#vente" class="footer-body footer-real">Vente logiciel</a><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="footer-title">
+                                <a href="{{ site.baseurl }}/actualites">Actualités</a>
+                            </div>
+                            <div class="groupe">
+                                {% for post in site.posts limit:3 %}
+                                <a href=" {{ post.url }}" class="footer-body">{{ post.title | markdownify | strip_html | truncatewords: 10 }}</a>
+                                <br />
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <div>
+                        <div class="footer-title">Suivez-nous sur les réseaux !</div>
+                        <a href="{{site.data.website_settings.seo.linkedin}}" class="footer-title" target="_blank">
+                            <img src="{{ site.baseurl }}/assets/img/footer/linkedin.png" height="27" />
+                        </a>
+                    </div>
+                    <div>
+                        <div class="footer-title"> Vous souhaitez faire parti de l’équipe ? </div>
+                        <div class="form-group text-alignit">
+                            <a href="mailto:commercial@railconcept.fr" class="contactez-red btn" data-aos="zoom-in" data-aos-anchor=".contactez"
+                                >Contactez-nous !</a
+                            >
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div>Copyright © {{ site.time | date: "%Y" }} railconcept.fr</div>
+                        <div
+                            >Design by Agence de communication Montpellier
+                            <a href="https://www.studiogazoline.com/" target="_blank">
+                                <img src="{{ site.baseurl }}/assets/img/footer/logo gazoline.png" alt="logo studio gazoline" />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 </footer>
-
-
-
-
-    
 
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/pagination.js"></script>
 <script src="{{ site.baseurl }}/assets/js/slick.min.js"></script>
 <!-- Google maps -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAozQaU5jTHkPxxFhJ1RHVk8dEvj5njSIc"> </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAozQaU5jTHkPxxFhJ1RHVk8dEvj5njSIc"></script>
 <script src="{{ site.baseurl }}/assets/js/bootstrap-swipe-carousel.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/aos.js"></script>
 <script src="{{ site.baseurl }}/assets/js/sweetalert2.js"></script>
@@ -148,8 +141,3 @@
 
 <script src="{{ site.baseurl }}/assets/js/pace.1.0.0.js"></script>
 <script src="{{ site.baseurl }}/assets/js/main.js"></script>
-
-
-</body>
-
-</html>
