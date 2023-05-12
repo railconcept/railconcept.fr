@@ -1414,7 +1414,6 @@
     }
 
     .adresse {
-        margin-top: 40px;
         font-size: 17px;
         font-family: "Barlow Semi Condensed", sans-serif;
         color: #8c8c8c;
@@ -1431,13 +1430,22 @@
         text-transform: uppercase;
     }
 
+    .adresse div, .tel div {
+        text-align: center;
+    }
+
+    @media (min-width: 992px) {
+        .adresse div, .tel div {
+            text-align: left;
+        }
+    }
+
     .footer-title {
         font-size: 22px;
         font-family: "Barlow Semi Condensed", sans-serif;
         color: rgb(148, 38, 38);
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 15px;
     }
 
     .footer-title>a {
