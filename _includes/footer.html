@@ -88,7 +88,8 @@
                             </div>
                             <div class="groupe">
                                 {% for post in site.posts limit:3 %}
-                                <a href=" {{ post.url }}" class="footer-body">{{ post.title | markdownify | strip_html | truncatewords: 10 }}</a>
+                                <a href=" {{ post.url }}" class="footer-body d-inline-block text-truncate" style="max-width: 325px;">{{ post.title | markdownify | strip_html }}</a>
+
                                 <br />
                                 {% endfor %}
                             </div>
