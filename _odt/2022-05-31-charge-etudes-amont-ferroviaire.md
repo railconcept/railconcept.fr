@@ -80,7 +80,7 @@ poste: >-
   - Réaliser toute autre tâche déléguée par le Directeur de la division exploitation ou les chefs de projets.
 
 
-  **Contrat**
+  **CONTRAT**
 
 
   - Contrat : CDI
@@ -90,7 +90,7 @@ poste: >-
   - Temps de travail : Du lundi au vendredi
 
 
-  **Types de primes et gratifications**
+  **TYPES DE PRIMES ET GRATIFICATIONS**
 
 
   - Heures supplémentaires majorées
