@@ -1,12 +1,12 @@
 ---
 layout: offre
 active: true
-date: 31-05-2022 14:46:58
-title: Chargé.e d'études amont ferroviaire
+date: 10-07-2023 16:57:14
+title: Chargé d'études junior Exploitation Ferroviaire
 tdp: cde
-dep: Exploitation / Infrastructure / Socio-économie
-tdc: Stage de 6 mois à partir de février 2023
-ldt: Paris (75) ou les Angles (30)
+dep: Exploitation
+tdc: CDI
+ldt: Paris (75)
 entreprise: >-
   <!--StartFragment-->
 
@@ -34,10 +34,19 @@ poste: >-
   <!--StartFragment-->
 
 
-  **OBJECTIF DU STAGE**
+  **DESCRIPTIF DU POSTE**
 
 
-  Participer à des **études amont ferroviaires transversales et multi-métiers.** Vous devrez maîtriser **les outils et méthodologies d’évaluation nécessaires** pour mener à bien ces études, notamment **sur des problématiques relatives à l’économie du système, aux infrastructures et à l’exploitation ferroviaire.** Vous serez intégré au sein d’une équipe de production pilotée par un chef de projet.
+  Rattaché(e) à la Division Exploitation, vous êtes chargé(e) de produire dans le cadre des études d’exploitation, les analyses et modélisations demandées par le chef de projet sur la base des données fournies par le client ou déjà détenues.
+
+
+  **OBJECTIFS**
+
+
+  - Réaliser, à l’aide d’outils dédiés, des études d’exploitation, de capacité et de robustesse.
+
+
+  - Proposer le développement des outils en relation avec les développeurs de l’équipe.
 
 
 
@@ -45,16 +54,7 @@ poste: >-
   **MISSIONS**
 
 
-  + Maitriser le contexte, les méthodes de travail
-
-
-  + Intégrer une équipe projet
-
-
-  + Participer à la production
-
-
-  + Être critique et force de proposition
+  - Produire dans le cadre des études exploitation confiées à Rail Concept les analyses et modélisations demandées par le chef de projet sur la base des données fournies par le client ou déjà détenues.
 
 
 
@@ -62,25 +62,46 @@ poste: >-
   **ACTIVITÉS/TACHES**
 
 
-  Sous la direction des chefs de projet et deschargés d’études de la division économique, les activités auxquelles prendra part le stagiaire sont principalement :
+  Sous la direction du Directeur de division et des chefs de projets :
 
 
-  + Analyse territoriale
+  - Modéliser des infrastructures et des plans de transport avec le logiciel Ingetime et réaliser des analyses.
 
 
-  + Évaluation fonctionnelle, analyse multicritère
+  - Concevoir de nouveaux plans de transport et proposer des aménagements d’infrastructures.
 
 
-  + Bilan économique / socio-économique
+  - Rédiger les rapports des études d’exploitation et les présentations utilisées pour les réunions ou à d’autres fins. Rédiger des comptes rendus de réunion.
 
 
-  + Cartographie
+  - Analyser des plans de transport existants sur la base d’enregistrement et produire les analyses correspondantes (régularité, etc.…).
 
 
-  + Construction de grilles horaires, études de robustesse
+  - Réaliser toute autre tâche déléguée par le Directeur de la division exploitation ou les chefs de projets.
 
 
-  + Rédaction de note de synthèse et réalisation de support de présentation
+  **CONTRAT**
+
+
+  - Contrat : CDI
+
+  - Salaire : 20 000,00€ à 40 000,00€ par an
+
+  - Temps de travail : Du lundi au vendredi
+
+
+  **TYPES DE PRIMES ET GRATIFICATIONS**
+
+
+  - Heures supplémentaires majorées
+
+
+  **AVANTAGES**
+
+
+  - Horaires flexibles
+
+
 
 
   <!--EndFragment-->
@@ -91,25 +112,14 @@ profil: >-
   **CANDIDAT**
 
 
-  * Vous êtes en 2e ou 3e année d’école d’ingénieurs ou équivalent dans le domaine des transports
-
-  * Dans votre travail, vous faites preuve de rigueur et méthode
-
-  * Vous avez une bonne capacité à comprendre et maitriser des problématiques complexes
-
-  * Le travail en équipe vous plait et vous avez le sens de la communication, tant écrite 
-    qu’orale
-  * Vous faites preuve d’une excellente capacité de synthèse
+  Titulaire d’un diplôme d’Ingénieur ou équivalent, une expérience d’au moins 1 année dans le domaine ferroviaire sera appréciée.
 
 
-  **EN PRATIQUE**
+  Rigueur, goût pour la technique, capacité à s’intégrer dans une équipe, à appréhender des problématiques complexes nouvelles, qualité rédactionnelle et de présentation des documents, capacités d'analyse et de conception sont vos principaux atouts.
 
 
-  * Profil recherché : École d'ingénieur (2ème ou 3ème année) / Master 2 universitaire
+  Poste exigeant une grande capacité d'adaptation et d’autonomie, vous pourrez être amené(e) à effectuer des déplacements tant en France qu’à l’International.
 
-  * Durée : 5/6 mois à partir de février 2023
-
-  * Contact : n.fardoun@railconcept.fr / 06 28 93 43 41
 
 
   **Merci d'envoyer votre candidature (CV+LM) à n.fardoun@railconcept.fr**
