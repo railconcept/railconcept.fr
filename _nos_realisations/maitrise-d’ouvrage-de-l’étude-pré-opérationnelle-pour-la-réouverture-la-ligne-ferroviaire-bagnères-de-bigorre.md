@@ -20,7 +20,7 @@ text1: "Le chemin de fer reliant Tarbes à Bagnères de Bigorre a été mis en
   préliminaire (EP) a été menée par Rail Concept, et une étude APS est
   envisagée. L’objectif premier de cette étude APS est d’**accompagner un projet
   industriel de réouverture de la ligne, au profit de deux industriels
-  ferroviaires, et de s’inscrire dans la dynamique actuell**e : réouverture des
+  ferroviaires, et de s’inscrire dans la dynamique actuelle** : réouverture des
   capillaires fret, revivification du fret ferroviaire, avis positif de SNCF
   Réseau. Les études de réouverture au fret doivent être initiées au plus tôt. À
   terme, sous réserve d’une révision du schéma régional de mobilité, ainsi que
