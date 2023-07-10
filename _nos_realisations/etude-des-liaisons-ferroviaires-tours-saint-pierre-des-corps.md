@@ -17,10 +17,10 @@ text1: >-
   Tours souhaite étudier la possibilité de densifier la desserte entre les gares
   de Tours et Saint-Pierre-des-Corps.
 
-  L’objectif de l’étude est donc d’a**nalyser l’impact en termes de demande (évolution du nombre de voyageurs), de régularité des services, de coût, d’insertion** (impact sur le bâti notamment) de différents scénarios de densification de la desserte entre les deux gares.
+  L’objectif de l’étude est donc d’**analyser l’impact en termes de demande (évolution du nombre de voyageurs), de régularité des services, de coût, d’insertion** (impact sur le bâti notamment) de différents scénarios de densification de la desserte entre les deux gares.
 context: >-
   Nous avons réalisé dans un premier temps un **diagnostic de la régularité et
-  de l’exploitabilité du noeud a**vec notamment une analyse de la capacité
+  de l’exploitabilité du noeud **avec notamment une analyse de la capacité
   résiduelle du noeud et des contraintes environnementales.
 
   Nous avons dans un second temps étudié les **différents scénarii au niveau Etudes préliminaires** : mise au point des schémas fonctionnels (SIF), optimisation du tracé des solutions retenues, chiffrages de ces dernières, analyse de l’impact en termes de demande (impact sur le nombre de voyageurs et évaluation des effets socio-économiques), d’exploitation, de procédures.

@@ -1013,12 +1013,32 @@
         font-family: "Barlow Semi Condensed", sans-serif;
         font-size: 14px;
         font-weight: 900;
-        color: #bcbcbc;
+        color: #141313be;
         bottom: 0;
         position: absolute;
         margin-left: 0;
         text-transform: uppercase;
+    }
 
+    .small-title-left {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        color: #141313be;
+        bottom: 0;
+        position: absolute;
+        text-transform: uppercase;
+    }
+
+    .small-title-right {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 14px;
+        font-weight: 900;
+        color: #141313be;
+        bottom: 0;
+        right:0;
+        position: absolute;
+        text-transform: uppercase;
     }
 
     .read-all-realisation {
@@ -1383,10 +1403,12 @@
 
     footer #footer .groupe {
         padding-left: 8px;
+        
     }
 
     .logo-footer {
         width: 120px;
+        
     }
 
     #phone {
@@ -1394,8 +1416,7 @@
     }
 
     .adresse {
-        margin-top: 40px;
-        font-size: 17px;
+        font-size: 13px;
         font-family: "Barlow Semi Condensed", sans-serif;
         color: #8c8c8c;
         font-weight: bold;
@@ -1403,7 +1424,7 @@
     }
 
     .tel {
-        margin-top: 20px;
+        margin-top: 51px;
         font-size: 17px;
         font-family: "Barlow Semi Condensed", sans-serif;
         color: #8c8c8c;
@@ -1411,13 +1432,22 @@
         text-transform: uppercase;
     }
 
+    .adresse div, .tel div {
+        text-align: center;
+    }
+
+    @media (min-width: 992px) {
+        .adresse div, .tel div {
+            text-align: left;
+        }
+    }
+
     .footer-title {
         font-size: 22px;
         font-family: "Barlow Semi Condensed", sans-serif;
-        color: rgb(148, 38, 38);
+        color: rgb(148, 38, 38);   
         font-weight: bold;
         text-transform: uppercase;
-        margin-bottom: 15px;
     }
 
     .footer-title>a {
@@ -1458,6 +1488,7 @@
         background-color: #f0f0f0;
         border-radius: 0;
         border: none;
+        overflow-wrap: break-word;
         height: calc(2.5em + .75rem + 2px);
     }
 
@@ -2897,15 +2928,11 @@
             display: block;
             width: 100%;
             text-align: center;
-            background-color: #942626;
             margin-top: 20px;
             padding: 10px;
-            color: #fff !important;
             font-weight: 600;
-            color: #fff !important;
             padding: 10px !important;
         }
-        .title-realisation > a{color:#fff!important}
         .gallery-act .card-body{padding:0!important}
     }
 
@@ -3007,10 +3034,6 @@
 
         .title-card-1 {
             font-size: 16px;
-        }
-
-        .img-100 {
-            height: 100% !important;
         }
 
         .navbar-logo {
