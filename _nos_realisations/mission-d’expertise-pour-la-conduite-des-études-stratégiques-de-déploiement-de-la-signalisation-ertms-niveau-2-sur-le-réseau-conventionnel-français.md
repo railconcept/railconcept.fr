@@ -12,7 +12,7 @@ pays: France
 text1: >-
   Un plan de déploiement a été redéfini le 5 janvier 2017 par le coordinateur
   ERTMS européen. Il s'agit, dans un premier temps, de mettre en service le
-  système ERTMS sur 5**0% du réseau ferroviaire stratégique français d'ici à
+  système ERTMS sur **50% du réseau ferroviaire stratégique français d'ici à
   2023, le reste du réseau étant graduellement équipé entre 2024 et 2030**. Il
   convient donc pour SNCF Réseau de définir un plan stratégique de déploiement
   d’ERTMS en ordonnançant les différentes sections à équiper. La stratégie de

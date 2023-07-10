@@ -11,10 +11,10 @@ context: Avec l’arrivée de la ligne à Grande Vitesse Téhéran – Qom – I
   gare en elle-même ainsi que du quartier autour de la gare. Ils ont donc confié
   au groupement AREP – Rail Concept les études de faisabilité de la gare. AREP
   est en charge des problématiques urbaines, architecturales et des circulations
-  piétonnes sur l’ensemble du site tandis que Rail Concept en en charge d**e
+  piétonnes sur l’ensemble du site tandis que Rail Concept en en charge de**
   l’ensemble des études ferroviaires y compris les problématiques de remisage et
-  maintenance du matériel roulant.** L’objectif des études est de définir un
-  s**chéma cible à l’horizon 2050** intégrant la mise en place d’un réseau
+  maintenance du matériel roulant.** L’objectif des études est de définir un**
+  schéma cible à l’horizon 2050** intégrant la mise en place d’un réseau
   régional performant et de proposer des phasages de ce schéma cible aux
   horizons 2030 et 2040 afin notamment d’être en mesure d’accueillir le trafic à
   grande vitesse à court terme.
@@ -29,6 +29,6 @@ real: >-
 
   La problématique spécifique du remisage des rames tractées et automotrices a été traitée. En particulier le fait de remodeler entièrement le plan de gare a été mis à profit pour **repenser l’organisation de la maintenance du matériel roulant** et sa répartition entre les différents sites de Téhéran.
 
-  Une analyse multicritère a permis de retenir le scénario le plus pertinent. Ce dernier a ensuite été optimisé e**n termes d’insertion et de tracé** afin de minimiser son impact sur les infrastructures existantes. Le plan transport proposé à l’horizon 2050 a été modélisé afin de s’assurer de la robustesse de la solution proposée, via notamment l’analyse des marges à voie libre.
+  Une analyse multicritère a permis de retenir le scénario le plus pertinent. Ce dernier a ensuite été optimisé **en termes d’insertion et de tracé** afin de minimiser son impact sur les infrastructures existantes. Le plan transport proposé à l’horizon 2050 a été modélisé afin de s’assurer de la robustesse de la solution proposée, via notamment l’analyse des marges à voie libre.
 photo1: /assets/img/uploads/iran.png
 ---
