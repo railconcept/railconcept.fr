@@ -6,7 +6,7 @@ title: Chargé d'études junior Exploitation Ferroviaire
 tdp: cde
 dep: Exploitation
 tdc: CDI
-ldt: Paris (75)
+ldt: Les Angles (30)
 entreprise: >-
   <!--StartFragment-->
 
