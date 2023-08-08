@@ -24,7 +24,7 @@ permalink: /actualites
 <section class="actualités">
     <div class="container mt-5 mb-5">
         <div class="row">
-            <div class="col-md-12 pl-0 pr-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="col-md-12 ps-0 pe-0" data-aos="fade-up" data-aos-delay="500">
                 <div class=" title-news  title-section mt-0">Découvrez nos actualités</div>
                 <div class="paragraphe-news mt-45">
                     Tenez-vous informés des dernières actualités de Rail Concept. Découvrez nos dernières réalisations !
@@ -38,7 +38,7 @@ permalink: /actualites
     <div class="container">
         <div id="gallerie-actualite">
             <div class="row">
-                <div id="filtre-div" class="filtre-div col pl-0 pr-0 " data-aos="fade-left" data-aos-delay="600">
+                <div id="filtre-div" class="filtre-div col ps-0 pe-0 " data-aos="fade-left" data-aos-delay="600">
                     <button id="all" class="btn btn-default filter-button text-uppercase  btn-active" onclick="filtrer_act('all');">voir tout</button>
                     {% for tagx in site.catnews %}
                     <button id="{{tagx.name}}" class="btn btn-default filter-button text-uppercase" onclick="filtrer_act('{{tagx.name}}');">{{tagx.title}}</button>
@@ -51,7 +51,7 @@ permalink: /actualites
                 </div>
             </div>
 
-            <div class="row col-12 pl-0 pr-0">
+            <div class="row col-12 ps-0 pe-0">
                 {% for post in site.posts %}
                 <div class="gallery-act col-lg-4 col-md-4 col-sm-6 col-12 mt-5
                         {% for tags in post.news.taggx%}
@@ -61,7 +61,7 @@ permalink: /actualites
                         <div class="act-tag">
                             <img src="{{ post.news_photo.photo_news1 | prepend: site.baseurl }}" class="img-100 objectfit" alt="{{ post.title }} ">
                         </div>
-                        <div class="card-body pl-0 pr-0">
+                        <div class="card-body ps-0 pe-0">
                             <div class="title-realisation mt-3 mb-3 lowercase">
                                 <a href="{{ post.url | prepend: site.baseurl }}" class="card-link">
                                     {{ post.title | markdownify | strip_html | truncatewords: 10 }} </a>
