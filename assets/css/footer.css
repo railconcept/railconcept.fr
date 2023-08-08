@@ -54,12 +54,12 @@
         color: var(--primary-color)
     }
 
-    .adresse div, .tel div {
+    .adresse div, .tel {
         text-align: center;
     }
 
     @media (min-width: 992px) {
-        .adresse div, .tel div {
+        .adresse div, .tel {
             text-align: left;
         }
     }
@@ -95,6 +95,13 @@
         line-height: 17px;
     }
 
+    .footer-body-copyright {
+        font-size: 17px;
+        color: var(--secondary-color);
+        font-family: "Barlow Semi Condensed", sans-serif;
+    }
+
+
     .footer-body:hover {
         color: var(--primary-color);
         cursor: pointer;
@@ -124,7 +131,6 @@
         font-weight: 600;
         text-transform: uppercase;
         border-radius: 0;
-        margin-bottom: 15%;
     }
 
     .contactez-red:hover {
