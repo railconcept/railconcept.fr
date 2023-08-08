@@ -1,3 +1,6 @@
+@import 'colors.css';
+@import 'footer.css';
+
     /*****************************************
     ******************************************
     ************ M3SOFT 2019 *****************
@@ -34,7 +37,7 @@
     }
 
     .title-section {
-        color: #942626;
+        color: var(--primary-color);
         font-family: "Barlow Semi Condensed", sans-serif;
         font-size: 45px;
         font-weight: 900;
@@ -43,7 +46,7 @@
     }
 
     .title-section-sub {
-        color: #942626;
+        color: var(--primary-color);
         font-family: "Barlow Semi Condensed", sans-serif;
         font-size: 28px;
         font-weight: 900;
@@ -142,7 +145,7 @@
     }
 
     .partager_link {
-        color: #8c8c8c;
+        color: var(--secondary-color);
         display: inline-block;
         margin: auto;
         vertical-align: middle;
@@ -343,7 +346,7 @@
     }
 
     .link-navbarx:hover {
-        color: #942626 !important;
+        color: var(--primary-color) !important;
     }
 
 
@@ -363,7 +366,7 @@
         width: 0px;
         bottom: 30%;
         height: 3px;
-        background-color: #942626;
+        background-color: var(--primary-color);
         -webkit-transition: .3s ease-in-out;
         -moz-transition: .3s ease-in-out;
         -o-transition: .3s ease-in-out;
@@ -436,7 +439,7 @@
     }
 
     #dropdown-flags:hover {
-        color: #942626 !important;
+        color: var(--primary-color) !important;
         text-decoration: none !important;
     }
 
@@ -478,11 +481,11 @@
         position: absolute;
         width: 45px;
         bottom: 30%;
-        border-bottom: 3px solid #942626;
+        border-bottom: 3px solid var(--primary-color);
     }
 
     .swal2-icon.swal2-success [class^=swal2-success-line] {
-        background-color: #942626 !important;
+        background-color: var(--primary-color) !important;
     }
 
     .swal2-icon.swal2-success .swal2-success-ring {
@@ -490,7 +493,7 @@
     }
 
     .swal2-icon.swal2-success {
-        border-color: #942626 !important;
+        border-color: var(--primary-color) !important;
     }
 
     .navshadow {
@@ -575,8 +578,7 @@
     }
      .carousel-fade .carousel-item{opacity: 0.7;}
     #main-slider .carousel-inner{background-color:#000;}
-     
-    ul.links{list-style: none;}
+
     .zoomx {
         background: rgba(148, 38, 38, 0.9);
         height: 110px;
@@ -666,7 +668,7 @@
         bottom: 0;
         right: 50%;
         left: 0;
-        background-color: #942626;
+        background-color: var(--primary-color);
         padding: 0 0;
         max-width: 750px;
         max-height: 380px;
@@ -758,7 +760,7 @@
     .title-competence {
 
         font-family: "Barlow Semi Condensed", sans-serif;
-        color: #942626;
+        color: var(--primary-color);
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
@@ -771,7 +773,7 @@
     .contenu-competence {
         font-size: 16px;
         font-family: "Open Sans";
-        color: rgb(140, 140, 140);
+        color: #8c8c8c;
         line-height: 1.818;
         text-align: center;
         margin-bottom: 40px;
@@ -823,13 +825,13 @@
 
     .sav:hover {
         font-family: 'Barlow Semi Condensed', sans-serif;
-        background-color: rgb(148, 38, 38);
+        background-color: var(--primary-color);
         color: white !important;
     }
 
     .comp:hover>.sav {
         font-family: 'Barlow Semi Condensed', sans-serif;
-        background-color: rgb(148, 38, 38);
+        background-color: var(--primary-color);
         color: white !important;
     }
 
@@ -883,7 +885,7 @@
 
     .title-para-news {
         font-family: "Barlow Semi Condensed", sans-serif;
-        color: rgb(148, 38, 38);
+        color: var(--primary-color);
         text-transform: uppercase;
         font-size: 30px;
         font-weight: bold;
@@ -899,7 +901,7 @@
         margin-top: 0%;
         line-height: 1.8;
         text-align: justify;
-        color: #8c8c8c;
+        color: var(--secondary-color);
         text-transform: none;
         left: 0;
         margin-bottom: 3%;
@@ -929,7 +931,7 @@
     }
 
     .voirplus {
-        color: #942626 !important;
+        color: var(--primary-color) !important;
         text-transform: uppercase;
         font-size: 18px;
         font-family: "Barlow Semi Condensed", sans-serif;
@@ -977,7 +979,7 @@
     }
 
     #nav-slider-news .active {
-        background-color: #942626 !important;
+        background-color: var(--primary-color) !important;
     }
 
     /***************************************
@@ -1220,7 +1222,7 @@
     }
 
     .contacter-nous {
-        background-color: #942626;
+        background-color: var(--primary-color);
         width: 100%;
     }
 
@@ -1240,7 +1242,7 @@
         font-size: 27px;
         padding: 20px 40px;
         font-family: "Barlow Semi Condensed", sans-serif;
-        color: #942626;
+        color: var(--primary-color);
         border-radius: 0;
         background-color: white;
         font-weight: 900;
@@ -1265,7 +1267,7 @@
 
         font-size: 17px;
         font-family: 'Barlow Semi Condensed', sans-serif;
-        color: #942626;
+        color: var(--primary-color);
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.704;
@@ -1282,7 +1284,7 @@
     }
 
     .savoir:hover {
-        color: #8c8c8c;
+        color: var(--secondary-color);
     }
 
     .contactx {
@@ -1312,7 +1314,7 @@
     .title-section-1 {
         font-size: 28px;
 
-        color: rgb(148, 38, 38);
+        color: var(--primary-color);
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
@@ -1339,7 +1341,7 @@
 
     .btn-voir-poste:hover {
         background-color: #fff;
-        color: #942626
+        color: var(--primary-color)
     }
 
     .contact-img {
@@ -1366,7 +1368,7 @@
     .sous-title-red {
         font-size: 22px;
         font-family: "Barlow Semi Condensed", sans-serif;
-        color: rgb(148, 38, 38);
+        color: var(--primary-color);
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
@@ -1386,134 +1388,7 @@
 
 
 
-    /***************************************
-    **************FOOTER ***********
-    ***************************************/
-
-
-    footer {
-        padding-top: 40px;
-
-        width: 100%;
-    }
-
-    footer #footer {
-        margin-bottom: 40px;
-    }
-
-    footer #footer .groupe {
-        padding-left: 8px;
-        
-    }
-
-    .logo-footer {
-        width: 120px;
-        
-    }
-
-    #phone {
-        color: #8c8c8c;
-    }
-
-    .adresse {
-        font-size: 13px;
-        font-family: "Barlow Semi Condensed", sans-serif;
-        color: #8c8c8c;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .tel {
-        margin-top: 51px;
-        font-size: 17px;
-        font-family: "Barlow Semi Condensed", sans-serif;
-        color: #8c8c8c;
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .adresse div, .tel div {
-        text-align: center;
-    }
-
-    @media (min-width: 992px) {
-        .adresse div, .tel div {
-            text-align: left;
-        }
-    }
-
-    .footer-title {
-        font-size: 22px;
-        font-family: "Barlow Semi Condensed", sans-serif;
-        color: rgb(148, 38, 38);   
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .footer-title>a {
-        font-size: 22px;
-        font-family: "Barlow Semi Condensed", sans-serif;
-        color: rgb(148, 38, 38);
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .footer-title>a:hover {
-        text-decoration: none;
-        /* text-shadow: 1px 1px 1px rgba(150, 150, 150, 1); */
-    }
-
-    .footer-body {
-        font-size: 17px;
-        color: #8e8f8e;
-        font-family: "Barlow Semi Condensed", sans-serif;
-        margin-bottom: 7px;
-        display: inline-block;
-        line-height: 17px;
-    }
-
-    .footer-body:hover {
-        color: #942626;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    .enveloppe {
-        background-color: #942626;
-        color: white;
-        border: #942626;
-    }
-
-    .newsletter {
-        background-color: #f0f0f0;
-        border-radius: 0;
-        border: none;
-        overflow-wrap: break-word;
-        height: calc(2.5em + .75rem + 2px);
-    }
-
-    .contactez-red {
-        font-family: "Barlow Semi Condensed", sans-serif;
-        font-size: 18px;
-        color: white !important;
-        width: 200px;
-        background-color: #942626;
-        font-weight: 600;
-        text-transform: uppercase;
-        border-radius: 0;
-    }
-
-    .contactez-red:hover {
-        color: #942626 !important;
-        background-color: #fff !important;
-        cursor: pointer;
-        -webkit-transition: .3s ease-in-out !important;
-        -moz-transition: .3s ease-in-out !important;
-        -o-transition: .3s ease-in-out !important;
-        transition: .3s ease-in-out !important;
-    }
-
-
+    
 
     /***************************************
     **************COPYRIGHT***********
@@ -1549,8 +1424,8 @@
         margin-right: 15px;
     }
 
-    .align-middle {
-        vertical-align: middle;
+    .align-right {
+        vertical-align: right;
     }
 
     .Copyrightcol {
@@ -1604,11 +1479,11 @@
     }
 
     .item-1:hover {
-        color: #942626;
+        color: var(--primary-color);
     }
 
     #time {
-        color: #942626;
+        color: var(--primary-color);
     }
 
     #checkmark {
@@ -1723,18 +1598,18 @@
     }
 
     .filter-button:hover {
-        background-color: #942626;
+        background-color: var(--primary-color);
         color: white;
 
     }
 
     .filter-button:active {
-        background-color: #942626;
+        background-color: var(--primary-color);
         color: white;
     }
 
     .btn-active {
-        background-color: #942626;
+        background-color: var(--primary-color);
         color: white;
     }
 
@@ -1772,12 +1647,12 @@
     }
 
     .arrow-pagin {
-        color: #942626;
+        color: var(--primary-color);
     }
 
 
     .dot-pagin:hover {
-        color: #942626;
+        color: var(--primary-color);
     }
 
     .paging-real-link {
@@ -1801,7 +1676,7 @@
 
     .paging-real-linkx {
 
-        color: #942626;
+        color: var(--primary-color);
         background-color: transparent;
         border: none;
     }
@@ -1813,7 +1688,7 @@
     .paging-real-linkx:hover {
 
         color: white;
-        background-color: #942626;
+        background-color: var(--primary-color);
         border: none;
     }
 
@@ -1824,7 +1699,7 @@
     }
 
     li.active>a>i {
-        color: #942626;
+        color: var(--primary-color);
     }
 
     .link-rech-real:hover>div>div>div {
@@ -1864,11 +1739,11 @@
 
     .pills-etude-link.active {
         background-color: #eaeaea !important;
-        color: #942626 !important;
+        color: var(--primary-color) !important;
     }
 
     .pills-etude-link:hover {
-        color: #942626;
+        color: var(--primary-color);
     }
 
     .paragraphe-etudes,
@@ -1888,7 +1763,7 @@
     }
 
     .card-etude {
-        background-color: #942626;
+        background-color: var(--primary-color);
         margin-top: 70px;
         padding-top: 60px;
         padding-bottom: 60px;
@@ -2102,7 +1977,7 @@
     }
 
     .savoir-plus:hover {
-        background-color: #942626;
+        background-color: var(--primary-color);
         color: white;
         padding: 12px 56px;
         text-decoration: none;
@@ -2130,7 +2005,7 @@
         font-family: "Barlow Semi Condensed", sans-serif;
         font-size: 15px;
         text-align: justify;
-        color: #8c8c8c;
+        color: var(--secondary-color);
 
     }
 
@@ -2173,7 +2048,7 @@
 
     .card-link:hover {
         text-decoration: none;
-        color: #942626;
+        color: var(--primary-color);
     }
 
     .act-tag {
@@ -2194,7 +2069,7 @@
         border: none;
         font-weight: 600;
         border-radius: 0;
-        background-color: #942626;
+        background-color: var(--primary-color);
         color: white;
         padding-top: 5px;
         padding-bottom: 5px;
@@ -2213,7 +2088,7 @@
         border: none;
         font-weight: 600;
         border-radius: 0;
-        background-color: #942626;
+        background-color: var(--primary-color);
         color: white;
         padding: 5px 10px;
         letter-spacing: 2px;
@@ -2247,7 +2122,7 @@
     }
 
     .color-gray {
-        color: #8c8c8c;
+        color: var(--secondary-color);
     }
 
     .btn-color {
@@ -2278,7 +2153,7 @@
 
     .title-actualites {
         font-family: "Barlow Semi Condensed", sans-serif;
-        color: rgb(148, 38, 38);
+        color: var(--primary-color);
         text-transform: uppercase;
         font-size: 30px;
         font-weight: bold;
@@ -2333,9 +2208,9 @@
 
     .chef-projet {
         background-color: #eaeaea;
-
+        margin-top: 80px;
     }
-
+    
     .btn-float {
         border: 1px solid #942625;
         color: white;
@@ -2376,7 +2251,7 @@
     }
 
     .text-alignit {
-        text-align: left !important;
+        text-align: right !important;
     }
 
     .bg-select {
@@ -2385,7 +2260,7 @@
         color: white !important;
         background-clip: initial !important;
         border-radius: 0;
-        border-color: rgb(148, 38, 38);
+        border-color: var(--primary-color);
         opacity: 0.65;
         cursor: pointer;
         width: 100%;
@@ -2433,12 +2308,12 @@
     }
 
     .bg-select-2 {
-        background-color: rgb(148, 38, 38);
+        background-color: var(--primary-color);
         color: white;
         margin-top: 50px;
         padding: 10px 26px;
         border-radius: 0;
-        border-color: rgb(148, 38, 38);
+        border-color: var(--primary-color);
     }
 
     .inputfile {
@@ -2630,7 +2505,7 @@
         }
 
         .link-navbar:hover {
-            color: #942626 !important;
+            color: var(--primary-color) !important;
         }
 
         .h-600 {
@@ -3059,7 +2934,7 @@
         }
 
         .link-navbar:hover {
-            color: #942626 !important;
+            color: var(--primary-color) !important;
         }
 
         .contact-img {
@@ -3331,7 +3206,7 @@
         }
 
         .sav {
-            background-color: rgb(148, 38, 38);
+            background-color: var(--primary-color);
             color: white !important;
         }
 
@@ -3503,7 +3378,7 @@
         }
 
         .link-navbar:hover {
-            color: #942626 !important;
+            color: var(--primary-color) !important;
         }
 
         .selected:before {
@@ -3997,7 +3872,7 @@
     }
 
     .pace .pace-progress {
-        background: #942626;
+        background: var(--primary-color);
         position: fixed;
         z-index: 2000;
         top: 0;
