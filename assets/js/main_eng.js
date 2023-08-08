@@ -308,6 +308,7 @@ $(document).ready(function () {
 
         $("#all").click();
     }
+
     $('.carousel').carousel().swipeCarousel({
         // low, medium or high
         sensitivity: 'high'
