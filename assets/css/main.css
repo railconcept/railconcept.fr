@@ -15,7 +15,7 @@
         font-family: "Open Sans", sans-serif;
     }
 
-    a:hover {
+    a, a:hover {
         text-decoration: none !important;
     }
 
@@ -94,11 +94,6 @@
 
     .disp_in {
         display: inline;
-    }
-
-    .pl-17 {
-
-        padding-left: 17px;
     }
 
     .software_img {
@@ -1658,14 +1653,14 @@
     .paging-real-link {
         padding: 18px 9px;
         color: gray;
-        background-color: transparent;
+        background-color: transparent !important;
         border: none;
     }
 
     .paging-real-link:hover {
 
         color: gray;
-        background-color: transparent;
+        background-color: transparent !important;
         border: none;
     }
 

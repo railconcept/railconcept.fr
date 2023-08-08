@@ -6,31 +6,31 @@
                 <div class="col-12 col-lg-3">
                     <div class="adresse mb-4">
                         <div class="footer-title">
-                            <i class="fa fa-solid fa-location-dot mr-1"></i>
+                            <i class="fa fa-solid fa-location-dot me-1"></i>
                             Siège social
                         </div>
-                        <div class="pl-17">{{site.data.website_settings.seo.location.street_adress}} </div>
-                        <div class="pl-17">{{site.data.website_settings.seo.location.region}} </div>
-                        <div class="pl-17">{{site.data.website_settings.seo.location.country}} </div>
+                        <div class="ps-4">{{site.data.website_settings.seo.location.street_adress}} </div>
+                        <div class="ps-3">{{site.data.website_settings.seo.location.region}} </div>
+                        <div class="ps-5">{{site.data.website_settings.seo.location.country}} </div>
                     </div>
                     <div class="adresse mb-4">
                         <div class="footer-title">
-                            <i class="fa fa-solid fa-location-dot mr-1"></i>
+                            <i class="fa fa-solid fa-location-dot me-1"></i>
                             Bureaux parisiens
                         </div>
-                        <div class="pl-17">1 Rue Emile gilbert</div>
-                        <div class="pl-17">75012 Paris</div>
-                        <div class="pl-17">France</div>
+                        <div class="ps-5">1 Rue Emile gilbert</div>
+                        <div class="ps-3">75012 Paris</div>
+                        <div class="ps-3">France</div>
                     </div>
                     <div class="tel">
                         <i class="fa fa-solid fa-phone"></i>
-                        <a id="phone" href="tel:+33490905485" class="ml-1">{{site.data.website_settings.seo.tel_display}} </a>
+                        <a id="phone" href="tel:+33490905485" class="ms-1">{{site.data.website_settings.seo.tel_display}} </a>
                     </div>
 
-                    <div class="pl-17">
+                    <div class="ps-3">
                         <a class="footer-body" href="{{ site.baseurl }}/mentions-legales" title="">Mentions légales</a>
                     </div>
-                    <div class="pl-17">
+                    <div class="ps-3">
                         <a class="footer-body" href="{{ site.baseurl }}/plan-site" title="">Plan du site</a>
                     </div>
                 </div>
@@ -102,24 +102,24 @@
                     </div>
                 </div>
                 <div class="col-12 col-lg-3 d-flex flex-column">
-                    <div class="flex-grow-0 mb-3">
+                    <div class="flex-grow-0 mb-3 ms-2">
                         <div class="footer-title">Suivez-nous sur les réseaux !</div>
                         <a href="{{site.data.website_settings.seo.linkedin}}" class="footer-title" target="_blank">
                             <img src="{{ site.baseurl }}/assets/img/footer/linkedin.png" height="27" />
                         </a>
                     </div>
-                    <div class="flex-grow-1 flex-column d-flex ">
-                        <div class="footer-title mb-3 flex-grow-0"> Vous souhaitez faire partie de l’équipe ? </div>
-                        <div class="form-group flex-grow-1 align-self-center d-flex">
+                    <div class="flex-grow-1 flex-column d-flex ms-2">
+                        <div class="footer-title flex-grow-0"> Vous souhaitez faire partie de l’équipe ? </div>
+                        <div class="form-group flex-grow-1 align-self-center d-flex m-3">
                             <a href="mailto:commercial@railconcept.fr" class="contactez-red align-self-center btn" data-aos="zoom-in" data-aos-anchor=".contactez">
                                 Contactez-nous !
                             </a>
                         </div>
                     </div>
-                    <div class="flex-grow-0">
+                    <div class="flex-grow-0 ms-2">
                         <div class="text-right footer-body-copyright mb-2">Copyright © {{ site.time | date: "%Y" }} railconcept.fr</div>
                         <a class="d-flex" href="https://www.studiogazoline.com/" target="_blank">
-                            <span class="text-right mr-2 footer-body-copyright">Design by Agence de communication Montpellier</span>
+                            <span class="text-right me-2 footer-body-copyright">Design by Agence de communication Montpellier</span>
                             <img
                                 class="flex-grow-0 align-self-center"
                                 src="{{ site.baseurl }}/assets/img/footer/logo gazoline.png"
@@ -132,19 +132,23 @@
     </section>
 </footer>
 
-<script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/pagination.js"></script>
-<script src="{{ site.baseurl }}/assets/js/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.bundle.min.js"></script>
+
+<!--script src="https://cdn.jsdelivr.net/npm/bootstrap-carousel-swipe@0.0.6/carousel-swipe.min.js"></script-->
+<script src="{{ site.baseurl }}/assets/js/bootstrap-swipe-carousel.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <!-- Google maps -->
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAozQaU5jTHkPxxFhJ1RHVk8dEvj5njSIc"></script>
-<script src="{{ site.baseurl }}/assets/js/bootstrap-swipe-carousel.min.js"></script>
-<script src="{{ site.baseurl }}/assets/js/aos.js"></script>
-<script src="{{ site.baseurl }}/assets/js/sweetalert2.js"></script>
-<script src="{{ site.baseurl }}/assets/js/lunr.js"></script>
-<script src="{{ site.baseurl }}/assets/js/search.js"></script>
-<script src="{{ site.baseurl }}/assets/js/jquery.easing.1.3.js"></script>
-<script src="{{ site.baseurl }}/assets/js/isotope.pkgd.min.js"></script>
 
-<script src="{{ site.baseurl }}/assets/js/pace.1.0.0.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.20/sweetalert2.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js"></script>
+
 <script src="{{ site.baseurl }}/assets/js/main.js"></script>
+<script src="{{ site.baseurl }}/assets/js/pagination.js"></script>
+<script src="{{ site.baseurl }}/assets/js/search.js"></script>
