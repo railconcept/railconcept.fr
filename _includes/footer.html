@@ -27,10 +27,10 @@
                         <a id="phone" href="tel:+33490905485" class="ml-1">{{site.data.website_settings.seo.tel_display}} </a>
                     </div>
 
-                    <div class="groupe1">
+                    <div class="pl-17">
                         <a class="footer-body" href="{{ site.baseurl }}/mentions-legales" title="">Mentions légales</a>
                     </div>
-                    <div class="groupe2">
+                    <div class="pl-17">
                         <a class="footer-body" href="{{ site.baseurl }}/plan-site" title="">Plan du site</a>
                     </div>
                 </div>
@@ -101,29 +101,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3 mb-1">
-                    <div>
+                <div class="col-12 col-lg-3 d-flex flex-column">
+                    <div class="flex-grow-0 mb-3">
                         <div class="footer-title">Suivez-nous sur les réseaux !</div>
                         <a href="{{site.data.website_settings.seo.linkedin}}" class="footer-title" target="_blank">
                             <img src="{{ site.baseurl }}/assets/img/footer/linkedin.png" height="27" />
                         </a>
                     </div>
-                    <div>
-                        <div class="footer-title"> Vous souhaitez faire parti de l’équipe ? </div>
-                        <div class="form-group text-alignit mt-4">
-                            <a href="mailto:commercial@railconcept.fr" class="contactez-red btn" data-aos="zoom-in" data-aos-anchor=".contactez"
-                                >Contactez-nous !</a
-                            >
-                        </div>
-                    </div>
-                    <div class="text-alignit mb-4">
-                        <div>Copyright © {{ site.time | date: "%Y" }} railconcept.fr</div>
-
-                        <div>Design by Agence de communication Montpellier
-                            <a href="https://www.studiogazoline.com/" target="_blank">
-                                <img src="{{ site.baseurl }}/assets/img/footer/logo gazoline.png" alt="logo studio gazoline" />
+                    <div class="flex-grow-1 flex-column d-flex ">
+                        <div class="footer-title mb-3 flex-grow-0"> Vous souhaitez faire partie de l’équipe ? </div>
+                        <div class="form-group flex-grow-1 align-self-center d-flex">
+                            <a href="mailto:commercial@railconcept.fr" class="contactez-red align-self-center btn" data-aos="zoom-in" data-aos-anchor=".contactez">
+                                Contactez-nous !
                             </a>
                         </div>
+                    </div>
+                    <div class="flex-grow-0">
+                        <div class="text-right footer-body-copyright mb-2">Copyright © {{ site.time | date: "%Y" }} railconcept.fr</div>
+                        <a class="d-flex" href="https://www.studiogazoline.com/" target="_blank">
+                            <span class="text-right mr-2 footer-body-copyright">Design by Agence de communication Montpellier</span>
+                            <img
+                                class="flex-grow-0 align-self-center"
+                                src="{{ site.baseurl }}/assets/img/footer/logo gazoline.png"
+                                alt="logo studio gazoline" />
+                        </a>
                     </div>
                 </div>
             </div>
