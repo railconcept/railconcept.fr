@@ -2,9 +2,7 @@
 layout: real
 type-real: etudex
 favoris: false
-title: "Étude de soutenabilité des redevances d’accès à l’infrastructure sur le
-  marché de la grande vitesse ferroviaire en France : modélisation
-  technico-économique d’un opérateur ferroviaire"
+title: Étude de soutenabilité des redevances d’accès à l’infrastructure sur le marché de la grande vitesse
 duree: 12 mois
 annee_real: 2018-2019
 pays: France

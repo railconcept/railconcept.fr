@@ -4,31 +4,34 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-3">
-                    <div class="adresse">
-                        <div class="footer-title"><img src="{{ site.baseurl }}/assets/img/footer/loc.png" />Siége social</div>
-                        <div>{{site.data.website_settings.seo.location.street_adress}} </div>
+                    <div class="adresse mb-4">
+                        <div class="footer-title">
+                            <i class="fa fa-solid fa-location-dot mr-1"></i>
+                            Siège social
+                        </div>
+                        <div class="pl-17">{{site.data.website_settings.seo.location.street_adress}} </div>
                         <div class="pl-17">{{site.data.website_settings.seo.location.region}} </div>
                         <div class="pl-17">{{site.data.website_settings.seo.location.country}} </div>
                     </div>
-                    <div class="adresse">
-                        <div class="footer-title"> <img src="{{ site.baseurl }}/assets/img/footer/loc.png" />Bureaux parisiens </div>
-                        <div>1 Rue Emile gilbert</div>
+                    <div class="adresse mb-4">
+                        <div class="footer-title">
+                            <i class="fa fa-solid fa-location-dot mr-1"></i>
+                            Bureaux parisiens
+                        </div>
+                        <div class="pl-17">1 Rue Emile gilbert</div>
                         <div class="pl-17">75012 Paris</div>
                         <div class="pl-17">France</div>
                     </div>
                     <div class="tel">
-                        <img src="{{ site.baseurl }}/assets/img/footer/tel.png" class="position" />
-                        <a id="phone" href="tel:+33490905485" class="disp_in">{{site.data.website_settings.seo.tel_display}} </a>
+                        <i class="fa fa-solid fa-phone"></i>
+                        <a id="phone" href="tel:+33490905485" class="ml-1">{{site.data.website_settings.seo.tel_display}} </a>
                     </div>
-                    <div>
-                        <ul class="links">
-                            <li>
-                                <a class="color" href="{{ site.baseurl }}/mentions-legales" title="">Mentions légales</a>
-                            </li>
-                            <li>
-                                <a class="color" href="{{ site.baseurl }}/plan-site" title="">Plan du site</a>
-                            </li>
-                        </ul>
+
+                    <div class="groupe1">
+                        <a class="footer-body" href="{{ site.baseurl }}/mentions-legales" title="">Mentions légales</a>
+                    </div>
+                    <div class="groupe2">
+                        <a class="footer-body" href="{{ site.baseurl }}/plan-site" title="">Plan du site</a>
                     </div>
                 </div>
 
@@ -81,6 +84,7 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-12">
                             <div class="footer-title">
@@ -88,15 +92,16 @@
                             </div>
                             <div class="groupe">
                                 {% for post in site.posts limit:3 %}
-                                <a href=" {{ post.url }}" class="footer-body d-inline-block text-truncate" style="max-width: 325px;">{{ post.title | markdownify | strip_html }}</a>
-
+                                <a href=" {{ post.url }}" class="footer-body d-inline-block text-truncate" style="max-width: 325px"
+                                    >{{ post.title | markdownify | strip_html }}</a
+                                >
                                 <br />
                                 {% endfor %}
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-3">
+                <div class="col-12 col-lg-3 mb-1">
                     <div>
                         <div class="footer-title">Suivez-nous sur les réseaux !</div>
                         <a href="{{site.data.website_settings.seo.linkedin}}" class="footer-title" target="_blank">
@@ -105,16 +110,16 @@
                     </div>
                     <div>
                         <div class="footer-title"> Vous souhaitez faire parti de l’équipe ? </div>
-                        <div class="form-group text-alignit">
+                        <div class="form-group text-alignit mt-4">
                             <a href="mailto:commercial@railconcept.fr" class="contactez-red btn" data-aos="zoom-in" data-aos-anchor=".contactez"
                                 >Contactez-nous !</a
                             >
                         </div>
                     </div>
-                    <div class="text-right">
+                    <div class="text-alignit mb-4">
                         <div>Copyright © {{ site.time | date: "%Y" }} railconcept.fr</div>
-                        <div
-                            >Design by Agence de communication Montpellier
+
+                        <div>Design by Agence de communication Montpellier
                             <a href="https://www.studiogazoline.com/" target="_blank">
                                 <img src="{{ site.baseurl }}/assets/img/footer/logo gazoline.png" alt="logo studio gazoline" />
                             </a>

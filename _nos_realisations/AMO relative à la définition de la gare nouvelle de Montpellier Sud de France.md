@@ -2,8 +2,7 @@
 layout: real
 type-real: mission
 favoris: false
-title: Assistance à Maîtrise d’Ouvrage relative à la définition de la gare
-  nouvelle de Montpellier Sud de France
+title: AMO relative à la définition de la gare nouvelle de Montpellier Sud de France
 duree: 7 ans
 annee_real: 2010-2017
 region: Occitanie
