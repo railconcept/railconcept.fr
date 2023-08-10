@@ -1,0 +1,9 @@
+.carousel-indicators button[data-bs-target] {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+}
+
+.carousel-indicators button[data-bs-target].active {
+    background-color: var(--primary-color);
+}

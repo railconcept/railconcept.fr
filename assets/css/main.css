@@ -1,4 +1,5 @@
 @import 'colors.css';
+@import 'carousel.css';
 @import 'footer.css';
 
     /*****************************************
@@ -916,8 +917,8 @@
     .read-all-news {
 
         position: absolute;
-        bottom: 25px;
-        right: 25px;
+        bottom: 75px;
+        right: 50px;
         z-index: 111;
         -webkit-transition: .25s ease-in-out;
         -moz-transition: .25s ease-in-out;
