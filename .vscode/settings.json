@@ -7,4 +7,30 @@
     "files.exclude": {
         "_site/": true
     },
+    "liquid.engine": "jekyll",
+    "liquid.format.commentIndent": true,
+    // indentation level, defaults to the vscode tabSize
+    "liquid.format.indentSize": 2,
+    "liquid.format.enable": true,
+    "html.format.wrapAttributes": "aligned-multiple",
+    "html.format.wrapLineLength": 240,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "html.format.enable": true,
+    "prettier.htmlWhitespaceSensitivity": "strict",
+    "prettier.printWidth": 160,
+    "prettier.quoteProps": "consistent",
+    "prettier.tabWidth": 4,
+    "prettier.bracketSameLine": true,
+    "files.associations": {
+        "*.html": "liquid",
+        "*.md": "liquid"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.suggest.showIcons": true,
+    "vsicons.associations.files": [
+        { "icon": "js", "extensions": ["js"] },
+        { "icon": "html", "extensions": ["html"] },
+        { "icon": "markdown", "extensions": ["md"] },
+    ]
+    
 }
