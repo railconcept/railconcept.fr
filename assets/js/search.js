@@ -25,13 +25,11 @@
       }
 
 
-
       if(item.type == "page"){
         appendString += '<li class="mt-5 pt-3"><a href="' + item.url + '"> <div class="title-actualites m-0">' + item.title + '</div></a>'
            +'<div class="paragraphe-actualites  justify p-0" markdown="1">'
              +'<p>'  + item.content.replace(/\s+/g, ' ').substring(0,150)+ '...</p></div></li>' ; 
       }
-
 
       if(item.type == "jobs"){
 
@@ -61,7 +59,6 @@
 
       }
 
-     
 
 
       searchResults.innerHTML = appendString;
@@ -101,8 +98,6 @@
       this.field('content');
       
       
-
-   
 
 
 

@@ -8,7 +8,7 @@ permalink: /recherche
 <div id="results_search" class="mt-5 pt-5 mb-5 pb-5">
 
     <div class="container">
-    <div class="title-news  title-section" data-aos="zoom-in-up">Résultats :</div> 
+    <div class="title-news  title-section" data-aos="zoom-in-up">Résultats :</div>
     
     <div class="row">
       <div class="col-12 ps-0 ms-w-0 ">
@@ -115,9 +115,9 @@ permalink: /recherche
 
 <script type="text/javascript">
   let tagsss = [[], []];
-  "{% for tagz in site.catnews %}"
+  {% for tagz in site.catnews %};
   tagsss["{{tagz.name}}"] = ["{{tagz.title}}"]
-  "{% endfor %}"
+  {% endfor %}
 </script>
 
 {% include footer.html %}
