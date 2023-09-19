@@ -23,6 +23,10 @@ permalink: /recherche
 </div>
 <script>
 
+
+
+
+
   window.store = {
 
   {% for pages in site.pages %}
@@ -43,7 +47,7 @@ permalink: /recherche
                         "content": { { pcontent | strip_html | strip_newlines | jsonify } },
           "url": "{{ pages.url | xml_escape }}"
         }
-                  ,
+                  
       {% endif %}
     {% endif %}
   {% endfor %}
