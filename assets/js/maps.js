@@ -2,23 +2,6 @@
  
     // /////////////////////////////////////////Google Map ////////////////////////////
 
-    (() => {
-        "use strict";
-
-        const appendChild = Element.prototype.appendChild;
-
-        const urlCatchers = ["/AuthenticationService.Authenticate?", "/QuotaService.RecordEvent?"];
-
-        Element.prototype.appendChild = function(element) {
-            const isGMapScript = element.tagName === 'SCRIPT' && /maps\.googleapis\.com/i.test(element.src);
-            const isGMapAccessScript = isGMapScript && urlCatchers.some(url => element.src.includes(url));
-
-            if (! isGMapAccessScript) {
-                return appendChild.call(this, element);
-            }
-            return element;
-        };
-    })();
 
     // ////////////////////Map MISSION AMO GRANDS PROJECTS ////////////////////////
 
@@ -455,7 +438,24 @@ position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
  
  */
 
+// this bypass some origin checks with the api key
+(() => {
+    "use strict";
 
+    const appendChild = Element.prototype.appendChild;
+
+    const urlCatchers = ["/AuthenticationService.Authenticate?", "/QuotaService.RecordEvent?"];
+
+    Element.prototype.appendChild = function(element) {
+        const isGMapScript = element.tagName === 'SCRIPT' && /maps\.googleapis\.com/i.test(element.src);
+        const isGMapAccessScript = isGMapScript && urlCatchers.some(url => element.src.includes(url));
+
+        if (! isGMapAccessScript) {
+            return appendChild.call(this, element);
+        }
+        return element;
+    };
+})();
 
 $(document).ready(function() {
     let mapsOptions = {
@@ -479,7 +479,7 @@ $(document).ready(function() {
         }
 
         initMap5X();
-        //initMap6X();
+        initMap6X();
     }
 
     function initMap5X() {
@@ -489,8 +489,6 @@ $(document).ready(function() {
             let opts = mapsOptions["map5x"];
 
             var map5x = new google.maps.Map(map5xDiv, opts);
-
-            /*
             var markerBounds5x = new google.maps.LatLngBounds();
             var markerArray5x = [];
 
@@ -508,7 +506,6 @@ $(document).ready(function() {
                 animation: google.maps.Animation.DROP
 
             });
-            */
         }
     }
 
