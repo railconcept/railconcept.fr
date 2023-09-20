@@ -33,4 +33,6 @@ context: >-
   **Une phase 3 : Assistance pour la défense devant le CIRDI**
 
   Rail concept a fourni un expert international (A Richard) en assistance pour rapporter au Tribunal CIRDI sur les aspects maintenance du réseau et répondre aux questions.
+
+photo1: /assets/img/uploads/Transgabonais.png
 ---

@@ -53,21 +53,19 @@ layout: realisation
                 </div>
               </div>
             </li>
-            <!--laisser comme ca contenu manquant -->
+            <!--laisser comme ca contenu manquant-->
           </ul>
           <div class="mt-3 pt-3 pb-5" markdown="1">
             <p>{{page.text1 | markdownify }}</p>
           </div>
         </div>
-        <div class="col-md-4 text-center d-none d-md-block" data-aos="fade-left" data-aos-delay="1200">
-          <img class="interrogation img-fluid" src="../../assets/img/page-nos-metiers/icon-quest.png" />
-        </div>
-      </div>
     </div>
     <hr />
   </div>
 </section>
 <!---contexte-->
+{% assign pageContextContent = page.context | markdownify | strip_html | strip  %}
+    {% if pageContextContent != ""  %}
 <section class="contexte mt-100 pt-5 pb-5">
   <div class="container">
     <div class="col-md-12">
@@ -78,27 +76,28 @@ layout: realisation
             <p>{{page.context | markdownify }}</p>
           </div>
         </div>
-        <div class="col-md-4 text-center d-none d-md-block" data-aos="fade-left" data-aos="fade-up" data-aos-delay="400">
-          <img class="img-fluid" src="../../assets/img/page-competences/icon1-etudes.png" />
-        </div>
-      </div>
+        {% endif %}
     </div>
   </div>
 </section>
 <div class="container-fluid-etude pt-5 pb-5 mt-5 mb-5">
   <div class="row">
-    <div class="col-lg-6 col-md-12 col-sm-12 pl-0 pr-0 etude-container-img pb-5" data-aos="fade-right" data-aos-delay="">
+    <div class="col-lg-6 col-md-12 col-sm-12 ps-0 pe-0 etude-container-img pb-5" data-aos="fade-right" data-aos-delay="">
       <div id="mission-map" width="100%" class="g_map_2"></div>
     </div>
-    <div id="mission-map-desc" class="col-lg-6 col-md-12 col-sm-12 pl-0 etude-container-right" data-aos="fade-left" data-aos-delay="300">
+    {% assign pageRealContent = page.real | markdownify | strip_html | strip  %}
+    {% if pageRealContent != ""  %}
+     <div id="mission-map-desc" class="col-lg-6 col-md-12 col-sm-12 ps-0 etude-container-right" data-aos="fade-left" data-aos-delay="300">
       <div class="card-etude width">
-        <div class="title-card-etude pl-0">prestation réalisée</div>
+        <div class="title-card-etude ps-0">prestation réalisée</div>
         <div class="liste-card-etude para-white p-0" markdown="1">
+
           <!-- Réalisation -->
           <p>{{page.real | markdownify}}</p>
         </div>
       </div>
     </div>
+    {% endif %}
   </div>
 </div>
 

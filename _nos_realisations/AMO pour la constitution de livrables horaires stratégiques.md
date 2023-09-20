@@ -2,8 +2,7 @@
 layout: real
 type-real: mission
 favoris: true
-title: Assistance à maitrise d’ouvrage pour la constitution de livrables
-  horaires stratégiques
+title: AMO pour la constitution de livrables horaires stratégiques
 duree: 18 mois
 annee_real: 2020-2021
 pays: France

@@ -1,0 +1,145 @@
+    
+    
+    /***************************************
+    **************FOOTER ***********
+    ***************************************/
+     
+    ul.links
+    {
+        list-style: none;
+    }
+
+    footer {
+        padding-top: 40px;
+
+        width: 100%;
+    }
+
+    footer #footer {
+        margin-bottom: 40px;
+    }
+
+    footer #footer .groupe {
+        padding-left: 8px;
+        
+    }
+
+    .logo-footer {
+        width: 120px;
+        
+    }
+
+    #phone {
+        color: var(--secondary-color);
+    }
+
+    .adresse {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        color: var(--secondary-color);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .tel {
+        margin: 27px 0px;
+        font-size: 17px;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        color: var(--secondary-color);
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .tel>.fa {
+        color: var(--primary-color)
+    }
+
+    .adresse div, .tel {
+        text-align: center;
+    }
+
+    @media (min-width: 992px) {
+        .adresse div, .tel {
+            text-align: left;
+        }
+    }
+
+    .footer-title {
+        font-size: 22px;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        color: var(--primary-color);   
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-top: 17px;
+    }
+
+    .footer-title>a {
+        font-size: 22px;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        color: var(--primary-color);
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .footer-title>a:hover {
+        text-decoration: none;
+        /* text-shadow: 1px 1px 1px rgba(150, 150, 150, 1); */
+    }
+
+    .footer-body {
+        font-size: 17px;
+        color: var(--secondary-color);
+        font-family: "Barlow Semi Condensed", sans-serif;
+        margin-bottom: 7px;
+        display: inline-block;
+        line-height: 17px;
+    }
+
+    .footer-body-copyright {
+        font-size: 17px;
+        color: var(--secondary-color);
+        font-family: "Barlow Semi Condensed", sans-serif;
+    }
+
+
+    .footer-body:hover {
+        color: var(--primary-color);
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .enveloppe {
+        background-color: var(--primary-color);
+        color: white;
+        border: var(--primary-color);
+    }
+
+    .newsletter {
+        background-color: #f0f0f0;
+        border-radius: 0;
+        border: none;
+        overflow-wrap: break-word;
+        height: calc(2.5em + .75rem + 2px);
+    }
+
+    .contactez-red {
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-size: 18px;
+        color: white !important;
+        width: 200px;
+        background-color: var(--primary-color);
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 0;
+    }
+
+    .contactez-red:hover {
+        color: var(--primary-color) !important;
+        background-color: #fff !important;
+        cursor: pointer;
+        -webkit-transition: .3s ease-in-out !important;
+        -moz-transition: .3s ease-in-out !important;
+        -o-transition: .3s ease-in-out !important;
+        transition: .3s ease-in-out !important;
+    }
+

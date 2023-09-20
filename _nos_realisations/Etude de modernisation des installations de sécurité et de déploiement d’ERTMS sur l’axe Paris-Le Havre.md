@@ -2,8 +2,7 @@
 layout: real
 type-real: mission
 favoris: false
-title: Etude de la stratégie de modernisation des installations de sécurité et
-  de déploiement d’ERTMS sur l’axe Paris-Le Havre
+title: Etude de modernisation des installations de sécurité et de déploiement d’ERTMS sur l’axe Paris-Le Havre
 duree: 20 mois
 annee_real: 2019-2020
 region: Normandie
