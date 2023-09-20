@@ -41,7 +41,8 @@ $(document).ready(function() {
         if (searchInputValue.length > 0) {
             // see
             // https://developer.mozilla.org/en-US/docs/Web/API/Window/location
-            window.location.assign("https://google.com/");
+            let urlEncoded = encodeURIComponent(searchInputValue);
+            window.location.assign(`https://www.google.com/search?q=site%3A%22railconcept.fr%22+%22${urlEncoded}%22`);
         }
     }
   });
