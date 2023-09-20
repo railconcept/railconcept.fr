@@ -17,7 +17,7 @@ layout: page
 <section id="1" class="actualités mt-4">
   <div class="container">
     <div class="row pb-5">
-      <div class="col-lg-7 pr-3 pl-0">
+      <div class="col-lg-7 pe-3 ps-0">
         <div class="date-news mt-0 pt-5 pb-3">
           {{ page.date | date_to_long_string }} À {{ page.date | date: "%HH%M" }} {% for tag in page.news.taggx %}
           <span class="tagx">{{tag}}</span>
@@ -30,7 +30,7 @@ layout: page
       </div>
 
       {% if page.video_news %}
-      <div class="col-lg-5 videoWrapper padding-right-none pl-0 pr-0">
+      <div class="col-lg-5 videoWrapper padding-right-none ps-0 pe-0">
         <iframe src="https://www.youtube.com/embed/{{page.video_news}}" frameborder="0" allowfullscreen class="pb-5 mt-5 mb-5" width="100%" height="100%"></iframe>
       </div>
       {% endif %}
@@ -38,15 +38,15 @@ layout: page
       <div class="container p-0">
         <div class="row d-flex">
           {% if page.news_photo.photo_news1 %}
-          <div class="col-md-4 pt-5 pl-0 pr-0">
+          <div class="col-md-4 pt-5 ps-0 pe-0">
             <img src="{{page.news_photo.photo_news1}}" class="img-100 objectfit" />
           </div>
           {% endif %} {% if page.news_photo.photo_news2 %}
-          <div class="col-md-4 pt-5 pl-0 pr-0">
+          <div class="col-md-4 pt-5 ps-0 pe-0">
             <img src="{{page.news_photo.photo_news2}}" class="img-100 objectfit" />
           </div>
           {% endif %} {% if page.news_photo.photo_news3 %}
-          <div class="col-md-4 pt-5 pl-0 pr-0">
+          <div class="col-md-4 pt-5 ps-0 pe-0">
             <img src="{{page.news_photo.photo_news3}}" class="img-100 objectfit" />
           </div>
           {% endif %}
@@ -58,7 +58,7 @@ layout: page
       <div class="container p-0 mt-5">
         <div class="row d-flex">
           <div class="col-lg-3 title-actualites mt-0 mb-0 justify-content-center align-self-center mb-1" data-aos="fade-right" data-aos-delay="50">PARTAGER</div>
-          <div class="col-lg-9 d-flex text-right mt-1 pl-0 pr-0">
+          <div class="col-lg-9 d-flex text-right mt-1 ps-0 pe-0">
             <div class="row justify-content-center align-self-center w-100">
               <div class="txt-left col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-2" data-aos="fade-up" data-aos-delay="50">
                 <a id="copy" class="partager_link text-nowrap" href="#"> <img src="{{base_url}}/assets/img/page-actualites/copie.png" class="partager img-fluid" /> Copier le lien vers l'article</a>
@@ -103,7 +103,7 @@ layout: page
           <div class="act-tag">
             <img src="{{post.news_photo.photo_news1}}" class="img-100 objectfit" />
           </div>
-          <div class="card-body pl-0 pr-0">
+          <div class="card-body ps-0 pe-0">
             <div class="title-realisation mt-3 mb-3 lowercase">{{ post.news.news_1 | strip_html | truncatewords: 25 }}</div>
             <span class="date-news">{{ post.date | date_to_long_string }}</span>
             <a href="{{ post.url | prepend: site.baseurl }}" class="card-link float-right">LIRE LA SUITE</a>

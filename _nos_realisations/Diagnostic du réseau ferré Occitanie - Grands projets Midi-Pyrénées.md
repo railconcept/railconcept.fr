@@ -2,7 +2,7 @@
 layout: real
 type-real: etudex
 favoris: false
-title: Diagnostic du réseau ferré Occitanie - Grands projets Midi-Pyrénées
+title: Diagnostic du réseau férré Occitanie :Grands projets Midi-Pyrénées
 duree: 12 mois
 annee_real: 2016-2019
 region: Occitanie

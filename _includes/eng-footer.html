@@ -3,41 +3,56 @@
     <section id="footer">
         <div class="container">
             <div class="row text-alignit ">
-                <div class="foot1 col-lg-3 col-md-6 col-xs-12 col-sm-12 pl-0 pr-0" data-aos="fade-up">
+                <div class="foot1 col-lg-3 col-md-6 col-xs-12 col-sm-12 ps-0 pe-0" data-aos="fade-up">
                     <div class="col-12">
                         <img class="logo-footer" src="{{ site.baseurl }}/assets/img/logo/logo.png">
                     </div>
-                    <div class="col-12 adresse  pl-0">
+                    <div class="col-12 adresse  ps-0">
                         <div class="sous-title-red" style="font-size:18px;"><img src="{{ site.baseurl }}/assets/img/footer/loc.png" class="position"> Siége social</div>
-                        <div class="disp_in"> {{site.data.website_settings.seo.location.street_adress}} </div>
-                        <div class="pl-17">{{site.data.website_settings.seo.location.region}}</div>
-                        <div class="pl-17">{{site.data.website_settings.seo.location.country}}</div>
+                        <div class="disp_in">
+                            {{ site.data.website_settings.seo.location.street_adress }}
+                        </div>
+                        <div class="ps-3">{{ site.data.website_settings.seo.location.region }}</div>
+                        <div class="ps-3">{{ site.data.website_settings.seo.location.country }}</div>
                     </div>
-                    <div class="col-12 adresse  pl-0">
+                    <div class="col-12 adresse  ps-0">
                         <div class="sous-title-red" style="font-size:18px;"><img src="{{ site.baseurl }}/assets/img/footer/loc.png" class="position"> LOCAUX PArisiens</div>
-                        <div class="disp_in"> 1 Rue Emile gilbert</div>
-                        <div class="pl-17">75012 Paris</div>
-                        <div class="pl-17">France</div>
+                        <div class="disp_in">
+                            1 Rue Emile gilbert</div>
+                        <div class="ps-3">75012 Paris</div>
+                        <div class="ps-3">France</div>
                     </div>
-                    <div class="col-12 tel pl-0">
+                    <div class="col-12 tel ps-0">
                         <img src="{{ site.baseurl }}/assets/img/footer/tel.png" class="position">
-                        <a id="phone" href="tel:+33490905485"
-                            class="disp_in">{{site.data.website_settings.seo.tel_display}}</a>
+                        <a
+                            id="phone"
+                            href="tel:+33490905485"
+                            class="disp_in">{{ site.data.website_settings.seo.tel_display }}</a>
                     </div>
 
                 </div>
-                <div class="foot2 col-lg-2 col-md-6  col-xs-12 col-sm-12 pl-0 pr-0 mt-3" data-aos="fade-up"
-                    data-aos-anchor=".foot1" data-aos-delay="150">
-                    <div class="footer-title "><a href="{{ site.baseurl }}/en/about_us"> About US</a></div>
+                <div
+                    class="foot2 col-lg-2 col-md-6  col-xs-12 col-sm-12 ps-0 pe-0 mt-3"
+                    data-aos="fade-up"
+                    data-aos-anchor=".foot1"
+                    data-aos-delay="150">
+                    <div class="footer-title ">
+                        <a href="{{ site.baseurl }}/en/about_us">
+                            About US</a>
+                    </div>
                     <div class="groupe ">
                         <a href="{{ site.baseurl }}/en/about_us#nous" class="footer-body">Know us</a><br>
                         <a href="{{ site.baseurl }}/en/about_us#notre-equipe" class="footer-body">Our team</a><br>
                     </div>
-                    <div class="footer-title mt-3"><a href="{{ site.baseurl }}/en/skills">Our skills</a></div>
+                    <div class="footer-title mt-3">
+                        <a href="{{ site.baseurl }}/en/skills">Our skills</a>
+                    </div>
                     <div class="groupe ">
-                        <a href="{{ site.baseurl }}/en/skills#pills-mission" class="footer-body"> Mission AMO grands
+                        <a href="{{ site.baseurl }}/en/skills#pills-mission" class="footer-body">
+                            Mission AMO grands
                             projets</a><br>
-                        <a href="{{ site.baseurl }}/en/skills#pills-etude" class="footer-body"> Études</a><br>
+                        <a href="{{ site.baseurl }}/en/skills#pills-etude" class="footer-body">
+                            Études</a><br>
                         <a href="{{ site.baseurl }}/en/skills#pills-expert" class="footer-body">Expertise /
                             Conseil</a><br>
                         <a href="{{ site.baseurl }}/en/skills#pills-logiciel" class="footer-body">Logiciels
@@ -45,55 +60,73 @@
                     </div>
                 </div>
 
-                <div class="foot3 col-lg-3 col-md-6  col-xs-12 col-sm-12 mt-3" data-aos="fade-up"
-                    data-aos-anchor=".foot2" data-aos-delay="250">
-                    <div class="footer-title "> <a href="{{ site.baseurl }}/en/our_achievements">Our Achievements</a></div>
+                <div
+                    class="foot3 col-lg-3 col-md-6  col-xs-12 col-sm-12 mt-3"
+                    data-aos="fade-up"
+                    data-aos-anchor=".foot2"
+                    data-aos-delay="250">
+                    <div class="footer-title ">
+                        <a href="{{ site.baseurl }}/en/our_achievements">Our Achievements</a>
+                    </div>
                     <div class="groupe">
                         <a href="{{ site.baseurl }}/en/our_achievements#mission" class="footer-body footer-real">Mission AMO Grands
                             Projets</a><br>
-                        <a href="{{ site.baseurl }}/en/our_achievements#etudex" class="footer-body footer-real" >Études</a><br>
+                        <a href="{{ site.baseurl }}/en/our_achievements#etudex" class="footer-body footer-real">Études</a><br>
                         <a href="{{ site.baseurl }}/en/our_achievements#expert" class="footer-body footer-real">Expertise /
                             Conseil</a><br>
                         <a href="{{ site.baseurl }}/en/our_achievements#vente" class="footer-body footer-real">Vente logiciel</a><br>
                     </div>
 
-                    <div class="footer-title mt-3 "><a href="{{ site.baseurl }}/en/join_us">Join us</a></div>
+                    <div class="footer-title mt-3 ">
+                        <a href="{{ site.baseurl }}/en/join_us">Join us</a>
+                    </div>
                     <div class="groupe">
                         <a href="{{ site.baseurl }}/en/our_business" class="footer-body">Our business</a><br>
                         <a href="{{ site.baseurl }}/en/join_us" class="footer-body">join us</a>
                     </div>
-                    <div class="footer-title mt-3 "><a href="{{ site.baseurl }}/en/news">News</a></div>
+                    <div class="footer-title mt-3 ">
+                        <a href="{{ site.baseurl }}/en/news">News</a>
+                    </div>
                 </div>
-                <div class="foot4 col-lg-4 col-md-6  col-xs-12 col-sm-12 mt-3" data-aos="fade-up"
-                    data-aos-anchor=".foot3" data-aos-delay="350">
+                <div class="foot4 col-lg-4 col-md-6  col-xs-12 col-sm-12 mt-3"
+                    data-aos="fade-up"
+                    data-aos-anchor=".foot3"
+                    data-aos-delay="350">
                     <!--<div class="footer-title">abonnez-vous à notre newsletter !</div>
-                    <form action="/success" name="newsletter" method="POST" data-netlify="true"
+                        <form action="/success" name="newsletter" method="POST" data-netlify="true"
                         netlify-honeypot="bot-field">
                         <p class="hidden">
-                            <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+                        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
                         </p>
                         <div class="form-group input-group mt20 ">
-                            <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email"
-                                required>
-                            <div class="input-group-prepend">
-                                <button type="submit" class="boutton input-group-text btn enveloppe"><img
-                                        src="{{ site.baseurl }}/assets/img/footer/Enveloppe.png"> </button>
-                            </div>
+                        <input name="newsletter" class="form-control bg newsletter" placeholder="Email" type="email"
+                        required>
+                        <div class="input-group-prepend">
+                        <button type="submit" class="boutton input-group-text btn enveloppe"><img
+                        src="{{ site.baseurl }}/assets/img/footer/Enveloppe.png"> </button>
+                        </div>
                         </div>
                     </form>-->
                     <div class="footer-title mt-3 mb-1">suivez-nous sur les réseaux !</div>
-                  
-                  <!--
-                    <a href="{{site.data.website_settings.seo.facebook}}" class="footer-title mr-2" target="_blank"><img
-                            id="facebook" src="{{ site.baseurl }}/assets/img/footer/facebook.png" height="27"></a>
-                  -->
-                    <a href="{{site.data.website_settings.seo.linkedin}}" class="footer-title" target="_blank">
+
+                    <!--
+                        <a href="{{site.data.website_settings.seo.facebook}}" class="footer-title me-2" target="_blank"><img
+                        id="facebook" src="{{ site.baseurl }}/assets/img/footer/facebook.png" height="27"></a>
+                    -->
+                    <a
+                        href="{{site.data.website_settings.seo.linkedin}}"
+                        class="footer-title"
+                        target="_blank">
                         <img src="{{ site.baseurl }}/assets/img/footer/linkedin.png" height="27"></a>
 
                     <div class="footer-title mt-3">vous souhaitez faire parti de l’équipe</div>
                     <div class="form-group text-alignit mt-3">
-                        <a href="{{ site.baseurl }}/en/join_us" class="contactez-red btn  mt10" data-aos="zoom-in"
-                            data-aos-anchor=".contactez"> contact us !</a>
+                        <a
+                            href="{{ site.baseurl }}/en/join_us"
+                            class="contactez-red btn  mt10"
+                            data-aos="zoom-in"
+                            data-aos-anchor=".contactez">
+                            contact us !</a>
                     </div>
                 </div>
             </div>
@@ -105,38 +138,48 @@
     <!-- COPYRIGHT-->
 
     <section class="copyright container text-center">
-            <div class="row">
-                <div class="container" data-aos-offset="0">
-                    <div class="row">
-                        <div class="col-md-4 Copyrightcol">
-                            <ul class="links">
-                                <li><a class="color" href="{{ site.baseurl }}/en/legal_notice" title="">legal notice</a></li>
-                                <li><a class="color" href="{{ site.baseurl }}/en/website_map" title="">website map</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-8 text-right">
-                            Copyright © {{ site.time | date: "%Y" }} railconcept.fr - Design by Agence de communication Montpellier 
-                            <a href="https://www.studiogazoline.com/" target="_blank">
-                                <img class="align-middle" src="{{ site.baseurl }}/assets/img/footer/logo gazoline.png" alt="logo studio gazoline"></a>
-                        </div>
+        <div class="row">
+            <div class="container" data-aos-offset="0">
+                <div class="row">
+                    <div class="col-md-4 Copyrightcol">
+                        <ul class="links">
+                            <li>
+                                <a
+                                    class="color"
+                                    href="{{ site.baseurl }}/en/legal_notice"
+                                    title="">legal notice</a>
+                            </li>
+                            <li>
+                                <a
+                                    class="color"
+                                    href="{{ site.baseurl }}/en/website_map"
+                                    title="">website map</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-8 text-right">
+                        Copyright © {{ site.time | date: "%Y" }} railconcept.fr - Design by Agence de communication Montpellier
+                        <a href="https://www.studiogazoline.com/" target="_blank">
+                            <img
+                                class="align-middle"
+                                src="{{ site.baseurl }}/assets/img/footer/logo gazoline.png"
+                                alt="logo studio gazoline"></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
 </footer>
 
 
-
-
-    
 
 <script src="{{ site.baseurl }}/assets/js/jquery.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/bootstrap.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/pagination.js"></script>
 <script src="{{ site.baseurl }}/assets/js/slick.min.js"></script>
 <!-- Google maps -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAozQaU5jTHkPxxFhJ1RHVk8dEvj5njSIc"> </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAozQaU5jTHkPxxFhJ1RHVk8dEvj5njSIc"></script>
 <script src="{{ site.baseurl }}/assets/js/bootstrap-swipe-carousel.min.js"></script>
 <script src="{{ site.baseurl }}/assets/js/aos.js"></script>
 <script src="{{ site.baseurl }}/assets/js/sweetalert2.js"></script>
@@ -147,8 +190,3 @@
 
 <script src="{{ site.baseurl }}/assets/js/pace.1.0.0.js"></script>
 <script src="{{ site.baseurl }}/assets/js/main_eng.js"></script>
-
-
-</body>
-
-</html>
