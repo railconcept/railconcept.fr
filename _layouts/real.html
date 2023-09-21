@@ -83,7 +83,7 @@ layout: realisation
 <div class="container-fluid-etude pt-5 pb-5 mt-5 mb-5">
   <div class="row">
     <div class="col-lg-6 col-md-12 col-sm-12 ps-0 pe-0 etude-container-img pb-5" data-aos="fade-right" data-aos-delay="">
-      <div id="mission-map" width="100%" class="g_map_2"></div>
+      <div width="100%" class="gmap"></div>
     </div>
     {% assign pageRealContent = page.real | markdownify | strip_html | strip  %}
     {% if pageRealContent != ""  %}
@@ -101,7 +101,6 @@ layout: realisation
   </div>
 </div>
 
-{% include contact.html %} {% include footer.html %}
 
 <script>
   $(document).ready(function() {
@@ -117,7 +116,7 @@ layout: realisation
         });
 
       var mapOpts = {
-          center: new google.maps.LatLng({{page.lat}}, {{page.long}}), <!--coordonnes --->
+          center: new google.maps.LatLng({{page.lat}}, {{page.long}}), //coordonnes
           zoom: 12,
           disableDefaultUI: true,
 
@@ -141,10 +140,13 @@ layout: realisation
       }
 
       makeMarker({
-          position: new google.maps.LatLng({{page.lat}}, {{page.long}}), <!--coordonnes --->
+          position: new google.maps.LatLng({{page.lat}}, {{page.long}}), //coordonnes
           map: map,
           animation: google.maps.Animation.DROP
 
       });
   });
 </script>
+
+{% include contact.html %} 
+{% include footer.html %}
