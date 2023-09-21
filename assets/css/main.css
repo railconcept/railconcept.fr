@@ -736,15 +736,7 @@
     .mission-slider .carousel-control-next {
         left: calc(50px + 5.5vw) !important;
     }
-
-    #map5x {
-        height: 350px;
-    }
-
-    #map6x {
-        height: 350px;
-    }
-
+    
     .gm-style .gm-style-iw-t::after {
         content: none;
     }
@@ -1050,8 +1042,8 @@
     }
 
 
-    .g_map {
-
+    .gmap {
+        
         height: 100%;
     }
 
