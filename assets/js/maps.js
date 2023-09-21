@@ -72,7 +72,7 @@ return str.replace(/[!'()*]/g, escape);
             }
         });
 
-        //////////////////////Map MISSION AMO GRANDS PROJECTS ////////////////////////
+        Map MISSION AMO GRANDS PROJECTS 
 
         if ($("#map1").length) {
             var mapOpts = {
@@ -95,7 +95,7 @@ return str.replace(/[!'()*]/g, escape);
                 maxWidth: 220
             });
             var markerBounds = new google.maps.LatLngBounds();
-            var markerArray = [];
+            var markers = [];
 
             google.maps.event.addListener(map, "click",
                 function () { infoWindow.close(); });
@@ -105,26 +105,26 @@ return str.replace(/[!'()*]/g, escape);
                 function () { infoWindow.close(); });
 
             function makeMarker(options) {
-                var pushPin = new google.maps.Marker({
+                var marker = new google.maps.Marker({
                     map: map
                 });
 
-                pushPin.setOptions(options);
+                marker.setOptions(options);
 
-                google.maps.event.addListener(pushPin, "click",
+                google.maps.event.addListener(marker, "click",
                     function () {
                         infoWindow.setOptions(options);
                         infoWindow.open(map);
                     });
 
-                google.maps.event.addListener(pushPin, "mouseover",
+                google.maps.event.addListener(marker, "mouseover",
                     function () {
                         infoWindow.setOptions(options);
                         infoWindow.open(map);
                     });
 
                 markerBounds.extend(options.position);
-                markerArray.push(pushPin);
+             markers.push(marker);
 
 
             }
@@ -159,76 +159,77 @@ position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
     }
                                                                 
                                                                 
-                                                                        //////////////////////Map etudes ////////////////////////
+    //////////////////////Map etudes ////////////////////////
+
+    if ($("#map2x").length) {
+    var mapOpts2x = {
+        center: new google.maps.LatLng(45.787119, 3.0777066),
+        zoom: 6,
+        disableDefaultUI: true,
+        styles: [{
+            stylers: [{
+                saturation: -100
+            }]
+        }]
+
+    };
+
+    var map2x = new google.maps.Map(document.getElementById("map2x"), mapOpts2x);
+
+    var infoWindow2x = new google.maps.InfoWindow({
+        content: "message",
+        maxWidth: 220
+    });
+    var markerBounds2x = new google.maps.LatLngBounds();
+    var markerArray2x = [];
+
+
+    google.maps.event.addListener(map2x, "click",
+        function () { infoWindow2x.close(); });
+
+
+    google.maps.event.addListener(map2x, "mouseout",
+        function () { infoWindow2x.close(); });
+
+    function makeMarker2x(options) {
+        var pushPin2x = new google.maps.Marker({
+            map: map2x
+        });
+
+        pushPin2x.setOptions(options);
+
+        google.maps.event.addListener(pushPin2x, "click",
+            function () {
+                infoWindow2x.setOptions(options);
+
+
+
+                infoWindow2x.open(map2x);
+            });
+
+        google.maps.event.addListener(pushPin2x, "mouseover",
+            function () {
+                infoWindow2x.setOptions(options);
+
+
+
+                infoWindow2x.open(map2x);
+            });
                                                                 
-                                                                        if ($("#map2x").length) {
-                                                                            var mapOpts2x = {
-                                                                                center: new google.maps.LatLng(45.787119, 3.0777066),
-                                                                                zoom: 6,
-                                                                                disableDefaultUI: true,
-                                                                                styles: [{
-                                                                                    stylers: [{
-                                                                                        saturation: -100
-                                                                                    }]
-                                                                                }]
                                                                 
-                                                                            };
-                                                                
-                                                                            var map2x = new google.maps.Map(document.getElementById("map2x"), mapOpts2x);
-                                                                
-                                                                            var infoWindow2x = new google.maps.InfoWindow({
-                                                                                content: "message",
-                                                                                maxWidth: 220
-                                                                            });
-                                                                            var markerBounds2x = new google.maps.LatLngBounds();
-                                                                            var markerArray2x = [];
-                                                                
-                                                                
-                                                                            google.maps.event.addListener(map2x, "click",
-                                                                                function () { infoWindow2x.close(); });
-                                                                
-                                                                
-                                                                            google.maps.event.addListener(map2x, "mouseout",
-                                                                                function () { infoWindow2x.close(); });
-                                                                
-                                                                            function makeMarker2x(options) {
-                                                                                var pushPin2x = new google.maps.Marker({
-                                                                                    map: map2x
-                                                                                });
-                                                                
-                                                                                pushPin2x.setOptions(options);
-                                                                
-                                                                                google.maps.event.addListener(pushPin2x, "click",
-                                                                                    function () {
-                                                                                        infoWindow2x.setOptions(options);
-                                                                
-                                                                
-                                                                
-                                                                                        infoWindow2x.open(map2x);
-                                                                                    });
-                                                                
-                                                                                google.maps.event.addListener(pushPin2x, "mouseover",
-                                                                                    function () {
-                                                                                        infoWindow2x.setOptions(options);
-                                                                
-                                                                
-                                                                
-                                                                                        infoWindow2x.open(map2x);
-                                                                                    });
-                                                                
-                                                                
-                                                                                // google.maps.event.addListener(pushPin2x, "mouseout",
-                                                                                //     function () {
-                                                                                //         infoWindow2x.close();
-                                                                                //     });
-                                                                                markerBounds2x.extend(options.position);
-                                                                                markerArray2x.push(pushPin2x);
-                                                                            }
-                                                                
-                                                                            "{% for real in site.nos_realisations %}"
+  // google.maps.event.addListener(pushPin2x, "mouseout",
+ //     function () {
+ //         infoWindow2x.close();
+//     });
+ markerBounds2x.extend(options.position);
+ 
+ markerArray2x.push(pushPin2x);
+
+}                                                               
+"{% for real in site.nos_realisations %}"
         "{% if real.type-real == 'etudex' %}"
             makeMarker2x({
-                                                                                                                                                                                                                position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
+                                               position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
             content: '<div class="gallery-real text-left p-0">' +
                 '<img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />' +
                 '
@@ -250,11 +251,11 @@ position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
                     '</div>
             </div>',
             map: map2x,
-                                                                                                                                                                                                                icon: 'assets/img/page-realisations/pin2.png',
-                                                                                                                                                                                                                animation: google.maps.Animation.DROP
-                                                                                                                                                                                                
-                                                                                                                                                                                                            });
-                                                                                                                                                                                                            "{% endif %}"
+                              icon: 'assets/img/page-realisations/pin2.png',
+                                    animation: google.maps.Animation.DROP
+             
+                               });
+                             "{% endif %}"
         "{% endfor %}"
     }
                                                                 
@@ -338,11 +339,11 @@ position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
                     '</div>
             </div>',
             map: map3x,
-                                                                                                                                                                                                                icon: 'assets/img/page-realisations/pin3.png',
-                                                                                                                                                                                                                animation: google.maps.Animation.DROP
+                                       icon: 'assets/img/page-realisations/pin3.png',
+                                       animation: google.maps.Animation.DROP
                                                                                                                                                                                                 
-                                                                                                                                                                                                            });
-                                                                                                                                                                                                            "{% endif %}"
+                                        });
+                                        "{% endif %}"
         "{% endfor %}"
     }
                                                                 
@@ -404,8 +405,9 @@ position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
                                                                 
                                                                             "{% for real in site.nos_realisations %}"
         "{% if real.type-real == 'vente' %}"
-            makeMarker4x({
-                                                                                                                                                                                                                position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
+            makeMarker4x
+            
+            position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
             content: '<div class="gallery-real text-left p-0">' +
                 '<img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />' +
                 '
@@ -427,11 +429,10 @@ position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
                     '</div>
             </div>',
             map: map4x,
-                                                                                                                                                                                                                icon: 'assets/img/page-realisations/pin4.png',
-                                                                                                                                                                                                                animation: google.maps.Animation.DROP
-                                                                                                                                                                                                
-                                                                                                                                                                                                            });
-                                                                                                                                                                                                            "{% endif %}"
+                          icon: 'assets/img/page-realisations/pin4.png',
+                            animation: google.maps.Animation.DROP                   
+                             });
+                              "{% endif %}"
         "{% endfor %}"
     }
                                                                     });</script>
@@ -457,87 +458,45 @@ position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
     };
 })();
 
+
 $(document).ready(function() {
-    let mapsOptions = {
-
-    }
-
-    async function initMap() {
+    async function initMaps() {
         const { Map } = await google.maps.importLibrary("maps");
-        mapsOptions = {
-            "map5x": {
-                center: new google.maps.LatLng(43.957767, 4.754659),
-                zoom: 17,
-                disableDefaultUI: true
-            },
-            "map6x": {
-                center: new google.maps.LatLng(48.846379, 2.373201),
-                zoom: 17,
-                disableDefaultUI: true
-            }
-    
-        }
 
-        initMap5X();
-        initMap6X();
-    }
-
-    function initMap5X() {
-        let map5xDiv = document.getElementById("map5x");
-        if (map5xDiv) {
-
-            let opts = mapsOptions["map5x"];
-
-            var map5x = new google.maps.Map(map5xDiv, opts);
-            var markerBounds5x = new google.maps.LatLngBounds();
-            var markerArray5x = [];
-
-            function makeMarker5x(options) {
-                var pushPin5x = new google.maps.Marker({map: map5x});
-
-                pushPin5x.setOptions(options);
-                markerBounds5x.extend(options.position);
-                markerArray5x.push(pushPin5x);
-            }
-
-            makeMarker5x({
-                position: opts.center,
-                map: map5x,
-                animation: google.maps.Animation.DROP
-
-            });
-        }
-    }
-
-    function initMap6X() {
-        let map6xDiv = document.getElementById("map6x");
-        if (map6xDiv) {
-            let opts = mapsOptions["map6x"];
-
-            var map6x = new google.maps.Map(map6xDiv, opts);
-
-            var markerBounds6x = new google.maps.LatLngBounds();
-            var markerArray6x = [];
-
-            function makeMarker6x(options) {
-                var pushPin6x = new google.maps.Marker({map: map6x});
-
-                pushPin6x.setOptions(options);
-
-                markerBounds6x.extend(options.position);
-                markerArray6x.push(pushPin6x);
-            }
-
-            makeMarker6x({
-                position: opts.center,
-                map: map6x,
-                animation: google.maps.Animation.DROP
+        const gmapsDivs = document.getElementsByClassName("gmap");
+        
+        for (const gmapDiv of gmapsDivs) {            
+            var optsJson = gmapDiv.getAttribute("data-gmap-opts");
+            let opts = JSON.parse(optsJson);
+            
+            let actualGmap = new google.maps.Map(gmapDiv, {
+                center: new google.maps.LatLng(opts.center.lat, opts.center.lng),
+                zoom: opts.zoom,
+                disableDefaultUI: opts.disableDefaultUI
             });
 
+            let markerBounds = new google.maps.LatLngBounds();
+            let markers = [];
+
+            function makeMarker(options) {
+                let marker = new google.maps.Marker({map: options.map});
+
+                marker.setOptions(options);
+                markerBounds.extend(options.position);
+                markers.push(marker);
+            }
+            
+            for(const markerOpt of opts.markers) {
+                const markerCenter = new google.maps.LatLng(markerOpt.lat, markerOpt.lng);
+                makeMarker({
+                    position: markerCenter,
+                    map: actualGmap,
+                    animation: google.maps.Animation.DROP
+                });
+            }
         }
     }
-    
 
-    initMap();
+    initMaps();
 });
 
