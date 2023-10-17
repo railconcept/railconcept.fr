@@ -1,13 +1,16 @@
 $(document).ready(function() {
 
+
   // display the search input when clicked on it
   $("#search-link").click(function (event) {
     // avoid navigating when clicking on the magnifying glass icon
     event.preventDefault();
+
     if ($('#input-search').css("display") == "block") {
         $('#input-search').css("display", "none");
     } else {
         $('#input-search').css("display", "block");
+        $('#input-search').focus();
     }
   });
 
@@ -25,6 +28,20 @@ $(document).ready(function() {
     }
   });
 
+
+
+    // Get a reference to the search input element
+    //var searchInput = document.getElementById("input-search");
+
+    // Add a click event listener to the input element
+    //searchInput.addEventListener("click",function()) {
+    // Set focus on the input element when it's clicked
+      //this.focus()
+    
+
+
+
+      
 
   let searchInput = $('#input-search');
 
