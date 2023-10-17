@@ -438,6 +438,154 @@ position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
                                                                     });</script>
  
  */
+/*
+  
+   <script type="text/javascript">                                                          
+  function rfc(str) {
+return str.replace(/[!'()*]/g, escape);
+    }
+
+    function rech_releaseEvents(el) {
+
+        $id = $(el).attr('id');
+        console.log($id);
+        $('.bg-circle').removeClass('image-active');
+        $('#bg-circle-' + $id).addClass("image-active");
+        $(".rech-check").prop("checked", false);
+        $("#check0" + $id).prop("checked", true);
+
+        $(".tab-pane").removeClass("active show");
+        $($(el).attr('href')).addClass("active show");
+
+    }
+
+
+    $(document).ready(function () {
+        var url = window.location.href;
+
+        if (url.indexOf("mission") >= 0) {
+            filtrer_gal('mission')
+        }
+        if (url.indexOf("etudex") >= 0) {
+            filtrer_gal('etudex')
+        }
+        if (url.indexOf("expert") >= 0) {
+            filtrer_gal('expert')
+        }
+        if (url.indexOf("vente") >= 0) {
+            filtrer_gal('vente')
+        }
+
+        $('.footer-real').click(function () {
+            var urlx = $(this).attr('href');
+            if (urlx.indexOf("mission") >= 0) {
+                filtrer_gal('mission')
+            }
+            if (urlx.indexOf("etudex") >= 0) {
+                filtrer_gal('etudex')
+            }
+            if (urlx.indexOf("expert") >= 0) {
+                filtrer_gal('expert')
+            }
+            if (urlx.indexOf("vente") >= 0) {
+                filtrer_gal('vente')
+            }
+        });
+
+        //Map MISSION AMO GRANDS PROJECTS 
+
+        if ($("#map1").length) {
+            var mapOpts = {
+                center: new google.maps.LatLng(27.7928424, 1.527656),
+                zoom: 4,
+                disableDefaultUI: true,
+                styles: [{
+                    stylers: [{
+                        saturation: -100
+                    }]
+                }]
+
+            };
+
+            var map = new google.maps.Map(document.getElementById("map1"), mapOpts);
+
+
+            var infoWindow = new google.maps.InfoWindow({
+                content: "message",
+                maxWidth: 220
+            });
+            var markerBounds = new google.maps.LatLngBounds();
+            var markers = [];
+
+            google.maps.event.addListener(map, "click",
+                function () { infoWindow.close(); });
+
+
+            google.maps.event.addListener(map, "mouseout",
+                function () { infoWindow.close(); });
+
+            function makeMarker(options) {
+                var marker = new google.maps.Marker({
+                    map: map
+                });
+
+                marker.setOptions(options);
+
+                google.maps.event.addListener(marker, "click",
+                    function () {
+                        infoWindow.setOptions(options);
+                        infoWindow.open(map);
+                    });
+
+                google.maps.event.addListener(marker, "mouseover",
+                    function () {
+                        infoWindow.setOptions(options);
+                        infoWindow.open(map);
+                    });
+
+                markerBounds.extend(options.position);
+             markers.push(marker);
+
+
+            }
+
+        "{% for real in site.nos_realisations %}"
+        "{% if real.type-real == 'mission' %}"
+            makeMarker({
+                position: new google.maps.LatLng("{{ real.lat }}", "{{ real.long }}"),
+                content: '<div class="gallery-real text-left p-0">' +
+                '<img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />' +
+                '
+                <div class="col-12 centerx detail_infowindo">' +
+                    '
+                    <div class="col-12 title_infowindow">AMO</div>
+                    ' +
+                    '
+                    <div class="col-12 projet_infowindow">' + rfc("{{ real.title }}") + '</div>
+                    ' +
+                    '
+                    <div class="col-12 adresse_infowindow">{{ real.region }}</div>
+                    ' +
+                    '
+                    <div class="col-12 sav_plus_infowindow">
+                        <a href="{{ real.url | prepend: site.baseurl }}" class="  btn-color-infowindow  ">En savoir plus</a>
+                    </div>
+                    ' +
+                    '</div>
+                </div>',
+            map: map,
+                                                                                                                                                                                                
+        "{% endfor %}"
+    }
+
+
+        */                                                            
+
+
+
+
+
+
 
 // this bypass some origin checks with the api key
 (() => {

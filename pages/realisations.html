@@ -214,7 +214,32 @@ permalink: /realisations
                     id="missionxx"
                     role="tabpanel">
                     <div class="sv-tab-panel">
-                        <div id="map1" class="gmap"></div>
+                        <div class="gmap"
+                            
+                            data-gmap-opts='{
+                                "center": { "lat": 27.7928424, "lng": 1.527656 },
+                                "zoom": 4,
+                                "disableDefaultUI": true,
+                                "markers": [
+                                    {% assign real_missions = site.nos_realisations | where: "type-real", "mission" %}
+                                    {% assign dbg = real_missions | where: "lat" %}
+                                    {% assign dbgg = dbg | where: "long" %}
+                                    {% for real in dbgg %}
+                                        { 
+                                            "lat": {{ real.lat }}, 
+                                            "lng": {{ real.long }} 
+                                        }
+                                        {% if forloop.last == false %}
+                                            ,
+                                        {% endif %}
+                                    {% endfor %}
+                                ]
+                            }'
+                        
+                            >
+
+
+                        </div>
                     </div>
                 </div>
                 <div
