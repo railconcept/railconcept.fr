@@ -29,10 +29,9 @@ permalink: /realisations
 </div>
 
 <!-- realisations details -->
-<section class="realisations-recherche mt-5 pt-5 mb-5 pb-5">
+<section class="realisations-recherche mt-5 pt-5 mb-3 pb-3">
     <div class="row">
         <div class="col-lg-5 col-md-5 col-sm-12 col-12 ps-0 pe-0 ">
-
             <ul id="ul-rech-real" class="nav nav-tabs">
                 <li class="nav-item">
                     <div class="row">
@@ -48,14 +47,13 @@ permalink: /realisations
                     class="nav-item"
                     data-aos="fade-right"
                     data-aos-delay="400">
-
                     <div class="row">
                         <div class="col-11 ps-0 pe-0">
                             <a
                                 id="1"
                                 class="nav-link link-rech-real "
                                 data-toggle="tab"
-                                href="#missionxx"
+                                href="#mission"
                                 onclick="rech_releaseEvents(this);">
                                 <div class="row">
                                     <div class=" col-lg-3 col-md-4 col-sm-3 col-3 ps-0 pe-0">
@@ -98,7 +96,7 @@ permalink: /realisations
                                 id="2"
                                 class="nav-link link-rech-real"
                                 data-toggle="tab"
-                                href="#etudexx"
+                                href="#etude"
                                 onclick="rech_releaseEvents(this);">
                                 <div class="row">
                                     <div class=" col-lg-3 col-md-4 col-sm-3 col-3 ps-0 pe-0">
@@ -130,7 +128,7 @@ permalink: /realisations
 
                 <li
                     class="nav-item"
-                    data-aos="fade-right"
+                    data-aos="fade-up"
                     data-aos-delay="400">
                     <div class="row">
                         <div class="col-11 ps-0 pe-0">
@@ -138,7 +136,7 @@ permalink: /realisations
                                 id="3"
                                 class="nav-link link-rech-real"
                                 data-toggle="tab"
-                                href="#expertxx"
+                                href="#expert"
                                 onclick="rech_releaseEvents(this);">
                                 <div class="row">
                                     <div class=" col-lg-3 col-md-4 col-sm-3 col-3 ps-0 pe-0">
@@ -177,7 +175,7 @@ permalink: /realisations
                                 id="4"
                                 class="nav-link link-rech-real"
                                 data-toggle="tab"
-                                href="#logicielxx"
+                                href="#logiciel"
                                 onclick="rech_releaseEvents(this);">
                                 <div class="row">
                                     <div class=" col-lg-3 col-md-4 col-sm-3 col-3 ps-0 pe-0">
@@ -207,63 +205,177 @@ permalink: /realisations
                 </li>
             </ul>
         </div>
-        <div class="col-lg-7 col-md-7  col-sm-12 col-12 ps-0 pe-0">
+        <div class="col-lg-6 col-md-3  col-sm-12 col-sm-7 ps-0 pe-0">
             <div class="tab-content">
                 <div
                     class="tab-pane active"
-                    id="missionxx"
+                    id="mission"
                     role="tabpanel">
                     <div class="sv-tab-panel">
                         <div class="gmap"
-                            
                             data-gmap-opts='{
                                 "center": { "lat": 27.7928424, "lng": 1.527656 },
                                 "zoom": 4,
                                 "disableDefaultUI": true,
                                 "markers": [
-                                    {% assign real_missions = site.nos_realisations | where: "type-real", "mission" %}
-                                    {% assign dbg = real_missions | where: "lat" %}
-                                    {% assign dbgg = dbg | where: "long" %}
-                                    {% for real in dbgg %}
+                                    {%- assign real_missions = site.nos_realisations 
+                                        | where_exp: "real", "real.type-real == 'mission' and real.lat and real.long" -%}
+                                    {%- for real in real_missions %}
+                                         {% capture infoWindowContent -%}
+                                            <div class="gallery-real text-left p-0">
+                                                <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
+                                                <div class="col-12 center detail_infowindo">
+                                                    <div class="col-12 title_infowindow">AMO</div>
+                                                    <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
+                                                    <div class="col-12 adresse_infowindow">{{ real.region }}</div>
+                                                    <div class="col-12 sav_plus_infowindow">
+                                                        <a href="{{ real.url | prepend: site.baseurl }}" class="btn-color-infowindow">En savoir plus</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        {%- endcapture %}
                                         { 
                                             "lat": {{ real.lat }}, 
-                                            "lng": {{ real.long }} 
+                                            "lng": {{ real.long }},
+                                            "infoWindowContent": {{ infoWindowContent | jsonify }}
                                         }
-                                        {% if forloop.last == false %}
+                                        {%- if forloop.last == false -%}
                                             ,
-                                        {% endif %}
-                                    {% endfor %}
+                                        {%- endif -%}
+                                    {%- endfor -%}
                                 ]
                             }'
-                        
                             >
-
 
                         </div>
                     </div>
                 </div>
                 <div
                     class="tab-pane"
-                    id="etudexx"
+                    id="etude"
                     role="tabpanel">
                     <div class="sv-tab-panel">
-                        <div id="map2x" class="gmap"></div>
+                        <div class="gmap"
+                            data-gmap-opts='{
+                            "center": { "lat": 45.787119, "lng": 3.0777066 },
+                            "zoom": 4,
+                            "disableDefaultUI": true,
+                            "markers": [
+                                {%- assign real_etudes = site.nos_realisations 
+                                    | where_exp: "real", "real.type-real == 'etudex' and real.lat and real.long" -%}
+                                {%- for real in real_etudes %}
+                                     {% capture infoWindowContent -%}
+                                        <div class="gallery-real text-left p-0">
+                                            <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
+                                            <div class="col-12 centerx detail_infowindo">
+                                                <div class="col-12 title_infowindow">AMO</div>
+                                                <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
+                                                <div class="col-12 adresse_infowindow">{{ real.region }}</div>
+                                                <div class="col-12 sav_plus_infowindow">
+                                                    <a href="{{ real.url | prepend: site.baseurl }}" class="btn-color-infowindow">En savoir plus</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {%- endcapture %}
+                                    { 
+                                        "lat": {{ real.lat }}, 
+                                        "lng": {{ real.long }},
+                                        "infoWindowContent": {{ infoWindowContent | jsonify }}
+                                    }
+                                    {%- if forloop.last == false -%}
+                                        ,
+                                    {%- endif -%}
+                                {%- endfor -%}
+                            ]
+                        }'>
+                        </div>
+
                     </div>
                 </div>
                 <div
                     class="tab-pane"
-                    id="expertxx"
+                    id="expert"
                     role="tabpanel">
                     <div class="sv-tab-panel">
-                        <div id="map3x" class="gmap"></div>
+                        <div class="gmap"
+                            data-gmap-opts='{
+                            "center": { "lat": 29.3331967, "lng": 1.9959572 },
+                            "zoom": 4,
+                            "disableDefaultUI": true,
+                            "markers": [
+                                {%- assign real_expert = site.nos_realisations 
+                                    | where_exp: "real", "real.type-real == 'expert' and real.lat and real.long" -%}
+                                {%- for real in real_expert %}
+                                     {% capture infoWindowContent -%}
+                                        <div class="gallery-real text-left p-0">
+                                            <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
+                                            <div class="col-12 centerx detail_infowindo">
+                                                <div class="col-12 title_infowindow">AMO</div>
+                                                <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
+                                                <div class="col-12 adresse_infowindow">{{ real.region }}</div>
+                                                <div class="col-12 sav_plus_infowindow">
+                                                    <a href="{{ real.url | prepend: site.baseurl }}" class="btn-color-infowindow">En savoir plus</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {%- endcapture %}
+                                    { 
+                                        "lat": {{ real.lat }}, 
+                                        "lng": {{ real.long }},
+                                        "infoWindowContent": {{ infoWindowContent | jsonify }}
+                                    }
+                                    {%- if forloop.last == false -%}
+                                        ,
+                                    {%- endif -%}
+                                {%- endfor -%}
+                            ]
+                        }'
+                        >
+                        </div>
+
                     </div>
                 </div>
                 <div
                     class="tab-pane"
-                    id="logicielxx"
+                    id="logiciel"
                     role="tabpanel">
                     <div class="sv-tab-panel">
-                        <div id="map4x" class="gmap"></div>
+                        <div class="gmap"
+                        data-gmap-opts='{
+                            "center": { "lat": 48.6861037, "lng": 2.3998418 },
+                            "zoom": 4,
+                            "disableDefaultUI": true,
+                            "markers": [
+                                {%- assign real_vente = site.nos_realisations 
+                                    | where_exp: "real", "real.type-real == 'vente' and real.lat and real.long" -%}
+                                {%- for real in real_vente %}
+                                     {% capture infoWindowContent -%}
+                                        <div class="gallery-real text-left p-0">
+                                            <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
+                                            <div class="col-12 centerx detail_infowindo">
+                                                <div class="col-12 title_infowindow">AMO</div>
+                                                <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
+                                                <div class="col-12 adresse_infowindow">{{ real.region }}</div>
+                                                <div class="col-12 sav_plus_infowindow">
+                                                    <a href="{{ real.url | prepend: site.baseurl }}" class="btn-color-infowindow">En savoir plus</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    {%- endcapture %}
+                                    { 
+                                        "lat": {{ real.lat }}, 
+                                        "lng": {{ real.long }},
+                                        "infoWindowContent": {{ infoWindowContent | jsonify }}
+                                    }
+                                    {%- if forloop.last == false -%}
+                                        ,
+                                    {%- endif -%}
+                                {%- endfor -%}
+                            ]
+                        }'
+                        >
+                        </div>
+
                     </div>
                 </div>
             </div>
