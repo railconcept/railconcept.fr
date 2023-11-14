@@ -1,6 +1,6 @@
-@import './colors.css';
-@import './carousel.css';
-@import './footer.css';
+@import url('colors.css');
+@import url('carousel.css');
+@import url('footer.css');
 
     /*****************************************
     ******************************************
