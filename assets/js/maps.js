@@ -28,7 +28,7 @@ $(document).ready(function() {
             var optsJson = gmapDiv.getAttribute("data-gmap-opts");
             let opts = JSON.parse(optsJson);
 
-            console.log(opts);
+            //console.log(opts);
             
             let actualGmap = new google.maps.Map(gmapDiv, {
                 center: new google.maps.LatLng(opts.center.lat, opts.center.lng),
