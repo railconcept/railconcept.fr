@@ -1,5 +1,13 @@
+---
+layout: none
+---
 User-agent: *
+Sitemap: {{ site.url }}/sitemap.xml
 Disallow: /*.jpg$
 Disallow: /*.png$
 Disallow: /*.gif$
-Disallow: /images/
+Disallow: /*.pdf$
+Disallow: /assets/
+Disallow: /admin/
+Disallow: /odt/
+Disallow: /catnews/

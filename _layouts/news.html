@@ -19,7 +19,7 @@ layout: page
     <div class="row pb-5">
       <div class="col-lg-7 pe-3 ps-0">
         <div class="date-news mt-0 pt-5 pb-3">
-          {{ page.date | date_to_long_string }} À {{ page.date | date: "%HH%M" }} {% for tag in page.news.taggx %}
+          {{ page.date | date: "%F" }} À {{ page.date | date: "%HH%M" }} {% for tag in page.news.taggx %}
           <span class="tagx">{{tag}}</span>
           {% endfor %}
         </div>
