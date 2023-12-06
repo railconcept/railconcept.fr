@@ -12,6 +12,7 @@ include:
 exclude:
   - api/bin/
   - api/obj/
+  - pages/en/
 
 highlighter: rouge
 markdown: kramdown
@@ -19,22 +20,52 @@ timezone: Europe/Paris
 kramdown:
   input: GFM
 
+defaults:
+  - 
+    scope:
+      path: "admin/**"
+    values:
+      sitemap: false
+  - 
+    scope:
+      path: "assets/**"
+    values:
+      sitemap: false
+  - 
+    scope:
+      path: "odt/**"
+      type: "odt"
+    values:
+      sitemap: false
+  - 
+    scope:
+      path: "catnews/**"
+      type: "catnews"
+    values:
+      sitemap: false
+
 collections:
+  posts:
+    output: true
+    permalink: /actualites/:year-:month-:day-:title/
   catnews:
     output: true
-    permalink: /catnews/:path/
+    permalink: /catnews/:title/
+    sitemap: false
   odt:
     output: true
-    permalink: /odt/:path/
+    permalink: /odt/:title/
+    sitemap: false
   nos_realisations:
     output: true
-    permalink: /nos_realisations/:path/
-  jobs:
-    output: true
-    permalink: /en/jobs/:path/
-  news:
-    output: true
-    permalink: /en/news/:path/
-  achievements:
-    output: true
-    permalink: /en/achievements/:path/
+    permalink: /nos_realisations/:title/
+    
+#  jobs:
+#    output: true
+#    permalink: /en/jobs/:path/
+#  news:
+#    output: true
+#    permalink: /en/news/:path/
+#  achievements:
+#    output: true
+#    permalink: /en/achievements/:path/
