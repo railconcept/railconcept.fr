@@ -1,83 +1,53 @@
-<div id="div-navbar">
-  <div id="container-navbar" class="container">
-    <nav id="navbar" class="navbar navbar-light navbar-expand-lg">
-      <a class="navbar-brand navbar-logo" href="{{ site.baseurl }}/"
-        ><img class="img-fluid d-lg-flex justify-content-lg-end align-items-lg-end" src="{{ site.baseurl }}/assets/img/logo/logo.png" id="logo"
-      /></a>
 
-      <button
-        class="navbar-toggler first-button"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbar-menu"
-        aria-controls="navbarSupportedContent20"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-        data-aos="fade-left"
-      >
-        <div class="animated-icon2">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </button>
+      <a class="navbar-brand navbar-logo" href="{{ site.baseurl }}/">
+        </a>
 
-      <div id="navbar-menu" class="collapse navbar-collapse main-menu">
-        <ul class="nav navbar-nav ms-auto">
-          <li class="nav-item nav-li" role="presentation">
-            <a id="qui-sommes-nous" class="nav-link link-navbar" href="{{site.baseurl }}/qui-sommes-nous">nous connaître</a>
-          </li>
-          <li class="nav-item nav-li" role="presentation">
-            <a id="competences" class="nav-link link-navbar" href="{{ site.baseurl }}/competences">nos compétences</a>
-          </li>
-          <li class="nav-item nav-li" role="presentation">
-            <a id="realisations" class="nav-link link-navbar" href="{{ site.baseurl }}/realisations">nos réalisations</a>
-          </li>
-          <li class="nav-item nav-li" role="presentation">
-            <a id="rejoignez-nous" class="nav-link link-navbar" href="{{ site.baseurl }}/rejoignez-nous">carrières</a>
-          </li>
-          <li class="nav-item nav-li" role="presentation">
-            <a id="actualites" class="nav-link link-navbar" href="{{ site.baseurl }}/actualites">actualités</a>
-          </li>
-          <li class="nav-item nav-li" role="presentation">
-            <a id="actualites" class="nav-link link-navbar" href="https://www.railconcept.fr/assets/img/page-competences/Plaquette%20RL%20V9_FR_2pages.pdf/">RailLab</a>
-          </li>
-          
-          
-          
-          <!--
-          <li class="nav-item nav-li" role="presentation">
-            <a id="Logiciels" class="nav-link link-navbar" href="{{ site.baseurl }}/logiciels spécialisés">Logiciels</a>
-          </li>
-         -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
 
-          <li class="nav-item nav-li me-5" role="presentation">
-            <a id="contact" class="nav-link link-navbar" href="{{ site.baseurl }}/contact">contact</a>
-          </li>
-          <li class="nav-item nav-li text-center no-underline" role="presentation" id="search">
-            <a class="nav-link link-navbar hvr-grow" href="{{site.baseurl }}/#" id="search-link"><img class="loope" src="{{ site.baseurl }}/assets/img/flags/loupe.png" /></a>
+
+  <ul class="nav navbar-nav ms-auto">
+    <a class="navbar-brand navbar-logo" href="{{ site.baseurl }}/"></a>
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <img src="{{ site.baseurl }}/assets/img/logo/logo.png" alt="logo" class="img-fluid d-lg-flex justify-content-lg-end align-items-lg-end">
+
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ site.baseurl }}/qui-sommes-nous">Nous Connaître</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ site.baseurl }}/competences">Nos Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ site.baseurl }}/realisations">Nos Réalisations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ site.baseurl }}/rejoignez-nous">Carrières</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ site.baseurl }}/actualites">Actualités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="https://www.railconcept.fr/assets/img/page-competences/Plaquette%20RL%20V9_FR_2pages.pdf/">RailLab</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="{{ site.baseurl }}/contact">Contact</a>
+        </li>
+      </ul>
+      </ul>
+
+
+<li class="nav-item nav-li text-center no-underline" role="presentation" id="search">
+            <a class="nav-link link-navbar hvr-grow" href="{{site.baseurl }}/" id="search-link"><img class="loope" src="{{ site.baseurl }}/assets/img/flags/loupe.png" /></a>
             <input id="input-search" type="text" class="search-txt shadow-none" placeholder="Recherche..." name="Search-txt" autofocus />
           </li>
-
-<!--         
-            <li id="lang" class="dropdown nav-item nav-li no-underline">
-
-                <a class="nav-link link-navbar dropdown-toggle lang-select hvr-wobble-vertical"
-                    data-toggle="dropdown" href="/" role="button" aria-haspopup="true"
-                    aria-expanded="false">
-                    <img class="flags" src="{{ site.baseurl }}/assets/img/flags/fr.png">
-                </a>
-                <div id="select_flag" class="dropdown-menu">
-                    <a id="dropdown-flags" class="dropdown-item hvr-grow" href="/en/">
-                        <img class="flags" src="{{ site.baseurl }}/assets/img/flags/gb.png">English</a>
-                </div>
-            </li>
--->
-          
-
-        </ul>
-      </div>
-    </nav>
+    </div>
   </div>
-</div>
+</nav>
