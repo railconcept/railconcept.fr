@@ -1,8 +1,8 @@
 <div id="div-navbar">
   <div id="container-navbar" class="container">
     <nav id="navbar" class="navbar navbar-light navbar-expand-lg">
-      <a class="navbar-brand navbar-logo" href="{{ site.baseurl }}/"
-        ><img class="img-fluid d-lg-flex justify-content-lg-end align-items-lg-end" src="{{ site.baseurl }}/assets/img/logo/logo.png" id="logo"
+      <a class="navbar-brand navbar-logo" href="{{ site.baseurl }}/">
+      <img class="img-fluid d-lg-flex justify-content-lg-end align-items-lg-end" src="{{ site.baseurl }}/assets/img/logo/logo.png" id="logo"
       /></a>
 
 
@@ -65,9 +65,7 @@
           <li class="nav-item nav-li" role="presentation">
             <a id="actualites" class="nav-link link-navbar" href="https://www.railconcept.fr/assets/img/page-competences/Plaquette%20RL%20V9_FR_2pages.pdf/">RailLab</a>
           </li>
-          
-          
-          
+
           <!--
           <li class="nav-item nav-li" role="presentation">
             <a id="Logiciels" class="nav-link link-navbar" href="{{ site.baseurl }}/logiciels spécialisés">Logiciels</a>
