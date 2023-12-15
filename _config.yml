@@ -59,7 +59,32 @@ collections:
   nos_realisations:
     output: true
     permalink: /nos_realisations/:title/
+
+
+navlinks:
+  -
+    href: "/qui-sommes-nous"
+    label: "Nous Connaître"
+  -
+    href: "/competences"
+    label: "Nos Compétences"
+  -
+    href: "/nos_realisations"
+    label: "Nos Réalisations"
+  -
+    href: "/rejoignez-nous"
+    label: "Carrières"
+  -
+    href: "/actualites"
+    label: "Actualités"
+  -
+    href: "/competences#pills-logiciel"
+    label: "RailLab"
+  -
+    href: "/contact"
+    label: "Contact"
     
+
 #  jobs:
 #    output: true
 #    permalink: /en/jobs/:path/
