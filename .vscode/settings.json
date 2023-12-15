@@ -8,11 +8,6 @@
         "_site/": true
     },
     "liquid.engine": "jekyll",
-    "liquid.format.commentIndent": true,
-
-    // indentation level, defaults to the vscode tabSize
-    "liquid.format.indentSize": 4,
-    "liquid.format.enable": true,
     "html.format.wrapAttributes": "aligned-multiple",
     "html.format.wrapLineLength": 240,
     "html.format.enable": false,
@@ -21,6 +16,18 @@
     "prettier.quoteProps": "consistent",
     "prettier.tabWidth": 4,
     "prettier.bracketSameLine": true,
+
+    "liquid.format.rules": {
+        // indentation level, defaults to the vscode tabSize
+        "indentSize": 4,
+        "wrap": 0,
+        "liquid": {
+          "commentIndent": true,
+        },
+        "markup": {
+          "commentIndent": true,
+        }
+    },
 
     "[liquid]": {
         "editor.defaultFormatter": "sissel.shopify-liquid",
@@ -60,5 +67,4 @@
             "extensions": ["css"]
         }
     ]
-
 }
