@@ -1,8 +1,7 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
         <a class="navbar-brand" href="{{ site.baseurl }}/">
             <img src="{{ site.baseurl }}/assets/img/logo/logo.png" alt="logo"/>
-
             <!---img-fluid h-100 d-lg-flex justify-content-lg-end align-items-lg-end -->
         </a>
 
@@ -18,30 +17,16 @@
     
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
             <ul class="navbar-nav my-2 me-auto mb-2 mb-lg-0 mx-5">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ site.baseurl }}/qui-sommes-nous">Nous Connaître</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ site.baseurl }}/competences">Nos Compétences</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ site.baseurl }}/realisations">Nos Réalisations</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ site.baseurl }}/rejoignez-nous">Carrières</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ site.baseurl }}/actualites">Actualités</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ site.baseurl }}/competences#pills-logiciel">RailLab</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="{{ site.baseurl }}/contact">Contact</a>
-                </li>
+                {% for navlink in site.navlinks %}
+                    {% if page.url contains navlink.href  %}  
+                        <a class="nav-link active" href="{{ navlink.href }}">{{ navlink.label}}</a>
+                    {% else %}
+                        <a class="nav-link" href="{{ navlink.href }}">{{ navlink.label}}</a>
+                    {% endif %}
+                  {% endfor %}
             </ul>
 
-            <form class="d-flex" id="search">
+            <div class="d-flex" id="search">
                 <a class="nav-link link-navbar hvr-grow" href="{{site.baseurl }}/" id="search-link">
                     <img class="loope" src="{{ site.baseurl }}/assets/img/flags/loupe.png" />
                 </a>
@@ -50,4 +35,3 @@
         </div>
     </div>
 </nav>
-
