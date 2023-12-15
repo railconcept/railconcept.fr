@@ -1,0 +1,31 @@
+.nav-link {
+    text-transform: uppercase;
+    font-family: 'Barlow Semi Condensed';
+    font-size: 16px;
+    font-weight: 800;
+    color: #9d9e9f !important;
+    padding-right: 1.8rem !important;
+    padding-left: 0 !important;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    bottom: 30%;
+    height: 3px;
+    background-color: var(--primary-color);
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.nav-link:hover:before {
+    width: 45px;
+}
+
+
+.nav-link.active:before {
+    width: 45px;
+}
