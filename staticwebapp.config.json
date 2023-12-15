@@ -4,5 +4,8 @@
         "404": {
             "rewrite": "/404.html"
         }
+    },
+    "platform": {
+        "apiRuntime": "dotnet-isolated:8.0"
     }
 }
