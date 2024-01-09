@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container-xl">
         <a class="navbar-brand" href="{{ site.baseurl }}/">
-            <img src="{{ site.baseurl }}/assets/img/logo/logo.png" alt="logo"/>
+            <img class="img-fluid" src="{{ site.baseurl }}/assets/img/logo/logo.png" alt="logo" />
             <!---img-fluid h-100 d-lg-flex justify-content-lg-end align-items-lg-end -->
         </a>
         <!-- sizing logo
@@ -10,15 +10,15 @@
         <button class="navbar-toggler" 
             type="button" 
             data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
+            data-bs-target="#navbarToggler"
+            aria-controls="navbarToggler"
             aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
     
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav my-2 me-auto mb-2 mb-lg-0 mx-5">
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <ul class="navbar-nav my-2 ms-auto mb-2 mb-lg-0 mx-5">
                 {% for navlink in site.navlinks %}
                     {% if page.url contains navlink.href  %}  
                         <a class="nav-link active" href="{{ navlink.href }}">{{ navlink.label}}</a>
@@ -28,12 +28,17 @@
                   {% endfor %}
             </ul>
 
-            <div class="d-flex" id="search">
-                <a class="nav-link link-navbar hvr-grow" href="{{site.baseurl }}/" id="search-link">
-                    <img class="loope" src="{{ site.baseurl }}/assets/img/flags/loupe.png" />
+
+            <form class="d-flex" onsubmit="return false;">
+                <input id="input-search" type="text" class="d-block form-control d-lg-none shadow-none" placeholder="Recherche..." autofocus />
+                
+                <a class="nav-link ms-2 d-none d-lg-flex link-navbar" href="{{site.baseurl }}/" id="search-link">
+                    <img class="img-fluid align-self-center" src="{{ site.baseurl }}/assets/img/flags/loupe.png" />
                 </a>
-                <input id="input-search" type="text" class="search-txt shadow-none" placeholder="Recherche..." name="Search-txt" autofocus />
             </form>
+
+
+
         </div>
     </div>
 </nav>
