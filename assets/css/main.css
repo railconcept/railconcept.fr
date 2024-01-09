@@ -390,31 +390,6 @@
 
 
 
-    #input-search {
-
-        display: none;
-        position: absolute;
-        border: 0;
-        -webkit-appearance: none;
-        color: #000;
-        margin-left: -181px;
-        width: 390px;
-        padding: 22px 14px !important;
-        border-radius: 5px;
-        z-index: 1;
-        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.38) !important;
-        margin-top: 10px;
-        color: #aaa;
-        font-size: 17px;
-    }
-
-    #input-search :focus {
-        outline: 0 none;
-    }
-
-    #input-search:hover:before {
-        content: none;
-    }
 
     .flags {
 
@@ -423,10 +398,6 @@
 
     }
 
-    .loope {
-        width: 20px !important;
-        height: auto;
-    }
 
     #dropdown-flags {
         padding: 0.5rem 0.5rem !important;
@@ -2481,11 +2452,6 @@
             content: none;
         }
 
-        #input-search {
-            margin-top: -40px !important;
-            margin-left: 175px;
-            width: 300px;
-        }
 
         #lang {
             text-align: center;
@@ -2962,15 +2928,7 @@
             margin-right: auto;
         }
 
-        #input-search {
-            margin-top: -40px !important;
-            margin-left: 105px;
-
-            width: 300px;
-        }
-
-
-
+                
         .title-section {
             font-size: 30px;
             text-shadow: 1px 0 #a52c43;
@@ -3404,13 +3362,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
-        #input-search {
-            margin-top: -40px !important;
-            margin-left: 25%;
-            width: 50%;
-        }
-
 
         .title-section {
             font-size: 28px;
