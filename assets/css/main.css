@@ -578,14 +578,14 @@
     }
 
     #next {
-        background-image: url("../img/arrows/next.svg");
+        background-image: url("/assets/img/arrows/next.svg");
         width: 25%;
         height: 25%;
 
     }
 
     #previous {
-        background-image: url("../img/arrows/previous.svg");
+        background-image: url("/assets/img/arrows/previous.svg");
         width: 25%;
         height: 25%;
     }
@@ -1254,7 +1254,7 @@
 
     .contactx {
 
-        background-image: url("../img/page-nos-metiers/contact.png");
+        background-image: url("/assets/img/page-nos-metiers/contact.png");
         background-size: cover;
         /* <------ */
         background-repeat: no-repeat;
@@ -1424,7 +1424,7 @@
 
     /****************** competence ************/
     .competence {
-        background-image: url("../img/slider/slider.png");
+        background-image: url("/assets/img/slider/slider.png");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
@@ -1816,7 +1816,7 @@
 
     .metiers {
         margin-top: 100px;
-        background-image: url("../img/page-nos-metiers/slid-realisation.png");
+        background-image: url("/assets/img/page-nos-metiers/slid-realisation.png");
         background-size: cover;
         /* <------ */
         background-repeat: no-repeat;
@@ -1958,7 +1958,7 @@
 
 
     .actualite-1 {
-        background-image: url("../img/page-actualites/actualites.png");
+        background-image: url("/assets/img/page-actualites/actualites.png");
 
     }
 
@@ -2067,7 +2067,7 @@
     **************Actualité 2 *************
     **************************************/
     .actualite-2 {
-        background-image: url("../img/page-actualites/actualites-2.png");
+        background-image: url("/assets/img/page-actualites/actualites-2.png");
 
     }
 
@@ -2304,7 +2304,7 @@
     }
 
     #results_search {
-        background-image: url("../img/page-competences/icon1-etudes.png");
+        background-image: url("/assets/img/page-competences/icon1-etudes.png");
         background-repeat: no-repeat;
         min-height: 80vh;
         background-position: right 100px top 100px;
