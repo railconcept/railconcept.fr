@@ -1,32 +1,28 @@
 $(document).ready(function() {
 
+    let inputSearch = $('#input-search');
+    // display the search input when clicked on it
+    $("#search-link").click(function (event) {
+        // avoid navigating when clicking on the magnifying glass icon
+        event.preventDefault();
 
-  // display the search input when clicked on it
-  $("#search-link").click(function (event) {
-    // avoid navigating when clicking on the magnifying glass icon
-    event.preventDefault();
-
-    if ($('#input-search').css("display") == "block") {
-        $('#input-search').css("display", "none");
-    } else {
-        $('#input-search').css("display", "block");
-        $('#input-search').focus();
-    }
-  });
+        inputSearch.toggleClass("d-lg-none");
+        inputSearch.focus();
+    });
 
 
-  // hide search input when clicking away
-  $(document).on('click', function (event) {
-    if (typeof event != "undefined") {
-        if (!$(event.target).hasClass("loope")) {
-            if (event.target.id != 'search-link') {
-                if (event.target.id != 'input-search') {
-                    $('#input-search').css("display", "none");
-                }
+    // used only to determine if the user clicked away from the toolbar
+    // when searching so we can close the search input
+    let navbar = $("nav.navbar");    
+    // hide search input when clicking away
+    $(document).on('click', function (event) {
+        if (typeof event != "undefined") {
+            let mouseInNavbar = !navbar.is(event.target) && navbar.has(event.target).length === 0;
+            if(mouseInNavbar) {
+                inputSearch.addClass("d-lg-none");
             }
         }
-    }
-  });
+    });
 
 
 
@@ -36,16 +32,13 @@ $(document).ready(function() {
     // Add a click event listener to the input element
     //searchInput.addEventListener("click",function()) {
     // Set focus on the input element when it's clicked
-      //this.focus()
+    //this.focus()
     
 
 
+    let searchInput = $('#input-search');
 
-      
-
-  let searchInput = $('#input-search');
-
-  searchInput.on('keypress', function(e) {
+    searchInput.on('keypress', function(e) {
 
     // 13 is backspace in ACII / character code
     // see https://api.jquery.com/event.which/
@@ -62,6 +55,6 @@ $(document).ready(function() {
             window.location.assign(`https://www.google.com/search?q=site%3A%22railconcept.fr%22+%22${urlEncoded}%22`);
         }
     }
-  });
+    });
 
 });
