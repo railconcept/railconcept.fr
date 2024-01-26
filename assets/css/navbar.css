@@ -1,11 +1,24 @@
+.nav {
+    --bs-nav-link-hover-color: var(--tab-font-color);
+    --bs-nav-link-color: var(--tab-font-color);
+}
+
+.navbar-nav .nav-link {
+    --bs-nav-link-color: var(--tab-font-color);
+}
+
+.navbar-nav {
+    --bs-navbar-active-color: var(--tab-font-color);
+}
+
+.nav-link:focus, .nav-link:hover {
+    --bs-nav-link-hover-color: var(--tab-font-color);
+}
+
 .nav-link {
     text-transform: uppercase;
     font-family: 'Barlow Semi Condensed';
-    font-size: 16px;
     font-weight: 800;
-    color: #9d9e9f !important;
-    padding-right: 1.8rem !important;
-    padding-left: 0 !important;
     position: relative;
 }
 
@@ -42,40 +55,5 @@
 
 .navbar #search-link>img {
     max-height: 20px;
-    /*
-    width: 20px !important;
-    height: auto;
-    */
 }
 
-#input-search {
-    /*
-    border: 0;
-    -webkit-appearance: none;
-    color: #000;
-    width: 300px;
-    padding: 22px 14px !important;
-    border-radius: 5px;
-    z-index: 1;
-    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.38) !important;
-    margin-top: 10px;
-    color: #aaa;
-    font-size: 17px;
-    */
-}
-
-/*
-#input-search :focus {
-    outline: 0 none;
-}
-
-#input-search:hover:before {
-    content: none;
-}
-
-#input-search {
-    margin-top: -40px !important;
-    margin-left: 175px;
-    width: 300px;
-}
-*/

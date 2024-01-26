@@ -62,150 +62,136 @@ permalink: /rejoignez-nous
 
 <!---poste-a-pouvoir-->
 <section id="poste-pouvoir" class="poste-a-pouvoir">
-    <div class="container">
+    <div class="container ">
         <div class="row">
-            <ul class="nav justify-content-center">
-            <div class="col-lg-12 text-center ps-0 pe-0">
-                <div class=" title-news  text-left title-section mt-5 mb-5" data-aos="fade-up" data-aos-delay="">
-                    Les postes à pourvoir
-                </div>
+            <div class="title-news col-12 text-center text-left title-section mt-5 mb-5" data-aos="fade-up" data-aos-delay="">
+                Les postes à pourvoir
+            </div>
 
-                <div class="row"> 
-                        <li class="nav-item offre-nav-item col-4 chefprojet" data-aos="fade-up" data-aos-delay="200">
-                            <a href="#chefprojet" class="nav-link offre-tabs-link active" data-toggle="tab">
-                                <div class="card act-tag">
-                                    <div class="title-card-1">Chef de <br>projet</div>
-                                    <img class="img-fluid poste_offer_img"
-                                        src="{{ site.baseurl }}/assets/img/page-rejoignez-nous/img1.jpg">
-                                </div>
-                            </a>
-                        </li>
+            <div class="offre-nav-item col-lg-3 col-12 mb-3 chefprojet" data-aos="fade-up" data-aos-delay="200">
+                <a href="#chefprojet" class="nav-link offre-tabs-link active" data-toggle="tab">
+                    <div class="card act-tag">
+                        <div class="title-card-1">Chef de <br>projet</div>
+                        <img class="img-fluid poste_offer_img"
+                            src="{{ site.baseurl }}/assets/img/page-rejoignez-nous/img1.jpg">
+                    </div>
+                </a>
+            </div>
 
-                      <div id="content">
-                    <div class="tab-content w-100">
-                        <div class="tab-pane fade show active " id="chefprojet">
-                            <div class="container  chef-projet mt-3 mb-3 pt-3 pb-5 pe-4 ps-4  " data-aos="fade-up"
-                                data-aos-delay="600">
-                                <div class="title-para-news text-left">CHEF DE PROJET</div>
-                                <hr>
-                                {% assign counter = 0 %}
-                                {% for offre in site.odt %}
-                                {% if offre.tdp == "cdp"  and offre.active == true %}
-                                <div class="container  mt-2 mb-5">
-                                    <div class="row d-flex">
-                                        <div class="color-gray p-0 col-md-3 text-left my-auto">
-                                            <b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
-                                        <div class="color-gray p-0 col-md-2 text-left  my-auto">
-                                            {{ offre.date | date: "%d/%m/%Y" }}</div>
-                                        <div class="color-gray p-0 col-md-1 text-left my-auto">{{ offre.tdc }}</div>
-                                        <div class="color-gray p-0 col-md-2 text-left my-auto">{{ offre.ldt }}</div>
-                                        <div class="color-gray p-0 col-md-4 text-center my-auto">
-                                            <span onclick='get_offre("{{ offre.url }}",this,event);'
-                                                class="card-link select_offre btn-float  w-100">
-                                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir l'offre</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                {% assign counter = counter | plus: 1 %}
-                                {% endif %}
-                                {% endfor %}
-                                {% if counter  == 0 %}
-                                <div class="color-gray p-0 col-12 text-center my-auto">
-                                    <b>Pas de poste à pourvoir pour l’instant.</b>
-                                </div>
-                                {% endif %}
-
-                            </div>
-                        </div>
-
-                        <li class="nav-item offre-nav-item col-4 chargetude" data-aos="fade-up" data-aos-delay="400">
-                            <a href="#chargetude" class="nav-link offre-tabs-link" data-toggle="tab">
-                                <div class="card act-tag">
-                                    <div class="title-card-1">Chargé/e<br> d'études</div>
-                                    <img class="img-fluid poste_offer_img"
-                                        src="{{ site.baseurl }}/assets/img/page-rejoignez-nous/img2.jpg">
-                                </div>
-
-                            </a>
-                        </li>
-
-                        <div class="tab-pane fade show active " id="chargetude">
-                            <div class="container chef-projet mt-3 mb-3 pt-1 pb-5">
-                                <div class="title-para-news text-left">CHARGÉ D'ÉTUDE</div>
-                                <hr>
-                                {% assign counterx = 0 %}
-                                {% for offre in site.odt %}
-                                {% if offre.tdp == "cde" and offre.active == true %}
-                                <div class="container  mt-2">
-                                    <div class="row d-flex">
-                                        <div class="color-gray p-0 col-md-3 text-left my-auto">
-                                            <b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
-                                        <div class="color-gray p-0 col-md-2 text-left  my-auto">
-                                            {{ offre.date | date: "%d/%m/%Y" }}</div>
-                                        <div class="color-gray p-0 col-md-1 text-left my-auto">{{ offre.tdc }}</div>
-                                        <div class="color-gray p-0 col-md-2 text-left my-auto">{{ offre.ldt }}</div>
-                                        <div class="color-gray p-0 col-md-4 text-center my-auto">
-                                            <span onclick='get_offre("{{ offre.url }}",this,event);'
-                                                class="card-link select_offre btn-float  w-100">
-                                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir l'offre</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                {% assign counterx = counterx | plus: 1 %}
-                                {% endif %}
-                                {% endfor %}
-                                {% if counterx  == 0 %}
-                                <div class="color-gray p-0 col-12 text-center my-auto">
-                                    <b>Pas de poste à pourvoir pour l’instant.</b>
-                                </div>
-                                {% endif %}
-                            </div>
-                        </div>
-
-                        <li class="nav-item offre-nav-item col-4" data-aos="fade-up" data-aos-delay="600">
-                            <a href="#devlogiciel" class="nav-link offre-tabs-link" data-toggle="tab">
-                                <div class="card act-tag">
-                                    <div class="title-card-1">Développeur/se <br> logiciel</div>
-                                    <img class="img-fluid poste_offer_img"
-                                        src="{{ site.baseurl }}/assets/img/page-rejoignez-nous/img3.jpg">
-                                </div>
-                            </a>
-                        </li>
-
-                        <div class="tab-pane fade show active " id="devlogiciel">
-                            <div class="container chef-projet mt-3 mb-3 pt-3 pb-5 pe-4 ps-4">
-                                <div class="title-para-news text-left">DEVELOPPEUR LOGICIEL</div>
-                                <hr>
-                                {% assign counterxx = 0 %}
-                                {% for offre in site.odt %}
-                                {% if offre.tdp == "dl" and offre.active == true %}
-                                <div class="container  mt-2">
-                                    <div class="row d-flex">
-                                        <div class="color-gray p-0 col-md-3 text-left my-auto">
-                                            <b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
-                                        <div class="color-gray p-0 col-md-2 text-left  my-auto">
-                                            {{ offre.date | date: "%d/%m/%Y" }}</div>
-                                        <div class="color-gray p-0 col-md-1 text-left my-auto">{{ offre.tdc }}</div>
-                                        <div class="color-gray p-0 col-md-2 text-left my-auto">{{ offre.ldt }}</div>
-                                        <div class="color-gray p-0 col-md-4 text-center my-auto">
-                                            <span onclick='get_offre("{{ offre.url }}", this, event);'
-                                                class="card-link select_offre btn-float w-100">
-                                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir l'offre</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                {% assign counterxx = counterxx | plus: 1 %}
-                                {% endif %}
-                                {% endfor %}
-                                {% if counterxx  == 0 %}
-                                <div class="color-gray p-0 col-12 text-center my-auto">
-                                    <b>Pas de poste à pourvoir pour l’instant.</b>
-                                </div>
-                                {% endif %}
-                            </div>
+            <div id="chefprojet" class="container ms-lg-3 col-lg-8 mb-3 col-12 chef-projet pb-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="title-para-news text-left">CHEF DE PROJET</div>
+                <hr>
+                {% assign counter = 0 %}
+                {% for offre in site.odt %}
+                {% if offre.tdp == "cdp"  and offre.active == true %}
+                <div class="container  mt-2 mb-5">
+                    <div class="row d-flex">
+                        <div class="color-gray p-0 col-md-3 text-left my-auto">
+                            <b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
+                        <div class="color-gray p-0 col-md-2 text-left  my-auto">
+                            {{ offre.date | date: "%d/%m/%Y" }}</div>
+                        <div class="color-gray p-0 col-md-1 text-left my-auto">{{ offre.tdc }}</div>
+                        <div class="color-gray p-0 col-md-2 text-left my-auto">{{ offre.ldt }}</div>
+                        <div class="color-gray p-0 col-md-4 text-center my-auto">
+                            <span onclick='get_offre("{{ offre.url }}",this,event);'
+                                class="card-link select_offre btn-float  w-100">
+                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir l'offre</span>
                         </div>
                     </div>
                 </div>
+                {% assign counter = counter | plus: 1 %}
+                {% endif %}
+                {% endfor %}
+                {% if counter  == 0 %}
+                <div class="color-gray p-0 col-12 text-center my-auto">
+                    <b>Pas de poste à pourvoir pour l’instant.</b>
+                </div>
+                {% endif %}
+            </div>
+        
+
+
+            <div class="offre-nav-item col-lg-3 mb-3 col-12 chargetude" data-aos="fade-up" data-aos-delay="200">
+                <a href="#chargetude" class="nav-link offre-tabs-link" data-toggle="tab">
+                    <div class="card act-tag">
+                        <div class="title-card-1">Chargé/e<br> d'études</div>
+                        <img class="img-fluid poste_offer_img"
+                            src="{{ site.baseurl }}/assets/img/page-rejoignez-nous/img2.jpg">
+                    </div>
+
+                </a>
+            </div>
+
+            <div id="chargetude" class="container ms-lg-3 col-lg-8 col-12 mb-3 chef-projet pb-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="title-para-news text-left">CHARGÉ D'ÉTUDE</div>
+                <hr>
+                {% assign counterx = 0 %}
+                {% for offre in site.odt %}
+                {% if offre.tdp == "cde" and offre.active == true %}
+                <div class="container  mt-2">
+                    <div class="row d-flex">
+                        <div class="color-gray p-0 col-md-3 text-left my-auto">
+                            <b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
+                        <div class="color-gray p-0 col-md-2 text-left  my-auto">
+                            {{ offre.date | date: "%d/%m/%Y" }}</div>
+                        <div class="color-gray p-0 col-md-1 text-left my-auto">{{ offre.tdc }}</div>
+                        <div class="color-gray p-0 col-md-2 text-left my-auto">{{ offre.ldt }}</div>
+                        <div class="color-gray p-0 col-md-4 text-center my-auto">
+                            <span onclick='get_offre("{{ offre.url }}",this,event);'
+                                class="card-link select_offre btn-float  w-100">
+                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir l'offre</span>
+                        </div>
+                    </div>
+                </div>
+                {% assign counterx = counterx | plus: 1 %}
+                {% endif %}
+                {% endfor %}
+                {% if counterx  == 0 %}
+                <div class="color-gray p-0 col-12 text-center my-auto">
+                    <b>Pas de poste à pourvoir pour l’instant.</b>
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="offre-nav-item col-lg-3 col-12 mb-3" data-aos="fade-up" data-aos-delay="200">
+                <a href="#devlogiciel" class="nav-link offre-tabs-link" data-toggle="tab">
+                    <div class="card act-tag">
+                        <div class="title-card-1">Développeur/se <br> logiciel</div>
+                        <img class="img-fluid poste_offer_img"
+                            src="{{ site.baseurl }}/assets/img/page-rejoignez-nous/img3.jpg">
+                    </div>
+                </a>
+            </div>
+
+            <div id="devlogiciel" class="container ms-lg-3 col-lg-8 col-12 mb-3 chef-projet pb-2" data-aos="fade-up" data-aos-delay="200">
+                <div class="title-para-news text-left">DEVELOPPEUR LOGICIEL</div>
+                <hr>
+                {% assign counterxx = 0 %}
+                {% for offre in site.odt %}
+                {% if offre.tdp == "dl" and offre.active == true %}
+                <div class="container  mt-2">
+                    <div class="row d-flex">
+                        <div class="color-gray p-0 col-md-3 text-left my-auto">
+                            <b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
+                        <div class="color-gray p-0 col-md-2 text-left  my-auto">
+                            {{ offre.date | date: "%d/%m/%Y" }}</div>
+                        <div class="color-gray p-0 col-md-1 text-left my-auto">{{ offre.tdc }}</div>
+                        <div class="color-gray p-0 col-md-2 text-left my-auto">{{ offre.ldt }}</div>
+                        <div class="color-gray p-0 col-md-4 text-center my-auto">
+                            <span onclick='get_offre("{{ offre.url }}", this, event);'
+                                class="card-link select_offre btn-float w-100">
+                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir l'offre</span>
+                        </div>
+                    </div>
+                </div>
+                {% assign counterxx = counterxx | plus: 1 %}
+                {% endif %}
+                {% endfor %}
+                {% if counterxx  == 0 %}
+                <div class="color-gray p-0 col-12 text-center my-auto">
+                    <b>Pas de poste à pourvoir pour l’instant.</b>
+                </div>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -213,7 +199,7 @@ permalink: /rejoignez-nous
 
 <!---poste-selectionne---->
 <section id="offre_selectionne" class="poste-selectionne mb-5 pt-5 pb-5">
-    <div class="container-fluid ps-0 pe-0 ">
+    <div class="container ps-0 pe-0 ">
         <div class="row">
             <div class="col-md-12 col-xl-6 col-lg-6 slider-news-caption white-bg pt-5 pb-5">
                 <div class=" title-news text-left title-section" data-aos="fade-up" data-aos-delay="">Poste sélectionné
