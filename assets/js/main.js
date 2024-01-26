@@ -330,21 +330,6 @@ $(document).ready(function() {
     });
 });
 
-function rech_releaseEvents(el) {
-
-    $id = $(el).attr('id');
-    console.log($id);
-    $('.bg-circle').removeClass('image-active');
-    $('#bg-circle-' + $id).addClass("image-active");
-    $(".rech-check").prop("checked", false);
-    $("#check0" + $id).prop("checked", true);
-
-    $(".tab-pane").removeClass("active show");
-    $($(el).attr('href')).addClass("active show");
-
-}
-
-
 $(document).ready(function() {
 
 
@@ -389,10 +374,10 @@ $(document).ready(function() {
 
 
             Swal.fire({
-                title: 'lien copi&#233;',
+                title: 'Lien copié dans le presse-papier',
                 type: 'success',
                 showConfirmButton: false,
-                width: 350,
+                width: 600,
                 timer: 1500
             })
 

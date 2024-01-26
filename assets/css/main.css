@@ -2,6 +2,7 @@
 @import url('/assets/css/carousel.css');
 @import url('/assets/css/footer.css');
 @import url('/assets/css/navbar.css');
+@import url('/assets/css/pills.css');
 
     /*****************************************
     ******************************************
@@ -1480,11 +1481,6 @@
         height: 76px;
     }
 
-
-    .image-active {
-        background-color: #f76262 !important;
-    }
-
     .realisations-recherche .tab-content>.active {
         background: #fff;
         display: block;
@@ -1499,12 +1495,17 @@
         border: none;
     }
 
-    .realisations-recherche .nav.nav-tabs .nav-item>.row {
+    .realisations-recherche .nav.nav-tabs li {
         border-bottom: 1px solid#ddd;
         margin-bottom: 5px;
     }
 
-    .realisations-recherche .nav.nav-tabs .nav-item:first-child>.row {
+    .realisations-recherche .nav-link.active {
+        background: 0 0;
+    }
+
+    .realisations-recherche .nav.nav-tabs li:last-child,
+    .realisations-recherche .nav.nav-tabs li:first-child {
         border-bottom: 0;
         margin-bottom: 0;
     }
@@ -2173,7 +2174,6 @@
 
     .chef-projet {
         background-color: #eaeaea;
-        margin-top: 80px;
     }
     
     .btn-float {
