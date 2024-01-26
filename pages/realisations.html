@@ -24,19 +24,18 @@ permalink: /nos_realisations
                 <a href="{{ site.baseurl }}/realisations" class="item-1">Nos réalisations</a>
             </li>
         </ol>
-
     </div>
 </div>
 
 <!-- realisations details -->
-<section class="realisations-recherche mt-5 pt-5 mb-3 pb-3">
+<section class="container realisations-recherche mt-5 pt-5 mb-3 pb-3">
     <div class="row">
-        <div class="col-lg-5 col-md-5 col-sm-12 col-12 ps-0 pe-0 ">
-            <ul id="ul-rech-real" class="nav nav-tabs">
+        <div class="col-lg-6 col-sm-12 ps-0 pe-0">
+            <ul id="ul-rech-real" class="nav nav-tabs" role="tablist">
                 <li class="nav-item">
                     <div class="row">
                         <div
-                            class=" title-news  title-section mt-0 mb-5 "
+                            class="title-news  title-section mt-0 mb-5 "
                             data-aos="fade-up"
                             data-aos-delay="300">
                             Rechercher
@@ -47,316 +46,110 @@ permalink: /nos_realisations
                     class="nav-item"
                     data-aos="fade-right"
                     data-aos-delay="400">
-                    <div class="row">
-                        <div class="col-11 ps-0 pe-0">
-                            <a
-                                id="1"
-                                class="nav-link link-rech-real "
-                                data-toggle="tab"
-                                href="#mission"
-                                onclick="rech_releaseEvents(this);">
-                                <div class="row">
-                                    <div class=" col-lg-3 col-md-4 col-sm-3 col-3 ps-0 pe-0 ">
-                                        <!-- style="padding-left:12px;"
-                                    <div class=" col-lg-3 col-md-4 col-sm-3 col-3 ps-0 pe-0 ">
-                                        
-                                        -->
-                                        <div id="bg-circle-1" class="bg-circle image-active ">
-                                            <img
-                                                class="image-rech-real"
-                                                src="{{ site.baseurl }}/assets/img/page-realisations/icon1.png"
-                                                height="27">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-9 col-md-8 col-sm-9 col-9 ps-0 pe-0 text-uppercase justify-content-center align-self-center">
-                                        MISSION AMO GRANDS PROJECTS
-                                    </div>
-                                </div>
-                            </a>
+                    <button
+                        id="1"
+                        class="nav-link link-rech-real active"
+                        data-bs-toggle="tab"
+                        data-bs-target="#mission"
+                        role="tab">
+                        <div class="d-flex">
+                            <div class="bg-circle image-active ">
+                                <img
+                                    class="image-rech-real"
+                                    src="{{ site.baseurl }}/assets/img/page-realisations/icon1.png"
+                                    height="27">
+                            </div>
+                            <div class="flex-grow-1 text-uppercase justify-content-center align-self-center">MISSION AMO GRANDS PROJECTS</div>
                         </div>
-                        <div class="col-1 ps-0 pe-0 text-center position-relative">
-                            <!-- <input type="checkbox" class="form-check-input rech-check" name="check-it" checked id="check01"> -->
-                            <label class="containerLabel">
-                                <input
-                                    type="checkbox"
-                                    checked="checked"
-                                    class="form-check-input rech-check"
-                                    name="check-it"
-                                    checked
-                                    id="check01">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
+                    </button>
                 </li>
 
                 <li
                     class="nav-item"
                     data-aos="fade-right"
                     data-aos-delay="400">
-                    <div class="row">
-                        <div class="col-11 ps-0 pe-0">
-                            <a
-                                id="2"
-                                class="nav-link link-rech-real"
-                                data-toggle="tab"
-                                href="#etude"
-                                onclick="rech_releaseEvents(this);">
-                                <div class="row">
-                                    <div class=" col-lg-3 col-md-4 col-sm-3 col-3 ps-0 pe-0">
-                                        <div id="bg-circle-2" class="bg-circle ">
-                                            <img
-                                                class="image-rech-real"
-                                                src="{{ site.baseurl }}/assets/img/page-realisations/icon2.png"
-                                                height="27">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-9 col-md-8 col-sm-9 col-9 ps-0 pe-0 text-uppercase justify-content-center align-self-center">
-                                        études</div>
-                                </div>
-                            </a>
+                    <button
+                        id="2"
+                        class="nav-link link-rech-real"
+                        data-bs-toggle="tab"
+                        data-bs-target="#etude"
+                        role="tab">
+                        <div class="d-flex">
+                            <div class="bg-circle">
+                                <img
+                                    class="image-rech-real"
+                                    src="{{ site.baseurl }}/assets/img/page-realisations/icon2.png"
+                                    height="27">
+                            </div>
+                            <div class="flex-grow-1 ps-0 pe-0 text-uppercase justify-content-center align-self-center">Etudes</div>
                         </div>
-
-                        <div class="col-1 ps-0 pe-0 text-center position-relative">
-                            <label class="containerLabel">
-                                <input
-                                    type="checkbox"
-                                    class="form-check-input rech-check"
-                                    name="check-it"
-                                    id="check02">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
-                </li>
-
-                <li
-                    class="nav-item"
-                    data-aos="fade-up"
-                    data-aos-delay="400">
-                    <div class="row">
-                        <div class="col-11 ps-0 pe-0">
-                            <a
-                                id="3"
-                                class="nav-link link-rech-real"
-                                data-toggle="tab"
-                                href="#expert"
-                                onclick="rech_releaseEvents(this);">
-                                <div class="row">
-                                    <div class=" col-lg-3 col-md-4 col-sm-3 col-3 ps-0 pe-0">
-                                        <div id="bg-circle-3" class="bg-circle  ">
-                                            <img
-                                                class="image-rech-real"
-                                                src="{{ site.baseurl }}/assets/img/page-realisations/icon3.png"
-                                                height="27">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-9 col-md-8 col-sm-9 col-9 ps-0 pe-0 text-uppercase justify-content-center align-self-center">
-                                        EXPERTISE / CONSEIL</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-1 ps-0 pe-0 text-center position-relative">
-                            <label class="containerLabel">
-                                <input
-                                    type="checkbox"
-                                    class="form-check-input rech-check"
-                                    name="check-it"
-                                    id="check03">
-                                <span class="checkmark"></span>
-                            </label>
-                        </div>
-                    </div>
+                    </button>
                 </li>
 
                 <li
                     class="nav-item"
                     data-aos="fade-right"
                     data-aos-delay="400">
-                    <div class="row">
-                        <div class="col-11 ps-0 pe-0">
-                            <a
-                                id="4"
-                                class="nav-link link-rech-real"
-                                data-toggle="tab"
-                                href="#logiciel"
-                                onclick="rech_releaseEvents(this);">
-                                <div class="row">
-                                    <div class=" col-lg-3 col-md-4 col-sm-3 col-3 ps-0 pe-0">
-                                        <div id="bg-circle-4" class="bg-circle">
-                                            <img
-                                                class="image-rech-real"
-                                                src="{{ site.baseurl }}/assets/img/page-realisations/icon4.png"
-                                                height="7">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-9 col-md-8 col-sm-9 col-9 ps-0 pe-0 text-uppercase justify-content-center align-self-center">
-                                        Vente Logiciel</div>
-                                </div>
-                            </a>
+                    <button
+                        id="3"
+                        class="nav-link link-rech-real"
+                        data-bs-toggle="tab"
+                        data-bs-target="#expert"
+                        role="tab">
+                        <div class="d-flex">
+                            <div class="bg-circle">
+                                <img
+                                    class="image-rech-real"
+                                    src="{{ site.baseurl }}/assets/img/page-realisations/icon3.png"
+                                    height="27">
+                            </div>
+                            <div class="flex-grow-1 ps-0 pe-0 text-uppercase justify-content-center align-self-center">EXPERTISE / CONSEIL</div>
                         </div>
-                        <div class="col-1 ps-0 pe-0 text-center position-relative">
-                            <label class="containerLabel">
-                                <input
-                                    type="checkbox"
-                                    class="form-check-input rech-check"
-                                    name="check-it"
-                                    id="check04">
-                                <span class="checkmark"></span>
-                            </label>
+                    </button>
+                </li>
+
+                <li
+                    class="nav-item"
+                    data-aos="fade-right"
+                    data-aos-delay="400">
+                    <button
+                        id="4"
+                        class="nav-link link-rech-real"
+                        data-bs-toggle="tab"
+                        data-bs-target="#logiciel"
+                        role="tab">
+                        <div class="d-flex">
+                            <div class="bg-circle">
+                                <img
+                                    class="image-rech-real"
+                                    src="{{ site.baseurl }}/assets/img/page-realisations/icon4.png"
+                                    height="27">
+                            </div>
+                            <div class="flex-grow-1 ps-0 pe-0 text-uppercase justify-content-center align-self-center">Vente Logiciel</div>
                         </div>
-                    </div>
+                    </button>
                 </li>
             </ul>
         </div>
-        <div class="col-lg-6 col-md-3  col-sm-12 col-sm-7 ps-0 pe-0">
-            <div class="tab-content">
-                <div
-                    class="tab-pane active"
-                    id="mission"
-                    role="tabpanel">
-                    <div class="sv-tab-panel">
-                        <div class="gmap"
-                            data-gmap-opts='{
-                                "center": { "lat": 27.7928424, "lng": 1.527656 },
-                                "zoom": 4,
-                                "disableDefaultUI": true,
-                                "markers": [
-                                    {%- assign real_missions = site.nos_realisations 
-                                        | where_exp: "real", "real.type-real == 'mission' and real.lat and real.long" -%}
-                                    {%- for real in real_missions %}
-                                         {% capture infoWindowContent -%}
-                                            <div class="gallery-real text-left p-0">
-                                                <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
-                                                <div class="col-12 center detail_infowindo">
-                                                    <div class="col-12 title_infowindow">AMO</div>
-                                                    <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
-                                                    <div class="col-12 adresse_infowindow">{{ real.region }}</div>
-                                                    <div class="col-12 sav_plus_infowindow">
-                                                        <a href="{{ real.url | prepend: site.baseurl }}" class="btn-color-infowindow">En savoir plus</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        {%- endcapture %}
-                                        { 
-                                            "lat": {{ real.lat }}, 
-                                            "lng": {{ real.long }},
-                                            "infoWindowContent": {{ infoWindowContent | jsonify }}
-                                        }
-                                        {%- if forloop.last == false -%}
-                                            ,
-                                        {%- endif -%}
-                                    {%- endfor -%}
-                                ]
-                            }'
-                            >
-
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="tab-pane"
-                    id="etude"
-                    role="tabpanel">
-                    <div class="sv-tab-panel">
-                        <div class="gmap"
-                            data-gmap-opts='{
-                            "center": { "lat": 45.787119, "lng": 3.0777066 },
-                            "zoom": 4,
-                            "disableDefaultUI": true,
-                            "markers": [
-                                {%- assign real_etudes = site.nos_realisations 
-                                    | where_exp: "real", "real.type-real == 'etudex' and real.lat and real.long" -%}
-                                {%- for real in real_etudes %}
-                                     {% capture infoWindowContent -%}
-                                        <div class="gallery-real text-left p-0">
-                                            <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
-                                            <div class="col-12 centerx detail_infowindo">
-                                                <div class="col-12 title_infowindow">AMO</div>
-                                                <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
-                                                <div class="col-12 adresse_infowindow">{{ real.region }}</div>
-                                                <div class="col-12 sav_plus_infowindow">
-                                                    <a href="{{ real.url | prepend: site.baseurl }}" class="btn-color-infowindow">En savoir plus</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    {%- endcapture %}
-                                    { 
-                                        "lat": {{ real.lat }}, 
-                                        "lng": {{ real.long }},
-                                        "infoWindowContent": {{ infoWindowContent | jsonify }}
-                                    }
-                                    {%- if forloop.last == false -%}
-                                        ,
-                                    {%- endif -%}
-                                {%- endfor -%}
-                            ]
-                        }'>
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="tab-pane"
-                    id="expert"
-                    role="tabpanel">
-                    <div class="sv-tab-panel">
-                        <div class="gmap"
-                            data-gmap-opts='{
-                            "center": { "lat": 29.3331967, "lng": 1.9959572 },
-                            "zoom": 4,
-                            "disableDefaultUI": true,
-                            "markers": [
-                                {%- assign real_expert = site.nos_realisations 
-                                    | where_exp: "real", "real.type-real == 'expert' and real.lat and real.long" -%}
-                                {%- for real in real_expert %}
-                                     {% capture infoWindowContent -%}
-                                        <div class="gallery-real text-left p-0">
-                                            <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
-                                            <div class="col-12 centerx detail_infowindo">
-                                                <div class="col-12 title_infowindow">AMO</div>
-                                                <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
-                                                <div class="col-12 adresse_infowindow">{{ real.region }}</div>
-                                                <div class="col-12 sav_plus_infowindow">
-                                                    <a href="{{ real.url | prepend: site.baseurl }}" class="btn-color-infowindow">En savoir plus</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    {%- endcapture %}
-                                    { 
-                                        "lat": {{ real.lat }}, 
-                                        "lng": {{ real.long }},
-                                        "infoWindowContent": {{ infoWindowContent | jsonify }}
-                                    }
-                                    {%- if forloop.last == false -%}
-                                        ,
-                                    {%- endif -%}
-                                {%- endfor -%}
-                            ]
-                        }'
-                        >
-                        </div>
-
-                    </div>
-                </div>
-                <div
-                    class="tab-pane"
-                    id="logiciel"
-                    role="tabpanel">
-                    <div class="sv-tab-panel">
-                        <div class="gmap"
+        <div class="tab-content col-lg-6 col-sm-12 ps-0 pe-0">
+            <div
+                class="tab-pane show active"
+                id="mission"
+                role="tabpanel">
+                <div class="sv-tab-panel">
+                    <div class="gmap"
                         data-gmap-opts='{
-                            "center": { "lat": 48.6861037, "lng": 2.3998418 },
+                            "center": { "lat": 27.7928424, "lng": 1.527656 },
                             "zoom": 4,
                             "disableDefaultUI": true,
                             "markers": [
-                                {%- assign real_vente = site.nos_realisations 
-                                    | where_exp: "real", "real.type-real == 'vente' and real.lat and real.long" -%}
-                                {%- for real in real_vente %}
-                                     {% capture infoWindowContent -%}
+                                {%- assign real_missions = site.nos_realisations 
+                                    | where_exp: "real", "real.type-real == 'mission' and real.lat and real.long" -%}
+                                {%- for real in real_missions %}
+                                        {% capture infoWindowContent -%}
                                         <div class="gallery-real text-left p-0">
                                             <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
-                                            <div class="col-12 centerx detail_infowindo">
+                                            <div class="col-12 center detail_infowindo">
                                                 <div class="col-12 title_infowindow">AMO</div>
                                                 <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
                                                 <div class="col-12 adresse_infowindow">{{ real.region }}</div>
@@ -378,8 +171,134 @@ permalink: /nos_realisations
                             ]
                         }'
                         >
-                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <div
+                class="tab-pane"
+                id="etude"
+                role="tabpanel">
+                <div class="sv-tab-panel">
+                    <div class="gmap"
+                        data-gmap-opts='{
+                        "center": { "lat": 45.787119, "lng": 3.0777066 },
+                        "zoom": 4,
+                        "disableDefaultUI": true,
+                        "markers": [
+                            {%- assign real_etudes = site.nos_realisations 
+                                | where_exp: "real", "real.type-real == 'etudex' and real.lat and real.long" -%}
+                            {%- for real in real_etudes %}
+                                    {% capture infoWindowContent -%}
+                                    <div class="gallery-real text-left p-0">
+                                        <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
+                                        <div class="col-12 centerx detail_infowindo">
+                                            <div class="col-12 title_infowindow">AMO</div>
+                                            <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
+                                            <div class="col-12 adresse_infowindow">{{ real.region }}</div>
+                                            <div class="col-12 sav_plus_infowindow">
+                                                <a href="{{ real.url | prepend: site.baseurl }}" class="btn-color-infowindow">En savoir plus</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {%- endcapture %}
+                                { 
+                                    "lat": {{ real.lat }}, 
+                                    "lng": {{ real.long }},
+                                    "infoWindowContent": {{ infoWindowContent | jsonify }}
+                                }
+                                {%- if forloop.last == false -%}
+                                    ,
+                                {%- endif -%}
+                            {%- endfor -%}
+                        ]
+                    }'>
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="tab-pane"
+                id="expert"
+                role="tabpanel">
+                <div class="sv-tab-panel">
+                    <div class="gmap"
+                        data-gmap-opts='{
+                        "center": { "lat": 29.3331967, "lng": 1.9959572 },
+                        "zoom": 4,
+                        "disableDefaultUI": true,
+                        "markers": [
+                            {%- assign real_expert = site.nos_realisations 
+                                | where_exp: "real", "real.type-real == 'expert' and real.lat and real.long" -%}
+                            {%- for real in real_expert %}
+                                    {% capture infoWindowContent -%}
+                                    <div class="gallery-real text-left p-0">
+                                        <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
+                                        <div class="col-12 centerx detail_infowindo">
+                                            <div class="col-12 title_infowindow">AMO</div>
+                                            <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
+                                            <div class="col-12 adresse_infowindow">{{ real.region }}</div>
+                                            <div class="col-12 sav_plus_infowindow">
+                                                <a href="{{ real.url | prepend: site.baseurl }}" class="btn-color-infowindow">En savoir plus</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {%- endcapture %}
+                                { 
+                                    "lat": {{ real.lat }}, 
+                                    "lng": {{ real.long }},
+                                    "infoWindowContent": {{ infoWindowContent | jsonify }}
+                                }
+                                {%- if forloop.last == false -%}
+                                    ,
+                                {%- endif -%}
+                            {%- endfor -%}
+                        ]
+                    }'
+                    >
+                    </div>
+
+                </div>
+            </div>
+            <div
+                class="tab-pane"
+                id="logiciel"
+                role="tabpanel">
+                <div class="sv-tab-panel">
+                    <div class="gmap" 
+                        data-gmap-opts='{
+                        "center": { "lat": 48.6861037, "lng": 2.3998418 },
+                        "zoom": 4,
+                        "disableDefaultUI": true,
+                        "markers": [
+                            {%- assign real_vente = site.nos_realisations 
+                                | where_exp: "real", "real.type-real == 'vente' and real.lat and real.long" -%}
+                            {%- for real in real_vente %}
+                                    {% capture infoWindowContent -%}
+                                    <div class="gallery-real text-left p-0">
+                                        <img class="ico_infowindow img-fluid" src="{{ real.photo1 | prepend: site.baseurl  }}" />
+                                        <div class="col-12 centerx detail_infowindo">
+                                            <div class="col-12 title_infowindow">AMO</div>
+                                            <div class="col-12 projet_infowindow">{{ real.title | escape }}</div>                                                  
+                                            <div class="col-12 adresse_infowindow">{{ real.region }}</div>
+                                            <div class="col-12 sav_plus_infowindow">
+                                                <a href="{{ real.url | prepend: site.baseurl }}" class="btn-color-infowindow">En savoir plus</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                {%- endcapture %}
+                                { 
+                                    "lat": {{ real.lat }}, 
+                                    "lng": {{ real.long }},
+                                    "infoWindowContent": {{ infoWindowContent | jsonify }}
+                                }
+                                {%- if forloop.last == false -%}
+                                    ,
+                                {%- endif -%}
+                            {%- endfor -%}
+                        ]
+                    }'
+                    >
                     </div>
                 </div>
             </div>

@@ -1,4 +1,7 @@
 :root {
     --primary-color: #942626;
     --secondary-color: #8c8c8c;
+    --tab-font-color: #9d9e9f;
+    --tab-background-color: #eaeaea;
+    --circle-active-color: #f76262;
 }

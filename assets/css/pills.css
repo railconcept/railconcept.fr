@@ -1,0 +1,8 @@
+.nav-pills {
+    --bs-nav-pills-link-active-color: var(--primary-color);
+    --bs-nav-pills-link-active-bg: var(--tab-background-color);
+}
+
+.nav-link.active .bg-circle {
+    background-color: var(--circle-active-color);
+}
