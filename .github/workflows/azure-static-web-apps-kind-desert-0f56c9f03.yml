@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: true
 
@@ -27,7 +27,7 @@ jobs:
         with:
           # bundle install really does take a long time with jekyll 4.X
           bundler-cache: true
-          ruby-version: '3.1'
+          ruby-version: '3.3'
 
       - name: Jekyll build
         run: JEKYLL_ENV=production bundle exec jekyll build
