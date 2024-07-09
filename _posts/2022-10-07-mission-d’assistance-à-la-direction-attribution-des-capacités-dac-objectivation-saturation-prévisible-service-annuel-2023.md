@@ -685,5 +685,5 @@ news:
 
     <!--EndFragment-->
 news_photo:
-  photo_news1: /assets/img/uploads/carte-des-lignes-etudiees-qpe4.png
+  photo_news1: /assets/img/uploads/carte-des-lignes-etudiees-qpe4.webp
 ---

@@ -28,5 +28,5 @@ context: >-
      faisabilité de chaque aménagement identifié, incluant les études de tracés, l’étude au droit des
      ouvrages d’art, les aménagements en gares, l’évaluation financière réalisée avec LEA, l’analyse des
      procédures administratives et règlementaires et la planification des travaux
-photo1: /assets/img/uploads/sag.png
+photo1: /assets/img/uploads/sag.webp
 ---

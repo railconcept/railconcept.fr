@@ -27,5 +27,5 @@ real: >-
   Réseau relatifs aux phases Conception (APD et EXE) et Réalisation, et une
   seconde étape consacrée à des visites ciblées sur le terrain et par
   échantillonnage de différents chantiers élémentaires.
-photo1: /assets/img/uploads/LGV Bretagne Pays de Loire.png
+photo1: /assets/img/uploads/LGV Bretagne Pays de Loire.webp
 ---

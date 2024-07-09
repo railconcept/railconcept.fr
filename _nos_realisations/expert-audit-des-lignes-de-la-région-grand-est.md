@@ -53,6 +53,6 @@ real_eng: >-
   proposition de scénarios d’offre, le développement du modèle de trafic
   (recalage du modèle de trafic, développement de nouvelles fonctionnalités de
   l’outil, pour le rendre plus facile et plus rapide d’utilisation).
-photo1: /assets/img/uploads/Grand Est 1.png
-photo2: /assets/img/uploads/Grand Est 2.png
+photo1: /assets/img/uploads/Grand Est 1.webp
+photo2: /assets/img/uploads/Grand Est 2.webp
 ---

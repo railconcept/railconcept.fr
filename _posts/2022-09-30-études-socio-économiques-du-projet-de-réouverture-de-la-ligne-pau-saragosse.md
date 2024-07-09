@@ -688,5 +688,5 @@ news:
 
     <!--EndFragment-->
 news_photo:
-  photo_news1: /assets/img/uploads/pau-canfranc.png
+  photo_news1: /assets/img/uploads/pau-canfranc.webp
 ---

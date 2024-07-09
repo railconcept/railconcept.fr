@@ -51,5 +51,5 @@ real_eng: >-
   2016, la construction de scénarios prévoyant, selon les types d’interception,
   une adaptation du plan de transport ferroviaire ainsi que les substitutions
   routières optimales et la déclinaison des scénarios type sur le SA 2019.
-photo1: /assets/img/uploads/Paris Saint-Lazarre.png
+photo1: /assets/img/uploads/Paris Saint-Lazarre.webp
 ---

@@ -56,5 +56,5 @@ real: >-
   * Mettre en lumière des éléments non soulevés lors des études préliminaire et proposer des solutions pour répondre aux contraintes soulevées. 
 
   * Proposer des solutions techniques optimisées, compatibles avec les éléments sous MOA SNCF, tout en s’inscrivant dans des référentiels de conception urbains.
-photo1: /assets/img/uploads/tgo.jpg
+photo1: /assets/img/uploads/tgo.webp
 ---

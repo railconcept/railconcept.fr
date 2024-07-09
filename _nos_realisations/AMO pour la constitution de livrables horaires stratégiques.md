@@ -39,5 +39,5 @@ real: >-
 
 
   Nous avons mis en place, tout au long de cette étude des contrôles qualité permettant de valider les réalisations et la cohérence globale des livrables
-photo1: /assets/img/uploads/amo-viriato.png
+photo1: /assets/img/uploads/amo-viriato.webp
 ---

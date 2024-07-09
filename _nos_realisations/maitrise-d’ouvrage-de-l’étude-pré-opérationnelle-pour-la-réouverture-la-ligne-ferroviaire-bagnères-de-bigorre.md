@@ -26,5 +26,5 @@ text1: "Le chemin de fer reliant Tarbes à Bagnères de Bigorre a été mis en
   terme, sous réserve d’une révision du schéma régional de mobilité, ainsi que
   les évolutions techniques et juridiques, la réflexion quant aux voyageurs
   pourra être relancée."
-photo1: /assets/img/uploads/gare_de_bagnères-de-bigorre_-hautes-pyrénées-_1.jpg
+photo1: /assets/img/uploads/gare_de_bagnères-de-bigorre_-hautes-pyrénées-_1.webp
 ---
