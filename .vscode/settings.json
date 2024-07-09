@@ -11,6 +11,7 @@
     "html.format.wrapAttributes": "aligned-multiple",
     "html.format.wrapLineLength": 240,
     "html.format.enable": false,
+
     "prettier.htmlWhitespaceSensitivity": "strict",
     "prettier.printWidth": 160,
     "prettier.quoteProps": "consistent",
@@ -18,29 +19,60 @@
     "prettier.bracketSameLine": true,
 
     "liquid.format.rules": {
+        "preset": "recommended",
+        "endNewline": true,
+        "style": {
+            "commentIndent": true,
+            "commentNewline": true
+        },
+
         // indentation level, defaults to the vscode tabSize
         "indentSize": 4,
         "wrap": 0,
+        "script": {
+            "commentNewline": true,
+            "commentIndent": true
+        },
         "liquid": {
-          "commentIndent": true,
+            "commentNewline": true,
+            "commentIndent": true
         },
         "markup": {
-          "commentIndent": true,
+            "commentNewline": true,
+            "commentIndent": true
         }
     },
 
-    "[liquid]": {
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+
+    "[css]": {
         "editor.defaultFormatter": "sissel.shopify-liquid",
+        "editor.formatOnSave": false
+    },
+
+    "[liquid]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
     },
 
     "[liquid-css]": {
         "editor.defaultFormatter": "sissel.shopify-liquid",
-        "editor.formatOnSave": false
+        "editor.formatOnSave": true
     },
 
     "[liquid-javascript]": {
-        "editor.defaultFormatter": "sissel.shopify-liquid",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
     },
 
@@ -48,7 +80,7 @@
         "*.html": "liquid",
         "*.md": "liquid",
         "*.js": "liquid-javascript",
-        "*.css": "css"
+        "*.css": "liquid-css"
     },
     "workbench.iconTheme": "vscode-icons",
     "editor.suggest.showIcons": true,
@@ -56,13 +88,16 @@
         {
             "icon": "js",
             "extensions": ["js"]
-        }, {
+        },
+        {
             "icon": "html",
             "extensions": ["html"]
-        }, {
+        },
+        {
             "icon": "markdown",
             "extensions": ["md"]
-        }, {
+        },
+        {
             "icon": "css",
             "extensions": ["css"]
         }

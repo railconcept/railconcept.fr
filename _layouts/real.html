@@ -21,10 +21,8 @@ layout: realisation
     <div class="container">
         <div class="col-md-12">
             <div class="title-section" data-aos="fade-up" data-aos-delay="400">
-                {% if page.type-real == "mission" %} MISSION AMO GRAND PROJET {% endif %} 
-                {% if page.type-real == "etudex" %} ÉTUDES {% endif %} 
-                {% if page.type-real == "expert" %} EXPERTISE/CONSEIL {% endif %} 
-                {% if page.type-real == "vente" %} VENTE LOGICIEL {% endif %}
+                {% if page.type-real == "mission" %} MISSION AMO GRAND PROJET {% endif %} {% if page.type-real == "etudex" %} ÉTUDES {% endif %} {% if
+                page.type-real == "expert" %} EXPERTISE/CONSEIL {% endif %} {% if page.type-real == "vente" %} VENTE LOGICIEL {% endif %}
             </div>
             <div class="title-section-sub mb-2" data-aos="fade-up" data-aos-delay="400">{{page.title}}</div>
             <div class="row">
@@ -65,40 +63,38 @@ layout: realisation
             </div>
         </div>
 
-        <!-- have to put this here because containers otherwise it would be after </section> --> 
+        <!-- have to put this here because containers otherwise it would be after </section> -->
         <hr />
-
     </div>
 </section>
 
 <!---contexte-->
 
-{% assign pageContextContent = page.context | markdownify | strip_html | strip  %}
-{% if pageContextContent != ""  %}
-    <section class="contexte mt-100 pt-5 pb-5">
-        <div class="container">
-            <div class="col-md-12">
-                <div class="row">
-                    <div class="col-md-8" data-aos="fade-right" data-aos="fade-up" data-aos-delay="">
-                        <div class="title-section">Contexte</div>
-                        <div class="paragraphe-etudes mt-5" markdown="1">
-                            <p>{{page.context | markdownify }}</p>
-                        </div>
+{% assign pageContextContent = page.context | markdownify | strip_html | strip %} {% if pageContextContent != "" %}
+<section class="contexte mt-100 pt-5 pb-5">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-8" data-aos="fade-right" data-aos="fade-up" data-aos-delay="">
+                    <div class="title-section">Contexte</div>
+                    <div class="paragraphe-etudes mt-5" markdown="1">
+                        <p>{{page.context | markdownify }}</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 {% endif %}
 
 <div class="container-fluid-etude pt-5 pb-5 mt-5 mb-5">
     <div class="row">
         {% if page.lat != "" and page.long != "" %}
-            <div class="col-lg-6 col-md-12 col-sm-12 ps-0 pe-0 etude-container-img pb-5" data-aos="fade-right" data-aos-delay="">
-                <div
-                    style="height: 600px;"
-                    class="gmap"
-                    data-gmap-opts='{
+        <div class="col-lg-6 col-md-12 col-sm-12 ps-0 pe-0 etude-container-img pb-5" data-aos="fade-right" data-aos-delay="">
+            <div
+                style="height: 600px"
+                class="gmap"
+                data-gmap-opts='{
                         "center": { "lat": {{ page.lat }}, "lng": {{ page.long }} },
                         "zoom": 12,
                         "disableDefaultUI": true,
@@ -109,40 +105,35 @@ layout: realisation
                             }
                         ]
                     }'>
-                </div>
             </div>
-        {% endif %}
+        </div>
+        {% endif %} {% assign pageRealContent = page.real | markdownify | strip_html | strip %} {% if pageRealContent != "" %}
+        <div id="mission-map-desc" class="col-lg-6 col-md-12 col-sm-12 ps-0 etude-container-right" data-aos="fade-left" data-aos-delay="300">
+            <div class="card-etude width">
+                <div class="title-card-etude ps-0">prestation réalisée</div>
 
-        {% assign pageRealContent = page.real | markdownify | strip_html | strip  %}
-        
-        {% if pageRealContent != ""  %}
-            <div id="mission-map-desc" class="col-lg-6 col-md-12 col-sm-12 ps-0 etude-container-right" data-aos="fade-left" data-aos-delay="300">
-                <div class="card-etude width">
-                    <div class="title-card-etude ps-0">prestation réalisée</div>
-                    
-                    <div class="liste-card-etude para-white p-0" markdown="1">
-                        <!-- Réalisation -->
-                        <p>{{page.real | markdownify}}</p>
-                    </div>
+                <div class="liste-card-etude para-white p-0" markdown="1">
+                    <!-- Réalisation -->
+                    <p>{{page.real | markdownify}}</p>
                 </div>
             </div>
+        </div>
         {% endif %}
     </div>
 </div>
 
-{% include contact.html %} 
-{% include footer.html %}
+{% include contact.html %} {% include footer.html %}
 
 <script>
-    $(document).ready(function() {
-        $('#carousel-control-prev-1').click(function(e) {
+    $(document).ready(function () {
+        $("#carousel-control-prev-1").click(function (e) {
             e.preventDefault();
-            $('#main-sliderx').carousel('prev');
-            });
-
-            $('#carousel-control-next-1').click(function(e) {
-                e.preventDefault();
-            $('#main-sliderx').carousel('next');
+            $("#main-sliderx").carousel("prev");
         });
-  });
+
+        $("#carousel-control-next-1").click(function (e) {
+            e.preventDefault();
+            $("#main-sliderx").carousel("next");
+        });
+    });
 </script>
