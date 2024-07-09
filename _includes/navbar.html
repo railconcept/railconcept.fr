@@ -1,14 +1,18 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
     <div class="container-xl">
         <a class="navbar-brand" href="{{ site.baseurl }}/">
-            <img class="img-fluid" src="{{ site.baseurl }}/assets/img/logo/logo.png" alt="logo" />
+            <img
+                class="img-fluid"
+                src="data:image/webp;base64,UklGRsIDAABXRUJQVlA4TLYDAAAveAAQEBWD4rZtHGn/tVOu3zciJoCu7Y6THOKvUh/jIZGRMsis2FjQUG4DsK3s/J2C7c68CI/xRvm7H/WDDu5ZOzzQaQ+NcaVuDVYchQAX0R5OBNyq9AAcgVHbSJKoFZNJ5vovginmG0wjyZayn5sAKNSZBgpPEr+IBHnn8B1FCqivkTc4wsDtBMiJgDm6G7PzuDUMo7ARpLuTfUq6oEiYXdJ/xPtyX1vuLBKRSC8QAaD6oVAvEoKima98JBYGm0iypTQZGQ4oXKCD9Pbv4RgDadukc3D/Yu+2tbU3+ZyzvYJ7yztkz2F5D8IoDMEAv2jpEWXOVNDFOwGEv/n8w8kOQ+6c9rxb/52sfA+vdlxvuFlxN8eDKR6O/Z8PvaleVM/7/6Ie1OZE9QYTWQKgABTwAXSXqsR9CW8XBIjDC7AMbMKrOwEA1MNdRGbN4tf1J+gfjPHCFkTU1V1k1i1+/fnzg1HB2Ki+RF0BiszKxa8wo4Kz4VBHengIgDJPpWa//qR/UJE0tjgwIhuYeNVrwcA2MHvikrd4AVDmnFN8ADoAWe0S9fMDFbHBxwhMWQaKt4gcjQYirtap2oCMlEEDaRO2+1kClDmnOAMpVdw8YZhNGG/neCI+jGrOMCp6N4wmnHcuGGdVgT4y+BTWWzdM5V7rQua188aCRUC1z5f8OcAt8tny9vmpC/PzM6Nu0PbZaQ6LfH5+RtQNPvM75PNy4aU6jIreDRhaJ8t8ZiK5JLoZAOepr/GYyHQYFbGZgemB/lykOizqvRtPUK127udyqg6zBFP7/x+giIi36uQ0HTAzLgaq9ebmA6C7A7rXJ5LVARhT4OVnuL228RiRxLLlOhxMvb4ioPP/1zie5Yf7ESiOlLWX02MV/HKtHT8iL76otXi6zHOpOrb04MVGpoyq3fxYgmA8+o9UxtXWpoxGUiqjams4F3ezoVqWoXidulg8u46yYY0RiwYFa6A6MkbgHBfWKGYbgXN01cCHxYjijuqQo56lfMrpuUvnRsvQlJNQKNw4CP0RmmxUVv1BpyU42Qi9KbgFU5naucpyDiikyyfLEj2Gmibno9jxlpwYPV91XTwO1tCEoI6aTnldnNGqmotQ5GiJ2nhKy+KqbFlmS9RGi2GJb3dIdViTAwqLo7lOx6JHZF4OKMKLuj6qx3B8WA4varI6zpnDi9u5Em1eIblqcjaZWXLV9ExQt8WkSxqaRHkpXDr9S8NzCWgp0vBMNjwfHogWkIbvbyyfweSk9/Q7g53z5SPbBw=="
+                alt="logo" />
             <!---img-fluid h-100 d-lg-flex justify-content-lg-end align-items-lg-end -->
         </a>
         <!-- sizing logo
         -->
 
-        <button class="navbar-toggler" 
-            type="button" 
+        <button
+            class="navbar-toggler"
+            type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarToggler"
             aria-controls="navbarToggler"
@@ -16,29 +20,23 @@
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-    
+
         <div class="collapse navbar-collapse" id="navbarToggler">
             <ul class="navbar-nav my-2 ms-auto mb-2 mb-lg-0 mx-5">
-                {% for navlink in site.navlinks %}
-                    {% if page.url contains navlink.href  %}  
-                        <a class="nav-link active" href="{{ navlink.href }}">{{ navlink.label}}</a>
-                    {% else %}
-                        <a class="nav-link" href="{{ navlink.href }}">{{ navlink.label}}</a>
-                    {% endif %}
-                  {% endfor %}
+                {% for navlink in site.navlinks %} {% if page.url contains navlink.href %}
+                <a class="nav-link active" href="{{ navlink.href }}">{{ navlink.label}}</a>
+                {% else %}
+                <a class="nav-link" href="{{ navlink.href }}">{{ navlink.label}}</a>
+                {% endif %} {% endfor %}
             </ul>
-
 
             <form class="d-flex" onsubmit="return false;">
                 <input id="input-search" type="text" class="d-block form-control d-lg-none shadow-none" placeholder="Recherche..." autofocus />
-                
+
                 <a class="nav-link ms-2 d-none d-lg-flex link-navbar" href="{{site.baseurl }}/" id="search-link">
                     <img class="img-fluid align-self-center" src="{{ site.baseurl }}/assets/img/flags/loupe.png" />
                 </a>
             </form>
-
-
-
         </div>
     </div>
 </nav>
