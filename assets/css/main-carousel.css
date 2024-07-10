@@ -1,0 +1,16 @@
+
+.caption .rail {
+  color: #a44343;
+  font-family: "Euphoria" , "Open Sans" , sans-serif;
+  font-weight: 800;
+}
+
+.caption .concept {
+    color: #9d9e9f;
+    font-family: "Euphoria" , "Open Sans" , sans-serif;
+    font-weight: 800;
+}
+
+.caption {
+    background-image: linear-gradient(to left, rgba(255,255,255,0)1%, rgb(255, 255, 255)40%);
+}

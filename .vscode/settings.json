@@ -49,7 +49,7 @@
     },
 
     "[css]": {
-        "editor.defaultFormatter": "sissel.shopify-liquid",
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": false
     },
 
@@ -59,8 +59,8 @@
     },
 
     "[liquid-css]": {
-        "editor.defaultFormatter": "sissel.shopify-liquid",
-        "editor.formatOnSave": true
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": false
     },
 
     "[liquid-javascript]": {

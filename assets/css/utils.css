@@ -1,0 +1,31 @@
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+.w-90 {
+    width: 90%;
+}
+
+@media (min-width: 576px) {
+    .sm-w-75 {
+        width: 75%;
+    }
+}
+
+@media (min-width: 768px) {
+    .md-min-vh-100 {
+        min-height: 100vh;
+    }
+
+    .md-vh-100 {
+        height: 100vh;
+    }
+
+    .md-w-50 {
+        width: 50% !important;
+    }
+}
