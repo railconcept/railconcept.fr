@@ -78,7 +78,7 @@ navlinks:
     href: "/actualites"
     label: "Actualités"
   -
-    href: "/competences#pills-logiciel"
+    href: "https://www.raillab.fr"
     label: "RailLab"
   -
     href: "/contact"
