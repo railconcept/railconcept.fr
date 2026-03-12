@@ -1,0 +1,21 @@
+{
+  "engine": "jekyll",
+  "files": {
+    "locales": "",
+    "settings": "",
+    "sections": [],
+    "snippets": []
+  },
+  "format": {
+    "ignore": [],
+    "indentSize": 4,
+    "preserveLine": 3,
+    "wrap": 0,
+    "wrapFraction": 0,
+    "liquid": {},
+    "markup": {},
+    "style": {},
+    "json": {},
+    "script": {}
+  }
+}

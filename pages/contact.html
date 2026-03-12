@@ -117,81 +117,15 @@ permalink: /contact
                 enctype="multipart/form-data" netlify-honeypot="bot-field" data-netlify-recaptcha="true"
                 data-netlify="true">
             -->
-            <form
+            <a
                 class="contact-form"
-                action="mailto:commercial@railconcept.fr"
                 name="contactez-nous"
                 method="get"
                 enctype="multipart/form-data"
                 netlify-honeypot="bot-field"
                 data-netlify-recaptcha="true"
                 data-netlify="true">
-                <p class="hidden">
-                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                </p>
 
-                <!-- Todo: support forms fowarding to email
-
-                    <div class="row" data-aos="fade-up" data-aos-delay="300">
-                    <div class="col-md-6 ">
-                    <div class="form-group mb-2">
-                    <input type="text" name="nom"
-                    class="form-control taille-form text-white bg-select no-border-radius mt-0"
-                    placeholder="Nom*" required
-                    oninvalid="this.setCustomValidity('Veuiller saisir votre nom')"
-                    oninput="setCustomValidity('')">
-                    </div>
-                    </div>
-                    <div class="col-md-6 ">
-                    <div class="form-group mb-2">
-                    <input type="text" name="prenom"
-                    class="form-control taille-form text-white bg-select no-border-radius mt-0"
-                    placeholder="Prénom*" required
-                    oninvalid="this.setCustomValidity('Veuiller saisir votre prénom')"
-                    oninput="setCustomValidity('')">
-                    </div>
-                    </div>
-
-                    <div class="col-md-6 ">
-                    <div class="form-group mb-2">
-                    <input type="email" nom="email"
-                    class="form-control taille-form text-white bg-select no-border-radius mt-0"
-                    placeholder="E-mail*" required
-                    oninvalid="this.setCustomValidity('Veuiller saisir un email valide')"
-                    oninput="setCustomValidity('')">
-                    </div>
-                    </div>
-                    <div class="col-md-6 ">
-                    <div class="form-group mb-2">
-                    <input type="number" name="phone"
-                    class="form-control taille-form text-white bg-select no-border-radius mt-0"
-                    placeholder="Téléphone*" required
-                    oninvalid="this.setCustomValidity('Veuiller saisir votre N° de téléphone.')"
-                    oninput="setCustomValidity('')">
-                    </div>
-                    </div>
-                    </div>
-                    <div class="col-md-12 form-group title-background " data-aos="fade-up" data-aos-delay="300">
-                    <div class="form-group">
-                    <input type="text" class="form-control taille-form text-white bg-select no-border-radius"
-                    placeholder="Sujet">
-                    <textarea class="form-control taille-form text-white no-border-radius text-white bg-select mt-1"
-                    id="msg" name="msg" rows="7" placeholder="Votre message..."></textarea>
-                    </div>
-                    </div>
-
-                    <div class="col-md-12" data-aos="fade-up" data-aos-delay="300">
-                    <div class="row ">
-                    <div class="col-md-4  d-flex p-2" data-netlify-recaptcha="true"></div>
-                    <div class="col-md-3  d-flex p-2">
-                    <button type="submit"
-                    class="btn btn-default btn-voir-poste text-uppercase btn-active  justify-content-center align-self-center mt-0 mx-auto"
-                    data-aos="zoom-in">Envoyer</button>
-                    </div>
-                    </div>
-                    </div>
-
-                -->
 
                 <div
                     class="col-md-12"
@@ -200,10 +134,11 @@ permalink: /contact
                     <div class="row ">
                         <div class="col-md-4  d-flex p-2" data-netlify-recaptcha="true"></div>
                         <div class="col-md-3  d-flex p-2">
-                            <button
+                            <a
+                                href="mailto:commercial@railconcept.fr"
                                 type="submit"
                                 class="btn btn-default btn-voir-poste text-uppercase btn-active  justify-content-center align-self-center mt-0 mx-auto"
-                                data-aos="zoom-in">Contactez-nous par email !</button>
+                                data-aos="zoom-in">Contactez-nous par email !</a>
                         </div>
                     </div>
                 </div>

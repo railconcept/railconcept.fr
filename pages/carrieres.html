@@ -64,7 +64,8 @@ permalink: /rejoignez-nous
 <section id="poste-pouvoir" class="poste-a-pouvoir">
     <div class="container ">
         <div class="row">
-            <div class="title-news col-12 text-center text-left title-section mt-5 mb-5" data-aos="fade-up" data-aos-delay="">
+            <div class="title-news col-12 text-center text-left title-section mt-5 mb-5" data-aos="fade-up"
+                data-aos-delay="">
                 Les postes à pourvoir
             </div>
 
@@ -78,16 +79,18 @@ permalink: /rejoignez-nous
                 </a>
             </div>
 
-            <div id="chefprojet" class="container ms-lg-3 col-lg-8 mb-3 col-12 chef-projet pb-2" data-aos="fade-up" data-aos-delay="200">
+            <div id="chefprojet" class="container ms-lg-3 col-lg-8 mb-3 col-12 chef-projet pb-2" data-aos="fade-up"
+                data-aos-delay="200">
                 <div class="title-para-news text-left">CHEF DE PROJET</div>
                 <hr>
                 {% assign counter = 0 %}
                 {% for offre in site.odt %}
-                {% if offre.tdp == "cdp"  and offre.active == true %}
+                {% if offre.tdp == "cdp" and offre.active == true %}
                 <div class="container  mt-2 mb-5">
                     <div class="row d-flex">
                         <div class="color-gray p-0 col-md-3 text-left my-auto">
-                            <b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
+                            <b>{{ offre.title }}</b><br>{{ offre.departement }}
+                        </div>
                         <div class="color-gray p-0 col-md-2 text-left  my-auto">
                             {{ offre.date | date: "%d/%m/%Y" }}</div>
                         <div class="color-gray p-0 col-md-1 text-left my-auto">{{ offre.tdc }}</div>
@@ -95,20 +98,21 @@ permalink: /rejoignez-nous
                         <div class="color-gray p-0 col-md-4 text-center my-auto">
                             <span onclick='get_offre("{{ offre.url }}",this,event);'
                                 class="card-link select_offre btn-float  w-100">
-                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir l'offre</span>
+                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir
+                                l'offre</span>
                         </div>
                     </div>
                 </div>
                 {% assign counter = counter | plus: 1 %}
                 {% endif %}
                 {% endfor %}
-                {% if counter  == 0 %}
+                {% if counter == 0 %}
                 <div class="color-gray p-0 col-12 text-center my-auto">
                     <b>Pas de poste à pourvoir pour l’instant.</b>
                 </div>
                 {% endif %}
             </div>
-        
+
 
 
             <div class="offre-nav-item col-lg-3 mb-3 col-12 chargetude" data-aos="fade-up" data-aos-delay="200">
@@ -122,7 +126,8 @@ permalink: /rejoignez-nous
                 </a>
             </div>
 
-            <div id="chargetude" class="container ms-lg-3 col-lg-8 col-12 mb-3 chef-projet pb-2" data-aos="fade-up" data-aos-delay="200">
+            <div id="chargetude" class="container ms-lg-3 col-lg-8 col-12 mb-3 chef-projet pb-2" data-aos="fade-up"
+                data-aos-delay="200">
                 <div class="title-para-news text-left">CHARGÉ D'ÉTUDE</div>
                 <hr>
                 {% assign counterx = 0 %}
@@ -131,7 +136,8 @@ permalink: /rejoignez-nous
                 <div class="container  mt-2">
                     <div class="row d-flex">
                         <div class="color-gray p-0 col-md-3 text-left my-auto">
-                            <b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
+                            <b>{{ offre.title }}</b><br>{{ offre.departement }}
+                        </div>
                         <div class="color-gray p-0 col-md-2 text-left  my-auto">
                             {{ offre.date | date: "%d/%m/%Y" }}</div>
                         <div class="color-gray p-0 col-md-1 text-left my-auto">{{ offre.tdc }}</div>
@@ -139,14 +145,15 @@ permalink: /rejoignez-nous
                         <div class="color-gray p-0 col-md-4 text-center my-auto">
                             <span onclick='get_offre("{{ offre.url }}",this,event);'
                                 class="card-link select_offre btn-float  w-100">
-                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir l'offre</span>
+                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir
+                                l'offre</span>
                         </div>
                     </div>
                 </div>
                 {% assign counterx = counterx | plus: 1 %}
                 {% endif %}
                 {% endfor %}
-                {% if counterx  == 0 %}
+                {% if counterx == 0 %}
                 <div class="color-gray p-0 col-12 text-center my-auto">
                     <b>Pas de poste à pourvoir pour l’instant.</b>
                 </div>
@@ -163,7 +170,8 @@ permalink: /rejoignez-nous
                 </a>
             </div>
 
-            <div id="devlogiciel" class="container ms-lg-3 col-lg-8 col-12 mb-3 chef-projet pb-2" data-aos="fade-up" data-aos-delay="200">
+            <div id="devlogiciel" class="container ms-lg-3 col-lg-8 col-12 mb-3 chef-projet pb-2" data-aos="fade-up"
+                data-aos-delay="200">
                 <div class="title-para-news text-left">DEVELOPPEUR LOGICIEL</div>
                 <hr>
                 {% assign counterxx = 0 %}
@@ -172,7 +180,8 @@ permalink: /rejoignez-nous
                 <div class="container  mt-2">
                     <div class="row d-flex">
                         <div class="color-gray p-0 col-md-3 text-left my-auto">
-                            <b>{{ offre.title }}</b><br>{{ offre.departement }}</div>
+                            <b>{{ offre.title }}</b><br>{{ offre.departement }}
+                        </div>
                         <div class="color-gray p-0 col-md-2 text-left  my-auto">
                             {{ offre.date | date: "%d/%m/%Y" }}</div>
                         <div class="color-gray p-0 col-md-1 text-left my-auto">{{ offre.tdc }}</div>
@@ -180,14 +189,15 @@ permalink: /rejoignez-nous
                         <div class="color-gray p-0 col-md-4 text-center my-auto">
                             <span onclick='get_offre("{{ offre.url }}", this, event);'
                                 class="card-link select_offre btn-float w-100">
-                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir l'offre</span>
+                                <img src="{{ base-url }}/assets/img/page-rejoignez-nous/icon-next.png"> Voir
+                                l'offre</span>
                         </div>
                     </div>
                 </div>
                 {% assign counterxx = counterxx | plus: 1 %}
                 {% endif %}
                 {% endfor %}
-                {% if counterxx  == 0 %}
+                {% if counterxx == 0 %}
                 <div class="color-gray p-0 col-12 text-center my-auto">
                     <b>Pas de poste à pourvoir pour l’instant.</b>
                 </div>
@@ -215,143 +225,16 @@ permalink: /rejoignez-nous
             </div>
             <div class="col-md-12 col-xl-6 col-lg-6 bg-metiers  ms-0 mt-0 etude-container-right pt-5 pb-5"
                 data-aos="fade-left" data-aos-delay="600">
-                <div class="container form-postul   ps-5 pe-5">
+                <div class="container form-postul ps-5 pe-5">
+                    <div class=" title-news text-left title-section mb-5">POSTULER</div>
 
-                    <!-- Todo: support forms fowarding to email
-
-                    <form action="/success" name="poste_submission" class="" method="post" enctype="multipart/form-data"
-                        netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
-                    -->
-
-                    <form action="mailto:commercial@railconcept.fr" name="poste_submission" class="" method="get" enctype="multipart/form-data"
-                        netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
-                        <div class=" title-news text-left title-section mb-5">POSTULER</div>
-
-                        <input type="text" id="selected_job" name="selected_job" class="hidden">
-
-                        <p class="hidden">
-                            <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-                        </p>
-
-
-
-                        
-                        <!--
-                        <div class="form-group ">
-                            <div class="row col-md-12 align-items-center ps-0 pe-0">
-                                <div class="col-md-3 col-sm-3 p-0">
-                                    <label for="input_cv" class="paragraphe-news text-right label-select">Curiculum
-                                        vitae <span class="colored">*</span></label>
-                                </div>
-                                <div class="col-md-9 col-sm-9 ">
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="input_cv" name="input_cv"
-                                            accept="image/jpeg,image/jpg,image/png,application/pdf,application/vnd.ms-word,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-                                            required oninvalid="this.setCustomValidity('Veuiller choisir votre CV')"
-                                            oninput="setCustomValidity('')">
-                                        <label id="label_input_cv" class="custom-file-label bg-select width-form"
-                                            for="input_cv"><span id="fake_input_cv"
-                                                class="parcourir">Parcourir</span></label>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="row mt-3">
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-right pt-4">
+                            <a href="mailto:recrutement@railconcept.fr" type="submit"
+                                class="btn btn-default btn-voir-poste mt-0  mb-5 text-uppercase btn-active bg-select-2 mb-2"
+                                data-aos="zoom-in">Contactez nous par email !</a>
                         </div>
-
-                        <div class="form-group ">
-                            <div class="row col-md-12 align-items-center ps-0 pe-0">
-                                <div class="col-md-3 col-sm-3 p-0">
-                                    <label for="input_lm" class="paragraphe-news text-right label-select ">Lettre de
-                                        motivation <span class="colored">*</span></label>
-                                </div>
-                                <div class="col-md-9 col-sm-9 mt-10">
-                                    <div class="custom-file align-items-center">
-                                        <input type="file" class="custom-file-input" id="input_lm" name="input_lm"
-                                            accept="image/jpeg,image/jpg,image/png,application/pdf,application/vnd.ms-word,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-                                            required
-                                            oninvalid="this.setCustomValidity('Veuiller choisir votre lettre de motivation')"
-                                            oninput="setCustomValidity('')">
-                                        <label id="label_input_lm" class="custom-file-label bg-select width-form"
-                                            for="input_lm"><span id="fake_input_lm"
-                                                class="parcourir">Parcourir</span></label>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="form-group ">
-                            <div class="row col-md-12 align-items-center ps-0 pe-0 handy">
-                                <div class="col-md-3 col-sm-3 p-0">
-                                    <label for="input_ad" class="paragraphe-news text-right label-select">Autre document
-                                        <span class="colored">*</span></label>
-                                </div>
-                                <div class="col-md-9 col-sm-9 mt-10 ">
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input " id="input_ad" name="input_ad"
-                                            accept="image/jpeg,image/jpg,image/png,application/pdf,application/vnd.ms-word,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet">
-
-                                        <label id="label_input_ad" class="custom-file-label bg-select width-form"
-                                            for="input_ad"><span id="fake_input_ad"
-                                                class="parcourir">Parcourir</span></label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <div class="title-news text-left title-section mb-5">Coordonnées</div>
-
-                        <div class="row mb-4">
-                            <div class="col-lg-6 col-12 ps-0">
-                                <input type="text" class="d_pers form-control bg-select" name="nom" placeholder="Nom*"
-                                    required oninvalid="this.setCustomValidity('Veuiller saisir votre nom')"
-                                    oninput="setCustomValidity('')">
-                            </div>
-                            <div class="col-lg-6 col-12 ps-0">
-                                <input type="text" class="d_pers form-control bg-select" name="prenom"
-                                    placeholder="Prénom*" required
-                                    oninvalid="this.setCustomValidity('Veuiller saisir votre prenom')"
-                                    oninput="setCustomValidity('')">
-                            </div>
-                        </div>
-                        <div class="row mb-2">
-                            <div class="col-lg-6 col-12 ps-0">
-                                <input type="email" class="d_pers form-control bg-select" name="email"
-                                    placeholder="E-mail*" required
-                                    oninvalid="this.setCustomValidity('Veuiller saisir un email valid')"
-                                    oninput="setCustomValidity('')">
-                            </div>
-                            <div class="col-lg-6 col-12 ps-0">
-                                <input type="number" class="d_pers form-control bg-select" name="phone"
-                                    placeholder="Téléphone*" required
-                                    oninvalid="this.setCustomValidity('Veuiller saisir votre N° de Téléphone')"
-                                    oninput="setCustomValidity('')">
-                            </div>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-xl-8 col-lg-12 col-md-8 col-sm-8 col-12 ps-0">
-                                <div data-netlify-recaptcha="true"></div>
-                            </div>
-                            <div class="col-xl-4  col-lg-12 col-md-4 col-sm-4 col-12 text-right pt-4">
-                                <button type="submit"
-                                    class="btn btn-default btn-voir-poste mt-0  mb-5 text-uppercase btn-active bg-select-2 mb-2"
-                                    data-aos="zoom-in">Envoyer</button>
-                            </div>
-                        </div>
-
-                        -->
-                        <div class="row mt-3">
-                            <div class="col-xl-8 col-lg-12 col-md-8 col-sm-8 col-12 ps-0">
-                                <div data-netlify-recaptcha="true"></div>
-                            </div>
-                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-right pt-4">
-                                <button type="submit"
-                                    class="btn btn-default btn-voir-poste mt-0  mb-5 text-uppercase btn-active bg-select-2 mb-2"
-                                    data-aos="zoom-in">Contactez nous par email !</button>
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
